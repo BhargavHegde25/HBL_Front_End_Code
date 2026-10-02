@@ -1,0 +1,192 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "_data_": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+    ],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "autogrowmode": 1,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "counter": "00",
+    "desktop": {
+        "_data_": [
+            {
+                "lblCurrentWeight": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": ""
+                },
+                "lblISIN": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": ""
+                },
+                "lblInstrumentName": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": ""
+                },
+                "lblInvestorDocuments": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": ""
+                },
+                "lblOrder": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": ""
+                },
+                "lblOrderAmount": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": ""
+                },
+                "lblOrderQuantity": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": ""
+                },
+                "lblTargetWeight": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": ""
+                }
+            }
+        ],
+        "rowTemplateId": "cea62e5ac9624a34b03d3ac7a0811b3f",
+        "rowtemplate": "flxInvestmentProposal",
+        "sectionHeaderTemplateId": null,
+        "widgetdatamap": {
+            "flxCurrentWeight": "flxCurrentWeight",
+            "flxInstrument": "flxInstrument",
+            "flxInvestmentProposal": "flxInvestmentProposal",
+            "flxInvestorDocuments": "flxInvestorDocuments",
+            "flxMain": "flxMain",
+            "flxOrder": "flxOrder",
+            "flxOrderAmount": "flxOrderAmount",
+            "flxOrderQuantity": "flxOrderQuantity",
+            "flxSep": "flxSep",
+            "flxTargetWeight": "flxTargetWeight",
+            "lblCurrentWeight": "lblCurrentWeight",
+            "lblISIN": "lblISIN",
+            "lblInstrumentName": "lblInstrumentName",
+            "lblInvestorDocuments": "lblInvestorDocuments",
+            "lblOrder": "lblOrder",
+            "lblOrderAmount": "lblOrderAmount",
+            "lblOrderQuantity": "lblOrderQuantity",
+            "lblTargetWeight": "lblTargetWeight"
+        }
+    },
+    "focusedindex": null,
+    "focuseditem": null,
+    "groupcells": false,
+    "hasSections": false,
+    "id": "segProposalList",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "gd474f8779a84f168064a3b1b22429dd",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "flxSegmentContainer",
+    "pf": "userwidgetmodel",
+    "responsiveData": {
+        "b1": {},
+        "b2": {}
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainselection": false,
+    "rowTemplateId": null,
+    "rowcounter": 0,
+    "rowfocusskin": "s0f9bf3c1b3e4a7bb6bf9fd18b0211f2",
+    "rowskin": "scf5f90f6ac04976ab88b2a4f7153285",
+    "rowtemplate": "flxRemaning",
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionHeaderTemplateId": null,
+    "sectionheaderskin": "sdc4ff4ed1584272be2ae69045dfb29d",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "separatorcolor": "e3e3e300",
+    "separatorrequired": false,
+    "separatorthickness": 2,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "vizProps": {},
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "flxCurrentWeight": "flxCurrentWeight",
+        "flxInstrument": "flxInstrument",
+        "flxInvestmentProposal": "flxInvestmentProposal",
+        "flxInvestorDocuments": "flxInvestorDocuments",
+        "flxMain": "flxMain",
+        "flxOrder": "flxOrder",
+        "flxOrderAmount": "flxOrderAmount",
+        "flxOrderQuantity": "flxOrderQuantity",
+        "flxSep": "flxSep",
+        "flxTargetWeight": "flxTargetWeight",
+        "lblCurrentWeight": "lblCurrentWeight",
+        "lblISIN": "lblISIN",
+        "lblInstrumentName": "lblInstrumentName",
+        "lblInvestorDocuments": "lblInvestorDocuments",
+        "lblOrder": "lblOrder",
+        "lblOrderAmount": "lblOrderAmount",
+        "lblOrderQuantity": "lblOrderQuantity",
+        "lblTargetWeight": "lblTargetWeight"
+    },
+    "zindex": 1
+}

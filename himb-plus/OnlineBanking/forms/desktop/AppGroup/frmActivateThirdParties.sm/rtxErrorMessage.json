@@ -1,0 +1,54 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizRichText",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "sa7875ee0d0f446987db74d1dc49550e",
+    "_text_": "OTP you have entered is incorrect. Please enter the correct OTP",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_wrapping_": 2,
+    "accessibilityconfig": {
+        "a11yARIA": {
+            "tabindex": -1
+        },
+        "a11yHidden": false
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 1,
+    "id": "rtxErrorMessage",
+    "info": null,
+    "isvisible": true,
+    "kuid": "e2e59b6ebbb1461b8a286922bf4cc04a",
+    "name": "kony.ui.RichText",
+    "parent": "flxErrorMessage",
+    "pf": "frmActivateThirdParties",
+    "wType": "RichText",
+    "widgetalignment": 5,
+    "zindex": 1
+}

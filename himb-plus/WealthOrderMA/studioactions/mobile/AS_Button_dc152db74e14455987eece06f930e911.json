@@ -1,0 +1,23 @@
+{
+    "AS_Button_dc152db74e14455987eece06f930e911": {
+        "id": "AS_Button_dc152db74e14455987eece06f930e911",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmConvertCurrency",
+            "type": "forms",
+            "platform": null,
+            "KUID": "j8b70531e08d4e2888ea0430f5c1b080"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_eaf86b7d1af247adad9f790f8af35ac7",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.setKeypadChar(4);",
+            "callbackType": null
+        }]
+    }
+}

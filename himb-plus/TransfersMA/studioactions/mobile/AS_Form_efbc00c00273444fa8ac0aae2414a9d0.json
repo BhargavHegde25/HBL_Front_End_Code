@@ -1,0 +1,22 @@
+{
+    "AS_Form_efbc00c00273444fa8ac0aae2414a9d0": {
+        "id": "AS_Form_efbc00c00273444fa8ac0aae2414a9d0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "CopyfrmTransferSuccess",
+            "type": "forms",
+            "platform": null,
+            "KUID": "c6b4bd9588e54db3a0142c9c6d1fdd7e"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_init_cd78353e92e6404d9e32b95f04486348",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.init();"
+        }]
+    }
+}

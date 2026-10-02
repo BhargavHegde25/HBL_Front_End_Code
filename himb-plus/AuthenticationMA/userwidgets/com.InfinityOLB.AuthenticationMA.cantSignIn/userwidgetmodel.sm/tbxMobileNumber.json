@@ -1,0 +1,63 @@
+{
+  "@class": "com.kony.gen.viz.model.component.KVizTextBox2",
+  "DNDConfig": null,
+  "_height_": {
+    "type": "string",
+    "value": "100%"
+  },
+  "_left_": {
+    "type": "string",
+    "value": "0dp"
+  },
+  "_margin_": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "_padding_": [
+    3,
+    0,
+    0,
+    0
+  ],
+  "_placeholder_": "",
+  "_skin_": "sba52da23c38498baeb2de58afb47832",
+  "_text_": "",
+  "_width_": {
+    "type": "string",
+    "value": "100%"
+  },
+  "autocapitalize": "none",
+  "autocomplete": false,
+  "autocorrect": false,
+  "autofilter": false,
+  "canUpdateUI": true,
+  "containerheight": "",
+  "containerheightmode": 1,
+  "containerweight": 100,
+  "contentalignment": 4,
+  "focusskin": "sa8922c2f9d945c4a4edd802bf91fb71",
+  "id": "tbxMobileNumber",
+  "info": null,
+  "isvisible": true,
+  "keyboardtype": "A",
+  "kuid": "ie8b88f3814644be9e88da6179a630a9",
+  "mode": "A",
+  "name": "kony.ui.TextBox2",
+  "parent": "flxMobileNumber",
+  "pf": "userwidgetmodel",
+  "placeholderi18n": "i18n.login.CantSignIn.registeredMobileNumber",
+  "placeholderskin": "sfa26090ac974cc19ba6c2baf118bd16",
+  "securetextentry": false,
+  "textinputmode": "A",
+  "viewtype": "default",
+  "wType": "TextField",
+  "zindex": 1,
+  "desktopweb": {
+    "placeholderSkin": "sfa26090ac974cc19ba6c2baf118bd16",
+    "psp": {
+      "hoverSkin": "s68fe8731b0f47919dfcee12414e9acc"
+    }
+  }
+}

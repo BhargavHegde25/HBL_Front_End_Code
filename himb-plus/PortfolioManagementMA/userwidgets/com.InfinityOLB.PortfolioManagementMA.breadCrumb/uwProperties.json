@@ -1,0 +1,70 @@
+{
+    "classname": "breadCrumb",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "g76d5add65994206bdc4c2d900a6b99f",
+                    "paramList": [],
+                    "propertyKey": "loadButtons",
+                    "pw": {
+                        "displayName": "loadButtons",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ud4df28d01744879bf71792d545af636",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "a4b0275297a54824a96bd5dd1a3fa3b2",
+                    "paramList": [],
+                    "propertyKey": "resetButton",
+                    "pw": {
+                        "displayName": "resetButton",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ud4df28d01744879bf71792d545af636",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "b5901caba62b4ca880daa4e5a40a0818",
+                    "paramList": [],
+                    "propertyIndex": 2,
+                    "propertyKey": "sendBtn",
+                    "pw": {
+                        "displayName": "sendBtn",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ud4df28d01744879bf71792d545af636",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfinityOLB.PortfolioManagementMA",
+    "version": "1.0.0"
+}

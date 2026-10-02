@@ -1,0 +1,46 @@
+{
+  "customCode" : {
+    "requestProcessorName" : "com.kony.transaction.preprocessors.CreateOneTimeTransferPreProcessor",
+    "responseProcessorName" : "com.kony.postprocessors.CreateTransferObjectServicePostProcessor"
+  },
+  "operationConfig" : {
+    "name" : "oneTimeTransferFunds8861",
+    "type" : "MappedToBackend",
+    "cachable" : false,
+    "smsEnabled" : false,
+    "security" : "authorized_app_user",
+    "responseEncoding" : "UTF-8",
+    "httpMethod" : "GET",
+    "decodeResponseBody" : false,
+    "iMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\"><map inputpath=\"request_in\" outputpath=\"request_out\"><set-param inputpath=\"frequencyEndDate\" outputpath=\"frequencyEndDate\"/><set-param inputpath=\"beneficiaryZipcode\" outputpath=\"beneficiaryZipcode\"/><set-param inputpath=\"fromAccountNumber\" outputpath=\"fromAccountNumber\"/><set-param inputpath=\"toAccountCurrency\" outputpath=\"toAccountCurrency\"/><set-param inputpath=\"scheduledDate\" outputpath=\"scheduledDate\"/><set-param inputpath=\"swiftCode\" outputpath=\"swiftCode\"/><set-param inputpath=\"creditValueDate\" outputpath=\"creditValueDate\"/><set-param inputpath=\"clearingCode\" outputpath=\"clearingCode\"/><set-param inputpath=\"isScheduled\" outputpath=\"isScheduled\"/><set-param inputpath=\"createWithPaymentId\" outputpath=\"createWithPaymentId\"/><set-param inputpath=\"intermediaryBicCode\" outputpath=\"intermediaryBicCode\"/><set-param inputpath=\"beneficiaryAddressLine1\" outputpath=\"beneficiaryAddressLine1\"/><set-param inputpath=\"paymentType\" outputpath=\"paymentType\"/><set-param inputpath=\"beneficiaryAddressLine2\" outputpath=\"beneficiaryAddressLine2\"/><set-param inputpath=\"fromAccountCurrency\" outputpath=\"fromAccountCurrency\"/><set-param inputpath=\"exchangeRate\" outputpath=\"exchangeRate\"/><set-param inputpath=\"beneficiaryName\" outputpath=\"beneficiaryName\"/><set-param inputpath=\"beneficiaryBankName\" outputpath=\"beneficiaryBankName\"/><set-param inputpath=\"beneficiaryPhone\" outputpath=\"beneficiaryPhone\"/><set-param inputpath=\"e2eReference\" outputpath=\"e2eReference\"/><set-param inputpath=\"beneficiarycountry\" outputpath=\"beneficiarycountry\"/><set-param inputpath=\"validate\" outputpath=\"validate\"/><set-param inputpath=\"amount\" outputpath=\"amount\"/><set-param inputpath=\"transactionCurrency\" outputpath=\"transactionCurrency\"/><set-param inputpath=\"beneficiaryState\" outputpath=\"beneficiaryState\"/><set-param inputpath=\"IBAN\" outputpath=\"IBAN\"/><set-param inputpath=\"paidBy\" outputpath=\"paidBy\"/><set-param inputpath=\"numberOfRecurrences\" outputpath=\"numberOfRecurrences\"/><set-param inputpath=\"overrides\" outputpath=\"overrides\"/><set-param inputpath=\"serviceName\" outputpath=\"serviceName\"/><set-param inputpath=\"userId\" outputpath=\"userId\"/><set-param inputpath=\"transactionId\" outputpath=\"transactionId\"/><set-param inputpath=\"transactionType\" outputpath=\"transactionType\"/><set-param inputpath=\"totalAmount\" outputpath=\"totalAmount\"/><set-param inputpath=\"beneficiaryCity\" outputpath=\"beneficiaryCity\"/><set-param inputpath=\"charges\" outputpath=\"charges\"/><set-param inputpath=\"beneficiaryEmail\" outputpath=\"beneficiaryEmail\"/><set-param inputpath=\"transactionsNotes\" outputpath=\"transactionsNotes\"/><set-param inputpath=\"toAccountNumber\" outputpath=\"toAccountNumber\"/><set-param inputpath=\"frequencyType\" outputpath=\"frequencyType\"/><set-param inputpath=\"uploadedattachments\" outputpath=\"uploadedattachments\"/></map></mapper>",
+    "applyCommonMapping" : true,
+    "applyRequestCommonMapping" : true,
+    "applyResponseCommonMapping" : true,
+    "backendMeta" : {
+      "serviceName" : "dbpTransactionServices",
+      "serviceVersion" : "1.0",
+      "operationName" : "oneTimeTransferFunds"
+    },
+    "relationshipHierarchyMapping" : {
+      "children" : [ ],
+      "name" : "OneTimeTransfer",
+      "actions" : { },
+      "selected" : true
+    },
+    "requestXmlMappingOverride" : false,
+    "responseXmlMappingOverride" : false,
+    "mapperData" : [ {
+      "name" : "base mapper1",
+      "order" : 1,
+      "iMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\"><map inputpath=\"request_in\" outputpath=\"request_out\"><set-param inputpath=\"frequencyEndDate\" outputpath=\"frequencyEndDate\"/><set-param inputpath=\"beneficiaryZipcode\" outputpath=\"beneficiaryZipcode\"/><set-param inputpath=\"fromAccountNumber\" outputpath=\"fromAccountNumber\"/><set-param inputpath=\"toAccountCurrency\" outputpath=\"toAccountCurrency\"/><set-param inputpath=\"scheduledDate\" outputpath=\"scheduledDate\"/><set-param inputpath=\"swiftCode\" outputpath=\"swiftCode\"/><set-param inputpath=\"creditValueDate\" outputpath=\"creditValueDate\"/><set-param inputpath=\"clearingCode\" outputpath=\"clearingCode\"/><set-param inputpath=\"isScheduled\" outputpath=\"isScheduled\"/><set-param inputpath=\"createWithPaymentId\" outputpath=\"createWithPaymentId\"/><set-param inputpath=\"intermediaryBicCode\" outputpath=\"intermediaryBicCode\"/><set-param inputpath=\"beneficiaryAddressLine1\" outputpath=\"beneficiaryAddressLine1\"/><set-param inputpath=\"paymentType\" outputpath=\"paymentType\"/><set-param inputpath=\"beneficiaryAddressLine2\" outputpath=\"beneficiaryAddressLine2\"/><set-param inputpath=\"fromAccountCurrency\" outputpath=\"fromAccountCurrency\"/><set-param inputpath=\"exchangeRate\" outputpath=\"exchangeRate\"/><set-param inputpath=\"beneficiaryName\" outputpath=\"beneficiaryName\"/><set-param inputpath=\"beneficiaryBankName\" outputpath=\"beneficiaryBankName\"/><set-param inputpath=\"beneficiaryPhone\" outputpath=\"beneficiaryPhone\"/><set-param inputpath=\"e2eReference\" outputpath=\"e2eReference\"/><set-param inputpath=\"beneficiarycountry\" outputpath=\"beneficiarycountry\"/><set-param inputpath=\"validate\" outputpath=\"validate\"/><set-param inputpath=\"amount\" outputpath=\"amount\"/><set-param inputpath=\"transactionCurrency\" outputpath=\"transactionCurrency\"/><set-param inputpath=\"beneficiaryState\" outputpath=\"beneficiaryState\"/><set-param inputpath=\"IBAN\" outputpath=\"IBAN\"/><set-param inputpath=\"paidBy\" outputpath=\"paidBy\"/><set-param inputpath=\"numberOfRecurrences\" outputpath=\"numberOfRecurrences\"/><set-param inputpath=\"overrides\" outputpath=\"overrides\"/><set-param inputpath=\"serviceName\" outputpath=\"serviceName\"/><set-param inputpath=\"userId\" outputpath=\"userId\"/><set-param inputpath=\"transactionId\" outputpath=\"transactionId\"/><set-param inputpath=\"transactionType\" outputpath=\"transactionType\"/><set-param inputpath=\"totalAmount\" outputpath=\"totalAmount\"/><set-param inputpath=\"beneficiaryCity\" outputpath=\"beneficiaryCity\"/><set-param inputpath=\"charges\" outputpath=\"charges\"/><set-param inputpath=\"beneficiaryEmail\" outputpath=\"beneficiaryEmail\"/><set-param inputpath=\"transactionsNotes\" outputpath=\"transactionsNotes\"/><set-param inputpath=\"toAccountNumber\" outputpath=\"toAccountNumber\"/><set-param inputpath=\"frequencyType\" outputpath=\"frequencyType\"/><set-param inputpath=\"uploadedattachments\" outputpath=\"uploadedattachments\"/></map></mapper>",
+      "requestXmlMappingOverride" : false,
+      "responseXmlMappingOverride" : false,
+      "disabled" : false,
+      "applyCommonMapping" : false,
+      "applyRequestCommonMapping" : true,
+      "applyResponseCommonMapping" : true
+    } ]
+  },
+  "enableFrontendUrl" : false,
+  "customVerb" : false
+}

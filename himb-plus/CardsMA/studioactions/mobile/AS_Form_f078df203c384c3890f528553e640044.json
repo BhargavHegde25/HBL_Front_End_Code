@@ -1,0 +1,23 @@
+{
+    "AS_Form_f078df203c384c3890f528553e640044": {
+        "id": "AS_Form_f078df203c384c3890f528553e640044",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTopUpDomesticPrepaidCardAckScreen",
+            "type": "forms",
+            "platform": "",
+            "KUID": "e04240c130784b95b071e10f49938cb5"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_eeecb9aceb1545ea8d4d16c5d0fb1a03",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.preShow();",
+            "parentId": null
+        }]
+    }
+}

@@ -1,0 +1,82 @@
+{
+    "classname": "RiskProfiling",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "i8341ce2c0c54c06bc042a1fae72fabb",
+                    "paramList": [],
+                    "propertyKey": "setContext",
+                    "pw": {
+                        "displayName": "setContext",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "hc4618a2b9c44774880ebdd906166acb",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "h6dfaa9fd9924a52a8d52e1721af8c8d",
+                    "paramList": [],
+                    "propertyKey": "hideFlex",
+                    "pw": {
+                        "displayName": "hideFlex",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "hc4618a2b9c44774880ebdd906166acb",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n\"ObjectName\": \"Strategies\",\n\"ServiceName\": \"PortfolioServicing\",\n\"OperationName\": \"getSuitabilityProfile\"\n}",
+                    "group": "General",
+                    "kuid": "cdd7400a4c63496a85d3643f33c7d270",
+                    "originalPropertyKey": "serviceCall",
+                    "propertyIndex": 1,
+                    "propertyKey": "serviceCall",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Service Call",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "hc4618a2b9c44774880ebdd906166acb",
+                    "type": "json",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.Infinity.MB.PortfolioManagementMA",
+    "version": "1.0.0"
+}

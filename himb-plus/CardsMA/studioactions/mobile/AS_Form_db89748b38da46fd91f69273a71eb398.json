@@ -1,0 +1,23 @@
+{
+    "AS_Form_db89748b38da46fd91f69273a71eb398": {
+        "id": "AS_Form_db89748b38da46fd91f69273a71eb398",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmConfirmCardRequest",
+            "type": "forms",
+            "platform": "",
+            "KUID": "b65d28f795224b759ef463d0ed94ec33"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ed59e06243b84d6f979098353d464c61",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.init();",
+            "parentId": null
+        }]
+    }
+}

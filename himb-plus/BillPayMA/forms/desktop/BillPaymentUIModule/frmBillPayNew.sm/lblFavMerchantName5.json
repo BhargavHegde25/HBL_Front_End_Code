@@ -1,0 +1,86 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizLabel",
+    "DNDConfig": null,
+    "_bottom_": {
+        "type": "string",
+        "value": ""
+    },
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "3dp"
+    },
+    "_margin_": [
+        1,
+        1,
+        1,
+        1
+    ],
+    "_padding_": [
+        0,
+        0,
+        2,
+        0
+    ],
+    "_skin_": "s80552d3efab480582755a25f52f6dba",
+    "_text_": "Add Favourite",
+    "_top_": {
+        "type": "string",
+        "value": "81dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "99%"
+    },
+    "_wrapping_": 2,
+    "accessibilityconfig": {
+        "a11yARIA": {
+            "tabindex": -1
+        },
+        "tagName": "h1"
+    },
+    "android": {
+        "textStyle": {
+            "letterSpacing": 0,
+            "strikeThrough": false
+        }
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "number",
+        "value": ""
+    },
+    "containerweight": 100,
+    "contentalignment": 1,
+    "id": "lblFavMerchantName5",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "iphone": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "isvisible": true,
+    "kuid": "f39f0ca397b94e8a89b1e2d575395588",
+    "name": "kony.ui.Label",
+    "paddinginpixel": false,
+    "parent": "flxFavMerchants5",
+    "pf": "frmBillPayNew",
+    "responsiveData": {
+        "b1": {},
+        "b2": {},
+        "b3": {
+            "isVisible": false
+        }
+    },
+    "tooltip": "",
+    "wType": "Label",
+    "zindex": 1
+}

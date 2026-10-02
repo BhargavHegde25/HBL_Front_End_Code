@@ -1,0 +1,63 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_right_": {
+        "type": "string",
+        "value": "20dp"
+    },
+    "_skin_": "sfbbba35ede4457b94eb681b72349b98",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "150dp"
+    },
+    "activeStateSkin": "sfbbba35ede4457b94eb681b72349b98",
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "desktopweb": {
+        "psp": {
+            "hoverSkin": "sfbbba35ede4457b94eb681b72349b98"
+        }
+    },
+    "disabledSkins": {},
+    "displaytext": true,
+    "focusskin": "s7ab6326aaf94c28b90b61fcb1b54547",
+    "id": "btnAgree",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "c45a9e91e7d44296b5ba06e1072480d9",
+    "name": "kony.ui.Button",
+    "parent": "flxButtons",
+    "pf": "frmPreTermsandCondition",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "texti18n": "i18n.TradeFinance.Accept",
+    "wType": "Button",
+    "zindex": 1
+}

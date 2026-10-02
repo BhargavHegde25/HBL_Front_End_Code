@@ -1,0 +1,74 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "sfbbba35ede4457b94eb681b72349b98",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "29dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "accessibilityconfig": {
+        "a11yHint": "Click on Log In to log into your account"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "desktopweb": {
+        "psp": {
+            "hoverSkin": "s81054b5e2b74f17a5261991df565427"
+        }
+    },
+    "displaytext": true,
+    "focusskin": "s5a4f67acd3e47b9be6d6910a7a6686f",
+    "id": "btnLogin",
+    "info": null,
+    "isvisible": true,
+    "kuid": "a73813f3d5824278bcafa8b6118321f8",
+    "name": "kony.ui.Button",
+    "parent": "flxSignIn",
+    "pf": "frmActivateThirdParties",
+    "responsiveData": {
+        "b1": {
+            "top": {
+                "type": "string",
+                "value": "16dp"
+            }
+        },
+        "b2": {
+            "top": {
+                "type": "string",
+                "value": "16dp"
+            }
+        },
+        "b3": {
+            "top": {
+                "type": "string",
+                "value": "16dp"
+            }
+        }
+    },
+    "texti18n": "i18n.login.login",
+    "tooltip": "",
+    "wType": "Button",
+    "zindex": 1
+}

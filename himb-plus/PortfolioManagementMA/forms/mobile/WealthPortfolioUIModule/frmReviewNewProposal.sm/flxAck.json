@@ -1,0 +1,74 @@
+{
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "92%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s50408e268584a5b88bb8cfac55a0459",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "allboxes": [],
+    "android": {
+        "top": {
+            "type": "string",
+            "value": "56dp"
+        }
+    },
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "children": [
+        "imgAck",
+        "lblAck",
+        "lblAcknowledgement",
+        "btnNavToPortfolioDetails"
+    ],
+    "clipbounds": false,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "flxAck",
+    "info": null,
+    "iphone": {
+        "top": {
+            "type": "string",
+            "value": "56dp"
+        }
+    },
+    "iscustomlayout": false,
+    "isvisible": false,
+    "kuid": "e8000e3aa7124d0cbb40f859bbea18b7",
+    "layouttype": 2,
+    "name": "kony.ui.FlexContainer",
+    "parent": "frmReviewNewProposal",
+    "pf": "frmReviewNewProposal",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1
+}

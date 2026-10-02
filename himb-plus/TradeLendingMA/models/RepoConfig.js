@@ -1,0 +1,1 @@
+{"table":"DrawdownRequests","db":"TradeLending","verbs":"true"},{"table":"RolloverRequests","db":"TradeLending","verbs":"true"},{"table":"LendingPaymentRequest","db":"TradeLending","verbs":"true"}

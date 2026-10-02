@@ -1,0 +1,58 @@
+{
+    "classname": "myStrategyDetails",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "gb54b4daa7ec434da4a26593cd874151",
+                    "paramList": [],
+                    "propertyKey": "setParam",
+                    "pw": {
+                        "displayName": "setParam",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "bc08ec5c892f4399bd4f1f03205fb4cd",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "cf511cd6093f4b948e6627daa66de8de",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "newUser",
+                    "pw": {
+                        "displayName": "newUser",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "bc08ec5c892f4399bd4f1f03205fb4cd",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.Infinity.OLB.PortfolioManagementMA",
+    "version": "1.0.0"
+}

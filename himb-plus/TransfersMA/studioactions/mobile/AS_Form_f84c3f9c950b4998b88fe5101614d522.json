@@ -1,0 +1,22 @@
+{
+    "AS_Form_f84c3f9c950b4998b88fe5101614d522": {
+        "id": "AS_Form_f84c3f9c950b4998b88fe5101614d522",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "CopyfrmEuropeStartDate",
+            "type": "forms",
+            "platform": null,
+            "KUID": "e3cdf110d52c4cbda11b0f3defe7dd90"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_init_b07ec42fbe1b4e3481c067f4e2085631",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.init();"
+        }]
+    }
+}

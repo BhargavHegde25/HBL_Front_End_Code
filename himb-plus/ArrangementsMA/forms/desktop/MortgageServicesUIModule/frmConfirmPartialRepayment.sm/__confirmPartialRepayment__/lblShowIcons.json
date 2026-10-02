@@ -1,0 +1,131 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizLabel",
+    "DNDConfig": null,
+    "__UDWInstanceModelForRender__": true,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "358dp"
+    },
+    "_margin_": [
+        1,
+        1,
+        1,
+        1
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s470609fcbbc417f80f4442c05b2210a",
+    "_text_": "************0723",
+    "_top_": {
+        "type": "string",
+        "value": "0"
+    },
+    "_width_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_wrapping_": 2,
+    "accessibilityconfig": {
+        "a11yARIA": {
+            "tabindex": -1
+        },
+        "tagName": "span"
+    },
+    "android": {
+        "textStyle": {
+            "letterSpacing": 0,
+            "strikeThrough": false
+        }
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "id": "lblShowIcons",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "iphone": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "f31c29808b05468d85df2b850e2c93ea",
+    "name": "kony.ui.Label",
+    "parent": "flxLoanAccount",
+    "pf": "frmConfirmPartialRepayment",
+    "responsiveData": {
+        "b1": {
+            "left": {
+                "type": "string",
+                "value": "480dp"
+            },
+            "text": "g",
+            "top": {
+                "type": "string",
+                "value": "4dp"
+            },
+            "width": {
+                "type": "string",
+                "value": "20dp"
+            }
+        },
+        "b2": {
+            "left": {
+                "type": "string",
+                "value": "480dp"
+            },
+            "skin": "s470609fcbbc417f80f4442c05b2210a",
+            "text": "h",
+            "top": {
+                "type": "string",
+                "value": "4dp"
+            },
+            "width": {
+                "type": "string",
+                "value": "20dp"
+            }
+        },
+        "b3": {
+            "left": {
+                "type": "string",
+                "value": "10dp"
+            },
+            "top": {
+                "type": "string",
+                "value": "25dp"
+            }
+        },
+        "b4": {
+            "left": {
+                "type": "string",
+                "value": "480dp"
+            },
+            "text": "g",
+            "top": {
+                "type": "string",
+                "value": "4dp"
+            },
+            "width": {
+                "type": "string",
+                "value": "20dp"
+            }
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "tooltip": "",
+    "wType": "Label"
+}

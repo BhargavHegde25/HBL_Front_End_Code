@@ -1,0 +1,22 @@
+{
+    "customComponent": {
+        "i18nSupported": true,
+        "id": "cwa831c055b5e547d7abb7a2b9a189fdd1",
+        "isOverride": false,
+        "konyWrapperFiles": [
+            "resources/thirdpartywidgets/widgetwrapper/tp-WealthPerformanceChart-wrapper.js"
+        ],
+        "libraryFiles": [  
+		    "resources/thirdpartywidgets/chartist/chartist.min.js",
+            "resources/thirdpartywidgets/chartist/chartist.min.css", 
+            "resources/thirdpartywidgets/chartist/wealthPerformanceChart.css",
+            "resources/thirdpartywidgets/chartist/wealthPerformanceChart.js"
+        ],
+        "libraryName": "chartist",
+        "marginSupported": true,
+        "name": "WealthPerformanceChart",
+        "paddingSupported": true,
+        "platformID": "0",
+        "property": []
+    }
+}

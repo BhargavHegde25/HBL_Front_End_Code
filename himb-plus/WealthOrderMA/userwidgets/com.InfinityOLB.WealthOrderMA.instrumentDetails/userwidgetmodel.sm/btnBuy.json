@@ -1,0 +1,73 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_bottom_": {
+        "type": "number",
+        "value": ""
+    },
+    "_height_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_i18n_text_": "i18n.wealth.Buy",
+    "_left_": {
+        "type": "string",
+        "value": "25dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_right_": {
+        "type": "number",
+        "value": ""
+    },
+    "_skin_": "s4fe0674a3c84b76a21524a90bad4282",
+    "_text_": "Buy",
+    "_top_": {
+        "type": "number",
+        "value": "10"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "42%"
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "number",
+        "value": ""
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "desktopweb": {
+        "psp": {
+            "hoverSkin": "s7ab6326aaf94c28b90b61fcb1b54547"
+        }
+    },
+    "displaytext": true,
+    "focusskin": "sfd0ce0d7f454c9f83c7e815a90a8a55",
+    "id": "btnBuy",
+    "info": null,
+    "isvisible": true,
+    "kuid": "fbc0895eb6544081a0ca80f980012246",
+    "name": "kony.ui.Button",
+    "parent": "flxButtons",
+    "pf": "userwidgetmodel",
+    "responsiveData": {
+        "b2": {
+            "i18n_text": "i18n.wealth.Buy"
+        }
+    },
+    "texti18n": "i18n.wealth.Buy",
+    "tooltip": "BUY",
+    "wType": "Button",
+    "zindex": 1
+}

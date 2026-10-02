@@ -1,0 +1,165 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "DNDConfig": null,
+    "_children_": [],
+    "_height_": {
+        "type": "string",
+        "value": "175px"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_render_": true,
+    "_skin_": "sdc143f0e5b64ae3a3f155f691c73fa7",
+    "_top_": {
+        "type": "string",
+        "value": "20dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "android": {},
+    "androidwearos": {},
+    "areflexpropsreferenced": false,
+    "canUpdateUI": true,
+    "clipbounds": false,
+    "containerweight": 0,
+    "dataDiffs": {
+        "banner": {
+            "__events__": {},
+            "__info__": {
+                "isRoot": true,
+                "kuid": "da44c90703574fd3888d6c665e8ec532",
+                "srcKUID": "5c360958c61b42a0935b86dfc3ce5105",
+                "wType": "FlexContainer"
+            },
+            "isVisible": false,
+            "responsiveData": {
+                "b1": {
+                    "top": {
+                        "type": "string",
+                        "value": "15dp"
+                    }
+                },
+                "b4": {
+                    "top": {
+                        "type": "string",
+                        "value": "15dp"
+                    }
+                }
+            },
+            "top": {
+                "Default": {
+                    "type": "string",
+                    "value": "20dp"
+                }
+            }
+        },
+        "flxBannerImage": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "ia5d2107b522457c8b020fe0d58f5728",
+                "srcKUID": "b0adb9399c2c408d945a3b14cc3d218f",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxBannerWrapper": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "gc99af133e444566a678914242cffd92",
+                "srcKUID": "000ac1c1175e499e9c9cab19c890c816",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxPagination": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "hfe75df4c5d547faa71a86d530c68ca6",
+                "srcKUID": "bbe16c7dbc264096a1ad818817a0da1a",
+                "wType": "FlexContainer"
+            },
+            "isVisible": false,
+            "responsiveData": {}
+        },
+        "flxSeparator": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "d2bd6c944f14468fb67f3f596ab6107f",
+                "srcKUID": "c02af6417b374e6092571227e09a2851",
+                "wType": "FlexContainer"
+            }
+        },
+        "imgBanner": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "e7ea6afd32c9447e92e5f16f6f80024a",
+                "srcKUID": "fb4f263eeedb422b993ec746be3838d2",
+                "wType": "Image"
+            },
+            "src": "nuo_banner_1.png"
+        },
+        "imgPaginationOne": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "i50adca5a6d84ae58072df7d34eb73c1",
+                "srcKUID": "c192839832344b9e94d758fb9bbcbb51",
+                "wType": "Image"
+            },
+            "src": "slider.png"
+        }
+    },
+    "desktopweb": {},
+    "id": "banner",
+    "info": null,
+    "ipad": {},
+    "iphone": {},
+    "isdatareferenced": false,
+    "isvisible": false,
+    "kuid": "da44c90703574fd3888d6c665e8ec532",
+    "layouttype": 4,
+    "masterType": 0,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "flxRightContainer",
+    "pf": "frmTopNews",
+    "responsiveData": {
+        "b1": {
+            "top": {
+                "type": "string",
+                "value": "15dp"
+            }
+        },
+        "b4": {
+            "top": {
+                "type": "string",
+                "value": "15dp"
+            }
+        }
+    },
+    "snaptogrid": true,
+    "sourceUserWidget": "5c360958c61b42a0935b86dfc3ce5105",
+    "spabb": {},
+    "tabrcandroid": {},
+    "vizProps": {
+        "hidewidgethierarchy": false
+    },
+    "vizprops": {
+        "hidewidgethierarchy": false
+    },
+    "wType": "UserWidgetInstance"
+}

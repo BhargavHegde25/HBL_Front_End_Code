@@ -1,0 +1,88 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_right_": {
+        "type": "string",
+        "value": "20dp"
+    },
+    "_skin_": "sbb254ec64344072940fb411d755530a",
+    "_text_": "Confirm",
+    "_top_": {
+        "type": "string",
+        "value": "36dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "18.80%"
+    },
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "sfd0ce0d7f454c9f83c7e815a90a8a55",
+    "id": "btnconfirm",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "j00cfa3a06f04d43a7337682c301ea9b",
+    "name": "kony.ui.Button",
+    "parent": "flxActions",
+    "pf": "frmOneTimePaymentConfirm",
+    "responsiveData": {
+        "b1": {
+            "right": {
+                "type": "string",
+                "value": "1%"
+            },
+            "width": {
+                "type": "string",
+                "value": "16%"
+            }
+        },
+        "b3": {
+            "centerY": {
+                "type": "string",
+                "value": ""
+            },
+            "top": {
+                "type": "string",
+                "value": "20dp"
+            },
+            "width": {
+                "type": "string",
+                "value": "95%"
+            }
+        },
+        "b4": {
+            "width": {
+                "type": "string",
+                "value": "150px"
+            }
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "texti18n": "i18n.transfers.Confirm",
+    "wType": "Button",
+    "zindex": 1
+}

@@ -1,0 +1,23 @@
+{
+    "AS_Form_afa5e50b8e2c4dabb17494b4fb8408c8": {
+        "id": "AS_Form_afa5e50b8e2c4dabb17494b4fb8408c8",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmInvestmentAcc",
+            "type": "forms",
+            "platform": null,
+            "KUID": "f1fde8928beb4193b1c81227ecd84895"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_init_edfcc7fc02fb4a5cae87cecda08ae0fd",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.init();",
+            "callbackType": null
+        }]
+    }
+}

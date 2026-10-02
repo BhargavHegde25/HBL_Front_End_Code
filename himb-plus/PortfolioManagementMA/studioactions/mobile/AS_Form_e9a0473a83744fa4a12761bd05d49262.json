@@ -1,0 +1,22 @@
+{
+    "AS_Form_e9a0473a83744fa4a12761bd05d49262": {
+        "id": "AS_Form_e9a0473a83744fa4a12761bd05d49262",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "CopyfrmToCurrency",
+            "type": "forms",
+            "platform": null,
+            "KUID": "e878c87cf4354b0ea3fe177ac60a1514"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_init_db352ec6d2064d209f5c8da70cf18484",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.init();"
+        }]
+    }
+}

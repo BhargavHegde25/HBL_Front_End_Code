@@ -1,0 +1,59 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "DNDConfig": null,
+    "_children_": [],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s24c92fc23b14f5484b693ee9b8a9b35",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 0,
+    "data": {
+        "GAobjectName": "DownloadOrderPDF",
+        "GAobjectServiceName": "WealthOrder",
+        "fieldsData": "{   \"One\": {     \"value\": \"tradeDate\",     \"type\": \"date\",     \"displayName\": \"{i.i18n.wealth.tradeDate}\",     \"default\": \"false\"   },   \"Two\": {     \"value\": \"orderType\",     \"type\": \"text\",     \"displayName\": \"{i.i18n.common.Type}\",     \"default\": \"false\"   },   \"Three\": {     \"value\": \"quantity\",     \"type\": \"textAmount\",     \"displayName\": \"{i.i18n.wealth.qty}\",     \"default\": \"false\"   },   \"Four\": {     \"value\": \"limitPrice\",     \"type\": \"normalAmount\",     \"currency\": \"instrumentCurrency\",     \"displayName\": \"{i.i18n.wealth.price}\",     \"default\": \"false\"   },   \"Five\": {     \"value\": \"exchangeRate\",     \"type\": \"textAmount\",         \"displayName\": \"{i.i18n.ForeignExchange.ExchangeRate}\",     \"default\": \"false\"   },   \"Six\": {     \"value\": \"instrumentAmount\",     \"type\": \"normalAmount\",     \"currency\": \"referenceCurrency\",     \"displayName\": \"{i.i18n.transfers.amountlabel}\",     \"default\": \"false\"   },   \"Seven\": {     \"value\": \"netAmount\",     \"type\": \"normalAmount\",     \"currency\": \"instrumentCurrency\",     \"displayName\": \"{i.i18n.wealth.instrumentAmount}\",     \"default\": \"false\"   },   \"Eight\": {     \"value\": \"valueDate\",     \"type\": \"date\",     \"displayName\": \"{i.i18n.wealth.valueDate}\",     \"default\": \"false\"   },   \"Nine\": {     \"value\": \"fees\",     \"type\": \"normalAmount\",     \"currency\": \"feesCurrency\",     \"displayName\": \"{i.i18n.wealth.fees}\",     \"default\": \"false\"   },   \"Ten\": {     \"value\": \"total\",     \"type\": \"normalAmount\",     \"currency\": \"referenceCurrency\",     \"displayName\": \"{i.i18n.wealth.total}\",     \"default\": \"false\"   } }",
+        "objName": "InstrumentDetails",
+        "objService": "WealthOrder"
+    },
+    "id": "viewTransactions",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "d2a4484e5b124c7db64b2a916dc42453",
+    "masterType": 1,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "flxWrapper",
+    "pf": "frmViewTransactions",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "sourceUserWidget": "cd8f11f71f524ec2a13e6943601e2fda",
+    "wType": "UserWidgetInstance"
+}

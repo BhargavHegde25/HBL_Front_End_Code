@@ -1,0 +1,53 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizRichText",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        2,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s980ab37fc7f4846bbbccc3e562084ea",
+    "_text_": "<center>Enter your <b>4-digit manual PIN</b> followed by the <b>6-digit system code</b> at the ATM to withdraw cash.\n</center>",
+    "_top_": {
+        "type": "string",
+        "value": "5dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "260dp"
+    },
+    "_wrapping_": 2,
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 4,
+    "id": "rtxCombineInfo",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "f77c8bee8f81473aa4e6bbf62bfd3063",
+    "linkskin": "s267c9e70f2f42218313d32683ef6503",
+    "name": "kony.ui.RichText",
+    "paddinginpixel": false,
+    "parent": "flxInfocont",
+    "pf": "frmCCAck",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "wType": "RichText",
+    "widgetalignment": 5,
+    "zindex": 1
+}

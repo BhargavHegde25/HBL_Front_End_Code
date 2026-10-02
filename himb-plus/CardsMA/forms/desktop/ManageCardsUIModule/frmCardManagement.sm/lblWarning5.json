@@ -1,0 +1,102 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizLabel",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "15dp"
+    },
+    "_margin_": [
+        1,
+        1,
+        1,
+        1
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "sd4d78ed1f53488ebaa197a143c055ce",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "25dp"
+    },
+    "_width_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_wrapping_": 2,
+    "accessibilityconfig": {
+        "a11yLabel": "Label"
+    },
+    "android": {
+        "textStyle": {
+            "letterSpacing": 0,
+            "strikeThrough": false
+        }
+    },
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 4,
+    "id": "lblWarning5",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "iphone": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "isvisible": true,
+    "kuid": "e4b93eb9f4d04066b34ac7e1cf30c8c6",
+    "name": "kony.ui.Label",
+    "parent": "flxWarning5",
+    "pf": "frmCardManagement",
+    "responsiveData": {
+        "b1": {
+            "top": {
+                "type": "string",
+                "value": "15dp"
+            }
+        },
+        "b2": {
+            "top": {
+                "type": "string",
+                "value": "15dp"
+            }
+        },
+        "b3": {
+            "top": {
+                "type": "string",
+                "value": "15dp"
+            },
+            "width": {
+                "type": "string",
+                "value": "96%"
+            }
+        },
+        "b4": {
+            "top": {
+                "type": "string",
+                "value": "15dp"
+            }
+        }
+    },
+    "texti18n": "i18n.HBL.Cards.MinTopUpAmount",
+    "tooltip": "",
+    "wType": "Label",
+    "zindex": 1
+}

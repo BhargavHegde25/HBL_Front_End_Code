@@ -1,0 +1,23 @@
+{
+    "AS_FlexContainer_j87fff7e10314540a0661cd07033b38e": {
+        "id": "AS_FlexContainer_j87fff7e10314540a0661cd07033b38e",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmAllocationCarousel",
+            "type": "forms",
+            "platform": null,
+            "KUID": "ccdb7ff5d11b4f0a86ca44c97860ab42"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_h2a42f35e95149e886d49097a279e0fc",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var ntf = new kony.mvc.Navigation(\"WealthPortfolioUIModule/frmPortfolioOverview\");\n        ntf.navigate();",
+            "parentId": null
+        }]
+    }
+}

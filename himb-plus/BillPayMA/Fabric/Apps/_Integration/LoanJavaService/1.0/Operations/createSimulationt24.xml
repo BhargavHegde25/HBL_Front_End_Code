@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service serviceGroup="" cachable="false" cacheduration="" customOperation="false" description="" endpoint="default" groupType="" id="createSimulationt24" passwordencrypted="false" security="authorized_app_user" type="javaConnector" smscode="" smsenabled="false">
+    <service-config>
+        <config-param api-version="" appid="" name="preprocessorname" value=""/>
+        <config-param api-version="" appid="" name="postprocessorname" value=""/>
+        <config-param api-version="" appid="" name="preprocessorJS" value=""/>
+        <config-param api-version="" appid="" name="postprocessorJS" value=""/>
+        <config-param api-version="" appid="" name="preprocessorRules" value=""/>
+        <config-param api-version="" appid="" name="postprocessorRules" value=""/>
+        <config-param api-version="" appid="" name="kony_http_supported_methods" value="POST"/>
+        <config-param api-version="" appid="" name="className" value="com.temenos.infinity.api.loanspayoff.javaservice.CreateSimulationOperation"/>
+        <config-param api-version="" appid="" name="methodName" value="createSimulationt24"/>
+        <config-param api-version="" appid="" name="sockettimeout" value=""/>
+    </service-config>
+    <service-input passthrough="false" isExtended="false">
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="arrangementId" order="" paramOrder="1" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="AA19079XRH8N" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="activityId" order="" paramOrder="2" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="LENDING-CALCULATE-PAYOFF" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="productId" order="" paramOrder="3" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="MORTGAGE" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="effectiveDate" order="" paramOrder="4" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="eyJraWQiOiJLT05ZIiwiYWxnIjoiUlMyNTYifQ.eyJhdWQiOiJJUklTIiwic3ViIjoiZGJwb2xidXNlciIsInJvbGVJZCI6IklORklOSVRZLlJFVEFJTCIsImlzcyI6IkZhYnJpYyIsImRieFVzZXJJZCI6IjEwMjY1NDAiLCJleHAiOjE2ODA3OTUwNzMsImlhdCI6MTU4MDc5MzI3MywidXNlcklkIjoiZGJwb2xidXNlciIsImp0aSI6Ijg0ZDBjOTY3LTA1NWItNDYyZS1iOWU5LTc2Y2UxZjYwM2M1MCJ9.ie5b4g-uwdzIpIVbmwhy4AE-z0kXRTOPR_46ZVndaxjCoRpBjqtsgp5SI3Ovlnt-K4xoolWXvwXk4pEmpbOrytuNLnJdI3QeoCp4jumu-68eznkLc9GHlnmNU7zbjtRjiNp-8zW1K_Rt6BCs-xcXKtKSzEdlya4LOqrtMgAdj16jIAO8uYRK9YKD0BZFSouRdP_cPJk0ahBuk14Xji4T_8q1VcFfXKqasggKwJWrPkckQ8fBnyOJpXSND3GZ2rpewGyHVxkHU8b3Qpvcw3cT34rlqCGZzhISDUzUeGBuEGPfZYdyH3hA0G_dwGlsGsSSjIQH-pe-NRSL9B4ws7NruA" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+    </service-input>
+    <service-output passthrough="false" isExtended="false"/>
+</service>

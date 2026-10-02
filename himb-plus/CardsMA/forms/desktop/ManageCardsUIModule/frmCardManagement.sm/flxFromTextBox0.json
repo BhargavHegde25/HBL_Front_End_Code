@@ -1,0 +1,84 @@
+{
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "sbbf84734f2c4b959b7b1846dee25101",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "accessibilityconfig": {
+        "a11yARIA": {
+            "tabindex": -1
+        }
+    },
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "children": [
+        "lblFromRecordField0",
+        "tbxFromAccount0",
+        "lblFromRecordFields0",
+        "lblConsenttypedropdown0",
+        "flxLoadingContainerFrom0"
+    ],
+    "clipbounds": true,
+    "containerweight": 100,
+    "desktopweb": {
+        "psp": {
+            "hoverSkin": "s89a867252bb4ccd9771a2970eccd5ce"
+        }
+    },
+    "disabledSkins": {},
+    "enablescrolling": true,
+    "hoverskin": "",
+    "id": "flxFromTextBox0",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "c43c0c5b9ddb46699e110989e5e862fc",
+    "layouttype": 2,
+    "name": "kony.ui.FlexContainer",
+    "parent": "flxFromAccountTextBoxAndIcon0",
+    "pf": "frmCardManagement",
+    "responsiveData": {
+        "b4": {
+            "desktopweb": {
+                "psp": {}
+            },
+            "disabledSkins": {}
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1,
+    "zindex": 1
+}

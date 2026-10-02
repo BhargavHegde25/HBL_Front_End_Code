@@ -1,0 +1,194 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "DNDConfig": null,
+    "_children_": [],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_right_": {
+        "type": "string",
+        "value": "20dp"
+    },
+    "_skin_": "s24c92fc23b14f5484b693ee9b8a9b35",
+    "_top_": {
+        "type": "string",
+        "value": "231dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "150dp"
+    },
+    "android": {},
+    "androidwearos": {},
+    "areflexpropsreferenced": false,
+    "autogrowmode": 1,
+    "canUpdateUI": true,
+    "clipbounds": false,
+    "containerweight": 0,
+    "dataDiffs": {
+        "flxWatchlistActionsSegment": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "ecab78e44e624879acb09f8a59aec19f",
+                "srcKUID": "i2cefef5dfcf4345ac7203ca11373558",
+                "wType": "FlexContainer"
+            }
+        },
+        "segWatchlistActionsMenu": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "cbd6e53224d44261a271e03196ffbb44",
+                "srcKUID": "bea4ef2c563f4c35b9118f6311e2012d",
+                "wType": "Segment"
+            },
+            "data": {
+                "desktop": [
+                    {
+                        "lblAction": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": "View"
+                        },
+                        "lblSeparator": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": "Separator"
+                        }
+                    },
+                    {
+                        "lblAction": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": "Buy"
+                        },
+                        "lblSeparator": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": "Separator"
+                        }
+                    },
+                    {
+                        "lblAction": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": "Sell"
+                        },
+                        "lblSeparator": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": "Separator"
+                        }
+                    },
+                    {
+                        "lblAction": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": "Delete"
+                        },
+                        "lblSeparator": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": "Separator"
+                        }
+                    }
+                ]
+            }
+        },
+        "watchlistActionsMenu": {
+            "__events__": {},
+            "__info__": {
+                "isRoot": true,
+                "kuid": "g25720216d094c26a09102a429aab0b9",
+                "srcKUID": "e61d92e197c84457ad8d3d5fad376e76",
+                "wType": "FlexContainer"
+            },
+            "isVisible": false,
+            "left": {
+                "Default": {
+                    "type": "string",
+                    "value": ""
+                }
+            },
+            "responsiveData": {
+                "b2": {
+                    "right": {
+                        "type": "string",
+                        "value": "10dp"
+                    },
+                    "top": {
+                        "type": "string",
+                        "value": "241dp"
+                    }
+                }
+            },
+            "right": {
+                "Default": {
+                    "type": "string",
+                    "value": "20dp"
+                }
+            },
+            "top": {
+                "Default": {
+                    "type": "string",
+                    "value": "231dp"
+                }
+            },
+            "width": {
+                "Default": {
+                    "type": "string",
+                    "value": "150dp"
+                }
+            },
+            "zIndex": {
+                "Default": 1000
+            }
+        }
+    },
+    "desktopweb": {},
+    "enablescrolling": true,
+    "id": "watchlistActionsComparativeMenuTablet",
+    "info": null,
+    "ipad": {},
+    "iphone": {},
+    "iscustomlayout": false,
+    "isdatareferenced": false,
+    "isvisible": false,
+    "kuid": "g25720216d094c26a09102a429aab0b9",
+    "layouttype": 4,
+    "masterType": 0,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "WatchlistExtended",
+    "pf": "userwidgetmodel",
+    "responsiveData": {
+        "b2": {
+            "right": {
+                "type": "string",
+                "value": "10dp"
+            },
+            "top": {
+                "type": "string",
+                "value": "241dp"
+            }
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "sourceUserWidget": "e61d92e197c84457ad8d3d5fad376e76",
+    "spabb": {},
+    "tabrcandroid": {},
+    "vizProps": {
+        "hidewidgethierarchy": false
+    },
+    "wType": "UserWidgetInstance",
+    "zindex": 1000
+}

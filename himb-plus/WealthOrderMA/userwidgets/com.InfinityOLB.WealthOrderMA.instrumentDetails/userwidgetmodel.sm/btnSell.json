@@ -1,0 +1,73 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_bottom_": {
+        "type": "number",
+        "value": ""
+    },
+    "_height_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_i18n_text_": "i18n.wealth.Sell",
+    "_left_": {
+        "type": "number",
+        "value": "20"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_right_": {
+        "type": "number",
+        "value": ""
+    },
+    "_skin_": "sa611611b2f24e93bcfd09e1606c0d86",
+    "_text_": "Sell",
+    "_top_": {
+        "type": "number",
+        "value": "10"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "42%"
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "number",
+        "value": ""
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "desktopweb": {
+        "psp": {
+            "hoverSkin": "s83729feaa224e359d660d5af05c4bac"
+        }
+    },
+    "displaytext": true,
+    "focusskin": "sb23593b913b4005add4a246020aa1cc",
+    "id": "btnSell",
+    "info": null,
+    "isvisible": true,
+    "kuid": "b7ab630363e94df8b24a691214463ce2",
+    "name": "kony.ui.Button",
+    "parent": "flxButtons",
+    "pf": "userwidgetmodel",
+    "responsiveData": {
+        "b2": {
+            "i18n_text": "i18n.wealth.Sell"
+        }
+    },
+    "texti18n": "i18n.wealth.Sell",
+    "tooltip": "SELL",
+    "wType": "Button",
+    "zindex": 1
+}

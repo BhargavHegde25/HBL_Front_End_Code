@@ -1,0 +1,97 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_left_": {
+        "type": "number",
+        "value": ""
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_right_": {
+        "type": "string",
+        "value": "170dp"
+    },
+    "_skin_": "sca205ab44a1441f8a0c21b925204133",
+    "_text_": "Cancel",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "150dp"
+    },
+    "canUpdateUI": true,
+    "centery": {
+        "type": "number",
+        "value": ""
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "desktopweb": {
+        "psp": {}
+    },
+    "disabledSkins": {},
+    "displaytext": true,
+    "focusskin": "sb1a3215c6f84754958ff4e7100cda7e",
+    "hoverskin": "",
+    "id": "btn1",
+    "ide_onClick": "AS_Button_ea85e8bfea6f4915806cd40e8b94fd23",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "c36cb390f0294ea38557efc9e5b59480",
+    "name": "kony.ui.Button",
+    "parent": "flxActionButtons",
+    "pf": "frmCBCLanding",
+    "responsiveData": {
+        "b1": {
+            "desktopweb": {
+                "psp": {
+                    "hoverSkin": "sec601b85de04c8fb730bf7f342463c1"
+                }
+            },
+            "disabledSkins": {}
+        },
+        "b3": {
+            "centerY": {
+                "type": "string",
+                "value": ""
+            },
+            "left": {
+                "type": "string",
+                "value": "1px"
+            },
+            "right": {
+                "type": "string",
+                "value": "0dp"
+            },
+            "top": {
+                "type": "string",
+                "value": "20dp"
+            },
+            "width": {
+                "type": "string",
+                "value": "100%"
+            }
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "wType": "Button",
+    "zindex": 1
+}

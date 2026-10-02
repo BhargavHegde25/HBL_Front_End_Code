@@ -1,0 +1,11 @@
+{
+    "ModuleName": "FormatUtilManager",
+    "ModuleType": "Manager",
+    "BusinessControllerConfig": {
+        "BusinessExtensions": [
+            "FormatUtilManager/BusinessControllers/BusinessController_Extension",
+            "FormatUtilManager/BusinessControllers/BusinessController_Extension_Mobile"
+        ],
+        "BusinessControllerClass": "FormatUtilManager/BusinessControllers/BusinessController"
+    }
+}

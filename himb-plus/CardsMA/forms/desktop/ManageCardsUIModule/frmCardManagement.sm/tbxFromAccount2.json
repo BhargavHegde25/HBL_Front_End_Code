@@ -1,0 +1,80 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizTextBox2",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        2,
+        0,
+        0,
+        0
+    ],
+    "_placeholder_": "Select the account",
+    "_skin_": "s1d01c60b2394c71afae4e8d6fa391c3",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "accessibilityconfig": {},
+    "autocapitalize": "none",
+    "autocomplete": false,
+    "autocorrect": false,
+    "autofilter": false,
+    "canUpdateUI": true,
+    "containerheight": "",
+    "containerheightmode": 1,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "desktopweb": {
+        "placeholderSkin": "s053121b48b6465cba0331cda4ce88d0",
+        "psp": {
+            "hoverSkin": "s1d01c60b2394c71afae4e8d6fa391c3"
+        }
+    },
+    "disabledSkins": {},
+    "focusskin": "s2218cd90f02431a9783e74e3bcecf16",
+    "id": "tbxFromAccount2",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": false,
+    "keyboardtype": "A",
+    "kuid": "a2598f467a8845bda042d8c73378ed2c",
+    "mode": "A",
+    "name": "kony.ui.TextBox2",
+    "parent": "flxFromTextBox2",
+    "pf": "frmCardManagement",
+    "placeholderskin": "s180492cae4147c891528a4d4b126af4",
+    "responsiveData": {
+        "b3": {
+            "desktopweb": {
+                "placeholderSkin": "s2fa3916bba54444a9903e226b31cded"
+            },
+            "placeholderSkin": "s2fa3916bba54444a9903e226b31cded"
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "securetextentry": false,
+    "textinputmode": "A",
+    "tooltip": "",
+    "viewtype": "default",
+    "wType": "TextField",
+    "zindex": 1
+}

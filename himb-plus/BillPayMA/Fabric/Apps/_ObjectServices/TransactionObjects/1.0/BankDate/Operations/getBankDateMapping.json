@@ -1,0 +1,46 @@
+{
+  "operationConfig" : {
+    "name" : "getBankDates9400",
+    "type" : "MappedToBackend",
+    "cachable" : false,
+    "smsEnabled" : false,
+    "security" : "authorized_app_user",
+    "responseEncoding" : "UTF-8",
+    "httpMethod" : "GET",
+    "decodeResponseBody" : false,
+    "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\">        <map inputpath=\"response_in\" outputpath=\"response_out\">         <map inputpath=\"body\" outputpath=\"date\">              <set-param inputpath=\"errmsg\" outputpath=\"errmsg\"/>                 <set-param inputpath=\"errcode\" outputpath=\"errcode\"/>                 <set-param inputpath=\"companyId\" outputpath=\"companyId\"/>                 <set-param inputpath=\"lastWorkingDate\" outputpath=\"lastWorkingDate\"/>                 <set-param inputpath=\"nextWorkingDate\" outputpath=\"nextWorkingDate\"/>                                    \t\t                         <set-param inputpath=\"currentWorkingDate\" outputpath=\"currentWorkingDate\"/>            </map>    </map></mapper>",
+    "iVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"request_in\",\"text\":\"BankDate\",\"xy\":\"150 100\"},{\"isGroup\":true,\"key\":\"request_out\",\"text\":\"dbpTransactionServices (1.0).getBankDates\",\"xy\":\"770 100\"}],\"linkDataArray\":[]}",
+    "oVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"response_out\",\"text\":\"BankDate\",\"xy\":\"770 100\"},{\"isGroup\":true,\"key\":\"response_in\",\"text\":\"dbpTransactionServices (1.0).getBankDates\",\"xy\":\"150 100\"}],\"linkDataArray\":[{\"from\":\"target\",\"to\":\"target:BankDate\",\"fromPort\":\"target\",\"toPort\":\"target:BankDate\",\"visible\":true,\"common\":false},{\"from\":\"target:BankDate\",\"to\":\"target:BankDate:t_p_fields\",\"fromPort\":\"target:BankDate\",\"toPort\":\"target:BankDate:t_p_fields\",\"visible\":true,\"common\":false},{\"from\":\"target:BankDate:t_p_fields\",\"to\":\"target:BankDate:errmsg:\",\"fromPort\":\"target:BankDate:t_p_fields\",\"toPort\":\"target:BankDate:errmsg:\",\"visible\":true,\"common\":false},{\"from\":\"target:BankDate:t_p_fields\",\"to\":\"target:BankDate:errcode:\",\"fromPort\":\"target:BankDate:t_p_fields\",\"toPort\":\"target:BankDate:errcode:\",\"visible\":true,\"common\":false},{\"from\":\"target:BankDate:t_p_fields\",\"to\":\"target:BankDate:companyId:\",\"fromPort\":\"target:BankDate:t_p_fields\",\"toPort\":\"target:BankDate:companyId:\",\"visible\":true,\"common\":false},{\"from\":\"target:BankDate:t_p_fields\",\"to\":\"target:BankDate:lastWorkingDate:\",\"fromPort\":\"target:BankDate:t_p_fields\",\"toPort\":\"target:BankDate:lastWorkingDate:\",\"visible\":true,\"common\":false},{\"from\":\"target:BankDate:t_p_fields\",\"to\":\"target:BankDate:nextWorkingDate:\",\"fromPort\":\"target:BankDate:t_p_fields\",\"toPort\":\"target:BankDate:nextWorkingDate:\",\"visible\":true,\"common\":false},{\"from\":\"target:BankDate:t_p_fields\",\"to\":\"target:BankDate:currentWorkingDate:\",\"fromPort\":\"target:BankDate:t_p_fields\",\"toPort\":\"target:BankDate:currentWorkingDate:\",\"visible\":true,\"common\":false}],\"blockCount\":{\"variableCount\":0},\"variableMap\":{},\"xmlMappingOverride\":true}",
+    "applyCommonMapping" : false,
+    "applyRequestCommonMapping" : true,
+    "applyResponseCommonMapping" : false,
+    "backendMeta" : {
+      "serviceName" : "dbpTransactionServices",
+      "serviceVersion" : "1.0",
+      "operationName" : "getBankDates"
+    },
+    "relationshipHierarchyMapping" : {
+      "name" : "BankDate",
+      "children" : [ ],
+      "actions" : { },
+      "selected" : true
+    },
+    "requestXmlMappingOverride" : false,
+    "responseXmlMappingOverride" : true,
+    "mapperData" : [ {
+      "name" : "base mapper1",
+      "order" : 1,
+      "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\">        <map inputpath=\"response_in\" outputpath=\"response_out\">         <map inputpath=\"body\" outputpath=\"date\">              <set-param inputpath=\"errmsg\" outputpath=\"errmsg\"/>                 <set-param inputpath=\"errcode\" outputpath=\"errcode\"/>                 <set-param inputpath=\"companyId\" outputpath=\"companyId\"/>                 <set-param inputpath=\"lastWorkingDate\" outputpath=\"lastWorkingDate\"/>                 <set-param inputpath=\"nextWorkingDate\" outputpath=\"nextWorkingDate\"/>                                    \t\t                         <set-param inputpath=\"currentWorkingDate\" outputpath=\"currentWorkingDate\"/>            </map>    </map></mapper>",
+      "iVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"request_in\",\"text\":\"BankDate\",\"xy\":\"150 100\"},{\"isGroup\":true,\"key\":\"request_out\",\"text\":\"dbpTransactionServices (1.0).getBankDates\",\"xy\":\"770 100\"}],\"linkDataArray\":[]}",
+      "oVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"response_out\",\"text\":\"BankDate\",\"xy\":\"770 100\"},{\"isGroup\":true,\"key\":\"response_in\",\"text\":\"dbpTransactionServices (1.0).getBankDates\",\"xy\":\"150 100\"}],\"linkDataArray\":[{\"from\":\"target\",\"to\":\"target:BankDate\",\"fromPort\":\"target\",\"toPort\":\"target:BankDate\",\"visible\":true,\"common\":false},{\"from\":\"target:BankDate\",\"to\":\"target:BankDate:t_p_fields\",\"fromPort\":\"target:BankDate\",\"toPort\":\"target:BankDate:t_p_fields\",\"visible\":true,\"common\":false},{\"from\":\"target:BankDate:t_p_fields\",\"to\":\"target:BankDate:errmsg:\",\"fromPort\":\"target:BankDate:t_p_fields\",\"toPort\":\"target:BankDate:errmsg:\",\"visible\":true,\"common\":false},{\"from\":\"target:BankDate:t_p_fields\",\"to\":\"target:BankDate:errcode:\",\"fromPort\":\"target:BankDate:t_p_fields\",\"toPort\":\"target:BankDate:errcode:\",\"visible\":true,\"common\":false},{\"from\":\"target:BankDate:t_p_fields\",\"to\":\"target:BankDate:companyId:\",\"fromPort\":\"target:BankDate:t_p_fields\",\"toPort\":\"target:BankDate:companyId:\",\"visible\":true,\"common\":false},{\"from\":\"target:BankDate:t_p_fields\",\"to\":\"target:BankDate:lastWorkingDate:\",\"fromPort\":\"target:BankDate:t_p_fields\",\"toPort\":\"target:BankDate:lastWorkingDate:\",\"visible\":true,\"common\":false},{\"from\":\"target:BankDate:t_p_fields\",\"to\":\"target:BankDate:nextWorkingDate:\",\"fromPort\":\"target:BankDate:t_p_fields\",\"toPort\":\"target:BankDate:nextWorkingDate:\",\"visible\":true,\"common\":false},{\"from\":\"target:BankDate:t_p_fields\",\"to\":\"target:BankDate:currentWorkingDate:\",\"fromPort\":\"target:BankDate:t_p_fields\",\"toPort\":\"target:BankDate:currentWorkingDate:\",\"visible\":true,\"common\":false}],\"blockCount\":{\"variableCount\":0},\"variableMap\":{},\"xmlMappingOverride\":true}",
+      "requestXmlMappingOverride" : false,
+      "responseXmlMappingOverride" : true,
+      "disabled" : false,
+      "applyCommonMapping" : false,
+      "applyRequestCommonMapping" : true,
+      "applyResponseCommonMapping" : false
+    } ]
+  },
+  "enableFrontendUrl" : false,
+  "customVerb" : false
+}

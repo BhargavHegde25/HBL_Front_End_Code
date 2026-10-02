@@ -1,0 +1,59 @@
+{
+  "@class": "com.kony.gen.viz.model.component.KVizButton",
+  "DNDConfig": null,
+  "_height_": {
+    "type": "ref",
+    "value": "preferred"
+  },
+  "_left_": {
+    "type": "string",
+    "value": "0dp"
+  },
+  "_margin_": [
+    6,
+    6,
+    6,
+    6
+  ],
+  "_padding_": [
+    0,
+    0,
+    0,
+    0
+  ],
+    "_skin_": "sdf2bcb34bfd44c589091d199b7d7e2b",
+  "_text_": "More",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+  "_width_": {
+    "type": "string",
+        "value": "100%"
+  },
+  "accessibilityconfig": {
+    "a11yLabel": "SUPPORT"
+  },
+  "canUpdateUI": true,
+  "containerweight": 100,
+  "contentalignment": 5,
+  "disabledSkins": {},
+  "displaytext": true,
+    "focusskin": "sdf2bcb34bfd44c589091d199b7d7e2b",
+  "id": "btnSupport",
+  "ide_onClick": "AS_Button_ddca20b68415486faf31bad9fd1fa798",
+  "info": null,
+  "iphone": {
+    "psp": {
+      "showProgressIndicator": false
+    }
+  },
+  "isvisible": true,
+  "kuid": "i224d189924c4e3986bbfb1153561d3f",
+  "name": "kony.ui.Button",
+  "parent": "flxSupportGroup",
+  "pf": "frmLogin",
+  "texti18n": "kony.tab.common.More",
+  "wType": "Button",
+    "zindex": 1
+}

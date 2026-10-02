@@ -1,0 +1,93 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_bottom_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_height_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": ""
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_right_": {
+        "type": "string",
+        "value": "196px"
+    },
+    "_skin_": "sa611611b2f24e93bcfd09e1606c0d86",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": ""
+    },
+    "_width_": {
+        "type": "string",
+        "value": "150px"
+    },
+    "accessibilityconfig": {
+        "a11yLabel": "Modify"
+    },
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": ""
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "desktopweb": {
+        "psp": {
+            "hoverSkin": "s4c88ea5040649419fa0156d555105d0"
+        }
+    },
+    "displaytext": true,
+    "focusskin": "sb23593b913b4005add4a246020aa1cc",
+    "id": "btnModifybtn",
+    "ide_onClick": "AS_Button_g6e364db63494107ab35957aa8acbb1d",
+    "info": null,
+    "isvisible": true,
+    "kuid": "g1d4d18897724032950fe74e49287bb3",
+    "name": "kony.ui.Button",
+    "parent": "flxButtons",
+    "pf": "frmBillPayNew",
+    "responsiveData": {
+        "b1": {},
+        "b2": {},
+        "b3": {
+            "bottom": {
+                "type": "string",
+                "value": "50dp"
+            },
+            "left": {
+                "type": "string",
+                "value": "2.50%"
+            },
+            "right": {
+                "type": "string",
+                "value": "25%"
+            },
+            "width": {
+                "type": "string",
+                "value": "95%"
+            }
+        }
+    },
+    "texti18n": "i18n.transfers.Modify",
+    "tooltip": "Modify",
+    "wType": "Button",
+    "zindex": 1
+}

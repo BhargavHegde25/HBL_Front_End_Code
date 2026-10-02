@@ -1,0 +1,79 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizLabel",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "20dp"
+    },
+    "_i18n_text_": "kony.olb.settings.accountsDashboard",
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        1,
+        1,
+        1,
+        1
+    ],
+    "_padding_": [
+        0,
+        0,
+        2,
+        0
+    ],
+    "_skin_": "s4adb862a1d741eaafba2145d8c99843",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_wrapping_": 2,
+    "accessibilityconfig": {
+        "a11yLabel": "Transfers:"
+    },
+    "android": {
+        "textStyle": {
+            "letterSpacing": 0,
+            "strikeThrough": false
+        }
+    },
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 4,
+    "id": "lblPrimaryAccountKey",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "iphone": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "isvisible": true,
+    "kuid": "i9dd0f7fe91741509ce7bafe5c8ae21f",
+    "name": "kony.ui.Label",
+    "paddinginpixel": false,
+    "parent": "flxPrimaryAccountKey",
+    "pf": "frmAccountSettingsSetDefaultAccount",
+    "responsiveData": {
+        "b2": {
+            "i18n_text": "kony.olb.settings.accountsDashboard"
+        }
+    },
+    "texti18n": "kony.olb.settings.accountsDashboard",
+    "tooltip": "",
+    "wType": "Label",
+    "zindex": 1
+}

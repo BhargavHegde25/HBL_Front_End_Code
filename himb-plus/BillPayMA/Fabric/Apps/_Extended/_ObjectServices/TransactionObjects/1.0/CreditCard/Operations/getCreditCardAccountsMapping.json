@@ -1,0 +1,22 @@
+{
+  "customCode" : {
+    "requestProcessorName" : "[]",
+    "responseProcessorName" : "[{\"name\":\"com.kony.transaction.postprocessors.GetCreditCardAccountsPostProcessor\",\"disabled\":false,\"isBase\":true}]"
+  },
+  "operationConfig" : {
+    "type" : "MappedToBackend",
+    "cachable" : false,
+    "smsEnabled" : false,
+    "security" : "authorized_app_user",
+    "responseEncoding" : "UTF-8",
+    "httpMethod" : "GET",
+    "decodeResponseBody" : false,
+    "applyCommonMapping" : true,
+    "applyRequestCommonMapping" : true,
+    "applyResponseCommonMapping" : true,
+    "requestXmlMappingOverride" : false,
+    "responseXmlMappingOverride" : false
+  },
+  "enableFrontendUrl" : false,
+  "customVerb" : false
+}

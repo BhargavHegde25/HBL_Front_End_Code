@@ -1,0 +1,93 @@
+{
+  "DNDConfig": null,
+  "_height_": {
+    "type": "string",
+    "value": "209dp"
+  },
+  "_left_": {
+    "type": "string",
+    "value": "0dp"
+  },
+  "_margin_": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "_orientation_": 6,
+  "_padding_": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "_percent_": true,
+  "_right_": {
+    "type": "number",
+    "value": ""
+  },
+  "_skin_": "s8c2468025a74766b9dfe03b8baf399c",
+  "_top_": {
+    "type": "string",
+    "value": "250dp"
+  },
+  "_width_": {
+    "type": "string",
+    "value": "42%"
+  },
+  "allboxes": [],
+  "canUpdateUI": true,
+  "children": [
+    "flxBeyondBanking",
+    "flxBeyondBankingDesc"
+  ],
+  "clipbounds": false,
+  "containerweight": 100,
+  "enablescrolling": true,
+  "id": "flxBeyondBankingContent",
+  "info": null,
+  "iscustomlayout": false,
+  "isvisible": true,
+  "kuid": "b50a9ce534634dc59ae1b4677ada9701",
+  "layouttype": 2,
+  "name": "kony.ui.FlexContainer",
+  "parent": "flxMain",
+  "pf": "frmLogin",
+  "responsiveData": {
+    "b1": {
+      "isVisible": true,
+      "left": {
+        "type": "string",
+        "value": "520dp"
+      },
+      "right": {
+        "type": "string",
+        "value": "25dp"
+      },
+      "top": {
+        "type": "string",
+        "value": "180dp"
+      },
+      "layoutType": 4,
+      "zIndex": 4
+    },
+    "b2": {
+      "isVisible": false
+    },
+    "b3": {
+      "isVisible": false
+    },
+    "b4": {
+      "isVisible": false
+    }
+  },
+  "retaincontentalignment": false,
+  "retainflexpositionproperties": false,
+  "retainflowhorizontalalignment": false,
+  "snapgridsize": 10,
+  "snaptogrid": true,
+  "wType": "FlexContainer",
+  "widgetalignment": 1,
+  "autogrowmode": 0,
+  "zindex": 1
+}

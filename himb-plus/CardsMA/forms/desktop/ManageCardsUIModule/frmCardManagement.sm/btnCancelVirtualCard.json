@@ -1,0 +1,116 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_bottom_": {
+        "type": "number",
+        "value": ""
+    },
+    "_height_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_i18n_text_": "i18n.transfers.Cancel",
+    "_left_": {
+        "type": "string",
+        "value": "0"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_right_": {
+        "type": "string",
+        "value": "20dp"
+    },
+    "_skin_": "sb950bc796154e88a6e0b3ebde988534",
+    "_text_": "Button",
+    "_width_": {
+        "type": "string",
+        "value": "260dp"
+    },
+    "accessibilityconfig": {
+        "a11yLabel": "Cancel"
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": ""
+    },
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "desktopweb": {
+        "psp": {
+            "hoverSkin": "sdbbccbd1d224646bda17c38efb9ccb8"
+        }
+    },
+    "disabledSkins": {
+        "focusSkin": "sf44d06ca8224832827ea7fdff757013"
+    },
+    "displaytext": true,
+    "hoverskin": "",
+    "id": "btnCancelVirtualCard",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "e9a8a0dd56ca482fa1c6166de9aca753",
+    "name": "kony.ui.Button",
+    "parent": "flxNewCardButton2",
+    "pf": "frmCardManagement",
+    "responsiveData": {
+        "b1": {
+            "width": {
+                "type": "string",
+                "value": "150dp"
+            }
+        },
+        "b2": {
+            "centerY": {
+                "type": "string",
+                "value": "50%"
+            },
+            "width": {
+                "type": "string",
+                "value": "150dp"
+            }
+        },
+        "b3": {
+            "bottom": {
+                "type": "string",
+                "value": "80dp"
+            },
+            "centerY": {
+                "type": "string",
+                "value": ""
+            },
+            "width": {
+                "type": "string",
+                "value": "98%"
+            }
+        },
+        "b4": {
+            "i18n_text": "i18n.transfers.Cancel",
+            "text": "",
+            "width": {
+                "type": "string",
+                "value": "150dp"
+            }
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "texti18n": "i18n.transfers.Cancel",
+    "wType": "Button",
+    "zindex": 5
+}

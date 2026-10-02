@@ -1,0 +1,99 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_right_": {
+        "type": "string",
+        "value": "35dp"
+    },
+    "_skin_": "s9042082e5f84feaa3bdfc6ca0a4943a",
+    "_text_": "Button",
+    "_top_": {
+        "type": "number",
+        "value": ""
+    },
+    "_width_": {
+        "type": "string",
+        "value": "140px"
+    },
+    "accessibilityconfig": {
+        "a11yARIA": {},
+        "a11yLabel": "Confirm"
+    },
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "desktopweb": {
+        "psp": {
+            "hoverSkin": "s81054b5e2b74f17a5261991df565427"
+        }
+    },
+    "disabledSkins": {
+        "focusSkin": "sf44d06ca8224832827ea7fdff757013"
+    },
+    "displaytext": true,
+    "id": "btnContinueTopUpConfirm",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "d6beef115daa40bbac641680a8cdfca8",
+    "name": "kony.ui.Button",
+    "parent": "flxConfirmButonsTopUp",
+    "pf": "frmCardManagement",
+    "responsiveData": {
+        "b2": {
+            "right": {
+                "type": "string",
+                "value": "20dp"
+            }
+        },
+        "b3": {
+            "centerY": {
+                "type": "string",
+                "value": ""
+            },
+            "right": {
+                "type": "string",
+                "value": "2.50%"
+            },
+            "top": {
+                "type": "string",
+                "value": "10dp"
+            }
+        },
+        "b4": {
+            "right": {
+                "type": "string",
+                "value": "30dp"
+            }
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "texti18n": "i18n.transfers.Confirm",
+    "wType": "Button",
+    "zindex": 5
+}

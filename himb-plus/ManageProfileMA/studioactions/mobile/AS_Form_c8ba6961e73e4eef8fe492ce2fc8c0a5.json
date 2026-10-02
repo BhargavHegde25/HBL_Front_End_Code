@@ -1,0 +1,23 @@
+{
+    "AS_Form_c8ba6961e73e4eef8fe492ce2fc8c0a5": {
+        "id": "AS_Form_c8ba6961e73e4eef8fe492ce2fc8c0a5",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "CopyfrmProfileSetTransactionPin",
+            "type": "forms",
+            "platform": null,
+            "KUID": "b786981b483144dd985cdb3c8965ab4b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_preShow_a0dc92838b17442881cbb1fbf05f6e2c",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.preShow();",
+            "callbackType": null
+        }]
+    }
+}

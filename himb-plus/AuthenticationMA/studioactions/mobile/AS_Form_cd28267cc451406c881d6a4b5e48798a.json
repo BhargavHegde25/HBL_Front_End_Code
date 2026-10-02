@@ -1,0 +1,23 @@
+{
+    "AS_Form_cd28267cc451406c881d6a4b5e48798a": {
+        "id": "AS_Form_cd28267cc451406c881d6a4b5e48798a",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmResetPasswordNew",
+            "type": "forms",
+            "platform": null,
+            "KUID": "bd493c42d4104cac9181686ad5b4719e"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_d609f80957724a328b14d45bdbfbe144",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.preShow();\r\n",
+            "parentId": null
+        }]
+    }
+}

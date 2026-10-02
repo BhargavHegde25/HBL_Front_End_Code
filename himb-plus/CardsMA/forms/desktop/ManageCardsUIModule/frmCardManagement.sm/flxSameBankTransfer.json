@@ -1,0 +1,89 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_bottom_": {
+        "type": "number",
+        "value": ""
+    },
+    "_height_": {
+        "type": "string",
+        "value": "50dp"
+    },
+    "_i18n_text_": null,
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "sdbbccbd1d224646bda17c38efb9ccb8",
+    "_text_": "New Same Bank Transfer",
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "accessibilityconfig": {
+        "a11yLabel": "Cancel"
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "desktopweb": {
+        "psp": {
+            "hoverSkin": "s0f5748e0ea447b99601a5b7d636357c"
+        }
+    },
+    "disabledSkins": {
+        "focusSkin": "sf44d06ca8224832827ea7fdff757013"
+    },
+    "displaytext": true,
+    "hoverskin": "",
+    "id": "flxSameBankTransfer",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "a3167a93a4e0410fbe303487e1ae55c9",
+    "name": "kony.ui.Button",
+    "parent": "flxSameBankTransferBtn",
+    "pf": "frmCardManagement",
+    "responsiveData": {
+        "b1": {},
+        "b2": {
+            "centerY": {
+                "type": "string",
+                "value": "50%"
+            }
+        },
+        "b3": {
+            "bottom": {
+                "type": "string",
+                "value": "80dp"
+            },
+            "centerY": {
+                "type": "string",
+                "value": ""
+            }
+        },
+        "b4": {
+            "i18n_text": "i18n.transfers.Cancel"
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "wType": "Button",
+    "zindex": 5
+}

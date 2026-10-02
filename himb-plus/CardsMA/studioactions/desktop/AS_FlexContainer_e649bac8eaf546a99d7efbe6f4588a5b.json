@@ -1,0 +1,35 @@
+{
+    "AS_FlexContainer_e649bac8eaf546a99d7efbe6f4588a5b": {
+        "id": "AS_FlexContainer_e649bac8eaf546a99d7efbe6f4588a5b",
+        "type": "ACTION_SEQUENCE",
+        "params": [
+            {
+                "datatype": "collection",
+                "name": "eventobject"
+            },
+            {
+                "datatype": "collection",
+                "name": "eventPayload"
+            },
+            {
+                "datatype": "collection",
+                "name": "context"
+            }
+        ],
+        "contextObj": {
+            "name": "ICSegAccountsDropdownList",
+            "type": "templates",
+            "platform": "",
+            "KUID": "b24a94a6a2924b398bd45b16129c031e"
+        },
+        "language": "js",
+        "actions": [
+            {
+                "id": "ADD_SNIPPET_ed2f0c1806db404388bcbc58b6fbf119",
+                "type": "ADD_SNIPPET",
+                "codeSnippet": "this.onKeyPressCallBack(eventobject, eventPayload, context);",
+                "parentId": null
+            }
+        ]
+    }
+}

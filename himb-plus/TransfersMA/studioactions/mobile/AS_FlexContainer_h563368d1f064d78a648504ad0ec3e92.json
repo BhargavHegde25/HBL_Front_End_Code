@@ -1,0 +1,51 @@
+{
+    "AS_FlexContainer_h563368d1f064d78a648504ad0ec3e92": {
+        "id": "AS_FlexContainer_h563368d1f064d78a648504ad0ec3e92",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmFundTransferMain",
+            "type": "forms",
+            "platform": "",
+            "KUID": "d8b8aea701de46ed98a79f677f45e8b0"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_f16a2489f46a4e578b7a5c487433540c",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "//this.setSegmentData(applicationManager.getAccountManager().getSavingsAndCheckingsAccounts());\r\nthis.view.flxPopupfrombottom.setVisibility(true);",
+            "parentId": null
+        }, {
+            "id": "MOVE_ACTION_fe688356a9274186af747e92b154c41b",
+            "type": "MOVE_ACTION",
+            "itemType": "FORM",
+            "itemId": "frmFundTransferMain",
+            "widgetId": "flxPopupcontainer",
+            "itemKUID": "d8b8aea701de46ed98a79f677f45e8b0",
+            "widgetKUID": "ecf718a70a4c4c7a941b6d1b4f15859f",
+            "wType": "FlexContainer",
+            "animationObject": {
+                "bottom": "-5%",
+                "anchorPoint": {},
+                "stepConfig": {
+                    "timingFunction": "kony.anim.EASE"
+                }
+            },
+            "config": {
+                "delay": "0",
+                "iterationCount": 1,
+                "fillMode": "kony.anim.FILL_MODE_FORWARDS",
+                "duration": "250"
+            },
+            "start": "Immediately",
+            "animationId": "MOVE_ACTION_fe688356a9274186af747e92b154c41b",
+            "displayAnimationId": "MOVE_ACTION_fe688356a9274186af747e92b154c41b",
+            "forkedPlatform": "all",
+            "parentId": null,
+            "widgetPath": "this.view.flxPopupcontainer"
+        }]
+    }
+}

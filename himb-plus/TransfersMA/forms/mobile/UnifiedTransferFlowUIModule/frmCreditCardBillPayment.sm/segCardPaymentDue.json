@@ -1,0 +1,144 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "_data_": [
+        {
+            "imgSelectPayment": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "radiobtninactive.png"
+            },
+            "lblCardPaymentDue": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "i18nkey": "i18n.DeviceRegistration.Active",
+                "text": "lbl1"
+            }
+        },
+        {
+            "imgSelectPayment": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "radiobtninactive.png"
+            },
+            "lblCardPaymentDue": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "i18nkey": "i18n.DeviceRegistration.Active",
+                "text": "lbl2"
+            }
+        },
+        {
+            "imgSelectPayment": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "radiobtninactive.png"
+            },
+            "lblCardPaymentDue": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "i18nkey": "i18n.DeviceRegistration.Active",
+                "text": "lbl3"
+            }
+        },
+        {
+            "imgSelectPayment": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "radiobtnactive.png"
+            },
+            "lblCardPaymentDue": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "i18nkey": "i18n.DeviceRegistration.Active",
+                "text": "lbl4"
+            }
+        }
+    ],
+    "_height_": {
+        "type": "string",
+        "value": "108dp"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "5dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "counter": "03",
+    "focusedindex": null,
+    "focuseditem": null,
+    "groupcells": false,
+    "hasSections": false,
+    "id": "segCardPaymentDue",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "e2397a7f96b64d5380fb97ac7c22118d",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "flxPaymentType",
+    "pf": "frmCreditCardBillPayment",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainselection": false,
+    "rowTemplateId": "cab82ab4848e4fe2af18d3606de4c965",
+    "rowcounter": 3,
+    "rowfocusskin": "sc4b9084826a4d5999f5c015b398a833",
+    "rowskin": "s0788003985a486a881c7f6e9ade5ee1",
+    "rowtemplate": "flxCardPaymentMain",
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionheaderskin": "s603610bb0994c5babe8e5400eae8399",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "separatorrequired": false,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "vizProps": {},
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "flxCardPaymentMain": "flxCardPaymentMain",
+        "flxMain": "flxMain",
+        "flxSeparator": "flxSeparator",
+        "imgSelectPayment": "imgSelectPayment",
+        "lblCardPaymentDue": "lblCardPaymentDue"
+    }
+}

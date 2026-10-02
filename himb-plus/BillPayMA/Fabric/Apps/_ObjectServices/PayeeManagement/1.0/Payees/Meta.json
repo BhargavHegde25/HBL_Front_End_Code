@@ -1,0 +1,19 @@
+{
+  "type" : "svcdriven",
+  "custom" : false,
+  "junction" : false,
+  "customizable" : false,
+  "verbs" : {
+    "getIntraInterBankPayee" : "getIntraInterBankPayeeMapping",
+    "createPayee" : "createPayeeMapping",
+    "getPayees" : "getPayeesMapping",
+    "editPayee" : "editPayeeMapping",
+    "getPayeesList" : "getPayeesListMapping",
+    "deletePayee" : "deletePayeeMapping"
+  },
+  "entityProperties" : {
+    "BatchMode" : "buffer",
+    "backendMeta" : { },
+    "designTimeBackendMeta" : { }
+  }
+}

@@ -1,0 +1,25 @@
+{
+    "AS_Browser_df499ba1f2ec43b6af96753a945717d4": {
+        "id": "AS_Browser_df499ba1f2ec43b6af96753a945717d4",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "collection",
+            "name": "params"
+        }],
+        "contextObj": {
+            "name": "userwidgetmodel",
+            "type": "userwidgets",
+            "KUID": "ua4b578dfc924de1902153eccdae0177"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_bc1caad9df7b41feb339e19958db44e1",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.setTabData();",
+            "parentId": null
+        }]
+    }
+}

@@ -1,0 +1,105 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_left_": {
+        "type": "number",
+        "value": ""
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_right_": {
+        "type": "string",
+        "value": "2%"
+    },
+    "_skin_": "sfbbba35ede4457b94eb681b72349b98",
+    "_text_": "",
+    "_top_": {
+        "type": "number",
+        "value": ""
+    },
+    "_width_": {
+        "type": "string",
+        "value": "18.80%"
+    },
+    "accessibilityconfig": {
+        "a11yLabel": "Modify"
+    },
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "desktopweb": {
+        "psp": {
+            "hoverSkin": "s7ab6326aaf94c28b90b61fcb1b54547"
+        }
+    },
+    "disabledSkins": {
+        "focusSkin": "sb23593b913b4005add4a246020aa1cc"
+    },
+    "displaytext": true,
+    "id": "btnEnquiry",
+    "ide_onClick": "AS_Button_g6e364db63494107ab35957aa8acbb1d",
+    "info": null,
+    "isvisible": true,
+    "kuid": "aec75d3033014a09876b3fd6afd39a30",
+    "name": "kony.ui.Button",
+    "parent": "flxBottom",
+    "pf": "frmBillPayNew",
+    "responsiveData": {
+        "b1": {
+            "width": {
+                "type": "string",
+                "value": "150dp"
+            }
+        },
+        "b2": {
+            "width": {
+                "type": "string",
+                "value": "150dp"
+            }
+        },
+        "b3": {
+            "centerX": {
+                "type": "string",
+                "value": "50%"
+            },
+            "centerY": {
+                "type": "string",
+                "value": ""
+            },
+            "left": {
+                "type": "string",
+                "value": "2.50%"
+            },
+            "top": {
+                "type": "string",
+                "value": "70dp"
+            },
+            "width": {
+                "type": "string",
+                "value": "95%"
+            }
+        }
+    },
+    "texti18n": "i18n.billpay.Inquiry",
+    "tooltip": "Modify",
+    "wType": "Button",
+    "zindex": 1
+}

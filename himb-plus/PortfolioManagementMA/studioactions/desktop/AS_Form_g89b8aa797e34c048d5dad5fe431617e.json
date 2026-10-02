@@ -1,0 +1,23 @@
+{
+    "AS_Form_g89b8aa797e34c048d5dad5fe431617e": {
+        "id": "AS_Form_g89b8aa797e34c048d5dad5fe431617e",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmInvestmentProposal",
+            "type": "forms",
+            "platform": "",
+            "KUID": "c74c1515ff8c4762959ac1ab4f869e41"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_f76558b415f64a659f044c9b8b706b1a",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.init();",
+            "parentId": null
+        }]
+    }
+}

@@ -1,0 +1,58 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizRichText",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "220dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s1a7d9e62f58455594fea7c4563ce38a",
+    "_text_": "<ul>\n<li>I have read and understood the following terms and conditions related with opening of Fixed Deposit and agree to abide by them.</li>\n <li>1. I declare that the FD request I submitted through Hi-MB is deemed as an authentic and valid request made by myself.</li><li>2. Terms and Conditions contained in the Account Opening Form relating to my account are also applicable to this Fixed Deposit mentioned above.</li><li>3. Loan against pledge of Fixed Deposit shall be provided at the prevailing interest rate published in the national level newspaper/Bank's website.</li><li>4. The Bank reserves the right to accept/reject the request to close the Fixed Deposit prior to maturity.</li<li>5. Premature closure of Fixed Deposit is subject to a penalty decided by the Bank from time to time.</li><li>6. Fixed Deposit Principal amount and the net interest will be credited to the above-mentioned operative account on maturity or as per the scheduled interest payment frequency.</li><li>7. Unless otherwise mentioned specifically, the nominee for the proceeds of this Fixed Deposit shall be the same as that of the above-mentioned operative account in case of death of the Fixed Deposit holder.</li>\n</ul>",
+    "_top_": {
+        "type": "string",
+        "value": "10dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_wrapping_": 2,
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": ""
+    },
+    "containerweight": 100,
+    "contentalignment": 4,
+    "id": "rtxTC",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": false,
+    "kuid": "a32c216a89684212bdcdc0b6025eff62",
+    "linkskin": "s3559477e0144a2489dde2834f9a49a1",
+    "name": "kony.ui.RichText",
+    "parent": "flxTermsNConditions",
+    "pf": "frmRequestFixedDeposit",
+    "responsiveData": {
+        "b1": {}
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "wType": "RichText",
+    "widgetalignment": 5
+}

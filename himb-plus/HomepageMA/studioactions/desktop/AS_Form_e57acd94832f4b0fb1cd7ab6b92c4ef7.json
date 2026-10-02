@@ -1,0 +1,23 @@
+{
+    "AS_Form_e57acd94832f4b0fb1cd7ab6b92c4ef7": {
+        "id": "AS_Form_e57acd94832f4b0fb1cd7ab6b92c4ef7",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmWealthCustomer",
+            "type": "forms",
+            "platform": null,
+            "KUID": "fc901103f2244d2f806ae29c3832c447"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ab06634c6d24476aadeb594d60024f76",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.init();",
+            "parentId": null
+        }]
+    }
+}

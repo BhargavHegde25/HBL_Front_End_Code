@@ -1,0 +1,26 @@
+{
+	"AS_BarButtonItem_e851a8e99d9742ae927155e429ab1f0a": {
+		"id": "AS_BarButtonItem_e851a8e99d9742ae927155e429ab1f0a",
+		"type": "ACTION_SEQUENCE",
+		"params": [
+			{
+				"datatype": "collection",
+				"name": "eventobject"
+			}
+		],
+		"language": "js",
+		"actions": [
+			{
+				"id": "INVOKE_FUNCTION__b129bc1d83f64d03bffdd407cde382c4",
+				"type": "INVOKE_FUNCTION",
+				"sequenceKUID": "onClickMoreOptions",
+				"display": "onClickMoreOptions",
+				"inputparams": [],
+				"parentId": null,
+				"callbackType": null,
+				"disabled": null,
+				"source": "controller"
+			}
+		]
+	}
+}

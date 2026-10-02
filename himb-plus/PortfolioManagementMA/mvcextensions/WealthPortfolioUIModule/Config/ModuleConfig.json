@@ -1,0 +1,169 @@
+{
+    "PresentationControllerConfig": {
+        "Default": {
+            "PresentationControllerClass": "WealthPortfolioUIModule/PresentationControllers/PresentationController",
+            "PresentationExtensions": []
+        },
+        "Mobile": {
+            "PresentationControllerClass": "WealthPortfolioUIModule/PresentationControllers/PresentationController_Mobile",
+            "PresentationExtensions": []
+        }
+    },
+    "Forms": {
+		"desktop": {
+            "frmPortfolioOverview": {
+                "Controller": "WealthPortfolioUIModule/frmPortfolioOverviewController",
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "FormName": "WealthPortfolioUIModule/frmPortfolioOverview",
+                "friendlyName": "frmPortfolioOverview"
+            }
+		},
+        "mobile": {
+            "frmAccounts": {
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "Controller": "WealthPortfolioUIModule/frmAccountsController",
+                "FormName": "WealthPortfolioUIModule/frmAccounts",
+                "friendlyName": "frmAccounts"
+            },
+            "frmActivityDetails": {
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "Controller": "WealthPortfolioUIModule/frmActivityDetailsController",
+                "FormName": "WealthPortfolioUIModule/frmActivityDetails",
+                "friendlyName": "frmActivityDetails"
+            },
+            "frmBenchmark": {
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "Controller": "WealthPortfolioUIModule/frmBenchmarkController",
+                "FormName": "WealthPortfolioUIModule/frmBenchmark",
+                "friendlyName": "frmBenchmark"
+            },
+            "frmCashAccounts": {
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "Controller": "WealthPortfolioUIModule/frmCashAccountsController",
+                "FormName": "WealthPortfolioUIModule/frmCashAccounts",
+                "friendlyName": "frmCashAccounts"
+            },
+            "frmDateRange": {
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "Controller": "WealthPortfolioUIModule/frmDateRangeController",
+                "FormName": "WealthPortfolioUIModule/frmDateRange",
+                "friendlyName": "frmDateRange"
+            },
+            "frmHoldings": {
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "Controller": "WealthPortfolioUIModule/frmHoldingsController",
+                "FormName": "WealthPortfolioUIModule/frmHoldings",
+                "friendlyName": "frmHoldings"
+            },
+            "frmInstrumentSearch": {
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "Controller": "WealthPortfolioUIModule/frmInstrumentSearchController",
+                "FormName": "WealthPortfolioUIModule/frmInstrumentSearch",
+                "friendlyName": "frmInstrumentSearch"
+            },
+            "frmJointAccount": {
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "Controller": "WealthPortfolioUIModule/frmJointAccountController",
+                "FormName": "WealthPortfolioUIModule/frmJointAccount",
+                "friendlyName": "frmJointAccount"
+            },
+            "frmOrders": {
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "Controller": "WealthPortfolioUIModule/frmOrdersController",
+                "FormName": "WealthPortfolioUIModule/frmOrders",
+                "friendlyName": "frmOrders"
+            },
+            "frmPerformance": {
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "Controller": "WealthPortfolioUIModule/frmPerformanceController",
+                "FormName": "WealthPortfolioUIModule/frmPerformance",
+                "friendlyName": "frmPerformance"
+            },
+            "frmPortfolioDetails": {
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "Controller": "WealthPortfolioUIModule/frmPortfolioDetailsController",
+                "FormName": "WealthPortfolioUIModule/frmPortfolioDetails",
+                "friendlyName": "frmPortfolioDetails"
+            },
+            "frmReport": {
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "Controller": "WealthPortfolioUIModule/frmReportController",
+                "FormName": "WealthPortfolioUIModule/frmReport",
+                "friendlyName": "frmReport"
+            },
+            "frmSortBy": {
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "Controller": "WealthPortfolioUIModule/frmSortByController",
+                "FormName": "WealthPortfolioUIModule/frmSortBy",
+                "friendlyName": "frmSortBy"
+            },
+            "frmTransaction": {
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "Controller": "WealthPortfolioUIModule/frmTransactionController",
+                "FormName": "WealthPortfolioUIModule/frmTransaction",
+                "friendlyName": "frmTransaction"
+            },
+            "frmViewOpenOrderDetails": {
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "Controller": "WealthPortfolioUIModule/frmViewOpenOrderDetailsController",
+                "FormName": "WealthPortfolioUIModule/frmViewOpenOrderDetails",
+                "friendlyName": "frmViewOpenOrderDetails"
+            },
+            "frmViewHistoryOrderDetails": {
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "Controller": "WealthPortfolioUIModule/frmViewHistoryOrderDetailsController",
+                "FormName": "WealthPortfolioUIModule/frmViewHistoryOrderDetails",
+                "friendlyName": "frmViewHistoryOrderDetails"
+            },
+            "frmViewTransactionDetails": {
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "Controller": "WealthPortfolioUIModule/frmViewTransactionDetailsController",
+                "FormName": "WealthPortfolioUIModule/frmViewTransactionDetails",
+                "friendlyName": "frmViewTransactionDetails"
+            },
+            "frmHealthCheck": {
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "Controller": "WealthPortfolioUIModule/frmHealthCheckController",
+                "FormName": "WealthPortfolioUIModule/frmHealthCheck",
+                "friendlyName": "frmHealthCheck"
+            },
+            
+            "frmChangeStrategy": {
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "Controller": "WealthPortfolioUIModule/frmChangeStrategyController",
+                "FormName": "WealthPortfolioUIModule/frmChangeStrategy",
+                "friendlyName": "frmChangeStrategy"
+            },
+            
+            "frmChangeStrAck": {
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "Controller": "WealthPortfolioUIModule/frmChangeStrAckController",
+                "FormName": "WealthPortfolioUIModule/frmChangeStrAck",
+                "friendlyName": "frmChangeStrAck"
+            }
+        }
+    },
+    "ModuleType": "UIModule",
+    "ModuleName": "WealthPortfolioUIModule"
+}

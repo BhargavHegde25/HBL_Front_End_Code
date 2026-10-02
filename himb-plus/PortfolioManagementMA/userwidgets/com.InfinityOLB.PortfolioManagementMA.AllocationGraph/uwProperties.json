@@ -1,0 +1,68 @@
+{
+    "classname": "AllocationGraph",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "cc9e074891224123ac3929c30e630aa2",
+                    "paramList": [],
+                    "propertyKey": "setData",
+                    "pw": {
+                        "displayName": "setData",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "bc4ed177ddfa43dc94563c8c32d5086a",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "b0bbecef5379425e87bad6cef9b92e26",
+                    "paramList": [],
+                    "propertyKey": "checkVisibility",
+                    "pw": {
+                        "displayName": "checkVisibility",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "bc4ed177ddfa43dc94563c8c32d5086a",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "d78002e3ec6e4be8b239c969eb03126a",
+                    "paramList": [],
+                    "propertyKey": "setLegendHeight",
+                    "pw": {
+                        "displayName": "setLegendHeight",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "bc4ed177ddfa43dc94563c8c32d5086a",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfinityOLB.PortfolioManagementMA",
+    "version": "1.0.0"
+}

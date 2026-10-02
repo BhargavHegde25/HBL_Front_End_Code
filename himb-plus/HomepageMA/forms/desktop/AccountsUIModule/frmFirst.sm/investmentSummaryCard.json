@@ -1,0 +1,498 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "DNDConfig": null,
+    "_children_": [],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_right_": {
+        "type": "number",
+        "value": ""
+    },
+    "_skin_": "sdc143f0e5b64ae3a3f155f691c73fa7",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "android": {},
+    "androidwearos": {},
+    "areflexpropsreferenced": false,
+    "autogrowmode": 1,
+    "canUpdateUI": true,
+    "clipbounds": true,
+    "containerweight": 0,
+    "dataDiffs": {
+        "chartInvestmentSummary": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "bb953affb0d74407aebdc546015b7a26",
+                "srcKUID": "i2bcf21f31064fb9abd5b0043e323cb7",
+                "wType": "Browser"
+            },
+            "responsiveData": {},
+            "right": {
+                "Default": {
+                    "type": "string",
+                    "value": ""
+                }
+            }
+        },
+        "flxAccountDetails": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "ecd254adca4941eaba544f96463e0a41",
+                "srcKUID": "ee135a42a0414196972b78936f8ea457",
+                "wType": "FlexScrollContainer"
+            },
+            "height": {
+                "Default": {
+                    "type": "ref",
+                    "value": "preferred"
+                }
+            },
+            "responsiveData": {}
+        },
+        "flxMarketValue": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "j0ad078b81cc4ae189fe25d6f8a7e35b",
+                "srcKUID": "a9cc9438216544af9a650cd571036b1a",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxPeriodChooser": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "he8de8761a3540ca81c252409ab89886",
+                "srcKUID": "ad7b2632ab03434780282e973f43520f",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxPeriodSelector": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "e2d4e3484cc14ccb8d487046d1c27553",
+                "srcKUID": "e9c20464e2f94eeaabb1919f7d8b2b2e",
+                "wType": "FlexContainer"
+            },
+            "layoutType": 2,
+            "responsiveData": {}
+        },
+        "flxProfitLoss": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "g01eb1a3e88c4363bef229e51f3b040e",
+                "srcKUID": "j9b98c7f269540f8a966971c3463bbe3",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxSelector1": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "fb7d05e916bc436a9a94954c9927fe38",
+                "srcKUID": "iae744f505ef404faf923002caaa0410",
+                "wType": "FlexContainer"
+            },
+            "isVisible": true,
+            "responsiveData": {}
+        },
+        "flxSelector2": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "j9414006ecee4006a5a82f6fb99a88fb",
+                "srcKUID": "bdea18db38b842309b65726eb456ac27",
+                "wType": "FlexContainer"
+            },
+            "left": {
+                "Default": {
+                    "type": "string",
+                    "value": "25%"
+                }
+            },
+            "responsiveData": {}
+        },
+        "flxSelector3": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "b42ce582f61c415ab438d45412066c6c",
+                "srcKUID": "ga64c921d9e842e998c9452c53a1f79f",
+                "wType": "FlexContainer"
+            },
+            "left": {
+                "Default": {
+                    "type": "string",
+                    "value": "50%"
+                }
+            },
+            "responsiveData": {}
+        },
+        "flxSelector4": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "f40c0723c8194819b2ad832d444b5adc",
+                "srcKUID": "f6709b4070274ff8813e7c8b08b01932",
+                "wType": "FlexContainer"
+            },
+            "left": {
+                "Default": {
+                    "type": "string",
+                    "value": "75%"
+                }
+            },
+            "responsiveData": {}
+        },
+        "flxSeparator1": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "a170263216a34c1fb897da96944443b1",
+                "srcKUID": "e656044e1019402fbe3ceba7c1d6b2af",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxSeparator2": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "c919d96560444fdaa702aeb868686fcf",
+                "srcKUID": "c7877b68e53b4445a4b0be9c516c5f97",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxSeparator3": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "a0f5648161eb44aeba892d891f9f9dca",
+                "srcKUID": "f19a54b6b6774821a69d2bb0addd4b7e",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxTitle": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "he3bfef698e7466daee7e9aa96107c28",
+                "srcKUID": "j8efb22f40f341f18f2ec96c1d2ec1c3",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxTodayPL": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "bd33447655e54f3bb74ec2600fcf866f",
+                "srcKUID": "f9dfff28dd454b2a8b04799b0a060583",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxTopHeader": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "d91cea76e07e48229ce8fee44aadc532",
+                "srcKUID": "f8fc8462649d4546b931924f998a2a64",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxUnrealisedPL": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "ea62d848616544cb92eca399e7c2f17d",
+                "srcKUID": "g363a4ca0c484128b5a24a5b74849fc9",
+                "wType": "FlexContainer"
+            }
+        },
+        "investmentSummaryCard": {
+            "__events__": {},
+            "__info__": {
+                "isRoot": true,
+                "kuid": "j57d67e0cca94d3690b8ca675d20b671",
+                "srcKUID": "af87facb3f05495e88d9c8c35ff558b5",
+                "wType": "FlexContainer"
+            },
+            "isVisible": false,
+            "left": {
+                "Default": {
+                    "type": "string",
+                    "value": "0dp"
+                }
+            },
+            "responsiveData": {
+                "b3": {
+                    "left": {
+                        "type": "string",
+                        "value": "10dp"
+                    },
+                    "right": {
+                        "type": "string",
+                        "value": "10dp"
+                    },
+                    "width": {
+                        "type": "ref",
+                        "value": "preferred"
+                    }
+                }
+            },
+            "right": {
+                "Default": {
+                    "type": "number",
+                    "value": ""
+                }
+            },
+            "width": {
+                "Default": {
+                    "type": "string",
+                    "value": "100%"
+                }
+            }
+        },
+        "lblMarketValue": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "aa65ccfb59464fd49a2010327944c9e2",
+                "srcKUID": "f421ba21b5a54dc495caeae2dac3b4d7",
+                "wType": "Label"
+            }
+        },
+        "lblPeriodOption1": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "e3aaad8bce6248a586fdd63ffea54ec9",
+                "srcKUID": "d8194471b6e84fdf873998948858c39a",
+                "wType": "Label"
+            }
+        },
+        "lblPeriodOption2": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "e8d2d8c4a40342e98e6b7db97593ed4c",
+                "srcKUID": "dbd3de3a4d3f401594064ed5972427dc",
+                "wType": "Label"
+            }
+        },
+        "lblPeriodOption3": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "bdbb12c540744fb48f4b121dbb55ad78",
+                "srcKUID": "ee6b469beedd461e8a8d89c6f5c99766",
+                "wType": "Label"
+            }
+        },
+        "lblPeriodOption4": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "afca63988a204bcba7cd67fc201de1c5",
+                "srcKUID": "d18602fa6b944d869bf092ef4cb5bc13",
+                "wType": "Label"
+            }
+        },
+        "lblTilte": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "be53638ee07b4317a03b3132ce30d644",
+                "srcKUID": "j76b726e187148a48839c3c7474857c0",
+                "wType": "Label"
+            }
+        },
+        "lblTodayPL": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "ie3861e34d3849b78157588fabc60b61",
+                "srcKUID": "g7d89e5290a74bfc964c06dd96a56c92",
+                "wType": "Label"
+            }
+        },
+        "lblTodayPLValue": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "h04538c82b9b4de398104c3693fd8856",
+                "srcKUID": "ea8f26e57527472ca93fd7fee4a5808f",
+                "wType": "Label"
+            }
+        },
+        "lblUnrealisedPLValue": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "e5419afdc191437cbf7e144d34cf21a9",
+                "srcKUID": "af9369b2b5274a11af79b0fbdc1f4de9",
+                "wType": "Label"
+            }
+        },
+        "lblValueMarketValue": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "add4a00ed8a843f29a31ae5e25e37ec7",
+                "srcKUID": "e8e61947a3e9494197827bad4866991c",
+                "wType": "Label"
+            }
+        },
+        "lblVerticalSepeartor": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "f419265bdaa44022b284d5814bdf431e",
+                "srcKUID": "b92c1e4dc36e4a4284b6b2b41ee0bdce",
+                "wType": "Label"
+            }
+        },
+        "lbllUnrealisedPL": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "eda63b01361b4db188d438baf7cf8356",
+                "srcKUID": "a96b542ddf38409292488bdc8d2cc805",
+                "wType": "Label"
+            }
+        },
+        "segInvestmentAccountsList": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "ce79880daab84ba895c10e6e9add6998",
+                "srcKUID": "a2a1754a89ac4a62873842216bed6057",
+                "wType": "Segment"
+            },
+            "data": {
+                "desktop": [
+                    {
+                        "imgBankLogo": {
+                            "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                            "src": "bank_icon_citi.png"
+                        },
+                        "lblAccountBalance": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": "$38,300.00"
+                        },
+                        "lblAccountName": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": "Investment Account.. .. 2235"
+                        },
+                        "lblInvestmentLogo": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": " Investment "
+                        },
+                        "lblJointAccountLogo": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": " Investment "
+                        },
+                        "lblProfitBalance": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": "+$12.22 (+0.90%)"
+                        }
+                    },
+                    {
+                        "imgBankLogo": {
+                            "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                            "src": "bank_icon_citi.png"
+                        },
+                        "lblAccountBalance": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": "$6,286.00"
+                        },
+                        "lblAccountName": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": "Investment Account.. .. 9844"
+                        },
+                        "lblInvestmentLogo": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": " Investment "
+                        },
+                        "lblJointAccountLogo": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": " Investment "
+                        },
+                        "lblProfitBalance": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": "+$12.22 (+0.90%)"
+                        }
+                    },
+                    {
+                        "imgBankLogo": {
+                            "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                            "src": "bank_icon_citi.png"
+                        },
+                        "lblAccountBalance": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": "$5,746.00"
+                        },
+                        "lblAccountName": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": "Investment Account.. .. 2202"
+                        },
+                        "lblInvestmentLogo": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": " Investment "
+                        },
+                        "lblJointAccountLogo": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": " Investment "
+                        },
+                        "lblProfitBalance": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": "+$12.22 (+0.90%)"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "desktopweb": {},
+    "enablescrolling": true,
+    "id": "investmentSummaryCard",
+    "info": null,
+    "ipad": {},
+    "iphone": {},
+    "iscustomlayout": false,
+    "isdatareferenced": false,
+    "issegmentchild": false,
+    "isvisible": false,
+    "kuid": "j57d67e0cca94d3690b8ca675d20b671",
+    "layouttype": 4,
+    "masterType": 0,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "flxInvestmentSummaryContainer",
+    "pf": "frmFirst",
+    "responsiveData": {
+        "b3": {
+            "left": {
+                "type": "string",
+                "value": "10dp"
+            },
+            "right": {
+                "type": "string",
+                "value": "10dp"
+            },
+            "width": {
+                "type": "ref",
+                "value": "preferred"
+            }
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "sourceUserWidget": "af87facb3f05495e88d9c8c35ff558b5",
+    "spabb": {},
+    "tabrcandroid": {},
+    "vizProps": {
+        "hidewidgethierarchy": false
+    },
+    "wType": "UserWidgetInstance"
+}

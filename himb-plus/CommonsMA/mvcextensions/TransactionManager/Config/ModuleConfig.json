@@ -1,0 +1,10 @@
+{
+    "ModuleName": "TransactionManager",
+	"ModuleType": "Manager",
+    "BusinessControllerConfig": {
+        "BusinessExtensions": [
+            "TransactionManager/BusinessControllers/BusinessController_Extension_Mobile"
+        ],
+        "BusinessControllerClass": "TransactionManager/BusinessControllers/BusinessController"
+    }
+}

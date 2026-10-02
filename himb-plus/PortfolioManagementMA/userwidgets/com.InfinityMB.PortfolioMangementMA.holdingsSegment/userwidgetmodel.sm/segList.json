@@ -1,0 +1,252 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "_data_": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+    ],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "1dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "autogrowmode": 1,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "counter": "00",
+    "focusedindex": null,
+    "focuseditem": null,
+    "groupcells": false,
+    "hasSections": false,
+    "id": "segList",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "indicator": "none"
+        }
+    },
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "fac30b6b3a8242b59ed9ad4480285340",
+    "masterdata": {},
+    "mobile": {
+        "_data_": [
+            {
+                "imgChevron": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "more_detail.png"
+                },
+                "imgLogo": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "imagedrag.png"
+                },
+                "imgStatus": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "activegreendot.png"
+                },
+                "lblAverageCostKey": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "i18nkey": "i18n.wealth.avgCost",
+                    "text": "Avg.Cost"
+                },
+                "lblAverageCostValue": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "$3,333.33"
+                },
+                "lblId": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "US02079K1079 | NASDAQ"
+                },
+                "lblLatestPriceKey": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "i18nkey": "i18n.wealth.latestPricemb",
+                    "text": "Latest Price:"
+                },
+                "lblLatestPriceValue": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "$1,11111"
+                },
+                "lblMarketValKey": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "i18nkey": "i18n.wealth.mktValue",
+                    "text": "Mkt Value:"
+                },
+                "lblMarketValValue": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "$1,111,11"
+                },
+                "lblName": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Alphabet C class"
+                },
+                "lblPandLKey": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "i18nkey": "i18n.wealth.pl",
+                    "text": "P&L:"
+                },
+                "lblPandLValue": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "+$400.77"
+                },
+                "lblQtyKey": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "i18nkey": "i18n.wealth.qtymb",
+                    "text": ""
+                },
+                "lblQtyValue": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "2"
+                },
+                "lblStatus": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Open"
+                },
+                "lblStatusKey": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Status:"
+                }
+            }
+        ],
+        "rowTemplateId": "h6276da8249841aeb196d0b2bbe0f492",
+        "rowtemplate": "flxsegHoldings",
+        "selectionBehaviorConfig": {},
+        "widgetdatamap": {
+            "flxAverageCostValue": "flxAverageCostValue",
+            "flxBottomBorder": "flxBottomBorder",
+            "flxClick": "flxClick",
+            "flxLatestPrice": "flxLatestPrice",
+            "flxMarket": "flxMarket",
+            "flxPandL": "flxPandL",
+            "flxQty": "flxQty",
+            "flxRowFour": "flxRowFour",
+            "flxRowOne": "flxRowOne",
+            "flxRowThree": "flxRowThree",
+            "flxRowTwo": "flxRowTwo",
+            "flxStatus": "flxStatus",
+            "flxsegHoldings": "flxsegHoldings",
+            "imgChevron": "imgChevron",
+            "imgLogo": "imgLogo",
+            "imgStatus": "imgStatus",
+            "lblAverageCostKey": "lblAverageCostKey",
+            "lblAverageCostValue": "lblAverageCostValue",
+            "lblId": "lblId",
+            "lblLatestPriceKey": "lblLatestPriceKey",
+            "lblLatestPriceValue": "lblLatestPriceValue",
+            "lblMarketValKey": "lblMarketValKey",
+            "lblMarketValValue": "lblMarketValValue",
+            "lblName": "lblName",
+            "lblPandLKey": "lblPandLKey",
+            "lblPandLValue": "lblPandLValue",
+            "lblQtyKey": "lblQtyKey",
+            "lblQtyValue": "lblQtyValue",
+            "lblStatus": "lblStatus",
+            "lblStatusKey": "lblStatusKey"
+        }
+    },
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "holdingsSegment",
+    "pf": "userwidgetmodel",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainselection": false,
+    "rowcounter": 0,
+    "rowfocusskin": "sec47134c53840738acea176209ff716",
+    "rowskin": "s18472307db04580a2a9cb6f4681ebec",
+    "rowtemplate": "flxWealthDetailsCopy",
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionheaderskin": "s65e8b0a8be54624ac979cda71a22cac",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "singleselect",
+    "selectionbehaviorconfig": {},
+    "separatorcolor": "aaaaaa00",
+    "separatorrequired": false,
+    "separatorthickness": 1,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "vizProps": {},
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "flxAverageCostValue": "flxAverageCostValue",
+        "flxBottomBorder": "flxBottomBorder",
+        "flxClick": "flxClick",
+        "flxLatestPrice": "flxLatestPrice",
+        "flxMarket": "flxMarket",
+        "flxPandL": "flxPandL",
+        "flxQty": "flxQty",
+        "flxRowFour": "flxRowFour",
+        "flxRowOne": "flxRowOne",
+        "flxRowThree": "flxRowThree",
+        "flxRowTwo": "flxRowTwo",
+        "flxStatus": "flxStatus",
+        "flxsegHoldings": "flxsegHoldings",
+        "imgChevron": "imgChevron",
+        "imgLogo": "imgLogo",
+        "imgStatus": "imgStatus",
+        "lblAverageCostKey": "lblAverageCostKey",
+        "lblAverageCostValue": "lblAverageCostValue",
+        "lblId": "lblId",
+        "lblLatestPriceKey": "lblLatestPriceKey",
+        "lblLatestPriceValue": "lblLatestPriceValue",
+        "lblMarketValKey": "lblMarketValKey",
+        "lblMarketValValue": "lblMarketValValue",
+        "lblName": "lblName",
+        "lblPandLKey": "lblPandLKey",
+        "lblPandLValue": "lblPandLValue",
+        "lblQtyKey": "lblQtyKey",
+        "lblQtyValue": "lblQtyValue",
+        "lblStatus": "lblStatus",
+        "lblStatusKey": "lblStatusKey"
+    },
+    "zindex": 1
+}

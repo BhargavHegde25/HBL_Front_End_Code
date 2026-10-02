@@ -1,0 +1,229 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "DNDConfig": null,
+    "_children_": [],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_render_": true,
+    "_skin_": "s24c92fc23b14f5484b693ee9b8a9b35",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "areflexpropsreferenced": false,
+    "autogrowmode": 1,
+    "canUpdateUI": true,
+    "clipbounds": false,
+    "containerweight": 0,
+    "dataDiffs": {
+        "accountListMenu": {
+            "__events__": {},
+            "__info__": {
+                "isRoot": true,
+                "kuid": "b636f047b10b4f65ac24cdf11ec8d84b",
+                "srcKUID": "a9e8d2d74b7e4799b12f10bbd1a59d47",
+                "wType": "FlexContainer"
+            },
+            "responsiveData": {
+                "b1": {
+                    "top": {
+                        "type": "string",
+                        "value": "-15dp"
+                    }
+                },
+                "b2": {
+                    "top": {
+                        "type": "string",
+                        "value": "0dp"
+                    }
+                },
+                "b4": {
+                    "top": {
+                        "type": "string",
+                        "value": "-15dp"
+                    }
+                }
+            },
+            "top": {
+                "Default": {
+                    "type": "string",
+                    "value": "0dp"
+                }
+            }
+        },
+        "flxAccountListActionsSegment": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "ef8a4756b91d450eac9b1c2afc74094d",
+                "srcKUID": "17b103c9bdd04b699f2ca8d9a364ff58",
+                "wType": "FlexContainer"
+            },
+            "isVisible": true,
+            "responsiveData": {
+                "b2": {
+                    "top": {
+                        "type": "string",
+                        "value": "-18dp"
+                    }
+                }
+            },
+            "top": {
+                "Default": {
+                    "type": "string",
+                    "value": "-3dp"
+                }
+            }
+        },
+        "flxIdentifier": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "beb66e13ec6a4375a9bc8752a6b425bc",
+                "srcKUID": "b9a5b101961042a68f521a7006d76389",
+                "wType": "FlexContainer"
+            }
+        },
+        "imgToolTip": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "g6a2a061b8f14b0b9f774dabdce2637b",
+                "srcKUID": "d0ba5194e4f24248bf5413068763f5eb",
+                "wType": "Image"
+            }
+        },
+        "segAccountListActions": {
+            "__events__": {
+                "ide_onRowClick": "AS_Segment_f8230ec451054fb19421e8f0af77c246"
+            },
+            "__info__": {
+                "kuid": "a52505b1824942998d0cd3200ed3768e",
+                "srcKUID": "1769d0906ad44599b4a1ff123d691027",
+                "wType": "Segment"
+            },
+            "data": {
+                "desktop": [
+                    {
+                        "lblSeparator": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": "Separator"
+                        },
+                        "lblUsers": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": "Make Transfer from"
+                        }
+                    },
+                    {
+                        "lblSeparator": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": "Separator"
+                        },
+                        "lblUsers": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": "Pay a Bill from"
+                        }
+                    },
+                    {
+                        "lblSeparator": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": "Separator"
+                        },
+                        "lblUsers": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": "Pay a Person from"
+                        }
+                    },
+                    {
+                        "lblSeparator": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": "Separator"
+                        },
+                        "lblUsers": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": "Order Check"
+                        }
+                    },
+                    {
+                        "lblSeparator": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": "Separator"
+                        },
+                        "lblUsers": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": "Edit Account"
+                        }
+                    },
+                    {
+                        "lblSeparator": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": "Separator"
+                        },
+                        "lblUsers": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": "Download Statement"
+                        }
+                    },
+                    {
+                        "lblSeparator": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": "Separator"
+                        },
+                        "lblUsers": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": "Settings & Alerts"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "desktopweb": {},
+    "id": "accountListMenu",
+    "info": null,
+    "ipad": {},
+    "iphone": {},
+    "isdatareferenced": false,
+    "issegmentchild": false,
+    "isvisible": false,
+    "kuid": "b636f047b10b4f65ac24cdf11ec8d84b",
+    "layouttype": 4,
+    "masterType": 0,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "flxAccountList",
+    "pf": "frmPortfolioOverview",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "sourceUserWidget": "a9e8d2d74b7e4799b12f10bbd1a59d47",
+    "spabb": {},
+    "tabrcandroid": {},
+    "vizProps": {
+        "hidewidgethierarchy": false
+    },
+    "vizprops": {
+        "hidewidgethierarchy": false
+    },
+    "wType": "UserWidgetInstance",
+    "zindex": 2
+}

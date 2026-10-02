@@ -1,0 +1,32 @@
+{
+  "type" : "svcdriven",
+  "custom" : false,
+  "junction" : false,
+  "customizable" : false,
+  "verbs" : {
+    "createWireTransfersPayee" : "createWireTransfersPayeeMapping",
+    "getAllBICsAndBankDetails" : "getAllBICsAndBankDetailsMapping",
+    "validateIBANandGetBankDetails" : "validateIBANandGetBankDetailsMapping",
+    "getBankDetailsFromBIC" : "getBankDetailsFromBICMapping",
+    "createP2PPayee" : "createP2PPayeeMapping",
+    "getInterBankPayees" : "getInterBankPayeesMapping",
+    "editWireTransfersPayee" : "editWireTransfersPayeeMapping",
+    "getExternalPayees" : "getExternalPayeesMapping",
+    "deleteP2PPayee" : "deleteP2PPayeeMapping",
+    "getIntraBankPayees" : "getIntraBankPayeesMapping",
+    "deleteExternalPayee" : "deleteExternalPayeeMapping",
+    "editExternalPayee" : "editExternalPayeeMapping",
+    "getWireTransfersPayee" : "getWireTransfersPayeeMapping",
+    "createExternalPayee" : "createExternalPayeeMapping",
+    "editP2PPayee" : "editP2PPayeeMapping",
+    "deleteWireTransfersPayee" : "deleteWireTransfersPayeeMapping",
+    "getInternationalPayees" : "getInternationalPayeesMapping",
+    "getBeneficiaryNameFromAccountId" : "getBeneficiaryNameFromAccountIdMapping",
+    "getP2PPayee" : "getP2PPayeeMapping"
+  },
+  "entityProperties" : {
+    "BatchMode" : "buffer",
+    "backendMeta" : { },
+    "designTimeBackendMeta" : { }
+  }
+}

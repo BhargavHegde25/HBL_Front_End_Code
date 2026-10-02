@@ -1,0 +1,22 @@
+{
+    "AS_Form_c0aa93a01b9f441fb9ddeb9c2628cb80": {
+        "id": "AS_Form_c0aa93a01b9f441fb9ddeb9c2628cb80",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "CopyfrmApplyForPrepaidCard",
+            "type": "forms",
+            "platform": null,
+            "KUID": "c44ecd556f344dfa8ca9404490d878e4"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_init_c737eef644a34cf4b44f6e5d040b87db",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.init();"
+        }]
+    }
+}

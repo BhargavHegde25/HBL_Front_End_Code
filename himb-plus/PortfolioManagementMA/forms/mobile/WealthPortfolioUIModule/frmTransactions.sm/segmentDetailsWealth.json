@@ -1,0 +1,84 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "DNDConfig": null,
+    "_children_": [],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_render_": true,
+    "_skin_": "s7b436962d6a4647b197083ac7d03d39",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "android": {},
+    "canUpdateUI": true,
+    "containerweight": 0,
+    "data": {
+        "featuresAndPermission": "{\"viewDetails\":[\"WEALTH_PORTFOLIO_DETAILS_TRANSACTIONS_VIEW\"]}",
+        "fieldFiveKey": "{i.i18n.wealth.totalWithColon}",
+        "fieldFiveType": "Amount",
+        "fieldFiveValue": "total",
+        "fieldFiveValueSkin": "sknLbl424242SSPRegular26px",
+        "fieldFourKey": "{i.i18n.wealth.pricemb}",
+        "fieldFourType": "Amount",
+        "fieldFourValue": "limitPrice",
+        "fieldFourValueSkin": "sknLbl424242SSPRegular26px",
+        "fieldOneKey": "{i.i18n.wealth.tradeDatemb}",
+        "fieldOneValueSkin": "sknLbl424242SSPRegular26px",
+        "fieldThreeKey": "{i.i18n.wealth.orderType}",
+        "fieldThreeValueSkin": "sknLbl424242SSPRegular26px",
+        "fieldTwoKey": "{i.i18n.wealth.qtymb}",
+        "fieldTwoType": "Text",
+        "fieldTwoValue": "quantity",
+        "fieldTwoValueSkin": "sknLbl424242SSPRegular26px",
+        "fieldZeroValueSkin": "sknLbl424242SSPRegular26px",
+        "noRecordsFoundText": "{i.i18n.wealth.noTransactions}",
+        "placeholderSearchText": "{i.i18n.wealth.placeHolder.searchByInstrumentISINTransactionType}",
+        "requestParam": "{   \"portfolioId\":\"{$.c.portfolioId}\",   \"startDate\":\"{$.c.startDate}\",   \"endDate\":\"{$.c.endDate}\",   \"searchByInstrumentName\":\"{$.c.instrumentName}\",   \"sortBy\":\"{$.c.sortBy}\"  }"
+    },
+    "id": "segmentDetailsWealth",
+    "info": null,
+    "iphone": {
+        "top": {
+            "type": "string",
+            "value": "0dp"
+        }
+    },
+    "iscustomlayout": false,
+    "issegmentchild": false,
+    "isvisible": true,
+    "kuid": "d260e00e5b514394b3fbba17bfc78c5c",
+    "masterType": 1,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "flxScroll",
+    "pf": "frmTransactions",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "sourceUserWidget": "fdde45de24a04b9aab1ddac29d88537e",
+    "wType": "UserWidgetInstance"
+}

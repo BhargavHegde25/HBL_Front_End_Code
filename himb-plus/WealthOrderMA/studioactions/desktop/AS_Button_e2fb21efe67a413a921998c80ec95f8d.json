@@ -1,0 +1,31 @@
+{
+    "AS_Button_e2fb21efe67a413a921998c80ec95f8d": {
+        "id": "AS_Button_e2fb21efe67a413a921998c80ec95f8d",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "NAVIGATE_TO_FORM__ide_onClick_gbd6224f630a42e7956dffc211b74c1a",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "frmPortfolioOverview",
+            "friendlyName": "frmPortfolioOverview",
+            "formKUID": "ica4ac064ba049a4a892b4c1c58b2cfc",
+            "projectName": "konyonlinebankingvanathi",
+            "mappings": {},
+            "mappingsOrder": [],
+            "callbackType": null,
+            "enableMappingEditor": true,
+            "package": "WealthPortfolioModule",
+            "isCustomInput": false
+        }, {
+            "id": "ADD_SNIPPET_d9465116f1e2480f85d9ec74209929cd",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.application.destroyForm(\"frmCurrencyConverter\");",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "AS_Form_c1646d31e436454589540df77ede6871": {
+        "id": "AS_Form_c1646d31e436454589540df77ede6871",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmAllocationCarousel",
+            "type": "forms",
+            "platform": null,
+            "KUID": "ccdb7ff5d11b4f0a86ca44c97860ab42"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_j3fae327e2c94b728d4a7b098ea5882c",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.preShow();",
+            "parentId": null
+        }]
+    }
+}

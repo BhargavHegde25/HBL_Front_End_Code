@@ -1,0 +1,122 @@
+<html>
+<head>
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="qrcode.js"></script>
+</head>
+<body>
+<div id="qrcode" style="width:100px; height:100px; margin-top:15px;"></div>
+<canvas id="qrCanvas" width="360" height="450" style="display:none;"></canvas>
+
+<script type="text/javascript">
+var qrBase64;
+function makeCode (sText, codeWidth, codeHeight, correctionLvl = 0, darkColor = "#000000", lightColor = "#FFFFFF") {
+	//console.log("Generating started");	
+	var oQRCode = new QRCode("qrcode", {
+		text : sText,
+		width : codeWidth,
+		height : codeHeight,
+		colorDark: darkColor,
+		colorLight: lightColor,
+		correctLevel: correctionLvl
+	});
+	var tempQrBase64 = oQRCode._oDrawing._elCanvas.toDataURL("image/png");
+	createShareQR(tempQrBase64);
+}
+
+var documentReady = false;
+$(document).ready(function(){
+	documentReady = true;
+});
+
+function isDocumentReady(){
+	return documentReady;
+}
+
+function getQRImgSrc(){
+	try{
+	console.log("*************************Inside getQRImgSrc******"+ qrBase64);
+	if(qrBase64){
+		console.log("*************************Inside if getQRImgSrc************"+ qrBase64);
+		console.log("*************************"+localStorage.getItem("qrbase"));
+		return qrBase64;
+	} else {
+		return "";
+	}
+	}catch(e){
+		console.log("*************************"+ e);
+	}
+}
+
+function makeDefaultQRCode(params){
+	document.getElementById("qrcode").innerHTML = "";
+	makeCode(params, 205, 205, 0);
+}
+
+function makeDefaultQRCodeiOS(params){
+	document.getElementById("qrcode").innerHTML = "";
+	makeCode(params, 850, 850, 0);
+}
+
+function loadImage(src) {
+  return new Promise((resolve, reject) => {
+    const img = new Image();
+    //img.crossOrigin = "anonymous"; // needed for external URLs with CORS enabled
+    img.onload = () => resolve(img);
+    img.onerror = () => reject(new Error(`Failed to load image: ${src}`));
+    img.src = src;
+  });
+}
+
+async function createShareQR(base64QR) {
+  document.getElementById("qrCanvas").innerHTML = "";
+  const canvas = document.getElementById('qrCanvas');
+  const ctx = canvas.getContext('2d');
+
+  // Configurable constants
+  const qrSize = 325;
+  const qrY = 20;
+  const brandWidth = 328;
+  const brandHeight = 66;
+  const brandSpacing = 20;
+  const brandingImageSrc = "data:image/png;base64,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";
+
+  try {
+    // Load images in parallel
+    const [qrImage, brandingImage] = await Promise.all([
+      loadImage(base64QR),
+      loadImage(brandingImageSrc)
+    ]);
+
+    // Clear canvas background
+    ctx.fillStyle = '#ffffff';
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+    // Draw QR code
+    const qrX = (canvas.width - qrSize) / 2;
+    ctx.drawImage(qrImage, qrX, qrY, qrSize, qrSize);
+
+    // Draw branding image
+    const brandX = (canvas.width - brandWidth) / 2;
+    const brandY = qrY + qrSize + brandSpacing;
+    ctx.drawImage(brandingImage, brandX, brandY, brandWidth, brandHeight);
+
+    // Export final image
+    const finalImage = canvas.toDataURL('image/png');
+    console.log("finalImage: "+ finalImage);
+	qrBase64 = finalImage;
+	localStorage.setItem("qrbase",finalImage);
+
+    /*
+    const img = document.createElement('img');
+    img.src = finalImage;
+    document.body.appendChild(img);
+	*/
+  } catch (err) {
+    console.error("Error loading images:", err);
+  }
+}
+
+
+</script>
+</body>
+</html>

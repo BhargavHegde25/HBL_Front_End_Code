@@ -1,0 +1,59 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_bottom_": {
+        "type": "string",
+        "value": "30dp"
+    },
+    "_height_": {
+        "type": "string",
+        "value": "50dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s567d4caff3646dca2c7c487024f8795",
+    "_text_": "Button",
+    "_width_": {
+        "type": "string",
+        "value": "80%"
+    },
+    "accessibilityconfig": {
+        "a11yHint": "Tap Continue to move to the next screen",
+        "a11yLabel": "Continue"
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "disabledSkins": {},
+    "displaytext": true,
+    "focusskin": "sd85a0f475ff4b3b9f0a5e4b82f68213",
+    "id": "btnContinue",
+    "info": null,
+    "iphone": {
+        "psp": {
+            "showProgressIndicator": false
+        }
+    },
+    "isvisible": true,
+    "kuid": "bd04811a15c3404092e08c208c75419e",
+    "name": "kony.ui.Button",
+    "parent": "flxMainParent",
+    "pf": "frmCCAmount",
+    "texti18n": "kony.mb.common.continue",
+    "wType": "Button",
+    "zindex": 1
+}

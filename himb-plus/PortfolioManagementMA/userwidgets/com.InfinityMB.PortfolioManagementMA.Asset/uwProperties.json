@@ -1,0 +1,71 @@
+{
+    "classname": "Asset",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "cd6c0f53e4ae46b7a1483d3d1ca58cc1",
+                    "paramList": [],
+                    "propertyKey": "setData",
+                    "pw": {
+                        "displayName": "setData",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "b9e148ad2d714bbf85e2afe90ef6f18c",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "ceaa952c1c584f4382b87ae78be7bb80",
+                    "paramList": [],
+                    "propertyKey": "noAssetsToDisplay",
+                    "pw": {
+                        "displayName": "noAssetsToDisplay",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "b9e148ad2d714bbf85e2afe90ef6f18c",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "d9669be6706e476fa5e6986f3c6d6209",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "setAssetAllocationGraphVisibility",
+                    "pw": {
+                        "displayName": "setAssetAllocationGraphVisibility",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "b9e148ad2d714bbf85e2afe90ef6f18c",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General",
+                "AllocationCarousal"
+            ],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfinityMB.PortfolioManagementMA",
+    "version": "1.0.0"
+}

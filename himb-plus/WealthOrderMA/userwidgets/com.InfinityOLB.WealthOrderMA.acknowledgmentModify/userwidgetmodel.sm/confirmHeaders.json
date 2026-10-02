@@ -1,0 +1,107 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "DNDConfig": null,
+    "_children_": [],
+    "_height_": {
+        "type": "string",
+        "value": "60dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_render_": true,
+    "_skin_": "s576844bc0e148a9a02e6171eac305ac",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "areflexpropsreferenced": false,
+    "canUpdateUI": true,
+    "clipbounds": true,
+    "containerweight": 0,
+    "dataDiffs": {
+        "confirmHeaders": {
+            "__events__": {},
+            "__info__": {
+                "isRoot": true,
+                "kuid": "uc603d977985459ba124b83c771f5465",
+                "srcKUID": "u62c63adbc064b7ab5f96ede9f5ecd4b",
+                "wType": "FlexContainer"
+            },
+            "left": {
+                "Default": {
+                    "type": "string",
+                    "value": "0dp"
+                }
+            },
+            "top": {
+                "Default": {
+                    "type": "string",
+                    "value": "0dp"
+                }
+            },
+            "zIndex": {
+                "Default": 1
+            }
+        },
+        "flxHeader": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "u0ae213e1b2142948c1fd932c1fe56a3",
+                "srcKUID": "u9928af62ab643cab59903e1eecf249d",
+                "wType": "FlexContainer"
+            }
+        },
+        "lblHeading": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "u652d0bf1bda469e9880c0886d98f888",
+                "srcKUID": "u641191d95fe41fba28f03b9dc09cd71",
+                "wType": "Label"
+            },
+            "i18n_text": "i18n.transfers.Acknowledgement",
+            "left": {
+                "Default": {
+                    "type": "string",
+                    "value": "30dp"
+                }
+            }
+        }
+    },
+    "id": "confirmHeaders",
+    "info": null,
+    "isdatareferenced": false,
+    "isvisible": true,
+    "kuid": "u1824df05b2740fda40d78b71facd5af",
+    "layouttype": 2,
+    "masterType": 0,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "acknowledgmentModify",
+    "pf": "userwidgetmodel",
+    "snaptogrid": true,
+    "sourceUserWidget": "u62c63adbc064b7ab5f96ede9f5ecd4b",
+    "vizprops": {
+        "hidewidgethierarchy": false
+    },
+    "wType": "UserWidgetInstance",
+    "zindex": 1
+}

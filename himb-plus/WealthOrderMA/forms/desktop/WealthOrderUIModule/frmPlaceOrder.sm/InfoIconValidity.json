@@ -1,0 +1,344 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "DNDConfig": null,
+    "_children_": [],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s24c92fc23b14f5484b693ee9b8a9b35",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "areflexpropsreferenced": false,
+    "autogrowmode": 1,
+    "canUpdateUI": true,
+    "clipbounds": true,
+    "containerweight": 0,
+    "dataDiffs": {
+        "InfoIconOrderType": {
+            "__events__": {},
+            "__info__": {
+                "isRoot": true,
+                "kuid": "bcf3d4fe3c0d44a3865070b01c392335",
+                "srcKUID": "uf214d5e7aa042d1a5f00be658939a9b",
+                "wType": "FlexContainer"
+            },
+            "responsiveData": {},
+            "width": {
+                "Default": {
+                    "type": "ref",
+                    "value": "preferred"
+                }
+            }
+        },
+        "RichTextMarket": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "a8b46146e7fc44f0850e75287d47cd8c",
+                "srcKUID": "u3331e18d3ae4fc7aab28435198af0fd",
+                "wType": "RichText"
+            },
+            "i18n_text": "i18n.wealth.dayOrderText",
+            "responsiveData": {},
+            "text": ""
+        },
+        "flxCross": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "cee5664655b045f7ac96194ec919e0a5",
+                "srcKUID": "u5b747e669274cf5b6725a9328be86c8",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxLimit": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "eb5369e1be1645f48e13eb11234ad89c",
+                "srcKUID": "u1563fd79bd84d33955e3c2a8f10faca",
+                "wType": "FlexContainer"
+            },
+            "autogrowMode": {
+                "Default": 0
+            },
+            "height": {
+                "Default": {
+                    "type": "string",
+                    "value": "20dp"
+                }
+            },
+            "responsiveData": {}
+        },
+        "flxMarketTitle": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "c27d1ca0967c476793ac11d081c8b604",
+                "srcKUID": "u1ef0ceccd9c405a929e791c310d0bc2",
+                "wType": "FlexContainer"
+            },
+            "autogrowMode": {
+                "Default": 0
+            },
+            "height": {
+                "Default": {
+                    "type": "string",
+                    "value": "20dp"
+                }
+            },
+            "responsiveData": {}
+        },
+        "flxOrderType": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "g3aff2fdf71e4264ad60f6c80bf90601",
+                "srcKUID": "ua54ccead8804218ad3ce74f51c7d61c",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxOrderTypeText": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "c6c1d97b52774886b9d17af2d2ecf8ff",
+                "srcKUID": "u41a93444536400db62599d17e8ba33c",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxStopLimit": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "ee578d99140c4dd7b2e96630a482a3bf",
+                "srcKUID": "u6785dab8c3d4392aa1abb30d4895b98",
+                "wType": "FlexContainer"
+            },
+            "isVisible": false,
+            "responsiveData": {}
+        },
+        "flxStopLoss": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "g2c10f1fbfee484bb3deddcd20eaf998",
+                "srcKUID": "u06ab573d9164e3f955a5db21a9402e3",
+                "wType": "FlexContainer"
+            },
+            "isVisible": false,
+            "responsiveData": {}
+        },
+        "flxTypes": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "e76ce5bbc6c14b578e64aa2f536ae252",
+                "srcKUID": "u560f2a9131845659e5060c51f836929",
+                "wType": "FlexContainer"
+            }
+        },
+        "imgCross": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "g03575c3164e4592967078dd9d8f0447",
+                "srcKUID": "u8a57d2d8ac34ff0bd0d12ca78f48e26",
+                "wType": "Image"
+            },
+            "src": "bbcloseicon.png"
+        },
+        "imgLimit": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "e2e70fc47508452cb37db748a89de9fa",
+                "srcKUID": "uf4c8f5b4f564ccebd61f0a1c78ea95f",
+                "wType": "Image"
+            },
+            "centerY": {
+                "Default": {
+                    "type": "string",
+                    "value": "50%"
+                }
+            },
+            "responsiveData": {},
+            "src": "pageoffdot.png"
+        },
+        "imgMarket": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "jb22cd889ef14984acee0ed069877524",
+                "srcKUID": "u24b2babe09f4b05b1e5a3a353cd5b4e",
+                "wType": "Image"
+            },
+            "centerY": {
+                "Default": {
+                    "type": "string",
+                    "value": "50%"
+                }
+            },
+            "responsiveData": {},
+            "src": "pageoffdot.png"
+        },
+        "imgStopLimit": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "d0e18005441945c9b7175eccd34a615f",
+                "srcKUID": "u7a0fcc30f1841598a1cf1085e0018fc",
+                "wType": "Image"
+            }
+        },
+        "imgStoploss": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "dffb9fdd9a2b478caee8a950fa205ab8",
+                "srcKUID": "u3cd780eb6a443aca4e8c29992404241",
+                "wType": "Image"
+            }
+        },
+        "imgToolTip": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "de657126d36f42c599d0487baccd9fe0",
+                "srcKUID": "uc9910e7b8a24e2caf56f1d2859c4120",
+                "wType": "Image"
+            },
+            "src": "tool_tip.png"
+        },
+        "lblLimit": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "d4e3bd927c134096b457a04a90b21dcc",
+                "srcKUID": "u8cd2e3a121746f3b933bce629377973",
+                "wType": "Label"
+            },
+            "centerY": {
+                "Default": {
+                    "type": "string",
+                    "value": "50%"
+                }
+            },
+            "i18n_text": "i18n.wealth.goodTillCanceled",
+            "responsiveData": {},
+            "text": ""
+        },
+        "lblMarket": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "e5f746e6082c450e89e598c7b104b9c2",
+                "srcKUID": "u5e05114c2cd43a28f8c4a0d89b5ea99",
+                "wType": "Label"
+            },
+            "centerY": {
+                "Default": {
+                    "type": "string",
+                    "value": "50%"
+                }
+            },
+            "i18n_text": "i18n.wealth.dayOrder",
+            "responsiveData": {},
+            "text": ""
+        },
+        "lblOrderType": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "e3ee5bbaac574de5a5015c4ebf4a6010",
+                "srcKUID": "u390a35e38b14e3e9375e178368c493d",
+                "wType": "Label"
+            },
+            "i18n_text": "i18n.wealth.infoIcon.validity",
+            "responsiveData": {},
+            "text": "Validity"
+        },
+        "lblSeperator": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "db1493702ac14fe5a94b682b02eea8e7",
+                "srcKUID": "u88ed052baab42129ea3615ba1fe430b",
+                "wType": "Label"
+            }
+        },
+        "lblStopLimit": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "fada51563835461395e2d94e098c7b98",
+                "srcKUID": "ub1e50318156433ea1fa9d6299199fc3",
+                "wType": "Label"
+            }
+        },
+        "lblStopLoss": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "jeacd285951f4c4cb0a38e220a860fc5",
+                "srcKUID": "u2f9c664762f41b4b5a27ea99caf3b1c",
+                "wType": "Label"
+            }
+        },
+        "richTextLimit": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "e1c341ffa1904baf92b806b9ca27668a",
+                "srcKUID": "u160020ce79e471c838464d82dfe1ab9",
+                "wType": "RichText"
+            },
+            "i18n_text": "i18n.wealth.goodTillCanceledText",
+            "responsiveData": {},
+            "text": ""
+        },
+        "richTextStopLimit": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "d6c21b9e41b94747b8d037ba4c34b528",
+                "srcKUID": "uf418ca112564544a35e02c047833a66",
+                "wType": "RichText"
+            },
+            "isVisible": false,
+            "responsiveData": {}
+        },
+        "richTextStopLoss": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "h0698b4c74bf4358b036b5b993de2a40",
+                "srcKUID": "u5cf224b3ca04c118c95210ac9f57f09",
+                "wType": "RichText"
+            },
+            "isVisible": false,
+            "responsiveData": {}
+        }
+    },
+    "enablescrolling": true,
+    "id": "InfoIconValidity",
+    "info": null,
+    "iscustomlayout": false,
+    "isdatareferenced": false,
+    "isvisible": true,
+    "kuid": "bcf3d4fe3c0d44a3865070b01c392335",
+    "layouttype": 4,
+    "masterType": 0,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "flxInfoValidity",
+    "pf": "frmPlaceOrder",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "sourceUserWidget": "uf214d5e7aa042d1a5f00be658939a9b",
+    "wType": "UserWidgetInstance",
+    "zindex": 1
+}

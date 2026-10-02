@@ -1,0 +1,75 @@
+{
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "7%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s4cd9dd0048e4557b3b80339d1968ad7",
+    "_top_": {
+        "type": "string",
+        "value": "20%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "92%"
+    },
+    "allboxes": [],
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "children": [
+        "lblAccountNumber",
+        "flxArrow",
+        "lblSeperatorLine"
+    ],
+    "clipbounds": true,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "flxSelectAccountForPaperStatement",
+    "ide_onClick": "AS_FlexContainer_g91496c83558462a8247c0a8a854bea3",
+    "info": null,
+    "iphone": {
+        "height": {
+            "type": "string",
+            "value": "50dp"
+        },
+        "top": {
+            "type": "string",
+            "value": "19%"
+        }
+    },
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "af14e7ded0df45fd96e9f82353af73c2",
+    "layouttype": 2,
+    "name": "kony.ui.FlexContainer",
+    "parent": "flxPaperStatement",
+    "pf": "frmAccStatements",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1,
+    "zindex": 150
+}

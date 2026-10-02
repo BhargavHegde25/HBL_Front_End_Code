@@ -1,0 +1,23 @@
+{
+    "AS_Form_c182060eb130484da2f004d34e3e893a": {
+        "id": "AS_Form_c182060eb130484da2f004d34e3e893a",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmPastProposal",
+            "type": "forms",
+            "platform": "",
+            "KUID": "f72288430e034480872a90e979e88fa7"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_a051c689dfe94d839ed9f5dabd4a36de",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.preShow();",
+            "parentId": null
+        }]
+    }
+}

@@ -1,0 +1,95 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": ""
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_right_": {
+        "type": "string",
+        "value": "20dp"
+    },
+    "_skin_": "sdbbccbd1d224646bda17c38efb9ccb8",
+    "_text_": "Modify",
+    "_top_": {
+        "type": "number",
+        "value": ""
+    },
+    "_width_": {
+        "type": "string",
+        "value": "18%"
+    },
+    "accessibilityconfig": {
+        "a11yLabel": "Modify"
+    },
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50.46%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "desktopweb": {
+        "psp": {
+            "hoverSkin": "sdbbccbd1d224646bda17c38efb9ccb8"
+        }
+    },
+    "disabledSkins": {},
+    "displaytext": true,
+    "focusskin": "sdbbccbd1d224646bda17c38efb9ccb8",
+    "id": "btnAction2",
+    "info": null,
+    "isvisible": true,
+    "kuid": "a597809d8e0544738c29f42530c512bb",
+    "name": "kony.ui.Button",
+    "parent": "flxConfirmButtons",
+    "pf": "frmLoadEsewaConfirm",
+    "responsiveData": {
+        "b1": {
+            "width": {
+                "type": "string",
+                "value": "145dp"
+            }
+        },
+        "b2": {
+            "width": {
+                "type": "string",
+                "value": "145dp"
+            }
+        },
+        "b3": {
+            "left": {
+                "type": "string",
+                "value": "2.20%"
+            },
+            "top": {
+                "type": "string",
+                "value": "60dp"
+            },
+            "width": {
+                "type": "string",
+                "value": "96%"
+            }
+        }
+    },
+    "texti18n": "i18n.transfers.Modify",
+    "tooltip": "Modify",
+    "wType": "Button",
+    "zindex": 1
+}

@@ -1,0 +1,85 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizLabel",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "10dp"
+    },
+    "_margin_": [
+        1,
+        1,
+        1,
+        1
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "sba2ab7e6b2148d8b9e122b62fc74a47",
+    "_text_": "hi",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "90%"
+    },
+    "_wrapping_": 2,
+    "accessibilityconfig": {
+        "a11yARIA": {
+            "tabindex": -1
+        }
+    },
+    "android": {
+        "textStyle": {
+            "letterSpacing": 0,
+            "strikeThrough": false
+        }
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "id": "lblError",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "iphone": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "isvisible": true,
+    "kuid": "c76e82760ffa4d1f9494c66037211679",
+    "name": "kony.ui.Label",
+    "parent": "flxError",
+    "pf": "userwidgetmodel",
+    "responsiveData": {
+        "b1": {
+            "i18n_text": "i18n.common.To"
+        },
+        "b3": {
+            "left": {
+                "type": "string",
+                "value": "20dp"
+            },
+            "text": "hi hi hi hi hi hi hi hi dfghjhgfdghj hiugvyuhb fyuhiyfguhiug yghuyguhiub yugyughh vguguuhbuhuhuhuhu gyvyugbuuhubhu hubububuyhb",
+            "top": {
+                "type": "string",
+                "value": ""
+            }
+        }
+    },
+    "tooltip": "",
+    "wType": "Label",
+    "zindex": 1
+}

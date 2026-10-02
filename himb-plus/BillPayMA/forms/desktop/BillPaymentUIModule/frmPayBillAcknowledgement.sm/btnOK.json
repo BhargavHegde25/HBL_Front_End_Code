@@ -1,0 +1,59 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "30dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_right_": {
+        "type": "string",
+        "value": "30dp"
+    },
+    "_skin_": "sfbbba35ede4457b94eb681b72349b98",
+    "_text_": "Ok",
+    "_top_": {
+        "type": "string",
+        "value": "200dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "75dp"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "desktopweb": {
+        "psp": {
+            "hoverSkin": "s81054b5e2b74f17a5261991df565427"
+        }
+    },
+    "disabledSkins": {
+        "focusSkin": "sdc25062569d4a47ba3137671095ff9c"
+    },
+    "displaytext": true,
+    "id": "btnOK",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "ec46d744c6d347729cbc160686ccd5bd",
+    "name": "kony.ui.Button",
+    "parent": "flxAddFavriteSuccess",
+    "pf": "frmPayBillAcknowledgement",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "texti18n": "i18n.savingsPot.ok",
+    "wType": "Button",
+    "zindex": 1
+}

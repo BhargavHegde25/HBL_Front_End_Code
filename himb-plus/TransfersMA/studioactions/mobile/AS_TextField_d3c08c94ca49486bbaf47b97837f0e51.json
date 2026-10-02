@@ -1,0 +1,30 @@
+{
+    "AS_TextField_d3c08c94ca49486bbaf47b97837f0e51": {
+        "id": "AS_TextField_d3c08c94ca49486bbaf47b97837f0e51",
+        "type": "ACTION_SEQUENCE",
+        "params": [
+            {
+                "datatype": "collection",
+                "name": "eventobject"
+            },
+            {
+                "datatype": "string",
+                "name": "changedtext"
+            }
+        ],
+        "contextObj": {
+            "name": "CopyfrmFundTransferMain",
+            "type": "forms",
+            "platform": null,
+            "KUID": "d8b8aea701de46ed98a79f677f45e8b0"
+        },
+        "language": "js",
+        "actions": [
+            {
+                "id": "ADD_SNIPPET_ide_onTextChange_fdbb7a3e3a72487aaaab96744c52523a",
+                "type": "ADD_SNIPPET",
+                "codeSnippet": "//this.navigateToVerifyScreen();"
+            }
+        ]
+    }
+}

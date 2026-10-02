@@ -1,0 +1,51 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "50dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s4b17507e4254527bd4c3ac908e4cbf0",
+    "_text_": "Decline",
+    "_top_": {
+        "type": "string",
+        "value": "10dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "65%"
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "sdbac34aaa0043e2ac4c9ff031574baa",
+    "id": "btnVerify",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "d80a06089b004779b007f6aa1e158d84",
+    "name": "kony.ui.Button",
+    "parent": "flxButtons",
+    "pf": "frmBillPayConsent",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "wType": "Button",
+    "zindex": 1
+}

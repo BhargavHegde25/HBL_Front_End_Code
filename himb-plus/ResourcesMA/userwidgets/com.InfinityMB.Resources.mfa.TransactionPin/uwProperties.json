@@ -1,0 +1,613 @@
+{
+    "classname": "TransactionPin",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "a251a1c919fd4bd8bba44c901ddb2014",
+                    "paramList": [
+                        {
+                            "name": "mfaJSON"
+                        }
+                    ],
+                    "propertyKey": "setContext",
+                    "pw": {
+                        "displayName": "setContext",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "j1a11ddd0737459f9a3c509620b4d065",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "e47480a02981481d848db0a562b4607c",
+                    "paramList": [
+                        {
+                            "name": "rememberDeviceReg"
+                        }
+                    ],
+                    "propertyIndex": 1,
+                    "propertyKey": "rememberDeviceRegFlag",
+                    "pw": {
+                        "displayName": "rememberDeviceRegFlag",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "j1a11ddd0737459f9a3c509620b4d065",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "ib8ff2b139ee42fc888261dcd2179494",
+                    "paramList": [
+                        {
+                            "name": "response"
+                        }
+                    ],
+                    "propertyIndex": 1,
+                    "propertyKey": "onSuccessCallback",
+                    "pw": {
+                        "displayName": "onSuccessCallback",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "j1a11ddd0737459f9a3c509620b4d065",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "e24555f6d1d549b6b207696a1207e1d7",
+                    "paramList": [
+                        {
+                            "name": "response"
+                        }
+                    ],
+                    "propertyIndex": 3,
+                    "propertyKey": "onFailureCallback",
+                    "pw": {
+                        "displayName": "onFailureCallback",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "j1a11ddd0737459f9a3c509620b4d065",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "e98d101b65884a5194008dea00dda8c6",
+                    "paramList": [],
+                    "propertyIndex": 4,
+                    "propertyKey": "onCancel",
+                    "pw": {
+                        "displayName": "onCancel",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "j1a11ddd0737459f9a3c509620b4d065",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "fcd5931a498d4366a366d5913706123e",
+                    "paramList": [],
+                    "propertyIndex": 5,
+                    "propertyKey": "bindError",
+                    "pw": {
+                        "displayName": "bindError",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "j1a11ddd0737459f9a3c509620b4d065",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "f3e71d9479944096882c7593ecc508a3",
+                    "paramList": [],
+                    "propertyIndex": 6,
+                    "propertyKey": "setBiometricSuccess",
+                    "pw": {
+                        "displayName": "setBiometricSuccess",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "j1a11ddd0737459f9a3c509620b4d065",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [
+                "Request OTP Service",
+                "Verify OTP Service",
+                "Skins Screen 1",
+                "Skins Screen 2",
+                "Text Fields Screen 1",
+                "Text Fields Screen 2",
+                "Images Screen 2",
+                "Post Login Details"
+            ],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "Login",
+                    "group": "Request OTP Service",
+                    "kuid": "b144506065ac4f6fad560c52224e1b71",
+                    "originalPropertyKey": "objectServiceName1",
+                    "propertyIndex": 1,
+                    "propertyKey": "objectServiceName1",
+                    "pw": {
+                        "displayName": "Object Service Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "j1a11ddd0737459f9a3c509620b4d065",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Login",
+                    "group": "Verify OTP Service",
+                    "kuid": "ha76809945934459bb0c8c55a6b813aa",
+                    "originalPropertyKey": "objectServiceName2",
+                    "propertyIndex": 1,
+                    "propertyKey": "objectServiceName2",
+                    "pw": {
+                        "displayName": "Object Service Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "j1a11ddd0737459f9a3c509620b4d065",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknBtn0095e426pxEnabled",
+                    "group": "Skins Screen 1",
+                    "kuid": "fb0b8d1c0ecb48f2b63a2d029202a4dd",
+                    "originalPropertyKey": "screen1SubmitBtnEnabledSkin",
+                    "propertyIndex": 1,
+                    "propertyKey": "screen1SubmitBtnEnabledSkin",
+                    "pw": {
+                        "displayName": "Submit Button Enabled Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "j1a11ddd0737459f9a3c509620b4d065",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknFlxf9f9f9",
+                    "group": "Skins Screen 2",
+                    "kuid": "e662e0c5fada4851ae7a1d994043e274",
+                    "originalPropertyKey": "screen2TitleBgSkin",
+                    "propertyIndex": 1,
+                    "propertyKey": "screen2TitleBgSkin",
+                    "pw": {
+                        "displayName": "Title Backgound Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "j1a11ddd0737459f9a3c509620b4d065",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "kony.mb.Messages.send",
+                    "group": "Text Fields Screen 1",
+                    "kuid": "b9a53aee1c4a4c6784ab6ece69e15b37",
+                    "originalPropertyKey": "screen1SubmitBtnText",
+                    "propertyIndex": 1,
+                    "propertyKey": "screen1SubmitBtnText",
+                    "pw": {
+                        "displayName": "Submit Button Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "j1a11ddd0737459f9a3c509620b4d065",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "kony.mb.Forgot.EnterSecurityCodeTitle",
+                    "group": "Text Fields Screen 2",
+                    "kuid": "e1e9b9425ebe45e987b52fc658dc2278",
+                    "originalPropertyKey": "screen2TitleText",
+                    "propertyIndex": 1,
+                    "propertyKey": "screen2TitleText",
+                    "pw": {
+                        "displayName": "Title Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "j1a11ddd0737459f9a3c509620b4d065",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "a.png",
+                    "group": "Images Screen 2",
+                    "kuid": "gc4ea9d05254465e93a36636eece93c0",
+                    "originalPropertyKey": "checkboxSelectedImg",
+                    "propertyIndex": 1,
+                    "propertyKey": "checkboxSelectedImg",
+                    "pw": {
+                        "displayName": "Selected Checkbox Image",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "j1a11ddd0737459f9a3c509620b4d065",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "General",
+                    "kuid": "a3a7e5be5687401ba480487d27ff0d54",
+                    "originalPropertyKey": "action",
+                    "propertyIndex": 1,
+                    "propertyKey": "action",
+                    "pw": {
+                        "displayName": "Action",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "j1a11ddd0737459f9a3c509620b4d065",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Users_2",
+                    "group": "Request OTP Service",
+                    "kuid": "d7ccb555b29b458baa4569d8cc9e6150",
+                    "originalPropertyKey": "objectName1",
+                    "propertyIndex": 2,
+                    "propertyKey": "objectName1",
+                    "pw": {
+                        "displayName": "Object Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "j1a11ddd0737459f9a3c509620b4d065",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Users_2",
+                    "group": "Verify OTP Service",
+                    "kuid": "fa05123cd86f4f638870d2498494cb86",
+                    "originalPropertyKey": "objectName2",
+                    "propertyIndex": 2,
+                    "propertyKey": "objectName2",
+                    "pw": {
+                        "displayName": "Object Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "j1a11ddd0737459f9a3c509620b4d065",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknBtna0a0a0SSPReg26px",
+                    "group": "Skins Screen 1",
+                    "kuid": "bfbc082aeb88497baa556344d3944e52",
+                    "originalPropertyKey": "screen1SubmitBtnDisabledSkin",
+                    "propertyIndex": 2,
+                    "propertyKey": "screen1SubmitBtnDisabledSkin",
+                    "pw": {
+                        "displayName": "Submit Button Disabled Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "j1a11ddd0737459f9a3c509620b4d065",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknLbl424242SSP26px",
+                    "group": "Skins Screen 2",
+                    "kuid": "ff8e1aee99e44935b3f5b0ec41f9ca6e",
+                    "originalPropertyKey": "screen2TitleSkin",
+                    "propertyIndex": 2,
+                    "propertyKey": "screen2TitleSkin",
+                    "pw": {
+                        "displayName": "Title Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "j1a11ddd0737459f9a3c509620b4d065",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Enter Security Code",
+                    "group": "Text Fields Screen 2",
+                    "kuid": "hd9e6e0e698f48f5b4843e154168067c",
+                    "originalPropertyKey": "screen2SubtitleText",
+                    "propertyIndex": 2,
+                    "propertyKey": "screen2SubtitleText",
+                    "pw": {
+                        "displayName": "Subtitle Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "j1a11ddd0737459f9a3c509620b4d065",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "tickmarkbox.png",
+                    "group": "Images Screen 2",
+                    "kuid": "haa19e47d73042c6a17abe07a87e060a",
+                    "originalPropertyKey": "checkboxUnselectedImg",
+                    "propertyIndex": 2,
+                    "propertyKey": "checkboxUnselectedImg",
+                    "pw": {
+                        "displayName": "Unselected Checkbox Image",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "j1a11ddd0737459f9a3c509620b4d065",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": true,
+                    "group": "General",
+                    "kuid": "ha8f8883265248e2b5d8040bba733b1f",
+                    "originalPropertyKey": "isPostLogin",
+                    "propertyIndex": 2,
+                    "propertyKey": "isPostLogin",
+                    "pw": {
+                        "displayName": "Is Post Login",
+                        "uiRepresentation": "Label-Radiobuttongroup"
+                    },
+                    "srcWgtKUID": "j1a11ddd0737459f9a3c509620b4d065",
+                    "type": "boolean",
+                    "value": "true/false"
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "requestLoginMFAOTP",
+                    "group": "Request OTP Service",
+                    "kuid": "efb813f93c524b599d8458d5d1261940",
+                    "originalPropertyKey": "operationName1",
+                    "propertyIndex": 3,
+                    "propertyKey": "operationName1",
+                    "pw": {
+                        "displayName": "Operation Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "j1a11ddd0737459f9a3c509620b4d065",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "verifyLoginMFAOTP",
+                    "group": "Verify OTP Service",
+                    "kuid": "e1838dc0056a48e880636772c619c311",
+                    "originalPropertyKey": "operationName2",
+                    "propertyIndex": 3,
+                    "propertyKey": "operationName2",
+                    "pw": {
+                        "displayName": "Operation Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "j1a11ddd0737459f9a3c509620b4d065",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknLbl3e4f56SSPReg30px",
+                    "group": "Skins Screen 2",
+                    "kuid": "b2e67032358a43988374a7adb3c5d150",
+                    "originalPropertyKey": "screen2SubtitleSkin",
+                    "propertyIndex": 3,
+                    "propertyKey": "screen2SubtitleSkin",
+                    "pw": {
+                        "displayName": "Subtitle Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "j1a11ddd0737459f9a3c509620b4d065",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Enter Secure Access sent on your 9*****8865 & p*******************@Kony.com...........................",
+                    "group": "Text Fields Screen 2",
+                    "kuid": "ib2d6d932ecd423a9ccf4695d7933e5c",
+                    "originalPropertyKey": "screen2DescriptionText",
+                    "propertyIndex": 3,
+                    "propertyKey": "screen2DescriptionText",
+                    "pw": {
+                        "displayName": "Description Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "j1a11ddd0737459f9a3c509620b4d065",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknLbl424242SSP22px26",
+                    "group": "Skins Screen 2",
+                    "kuid": "g0eaf6cf38924f93abd13071a0e9bb6a",
+                    "originalPropertyKey": "screen2DescriptionSkin",
+                    "propertyIndex": 4,
+                    "propertyKey": "screen2DescriptionSkin",
+                    "pw": {
+                        "displayName": "Description Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "j1a11ddd0737459f9a3c509620b4d065",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Code Expired. Try again",
+                    "group": "Text Fields Screen 2",
+                    "kuid": "i70ffc8db55d441390bcaf7442c39cd6",
+                    "originalPropertyKey": "screen2ErrorMsgText",
+                    "propertyIndex": 4,
+                    "propertyKey": "screen2ErrorMsgText",
+                    "pw": {
+                        "displayName": "Error Message Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "j1a11ddd0737459f9a3c509620b4d065",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknLblF54B5E26px",
+                    "group": "Skins Screen 2",
+                    "kuid": "a2f1d95b7a5442a1bf78ca032e47d605",
+                    "originalPropertyKey": "screen2ErrorMsgSkin",
+                    "propertyIndex": 5,
+                    "propertyKey": "screen2ErrorMsgSkin",
+                    "pw": {
+                        "displayName": "Error Message Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "j1a11ddd0737459f9a3c509620b4d065",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "kony.mb.Forgot.ReSend",
+                    "group": "Text Fields Screen 2",
+                    "kuid": "f631e4cd1083497d8b3f56205d068d0c",
+                    "originalPropertyKey": "screen2ResendBtnText",
+                    "propertyIndex": 5,
+                    "propertyKey": "screen2ResendBtnText",
+                    "pw": {
+                        "displayName": "Resend Button Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "j1a11ddd0737459f9a3c509620b4d065",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknBtn0095e428px",
+                    "group": "Skins Screen 2",
+                    "kuid": "eba6b7d19039475dbf9023323adc5047",
+                    "originalPropertyKey": "screen2ResendBtnSkin",
+                    "propertyIndex": 6,
+                    "propertyKey": "screen2ResendBtnSkin",
+                    "pw": {
+                        "displayName": "Resend Button Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "j1a11ddd0737459f9a3c509620b4d065",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "kony.mb.devReg.remMyDevice",
+                    "group": "Text Fields Screen 2",
+                    "kuid": "feb81def2e634582996b766aa5bb456d",
+                    "originalPropertyKey": "screen2RegisterDevLblText",
+                    "propertyIndex": 6,
+                    "propertyKey": "screen2RegisterDevLblText",
+                    "pw": {
+                        "displayName": "Register Device Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "j1a11ddd0737459f9a3c509620b4d065",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknLbl424242SSPReg30px",
+                    "group": "Skins Screen 2",
+                    "kuid": "i91985387d8d4b81a064e67f089ea675",
+                    "originalPropertyKey": "screen2RegisterDevLblSkin",
+                    "propertyIndex": 7,
+                    "propertyKey": "screen2RegisterDevLblSkin",
+                    "pw": {
+                        "displayName": "Register Device Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "j1a11ddd0737459f9a3c509620b4d065",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "kony.mb.Forgot.Verify",
+                    "group": "Text Fields Screen 2",
+                    "kuid": "c1a3dcd3b5e44304abbd8aeb6c549181",
+                    "originalPropertyKey": "screen2SubmitBtnText",
+                    "propertyIndex": 7,
+                    "propertyKey": "screen2SubmitBtnText",
+                    "pw": {
+                        "displayName": "Submit Button Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "j1a11ddd0737459f9a3c509620b4d065",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknBtn0095e4RoundedffffffSSP26px",
+                    "group": "Skins Screen 2",
+                    "kuid": "c2a47305167344e3a05f971be066dd83",
+                    "originalPropertyKey": "screen2SubmitBtnEnabledSkin",
+                    "propertyIndex": 8,
+                    "propertyKey": "screen2SubmitBtnEnabledSkin",
+                    "pw": {
+                        "displayName": "Submit Button Enabled Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "j1a11ddd0737459f9a3c509620b4d065",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknBtna0a0a0SSPReg26px",
+                    "group": "Skins Screen 2",
+                    "kuid": "jb64aa7588e24c54adf067e6d43494b6",
+                    "originalPropertyKey": "screen2SubmitBtnDisabledSkin",
+                    "propertyIndex": 9,
+                    "propertyKey": "screen2SubmitBtnDisabledSkin",
+                    "pw": {
+                        "displayName": "Submit Button Disabled Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "j1a11ddd0737459f9a3c509620b4d065",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfinityMB.Resources.mfa",
+    "version": "1.0.0"
+}

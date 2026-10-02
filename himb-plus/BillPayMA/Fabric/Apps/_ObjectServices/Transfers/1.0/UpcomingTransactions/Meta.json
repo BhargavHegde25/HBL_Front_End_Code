@@ -1,0 +1,15 @@
+{
+  "type" : "svcdriven",
+  "description" : "This Object will have the upcoming transactions related verbs in dashboard",
+  "custom" : false,
+  "junction" : false,
+  "customizable" : false,
+  "verbs" : {
+    "getScheduledTransactions" : "getScheduledTransactionsMapping"
+  },
+  "entityProperties" : {
+    "BatchMode" : "buffer",
+    "backendMeta" : { },
+    "designTimeBackendMeta" : { }
+  }
+}

@@ -1,0 +1,291 @@
+{
+    "services": [
+        {
+            "serviceId": "c40b318a-c094-45d5-ac3a-d1abf28ae389",
+            "serviceName": "AccountSweepsObjects",
+            "serviceETag": "45b49a4e-291c-4a7d-92de-1fa34d850lg3",
+            "objects": [
+                {
+                    "objectId": "10995",
+                    "objectName": "AccountSweeps",
+                    "objectETag": "915ad2d9-c2e7-4b1b-96bf-436872b964c3"
+                }
+            ]
+        },
+        {
+            "serviceId": "b567dec1-90b8-4ab7-b0c6-be0e815f0e5b",
+            "serviceName": "BillPay",
+            "serviceETag": "7c562735-e06d-4c66-bcdc-3f13c11eebsf",
+            "objects": [
+                {
+                    "objectId": "10956",
+                    "objectName": "Biller",
+                    "objectETag": "0f942c0b-649e-48a2-b525-8144c48d8f3a"
+                },
+                {
+                    "objectId": "10957",
+                    "objectName": "Payee_BillPay",
+                    "objectETag": "b10480d5-09c2-4c91-82a6-e9cb5b16fed2"
+                },
+                {
+                    "objectId": "10958",
+                    "objectName": "Payee_BillPayRecent",
+                    "objectETag": "6174c3ac-2792-46ae-822c-bae02ce78790"
+                },
+                {
+                    "objectId": "10959",
+                    "objectName": "Payment",
+                    "objectETag": "ef8f9e93-8daa-4572-bd13-3fe9949072c9"
+                },
+                {
+                    "objectId": "10960",
+                    "objectName": "Payment_BillPayList",
+                    "objectETag": "296505c1-e831-4076-b60a-d025af704db0"
+                },
+                {
+                    "objectId": "10961",
+                    "objectName": "Payment_ebills",
+                    "objectETag": "91064492-502b-4438-a783-70277a03d85b"
+                }
+            ]
+        },
+        {
+            "serviceId": "b832dd19-6137-46fe-a985-3c8933d5c08d",
+            "serviceName": "BulkWireObjects",
+            "serviceETag": "fab1a682-beeb-45cc-9828-0f49q92a8rut",
+            "objects": [
+                {
+                    "objectId": "10909",
+                    "objectName": "BulkWire",
+                    "objectETag": "397458d8-c936-4490-b56b-12087b57ee6e"
+                },
+                {
+                    "objectId": "10910",
+                    "objectName": "BulkWireFile",
+                    "objectETag": "50679852-3fe1-4aa7-90d3-2c874ad3f7b4"
+                },
+                {
+                    "objectId": "10911",
+                    "objectName": "BulkWireTransaction",
+                    "objectETag": "87194850-02fa-4f39-b2f5-daf8841cf7e0"
+                }
+            ]
+        },
+        {
+            "serviceId": "38bfec87-3d13-433a-ab52-58a9f0063c42",
+            "serviceName": "DigitalTransfer",
+            "serviceETag": "a1daddd1-d86f-4cf8-b504-c76150d8ebb9",
+            "objects": [
+                {
+                    "objectId": "10887",
+                    "objectName": "Payee_P2P",
+                    "objectETag": "436b7a22-cbcd-4d4f-9561-3dec8bf44d72"
+                },
+                {
+                    "objectId": "10888",
+                    "objectName": "Payment_P2P",
+                    "objectETag": "d961930f-e521-4b77-b4d6-4f6e5aae2e87"
+                },
+                {
+                    "objectId": "10889",
+                    "objectName": "Payment_P2PList",
+                    "objectETag": "3ebe0e94-ec0e-4158-b4ac-855f5f6daa3b"
+                }
+            ]
+        },
+        {
+            "serviceId": "dde6d4d7-9fec-44bf-9cf6-2351ce34eb7f",
+            "serviceName": "HBLMerchantObjects",
+            "serviceETag": "460ed808-e058-4d10-9567-6bb8c13ce879",
+            "objects": [
+                {
+                    "objectId": "17433",
+                    "objectName": "BillPay",
+                    "objectETag": "f294c1b4-11f5-4980-afd6-c4831a18ab19"
+                },
+                {
+                    "objectId": "17434",
+                    "objectName": "Merchants",
+                    "objectETag": "f0f77ec7-60ed-4d4c-ac76-4a70e57560ae"
+                },
+                {
+                    "objectId": "17911",
+                    "objectName": "NEA_Payments",
+                    "objectETag": "e364e41a-1d4e-4288-8966-8d476213e000"
+                },
+                {
+                    "objectId": "19145",
+                    "objectName": "KUKL_Payments",
+                    "objectETag": "49b0451a-4a5c-4853-a863-1be869957c69"
+                }
+            ]
+        },
+        {
+            "serviceId": "290be67d-cf72-4d47-9d5d-3415092641c6",
+            "serviceName": "HBLOtherBankTransfers",
+            "serviceETag": "a032b1d0-ff79-4a0a-9530-6a32f4aaa237",
+            "objects": [
+                {
+                    "objectId": "17404",
+                    "objectName": "CIPSTransfers",
+                    "objectETag": "55ab225c-04f2-45c5-abb0-764b00045fcf"
+                },
+                {
+                    "objectId": "17405",
+                    "objectName": "CrossBorderPayments",
+                    "objectETag": "f4b90206-b49d-44c6-8de4-553608a1c0aa"
+                },
+                {
+                    "objectId": "17406",
+                    "objectName": "Fee",
+                    "objectETag": "7fff9ba2-4362-4fed-a531-d4c89e8e2939"
+                }
+            ]
+        },
+        {
+            "serviceId": "57a3a494-bdb9-4576-81ad-ef5a72d88dcd",
+            "serviceName": "LoanPayoff",
+            "serviceETag": "e2cc4595-71a6-43c5-98eb-fdea2cae3598",
+            "objects": [
+                {
+                    "objectId": "10871",
+                    "objectName": "LoanBillObject",
+                    "objectETag": "c840b23a-e532-4f22-b27e-fa29033b6f2e"
+                },
+                {
+                    "objectId": "10872",
+                    "objectName": "LoanSimulateObject",
+                    "objectETag": "5754409b-bdc9-4f63-b4bb-3d4305d1e605"
+                },
+                {
+                    "objectId": "10873",
+                    "objectName": "Packaging",
+                    "objectETag": "2f2636c1-9b4e-4e9c-ba22-8036df9011c5"
+                }
+            ]
+        },
+        {
+            "serviceId": "28c181c2-c06a-4b00-af96-357d3d522f6f",
+            "serviceName": "PayeeManagement",
+            "serviceETag": "9cfaf7d5-14d5-40b2-8527-c0e71a2487uy",
+            "objects": [
+                {
+                    "objectId": "10837",
+                    "objectName": "BankDetails",
+                    "objectETag": "76b5247c-a2f3-4ccf-94bb-e813ffc45a72"
+                },
+                {
+                    "objectId": "10838",
+                    "objectName": "Payee_Name",
+                    "objectETag": "82c892eb-4e30-4aec-be3e-8f82c2917ea3"
+                },
+                {
+                    "objectId": "10839",
+                    "objectName": "Payees",
+                    "objectETag": "fc663a56-48b5-4edc-b441-d4fc8be2a5bf"
+                }
+            ]
+        },
+        {
+            "serviceId": "dac40f34-22fe-42f1-a08d-84ebaf44a9df",
+            "serviceName": "PayeeObjects",
+            "serviceETag": "e6dbb3b5-ca61-4dc6-889c-3cd797a9b33f",
+            "objects": [
+                {
+                    "objectId": "10794",
+                    "objectName": "Recipients",
+                    "objectETag": "5d0dbfea-8b77-4aa0-a620-03a2b109c797"
+                }
+            ]
+        },
+        {
+            "serviceId": "f8239256-3420-49a2-8ea2-668f9728118d",
+            "serviceName": "QRPayments",
+            "serviceETag": "89e7ff70-a7bc-4e6a-b86e-bf30528ce07f",
+            "objects": [
+                {
+                    "objectId": "10788",
+                    "objectName": "QRPay",
+                    "objectETag": "251a6263-e66a-4539-92a9-ef76534eaa8c"
+                }
+            ]
+        },
+        {
+            "serviceId": "54befcef-f3ab-4db7-a6a8-718436f41d41",
+            "serviceName": "TransactionObjects",
+            "serviceETag": "bee3c36b-ab10-4774-a96e-5dee480d2cb4",
+            "objects": [
+                {
+                    "objectId": "10714",
+                    "objectName": "Activity",
+                    "objectETag": "55fb799a-bd56-431e-aba6-885e0920ce79"
+                },
+                {
+                    "objectId": "10715",
+                    "objectName": "BankDate",
+                    "objectETag": "4002c2a0-7b11-4d26-b011-85bac5972b3e"
+                },
+                {
+                    "objectId": "10716",
+                    "objectName": "CreditCard",
+                    "objectETag": "9d742e0b-e335-4dc3-915b-979a7145b9a8"
+                },
+                {
+                    "objectId": "10717",
+                    "objectName": "ExternalCodes",
+                    "objectETag": "3dd9766b-0a5d-4b51-b1cb-c53cfb8cde94"
+                },
+                {
+                    "objectId": "10718",
+                    "objectName": "Transaction",
+                    "objectETag": "ec5696df-f2b4-44c7-945a-d2693607bec3"
+                }
+            ]
+        },
+        {
+            "serviceId": "783a8d38-07eb-46f1-b301-d091120d7d78",
+            "serviceName": "Transfers",
+            "serviceETag": "70a92d53-4e48-4d97-a054-32717b8763c8",
+            "objects": [
+                {
+                    "objectId": "10682",
+                    "objectName": "DirectDebits",
+                    "objectETag": "36832664-8e43-4f44-829e-bb941251ed4d"
+                },
+                {
+                    "objectId": "10683",
+                    "objectName": "OnboardingTransactions",
+                    "objectETag": "6cdff85f-f01f-4edc-b34d-4c4ae98aa77d"
+                },
+                {
+                    "objectId": "10684",
+                    "objectName": "OneTimeTransfer",
+                    "objectETag": "53db5d81-3987-4b77-a81f-797baf09381e"
+                },
+                {
+                    "objectId": "10685",
+                    "objectName": "Payment_Multi",
+                    "objectETag": "675ec0cd-1a9b-4353-87ce-ab170c4295b7"
+                },
+                {
+                    "objectId": "10686",
+                    "objectName": "StandingInstruction",
+                    "objectETag": "a8ee9cd4-b6e9-4cc6-a12b-732a2d5a551e"
+                },
+                {
+                    "objectId": "10687",
+                    "objectName": "UpcomingTransactions",
+                    "objectETag": "05959063-d11b-4759-9f6d-99d5ee6e5a8d"
+                },
+                {
+                    "objectId": "10688",
+                    "objectName": "WireTransfer",
+                    "objectETag": "1df203d0-4106-4fc2-be6f-23f0efd8b5e2"
+                }
+            ]
+        }
+    ],
+    "appInfo": {
+        "serviceDocEtag": "0000019517D6C8F8"
+    }
+}

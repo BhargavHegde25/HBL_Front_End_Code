@@ -1,0 +1,17 @@
+{
+    "AS_BarButtonItem_h6149d461c0948e9b453882b0facb6d2": {
+        "id": "AS_BarButtonItem_h6149d461c0948e9b453882b0facb6d2",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_a0f4c52a23cc487396beb41f0a44af16",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.onClickFlexPopup();",
+            "parentId": null
+        }]
+    }
+}

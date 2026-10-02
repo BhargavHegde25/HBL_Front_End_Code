@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service serviceGroup="" cachable="false" cacheduration="" customOperation="false" description="" endpoint="default" groupType="" id="validateIBAN" passwordencrypted="false" security="authorized_app_user" type="stubConnector" smscode="" smsenabled="false">
+    <service-config>
+        <config-param api-version="" appid="" name="preprocessorname" value=""/>
+        <config-param api-version="" appid="" name="postprocessorname" value=""/>
+        <config-param api-version="" appid="" name="preprocessorJS" value=""/>
+        <config-param api-version="" appid="" name="postprocessorJS" value=""/>
+        <config-param api-version="" appid="" name="preprocessorRules" value=""/>
+        <config-param api-version="" appid="" name="postprocessorRules" value=""/>
+        <config-param api-version="" appid="" name="kony_http_supported_methods" value="POST"/>
+        <config-param api-version="" appid="" name="endpointUrl" value=""/>
+        <config-param api-version="" appid="" name="ignorehttpproxy" value="true"/>
+        <config-param api-version="" appid="" name="http.method" value="GET"/>
+        <config-param api-version="" appid="" name="dataObjectName" value=""/>
+        <config-param api-version="" appid="" name="sockettimeout" value=""/>
+        <config-param api-version="" appid="" name="responseEncoding" value="UTF-8"/>
+        <config-param api-version="" appid="" name="isembedxmlpresent" value="false"/>
+        <config-param api-version="" appid="" name="retrycount" value="0"/>
+    </service-config>
+    <service-input passthrough="false" isExtended="false">
+        <header datatype="" name="" passthrough="false" isExtended="false">
+            <param datatype="string" defaultvalue="" description="" encode="false" format="None" formatvalue="" name="Authorization" order="" paramOrder="0" parentOrder="0" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="" targetdatatype="" testvalue="eyAidHlwIjogImp3dCIsICJhbGciOiAiUlMyNTYiIH0.eyAiX2VtYWlsIjogImludmFsaWRAdGVtZW5vcy5jb20iLCAiX3ZlciI6ICJ2MS4xIiwgImlzcyI6ICJodHRwOi8vbDcyODJkazMudGVtZW5vc2dyb3VwLmNvbTo4MDgwL2F1dGhTZXJ2aWNlLzEwMDAwMDAwMiIsICJfc2NvcGUiOiAiZyIsICJfaXNzbWV0YSI6ICIvbWV0YWRhdGEvcGJBMGJWaGZzSzE5ai05d2pBb0Uwdz09IiwgIl9hcHAiOiAiZTYzNGU1YTgtMzFkZi00NDlhLThmZjctZDEyYzNjNzg3Mzk4IiwgIl9zZXNzaW9uX2lkIjogIjNlOTg2YzU2LWMzZWUtNDY1MS1iYTJlLWY5MjM0YzVkM2IzMiIsICJfcHVpZCI6IDIxMTc3OTYxMjc0NDkyNDI2NTAsICJfYXV0aHoiOiAiZXlKd1pYSnRhWE56YVc5dWN5STZlMzBzSW5KdmJHVnpJanBiWFgwIiwgIl9pZHAiOiAiRGJ4VXNlckxvZ2luIiwgImV4cCI6IDE2NjUxNjI1ODksICJpYXQiOiAxNjY1MTYxMzg5LCAiX3Nlc3Npb25fdGlkIjogIjEwMDAwMDAwMiIsICJfcHJvdl91c2VyaWQiOiAiNDg0MDUyNDYxMyIsICJqdGkiOiAiYzRlMzA4MDAtZDlhYy00MDUzLWI4YTgtMDg0ZDNhNzdiNmNlIiwgIl9hY3MiOiAiMTAwMDAwMDAyIiwgIl9wcm92aWRlcnMiOiBbICJEYnhVc2VyTG9naW4iIF0gfQ.b6XpttgvMTRU7KD3wl15QQ8jDMTk9jmvl94Kt_BCV4UnUTamt3l51ZLyAz1APQIKYuISgtRIDFQ1edb5menCrcRGzX6zax6bdp5Oc5ZhBudcn-KmkS-3qbhZ4vlnu8PHIeKIBTEsrhd6cOoR-d5YAf-QLX9SSgvTn2hzkNVU1-XasCX24AwOGYqynp8hdh_csRxQuWb-R2M9nxVUOd1e1_AL7twcP2O_MJeRg1ZAGn_vcQ2bEKPOHqEYlNgge5AUL-wkTRsFoyfscB7Rl7q3fvcg2h2BxEWJZbXZ7c6mG7swo6juGW5_qfHqoqJQqEe-qSwxAi9odP123138K8Oh3Q" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+        </header>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="iban" order="" paramOrder="1" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="GB53BARC20652670299332" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <stub-param value="{&quot;iban:&quot;:&quot;GB53BARC20652670299332&quot;,&quot;isIBANValid: &quot;:&quot;YES&quot;,&quot;opstatus&quot;:0,&quot;httpStatusCode&quot;:200}"/>
+    </service-input>
+    <service-output passthrough="false" isExtended="false">
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="iban" order="" paramOrder="1" parentOrder="0" passnull="false" sms-name="" src="$.iban:" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="isIBANValid" order="" paramOrder="2" parentOrder="0" passnull="false" sms-name="" src="$.['isIBANValid: ']" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="number" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="opstatus" order="" paramOrder="3" parentOrder="0" passnull="false" sms-name="" src="$.opstatus" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="number" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="httpStatusCode" order="" paramOrder="4" parentOrder="0" passnull="false" sms-name="" src="$.httpStatusCode" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+    </service-output>
+</service>

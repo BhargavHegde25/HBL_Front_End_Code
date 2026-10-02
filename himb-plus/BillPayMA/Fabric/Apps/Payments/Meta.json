@@ -1,0 +1,311 @@
+{
+  "meta" : "{\"locked\":true}",
+  "subType" : "customapp",
+  "description" : "Payments",
+  "version" : "1.0",
+  "intSvcs" : [ {
+    "name" : "AccountSweepsServices",
+    "version" : "1.0",
+    "etag" : "d7002c4d-f3ea-4bd1-818d-8383195750d4"
+  }, {
+    "name" : "AccountSweepsSRMSServices",
+    "version" : "1.0",
+    "etag" : "455b1c81-6045-4e12-88cf-c3d23065c5dd"
+  }, {
+    "name" : "BillpayLOB",
+    "version" : "1.0",
+    "etag" : "64653291-ce79-4ca9-a308-fd0486f85614"
+  }, {
+    "name" : "BillPayPayeeLOB",
+    "version" : "1.0",
+    "etag" : "e3007fa8-92b8-46e1-9421-3ab46a6195ff"
+  }, {
+    "name" : "CIBAAuthJavaStatus",
+    "version" : "1.0",
+    "etag" : "4be83a69-2cca-4e0e-9d24-006454049046"
+  }, {
+    "name" : "CIBAInitiation",
+    "version" : "1.0",
+    "etag" : "ce80f815-ebb3-4d2d-be26-12bbee17814a"
+  }, {
+    "name" : "ClientCredentials",
+    "version" : "1.0",
+    "etag" : "2dfdc39f-ddfd-42a5-97c4-7a31bc05de6c"
+  }, {
+    "name" : "ConnectIPS",
+    "version" : "1.0",
+    "etag" : "f3fde0d4-5aed-44a2-98db-f024e9942f81"
+  }, {
+    "name" : "dbpBulkWireServices",
+    "version" : "1.0",
+    "etag" : "783e8a89-4e10-446e-a90f-17f7c7626075"
+  }, {
+    "name" : "dbpPayeeServices",
+    "version" : "1.0",
+    "etag" : "20ae8e39-ffbc-456b-82a5-25bef0121f6b"
+  }, {
+    "name" : "dbpTransactionServices",
+    "version" : "1.0",
+    "etag" : "ea252d4d-ec85-49c7-b113-59e48ca2fdfd"
+  }, {
+    "name" : "DomesticWireTransferLOB",
+    "version" : "1.0",
+    "etag" : "ab7946f1-1dd3-4be4-9659-0db41a1e73fd"
+  }, {
+    "name" : "HBLCustomQRService",
+    "version" : "1.0",
+    "etag" : "d6dd0609-074e-4eb1-9bca-e665e5d9982f"
+  }, {
+    "name" : "HBLMerchantCRUDService",
+    "version" : "1.0",
+    "etag" : "47d401b5-9c46-4876-8fe6-54405383ad35"
+  }, {
+    "name" : "HBLMerchantJavaServices",
+    "version" : "1.0",
+    "etag" : "7230c545-ac28-4d5a-a21a-9db888042193"
+  }, {
+    "name" : "HBLRemitFDService",
+    "version" : "1.0",
+    "etag" : "0d1316b2-7144-4e89-912e-876cfe8b3b63"
+  }, {
+    "name" : "InfinityTransactionServices",
+    "version" : "1.0",
+    "etag" : "ea64880d-fbbe-4da2-a8f6-ba4163391273"
+  }, {
+    "name" : "InterbankFundTransferLOB",
+    "version" : "1.0",
+    "etag" : "59c118f8-a635-4905-907f-4365fcfaf61b"
+  }, {
+    "name" : "InterBankPayeeLOB",
+    "version" : "1.0",
+    "etag" : "f1fd62ff-dcc0-45ec-bb2f-43a68f64505b"
+  }, {
+    "name" : "InternationalFundTransferLOB",
+    "version" : "1.0",
+    "etag" : "b7f5d2d8-418f-4115-b432-f12cf10d78d5"
+  }, {
+    "name" : "InternationalPayeeLOB",
+    "version" : "1.0",
+    "etag" : "9a2a7db7-d57c-41e1-8e20-e2738f63b009"
+  }, {
+    "name" : "InternationalWireTransferLOB",
+    "version" : "1.0",
+    "etag" : "d07563d9-9a3a-4553-9f99-2804e75d3f8c"
+  }, {
+    "name" : "IntrabankFundTransferLOB",
+    "version" : "1.0",
+    "etag" : "65eb8c99-6b01-4f62-a391-1ad1d0ec15d3"
+  }, {
+    "name" : "IntraBankPayeeLOB",
+    "version" : "1.0",
+    "etag" : "81e00d73-95d2-4fb6-afd5-795e7c622586"
+  }, {
+    "name" : "LoanJavaService",
+    "version" : "1.0",
+    "etag" : "32c989b0-8410-4a4a-8637-df6fdec3d2f2"
+  }, {
+    "name" : "LoanMockService",
+    "version" : "1.0",
+    "etag" : "a3c1959e-1e6d-4d9a-8e84-ec222f9adb35"
+  }, {
+    "name" : "LoanServiceJSON",
+    "version" : "1.0",
+    "etag" : "52ca7b04-bc8f-4a13-a7b4-9b82beeab1c3"
+  }, {
+    "name" : "OnboardingTransfer",
+    "version" : "1.0",
+    "etag" : "edfb2d10-e4e3-4c25-bc9a-b115e0b49c6c"
+  }, {
+    "name" : "OwnAccountTransferLOB",
+    "version" : "1.0",
+    "etag" : "109e4071-cab7-4beb-a43f-f01a3ff6f829"
+  }, {
+    "name" : "P2PLOB",
+    "version" : "1.0",
+    "etag" : "b0d7b605-9fb3-4553-9fc8-982f5ec59993"
+  }, {
+    "name" : "P2PPayeeLOB",
+    "version" : "1.0",
+    "etag" : "3543dd9b-b4ab-417e-924c-60db2d64d573"
+  }, {
+    "name" : "QRPaymentService",
+    "version" : "1.0",
+    "etag" : "b302d083-9444-47cb-8161-d23103d6e22c"
+  }, {
+    "name" : "RMSThreatMarkAPI",
+    "version" : "1.0",
+    "etag" : "a3b1316d-a550-4ce3-be49-be1a19a02591"
+  }, {
+    "name" : "SCAInfinityWrapper",
+    "version" : "1.0",
+    "etag" : "8ad5b95d-2617-473e-839c-2f41491005b0"
+  }, {
+    "name" : "SCAIntegrationService",
+    "version" : "1.0",
+    "etag" : "20211d87-a0b3-4682-b051-8f915f43814c"
+  }, {
+    "name" : "SCAScimApis",
+    "version" : "1.0",
+    "etag" : "7f7aaa11-0ee7-46c9-9e5e-90abcc165d42"
+  }, {
+    "name" : "SCATransactionService",
+    "version" : "1.0",
+    "etag" : "92546597-4e9e-45eb-88f5-a1be5985dda8"
+  }, {
+    "name" : "SCATransactionSigning",
+    "version" : "1.0",
+    "etag" : "4ca14326-1b4d-49db-a335-191cf20d2658"
+  }, {
+    "name" : "SCIMApis",
+    "version" : "1.0",
+    "etag" : "17ae99d3-3108-45a0-9411-693bb4a856d0"
+  }, {
+    "name" : "SRMSJavaPaymentsServices",
+    "version" : "1.0",
+    "etag" : "78902c0a-e972-4b75-9832-fce5716466ca"
+  }, {
+    "name" : "SRMSMockIntegrationService",
+    "version" : "1.0",
+    "etag" : "be968c90-996c-4677-b3ae-3e80cf2063dc"
+  }, {
+    "name" : "SRMSPaymentBackendServices",
+    "version" : "1.0",
+    "etag" : "4e151482-71a5-402a-93f9-773a831abb72"
+  }, {
+    "name" : "SRMSTransactionsJavaService",
+    "version" : "1.0",
+    "etag" : "698b573c-e9dd-4a23-bb64-b076c406c764"
+  }, {
+    "name" : "T24ISPaymentOrders",
+    "version" : "1.0",
+    "etag" : "04e69606-a4d1-4096-9765-2e8cba77fee0"
+  }, {
+    "name" : "T24ISPaymentsView",
+    "version" : "1.0",
+    "etag" : "634e5ffe-81b6-4aaf-a64f-cffa37c8614f"
+  }, {
+    "name" : "T24ISStandingOrders",
+    "version" : "1.0",
+    "etag" : "d415f5a6-2825-435e-b000-fd9cf7175ae2"
+  }, {
+    "name" : "T24JavaPaymentsServices",
+    "version" : "1.0",
+    "etag" : "8f76deab-64bf-4b07-a4c5-6daae21dd5f0"
+  }, {
+    "name" : "T24PaymentsJavaServices",
+    "version" : "1.0",
+    "etag" : "e649ccfe-65d8-41a2-a9df-5900154c54e7"
+  }, {
+    "name" : "TransfersMockData",
+    "version" : "1.0",
+    "etag" : "cff0ba84-4403-4aaa-b327-4e2fd3a090e5"
+  }, {
+    "name" : "WireTransfersPayeeLOB",
+    "version" : "1.0",
+    "etag" : "d3c12ae2-815e-4e5a-bb81-e7d178ae65d8"
+  } ],
+  "orchSvcs" : [ {
+    "name" : "CIBAPushValidationOrchService",
+    "version" : "1.0",
+    "etag" : "5af7a3db-09a4-4608-99b7-613f99ab1189"
+  }, {
+    "name" : "HBLQRPayments",
+    "version" : "1.0",
+    "etag" : "537b56ab-6ad5-4f4d-ada8-005240c77802"
+  }, {
+    "name" : "MerchantMgmtOrch",
+    "version" : "1.0",
+    "etag" : "3fd45305-4bae-44e9-a19a-8aca15cf4b97"
+  }, {
+    "name" : "SCATxnValidationOrchService",
+    "version" : "1.0",
+    "etag" : "777b76bf-7840-4048-b297-6189b0bc2b50"
+  }, {
+    "name" : "dbpBulkWireOrch",
+    "version" : "1.0",
+    "etag" : "ddaf94a9-3889-42d1-8d10-185977ea4903"
+  }, {
+    "name" : "CreateBulkTransferOrch",
+    "version" : "1.0",
+    "etag" : "534489e6-a08b-4933-9a03-30de9f245f62"
+  }, {
+    "name" : "CreateBulkBillPayOrchestration",
+    "version" : "1.0",
+    "etag" : "a654715a-9a9e-4d3b-aaca-ae3680df9532"
+  }, {
+    "name" : "dbpExternalPayeesOrch",
+    "version" : "1.0",
+    "etag" : "e779d690-650a-49a6-921b-5dbbc92b5d09"
+  }, {
+    "name" : "SCARMSService",
+    "version" : "1.0",
+    "etag" : "30c29e1c-5037-4175-9f2d-59a401aefa54"
+  }, {
+    "name" : "CreateBulkWireTransferOrch",
+    "version" : "1.0",
+    "etag" : "0c0c7d45-adbb-4e38-9f19-70d273b51e9b"
+  }, {
+    "name" : "BackendPayeeServicesOrch",
+    "version" : "1.0",
+    "etag" : "40676128-3736-4dbe-ba8f-2efb843ad8d4"
+  }, {
+    "name" : "PaymentOrchestrationServices",
+    "version" : "1.0",
+    "etag" : "15a55a15-2279-44c5-b4b4-645f347a43e5"
+  } ],
+  "objectSvcs" : [ {
+    "name" : "AccountSweepsObjects",
+    "version" : "1.0",
+    "etag" : "ea429a5e-946d-42a0-9bde-88fe01b4c87e"
+  }, {
+    "name" : "BillPay",
+    "version" : "1.0",
+    "etag" : "051a9ed7-7b4c-434c-8714-abfce9a83239"
+  }, {
+    "name" : "BulkWireObjects",
+    "version" : "1.0",
+    "etag" : "112024cd-4821-4e75-aa41-dbe3091d53cb"
+  }, {
+    "name" : "DigitalTransfer",
+    "version" : "1.0",
+    "etag" : "941f915a-93a6-4e03-9bef-b80d0dbe083a"
+  }, {
+    "name" : "HBLMerchantObjects",
+    "version" : "1.0",
+    "etag" : "1f35838d-4d34-483b-a917-6c0f215f3b5e"
+  }, {
+    "name" : "HIDRMSService",
+    "version" : "1.0",
+    "etag" : "1c16d3f0-e090-49db-9964-132b78d360e0"
+  }, {
+    "name" : "LoanPayoff",
+    "version" : "1.0",
+    "etag" : "de30fd60-9a54-40df-920b-9065dff84b4b"
+  }, {
+    "name" : "PayeeManagement",
+    "version" : "1.0",
+    "etag" : "e9996907-fc68-468e-8fb7-d1aa9be60dd7"
+  }, {
+    "name" : "PayeeObjects",
+    "version" : "1.0",
+    "etag" : "0d2d509b-9c4c-4bc3-89e4-69730c65b5c5"
+  }, {
+    "name" : "QRPayments",
+    "version" : "1.0",
+    "etag" : "5f2dc1ab-00af-4af2-81fc-3c9bb828f3ed"
+  }, {
+    "name" : "SCATransactionObjects",
+    "version" : "1.0",
+    "etag" : "bdec7a67-64c6-42c4-8296-038db84ba800"
+  }, {
+    "name" : "TransactionObjects",
+    "version" : "1.0",
+    "etag" : "9cebc831-acc8-42cb-9095-3504ae316592"
+  }, {
+    "name" : "Transfers",
+    "version" : "1.0",
+    "etag" : "3b6327a7-1f16-402f-81b6-1213c0900a5d"
+  } ],
+  "identity" : [ "CIBACustomIdentity", "DbxAPIIdentityService", "DbxUserLogin" ],
+  "identitySvcConf" : "{\"session_idle_timeout_mins\":20,\"session_max_duration_mins\":360,\"show_security_attributes\":false,\"is_integrity_enabled\":false,\"auto_extend\":true}"
+}

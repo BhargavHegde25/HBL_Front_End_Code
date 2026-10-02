@@ -1,0 +1,131 @@
+{
+    "classname": "ActiveDonut",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "bbb49b89b9614a57a831f9efd31c4a19",
+                    "paramList": [],
+                    "propertyKey": "goContext",
+                    "pw": {
+                        "displayName": "goContext",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "e6aa4bb6c993423ebc31cfccdbf53d44",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [
+                "segList"
+            ],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "{}\n  \n",
+                    "group": "segList",
+                    "kuid": "c746fd54d06a403aa3ca53bbad7a5f36",
+                    "originalPropertyKey": "serviceParameters",
+                    "propertyIndex": 1,
+                    "propertyKey": "serviceParameters",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Service Parameters",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "e6aa4bb6c993423ebc31cfccdbf53d44",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{}",
+                    "group": "segList",
+                    "kuid": "gf1ef9a8193a4a6d942ad883c5fdf539",
+                    "originalPropertyKey": "dataMapping",
+                    "propertyIndex": 2,
+                    "propertyKey": "dataMapping",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Data Mapping",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "e6aa4bb6c993423ebc31cfccdbf53d44",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "segList",
+                    "kuid": "i5d5ef17663b4057a95fad97b5eae9b3",
+                    "originalPropertyKey": "rowTemplateConfig",
+                    "propertyIndex": 3,
+                    "propertyKey": "rowTemplateConfig",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Row Template Config",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "e6aa4bb6c993423ebc31cfccdbf53d44",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "segList",
+                    "kuid": "f9631c09b81242c7b4de815c989f23ac",
+                    "originalPropertyKey": "headerTemplateConfig",
+                    "propertyIndex": 4,
+                    "propertyKey": "headerTemplateConfig",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Header Template Config",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "e6aa4bb6c993423ebc31cfccdbf53d44",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.Infinity.OLB.PortfolioManagementMA",
+    "version": "1.0.0"
+}

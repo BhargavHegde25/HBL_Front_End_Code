@@ -1,0 +1,56 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "50dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s8330988041f4463b893582a86369462",
+    "_text_": "Button",
+    "_top_": {
+        "type": "string",
+        "value": "10dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "80%"
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "disabledSkins": {},
+    "displaytext": true,
+    "focusskin": "s3d50ec56cb6468085b5d50828d70302",
+    "id": "btnPrimary",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "c702e26af4f2433cbd179e745c2f2536",
+    "name": "kony.ui.Button",
+    "parent": "flxButton",
+    "pf": "frmEnrollPreferred",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "texti18n": "i18n.LoginActivation.ActivateYourProfile",
+    "wType": "Button"
+}

@@ -1,0 +1,44 @@
+{
+    "classname": "WealthHealthChart",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "a58738e7fff14f72ba016306f701574d",
+                    "paramList": [],
+                    "propertyKey": "drawDataChart",
+                    "pw": {
+                        "displayName": "drawDataChart",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "f99e2ae39bc1482ca7d5953bfdce31a2",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfinityOLB.PortfolioManagementMA",
+    "version": "1.0.0"
+}

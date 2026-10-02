@@ -1,0 +1,23 @@
+{
+    "AS_Form_cfb85d2374a94d8483b6ba501b8272b7": {
+        "id": "AS_Form_cfb85d2374a94d8483b6ba501b8272b7",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmRequestFixedDepositFromAccount",
+            "type": "forms",
+            "platform": "",
+            "KUID": "d02d52982a2a4b9f80ff633386cbbc5e"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ffe2ed8b108f48419270df6eb4ec1d64",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.preShow();",
+            "parentId": null
+        }]
+    }
+}

@@ -1,0 +1,96 @@
+{
+    "classname": "myRecommendedStrategyNew",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "feff9e52758b49ad88e84e21968ff3d0",
+                    "paramList": [],
+                    "propertyKey": "setData",
+                    "pw": {
+                        "displayName": "setData",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "c775230880e04bea8e5aee493a00bca7",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "dff3f8e36935492dbd8a12013ec7b126",
+                    "paramList": [],
+                    "propertyKey": "hideFlex",
+                    "pw": {
+                        "displayName": "hideFlex",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "c775230880e04bea8e5aee493a00bca7",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "hba7ef0413b44acdb7bafa87f70e461b",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "onClickChooseStrategy",
+                    "pw": {
+                        "displayName": "onClickChooseStrategy",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "c775230880e04bea8e5aee493a00bca7",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n\"ObjectName\": \"Strategies\",\n\"ServiceName\": \"PortfolioServicing\",\n\"OperationName\": \"getRcmdStrategy\"\n}",
+                    "group": "General",
+                    "kuid": "aee65609779a47e9af23963ec6244352",
+                    "originalPropertyKey": "serviceCall",
+                    "propertyIndex": 2,
+                    "propertyKey": "serviceCall",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "service call",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "c775230880e04bea8e5aee493a00bca7",
+                    "type": "json",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.Infinity.MB.PortfolioManagementMA",
+    "version": "1.0.0"
+}

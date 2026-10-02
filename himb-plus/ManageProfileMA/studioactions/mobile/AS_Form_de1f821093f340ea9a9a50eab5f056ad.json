@@ -1,0 +1,28 @@
+{
+    "AS_Form_de1f821093f340ea9a9a50eab5f056ad": {
+        "id": "AS_Form_de1f821093f340ea9a9a50eab5f056ad",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmEnableBiometricMFA",
+            "type": "forms",
+            "platform": "",
+            "KUID": "j22c4b714e7f446ab26728a4dabe1f59"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__a44942f8b3d7402da7c989d41bc01fab",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "preshow",
+            "display": "preshow",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null,
+            "source": "controller"
+        }]
+    }
+}

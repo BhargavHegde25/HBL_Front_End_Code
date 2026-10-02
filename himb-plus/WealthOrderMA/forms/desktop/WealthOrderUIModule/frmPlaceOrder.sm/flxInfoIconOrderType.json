@@ -1,0 +1,91 @@
+{
+    "DNDConfig": null,
+    "_bottom_": {
+        "type": "string",
+        "value": "340dp"
+    },
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "3%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s24c92fc23b14f5484b693ee9b8a9b35",
+    "_width_": {
+        "type": "string",
+        "value": "500dp"
+    },
+    "allboxes": [],
+    "autogrowmode": 1,
+    "canUpdateUI": true,
+    "children": [
+        "flxInfoOrderType"
+    ],
+    "clipbounds": true,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "flxInfoIconOrderType",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": false,
+    "kuid": "c4a2d252522e418e8f515b9cbf176f6a",
+    "layouttype": 4,
+    "name": "kony.ui.FlexContainer",
+    "parent": "flxPlaceOrderContainer",
+    "pf": "frmPlaceOrder",
+    "responsiveData": {
+        "b1": {
+            "bottom": {
+                "type": "string",
+                "value": "360dp"
+            },
+            "left": {
+                "type": "string",
+                "value": "4%"
+            }
+        },
+        "b2": {
+            "bottom": {
+                "type": "string",
+                "value": "720dp"
+            },
+            "left": {
+                "type": "string",
+                "value": "6.50%"
+            }
+        },
+        "b4": {
+            "bottom": {
+                "type": "string",
+                "value": "368dp"
+            },
+            "left": {
+                "type": "string",
+                "value": "4%"
+            }
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1
+}

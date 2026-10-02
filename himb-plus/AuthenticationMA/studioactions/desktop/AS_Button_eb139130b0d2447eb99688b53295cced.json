@@ -1,0 +1,23 @@
+{
+    "AS_Button_eb139130b0d2447eb99688b53295cced": {
+        "id": "AS_Button_eb139130b0d2447eb99688b53295cced",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmEmbedOrigination",
+            "type": "forms",
+            "platform": "",
+            "KUID": "d2656e6941354b8895637882cf1e9fc8"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_e3ce02e08cad4c2388e5ce899e22d87d",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.showConfirmationPopUp();\r\nthis.destinationForm = \"showFAQs\";",
+            "parentId": null
+        }]
+    }
+}

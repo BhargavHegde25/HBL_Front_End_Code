@@ -1,0 +1,89 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizRichText",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "220dp"
+    },
+    "_i18n_text_": "i18n.prelogin.Notes",
+    "_left_": {
+        "type": "string",
+        "value": "0"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s63f0deee92e4a7cb8ce303c1dfaf4c5",
+    "_text_": "<b>Note</b><br><li>Click on ‘Register/Activate Profile’ link for Registering and Activating your digital banking profile.</li><li>Click on ‘Activate Third Party Auth’ link for Activating Third Party Authentication.</li><li>If your Third-Party Authentication has been reset by bank, please click the link 'Reset Third Party Auth'.</li>",
+    "_top_": {
+        "type": "string",
+        "value": "0"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_wrapping_": 2,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "id": "richTextNote",
+    "info": null,
+    "iscustomlayout": true,
+    "isvisible": true,
+    "kuid": "d8cf40fca84b402fb9f6beee6a010074",
+    "linkskin": "s7b2d2ed337e4ae68b0b27951bc25d18",
+    "name": "kony.ui.RichText",
+    "parent": "flxNote",
+    "pf": "frmLogin",
+    "responsiveData": {
+        "b1": {
+            "height": {
+                "type": "ref",
+                "value": "preferred"
+            },
+            "i18n_text": "i18n.prelogin.Notes",
+            "isVisible": true,
+            "skin": "s1a7d9e62f58455594fea7c4563ce38a",
+            "text": "<b>Note</b><br><li>Click on ‘Register/Activate Profile’ link for Registering and Activating your digital banking profile.</li><li>Click on ‘Activate Third Party Auth’ link for Activating Third Party Authentication.</li><li>If your Third-Party Authentication has been reset by bank, please click the link 'Reset Third Party Auth'.</li>"
+        },
+        "b2": {
+            "skin": "s19145f8ece84f148d16ab75541eb1ea",
+            "text": "<b>Note<b><br>\n• Click on ‘Register/Activate Profile’ link for \n  Registering and Activating your digital banking profile. <br>• Click on ‘Activate Third Party Auth’ link for Activating Third Party Authentication.<br>• If your Third-Party Authentication has been reset by bank, please click the link 'Reset Third Party Auth'."
+        },
+        "b3": {
+            "height": {
+                "type": "string",
+                "value": "130dp"
+            },
+            "skin": "s19145f8ece84f148d16ab75541eb1ea",
+            "width": {
+                "type": "string",
+                "value": "92%"
+            },
+            "zIndex": 1
+        },
+        "b4": {
+            "skin": "s19145f8ece84f148d16ab75541eb1ea",
+            "top": {
+                "type": "string",
+                "value": "12dp"
+            }
+        }
+    },
+    "retaincontentalignment": true,
+    "retainflexpositionproperties": false,
+    "texti18n": "i18n.prelogin.Notes",
+    "wType": "RichText",
+    "widgetalignment": 5,
+    "zindex": 1
+}

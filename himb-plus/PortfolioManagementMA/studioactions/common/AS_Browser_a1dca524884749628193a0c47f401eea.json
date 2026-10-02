@@ -1,0 +1,20 @@
+{
+    "AS_Browser_a1dca524884749628193a0c47f401eea": {
+        "id": "AS_Browser_a1dca524884749628193a0c47f401eea",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "collection",
+            "name": "params"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_bc1caad9df7b41feb339e19958db44e1",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.setAssetData();",
+            "parentId": null
+        }]
+    }
+}

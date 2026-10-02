@@ -1,0 +1,100 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizLabel",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "number",
+        "value": ""
+    },
+    "_margin_": [
+        1,
+        1,
+        1,
+        1
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_right_": {
+        "type": "string",
+        "value": "25dp"
+    },
+    "_skin_": "sffa7cd1b1684dc08c89e203ddb75736",
+    "_text_": "26/11/2020, 6:00 AM",
+    "_top_": {
+        "type": "string",
+        "value": "33dp"
+    },
+    "_width_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_wrapping_": 2,
+    "android": {
+        "textStyle": {
+            "letterSpacing": 0,
+            "strikeThrough": false
+        }
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "id": "lblDateTime",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "iphone": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "hbe76649bb344851a82c8ed9d5928d7d",
+    "name": "kony.ui.Label",
+    "parent": "flxContent",
+    "pf": "frmPastProposal",
+    "responsiveData": {
+        "b1": {
+            "right": {
+                "type": "string",
+                "value": "45dp"
+            },
+            "skin": "sdb2c419b39f45dfbf29e225f4c55dd5",
+            "text": "",
+            "top": {
+                "type": "string",
+                "value": "27dp"
+            }
+        },
+        "b2": {
+            "left": {
+                "type": "string",
+                "value": "25dp"
+            },
+            "right": {
+                "type": "string",
+                "value": ""
+            },
+            "skin": "sdb2c419b39f45dfbf29e225f4c55dd5",
+            "text": "",
+            "top": {
+                "type": "string",
+                "value": "55dp"
+            }
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "tooltip": "",
+    "wType": "Label"
+}

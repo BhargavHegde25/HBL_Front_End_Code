@@ -1,0 +1,24 @@
+{
+  "type" : "svcdriven",
+  "custom" : false,
+  "junction" : false,
+  "customizable" : false,
+  "verbs" : {
+    "getMerchantFields" : "getMerchantFieldsMapping",
+    "getMerchantFormFields" : "getMerchantFormFieldsMapping",
+    "getMerchants" : "getMerchantsMapping",
+    "updateFavoriteMerchant" : "updateFavoriteMerchantMapping",
+    "getMerchantCategories" : "getMerchantCategoriesMapping",
+    "getBillPaymentHistory" : "getBillPaymentHistoryMapping",
+    "lodgeBillPay" : "lodgeBillPayMapping",
+    "getFavoriteMerchants" : "getFavoriteMerchantsMapping",
+    "createFavoriteMerchant" : "createFavoriteMerchantMapping",
+    "deleteFavoriteMerchant" : "deleteFavoriteMerchantMapping",
+    "confirmBillPay" : "confirmBillPayMapping"
+  },
+  "entityProperties" : {
+    "BatchMode" : "buffer",
+    "backendMeta" : { },
+    "designTimeBackendMeta" : { }
+  }
+}

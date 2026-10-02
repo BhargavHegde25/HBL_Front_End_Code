@@ -1,0 +1,28 @@
+{
+    "AS_Button_i38e8c8f66d04c1ca45f13673dc5e721": {
+        "id": "AS_Button_i38e8c8f66d04c1ca45f13673dc5e721",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "type": "forms",
+            "platform": "",
+            "KUID": "df336a49059240909206ab5f8f5b99ab",
+            "name": "frmCurrencyConverter"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__acd616e53fa9481495dcb5ee2445c568",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "switchCurrency",
+            "display": "switchCurrency",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null,
+            "source": "controller"
+        }]
+    }
+}

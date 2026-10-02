@@ -1,0 +1,23 @@
+{
+    "AS_Form_a67557f3e495465885081076bd323f4d": {
+        "id": "AS_Form_a67557f3e495465885081076bd323f4d",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmCardLessHome",
+            "type": "forms",
+            "platform": "",
+            "KUID": "h32ef1e5d4be41d0880f31ca4788f5b7"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_e6d991f583234ea395ead7a963139f35",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.preShow();",
+            "parentId": null
+        }]
+    }
+}

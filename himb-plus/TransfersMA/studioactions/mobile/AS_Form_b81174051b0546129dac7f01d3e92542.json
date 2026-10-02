@@ -1,0 +1,23 @@
+{
+    "AS_Form_b81174051b0546129dac7f01d3e92542": {
+        "id": "AS_Form_b81174051b0546129dac7f01d3e92542",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmPayeeAck",
+            "type": "forms",
+            "platform": "",
+            "KUID": "d6f684c3a5c9443888747d7a874d522b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_bdd9bca39a334a0981fec4f52c3cb841",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.preShow();",
+            "parentId": null
+        }]
+    }
+}

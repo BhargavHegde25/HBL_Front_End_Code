@@ -1,0 +1,70 @@
+{
+    "classname": "riskAnalysis",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "e5babcadd87c426c890bde4f7ab6895c",
+                    "paramList": [],
+                    "propertyKey": "setContext",
+                    "pw": {
+                        "displayName": "setContext",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "g717952df70c4714898b1823567406e6",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n\"ObjectName\": \"PortfolioHealth\",\n\"ServiceName\": \"PortfolioServicing\",\n\"OperationName\": \"getRiskAnalysisHC\"\n}\n\n\n",
+                    "group": "General",
+                    "kuid": "e714bf2da5b24d3780f3dd81f1cf1326",
+                    "originalPropertyKey": "serviceCall",
+                    "propertyIndex": 1,
+                    "propertyKey": "serviceCall",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Service Call",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "g717952df70c4714898b1823567406e6",
+                    "type": "json",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfinityMB.PortfolioManagementMA",
+    "version": "1.0.0"
+}

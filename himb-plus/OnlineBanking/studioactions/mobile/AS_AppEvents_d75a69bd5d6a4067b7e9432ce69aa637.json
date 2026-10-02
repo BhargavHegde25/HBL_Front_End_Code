@@ -1,0 +1,17 @@
+{
+    "AS_AppEvents_d75a69bd5d6a4067b7e9432ce69aa637": {
+        "id": "AS_AppEvents_d75a69bd5d6a4067b7e9432ce69aa637",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_a562dec1858f4528947fe5ca63e1544a",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var scope = this;\r\nvar params = eventobject;\r\nparams = params ? params : {};\r\nparams.launchparams = params.launchparams ? params.launchparams : {};\r\nparams.launchmode = params.launchmode ? params.launchmode : 1;\r\nvar data = {};\r\nvar formname;\r\nif (params.launchmode == 1) {\r\n} else if (params.launchmode == 3) {\r\n    var launchForm = params.launchparams.URL;\r\n    //var splitURL = launchForm.split(\"?\")[1];\r\n    if (launchForm.includes(\"frmAccountActivation\")) {\r\n        applicationManager.getNavigationManager().setCustomInfo(\"appservice\", true);\r\n        } else if (launchForm.includes(\"resetTransactionPin\")) {\r\n        var userObj = applicationManager.getUserPreferencesManager();\r\n        if (userObj.isUserLoggedin() === true) {\r\n            applicationManager.getNavigationManager().setCustomInfo(\"resetPinDeepLinkFlow\", true);\r\n            var authMod = kony.mvc.MDAApplication.getSharedInstance().getModuleManager().getModule({\r\n                \"appName\": \"AuthenticationMA\",\r\n                \"moduleName\": \"AuthUIModule\"\r\n            });\r\n            authMod.presentationController.onLogout();\r\n        } else {\r\n            applicationManager.getNavigationManager().setCustomInfo(\"resetPinDeepLinkFlow\", true);\r\n        }\r\n    }\r\n}",
+            "parentId": null
+        }]
+    }
+}

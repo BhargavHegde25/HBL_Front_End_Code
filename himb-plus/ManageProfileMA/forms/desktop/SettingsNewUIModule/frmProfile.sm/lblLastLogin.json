@@ -1,0 +1,97 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizLabel",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_i18n_text_": "i18n.HBL.Lastlogindetails:",
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        1,
+        1,
+        1,
+        1
+    ],
+    "_padding_": [
+        0,
+        0,
+        2,
+        0
+    ],
+    "_skin_": "s4adb862a1d741eaafba2145d8c99843",
+    "_text_": "Last login details",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_wrapping_": 2,
+    "accessibilityconfig": {},
+    "android": {
+        "textStyle": {
+            "letterSpacing": 0,
+            "strikeThrough": false
+        }
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "id": "lblLastLogin",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "iphone": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "isvisible": true,
+    "kuid": "g3e4266d566544178d5bdb94ffde6f7d",
+    "name": "kony.ui.Label",
+    "paddinginpixel": false,
+    "parent": "flxLastLogin",
+    "pf": "frmProfile",
+    "responsiveData": {
+        "b1": {
+            "i18n_text": null,
+            "left": {
+                "type": "string",
+                "value": "8%"
+            }
+        },
+        "b2": {
+            "left": {
+                "type": "string",
+                "value": "8%"
+            },
+            "skin": "s4adb862a1d741eaafba2145d8c99843"
+        },
+        "b3": {
+            "left": {
+                "type": "string",
+                "value": "3%"
+            },
+            "skin": "sffbc44a10fa4aa8bf25ca668c19c580"
+        },
+        "b4": {
+            "left": {
+                "type": "string",
+                "value": "8%"
+            }
+        }
+    },
+    "texti18n": "i18n.HBL.Lastlogindetails:",
+    "tooltip": "",
+    "wType": "Label",
+    "zindex": 1
+}

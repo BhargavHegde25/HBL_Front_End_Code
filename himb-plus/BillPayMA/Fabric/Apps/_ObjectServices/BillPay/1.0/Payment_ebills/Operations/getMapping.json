@@ -1,0 +1,99 @@
+{
+  "operationConfig" : {
+    "name" : "getBillsDueForUser2766",
+    "type" : "MappedToBackend",
+    "cachable" : false,
+    "smsEnabled" : false,
+    "security" : "authorized_app_user",
+    "responseEncoding" : "UTF-8",
+    "httpMethod" : "GET",
+    "decodeResponseBody" : false,
+    "odata" : [ {
+      "id" : "$select",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$filter",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$orderby",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$top",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$skip",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$expand",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$batchsize",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    }, {
+      "id" : "$batchid",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly",
+      "isExtended" : false
+    } ],
+    "iMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<mapper xmlns=\"http://www.kony.com/ns/mapper\">\n    <map inputpath=\"request_in\" outputpath=\"request_out\">\n        <set-param inputpath=\"order\" outputpath=\"order\"/>\n        <set-param inputpath=\"sortBy\" outputpath=\"sortBy\"/>\n    </map>\n</mapper>\n",
+    "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\">          <map inputpath=\"response_in\" outputpath=\"response_out\">                    <map inputpath=\"billview\" outputpath=\"Payment_ebills\">                              <set-param inputpath=\"balanceAmount\" outputpath=\"balanceAmount\"/>                              <set-param inputpath=\"billDueDate\" outputpath=\"billDueDate\"/>                              <set-param inputpath=\"billerCategory\" outputpath=\"billerCategory\"/>                              <set-param inputpath=\"billGeneratedDate\" outputpath=\"billGeneratedDate\"/>                              <set-param inputpath=\"description\" outputpath=\"description\"/>                              <set-param inputpath=\"dueAmount\" outputpath=\"dueAmount\"/>                 <set-param inputpath=\"currencyCode\" outputpath=\"currencyCode\"/>            <set-param inputpath=\"ebillStatus\" outputpath=\"ebillStatus\"/>                              <set-param inputpath=\"ebillURL\" outputpath=\"ebillURL\"/>                              <set-param inputpath=\"fromAccountName\" outputpath=\"fromAccountName\"/>                              <set-param inputpath=\"fromAccountNumber\" outputpath=\"fromAccountNumber\"/>                              <set-param inputpath=\"id\" outputpath=\"id\"/>                              <set-param inputpath=\"paidAmount\" outputpath=\"paidAmount\"/>                              <set-param inputpath=\"paidDate\" outputpath=\"paidDate\"/>                              <set-param inputpath=\"payeeId\" outputpath=\"payeeId\"/>                              <set-param inputpath=\"payeeName\" outputpath=\"payeeName\"/>                    </map>          </map></mapper>",
+    "iVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"request_in\",\"text\":\"Payment_ebills\",\"xy\":\"150 100\"},{\"isGroup\":true,\"key\":\"request_out\",\"text\":\"InfinityTransactionServices (1.0).getBillsDueForUser\",\"xy\":\"770 100\"}],\"linkDataArray\":[{\"category\":\"Mapping\",\"from\":\"source:Payment_ebills:order:\",\"to\":\"target:order:\",\"fromPort\":\"source:Payment_ebills:order:\",\"toPort\":\"target:order:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:Payment_ebills:sortBy:\",\"to\":\"target:sortBy:\",\"fromPort\":\"source:Payment_ebills:sortBy:\",\"toPort\":\"target:sortBy:\",\"visible\":true,\"common\":true}]}",
+    "oVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"response_out\",\"text\":\"Payment_ebills\",\"xy\":\"770 100\"},{\"isGroup\":true,\"key\":\"response_in\",\"text\":\"InfinityTransactionServices (1.0).getBillsDueForUser\",\"xy\":\"150 100\"}],\"linkDataArray\":[{\"from\":\"target\",\"to\":\"target:Payment_ebills\",\"fromPort\":\"target\",\"toPort\":\"target:Payment_ebills\",\"visible\":true,\"common\":false},{\"from\":\"target:Payment_ebills\",\"to\":\"target:Payment_ebills:t_p_fields\",\"fromPort\":\"target:Payment_ebills\",\"toPort\":\"target:Payment_ebills:t_p_fields\",\"visible\":true,\"common\":false},{\"from\":\"target:Payment_ebills:t_p_fields\",\"to\":\"target:Payment_ebills:balanceAmount:\",\"fromPort\":\"target:Payment_ebills:t_p_fields\",\"toPort\":\"target:Payment_ebills:balanceAmount:\",\"visible\":true,\"common\":false},{\"from\":\"target:Payment_ebills:t_p_fields\",\"to\":\"target:Payment_ebills:billDueDate:\",\"fromPort\":\"target:Payment_ebills:t_p_fields\",\"toPort\":\"target:Payment_ebills:billDueDate:\",\"visible\":true,\"common\":false},{\"from\":\"target:Payment_ebills:t_p_fields\",\"to\":\"target:Payment_ebills:billerCategory:\",\"fromPort\":\"target:Payment_ebills:t_p_fields\",\"toPort\":\"target:Payment_ebills:billerCategory:\",\"visible\":true,\"common\":false},{\"from\":\"target:Payment_ebills:t_p_fields\",\"to\":\"target:Payment_ebills:billGeneratedDate:\",\"fromPort\":\"target:Payment_ebills:t_p_fields\",\"toPort\":\"target:Payment_ebills:billGeneratedDate:\",\"visible\":true,\"common\":false},{\"from\":\"target:Payment_ebills:t_p_fields\",\"to\":\"target:Payment_ebills:description:\",\"fromPort\":\"target:Payment_ebills:t_p_fields\",\"toPort\":\"target:Payment_ebills:description:\",\"visible\":true,\"common\":false},{\"from\":\"target:Payment_ebills:t_p_fields\",\"to\":\"target:Payment_ebills:dueAmount:\",\"fromPort\":\"target:Payment_ebills:t_p_fields\",\"toPort\":\"target:Payment_ebills:dueAmount:\",\"visible\":true,\"common\":false},{\"from\":\"target:Payment_ebills:t_p_fields\",\"to\":\"target:Payment_ebills:ebillStatus:\",\"fromPort\":\"target:Payment_ebills:t_p_fields\",\"toPort\":\"target:Payment_ebills:ebillStatus:\",\"visible\":true,\"common\":false},{\"from\":\"target:Payment_ebills:t_p_fields\",\"to\":\"target:Payment_ebills:ebillURL:\",\"fromPort\":\"target:Payment_ebills:t_p_fields\",\"toPort\":\"target:Payment_ebills:ebillURL:\",\"visible\":true,\"common\":false},{\"from\":\"target:Payment_ebills:t_p_fields\",\"to\":\"target:Payment_ebills:fromAccountName:\",\"fromPort\":\"target:Payment_ebills:t_p_fields\",\"toPort\":\"target:Payment_ebills:fromAccountName:\",\"visible\":true,\"common\":false},{\"from\":\"target:Payment_ebills:t_p_fields\",\"to\":\"target:Payment_ebills:fromAccountNumber:\",\"fromPort\":\"target:Payment_ebills:t_p_fields\",\"toPort\":\"target:Payment_ebills:fromAccountNumber:\",\"visible\":true,\"common\":false},{\"from\":\"target:Payment_ebills:t_p_fields\",\"to\":\"target:Payment_ebills:id:\",\"fromPort\":\"target:Payment_ebills:t_p_fields\",\"toPort\":\"target:Payment_ebills:id:\",\"visible\":true,\"common\":false},{\"from\":\"target:Payment_ebills:t_p_fields\",\"to\":\"target:Payment_ebills:order:\",\"fromPort\":\"target:Payment_ebills:t_p_fields\",\"toPort\":\"target:Payment_ebills:order:\",\"visible\":true,\"common\":false},{\"from\":\"target:Payment_ebills:t_p_fields\",\"to\":\"target:Payment_ebills:paidAmount:\",\"fromPort\":\"target:Payment_ebills:t_p_fields\",\"toPort\":\"target:Payment_ebills:paidAmount:\",\"visible\":true,\"common\":false},{\"from\":\"target:Payment_ebills:t_p_fields\",\"to\":\"target:Payment_ebills:paidDate:\",\"fromPort\":\"target:Payment_ebills:t_p_fields\",\"toPort\":\"target:Payment_ebills:paidDate:\",\"visible\":true,\"common\":false},{\"from\":\"target:Payment_ebills:t_p_fields\",\"to\":\"target:Payment_ebills:payeeId:\",\"fromPort\":\"target:Payment_ebills:t_p_fields\",\"toPort\":\"target:Payment_ebills:payeeId:\",\"visible\":true,\"common\":false},{\"from\":\"target:Payment_ebills:t_p_fields\",\"to\":\"target:Payment_ebills:payeeName:\",\"fromPort\":\"target:Payment_ebills:t_p_fields\",\"toPort\":\"target:Payment_ebills:payeeName:\",\"visible\":true,\"common\":false},{\"from\":\"target:Payment_ebills:t_p_fields\",\"to\":\"target:Payment_ebills:sortBy:\",\"fromPort\":\"target:Payment_ebills:t_p_fields\",\"toPort\":\"target:Payment_ebills:sortBy:\",\"visible\":true,\"common\":false},{\"from\":\"target:Payment_ebills:t_p_fields\",\"to\":\"target:Payment_ebills:currencyCode:\",\"fromPort\":\"target:Payment_ebills:t_p_fields\",\"toPort\":\"target:Payment_ebills:currencyCode:\",\"visible\":true,\"common\":false}],\"blockCount\":{\"variableCount\":0},\"variableMap\":{},\"xmlMappingOverride\":true}",
+    "applyCommonMapping" : false,
+    "applyRequestCommonMapping" : false,
+    "applyResponseCommonMapping" : false,
+    "backendMeta" : {
+      "serviceName" : "InfinityTransactionServices",
+      "serviceVersion" : "1.0",
+      "operationName" : "getBillsDueForUser"
+    },
+    "relationshipHierarchyMapping" : {
+      "name" : "Payment_ebills",
+      "children" : [ ],
+      "actions" : {
+        "get" : true
+      },
+      "selected" : true
+    },
+    "requestXmlMappingOverride" : false,
+    "responseXmlMappingOverride" : true,
+    "mapperData" : [ {
+      "name" : "base mapper1",
+      "order" : 1,
+      "iMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<mapper xmlns=\"http://www.kony.com/ns/mapper\">\n    <map inputpath=\"request_in\" outputpath=\"request_out\">\n        <set-param inputpath=\"order\" outputpath=\"order\"/>\n        <set-param inputpath=\"sortBy\" outputpath=\"sortBy\"/>\n    </map>\n</mapper>\n",
+      "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\">          <map inputpath=\"response_in\" outputpath=\"response_out\">                    <map inputpath=\"billview\" outputpath=\"Payment_ebills\">                              <set-param inputpath=\"balanceAmount\" outputpath=\"balanceAmount\"/>                              <set-param inputpath=\"billDueDate\" outputpath=\"billDueDate\"/>                              <set-param inputpath=\"billerCategory\" outputpath=\"billerCategory\"/>                              <set-param inputpath=\"billGeneratedDate\" outputpath=\"billGeneratedDate\"/>                              <set-param inputpath=\"description\" outputpath=\"description\"/>                              <set-param inputpath=\"dueAmount\" outputpath=\"dueAmount\"/>                 <set-param inputpath=\"currencyCode\" outputpath=\"currencyCode\"/>            <set-param inputpath=\"ebillStatus\" outputpath=\"ebillStatus\"/>                              <set-param inputpath=\"ebillURL\" outputpath=\"ebillURL\"/>                              <set-param inputpath=\"fromAccountName\" outputpath=\"fromAccountName\"/>                              <set-param inputpath=\"fromAccountNumber\" outputpath=\"fromAccountNumber\"/>                              <set-param inputpath=\"id\" outputpath=\"id\"/>                              <set-param inputpath=\"paidAmount\" outputpath=\"paidAmount\"/>                              <set-param inputpath=\"paidDate\" outputpath=\"paidDate\"/>                              <set-param inputpath=\"payeeId\" outputpath=\"payeeId\"/>                              <set-param inputpath=\"payeeName\" outputpath=\"payeeName\"/>                    </map>          </map></mapper>",
+      "iVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"request_in\",\"text\":\"Payment_ebills\",\"xy\":\"150 100\"},{\"isGroup\":true,\"key\":\"request_out\",\"text\":\"InfinityTransactionServices (1.0).getBillsDueForUser\",\"xy\":\"770 100\"}],\"linkDataArray\":[{\"category\":\"Mapping\",\"from\":\"source:Payment_ebills:order:\",\"to\":\"target:order:\",\"fromPort\":\"source:Payment_ebills:order:\",\"toPort\":\"target:order:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:Payment_ebills:sortBy:\",\"to\":\"target:sortBy:\",\"fromPort\":\"source:Payment_ebills:sortBy:\",\"toPort\":\"target:sortBy:\",\"visible\":true,\"common\":true}]}",
+      "oVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"response_out\",\"text\":\"Payment_ebills\",\"xy\":\"770 100\"},{\"isGroup\":true,\"key\":\"response_in\",\"text\":\"InfinityTransactionServices (1.0).getBillsDueForUser\",\"xy\":\"150 100\"}],\"linkDataArray\":[{\"from\":\"target\",\"to\":\"target:Payment_ebills\",\"fromPort\":\"target\",\"toPort\":\"target:Payment_ebills\",\"visible\":true,\"common\":false},{\"from\":\"target:Payment_ebills\",\"to\":\"target:Payment_ebills:t_p_fields\",\"fromPort\":\"target:Payment_ebills\",\"toPort\":\"target:Payment_ebills:t_p_fields\",\"visible\":true,\"common\":false},{\"from\":\"target:Payment_ebills:t_p_fields\",\"to\":\"target:Payment_ebills:balanceAmount:\",\"fromPort\":\"target:Payment_ebills:t_p_fields\",\"toPort\":\"target:Payment_ebills:balanceAmount:\",\"visible\":true,\"common\":false},{\"from\":\"target:Payment_ebills:t_p_fields\",\"to\":\"target:Payment_ebills:billDueDate:\",\"fromPort\":\"target:Payment_ebills:t_p_fields\",\"toPort\":\"target:Payment_ebills:billDueDate:\",\"visible\":true,\"common\":false},{\"from\":\"target:Payment_ebills:t_p_fields\",\"to\":\"target:Payment_ebills:billerCategory:\",\"fromPort\":\"target:Payment_ebills:t_p_fields\",\"toPort\":\"target:Payment_ebills:billerCategory:\",\"visible\":true,\"common\":false},{\"from\":\"target:Payment_ebills:t_p_fields\",\"to\":\"target:Payment_ebills:billGeneratedDate:\",\"fromPort\":\"target:Payment_ebills:t_p_fields\",\"toPort\":\"target:Payment_ebills:billGeneratedDate:\",\"visible\":true,\"common\":false},{\"from\":\"target:Payment_ebills:t_p_fields\",\"to\":\"target:Payment_ebills:description:\",\"fromPort\":\"target:Payment_ebills:t_p_fields\",\"toPort\":\"target:Payment_ebills:description:\",\"visible\":true,\"common\":false},{\"from\":\"target:Payment_ebills:t_p_fields\",\"to\":\"target:Payment_ebills:dueAmount:\",\"fromPort\":\"target:Payment_ebills:t_p_fields\",\"toPort\":\"target:Payment_ebills:dueAmount:\",\"visible\":true,\"common\":false},{\"from\":\"target:Payment_ebills:t_p_fields\",\"to\":\"target:Payment_ebills:ebillStatus:\",\"fromPort\":\"target:Payment_ebills:t_p_fields\",\"toPort\":\"target:Payment_ebills:ebillStatus:\",\"visible\":true,\"common\":false},{\"from\":\"target:Payment_ebills:t_p_fields\",\"to\":\"target:Payment_ebills:ebillURL:\",\"fromPort\":\"target:Payment_ebills:t_p_fields\",\"toPort\":\"target:Payment_ebills:ebillURL:\",\"visible\":true,\"common\":false},{\"from\":\"target:Payment_ebills:t_p_fields\",\"to\":\"target:Payment_ebills:fromAccountName:\",\"fromPort\":\"target:Payment_ebills:t_p_fields\",\"toPort\":\"target:Payment_ebills:fromAccountName:\",\"visible\":true,\"common\":false},{\"from\":\"target:Payment_ebills:t_p_fields\",\"to\":\"target:Payment_ebills:fromAccountNumber:\",\"fromPort\":\"target:Payment_ebills:t_p_fields\",\"toPort\":\"target:Payment_ebills:fromAccountNumber:\",\"visible\":true,\"common\":false},{\"from\":\"target:Payment_ebills:t_p_fields\",\"to\":\"target:Payment_ebills:id:\",\"fromPort\":\"target:Payment_ebills:t_p_fields\",\"toPort\":\"target:Payment_ebills:id:\",\"visible\":true,\"common\":false},{\"from\":\"target:Payment_ebills:t_p_fields\",\"to\":\"target:Payment_ebills:order:\",\"fromPort\":\"target:Payment_ebills:t_p_fields\",\"toPort\":\"target:Payment_ebills:order:\",\"visible\":true,\"common\":false},{\"from\":\"target:Payment_ebills:t_p_fields\",\"to\":\"target:Payment_ebills:paidAmount:\",\"fromPort\":\"target:Payment_ebills:t_p_fields\",\"toPort\":\"target:Payment_ebills:paidAmount:\",\"visible\":true,\"common\":false},{\"from\":\"target:Payment_ebills:t_p_fields\",\"to\":\"target:Payment_ebills:paidDate:\",\"fromPort\":\"target:Payment_ebills:t_p_fields\",\"toPort\":\"target:Payment_ebills:paidDate:\",\"visible\":true,\"common\":false},{\"from\":\"target:Payment_ebills:t_p_fields\",\"to\":\"target:Payment_ebills:payeeId:\",\"fromPort\":\"target:Payment_ebills:t_p_fields\",\"toPort\":\"target:Payment_ebills:payeeId:\",\"visible\":true,\"common\":false},{\"from\":\"target:Payment_ebills:t_p_fields\",\"to\":\"target:Payment_ebills:payeeName:\",\"fromPort\":\"target:Payment_ebills:t_p_fields\",\"toPort\":\"target:Payment_ebills:payeeName:\",\"visible\":true,\"common\":false},{\"from\":\"target:Payment_ebills:t_p_fields\",\"to\":\"target:Payment_ebills:sortBy:\",\"fromPort\":\"target:Payment_ebills:t_p_fields\",\"toPort\":\"target:Payment_ebills:sortBy:\",\"visible\":true,\"common\":false},{\"from\":\"target:Payment_ebills:t_p_fields\",\"to\":\"target:Payment_ebills:currencyCode:\",\"fromPort\":\"target:Payment_ebills:t_p_fields\",\"toPort\":\"target:Payment_ebills:currencyCode:\",\"visible\":true,\"common\":false}],\"blockCount\":{\"variableCount\":0},\"variableMap\":{},\"xmlMappingOverride\":true}",
+      "requestXmlMappingOverride" : false,
+      "responseXmlMappingOverride" : true,
+      "disabled" : false,
+      "applyCommonMapping" : false,
+      "applyRequestCommonMapping" : false,
+      "applyResponseCommonMapping" : false
+    } ]
+  },
+  "enableFrontendUrl" : false,
+  "customVerb" : false
+}

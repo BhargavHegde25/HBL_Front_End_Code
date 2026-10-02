@@ -1,0 +1,67 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        1,
+        0,
+        1,
+        0
+    ],
+    "_skin_": "s344358aaecf45c8bd1e938367e779e1",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "0"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "80%"
+    },
+    "accessibilityconfig": {
+        "a11yLabel": "All"
+    },
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "desktopweb": {
+        "psp": {}
+    },
+    "disabledSkins": {
+        "hoverSkin": "sc00e69bcc754e6789e0cb7ca01c2727"
+    },
+    "displaytext": true,
+    "focusskin": "s6fd52bc149841159699ddc28fc1818d",
+    "id": "btnHealthCheck",
+    "info": null,
+    "isvisible": true,
+    "kuid": "f4a8aaedad564c098a75b99affdbb400",
+    "name": "kony.ui.Button",
+    "paddinginpixel": false,
+    "parent": "flxButton",
+    "pf": "userwidgetmodel",
+    "responsiveData": {
+        "b2": {}
+    },
+    "texti18n": "i18n.wealth.healthCheck",
+    "tooltip": "",
+    "wType": "Button",
+    "zindex": 1
+}

@@ -1,0 +1,68 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_bottom_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_height_": {
+        "type": "string",
+        "value": "45dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "4%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "sc61e719c72447bf9f14db24bea23eb3",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "15dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "92%"
+    },
+    "accessibilityconfig": {
+        "a11yLabel": "CONFIRM"
+    },
+    "activeNativeBorderCornerRadiusControl": "centerControl",
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "disabledSkins": {},
+    "displaytext": true,
+    "focusskin": "sc61e719c72447bf9f14db24bea23eb3",
+    "id": "btnPrimary1",
+    "info": null,
+    "iphone": {
+        "psp": {
+            "showProgressIndicator": false
+        }
+    },
+    "isvisible": false,
+    "kuid": "j5381811a2a24b939727dc1eeead16f5",
+    "name": "kony.ui.Button",
+    "parent": "flxFooter",
+    "pf": "frmCreditCardBillPaymentReview",
+    "showprogressindicator": false,
+    "texti18n": "i18n.TransfersEur.btnContinue",
+    "wType": "Button",
+    "zindex": 8
+}

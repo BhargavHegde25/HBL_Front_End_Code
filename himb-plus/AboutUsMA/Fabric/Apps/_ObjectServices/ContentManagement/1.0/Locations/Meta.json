@@ -1,0 +1,19 @@
+{
+  "type" : "svcdriven",
+  "custom" : false,
+  "junction" : false,
+  "customizable" : false,
+  "verbs" : {
+    "getList" : "getListMapping",
+    "getRange" : "getRangeMapping",
+    "getAddressSuggestions" : "getAddressSuggestionsMapping",
+    "getDetails" : "getDetailsMapping",
+    "getAddress" : "getAddressMapping",
+    "getQuery" : "getQueryMapping"
+  },
+  "entityProperties" : {
+    "BatchMode" : "buffer",
+    "backendMeta" : { },
+    "designTimeBackendMeta" : { }
+  }
+}

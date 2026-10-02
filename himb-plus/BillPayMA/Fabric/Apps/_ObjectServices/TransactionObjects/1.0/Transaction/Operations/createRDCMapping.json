@@ -1,0 +1,44 @@
+{
+  "operationConfig" : {
+    "name" : "CreateRDC3803",
+    "type" : "MappedToBackend",
+    "cachable" : false,
+    "smsEnabled" : false,
+    "security" : "authorized_app_user",
+    "responseEncoding" : "UTF-8",
+    "httpMethod" : "GET",
+    "decodeResponseBody" : false,
+    "iMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\"><map inputpath=\"request_in\" outputpath=\"request_out\"><set-param inputpath=\"bankAddressLine1\" outputpath=\"bankAddressLine1\"/><set-param inputpath=\"zipCode\" outputpath=\"zipCode\"/><set-param inputpath=\"country\" outputpath=\"country\"/><set-param inputpath=\"frequencyStartDate\" outputpath=\"frequencyStartDate\"/><set-param inputpath=\"bankAddressLine2\" outputpath=\"bankAddressLine2\"/><set-param inputpath=\"payeeType\" outputpath=\"payeeType\"/><set-param inputpath=\"isScheduled\" outputpath=\"isScheduled\"/><set-param inputpath=\"payeeId\" outputpath=\"payeeId\"/><set-param inputpath=\"state\" outputpath=\"state\"/><set-param inputpath=\"p2pContact\" outputpath=\"p2pContact\"/><set-param inputpath=\"billerId\" outputpath=\"billerId\"/><set-param inputpath=\"transactionCurrency\" outputpath=\"transactionCurrency\"/><set-param inputpath=\"payeeCurrency\" outputpath=\"payeeCurrency\"/><set-param inputpath=\"numberOfRecurrences\" outputpath=\"numberOfRecurrences\"/><set-param inputpath=\"bankZip\" outputpath=\"bankZip\"/><set-param inputpath=\"wireAccountType\" outputpath=\"wireAccountType\"/><set-param inputpath=\"MFAAttributes\" outputpath=\"MFAAttributes\"/><set-param inputpath=\"personId\" outputpath=\"personId\"/><set-param inputpath=\"frequencyEndDate\" outputpath=\"frequencyEndDate\"/><set-param inputpath=\"payeeNickName\" outputpath=\"payeeNickName\"/><set-param inputpath=\"fromAccountNumber\" outputpath=\"fromAccountNumber\"/><set-param inputpath=\"scheduledDate\" outputpath=\"scheduledDate\"/><set-param inputpath=\"swiftCode\" outputpath=\"swiftCode\"/><set-param inputpath=\"bankName\" outputpath=\"bankName\"/><set-param inputpath=\"payeeName\" outputpath=\"payeeName\"/><set-param inputpath=\"cityName\" outputpath=\"cityName\"/><set-param inputpath=\"billid\" outputpath=\"billid\"/><set-param inputpath=\"amount\" outputpath=\"amount\"/><set-param inputpath=\"payeeAccountNumber\" outputpath=\"payeeAccountNumber\"/><set-param inputpath=\"bankState\" outputpath=\"bankState\"/><set-param inputpath=\"payeeAddressLine1\" outputpath=\"payeeAddressLine1\"/><set-param inputpath=\"serviceName\" outputpath=\"serviceName\"/><set-param inputpath=\"bankCity\" outputpath=\"bankCity\"/><set-param inputpath=\"transactionType\" outputpath=\"transactionType\"/><set-param inputpath=\"routingNumber\" outputpath=\"routingNumber\"/><set-param inputpath=\"transactionsNotes\" outputpath=\"transactionsNotes\"/><set-param inputpath=\"toAccountNumber\" outputpath=\"toAccountNumber\"/><set-param inputpath=\"frequencyType\" outputpath=\"frequencyType\"/><set-param inputpath=\"internationalRoutingCode\" outputpath=\"internationalRoutingCode\"/></map></mapper>",
+    "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\"><map inputpath=\"response_in\" outputpath=\"response_out\"><set-param inputpath=\"MFAAttributes\" outputpath=\"MFAAttributes\"/><set-param inputpath=\"errmsg\" outputpath=\"errmsg\"/><set-param inputpath=\"referenceId\" outputpath=\"referenceId\"/></map></mapper>",
+    "applyCommonMapping" : true,
+    "applyRequestCommonMapping" : true,
+    "applyResponseCommonMapping" : true,
+    "backendMeta" : {
+      "serviceName" : "dbpTransactionServices",
+      "serviceVersion" : "1.0",
+      "operationName" : "CreateRDC"
+    },
+    "relationshipHierarchyMapping" : {
+      "children" : [ ],
+      "name" : "Transaction",
+      "actions" : { },
+      "selected" : true
+    },
+    "requestXmlMappingOverride" : false,
+    "responseXmlMappingOverride" : false,
+    "mapperData" : [ {
+      "name" : "base mapper1",
+      "order" : 1,
+      "iMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\"><map inputpath=\"request_in\" outputpath=\"request_out\"><set-param inputpath=\"bankAddressLine1\" outputpath=\"bankAddressLine1\"/><set-param inputpath=\"zipCode\" outputpath=\"zipCode\"/><set-param inputpath=\"country\" outputpath=\"country\"/><set-param inputpath=\"frequencyStartDate\" outputpath=\"frequencyStartDate\"/><set-param inputpath=\"bankAddressLine2\" outputpath=\"bankAddressLine2\"/><set-param inputpath=\"payeeType\" outputpath=\"payeeType\"/><set-param inputpath=\"isScheduled\" outputpath=\"isScheduled\"/><set-param inputpath=\"payeeId\" outputpath=\"payeeId\"/><set-param inputpath=\"state\" outputpath=\"state\"/><set-param inputpath=\"p2pContact\" outputpath=\"p2pContact\"/><set-param inputpath=\"billerId\" outputpath=\"billerId\"/><set-param inputpath=\"transactionCurrency\" outputpath=\"transactionCurrency\"/><set-param inputpath=\"payeeCurrency\" outputpath=\"payeeCurrency\"/><set-param inputpath=\"numberOfRecurrences\" outputpath=\"numberOfRecurrences\"/><set-param inputpath=\"bankZip\" outputpath=\"bankZip\"/><set-param inputpath=\"wireAccountType\" outputpath=\"wireAccountType\"/><set-param inputpath=\"MFAAttributes\" outputpath=\"MFAAttributes\"/><set-param inputpath=\"personId\" outputpath=\"personId\"/><set-param inputpath=\"frequencyEndDate\" outputpath=\"frequencyEndDate\"/><set-param inputpath=\"payeeNickName\" outputpath=\"payeeNickName\"/><set-param inputpath=\"fromAccountNumber\" outputpath=\"fromAccountNumber\"/><set-param inputpath=\"scheduledDate\" outputpath=\"scheduledDate\"/><set-param inputpath=\"swiftCode\" outputpath=\"swiftCode\"/><set-param inputpath=\"bankName\" outputpath=\"bankName\"/><set-param inputpath=\"payeeName\" outputpath=\"payeeName\"/><set-param inputpath=\"cityName\" outputpath=\"cityName\"/><set-param inputpath=\"billid\" outputpath=\"billid\"/><set-param inputpath=\"amount\" outputpath=\"amount\"/><set-param inputpath=\"payeeAccountNumber\" outputpath=\"payeeAccountNumber\"/><set-param inputpath=\"bankState\" outputpath=\"bankState\"/><set-param inputpath=\"payeeAddressLine1\" outputpath=\"payeeAddressLine1\"/><set-param inputpath=\"serviceName\" outputpath=\"serviceName\"/><set-param inputpath=\"bankCity\" outputpath=\"bankCity\"/><set-param inputpath=\"transactionType\" outputpath=\"transactionType\"/><set-param inputpath=\"routingNumber\" outputpath=\"routingNumber\"/><set-param inputpath=\"transactionsNotes\" outputpath=\"transactionsNotes\"/><set-param inputpath=\"toAccountNumber\" outputpath=\"toAccountNumber\"/><set-param inputpath=\"frequencyType\" outputpath=\"frequencyType\"/><set-param inputpath=\"internationalRoutingCode\" outputpath=\"internationalRoutingCode\"/></map></mapper>",
+      "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\"><map inputpath=\"response_in\" outputpath=\"response_out\"><set-param inputpath=\"MFAAttributes\" outputpath=\"MFAAttributes\"/><set-param inputpath=\"errmsg\" outputpath=\"errmsg\"/><set-param inputpath=\"referenceId\" outputpath=\"referenceId\"/></map></mapper>",
+      "requestXmlMappingOverride" : false,
+      "responseXmlMappingOverride" : false,
+      "disabled" : false,
+      "applyCommonMapping" : true,
+      "applyRequestCommonMapping" : true,
+      "applyResponseCommonMapping" : true
+    } ]
+  },
+  "enableFrontendUrl" : false,
+  "customVerb" : false
+}

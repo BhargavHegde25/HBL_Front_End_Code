@@ -1,0 +1,17 @@
+{
+    "AS_BarButtonItem_b0c260b5bec640ac985565f1631bb084": {
+        "id": "AS_BarButtonItem_b0c260b5bec640ac985565f1631bb084",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_g2825eaa4a934fcba0e5e385a3e97d47",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.customHeaderBtnRightOnClick();",
+            "parentId": null
+        }]
+    }
+}

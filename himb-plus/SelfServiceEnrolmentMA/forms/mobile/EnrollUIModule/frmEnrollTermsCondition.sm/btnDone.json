@@ -1,0 +1,51 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_bottom_": {
+        "type": "string",
+        "value": "5dp"
+    },
+    "_height_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s3a6af80e8464e51af22769363bf659d",
+    "_text_": "",
+    "_width_": {
+        "type": "string",
+        "value": "90%"
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "s1ba251bcd374b38a477c71e7d26bfd5",
+    "id": "btnDone",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "iab96a8a809e4ceb8102ba439033d898",
+    "name": "kony.ui.Button",
+    "parent": "frmEnrollTermsCondition",
+    "pf": "frmEnrollTermsCondition",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "texti18n": "kony.mb.CM.continue",
+    "wType": "Button"
+}

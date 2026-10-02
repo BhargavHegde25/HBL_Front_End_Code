@@ -1,0 +1,21 @@
+{
+    "AS_TextField_f158506a512e4140be8c287732ab0ace": {
+        "id": "AS_TextField_f158506a512e4140be8c287732ab0ace",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "changedtext"
+        }],
+        "contextObj": {
+            "name": "frmFundTransferMain",
+            "type": "forms",
+            "platform": "",
+            "KUID": "d8b8aea701de46ed98a79f677f45e8b0"
+        },
+        "language": "js",
+        "actions": []
+    }
+}

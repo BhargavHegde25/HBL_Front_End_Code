@@ -1,0 +1,44 @@
+{
+    "classname": "HealthCheckSummarycard",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "d2a580d522f843db94ee3f42cfe49561",
+                    "paramList": [],
+                    "propertyKey": "getHealthStatus",
+                    "pw": {
+                        "displayName": "getHealthStatus",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "i88600638d344c6cab8fd1999608c52e",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfinityMB.PortfolioManagementMA",
+    "version": "1.0.0"
+}

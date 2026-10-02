@@ -1,0 +1,73 @@
+{
+    "DNDConfig": null,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0.00%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "sdc143f0e5b64ae3a3f155f691c73fa7",
+    "_top_": {
+        "type": "string",
+        "value": "20dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "allboxes": [],
+    "autogrowmode": 1,
+    "canUpdateUI": true,
+    "children": [
+        "flxCashBalList",
+        "lblSep",
+        "lblSeparator1",
+        "segmentCashBal"
+    ],
+    "clipbounds": false,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "flxCashCard",
+    "ide_onClick": "AS_FlexContainer_i527f59b287e40bd849cd109892d4432",
+    "info": null,
+    "isvisible": true,
+    "kuid": "d9471ba180c948e49865ac261eb001e9",
+    "layouttype": 4,
+    "name": "kony.ui.FlexContainer",
+    "parent": "flxLeftContainer",
+    "pf": "frmPortfolioOverview",
+    "responsiveData": {
+        "b1": {
+            "skin": "sdc143f0e5b64ae3a3f155f691c73fa7"
+        },
+        "b2": {},
+        "b3": {
+            "left": {
+                "type": "string",
+                "value": "0.00%"
+            }
+        },
+        "b4": {}
+    },
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1,
+    "zindex": 1
+}

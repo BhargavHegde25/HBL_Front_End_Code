@@ -1,0 +1,51 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizRichText",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "10dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s46fc4495f814b3b8abf805b147175e1",
+    "_text_": "• In order to offer this service, Temenos needs your approval to access through its trusted partners Salt Edge Inc. the following information from the account you hold.<br>• Your Account Details.\n(Account Name, Number and Sort Code, Card Number, Balances etc.)<br>\n•Your Account Transactions.\n(Incoming or Outgoing transaction details from 90 days, statement details, etc.)<br>The above information may be updated several times a day when you are offline. The Consent to Access that you are giving will be valid until deletion of the access connection.",
+    "_top_": {
+        "type": "string",
+        "value": "0"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "98%"
+    },
+    "_wrapping_": 2,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "id": "rxtContent",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "i723b1fdd7254d24b44beba3038aca76",
+    "linkskin": "sad41f48387c41cbbfdb65982f3f232a",
+    "name": "kony.ui.RichText",
+    "parent": "flxMain",
+    "pf": "frmBillPayConsent",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "wType": "RichText",
+    "widgetalignment": 5
+}

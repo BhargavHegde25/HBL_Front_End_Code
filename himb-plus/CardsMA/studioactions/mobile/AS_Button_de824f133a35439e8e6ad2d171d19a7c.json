@@ -1,0 +1,23 @@
+{
+    "AS_Button_de824f133a35439e8e6ad2d171d19a7c": {
+        "id": "AS_Button_de824f133a35439e8e6ad2d171d19a7c",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmReqVirtualDollerCard",
+            "type": "forms",
+            "platform": "",
+            "KUID": "c63ce6f4bce246e3b9ec299885b99e2c"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_f9d6af39792041f2a444d02ae62d62ea",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.flxCancelOnClick();",
+            "parentId": null
+        }]
+    }
+}

@@ -1,0 +1,20 @@
+{
+  "type" : "svcdriven",
+  "description" : "Account Sweeps related operations",
+  "custom" : false,
+  "junction" : false,
+  "customizable" : false,
+  "verbs" : {
+    "editAccountSweep" : "editAccountSweepMapping",
+    "getAccountSweeps" : "getAccountSweepsMapping",
+    "deleteAccountSweep" : "deleteAccountSweepMapping",
+    "initiateDownloadAccountSweeps" : "initiateDownloadAccountSweepsMapping",
+    "createAccountSweep" : "createAccountSweepMapping",
+    "getAccountSweepById" : "getAccountSweepByIdMapping"
+  },
+  "entityProperties" : {
+    "BatchMode" : "buffer",
+    "backendMeta" : { },
+    "designTimeBackendMeta" : { }
+  }
+}

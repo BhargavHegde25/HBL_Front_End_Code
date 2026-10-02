@@ -1,0 +1,153 @@
+{
+    "classname": "segList",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "segList",
+                    "kuid": "c663cfbd278545fbb318b822b5a136f7",
+                    "paramList": [],
+                    "propertyKey": "setConfigsFromParent",
+                    "pw": {
+                        "displayName": "setConfigsFromParent",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "uf78e1e4be104cb2b99948c0e972e68e",
+                    "type": "event"
+                },
+                {
+                    "group": "segList",
+                    "kuid": "f3d01e9746c7401aa65490af2482866b",
+                    "paramList": [],
+                    "propertyKey": "updateContext",
+                    "pw": {
+                        "displayName": "updateContext",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "uf78e1e4be104cb2b99948c0e972e68e",
+                    "type": "event"
+                },
+                {
+                    "group": "segList",
+                    "kuid": "g066db76399b4cd094135c56be356faa",
+                    "paramList": [],
+                    "propertyKey": "setContext",
+                    "pw": {
+                        "displayName": "setContext",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "uf78e1e4be104cb2b99948c0e972e68e",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "segList"
+            ],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"segList\":{\n\"objectServiceName\": \"AccountsService\",\n\"operationName\": \"getList\",\n\"objectName\": \"DigitalArrangements\",\n\"Criteria\": {}\n}\n}",
+                    "group": "General",
+                    "kuid": "e359f8216a5b42bf83890c1da887c9c2",
+                    "originalPropertyKey": "serviceParameters",
+                    "propertyIndex": 1,
+                    "propertyKey": "serviceParameters",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Service Parameters",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "uf78e1e4be104cb2b99948c0e972e68e",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"segListDetail\": {\n    \"segmentMasterData\": \"${Collection.Transactions}\",\n    \"segmentUI\": {\n      \"headerTemplate\": {\n        \"lblHeading\": \"${CNTX.data.header}\"\n      },\n      \"rowTemplate\": {\n        \"lblHeading\": \"${segmentMasterData.accountID}\",\n        \"lblDescription\": \"${segmentMasterData.accountName}\",\n        \"lblTime\": \"${segmentMasterData.accountType}\",\n        \"lblStrip\": \"${segmentMasterData.availableBalance}\"\n      }\n    }\n  }\n}\n",
+                    "group": "General",
+                    "kuid": "c86b772baac64691908e2c240994d427",
+                    "originalPropertyKey": "dataMapping",
+                    "propertyIndex": 2,
+                    "propertyKey": "dataMapping",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Data Mapping",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "uf78e1e4be104cb2b99948c0e972e68e",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"templateID\": \"flxSampleRowTemplate\", \"microAppName\": \"PortfolioManagementMA\"}",
+                    "group": "General",
+                    "kuid": "if45d5d8b847436c82a61f344dac04dc",
+                    "originalPropertyKey": "rowTemplateConfig",
+                    "propertyIndex": 3,
+                    "propertyKey": "rowTemplateConfig",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Row Template Config",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "uf78e1e4be104cb2b99948c0e972e68e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "General",
+                    "kuid": "j639fa39edbd4a98bae97ae0a9b35214",
+                    "originalPropertyKey": "headerTemplateConfig",
+                    "propertyIndex": 4,
+                    "propertyKey": "headerTemplateConfig",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Header Template Config",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "uf78e1e4be104cb2b99948c0e972e68e",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfinityOLB.PortoflioManagementMA",
+    "version": "1.0.0"
+}

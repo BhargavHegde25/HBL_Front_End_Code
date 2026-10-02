@@ -1,0 +1,71 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "750dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "sb950bc796154e88a6e0b3ebde988534",
+    "_text_": "View Dispute Transaction",
+    "_top_": {
+        "type": "string",
+        "value": "0"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "200dp"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "desktopweb": {
+        "psp": {
+            "hoverSkin": "sdbbccbd1d224646bda17c38efb9ccb8"
+        }
+    },
+    "disabledSkins": {},
+    "displaytext": true,
+    "focusskin": "s7ab6326aaf94c28b90b61fcb1a43136",
+    "id": "btnEMICancel",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "af2fd8013d764da78c7e30eafaee0e8d",
+    "name": "kony.ui.Button",
+    "parent": "flxEMIButtons",
+    "pf": "frmCardManagement",
+    "responsiveData": {
+        "b2": {
+            "left": {
+                "type": "string",
+                "value": "500dp"
+            }
+        },
+        "b3": {
+            "left": {
+                "type": "string",
+                "value": "70dp"
+            }
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "texti18n": "kony.mb.common.Cancel",
+    "wType": "Button"
+}

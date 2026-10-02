@@ -1,0 +1,22 @@
+{
+    "customComponent": {
+        "i18nSupported": true,
+        "id": "awa813b055b5e547d6bcc6d1a9c299fdc2",
+        "isOverride": false,
+        "konyWrapperFiles": [
+            "resources/thirdpartywidgets/widgetwrapper/tp-WealthRiskAnalysisGraph-wrapper.js"
+        ],
+        "libraryFiles": [
+            "resources/thirdpartywidgets/chartist/chartist.min.js",
+            "resources/thirdpartywidgets/chartist/chartist.min.css",
+            "resources/thirdpartywidgets/chartist/wealthRiskAnalysisGraph.css",
+            "resources/thirdpartywidgets/chartist/wealthRiskAnalysisGraph.js"
+        ],
+        "libraryName": "chartist",
+        "marginSupported": true,
+        "name": "WealthRiskAnalysisGraph",
+        "paddingSupported": true,
+        "platformID": "0",
+        "property": []
+    }
+}

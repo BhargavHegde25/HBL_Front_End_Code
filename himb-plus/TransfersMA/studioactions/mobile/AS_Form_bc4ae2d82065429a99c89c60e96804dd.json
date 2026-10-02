@@ -1,0 +1,23 @@
+{
+    "AS_Form_bc4ae2d82065429a99c89c60e96804dd": {
+        "id": "AS_Form_bc4ae2d82065429a99c89c60e96804dd",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmAddNewBenefePayee",
+            "type": "forms",
+            "platform": "",
+            "KUID": "h70bf96cd21744c8aa1e1a5b23ed78b3"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_if792d83da654e2c927b72364e0e0b7d",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.init();",
+            "parentId": null
+        }]
+    }
+}

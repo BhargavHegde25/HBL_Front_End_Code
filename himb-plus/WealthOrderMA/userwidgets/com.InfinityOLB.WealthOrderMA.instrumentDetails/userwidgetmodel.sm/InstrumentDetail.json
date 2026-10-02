@@ -1,0 +1,84 @@
+{
+    "DNDConfig": null,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "4%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "se35fbd13c4e4c218f2c604dcee07755",
+    "_top_": {
+        "type": "string",
+        "value": "20dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "92%"
+    },
+    "allboxes": [],
+    "autogrowmode": 1,
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": ""
+    },
+    "children": [
+        "flxHeading",
+        "flxSeparator1",
+        "flxContent",
+        "flxContent2"
+    ],
+    "clipbounds": true,
+    "containerweight": 100,
+    "desktopweb": {
+        "centerY": {
+            "type": "string",
+            "value": ""
+        }
+    },
+    "enablescrolling": true,
+    "id": "InstrumentDetail",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "d389b0c1ba654528bea3e30b0e83da2f",
+    "layouttype": 4,
+    "name": "kony.ui.FlexContainer",
+    "parent": "flxInstrumentDetails",
+    "pf": "userwidgetmodel",
+    "responsiveData": {
+        "b2": {
+            "left": {
+                "type": "string",
+                "value": "2%"
+            },
+            "width": {
+                "type": "string",
+                "value": "96%"
+            }
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1
+}

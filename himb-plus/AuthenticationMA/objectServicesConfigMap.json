@@ -1,0 +1,212 @@
+{
+    "GoogleAuthentication_GoogleAuth": {
+        "servicename": "GoogleAuthentication",
+        "serviceid": "534fafd1-fb32-4f34-9133-43d7eeec2461",
+        "type": "objectsvcs",
+        "objectname": "GoogleAuth",
+        "objectid": "12913"
+    },
+    "HIDRMSService_RMSActionComplete": {
+        "servicename": "HIDRMSService",
+        "serviceid": "717b2ece-ee4d-4850-b282-e5cfeea1ddde",
+        "type": "objectsvcs",
+        "objectname": "RMSActionComplete",
+        "objectid": "10766"
+    },
+    "HIDRMSService_RMSActionCreate": {
+        "servicename": "HIDRMSService",
+        "serviceid": "717b2ece-ee4d-4850-b282-e5cfeea1ddde",
+        "type": "objectsvcs",
+        "objectname": "RMSActionCreate",
+        "objectid": "10767"
+    },
+    "HIDRMSService_RMSActionSign": {
+        "servicename": "HIDRMSService",
+        "serviceid": "717b2ece-ee4d-4850-b282-e5cfeea1ddde",
+        "type": "objectsvcs",
+        "objectname": "RMSActionSign",
+        "objectid": "10768"
+    },
+    "HIDRMSService_RMSSessionService": {
+        "servicename": "HIDRMSService",
+        "serviceid": "717b2ece-ee4d-4850-b282-e5cfeea1ddde",
+        "type": "objectsvcs",
+        "objectname": "RMSSessionService",
+        "objectid": "10769"
+    },
+    "Login_DeviceRegistration": {
+        "servicename": "Login",
+        "serviceid": "ade16807-97d0-43b9-89f4-1b3fe187ab69",
+        "type": "objectsvcs",
+        "objectname": "DeviceRegistration",
+        "objectid": "8071"
+    },
+    "Login_Security": {
+        "servicename": "Login",
+        "serviceid": "ade16807-97d0-43b9-89f4-1b3fe187ab69",
+        "type": "objectsvcs",
+        "objectname": "Security",
+        "objectid": "8072"
+    },
+    "Login_TrackDeviceRegistration": {
+        "servicename": "Login",
+        "serviceid": "ade16807-97d0-43b9-89f4-1b3fe187ab69",
+        "type": "objectsvcs",
+        "objectname": "TrackDeviceRegistration",
+        "objectid": "8073"
+    },
+    "Login_Users": {
+        "servicename": "Login",
+        "serviceid": "ade16807-97d0-43b9-89f4-1b3fe187ab69",
+        "type": "objectsvcs",
+        "objectname": "Users",
+        "objectid": "8074"
+    },
+    "Login_Users_2": {
+        "servicename": "Login",
+        "serviceid": "ade16807-97d0-43b9-89f4-1b3fe187ab69",
+        "type": "objectsvcs",
+        "objectname": "Users_2",
+        "objectid": "8075"
+    },
+    "SCAActivationObjects_ActivationCodeAuthenticator": {
+        "servicename": "SCAActivationObjects",
+        "serviceid": "78db04e6-01ad-4d8f-ad15-6a13fb1e4c28",
+        "type": "objectsvcs",
+        "objectname": "ActivationCodeAuthenticator",
+        "objectid": "9442"
+    },
+    "SCAActivationObjects_Device": {
+        "servicename": "SCAActivationObjects",
+        "serviceid": "78db04e6-01ad-4d8f-ad15-6a13fb1e4c28",
+        "type": "objectsvcs",
+        "objectname": "Device",
+        "objectid": "9443"
+    },
+    "SCAActivationObjects_PasswordPolicy": {
+        "servicename": "SCAActivationObjects",
+        "serviceid": "78db04e6-01ad-4d8f-ad15-6a13fb1e4c28",
+        "type": "objectsvcs",
+        "objectname": "PasswordPolicy",
+        "objectid": "9444"
+    },
+    "SCAActivationObjects_SCADevice": {
+        "servicename": "SCAActivationObjects",
+        "serviceid": "78db04e6-01ad-4d8f-ad15-6a13fb1e4c28",
+        "type": "objectsvcs",
+        "objectname": "SCADevice",
+        "objectid": "9445"
+    },
+    "SCAObjects_AuthStatus": {
+        "servicename": "SCAObjects",
+        "serviceid": "f5675f24-2960-46aa-bc00-f417bea9b29f",
+        "type": "objectsvcs",
+        "objectname": "AuthStatus",
+        "objectid": "9414"
+    },
+    "SCAObjects_SCASearchUser": {
+        "servicename": "SCAObjects",
+        "serviceid": "f5675f24-2960-46aa-bc00-f417bea9b29f",
+        "type": "objectsvcs",
+        "objectname": "SCASearchUser",
+        "objectid": "9415"
+    },
+    "SCAObjects_SCAUser": {
+        "servicename": "SCAObjects",
+        "serviceid": "f5675f24-2960-46aa-bc00-f417bea9b29f",
+        "type": "objectsvcs",
+        "objectname": "SCAUser",
+        "objectid": "9416"
+    },
+    "SCAObjects_UserAuthenticator": {
+        "servicename": "SCAObjects",
+        "serviceid": "f5675f24-2960-46aa-bc00-f417bea9b29f",
+        "type": "objectsvcs",
+        "objectname": "UserAuthenticator",
+        "objectid": "9417"
+    },
+    "SCATransactionObjects_CIBAPushOperation": {
+        "servicename": "SCATransactionObjects",
+        "serviceid": "5a9ad3ba-d6fc-4014-a791-6bdf5be222c3",
+        "type": "objectsvcs",
+        "objectname": "CIBAPushOperation",
+        "objectid": "10649"
+    },
+    "SCATransactionObjects_TransactionSigning": {
+        "servicename": "SCATransactionObjects",
+        "serviceid": "5a9ad3ba-d6fc-4014-a791-6bdf5be222c3",
+        "type": "objectsvcs",
+        "objectname": "TransactionSigning",
+        "objectid": "10650"
+    },
+    "Utility_Application": {
+        "servicename": "Utility",
+        "serviceid": "1a9e02b5-08c6-468d-b97c-8644950f00e0",
+        "type": "objectsvcs",
+        "objectname": "Application",
+        "objectid": "7932"
+    },
+    "Utility_Browser": {
+        "servicename": "Utility",
+        "serviceid": "1a9e02b5-08c6-468d-b97c-8644950f00e0",
+        "type": "objectsvcs",
+        "objectname": "Browser",
+        "objectid": "7933"
+    },
+    "Utility_Configurations": {
+        "servicename": "Utility",
+        "serviceid": "1a9e02b5-08c6-468d-b97c-8644950f00e0",
+        "type": "objectsvcs",
+        "objectname": "Configurations",
+        "objectid": "7934"
+    },
+    "Utility_Country": {
+        "servicename": "Utility",
+        "serviceid": "1a9e02b5-08c6-468d-b97c-8644950f00e0",
+        "type": "objectsvcs",
+        "objectname": "Country",
+        "objectid": "7935"
+    },
+    "Utility_Currency": {
+        "servicename": "Utility",
+        "serviceid": "1a9e02b5-08c6-468d-b97c-8644950f00e0",
+        "type": "objectsvcs",
+        "objectname": "Currency",
+        "objectid": "7936"
+    },
+    "Utility_Email": {
+        "servicename": "Utility",
+        "serviceid": "1a9e02b5-08c6-468d-b97c-8644950f00e0",
+        "type": "objectsvcs",
+        "objectname": "Email",
+        "objectid": "7937"
+    },
+    "Utility_LegalEntity": {
+        "servicename": "Utility",
+        "serviceid": "1a9e02b5-08c6-468d-b97c-8644950f00e0",
+        "type": "objectsvcs",
+        "objectname": "LegalEntity",
+        "objectid": "7938"
+    },
+    "Utility_OutageMessage": {
+        "servicename": "Utility",
+        "serviceid": "1a9e02b5-08c6-468d-b97c-8644950f00e0",
+        "type": "objectsvcs",
+        "objectname": "OutageMessage",
+        "objectid": "7939"
+    },
+    "Utility_SMS": {
+        "servicename": "Utility",
+        "serviceid": "1a9e02b5-08c6-468d-b97c-8644950f00e0",
+        "type": "objectsvcs",
+        "objectname": "SMS",
+        "objectid": "7940"
+    },
+    "Utility_States": {
+        "servicename": "Utility",
+        "serviceid": "1a9e02b5-08c6-468d-b97c-8644950f00e0",
+        "type": "objectsvcs",
+        "objectname": "States",
+        "objectid": "7941"
+    }
+}

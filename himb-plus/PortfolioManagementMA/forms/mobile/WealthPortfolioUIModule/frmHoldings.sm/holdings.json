@@ -1,0 +1,57 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "DNDConfig": null,
+    "_children_": [],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s7b436962d6a4647b197083ac7d03d39",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 0,
+    "data": {
+        "amountFormat": "{ \"locale\":\"\", \"positiveFormat\" : \"{CS}{D}\", \"negativeFormat\" : \"-{CS}{D}\", \"fractionDigits\":\"2\"}",
+        "featuresAndPermissions": "{\"view\":[\"WEALTH_ORDER_MGMT_ORDER_LINK_VIEW\"],\"buy\":[\"WEALTH_ORDER_MGMT_BUY_ORDER_CREATE\"], \"sell\":[\"WEALTH_ORDER_MGMT_SELL_ORDER_CREATE\"]}"
+    },
+    "id": "holdings",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "b24103ecd9514d8db660144c62d2a409",
+    "masterType": 1,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "flxScroll",
+    "pf": "frmHoldings",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "sourceUserWidget": "f076b421f3994d739bfebf2e71fbc9dc",
+    "wType": "UserWidgetInstance",
+    "zindex": 1
+}

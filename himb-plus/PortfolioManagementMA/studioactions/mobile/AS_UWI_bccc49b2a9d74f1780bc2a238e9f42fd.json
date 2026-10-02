@@ -1,0 +1,31 @@
+{
+    "AS_UWI_bccc49b2a9d74f1780bc2a238e9f42fd": {
+        "id": "AS_UWI_bccc49b2a9d74f1780bc2a238e9f42fd",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "filter",
+            "datatype": "collection"
+        }],
+        "contextObj": {
+            "name": "frmPortfolioDetails",
+            "type": "forms",
+            "platform": "",
+            "KUID": "ae3c64f39542439ea511152556915cd9"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__a3a892fb46f64968aa914b07be19a5ed",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "onFilterChanged",
+            "display": "onFilterChanged",
+            "inputparams": [{
+                "name": "filter",
+                "value": " filter"
+            }],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null,
+            "source": "controller"
+        }]
+    }
+}

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service serviceGroup="" cachable="false" cacheduration="" customOperation="false" description="" endpoint="default" groupType="" id="getIBANStructure" passwordencrypted="false" security="authorized_app_user" type="jsonConnector" smscode="" smsenabled="false">
+    <service-config>
+        <config-param api-version="" appid="" name="preprocessorname" value="com.infinity.dbx.temenos.TemenosBasePreProcessor"/>
+        <config-param api-version="" appid="" name="postprocessorname" value="com.infinity.dbx.temenos.TemenosBasePostProcessor"/>
+        <config-param api-version="" appid="" name="preprocessorJS" value=""/>
+        <config-param api-version="" appid="" name="postprocessorJS" value=""/>
+        <config-param api-version="" appid="" name="preprocessorRules" value=""/>
+        <config-param api-version="" appid="" name="postprocessorRules" value=""/>
+        <config-param api-version="" appid="" name="kony_http_supported_methods" value="POST"/>
+        <config-param api-version="" appid="" name="endpointUrl" value="https://_$_T24_TRANSACTIONS_HOST_URL_$_/v2.0.0/reference/bankCodes/countries/$countryCode/ibanStructures"/>
+        <config-param api-version="" appid="" name="ignorehttpproxy" value="true"/>
+        <config-param api-version="" appid="" name="http.method" value="GET"/>
+        <config-param api-version="" appid="" name="dataObjectName" value=""/>
+        <config-param api-version="" appid="" name="sockettimeout" value=""/>
+        <config-param api-version="" appid="" name="responseEncoding" value="UTF-8"/>
+        <config-param api-version="" appid="" name="isembedxmlpresent" value="false"/>
+        <config-param api-version="" appid="" name="retrycount" value="0"/>
+        <config-param api-version="" appid="" name="urlprovider" value="com.kony.dbx.util.ServiceURLProvider"/>
+        <config-param api-version="" appid="" name="totalRateLimit" value="100"/>
+        <config-param api-version="" appid="" name="rateLimitPerIP" value="100"/>
+        <config-param api-version="" appid="" name="identityProvider" value="DbxUserLogin"/>
+        <config-param api-version="" appid="" name="identityProviderType" value="custom"/>
+    </service-config>
+    <service-input passthrough="false" isExtended="false">
+        <header datatype="" name="" passthrough="false" isExtended="false">
+            <param datatype="string" defaultvalue="" description="" encode="false" format="None" formatvalue="" name="Authorization" order="" paramOrder="0" parentOrder="0" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="" targetdatatype="" testvalue="eyJraWQiOiJLQTAxIiwidHlwIjoiSldUIiwiYWxnIjoiUlMyNTYifQ.eyJhdWQiOiJJUklTIiwic3ViIjoiZGJwb2xidXNlciIsInJvbGVJZCI6IklORklOSVRZLlJFVEFJTCIsImlzcyI6IkZhYnJpYyIsImRieFVzZXJJZCI6IjEwMDI0OTY1NDAiLCJleHAiOjE1OTI4NDcxNzksImlhdCI6MTU5Mjg0NTM3OSwidXNlcklkIjoiZGJwb2xidXNlciIsIl9pc3NtZXRhIjoiaHR0cDpcL1wva2gyMjQ2bC50ZW1lbm9zZ3JvdXAuY29tOjgwODBcL3NlcnZpY2VzXC9UMjRJU0V4dHJhXC9nZXRwdWJsaWNrZXkiLCJqdGkiOiI0NWQwOWVmYi1hMDk1LTQxMjktOGI3Ny1iNWMwZDUzMWQwNWEifQ.c0VbbsnLJhUY6pWlHz_cdR8i4-rpmuQkHS9T9ta4HD1w_VA3UZYEx-3neB6jUp3L1NLCdspdeylbs7xvglxiJQltqTrUMIHnLBb441rj6GfAdWXJH3dcR_9yDd9qnH8HFRtGjwtNZ-RC2gtx0Ff2MC5VCARuHFmrFSwyT7h45vAUsw52VUUdD1gH-F4bjs6D_hiY9YykAVhHmBhEBVWmcIVavemLWNaTwTPOV65KNDwJJz_4UbHsiAa2jpoqUUyeGhA3-9Dj8IqIOM6ufX3oNJVx1Qn1Ucka5GkkBrXVMT6bqRx1ngIMwpsj5JwtMn-EMqWEoIsAoMeSLzBViL7yIQ" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="false" format="None" formatvalue="" name="companyId" order="" paramOrder="0" parentOrder="0" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="" targetdatatype="" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+        </header>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="countryCode" order="" paramOrder="1" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="GB" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <stub-param value=""/>
+    </service-input>
+    <service-output passthrough="false" isExtended="false">
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="sepaMember" order="" paramOrder="1" parentOrder="0" passnull="false" sms-name="" src="//sepaMember" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+    </service-output>
+</service>

@@ -1,0 +1,74 @@
+{
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "104dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "34dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "sb9e53b6b03a4086bb581cc85162d41b",
+    "_top_": {
+        "type": "string",
+        "value": "0px"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "80px"
+    },
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "children": [
+        "imgDelete3",
+        "flxBorderForImage3",
+        "lblFavMerchantName3"
+    ],
+    "clipbounds": false,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "flxFavMerchants3",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": false,
+    "kuid": "c98872234e6c4d10bb1506ac80ec246f",
+    "layouttype": 2,
+    "name": "kony.ui.FlexContainer",
+    "parent": "flxFavoritesDataMain",
+    "pf": "frmBillPayNew",
+    "responsiveData": {
+        "b2": {
+            "left": {
+                "type": "string",
+                "value": "24dp"
+            },
+            "width": {
+                "type": "string",
+                "value": "15%"
+            }
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1,
+    "zindex": 1
+}

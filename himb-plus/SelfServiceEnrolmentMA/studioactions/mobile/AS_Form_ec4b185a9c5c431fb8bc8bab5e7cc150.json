@@ -1,0 +1,23 @@
+{
+    "AS_Form_ec4b185a9c5c431fb8bc8bab5e7cc150": {
+        "id": "AS_Form_ec4b185a9c5c431fb8bc8bab5e7cc150",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmEnrollTermsCondition",
+            "type": "forms",
+            "platform": null,
+            "KUID": "fd0921a4f777438ba471421bfcd7fc9e"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_init_j4daaa34f143482b884c93e09c324cbb",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.init();",
+            "callbackType": null
+        }]
+    }
+}

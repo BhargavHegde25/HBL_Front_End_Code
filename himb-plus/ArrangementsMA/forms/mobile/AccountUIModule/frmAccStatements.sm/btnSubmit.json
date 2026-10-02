@@ -1,0 +1,62 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_bottom_": {
+        "type": "string",
+        "value": "6%"
+    },
+    "_height_": {
+        "type": "string",
+        "value": "45dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "5%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s8330988041f4463b893582a86369462",
+    "_text_": "Continue",
+    "_top_": {
+        "type": "string",
+        "value": "7%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "80%"
+    },
+    "accessibilityconfig": {
+        "a11yLabel": "CONFIRM"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "disabledSkins": {},
+    "displaytext": true,
+    "focusskin": "s1ba251bcd374b38a477c71e7d26bfd5",
+    "id": "btnSubmit",
+    "info": null,
+    "iphone": {
+        "psp": {
+            "showProgressIndicator": false
+        }
+    },
+    "isvisible": true,
+    "kuid": "f3c128ef0a584f0684c870b6de487219",
+    "name": "kony.ui.Button",
+    "parent": "flxCustomDate",
+    "pf": "frmAccStatements",
+    "texti18n": "kony.mb.common.submit",
+    "wType": "Button",
+    "zindex": 1
+}

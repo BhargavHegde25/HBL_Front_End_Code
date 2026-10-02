@@ -1,0 +1,24 @@
+{
+    "AS_Form_d0b31df140914d52bf94f86a86d6fa01": {
+        "id": "AS_Form_d0b31df140914d52bf94f86a86d6fa01",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmCurrencyChart",
+            "type": "forms",
+            "platform": "",
+            "KUID": "c4b44174e1d44b28ad6f3b635f133685"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_a13de4204ae14628ab7e1e73ed453e81",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.postShow();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

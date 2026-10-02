@@ -1,0 +1,103 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizTextBox2",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "102%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "-1%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        10,
+        3,
+        1,
+        3
+    ],
+    "_placeholder_": "",
+    "_skin_": "s039301545174ce686ecaec59a9e23ad",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "-1%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "102%"
+    },
+    "accessibilityconfig": {
+        "a11yLabel": "Account Nick Name"
+    },
+    "activeNativeBorderCornerRadiusControl": "centerControl",
+    "android": {
+        "padding": [
+            10,
+            0,
+            0,
+            0
+        ],
+        "paddingInPixel": true
+    },
+    "autocapitalize": "none",
+    "autocomplete": false,
+    "autocorrect": false,
+    "autofilter": false,
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerheight": "",
+    "containerheightmode": 1,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "disabledSkins": {},
+    "focusskin": "s039301545174ce686ecaec59a9e23ad",
+    "id": "txtNickName",
+    "info": null,
+    "iphone": {
+        "bottom": "",
+        "centerX": "",
+        "centerY": "",
+        "isCustomLayout": false,
+        "maxHeight": "",
+        "maxWidth": "",
+        "minHeight": "",
+        "minWidth": "",
+        "padding": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "paddingInPixel": true,
+        "retainContentAlignment": false,
+        "retainFlexPositionProperties": false,
+        "right": "",
+        "widgetAlignment": 5,
+        "zIndex": 1
+    },
+    "isvisible": true,
+    "keyboardtype": "A",
+    "kuid": "eb8a83b782624e10b194842959148fa4",
+    "maxtextlength": 25,
+    "mode": "A",
+    "name": "kony.ui.TextBox2",
+    "paddinginpixel": true,
+    "parent": "flxNickName",
+    "pf": "frmManageBeneficiary",
+    "placeholderskin": "s38a3fe90f7547a3809343bf938b77d1",
+    "securetextentry": false,
+    "textinputmode": "A",
+    "tooltip": "",
+    "viewtype": "default",
+    "wType": "TextField",
+    "zindex": 1
+}

@@ -1,0 +1,31 @@
+{
+    "AS_UWI_b76b3c8984fa4304bf41d46c6162e8b8": {
+        "id": "AS_UWI_b76b3c8984fa4304bf41d46c6162e8b8",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "filter",
+            "datatype": "collection"
+        }],
+        "contextObj": {
+            "name": "frmCurrencyChart",
+            "type": "forms",
+            "platform": "",
+            "KUID": "c4b44174e1d44b28ad6f3b635f133685"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__d68bed6df696489aa1b4ad08581eafa7",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "onFilterChanged",
+            "display": "onFilterChanged",
+            "inputparams": [{
+                "name": "filter",
+                "value": " filter"
+            }],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null,
+            "source": "controller"
+        }]
+    }
+}

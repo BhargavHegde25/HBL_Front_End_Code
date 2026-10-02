@@ -1,0 +1,61 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "20dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_right_": {
+        "type": "string",
+        "value": "2%"
+    },
+    "_skin_": "s0f5748e0ea447b99601a5b7d636357c",
+    "_text_": "View Dispute Transaction",
+    "_top_": {
+        "type": "string",
+        "value": "0"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "200dp"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "desktopweb": {
+        "psp": {
+            "hoverSkin": "s95f4c2b8a3840438bd01e58b4f43c9e"
+        }
+    },
+    "disabledSkins": {},
+    "displaytext": true,
+    "focusskin": "s7ab6326aaf94c28b90b61fcb1a43136",
+    "id": "btnEMIContinue",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "a574f422ea3647d3a0918f77efeff7de",
+    "name": "kony.ui.Button",
+    "parent": "flxEMIButtons",
+    "pf": "frmCardManagement",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "texti18n": "kony.mb.sca.Continue",
+    "wType": "Button"
+}

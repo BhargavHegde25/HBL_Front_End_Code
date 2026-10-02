@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service serviceGroup="" cachable="false" cacheduration="" customOperation="false" description="" endpoint="default" groupType="" id="QRvalidate" passwordencrypted="false" security="authorized_app_user" type="jsonConnector" smscode="" smsenabled="false">
+    <service-config>
+        <config-param api-version="" appid="" name="preprocessorname" value="com.bct.preprocessor.ConnectIPSAuthorizationPreprocessor"/>
+        <config-param api-version="" appid="" name="postprocessorname" value=""/>
+        <config-param api-version="" appid="" name="preprocessorJS" value=""/>
+        <config-param api-version="" appid="" name="postprocessorJS" value=""/>
+        <config-param api-version="" appid="" name="preprocessorRules" value=""/>
+        <config-param api-version="" appid="" name="postprocessorRules" value=""/>
+        <config-param api-version="" appid="" name="kony_http_supported_methods" value="POST"/>
+        <config-param api-version="" appid="" name="endpointUrl" value="http://_$_CONNECTIPS_BASE_URL_$_nQR/v1/validate"/>
+        <config-param api-version="" appid="" name="ignorehttpproxy" value="true"/>
+        <config-param api-version="" appid="" name="http.method" value="POST"/>
+        <config-param api-version="" appid="" name="dataObjectName" value=""/>
+        <config-param api-version="" appid="" name="sockettimeout" value=""/>
+        <config-param api-version="" appid="" name="responseEncoding" value="UTF-8"/>
+        <config-param api-version="" appid="" name="isembedxmlpresent" value="false"/>
+        <config-param api-version="" appid="" name="retrycount" value="0"/>
+        <config-param api-version="" appid="" name="stub.response" value="true"/>
+        <config-param api-version="" appid="" name="urlprovider" value="com.kony.dbputilities.util.ServiceURLProvider"/>
+        <config-param api-version="" appid="" name="jsonpath" value="true"/>
+    </service-config>
+    <service-input passthrough="false" isExtended="false">
+        <header datatype="" name="" passthrough="false" isExtended="false">
+            <param datatype="string" defaultvalue="" description="" encode="false" format="None" formatvalue="" name="Authorization" order="" paramOrder="0" parentOrder="0" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="" targetdatatype="" testvalue="Bearer 32a3df41-283c-4461-b51d-eefcd8d2ce80" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+        </header>
+        <param datatype="string" defaultvalue="" description="" encode="false" format="None" formatvalue="" name="qrString" order="" paramOrder="1" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="0002010102111531318705240052044600200036950152427430032B1FAE3857749435FA746755FE446538D01030025204581253035245802NP5925Kathmandu" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="amount" order="" paramOrder="2" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="fromAccountName" order="" paramOrder="3" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="fromAccountCurrency" order="" paramOrder="4" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="fromAccountNumber" order="" paramOrder="5" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="notes" order="" paramOrder="6" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="transactionCurrency" order="" paramOrder="7" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <template-param datatype="" defaultvalue="{&#10;    &quot;instructionId&quot;: &quot;$insId&quot;&#10;    &quot;qrString&quot;: &quot;$qrString&quot;&#10;}" description="" encode="false" format="" formatvalue="" name="message" order="" paramOrder="0" parentOrder="0" sms-name="" src="" sourcevalue="" srcformatvalue="" target="" targetdatatype="" value="{&#10;    &quot;instructionId&quot;: &quot;$insId&quot;&#10;    &quot;qrString&quot;: &quot;$qrString&quot;&#10;}" isExtended="false">
+            <accessType></accessType>
+        </template-param>
+        <stub-param value="{&#10;    &quot;responseCode&quot;: &quot;000&quot;,&#10;    &quot;responseMessage&quot;: &quot;SUCCESS&quot;,&#10;    &quot;validationTraceId&quot;: &quot;2406190000234021GAK&quot;,&#10;    &quot;instructionId&quot;: &quot;HBLQR-174920166&quot;,&#10;    &quot;qrType&quot;: &quot;STATIC&quot;,&#10;    &quot;acquirerId&quot;: &quot;E3857749&quot;,&#10;    &quot;acquirerCountryCode&quot;: &quot;NP&quot;,&#10;    &quot;merchantPan&quot;: &quot;NmMeaqt2mMxwX6sUq19nFDN+vucTQtPcB5N9lNQM6JyR1c0dbibmIL6t4FGN5BoR7dwhlN2mAWoWXCraDPg2C7J6fxrp1acobbWPtxcsOF790c2ubRwedsUy8bPD+KGzRwxiShy/A5mdMuN0bEYdrXDhC13ONN83DXy8v65Luxk=&quot;,&#10;    &quot;merchantCategoryCode&quot;: 5812,&#10;    &quot;amount&quot;: null,&#10;    &quot;transactionFee&quot;: 0.00,&#10;    &quot;currencyCode&quot;: &quot;NPR&quot;,&#10;    &quot;merchantName&quot;: &quot;Kathmandu Sky View Resort&quot;,&#10;    &quot;merchantCity&quot;: &quot;Kathmandu&quot;,&#10;    &quot;merchantCountryCode&quot;: &quot;NP&quot;,&#10;    &quot;merchantBillNo&quot;: &quot;0&quot;,&#10;    &quot;merchantTxnRef&quot;: &quot;QR Payment&quot;,&#10;    &quot;merchantPostalcode&quot;: &quot;44601&quot;,&#10;    &quot;terminal&quot;: &quot;02007784&quot;,&#10;    &quot;qrString&quot;: null,&#10;    &quot;encKeySerial&quot;: &quot;170069681833763609248238&quot;,&#10;    &quot;network&quot;: &quot;SMTQR-27&quot;,&#10;    &quot;token&quot;: &quot;ZSNESfiwG8ePkVIh33sS9zBaHcyTgsDcof8r4xlzNnYZD7sBcKHDGOtMfv58nYecT8ND345sZcexRCH6+oOsbh/f22jCxCEEeT08Ihp4SGuCqx4v52dGmUe3MmU59YmayU26FD+snQ40xZdP4jWNNovStuBQDNxt3pfrl3cAmvo=&quot;,&#10;    &quot;tokenString&quot;: &quot;2406190000234021GAK,HBLQR-174920166,E3857749,NmMeaqt2mMxwX6sUq19nFDN+vucTQtPcB5N9lNQM6JyR1c0dbibmIL6t4FGN5BoR7dwhlN2mAWoWXCraDPg2C7J6fxrp1acobbWPtxcsOF790c2ubRwedsUy8bPD+KGzRwxiShy/A5mdMuN0bEYdrXDhC13ONN83DXy8v65Luxk=,5812,null,0.00,NPR,Kathmandu Sky View Resort,0,02007784,000&quot;&#10;}"/>
+    </service-input>
+    <service-output passthrough="false" isExtended="false">
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="responseCode" order="" paramOrder="1" parentOrder="0" passnull="false" sms-name="" src="$.responseCode" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="responseMessage" order="" paramOrder="2" parentOrder="0" passnull="false" sms-name="" src="$.responseMessage" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="validationTraceId" order="" paramOrder="3" parentOrder="0" passnull="false" sms-name="" src="$.validationTraceId" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="instructionId" order="" paramOrder="4" parentOrder="0" passnull="false" sms-name="" src="$.instructionId" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="qrType" order="" paramOrder="5" parentOrder="0" passnull="false" sms-name="" src="$.qrType" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="acquirerId" order="" paramOrder="6" parentOrder="0" passnull="false" sms-name="" src="$.acquirerId" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="acquirerCountryCode" order="" paramOrder="7" parentOrder="0" passnull="false" sms-name="" src="$.acquirerCountryCode" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="merchantPan" order="" paramOrder="8" parentOrder="0" passnull="false" sms-name="" src="$.merchantPan" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="merchantCategoryCode" order="" paramOrder="9" parentOrder="0" passnull="false" sms-name="" src="$.merchantCategoryCode" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="amount" order="" paramOrder="10" parentOrder="0" passnull="false" sms-name="" src="$.amount" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="transactionFee" order="" paramOrder="11" parentOrder="0" passnull="false" sms-name="" src="$.transactionFee" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="currencyCode" order="" paramOrder="12" parentOrder="0" passnull="false" sms-name="" src="$.currencyCode" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="merchantName" order="" paramOrder="13" parentOrder="0" passnull="false" sms-name="" src="$.merchantName" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="merchantCity" order="" paramOrder="14" parentOrder="0" passnull="false" sms-name="" src="$.merchantCity" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="merchantCountryCode" order="" paramOrder="15" parentOrder="0" passnull="false" sms-name="" src="$.merchantCountryCode" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="merchantBillNo" order="" paramOrder="16" parentOrder="0" passnull="false" sms-name="" src="$.merchantBillNo" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="merchantTxnRef" order="" paramOrder="17" parentOrder="0" passnull="false" sms-name="" src="$.merchantTxnRef" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="merchantPostalcode" order="" paramOrder="18" parentOrder="0" passnull="false" sms-name="" src="$.merchantPostalcode" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="terminal" order="" paramOrder="19" parentOrder="0" passnull="false" sms-name="" src="$.terminal" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="qrString" order="" paramOrder="20" parentOrder="0" passnull="false" sms-name="" src="$.qrString" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="encKeySerial" order="" paramOrder="21" parentOrder="0" passnull="false" sms-name="" src="$.encKeySerial" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="network" order="" paramOrder="22" parentOrder="0" passnull="false" sms-name="" src="$.network" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="token" order="" paramOrder="23" parentOrder="0" passnull="false" sms-name="" src="$.token" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="tokenString" order="" paramOrder="24" parentOrder="0" passnull="false" sms-name="" src="$.tokenString" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+    </service-output>
+</service>

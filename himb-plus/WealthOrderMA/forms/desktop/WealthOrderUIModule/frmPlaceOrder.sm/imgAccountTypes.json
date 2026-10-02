@@ -1,0 +1,63 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizImage2",
+    "DNDConfig": null,
+    "_base64_": null,
+    "_height_": {
+        "type": "string",
+        "value": "7dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": ""
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_right_": {
+        "type": "string",
+        "value": "14dp"
+    },
+    "_skin_": "s8ee487de5774c1eb668e74bf92f5cdd",
+    "_src_": "arrow_down.png",
+    "_width_": {
+        "type": "string",
+        "value": "14dp"
+    },
+    "accessibilityconfig": {
+        "a11yLabel": "Account Types",
+        "a11yValue": ""
+    },
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "id": "imgAccountTypes",
+    "imagescalemode": 1,
+    "imagewhiledownloading": "img_transparent.png",
+    "info": null,
+    "invokedProperty": "src",
+    "isvisible": true,
+    "kuid": "g2cd4e98963341c78595fae4058fe0b7",
+    "name": "kony.ui.Image2",
+    "parent": "flxAccountTypes",
+    "pf": "frmPlaceOrder",
+    "responsiveData": {
+        "b3": {}
+    },
+    "srcType": 1,
+    "tooltip": "Account Type",
+    "wType": "Image",
+    "widgetalignment": 5,
+    "zindex": 1
+}

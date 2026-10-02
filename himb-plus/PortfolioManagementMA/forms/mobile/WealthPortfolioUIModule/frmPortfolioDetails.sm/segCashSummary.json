@@ -1,0 +1,143 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "_data_": [
+        {
+            "lblCashAcc": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "CHF Cash"
+            },
+            "lblCashAccBal": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "CHF 8,500.00"
+            }
+        },
+        {
+            "lblCashAcc": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "USD Cash"
+            },
+            "lblCashAccBal": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "$6,040.00"
+            }
+        },
+        {
+            "lblCashAcc": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EUR Cash"
+            },
+            "lblCashAccBal": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "€2,000.00"
+            }
+        },
+        {
+            "lblCashAcc": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "GBP Cash"
+            },
+            "lblCashAccBal": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "£1,040.00"
+            }
+        }
+    ],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "autogrowmode": 1,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "counter": "03",
+    "disabledSkins": {
+        "rowFocusSkin": "sec47134c53840738acea176209ff716"
+    },
+    "focusedindex": null,
+    "focuseditem": null,
+    "groupcells": false,
+    "hasSections": false,
+    "id": "segCashSummary",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "indicator": "none"
+        }
+    },
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "gec2cdb56d0548589f59e145d4b0f54e",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "flxCashSummary",
+    "pf": "frmPortfolioDetails",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainselection": false,
+    "rowTemplateId": "df08373df70b42d2a969bd331c5b05df",
+    "rowcounter": 3,
+    "rowskin": "s18472307db04580a2a9cb6f4681ebec",
+    "rowtemplate": "flxCashBalSummary",
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionheaderskin": "s65e8b0a8be54624ac979cda71a22cac",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "separatorrequired": false,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "vizProps": {},
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "flxCashBalSummary": "flxCashBalSummary",
+        "flxCashSumm": "flxCashSumm",
+        "flxSeparator": "flxSeparator",
+        "lblCashAcc": "lblCashAcc",
+        "lblCashAccBal": "lblCashAccBal"
+    },
+    "zindex": 1
+}

@@ -1,0 +1,28 @@
+{
+    "AS_Button_c15eade7c6934d27876cb93d586bfe6f": {
+        "id": "AS_Button_c15eade7c6934d27876cb93d586bfe6f",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmEmbedOrigination",
+            "type": "forms",
+            "platform": "",
+            "KUID": "d2656e6941354b8895637882cf1e9fc8"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__f836a676eba140849525c1d18a652a65",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "onYesOfConfirmationPopup",
+            "display": "onYesOfConfirmationPopup",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null,
+            "source": "controller"
+        }]
+    }
+}

@@ -1,0 +1,89 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "20dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "se4cbdf6e51f48eda9966caa941c6a19",
+    "_text_": "Contact Us",
+    "_top_": {
+        "type": "number",
+        "value": ""
+    },
+    "_width_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "accessibilityconfig": {
+        "a11yLabeli18n": "i18n.footer.faqs"
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "number",
+        "value": ""
+    },
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "desktopweb": {
+        "psp": {}
+    },
+    "disabledSkins": {
+        "focusSkin": "s293e226e8f945ddb4137c09ee51b794",
+        "hoverSkin": "s293e226e8f945ddb4137c09ee51b794"
+    },
+    "displaytext": true,
+    "focusskin": null,
+    "id": "btnExchangeRate",
+    "ide_onClick": "AS_Button_j8a6e0ccc76a44c8b6a7aa7aa2faf0b2",
+    "info": null,
+    "isvisible": true,
+    "kuid": "c57b50edbabc4b1c95285dabadb2d5e6",
+    "name": "kony.ui.Button",
+    "parent": "flxFooterMenu",
+    "pf": "userwidgetmodel",
+    "responsiveData": {
+        "b3": {
+            "centerX": {
+                "type": "string",
+                "value": "50%"
+            },
+            "centerY": {
+                "type": "string",
+                "value": ""
+            },
+            "left": {
+                "type": "string",
+                "value": ""
+            },
+            "top": {
+                "type": "string",
+                "value": "5dp"
+            }
+        }
+    },
+    "texti18n": "i18n.prelogin.ExchangeRates",
+    "tooltip": "",
+    "wType": "Button",
+    "zindex": 1
+}

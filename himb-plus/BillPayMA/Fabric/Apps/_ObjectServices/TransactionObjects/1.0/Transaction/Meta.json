@@ -1,0 +1,38 @@
+{
+  "type" : "svcdriven",
+  "custom" : false,
+  "junction" : false,
+  "customizable" : false,
+  "verbs" : {
+    "P2PTransferDelete" : "P2PTransferDeleteMapping",
+    "DomesticWireTransfer" : "DomesticWireTransferMapping",
+    "InterBankFundTransferCancelOccurrence" : "InterBankFundTransferCancelOccurrenceMapping",
+    "InternationalWireTransfer" : "InternationalWireTransferMapping",
+    "CreateBulkWireTransfer" : "CreateBulkWireTransferMapping",
+    "InterBankAccFundTransfer" : "InterBankAccFundTransferMapping",
+    "InternationalFundTransferEdit" : "InternationalFundTransferEditMapping",
+    "TransferToOwnAccountsEdit" : "TransferToOwnAccountsEditMapping",
+    "IntraBankAccFundTransferDelete" : "IntraBankAccFundTransferDeleteMapping",
+    "IntraBankAccFundTransfer" : "IntraBankAccFundTransferMapping",
+    "InterBankFundTransferEdit" : "InterBankFundTransferEditMapping",
+    "TransferToOwnAccounts" : "TransferToOwnAccountsMapping",
+    "P2PTransfer" : "P2PTransferMapping",
+    "BillPayTransferCancelOccurrence" : "BillPayTransferCancelOccurrenceMapping",
+    "InterBankFundTransferDelete" : "InterBankFundTransferDeleteMapping",
+    "TransferToOwnAccountsDelete" : "TransferToOwnAccountsDeleteMapping",
+    "InternationalFundTransferCancelOccurrence" : "InternationalFundTransferCancelOccurrenceMapping",
+    "IntraBankAccFundTransferCancelOccurrence" : "IntraBankAccFundTransferCancelOccurrenceMapping",
+    "InternationalFundTransferDelete" : "InternationalFundTransferDeleteMapping",
+    "P2PTransferCancelOccurrence" : "P2PTransferCancelOccurrenceMapping",
+    "InternationalAccFundTransfer" : "InternationalAccFundTransferMapping",
+    "TransferToOwnAccountsCancelOccurrence" : "TransferToOwnAccountsCancelOccurrenceMapping",
+    "P2PTransferEdit" : "P2PTransferEditMapping",
+    "IntraBankAccFundTransferEdit" : "IntraBankAccFundTransferEditMapping",
+    "createRDC" : "createRDCMapping"
+  },
+  "entityProperties" : {
+    "BatchMode" : "buffer",
+    "backendMeta" : { },
+    "designTimeBackendMeta" : { }
+  }
+}

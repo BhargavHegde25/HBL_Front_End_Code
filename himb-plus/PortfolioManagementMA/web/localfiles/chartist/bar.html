@@ -1,0 +1,67 @@
+<html>
+
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="chartist.min.css">
+		<!--link rel="stylesheet" href="bar.css"-->
+		<script src="chartist.min.js"></script>
+		<script src="bar.js" type="text/javascript"></script>
+		<script src="jquery-3.6.0.js" type="text/javascript"></script>
+		
+</head>
+<body>
+<div id="bar-container" style="height:100%;">
+    <div id="bar-chart"  class="ct-chart" style="height:100%; width:96%; margin-left:2%" ></div>
+</div>
+
+</body>
+<script>
+//addchart( ["Computer Services","Retail","Consumer Financial Services","Communication Equipment","Regional Banks","Aerospace & Defense","Beverages (Nonalcoholic)","Auto & Truck Manufacturers","Exchange Traded Funds","Financials","Biotechnology & Drugs"] ,[[8.17,6.82,3.51,0.52,2.59,4.08,0.99,0.84,9.34,0.12,0.75]],["#54D75D","#77BC43","#008495","#23A8B1","#7BCCC4","#3BE2B2","#E7417A","#E8705B","#FF8600","#F7EA3A","#7E04C4","#BF0404","#B9SEE8","#6753EC","#3897D6","#4176A4","#3645A7","#0273E3","#646E83","#BDBDBD"] );
+</script>
+
+<style>
+	.ct-series .ct-bar {
+		stroke-width: 9px;
+		stroke:#6753EC;
+	}
+
+	.ct-chart-bar {
+		overflow: visible;
+		margin : 0 0 30px 0;
+		
+	}
+
+	.ct-grid {
+  stroke: #E3E3E3;
+  stroke-width: 1px;
+}
+
+	
+	.ct-label{
+  color: rgb(25.88, 25.88, 25.88);
+  }
+
+  .ct-chart-bar.ct-horizontal-bars .ct-label.ct-vertical.ct-start {
+    justify-content: flex-end;
+    text-align: right;
+    text-anchor: start;
+}
+
+.ct-grids{
+	left:10px
+}
+
+.ct-chart-bar.ct-horizontal-bars .ct-label.ct-horizontal.ct-end {
+    align-items: flex-start;
+    text-align: left;
+    text-anchor: start;
+}
+
+</style>
+<!--script>
+			addMultiLineBarChart(['Exchange Traded funds', 'Exchange Traded funds', 'Exchange Traded funds', 'Exchange',"Liquidity"], [[125, -50, -1., -60,-90]],["#54D7SD","#77BC43","#008495","#23A8B1","#7BCCC4","#3BE2B2","#E7417A","#E8705B",
+"#FF8600","#F7EA3A","#7E04C4","#BF0404","#B9SEE8","#6753EC","#3897D6","#4176A4",
+"#3645A7","#0273E3","#646E83","#BDBDBD"]);
+
+	</script--> 
+</html>

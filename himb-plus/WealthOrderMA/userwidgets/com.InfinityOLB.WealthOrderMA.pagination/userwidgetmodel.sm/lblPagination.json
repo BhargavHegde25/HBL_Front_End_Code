@@ -1,0 +1,87 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizLabel",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "18px"
+    },
+    "_left_": {
+        "type": "string",
+        "value": ""
+    },
+    "_margin_": [
+        1,
+        1,
+        1,
+        1
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "sf6419caebe343838391a8487ed5286c",
+    "_text_": "1 of 2 Pages",
+    "_top_": {
+        "type": "string",
+        "value": "15px"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "120dp"
+    },
+    "_wrapping_": 2,
+    "accessibilityconfig": {
+        "a11yLabel": "1-20 Transactions"
+    },
+    "android": {
+        "textStyle": {
+            "letterSpacing": 0,
+            "strikeThrough": false
+        }
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "centery": {
+        "type": "string",
+        "value": ""
+    },
+    "containerweight": 100,
+    "contentalignment": 2,
+    "id": "lblPagination",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "iphone": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "isvisible": true,
+    "kuid": "u42f5ad4c7fa4d6da02994657ff8d3d0",
+    "name": "kony.ui.Label",
+    "parent": "flxPaginationWrapper",
+    "pf": "userwidgetmodel",
+    "responsiveData": {
+        "b1": {
+            "contentAlignment": 5
+        },
+        "b2": {},
+        "b3": {
+            "contentAlignment": 2,
+            "skin": "sc5391f1dea8474aa61dd72566b52f54"
+        },
+        "b4": {}
+    },
+    "textcommonbreakpoint": "1-20 Transactions",
+    "tooltip": "",
+    "wType": "Label",
+    "zindex": 2
+}

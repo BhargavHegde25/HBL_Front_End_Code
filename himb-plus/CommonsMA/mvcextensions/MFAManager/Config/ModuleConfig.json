@@ -1,0 +1,10 @@
+{
+    "ModuleName": "MFAManager",
+    "ModuleType": "Manager",
+    "BusinessControllerConfig": {
+        "BusinessExtensions": [
+            "MFAManager/BusinessControllers/BusinessController_Extension"
+        ],
+        "BusinessControllerClass": "MFAManager/BusinessControllers/BusinessController"
+    }
+}

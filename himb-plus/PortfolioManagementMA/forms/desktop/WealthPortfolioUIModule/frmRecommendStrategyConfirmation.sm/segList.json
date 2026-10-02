@@ -1,0 +1,58 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "DNDConfig": null,
+    "_children_": [],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s2898c69dd554bcd8c6e6775ba34a89d",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 0,
+    "data": {
+        "dataMapping": "{\n  \"segListDetail\": {\n    \"segmentMasterData\": \"${CNTX.assets}\",\n    \"segmentUI\": {\n        \"rowTemplate\": {\n        \"lblValue\": \"${segmentMasterData.weight}\",\n        \"lblAsset\": \"${segmentMasterData.assetName}\",\n         \"flxDot\":\"${segmentMasterData.backgroundColor}\"\n      }\n    }\n  }\n}\n",
+        "rowTemplateConfig": "{\"templateID\": \"flxSegMyStrategyOLB\", \"microAppName\": \"PortfolioManagementMA\"}",
+        "serviceParameters": "{\n\n}"
+    },
+    "id": "segList",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "abdf4541a54640709fe736e8e629298e",
+    "masterType": 1,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "flxSegList",
+    "pf": "frmRecommendStrategyConfirmation",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "sourceUserWidget": "uf78e1e4be104cb2b99948c0e972e68e",
+    "wType": "UserWidgetInstance",
+    "zindex": 1
+}

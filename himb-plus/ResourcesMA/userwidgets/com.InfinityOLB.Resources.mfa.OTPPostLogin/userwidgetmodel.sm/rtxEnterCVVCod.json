@@ -1,0 +1,59 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizRichText",
+    "DNDConfig": null,
+    "_bottom_": {
+        "type": "string",
+        "value": "0"
+    },
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "115dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s09be404645946dab557e7f3681be401",
+    "_text_": "Please Enter the 6 digit Transaction Pin",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "70%"
+    },
+    "_wrapping_": 2,
+    "accessibilityconfig": {
+        "a11yARIA": {
+            "tabindex": -1
+        }
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "desktopweb": {},
+    "id": "rtxEnterCVVCod",
+    "info": null,
+    "isvisible": true,
+    "kuid": "j4a62cc795f9425c9e807e368c874af4",
+    "name": "kony.ui.RichText",
+    "parent": "flximgrtx1",
+    "pf": "userwidgetmodel",
+    "texti18n": "i18n.HBL.Enterpin",
+    "wType": "RichText",
+    "widgetalignment": 5,
+    "zindex": 1
+}

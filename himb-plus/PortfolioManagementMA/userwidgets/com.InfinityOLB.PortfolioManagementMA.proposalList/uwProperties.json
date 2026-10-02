@@ -1,0 +1,115 @@
+{
+    "classname": "proposalList",
+    "definitions": {
+        "apis": {
+            "custom": [],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "PortfolioServicing",
+                    "group": "General",
+                    "kuid": "da3fcca957ae49ee9ea26c48f1f70446",
+                    "originalPropertyKey": "objSerivce",
+                    "propertyIndex": 1,
+                    "propertyKey": "objSerivce",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Service Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "f71284c9c1174a0790c4d2d51a7415a3",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "InvestmentProposals",
+                    "group": "General",
+                    "kuid": "b6bf869192594b15bd453b58d05e33f9",
+                    "originalPropertyKey": "objName",
+                    "propertyIndex": 2,
+                    "propertyKey": "objName",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Object Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "f71284c9c1174a0790c4d2d51a7415a3",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "getInvestmentProposal",
+                    "group": "General",
+                    "kuid": "b0f01b524a574e05a774f82777629dec",
+                    "originalPropertyKey": "operation",
+                    "propertyIndex": 3,
+                    "propertyKey": "operation",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Operation Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "f71284c9c1174a0790c4d2d51a7415a3",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"pageSize\": \"10\", \"pageOffset\": \"0\"}",
+                    "group": "General",
+                    "kuid": "c0fe23f8dcd34b6ca0977aeedaef96fb",
+                    "originalPropertyKey": "criteria",
+                    "propertyIndex": 4,
+                    "propertyKey": "criteria",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Criteria",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "f71284c9c1174a0790c4d2d51a7415a3",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "investmentProposals",
+                    "group": "General",
+                    "kuid": "e195c9c6479c4a11bf23de29b195e4ea",
+                    "originalPropertyKey": "serviceResponseKey",
+                    "propertyIndex": 5,
+                    "propertyKey": "serviceResponseKey",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Service Response Key",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "f71284c9c1174a0790c4d2d51a7415a3",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfinityOLB.PortfolioManagementMA",
+    "version": "1.0.0"
+}

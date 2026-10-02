@@ -1,0 +1,23 @@
+{
+    "AS_Button_a60336b951bd4ae98578fdd1fa9e4a26": {
+        "id": "AS_Button_a60336b951bd4ae98578fdd1fa9e4a26",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmEmbedOrigination",
+            "type": "forms",
+            "platform": "",
+            "KUID": "d2656e6941354b8895637882cf1e9fc8"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_cae3f121df5a4fe79c59fc0134f1c3a7",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.showConfirmationPopUp();\r\nthis.destinationForm = \"TandC\";",
+            "parentId": null
+        }]
+    }
+}

@@ -1,0 +1,77 @@
+{
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "50dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "secff68ee7904525acebc42c36c39094",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "children": [
+        "flx1",
+        "flx2",
+        "flx3",
+        "flx4",
+        "flx5",
+        "flx6",
+        "flx7",
+        "flx8",
+        "flx9",
+        "flx10"
+    ],
+    "clipbounds": true,
+    "containerId": true,
+    "containerweight": 100,
+    "controllerInfo": {
+        "default": {
+            "channel": "desktop",
+            "name": "flxWealthViewTransactionsController"
+        }
+    },
+    "enablescrolling": true,
+    "friendlyName": "flxWealthViewTransactions",
+    "id": "flxWealthViewTransactions",
+    "info": null,
+    "isTemplate": true,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "c6955f2c952a499698d2a5567135286c",
+    "layouttype": 3,
+    "name": "kony.ui.FlexContainer",
+    "parent": "segWealthViewTransactions",
+    "pf": "segWealthViewTransactions",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1
+}

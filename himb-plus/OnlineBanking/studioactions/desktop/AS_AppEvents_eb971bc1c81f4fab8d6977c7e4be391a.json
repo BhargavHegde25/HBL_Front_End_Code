@@ -1,0 +1,17 @@
+{
+    "AS_AppEvents_eb971bc1c81f4fab8d6977c7e4be391a": {
+        "id": "AS_AppEvents_eb971bc1c81f4fab8d6977c7e4be391a",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_h9870a375d1d47be90e280123e9cabfa",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var self = this;\nkony.mvc.MDAApplication.getSharedInstance().appContext.deeplinkUrl = {\ndeeplinkpath: eventobject.deeplinkpath,\nformID: eventobject.formID,\n};\nvar form =eventobject.formID;\nif ((form !== undefined && form.indexOf(\"frmAccountActivation\") !== -1) || (form !== undefined && form.includes(\"resetTransactionPin\"))) {\n    if (form.indexOf(\"frmAccountActivation\") !== -1) {\nvar query =form;\n    } else if (form.includes(\"resetTransactionPin\")) {\n        var query = \"resetTransactionPin\";\n    }\nvar fallbackUrlAnd = \"https://play.google.com/store/apps/details?id=com.himalayanbank.himbplus\";\n    var fallbackUrliOS = \"https://apps.apple.com/in/app/hi-mb/id1425594561\";\n    var packageName = \"com.himalayanbank.himbplus\";\n    var packageNameIOS = \"com.himalayanbank.himbplus\";\n    var userAgent = kony.os.deviceInfo().userAgent;\n    userAgent = userAgent.toLowerCase();\n    kony.print(\"userAgent :\" + userAgent);\n    var urlToLoad;\n if (userAgent.includes(\"android\") || userAgent.includes(\"iphone\") || userAgent.includes(\"ipad\")) {\n        if (userAgent.includes(\"android\")) {\n            urlToLoad = \"intent://?\" + query + \"#Intent;scheme=\" + packageName + \";package=\" + packageName + \";S.browser_fallback_url=?\" + fallbackUrlAnd + \";end\";;\n        } else {\n            urlToLoad = packageNameIOS + \"://=\" + query;\n        }\n        kony.print(\"urlToLoad : \" + urlToLoad);\n        kony.application.openURLAsync({\n            url: urlToLoad,\n            callback: callbackFunction\n        });\n    }else{\n        kony.store.setItem(\"DeeplinkReset\",\"true\",true);\n    }\n \n    function callbackFunction(response) {\n        if (response != constants.OPEN_URL_SUCCESS) {\n           redirectToFallback();\n        }\n    }\n \n    function redirectToFallback() {\n        kony.print(\"redirectToFallback\");\n        kony.application.openURLAsync({\n            url: userAgent.includes(\"android\") ? fallbackUrlAnd : fallbackUrliOS,\n            isSameWindow: true\n        });\n    }\n}\nelse{\nif(eventobject.formID != undefined){\nvar formID = eventobject.formID.split('?');\nif(formID[1] != undefined && formID[1] == 'data=thirdpartyauth'){\n        if (formID[0] !== undefined && formID[0] == \"frmActivateThirdParties\") {\n  return \"frmActivateThirdParties\"; \n}\n}\nif (formID[1] != undefined && formID[1] == 'data=resetTransactionPin') {\n                kony.store.setItem(\"DeeplinkReset\",\"true\",true);\n            }\nif(formID[1] != undefined && formID[1] == 'qp=UNLOCK_ACCOUNT'){\n                    kony.store.setItem(\"DeeplinkUnlock\", \"true\", true);\n                }\n}\n\n}",
+            "parentId": null
+        }]
+    }
+}

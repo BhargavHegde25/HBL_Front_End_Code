@@ -1,0 +1,23 @@
+{
+    "AS_Button_f0e7d46567b340c7bf05384278429b9d": {
+        "id": "AS_Button_f0e7d46567b340c7bf05384278429b9d",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmSelectTransferTypeNew",
+            "type": "forms",
+            "platform": "",
+            "KUID": "g2358821428d4bde8a5747fc98a2a89e"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_hdcc4ef1b86142c2ad8c8542bf685aeb",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": " var transferMod = kony.mvc.MDAApplication.getSharedInstance().getModuleManager().getModule({\r\n      \"moduleName\": \"ManageActivitiesUIModule\",\r\n      \"appName\": \"TransfersMA\"\r\n    });\r\n\t\t  \r\ntransferMod.presentationController.navigateToEsewaLoad();",
+            "parentId": null
+        }]
+    }
+}

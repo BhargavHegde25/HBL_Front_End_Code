@@ -1,0 +1,1847 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "DNDConfig": null,
+    "_children_": [],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_render_": true,
+    "_skin_": "s24c92fc23b14f5484b693ee9b8a9b35",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "android": {},
+    "androidwearos": {},
+    "areflexpropsreferenced": false,
+    "autogrowmode": 1,
+    "canUpdateUI": true,
+    "clipbounds": false,
+    "containerweight": 0,
+    "dataDiffs": {
+        "Acknowledgment": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "he971bec23f44dbeac9a7c8231e729c6",
+                "srcKUID": "e7030a81878a47ab9bc40b2e3cc983e1",
+                "wType": "UserWidgetInstance"
+            }
+        },
+        "Acknowledgment.btnAccountSummary": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "fd181424bb4e49968277fefd365bc71c",
+                "srcKUID": "b60845d805d641f69a7c55e222d2fa31",
+                "wType": "Button"
+            },
+            "height": {
+                "Default": {
+                    "type": "string",
+                    "value": "50dp"
+                }
+            },
+            "i18n_text": "i18n.AccountsAggregation.AccountSummary",
+            "left": {
+                "Default": {
+                    "type": "string",
+                    "value": "68.12%"
+                }
+            },
+            "responsiveData": {
+                "b3": {
+                    "width": {
+                        "type": "string",
+                        "value": "96%"
+                    }
+                }
+            },
+            "text": "Account Summary",
+            "width": {}
+        },
+        "Acknowledgment.btnAddMoreAccounts": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "jac1ea9b879c46aab47fe1ac3568f7b1",
+                "srcKUID": "dfad6aca751b43e4ace22da22e159a91",
+                "wType": "Button"
+            },
+            "height": {
+                "Default": {
+                    "type": "string",
+                    "value": "40dp"
+                }
+            },
+            "i18n_text": "i18n.AccountsAggregation.AddMoreAccounts",
+            "left": {
+                "Default": {
+                    "type": "string",
+                    "value": "37.07%"
+                }
+            },
+            "responsiveData": {
+                "b3": {
+                    "top": {
+                        "type": "string",
+                        "value": "80dp"
+                    },
+                    "width": {
+                        "type": "string",
+                        "value": "96%"
+                    }
+                }
+            },
+            "text": "Add More Accounts",
+            "top": {},
+            "width": {}
+        },
+        "Acknowledgment.flxAcknowledgementButtons": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "cca5658edd184c85848af08a566adc52",
+                "srcKUID": "fc05716b2c44456392d7c92064af3725",
+                "wType": "FlexContainer"
+            },
+            "autogrowMode": {
+                "Default": 0
+            },
+            "height": {},
+            "responsiveData": {
+                "b3": {
+                    "height": {
+                        "type": "string",
+                        "value": "140px"
+                    }
+                }
+            }
+        },
+        "Acknowledgment.flxAcknowledgementMain": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "d8731e3070b24cbaad18fae089e4e515",
+                "srcKUID": "a041b8305783413eaf0d0dabbaa11f48",
+                "wType": "FlexContainer"
+            }
+        },
+        "Acknowledgment.flxAcknowledgementSeperator2": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "f0764116f5224c6ba6ffdc42120b8db1",
+                "srcKUID": "b8b1d330284a47c184619db20a31ae4f",
+                "wType": "FlexContainer"
+            }
+        },
+        "Acknowledgment.flxHeaderAcknowledgement": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "dcf1fac03dc141eaa6a43dbd5b500c14",
+                "srcKUID": "b4f2e5c9735341569505698b699244c0",
+                "wType": "FlexContainer"
+            }
+        },
+        "Acknowledgment.flxSeparator": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "a91dbf57b42549fcac24eca82932051d",
+                "srcKUID": "c54605cd362748298c2dedcbf346e967",
+                "wType": "FlexContainer"
+            }
+        },
+        "Acknowledgment.imgSuccess": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "d7ee64309bb4453cb5fd016a7aa0d753",
+                "srcKUID": "f359876a749f4281baf6d3487346e26c",
+                "wType": "Image"
+            },
+            "src": "success_green.png"
+        },
+        "Acknowledgment.lblAcknowledgementSeperator": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "gac461f2eeef4bd887a35aec5cd66fc7",
+                "srcKUID": "a0fc2df82f6e4fc4a45374e5f230f51b",
+                "wType": "Label"
+            }
+        },
+        "Acknowledgment.lblCongratulations": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "fd383f5d1d8f4c5cac91e2625aee8542",
+                "srcKUID": "ddd67f9faa3140b2939b0f399cb28f2a",
+                "wType": "Label"
+            },
+            "text": "Congratulations!"
+        },
+        "Acknowledgment.lblSelectedAccounts": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "ca41043497a04dc4ba70fc67abb8ee36",
+                "srcKUID": "j179c06a8706473dae7e626b341645cb",
+                "wType": "Label"
+            },
+            "i18n_text": "i18n.AccountsAggregation.SelectedAccounts"
+        },
+        "Acknowledgment.lblSuccessmsg": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "f2ef280950df4a37a5c323e5c32b12f6",
+                "srcKUID": "f49fdaeee6d24df8b5b77f0102a209d1",
+                "wType": "Label"
+            }
+        },
+        "Acknowledgment.lblUserInformation": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "i0747fd0fef94be98a86afe0d1dc8ddc",
+                "srcKUID": "j875f50cf87049cb842a41bcee8ad6ad",
+                "wType": "Label"
+            }
+        },
+        "Acknowledgment.segSelectedAccounts": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "daede81b4dcc446eabbcad6b2258ec67",
+                "srcKUID": "ddab2ab8d2e64f68afb77f0e66420855",
+                "wType": "Segment"
+            }
+        },
+        "AddExternalAccounts": {
+            "__events__": {},
+            "__info__": {
+                "isRoot": true,
+                "kuid": "fcd1ede1ae3741169da362ac0fe5f64f",
+                "srcKUID": "fa301f2f1d92482f9fc59994344bba4d",
+                "wType": "FlexContainer"
+            },
+            "isVisible": false,
+            "responsiveData": {
+                "b1": {},
+                "b2": {},
+                "b3": {
+                    "isVisible": false
+                }
+            },
+            "width": {
+                "Default": {
+                    "type": "string",
+                    "value": "100%"
+                }
+            }
+        },
+        "LoginUsingSelectedBank": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "ed0a90ebc55144c5b33cde05692f3fa6",
+                "srcKUID": "bb9a01139d7d44b7958b01d1828371f2",
+                "wType": "UserWidgetInstance"
+            }
+        },
+        "LoginUsingSelectedBank.btnCancel": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "bb9d2f8f46e2407f89f33bd704c9bbdf",
+                "srcKUID": "d139a08dcc314d19aef4508cccd14f41",
+                "wType": "Button"
+            },
+            "height": {},
+            "left": {},
+            "responsiveData": {
+                "b2": {
+                    "zIndex": 1
+                },
+                "b3": {
+                    "height": {
+                        "type": "string",
+                        "value": "40dp"
+                    },
+                    "left": {
+                        "type": "string",
+                        "value": "3%"
+                    },
+                    "top": {
+                        "type": "string",
+                        "value": "80dp"
+                    },
+                    "width": {
+                        "type": "string",
+                        "value": "93%"
+                    }
+                }
+            },
+            "top": {},
+            "width": {},
+            "zIndex": {}
+        },
+        "LoginUsingSelectedBank.btnLogin": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "caf0c033d46e4c95b4b47b7a1f564193",
+                "srcKUID": "a6d9904bd153437e892aa058b97b819d",
+                "wType": "Button"
+            },
+            "centerX": {},
+            "height": {},
+            "left": {},
+            "responsiveData": {
+                "b3": {
+                    "centerX": {
+                        "type": "string",
+                        "value": ""
+                    },
+                    "height": {
+                        "type": "string",
+                        "value": "40dp"
+                    },
+                    "left": {
+                        "type": "string",
+                        "value": "3%"
+                    },
+                    "width": {
+                        "type": "string",
+                        "value": "93%"
+                    }
+                }
+            },
+            "width": {}
+        },
+        "LoginUsingSelectedBank.btnTermsAndConditions": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "a758a14218c84fd88679797ea95f9a10",
+                "srcKUID": "b075b5fbac204fffb006028eb00c72a5",
+                "wType": "Button"
+            },
+            "i18n_text": "i18n.common.TnC"
+        },
+        "LoginUsingSelectedBank.flxAddAccountsError": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "b95b3fb33b504aa2aa1d88d1137f2c17",
+                "srcKUID": "a29510f261c34dc381f7a23ee0a2177b",
+                "wType": "FlexContainer"
+            },
+            "responsiveData": {
+                "b3": {
+                    "isVisible": false
+                }
+            }
+        },
+        "LoginUsingSelectedBank.flxBankCredentials": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "g3df37dd175a47f28923b8ef59eb2631",
+                "srcKUID": "b25340e75e5343fb93ab21b914b6565e",
+                "wType": "FlexContainer"
+            },
+            "responsiveData": {
+                "b3": {
+                    "width": {
+                        "type": "string",
+                        "value": "70%"
+                    }
+                }
+            },
+            "width": {}
+        },
+        "LoginUsingSelectedBank.flxBankImage": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "e45a124bd8a54120b316d0fa9a6425ab",
+                "srcKUID": "be5598db6b6c401e97bba36eace58cab",
+                "wType": "FlexContainer"
+            },
+            "left": {},
+            "responsiveData": {
+                "b3": {
+                    "left": {
+                        "type": "string",
+                        "value": "5%"
+                    },
+                    "width": {
+                        "type": "string",
+                        "value": "20%"
+                    }
+                }
+            },
+            "width": {}
+        },
+        "LoginUsingSelectedBank.flxCheckbox": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "ea17f01cf6384795b34ea634b6a41bd1",
+                "srcKUID": "cb2ddd0971b84efebaf08a8e75fbc200",
+                "wType": "FlexContainer"
+            },
+            "autogrowMode": {
+                "Default": 0
+            },
+            "height": {
+                "Default": {
+                    "type": "string",
+                    "value": "30dp"
+                }
+            },
+            "responsiveData": {}
+        },
+        "LoginUsingSelectedBank.flxEnterPassword": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "c2a6a29821334064b0ce1b47bccd650f",
+                "srcKUID": "ga6e328aaec6449ca34589067a6b856c",
+                "wType": "FlexContainer"
+            },
+            "centerX": {},
+            "left": {},
+            "responsiveData": {
+                "b3": {
+                    "centerX": {
+                        "type": "string",
+                        "value": ""
+                    },
+                    "left": {
+                        "type": "string",
+                        "value": "3%"
+                    },
+                    "top": {
+                        "type": "string",
+                        "value": "17dp"
+                    },
+                    "width": {
+                        "type": "string",
+                        "value": "93%"
+                    }
+                }
+            },
+            "top": {},
+            "width": {}
+        },
+        "LoginUsingSelectedBank.flxEnterUsername": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "fa5d6dcd90ba43d3b6611abb5c1c48f0",
+                "srcKUID": "a45c95a440c2432aa60dbc2a564110db",
+                "wType": "FlexContainer"
+            },
+            "left": {},
+            "responsiveData": {
+                "b3": {
+                    "left": {
+                        "type": "string",
+                        "value": "3%"
+                    },
+                    "top": {
+                        "type": "string",
+                        "value": "50dp"
+                    },
+                    "width": {
+                        "type": "string",
+                        "value": "93%"
+                    }
+                }
+            },
+            "top": {},
+            "width": {
+                "Default": {
+                    "type": "string",
+                    "value": "330dp"
+                }
+            }
+        },
+        "LoginUsingSelectedBank.flxIAgree": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "af61085ef2d4408ebddbc987bee7a65e",
+                "srcKUID": "e4325ec1b5ae4147a5e3cf677133e763",
+                "wType": "FlexContainer"
+            }
+        },
+        "LoginUsingSelectedBank.flxImgViewPassword": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "c424ca8604234670aef2b4d7ce12a3f7",
+                "srcKUID": "ea5bd353b16d4e29986532a9192b1dec",
+                "wType": "FlexContainer"
+            },
+            "responsiveData": {}
+        },
+        "LoginUsingSelectedBank.flxLoginCredentials": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "h79055c9185c476292743a2d15b995dd",
+                "srcKUID": "i57306515a3a4a01b502e03280e23061",
+                "wType": "FlexContainer"
+            }
+        },
+        "LoginUsingSelectedBank.flxLoginSelectAccountsMain": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "jabfcb20c60e46b38e44a09c89357c34",
+                "srcKUID": "i8e9fbae6edb42a19353c7385bb09ed2",
+                "wType": "FlexContainer"
+            },
+            "isVisible": false,
+            "responsiveData": {
+                "b3": {}
+            }
+        },
+        "LoginUsingSelectedBank.flxLoginUsingSelectedBank": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "e220228876ad4d059267c961d0f56c8b",
+                "srcKUID": "e18b46b4371b40d7a98e96f06e214725",
+                "wType": "FlexContainer"
+            }
+        },
+        "LoginUsingSelectedBank.flxLoginUsingSelectedBankButtons": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "bad0083ae7794132b38859ac4250cc16",
+                "srcKUID": "e6460424255549c9b13254bb813cf00b",
+                "wType": "FlexContainer"
+            },
+            "autogrowMode": {
+                "Default": 0
+            },
+            "height": {},
+            "responsiveData": {
+                "b3": {
+                    "height": {
+                        "type": "string",
+                        "value": "140px"
+                    }
+                }
+            }
+        },
+        "LoginUsingSelectedBank.flxLoginUsingSelectedBankContainer": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "d31e99a9ac9a4768b37b517f60584d57",
+                "srcKUID": "cda8b803a6cd46e4aee591a8f6b92a72",
+                "wType": "FlexContainer"
+            },
+            "autogrowMode": {
+                "Default": 0
+            },
+            "height": {},
+            "responsiveData": {
+                "b3": {
+                    "height": {
+                        "type": "string",
+                        "value": "310dp"
+                    },
+                    "layoutType": 2
+                }
+            }
+        },
+        "LoginUsingSelectedBank.flxLoginUsingSelectedBankError": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "a8a3fa3f33274f919371179409469367",
+                "srcKUID": "ce85af7fb2e2415db8459e813852c990",
+                "wType": "FlexContainer"
+            },
+            "responsiveData": {
+                "b3": {
+                    "isVisible": false,
+                    "width": {
+                        "type": "string",
+                        "value": "90%"
+                    }
+                }
+            },
+            "width": {}
+        },
+        "LoginUsingSelectedBank.flxLoginUsingSelectedBankHeader": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "b1ffacbacef941fda46f89f246230d49",
+                "srcKUID": "e03ba1e5c96a4288a523e1c594c5ffba",
+                "wType": "FlexContainer"
+            }
+        },
+        "LoginUsingSelectedBank.flxLoginUsingSelectedBankHeading": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "a50b4837ea784ffea653e15960f1f8b1",
+                "srcKUID": "gd7ffeaf40434c72a384a66386c7f36e",
+                "wType": "Label"
+            },
+            "i18n_text": "i18n.AccountsAggregation.LoginUsingSelectedBank",
+            "left": {},
+            "responsiveData": {
+                "b2": {
+                    "left": {
+                        "type": "string",
+                        "value": "20dp"
+                    }
+                }
+            }
+        },
+        "LoginUsingSelectedBank.flxLoginUsingSelectedBankMain": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "f68e68ae2b264d96a833da9437705cac",
+                "srcKUID": "b8c8cba97877441daf7e25af749bf6cd",
+                "wType": "FlexContainer"
+            },
+            "autogrowMode": {
+                "Default": 1
+            },
+            "height": {
+                "Default": {
+                    "type": "ref",
+                    "value": "preferred"
+                }
+            },
+            "isVisible": true,
+            "responsiveData": {
+                "b3": {}
+            }
+        },
+        "LoginUsingSelectedBank.flxLoginUsingSelectedBankMessage": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "g06333a40ae14bb481d41b11c0b52ed3",
+                "srcKUID": "a7364e87a75e48c79811ecbc1221c245",
+                "wType": "Label"
+            },
+            "height": {},
+            "left": {},
+            "responsiveData": {
+                "b1": {
+                    "height": {
+                        "type": "ref",
+                        "value": "preferred"
+                    }
+                },
+                "b2": {
+                    "height": {
+                        "type": "ref",
+                        "value": "preferred"
+                    }
+                },
+                "b3": {
+                    "height": {
+                        "type": "ref",
+                        "value": "preferred"
+                    },
+                    "left": {
+                        "type": "string",
+                        "value": "90dp"
+                    },
+                    "text": "Welcome to Chase Bank ",
+                    "top": {
+                        "type": "string",
+                        "value": "25dp"
+                    },
+                    "width": {
+                        "type": "string",
+                        "value": "75%"
+                    }
+                }
+            },
+            "text": "Welcome to Chase Bank",
+            "top": {},
+            "width": {}
+        },
+        "LoginUsingSelectedBank.flxLoginUsingSelectedBankMessageBox": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "c2a90fcc09524f21a4a19fe4eca57d5f",
+                "srcKUID": "a4a8283af6d949c68e249c7a0cec68e8",
+                "wType": "FlexContainer"
+            },
+            "left": {},
+            "responsiveData": {
+                "b3": {
+                    "left": {
+                        "type": "string",
+                        "value": "0%"
+                    },
+                    "width": {
+                        "type": "string",
+                        "value": "100%"
+                    }
+                }
+            },
+            "width": {}
+        },
+        "LoginUsingSelectedBank.flxLoginUsingSelectedBankSeperator": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "ac07222d12c7460fb0d34942a6737bdb",
+                "srcKUID": "d9e0ed7633364a858187a9d817f53b70",
+                "wType": "FlexContainer"
+            }
+        },
+        "LoginUsingSelectedBank.flxLoginUsingSelectedBankSeperator2": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "b763f0fd23174464a5a117daa4eb9e4b",
+                "srcKUID": "abb0f094483848ac8b6d9d46f85c92e0",
+                "wType": "FlexContainer"
+            }
+        },
+        "LoginUsingSelectedBank.flxLoginUsingSelectedBankimage": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "a2daf1c004c547a780f440ff6438cd95",
+                "srcKUID": "e44e0417a8cd45ab86402d3cafb28f17",
+                "wType": "FlexContainer"
+            },
+            "left": {
+                "Default": {
+                    "type": "string",
+                    "value": "30dp"
+                }
+            },
+            "responsiveData": {
+                "b1": {
+                    "left": {
+                        "type": "string",
+                        "value": "10dp"
+                    }
+                },
+                "b2": {
+                    "left": {
+                        "type": "string",
+                        "value": "0dp"
+                    }
+                },
+                "b3": {
+                    "height": {
+                        "type": "string",
+                        "value": "60dp"
+                    },
+                    "left": {
+                        "type": "string",
+                        "value": "15dp"
+                    },
+                    "top": {
+                        "type": "string",
+                        "value": "20dp"
+                    },
+                    "width": {
+                        "type": "string",
+                        "value": "60dp"
+                    }
+                }
+            },
+            "top": {},
+            "width": {
+                "Default": {
+                    "type": "string",
+                    "value": "101dp"
+                }
+            }
+        },
+        "LoginUsingSelectedBank.imgAddAccountsError": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "f56846f78da24e39aade6f885dbac966",
+                "srcKUID": "j62a7ce7743e4769ac8844358aaa6e78",
+                "wType": "Image"
+            },
+            "src": "error_yellow.png"
+        },
+        "LoginUsingSelectedBank.imgBank": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "d28e7684b5be4aec8afbb91d886d7114",
+                "srcKUID": "c0e498574880489180d8199e7108989b",
+                "wType": "Image"
+            },
+            "src": "bank_icon_chase.png"
+        },
+        "LoginUsingSelectedBank.imgLoginUsingSelectedBankError": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "f5d8a85ba3fd423da20a226e3f3273d4",
+                "srcKUID": "h2f2af06fbc14b98add2bbd73429f691",
+                "wType": "Image"
+            },
+            "src": "error_yellow.png"
+        },
+        "LoginUsingSelectedBank.imgValidUsername": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "cd7c883e3e76488a896c09e47c22179f",
+                "srcKUID": "h7a56276ba834abc9d5d9a5833da0d52",
+                "wType": "Image"
+            },
+            "src": "success_icon.png"
+        },
+        "LoginUsingSelectedBank.imgViewPassword": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "gb3c42813f1549e497d5644d7dbb21ec",
+                "srcKUID": "c645256f4c9746b3b9c50eae0a76fa9c",
+                "wType": "Label"
+            }
+        },
+        "LoginUsingSelectedBank.imgflxLoginUsingSelectedBank": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "ebe5dd53ab634523b8e283ab6e47b497",
+                "srcKUID": "jefb8ee8e96c4e1695a02ff76cfcc2c4",
+                "wType": "Image"
+            },
+            "height": {},
+            "responsiveData": {
+                "b3": {
+                    "height": {
+                        "type": "string",
+                        "value": "100%"
+                    },
+                    "top": {
+                        "type": "string",
+                        "value": "0dp"
+                    }
+                }
+            },
+            "src": "bank_icon_chase.png",
+            "top": {}
+        },
+        "LoginUsingSelectedBank.lblAddAccountsError": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "ee70027392d54315a710c4e3132ab019",
+                "srcKUID": "ae700cb5034247239cad31584c600db6",
+                "wType": "Label"
+            },
+            "responsiveData": {
+                "b3": {
+                    "right": {
+                        "type": "string",
+                        "value": "20dp"
+                    },
+                    "width": {
+                        "type": "string",
+                        "value": ""
+                    }
+                }
+            },
+            "right": {},
+            "width": {}
+        },
+        "LoginUsingSelectedBank.lblAgree": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "a40e39f235ed429a9c985bd90c846965",
+                "srcKUID": "d6e894f94e5f41f4b357916f254629b2",
+                "wType": "Label"
+            }
+        },
+        "LoginUsingSelectedBank.lblBankKey": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "d227c4c7c8dc4f74a41bb231f79606c5",
+                "srcKUID": "fe58516c6f2b4d62980e6f96e5515db5",
+                "wType": "Label"
+            },
+            "left": {
+                "Default": {
+                    "type": "string",
+                    "value": "0%"
+                }
+            },
+            "responsiveData": {
+                "b3": {}
+            }
+        },
+        "LoginUsingSelectedBank.lblBankValue": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "e92d02672a254f33a521d6f037d778aa",
+                "srcKUID": "d923c9d05b0740d4877e8094b6a53b3c",
+                "wType": "Label"
+            },
+            "left": {},
+            "responsiveData": {
+                "b3": {
+                    "left": {
+                        "type": "string",
+                        "value": "25%"
+                    },
+                    "width": {
+                        "type": "string",
+                        "value": "70%"
+                    }
+                }
+            },
+            "width": {}
+        },
+        "LoginUsingSelectedBank.lblCheckBox": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "ce34213da32b4194bac68b8d752116a5",
+                "srcKUID": "e2e25bb284ad49109a377dcbc21e4ec4",
+                "wType": "Label"
+            },
+            "centerY": {
+                "Default": {
+                    "type": "string",
+                    "value": "50%"
+                }
+            },
+            "height": {
+                "Default": {
+                    "type": "ref",
+                    "value": "preferred"
+                }
+            },
+            "responsiveData": {},
+            "width": {
+                "Default": {
+                    "type": "ref",
+                    "value": "preferred"
+                }
+            }
+        },
+        "LoginUsingSelectedBank.lblError": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "d91ade7d1061482ab7e990113ed4286f",
+                "srcKUID": "a28022ffbb724197b5655e834b0ecfc8",
+                "wType": "Label"
+            }
+        },
+        "LoginUsingSelectedBank.lblLoginUsingSelectedBankError": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "d29371df954d4b1abc10eb98e0c9c727",
+                "srcKUID": "e5e9d705d2f843bc8b4337148b35d7a7",
+                "wType": "Label"
+            }
+        },
+        "LoginUsingSelectedBank.lblPassword": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "bd05aed69f7448a394ba95f3bbd1be24",
+                "srcKUID": "a3053069e1864e8abd2525eebcbf8031",
+                "wType": "Label"
+            },
+            "left": {},
+            "responsiveData": {
+                "b3": {
+                    "isVisible": false,
+                    "left": {
+                        "type": "string",
+                        "value": "3%"
+                    },
+                    "text": "Enter Password",
+                    "top": {
+                        "type": "string",
+                        "value": "17dp"
+                    }
+                }
+            },
+            "text": "E",
+            "top": {}
+        },
+        "LoginUsingSelectedBank.lblSeperator": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "cf0e9d8630a54a0cb6fe420b05c3b337",
+                "srcKUID": "c0f3838f427341619b30fc3fc005e94d",
+                "wType": "Label"
+            }
+        },
+        "LoginUsingSelectedBank.lblUsername": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "ia77cf825b6b463c90ddef7db4e39db9",
+                "srcKUID": "a4a863d7675b4d208bb146082f11c50c",
+                "wType": "Label"
+            },
+            "left": {},
+            "responsiveData": {
+                "b3": {
+                    "isVisible": false,
+                    "left": {
+                        "type": "string",
+                        "value": "3%"
+                    },
+                    "text": "Enter Username",
+                    "top": {
+                        "type": "string",
+                        "value": "50dp"
+                    }
+                }
+            },
+            "text": "E",
+            "top": {}
+        },
+        "LoginUsingSelectedBank.lblUsernameKey": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "g4d0e553219f4a4c9c01b92356f2d42a",
+                "srcKUID": "d7c6dd61d3e4486ea6d7e8462adacfa0",
+                "wType": "Label"
+            },
+            "i18n_text": null,
+            "isVisible": true,
+            "responsiveData": {
+                "b3": {}
+            }
+        },
+        "LoginUsingSelectedBank.lblUsernameValue": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "e4d9d2ee07d3402d9045d234d3428a2e",
+                "srcKUID": "ddc310ceb71d4854b61cea37125dfc1e",
+                "wType": "Label"
+            },
+            "left": {},
+            "responsiveData": {
+                "b3": {
+                    "left": {
+                        "type": "string",
+                        "value": "25%"
+                    },
+                    "width": {
+                        "type": "string",
+                        "value": "70%"
+                    }
+                }
+            },
+            "width": {}
+        },
+        "LoginUsingSelectedBank.segSelectedAccounts": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "d49811d127f84b1baa93c65935cfbc51",
+                "srcKUID": "hfcf3c50f16045fe8243b699a056c389",
+                "wType": "Segment"
+            },
+            "isVisible": false,
+            "responsiveData": {}
+        },
+        "LoginUsingSelectedBank.tbxEnterpassword": {
+            "__events__": {
+                "desktopweb": {
+                    "ide_onKeyUp": "AS_TextField_d9850e72ffdc42efa263e6a04be8a763"
+                }
+            },
+            "__info__": {
+                "kuid": "h5cacc6f9755481f85e6f501a15acb1e",
+                "srcKUID": "c5427a2c09b64bb58f7bf76804450060",
+                "wType": "TextField"
+            }
+        },
+        "LoginUsingSelectedBank.tbxNewUsername": {
+            "__events__": {
+                "desktopweb": {
+                    "ide_onKeyUp": "AS_TextField_h8eb3d5782684f68a8fd259e816c42be"
+                }
+            },
+            "__info__": {
+                "kuid": "ed3146d4c67c44b5a23e6ed0ff901c28",
+                "srcKUID": "jcebe61ecda74c68a2c320d480c31197",
+                "wType": "TextField"
+            }
+        },
+        "SelectBankOrVendor": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "fa7d92a6b36a4b90b37f40f201017eee",
+                "srcKUID": "j6ddb86f39174606aa0deca80762a03f",
+                "wType": "UserWidgetInstance"
+            }
+        },
+        "SelectBankOrVendor.btnProceed": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "a55bb45a971b4ab9ac54ec3e3f84fcba",
+                "srcKUID": "h84efd00ba614bcb8c27837e036ba2ed",
+                "wType": "Button"
+            },
+            "height": {
+                "Default": {
+                    "type": "string",
+                    "value": "40dp"
+                }
+            },
+            "left": {},
+            "responsiveData": {
+                "b1": {},
+                "b3": {
+                    "left": {
+                        "type": "string",
+                        "value": "2%"
+                    },
+                    "width": {
+                        "type": "string",
+                        "value": "96%"
+                    }
+                }
+            },
+            "width": {}
+        },
+        "SelectBankOrVendor.btnReset": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "ab0aaa57d3fe4a5dba8822838f475a5d",
+                "srcKUID": "d66dd46320ef47ee96f6012ce2f39298",
+                "wType": "Button"
+            },
+            "height": {
+                "Default": {
+                    "type": "string",
+                    "value": "40dp"
+                }
+            },
+            "left": {},
+            "responsiveData": {
+                "b1": {},
+                "b3": {
+                    "left": {
+                        "type": "string",
+                        "value": "2%"
+                    },
+                    "top": {
+                        "type": "string",
+                        "value": "80dp"
+                    },
+                    "width": {
+                        "type": "string",
+                        "value": "96%"
+                    }
+                }
+            },
+            "top": {},
+            "width": {}
+        },
+        "SelectBankOrVendor.btnSeperator2": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "c4ee393c8d8041a2a6d629e02beafa78",
+                "srcKUID": "be8011f6b36949ea8829f8a03736be79",
+                "wType": "FlexContainer"
+            }
+        },
+        "SelectBankOrVendor.flxBank1": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "ac96ef6839214abf90e90775fc5d61dc",
+                "srcKUID": "a15ded9513634c7bb606c572f399f5e5",
+                "wType": "FlexContainer"
+            },
+            "left": {},
+            "responsiveData": {
+                "b3": {
+                    "left": {
+                        "type": "string",
+                        "value": "5%"
+                    },
+                    "width": {
+                        "type": "string",
+                        "value": "26.60%"
+                    }
+                }
+            },
+            "width": {}
+        },
+        "SelectBankOrVendor.flxBank2": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "j4b26e45578442b9a9dc351807c095c0",
+                "srcKUID": "db34dea0560243f9aa2ceeb5b3273ca0",
+                "wType": "FlexContainer"
+            },
+            "left": {},
+            "responsiveData": {
+                "b3": {
+                    "left": {
+                        "type": "string",
+                        "value": "5%"
+                    },
+                    "width": {
+                        "type": "string",
+                        "value": "26.60%"
+                    }
+                }
+            },
+            "width": {}
+        },
+        "SelectBankOrVendor.flxBank3": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "h0c880ae40f145798227b0ce19fd77de",
+                "srcKUID": "f9e3b501c3024f23af2fa404f2172414",
+                "wType": "FlexContainer"
+            },
+            "left": {
+                "Default": {
+                    "type": "string",
+                    "value": "30dp"
+                }
+            },
+            "responsiveData": {
+                "b3": {
+                    "left": {
+                        "type": "string",
+                        "value": "5%"
+                    },
+                    "right": {
+                        "type": "string",
+                        "value": ""
+                    },
+                    "width": {
+                        "type": "string",
+                        "value": "26.60%"
+                    }
+                }
+            },
+            "right": {},
+            "width": {}
+        },
+        "SelectBankOrVendor.flxBank4": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "c83c1ba131184970b9341af5c56d8c7f",
+                "srcKUID": "d3af22a8304d4e47a05d13e5f85d07d9",
+                "wType": "FlexContainer"
+            },
+            "left": {},
+            "responsiveData": {
+                "b3": {
+                    "left": {
+                        "type": "string",
+                        "value": "5%"
+                    },
+                    "width": {
+                        "type": "string",
+                        "value": "26.60%"
+                    }
+                }
+            },
+            "width": {}
+        },
+        "SelectBankOrVendor.flxBank5": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "d921530df23c4df986455839dea62935",
+                "srcKUID": "e93b62e94ef44599a7d591d833b0189b",
+                "wType": "FlexContainer"
+            },
+            "left": {},
+            "responsiveData": {
+                "b3": {
+                    "left": {
+                        "type": "string",
+                        "value": "5%"
+                    },
+                    "width": {
+                        "type": "string",
+                        "value": "26.60%"
+                    }
+                }
+            },
+            "width": {}
+        },
+        "SelectBankOrVendor.flxBank6": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "cbc0c08331864b228530c71436d7d75c",
+                "srcKUID": "h6b8162772d24a469e44891c525a6710",
+                "wType": "FlexContainer"
+            },
+            "left": {},
+            "responsiveData": {
+                "b3": {
+                    "left": {
+                        "type": "string",
+                        "value": "5%"
+                    },
+                    "width": {
+                        "type": "string",
+                        "value": "26.60%"
+                    }
+                }
+            },
+            "width": {}
+        },
+        "SelectBankOrVendor.flxBankInfo": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "a7d5c87af910496e9009c8dc06c9a8df",
+                "srcKUID": "i046267f3f634d06946dfbff8b85a19c",
+                "wType": "FlexContainer"
+            }
+        },
+        "SelectBankOrVendor.flxBankInfoContainer": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "a0b1ee76d04d488cbe2cbedc2bb4d2de",
+                "srcKUID": "f9dac5f76480472b965d50ff2fc2a1c3",
+                "wType": "FlexContainer"
+            }
+        },
+        "SelectBankOrVendor.flxBankList": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "i7c7302c05b74e589275024645b850e4",
+                "srcKUID": "ee380505340a42b48e130fdf4576b6bd",
+                "wType": "FlexContainer"
+            },
+            "isVisible": true
+        },
+        "SelectBankOrVendor.flxBankName": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "ib4aa00d16584963bcdcc58579d6612b",
+                "srcKUID": "f764e3a8c72847c09dbae4001d3a1ec8",
+                "wType": "FlexContainer"
+            }
+        },
+        "SelectBankOrVendor.flxError": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "d7e601a9c5c14b8cab17ea3d4dabd688",
+                "srcKUID": "a16865ec260843dd92bdc1d117e2b8d3",
+                "wType": "FlexContainer"
+            },
+            "left": {},
+            "responsiveData": {
+                "b3": {
+                    "isVisible": false,
+                    "left": {
+                        "type": "string",
+                        "value": "5%"
+                    },
+                    "width": {
+                        "type": "string",
+                        "value": "90%"
+                    }
+                }
+            },
+            "width": {}
+        },
+        "SelectBankOrVendor.flxHeaderAcknowledgement": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "cb1b6712dbe84672aed9c505f4169e52",
+                "srcKUID": "a650ff694ce042dabd3fe7e68531f3a5",
+                "wType": "FlexContainer"
+            }
+        },
+        "SelectBankOrVendor.flxName": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "d188c7bd51a14456a5e7f474f160ad43",
+                "srcKUID": "ca7eb9a607b74c48946b9bd64202cd4c",
+                "wType": "FlexContainer"
+            },
+            "left": {},
+            "responsiveData": {
+                "b3": {
+                    "left": {
+                        "type": "string",
+                        "value": "5%"
+                    },
+                    "width": {
+                        "type": "string",
+                        "value": "90%"
+                    }
+                }
+            },
+            "width": {}
+        },
+        "SelectBankOrVendor.flxPopularBanks": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "a49a66a23eb646fbb52d943bb62f372f",
+                "srcKUID": "ac26f11d0b964af0aa4a1e02589332f3",
+                "wType": "FlexContainer"
+            },
+            "responsiveData": {
+                "b3": {
+                    "isVisible": false
+                }
+            }
+        },
+        "SelectBankOrVendor.flxRadiobtn1": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "b97c638eae894bc99811940977b5dfc4",
+                "srcKUID": "b37e5f6847ac4515ada422e6990eccf4",
+                "wType": "FlexContainer"
+            }
+        },
+        "SelectBankOrVendor.flxRadiobtn2": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "d8d2d151b91f4831b01ce158b6634f7c",
+                "srcKUID": "h21c9262b8b44145a4f00f83050cb5dd",
+                "wType": "FlexContainer"
+            }
+        },
+        "SelectBankOrVendor.flxRadiobtn3": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "a9e00636fda648218d098f75b87da072",
+                "srcKUID": "j01c6955102243d5863db192ae7816d5",
+                "wType": "FlexContainer"
+            }
+        },
+        "SelectBankOrVendor.flxRadiobtn4": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "b5c2e2f332304662ac403e44a994ad6e",
+                "srcKUID": "d60c33f79a4f427694756ea9bb41fb4b",
+                "wType": "FlexContainer"
+            }
+        },
+        "SelectBankOrVendor.flxRadiobtn5": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "e128641d6b414a1ab004a34ba56052d0",
+                "srcKUID": "aacb10538c3d4b40a12a7ba9bfea1530",
+                "wType": "FlexContainer"
+            }
+        },
+        "SelectBankOrVendor.flxRadiobtn6": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "b62ce4c0479d4e8d86f7ce9063f623bd",
+                "srcKUID": "e2f22d9289d24033881c44bea767654a",
+                "wType": "FlexContainer"
+            }
+        },
+        "SelectBankOrVendor.flxRow1": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "b61273742e0142acb92f4b7c7976dd6f",
+                "srcKUID": "bf973793872648b1b388ac684840f6a8",
+                "wType": "FlexContainer"
+            }
+        },
+        "SelectBankOrVendor.flxRow2": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "jed20ef205e9479e9c489b501624c36f",
+                "srcKUID": "j3b2418806fe4b7fba88384d643afb06",
+                "wType": "FlexContainer"
+            }
+        },
+        "SelectBankOrVendor.flxSelectBankOrVendorButtons": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "g5bfc7a1931d42bf9e80530ae5eb866c",
+                "srcKUID": "cb2fcddcea3a4b88bb0ce42b59f2f1b8",
+                "wType": "FlexContainer"
+            },
+            "autogrowMode": {
+                "Default": 0
+            },
+            "height": {},
+            "responsiveData": {
+                "b3": {
+                    "height": {
+                        "type": "string",
+                        "value": "140dp"
+                    }
+                }
+            }
+        },
+        "SelectBankOrVendor.flxSeparator": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "d372c9be6a1d454fa8f7e918050390a7",
+                "srcKUID": "d80aa18646dd46c7b40f28a063d0b269",
+                "wType": "FlexContainer"
+            }
+        },
+        "SelectBankOrVendor.imgBank1": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "g4c5e9f921924ab28fa4744c1da5904e",
+                "srcKUID": "c228de0187e54d6c811759f4bfe49ac5",
+                "wType": "Image"
+            },
+            "src": "bank_icon_chase.png"
+        },
+        "SelectBankOrVendor.imgBank2": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "e64554e6d0104c789882c6fd6b66d41e",
+                "srcKUID": "ff19060a430744a081eebcbe11fa54d9",
+                "wType": "Image"
+            },
+            "src": "bank_icon_wf.png"
+        },
+        "SelectBankOrVendor.imgBank3": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "ccedb8a6714a4d779988aca924f2a3d7",
+                "srcKUID": "b34ab0b480e84bd993f168d0f66aa099",
+                "wType": "Image"
+            },
+            "src": "bank_icon_boa.png"
+        },
+        "SelectBankOrVendor.imgBank4": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "g4097b061255432a9d66b1006507982d",
+                "srcKUID": "b321b410d66942599285903a664fa4e8",
+                "wType": "Image"
+            },
+            "src": "bank_icon_citi.png"
+        },
+        "SelectBankOrVendor.imgBank5": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "b2f260f88ef941a39626b198afaedf5a",
+                "srcKUID": "ifbf177ef3bd4e1db171b2cba454d3eb",
+                "wType": "Image"
+            },
+            "src": "bank_icon_hdfc.png"
+        },
+        "SelectBankOrVendor.imgBank6": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "ddc6b831587e4af4b84fbcc70ccf96a6",
+                "srcKUID": "c9065105cfa343f3ae04d0c311353ed4",
+                "wType": "Image"
+            },
+            "src": "bank_img_rounded.png"
+        },
+        "SelectBankOrVendor.imgError": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "f8ba257c6339498caa44793fca02da74",
+                "srcKUID": "j9c00472f9704e67bc97dda53efb32ae",
+                "wType": "Image"
+            },
+            "src": "error_yellow.png"
+        },
+        "SelectBankOrVendor.lblError": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "e6655deb9f09417cb2f76c8cab7dcc93",
+                "srcKUID": "ffdca3754ee2493aa93cf59bf77de778",
+                "wType": "Label"
+            },
+            "responsiveData": {
+                "b3": {
+                    "right": {
+                        "type": "string",
+                        "value": "20dp"
+                    },
+                    "width": {
+                        "type": "string",
+                        "value": ""
+                    }
+                }
+            },
+            "right": {},
+            "width": {}
+        },
+        "SelectBankOrVendor.lblName": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "j6e0152ffdea4d7aad987ecc8d6e815f",
+                "srcKUID": "g792180b9da3427196d1d6e29ef8514d",
+                "wType": "Label"
+            },
+            "i18n_text": "i18n.transfers.bankName"
+        },
+        "SelectBankOrVendor.lblPopularBanks": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "ca878cf794fe40dbbd568437720693aa",
+                "srcKUID": "c864d3b75c91431a811cc8d49add8263",
+                "wType": "Label"
+            },
+            "left": {},
+            "responsiveData": {
+                "b3": {
+                    "left": {
+                        "type": "string",
+                        "value": "5%"
+                    }
+                }
+            }
+        },
+        "SelectBankOrVendor.lblRadioBtn1": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "g778c5756be74fe1805f0a156f6c03c5",
+                "srcKUID": "ea3ccc4509a94e00a4dc163729ba40e9",
+                "wType": "Label"
+            }
+        },
+        "SelectBankOrVendor.lblRadioBtn2": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "eb206cb1d55d4035927de9c01db64794",
+                "srcKUID": "dab1bee81d604748a13997aef99909c4",
+                "wType": "Label"
+            }
+        },
+        "SelectBankOrVendor.lblRadioBtn3": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "i031db1791fe4a2eabc2e0963651a004",
+                "srcKUID": "da62a3b67bbc4cd2be3f2af402acbaa9",
+                "wType": "Label"
+            }
+        },
+        "SelectBankOrVendor.lblRadioBtn4": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "f1bd4040781a4ad3b92c120fc9864b20",
+                "srcKUID": "fd6c6dc7d07a43299193e373694b2aec",
+                "wType": "Label"
+            }
+        },
+        "SelectBankOrVendor.lblRadioBtn5": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "hcae635a88a841b29ed4ce421a5927e3",
+                "srcKUID": "d1434aedbe5645c7a66d04f0df35ca4c",
+                "wType": "Label"
+            }
+        },
+        "SelectBankOrVendor.lblRadioBtn6": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "ed72b3e94c49498bbde6bb9c2473258e",
+                "srcKUID": "i32e90e7d0f9461fb110fe3548c3d898",
+                "wType": "Label"
+            }
+        },
+        "SelectBankOrVendor.lblUserInformation": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "a1e512bef7464623b057587cd867b227",
+                "srcKUID": "c02ce1e01a6a48c7968c3aac6e61b762",
+                "wType": "Label"
+            },
+            "i18n_text": "i18n.AccountsAggregation.SelectBankVendor",
+            "left": {
+                "Default": {
+                    "type": "string",
+                    "value": "30dp"
+                }
+            },
+            "responsiveData": {
+                "b3": {
+                    "left": {
+                        "type": "string",
+                        "value": "5%"
+                    }
+                }
+            }
+        },
+        "SelectBankOrVendor.segBanksList": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "e2d4a8c380414f26926290102e74a643",
+                "srcKUID": "i19981d2713a4566b6f6d43b44c6282e",
+                "wType": "Segment"
+            }
+        },
+        "SelectBankOrVendor.tbxName": {
+            "__events__": {
+                "desktopweb": {
+                    "ide_onKeyUp": "AS_TextField_d3ff6d78c5f64093a1b76e9bfc518ceb"
+                }
+            },
+            "__info__": {
+                "kuid": "g5b7fc039b614acab9ee5d24a7e4a2d0",
+                "srcKUID": "fbefd093b0a5489cb66670ff446d364b",
+                "wType": "TextField"
+            },
+            "i18n_placeholder": "i18n.AccountsAggregation.EnterBankName"
+        },
+        "flxAcknowledgment": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "fc4b62947652478c831baee6e87ba017",
+                "srcKUID": "f40b7aff4cd3429c99946fa72cc87cc6",
+                "wType": "FlexContainer"
+            },
+            "isVisible": false,
+            "left": {},
+            "responsiveData": {
+                "b3": {
+                    "isVisible": false,
+                    "left": {
+                        "type": "string",
+                        "value": "2%"
+                    },
+                    "top": {
+                        "type": "string",
+                        "value": "0dp"
+                    },
+                    "width": {
+                        "type": "string",
+                        "value": "96%"
+                    }
+                }
+            },
+            "top": {},
+            "width": {
+                "Default": {
+                    "type": "string",
+                    "value": "100%"
+                }
+            }
+        },
+        "flxEmptySpace": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "je5fba6007e3433e82e6fae92035b3ab",
+                "srcKUID": "eb1083e6408f4310a93cf681a92bcb89",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxLoginUsingSelectedBank": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "b733e8f4e7bb4dc9ba823fdef94aaedc",
+                "srcKUID": "ha5f3d5543844dd0993a44fce6157341",
+                "wType": "FlexContainer"
+            },
+            "isVisible": true,
+            "left": {},
+            "responsiveData": {
+                "b3": {
+                    "left": {
+                        "type": "string",
+                        "value": "2%"
+                    },
+                    "top": {
+                        "type": "string",
+                        "value": "0dp"
+                    },
+                    "width": {
+                        "type": "string",
+                        "value": "96%"
+                    }
+                }
+            },
+            "top": {},
+            "width": {}
+        },
+        "flxSelectBankOrVendor": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "b120a7a199b34a88bb8f146c49f9fc9f",
+                "srcKUID": "dcbb008841a44680892d66126a44d0c9",
+                "wType": "FlexContainer"
+            },
+            "isVisible": false,
+            "left": {},
+            "responsiveData": {
+                "b3": {
+                    "left": {
+                        "type": "string",
+                        "value": "2%"
+                    },
+                    "right": {
+                        "type": "string",
+                        "value": ""
+                    },
+                    "top": {
+                        "type": "string",
+                        "value": "0dp"
+                    },
+                    "width": {
+                        "type": "string",
+                        "value": "96%"
+                    }
+                }
+            },
+            "right": {},
+            "top": {},
+            "width": {}
+        },
+        "lblHeader": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "dfa7e4e6d32d4e7abb93c81af01a9a6d",
+                "srcKUID": "hdbbe4a4546842b68fb4c7737348cf27",
+                "wType": "Label"
+            },
+            "responsiveData": {
+                "b1": {
+                    "top": {
+                        "type": "string",
+                        "value": "0dp"
+                    }
+                },
+                "b2": {
+                    "top": {
+                        "type": "string",
+                        "value": "0dp"
+                    }
+                },
+                "b3": {
+                    "isVisible": false
+                }
+            },
+            "top": {}
+        }
+    },
+    "desktopweb": {},
+    "id": "AddExternalAccounts",
+    "info": null,
+    "ipad": {},
+    "iphone": {},
+    "iscustomlayout": false,
+    "isdatareferenced": false,
+    "issegmentchild": false,
+    "isvisible": false,
+    "kuid": "fcd1ede1ae3741169da362ac0fe5f64f",
+    "layouttype": 4,
+    "masterType": 0,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "flxLeftContainer",
+    "pf": "frmFirst",
+    "responsiveData": {
+        "b1": {},
+        "b2": {},
+        "b3": {
+            "isVisible": false
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "snaptogrid": true,
+    "sourceUserWidget": "fa301f2f1d92482f9fc59994344bba4d",
+    "spabb": {},
+    "tabrcandroid": {},
+    "vizProps": {
+        "hidewidgethierarchy": false
+    },
+    "vizprops": {
+        "hidewidgethierarchy": false
+    },
+    "wType": "UserWidgetInstance"
+}

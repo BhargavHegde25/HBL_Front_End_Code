@@ -1,0 +1,967 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "_data_": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+    ],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "autogrowmode": 1,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "counter": "09",
+    "focusedindex": null,
+    "focuseditem": null,
+    "groupcells": false,
+    "hasSections": false,
+    "id": "segList",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "indicator": "none"
+        }
+    },
+    "iscustomlayout": false,
+    "isvisible": false,
+    "kuid": "d6c8aa54b3d54f9389d93d3fcc7db9c8",
+    "masterdata": {},
+    "mobile": {
+        "_data_": [
+            {
+                "imgChevron": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "more_detail.png"
+                },
+                "imgLogo": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "imagedrag.png"
+                },
+                "imgStatus": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "activegreendot.png"
+                },
+                "lblFiveKey": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "i18nkey": "i18n.wealth.type",
+                    "text": "Type"
+                },
+                "lblFiveValue": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Buy"
+                },
+                "lblFourKey": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "i18nkey": "i18n.wealth.qty",
+                    "text": "Qty."
+                },
+                "lblFourValue": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "10"
+                },
+                "lblId": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "US02079K1079 | NASDAQ"
+                },
+                "lblName": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Alphabet C class"
+                },
+                "lblOneKey": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "i18nkey": "i18n.wealth.tradeDate",
+                    "text": "Trade Date"
+                },
+                "lblOneValue": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "07/22/2020"
+                },
+                "lblStatus": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "i18nkey": "kony.mb.transfers.Completed",
+                    "text": "Completed"
+                },
+                "lblThreeKey": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "i18nkey": "i18n.wealth.total",
+                    "text": "Total"
+                },
+                "lblThreeValue": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "$11,000.00"
+                },
+                "lblTwoKey": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "i18nkey": "i18n.wealth.price",
+                    "text": "Price"
+                },
+                "lblTwoValue": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "$10.90"
+                },
+                "lblZeroKey": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Price"
+                },
+                "lblZeroValue": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "$10.90"
+                }
+            },
+            {
+                "imgChevron": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "more_detail.png"
+                },
+                "imgLogo": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "imagedrag.png"
+                },
+                "imgStatus": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "activegreendot.png"
+                },
+                "lblFiveKey": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "i18nkey": "i18n.wealth.type",
+                    "text": "Type"
+                },
+                "lblFiveValue": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Buy"
+                },
+                "lblFourKey": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "i18nkey": "i18n.wealth.qty",
+                    "text": "Qty."
+                },
+                "lblFourValue": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "10"
+                },
+                "lblId": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "US02079K1079 | NASDAQ"
+                },
+                "lblName": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Alphabet C class"
+                },
+                "lblOneKey": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "i18nkey": "i18n.wealth.tradeDate",
+                    "text": "Trade Date"
+                },
+                "lblOneValue": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "07/22/2020"
+                },
+                "lblStatus": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "i18nkey": "kony.mb.transfers.Completed",
+                    "text": "Completed"
+                },
+                "lblThreeKey": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "i18nkey": "i18n.wealth.total",
+                    "text": "Total"
+                },
+                "lblThreeValue": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "$11,000.00"
+                },
+                "lblTwoKey": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "i18nkey": "i18n.wealth.price",
+                    "text": "Price"
+                },
+                "lblTwoValue": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "$10.90"
+                },
+                "lblZeroKey": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Price"
+                },
+                "lblZeroValue": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "$10.90"
+                }
+            },
+            {
+                "imgChevron": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "more_detail.png"
+                },
+                "imgLogo": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "imagedrag.png"
+                },
+                "imgStatus": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "activegreendot.png"
+                },
+                "lblFiveKey": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "i18nkey": "i18n.wealth.type",
+                    "text": "Type"
+                },
+                "lblFiveValue": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Buy"
+                },
+                "lblFourKey": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "i18nkey": "i18n.wealth.qty",
+                    "text": "Qty."
+                },
+                "lblFourValue": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "10"
+                },
+                "lblId": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "US02079K1079 | NASDAQ"
+                },
+                "lblName": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Alphabet C class"
+                },
+                "lblOneKey": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "i18nkey": "i18n.wealth.tradeDate",
+                    "text": "Trade Date"
+                },
+                "lblOneValue": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "07/22/2020"
+                },
+                "lblStatus": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "i18nkey": "kony.mb.transfers.Completed",
+                    "text": "Completed"
+                },
+                "lblThreeKey": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "i18nkey": "i18n.wealth.total",
+                    "text": "Total"
+                },
+                "lblThreeValue": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "$11,000.00"
+                },
+                "lblTwoKey": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "i18nkey": "i18n.wealth.price",
+                    "text": "Price"
+                },
+                "lblTwoValue": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "$10.90"
+                },
+                "lblZeroKey": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Price"
+                },
+                "lblZeroValue": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "$10.90"
+                }
+            },
+            {
+                "imgChevron": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "more_detail.png"
+                },
+                "imgLogo": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "imagedrag.png"
+                },
+                "imgStatus": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "activegreendot.png"
+                },
+                "lblFiveKey": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "i18nkey": "i18n.wealth.type",
+                    "text": "Type"
+                },
+                "lblFiveValue": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Buy"
+                },
+                "lblFourKey": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "i18nkey": "i18n.wealth.qty",
+                    "text": "Qty."
+                },
+                "lblFourValue": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "10"
+                },
+                "lblId": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "US02079K1079 | NASDAQ"
+                },
+                "lblName": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Alphabet C class"
+                },
+                "lblOneKey": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "i18nkey": "i18n.wealth.tradeDate",
+                    "text": "Trade Date"
+                },
+                "lblOneValue": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "07/22/2020"
+                },
+                "lblStatus": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "i18nkey": "kony.mb.transfers.Completed",
+                    "text": "Completed"
+                },
+                "lblThreeKey": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "i18nkey": "i18n.wealth.total",
+                    "text": "Total"
+                },
+                "lblThreeValue": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "$11,000.00"
+                },
+                "lblTwoKey": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "i18nkey": "i18n.wealth.price",
+                    "text": "Price"
+                },
+                "lblTwoValue": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "$10.90"
+                },
+                "lblZeroKey": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Price"
+                },
+                "lblZeroValue": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "$10.90"
+                }
+            },
+            {
+                "imgChevron": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "more_detail.png"
+                },
+                "imgLogo": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "imagedrag.png"
+                },
+                "imgStatus": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "activegreendot.png"
+                },
+                "lblFiveKey": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "i18nkey": "i18n.wealth.type",
+                    "text": "Type"
+                },
+                "lblFiveValue": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Buy"
+                },
+                "lblFourKey": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "i18nkey": "i18n.wealth.qty",
+                    "text": "Qty."
+                },
+                "lblFourValue": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "10"
+                },
+                "lblId": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "US02079K1079 | NASDAQ"
+                },
+                "lblName": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Alphabet C class"
+                },
+                "lblOneKey": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "i18nkey": "i18n.wealth.tradeDate",
+                    "text": "Trade Date"
+                },
+                "lblOneValue": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "07/22/2020"
+                },
+                "lblStatus": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "i18nkey": "kony.mb.transfers.Completed",
+                    "text": "Completed"
+                },
+                "lblThreeKey": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "i18nkey": "i18n.wealth.total",
+                    "text": "Total"
+                },
+                "lblThreeValue": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "$11,000.00"
+                },
+                "lblTwoKey": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "i18nkey": "i18n.wealth.price",
+                    "text": "Price"
+                },
+                "lblTwoValue": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "$10.90"
+                },
+                "lblZeroKey": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Price"
+                },
+                "lblZeroValue": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "$10.90"
+                }
+            },
+            {
+                "imgChevron": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "more_detail.png"
+                },
+                "imgLogo": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "imagedrag.png"
+                },
+                "imgStatus": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "activegreendot.png"
+                },
+                "lblFiveKey": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "i18nkey": "i18n.wealth.type",
+                    "text": "Type"
+                },
+                "lblFiveValue": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Buy"
+                },
+                "lblFourKey": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "i18nkey": "i18n.wealth.qty",
+                    "text": "Qty."
+                },
+                "lblFourValue": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "10"
+                },
+                "lblId": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "US02079K1079 | NASDAQ"
+                },
+                "lblName": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Alphabet C class"
+                },
+                "lblOneKey": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "i18nkey": "i18n.wealth.tradeDate",
+                    "text": "Trade Date"
+                },
+                "lblOneValue": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "07/22/2020"
+                },
+                "lblStatus": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "i18nkey": "kony.mb.transfers.Completed",
+                    "text": "Completed"
+                },
+                "lblThreeKey": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "i18nkey": "i18n.wealth.total",
+                    "text": "Total"
+                },
+                "lblThreeValue": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "$11,000.00"
+                },
+                "lblTwoKey": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "i18nkey": "i18n.wealth.price",
+                    "text": "Price"
+                },
+                "lblTwoValue": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "$10.90"
+                },
+                "lblZeroKey": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Price"
+                },
+                "lblZeroValue": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "$10.90"
+                }
+            },
+            {
+                "imgChevron": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "more_detail.png"
+                },
+                "imgLogo": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "imagedrag.png"
+                },
+                "imgStatus": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "activegreendot.png"
+                },
+                "lblFiveKey": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "i18nkey": "i18n.wealth.type",
+                    "text": "Type"
+                },
+                "lblFiveValue": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Buy"
+                },
+                "lblFourKey": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "i18nkey": "i18n.wealth.qty",
+                    "text": "Qty."
+                },
+                "lblFourValue": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "10"
+                },
+                "lblId": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "US02079K1079 | NASDAQ"
+                },
+                "lblName": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Alphabet C class"
+                },
+                "lblOneKey": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "i18nkey": "i18n.wealth.tradeDate",
+                    "text": "Trade Date"
+                },
+                "lblOneValue": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "07/22/2020"
+                },
+                "lblStatus": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "i18nkey": "kony.mb.transfers.Completed",
+                    "text": "Completed"
+                },
+                "lblThreeKey": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "i18nkey": "i18n.wealth.total",
+                    "text": "Total"
+                },
+                "lblThreeValue": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "$11,000.00"
+                },
+                "lblTwoKey": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "i18nkey": "i18n.wealth.price",
+                    "text": "Price"
+                },
+                "lblTwoValue": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "$10.90"
+                },
+                "lblZeroKey": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Price"
+                },
+                "lblZeroValue": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "$10.90"
+                }
+            },
+            {
+                "imgChevron": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "more_detail.png"
+                },
+                "imgLogo": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "imagedrag.png"
+                },
+                "imgStatus": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "activegreendot.png"
+                },
+                "lblFiveKey": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "i18nkey": "i18n.wealth.type",
+                    "text": "Type"
+                },
+                "lblFiveValue": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Buy"
+                },
+                "lblFourKey": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "i18nkey": "i18n.wealth.qty",
+                    "text": "Qty."
+                },
+                "lblFourValue": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "10"
+                },
+                "lblId": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "US02079K1079 | NASDAQ"
+                },
+                "lblName": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Alphabet C class"
+                },
+                "lblOneKey": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "i18nkey": "i18n.wealth.tradeDate",
+                    "text": "Trade Date"
+                },
+                "lblOneValue": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "07/22/2020"
+                },
+                "lblStatus": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "i18nkey": "kony.mb.transfers.Completed",
+                    "text": "Completed"
+                },
+                "lblThreeKey": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "i18nkey": "i18n.wealth.total",
+                    "text": "Total"
+                },
+                "lblThreeValue": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "$11,000.00"
+                },
+                "lblTwoKey": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "i18nkey": "i18n.wealth.price",
+                    "text": "Price"
+                },
+                "lblTwoValue": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "$10.90"
+                },
+                "lblZeroKey": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Price"
+                },
+                "lblZeroValue": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "$10.90"
+                }
+            },
+            {
+                "imgChevron": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "more_detail.png"
+                },
+                "imgLogo": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "imagedrag.png"
+                },
+                "imgStatus": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "activegreendot.png"
+                },
+                "lblFiveKey": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "i18nkey": "i18n.wealth.type",
+                    "text": "Type"
+                },
+                "lblFiveValue": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Buy"
+                },
+                "lblFourKey": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "i18nkey": "i18n.wealth.qty",
+                    "text": "Qty."
+                },
+                "lblFourValue": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "10"
+                },
+                "lblId": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "US02079K1079 | NASDAQ"
+                },
+                "lblName": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Alphabet C class"
+                },
+                "lblOneKey": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "i18nkey": "i18n.wealth.tradeDate",
+                    "text": "Trade Date"
+                },
+                "lblOneValue": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "07/22/2020"
+                },
+                "lblStatus": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "i18nkey": "kony.mb.transfers.Completed",
+                    "text": "Completed"
+                },
+                "lblThreeKey": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "i18nkey": "i18n.wealth.total",
+                    "text": "Total"
+                },
+                "lblThreeValue": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "$11,000.00"
+                },
+                "lblTwoKey": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "i18nkey": "i18n.wealth.price",
+                    "text": "Price"
+                },
+                "lblTwoValue": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "$10.90"
+                },
+                "lblZeroKey": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Price"
+                },
+                "lblZeroValue": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "$10.90"
+                }
+            },
+            {
+                "imgChevron": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "more_detail.png"
+                },
+                "imgLogo": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "imagedrag.png"
+                },
+                "imgStatus": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "activegreendot.png"
+                },
+                "lblFiveKey": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "i18nkey": "i18n.wealth.type",
+                    "text": "Type"
+                },
+                "lblFiveValue": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Buy"
+                },
+                "lblFourKey": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "i18nkey": "i18n.wealth.qty",
+                    "text": "Qty."
+                },
+                "lblFourValue": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "10"
+                },
+                "lblId": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "US02079K1079 | NASDAQ"
+                },
+                "lblName": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Alphabet C class"
+                },
+                "lblOneKey": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "i18nkey": "i18n.wealth.tradeDate",
+                    "text": "Trade Date"
+                },
+                "lblOneValue": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "07/22/2020"
+                },
+                "lblStatus": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "i18nkey": "kony.mb.transfers.Completed",
+                    "text": "Completed"
+                },
+                "lblThreeKey": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "i18nkey": "i18n.wealth.total",
+                    "text": "Total"
+                },
+                "lblThreeValue": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "$11,000.00"
+                },
+                "lblTwoKey": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "i18nkey": "i18n.wealth.price",
+                    "text": "Price"
+                },
+                "lblTwoValue": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "$10.90"
+                },
+                "lblZeroKey": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Price"
+                },
+                "lblZeroValue": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "$10.90"
+                }
+            }
+        ],
+        "rowTemplateId": "df91509dd327445585fbcc2f24f2faf5",
+        "rowtemplate": "flxWealthDetailsCopy",
+        "selectionBehaviorConfig": {},
+        "widgetdatamap": {
+            "flxBottomBorder": "flxBottomBorder",
+            "flxClick": "flxClick",
+            "flxRowFour": "flxRowFour",
+            "flxRowOne": "flxRowOne",
+            "flxRowThree": "flxRowThree",
+            "flxRowTwo": "flxRowTwo",
+            "flxStatus": "flxStatus",
+            "flxWealthDetailsCopy": "flxWealthDetailsCopy",
+            "imgChevron": "imgChevron",
+            "imgLogo": "imgLogo",
+            "imgStatus": "imgStatus",
+            "lblFiveKey": "lblFiveKey",
+            "lblFiveValue": "lblFiveValue",
+            "lblFourKey": "lblFourKey",
+            "lblFourValue": "lblFourValue",
+            "lblId": "lblId",
+            "lblName": "lblName",
+            "lblOneKey": "lblOneKey",
+            "lblOneValue": "lblOneValue",
+            "lblStatus": "lblStatus",
+            "lblThreeKey": "lblThreeKey",
+            "lblThreeValue": "lblThreeValue",
+            "lblTwoKey": "lblTwoKey",
+            "lblTwoValue": "lblTwoValue",
+            "lblZeroKey": "lblZeroKey",
+            "lblZeroValue": "lblZeroValue"
+        }
+    },
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "segmentDetailsWealth",
+    "pf": "userwidgetmodel",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainselection": false,
+    "rowcounter": 9,
+    "rowfocusskin": "sec47134c53840738acea176209ff716",
+    "rowskin": "s18472307db04580a2a9cb6f4681ebec",
+    "rowtemplate": "flxWealthDetailsCopy",
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionheaderskin": "s65e8b0a8be54624ac979cda71a22cac",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "singleselect",
+    "selectionbehaviorconfig": {},
+    "separatorcolor": "aaaaaa00",
+    "separatorrequired": false,
+    "separatorthickness": 1,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "vizProps": {},
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "flxBottomBorder": "flxBottomBorder",
+        "flxClick": "flxClick",
+        "flxRowFour": "flxRowFour",
+        "flxRowOne": "flxRowOne",
+        "flxRowThree": "flxRowThree",
+        "flxRowTwo": "flxRowTwo",
+        "flxStatus": "flxStatus",
+        "flxWealthDetailsCopy": "flxWealthDetailsCopy",
+        "imgChevron": "imgChevron",
+        "imgLogo": "imgLogo",
+        "imgStatus": "imgStatus",
+        "lblFiveKey": "lblFiveKey",
+        "lblFiveValue": "lblFiveValue",
+        "lblFourKey": "lblFourKey",
+        "lblFourValue": "lblFourValue",
+        "lblId": "lblId",
+        "lblName": "lblName",
+        "lblOneKey": "lblOneKey",
+        "lblOneValue": "lblOneValue",
+        "lblStatus": "lblStatus",
+        "lblThreeKey": "lblThreeKey",
+        "lblThreeValue": "lblThreeValue",
+        "lblTwoKey": "lblTwoKey",
+        "lblTwoValue": "lblTwoValue"
+    },
+    "zindex": 1
+}

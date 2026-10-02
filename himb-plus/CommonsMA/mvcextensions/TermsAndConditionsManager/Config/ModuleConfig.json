@@ -1,0 +1,10 @@
+{
+    "ModuleName": "TermsAndConditionsManager",
+    "ModuleType": "Manager",
+    "BusinessControllerConfig": {
+        "BusinessExtensions": [
+            "TermsAndConditionsManager/BusinessControllers/BusinessController_Extension"
+        ],
+        "BusinessControllerClass": "TermsAndConditionsManager/BusinessControllers/BusinessController"
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "AS_Form_ff6929adba014d6c8692f1e644eb2430": {
+        "id": "AS_Form_ff6929adba014d6c8692f1e644eb2430",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmPasscodeUniken",
+            "type": "forms",
+            "platform": "",
+            "KUID": "a7ada76a0b99474b9ca3d21c381fd7a9"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__ba582303b31d42b595fd98ee82b961c7",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "renderTitleBar",
+            "display": "renderTitleBar",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null,
+            "source": "controller"
+        }]
+    }
+}

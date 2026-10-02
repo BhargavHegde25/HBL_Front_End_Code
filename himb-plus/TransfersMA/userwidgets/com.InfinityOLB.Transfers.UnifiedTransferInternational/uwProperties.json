@@ -1,0 +1,387 @@
+{
+    "classname": "UnifiedTransferInternational",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "bc79d4f3928844cb88985be301ac1435",
+                    "paramList": [],
+                    "propertyKey": "setContext",
+                    "pw": {
+                        "displayName": "setContext",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "f3b0039192a247d68962b3c3bcdbc6a0",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "j7f65a786252426084d8282c01ca2fd8",
+                    "paramList": [],
+                    "propertyKey": "unsubscribeStore",
+                    "pw": {
+                        "displayName": "unsubscribeStore",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "f3b0039192a247d68962b3c3bcdbc6a0",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "f3f459bd87f0438fb9f4a711cf730402",
+                    "paramList": [],
+                    "propertyKey": "setSegAccessibility",
+                    "pw": {
+                        "displayName": "setSegAccessibility",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "f3b0039192a247d68962b3c3bcdbc6a0",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "ccd54fb5842d4fddbb7a52a79f84e363",
+                    "paramList": [],
+                    "propertyKey": "fromAndToSegmentShiftTab",
+                    "pw": {
+                        "displayName": "fromAndToSegmentShiftTab",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "f3b0039192a247d68962b3c3bcdbc6a0",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "d12aeb8fcfa3441eaa906d57024a070e",
+                    "paramList": [
+                        {
+                            "name": "errorObj"
+                        }
+                    ],
+                    "propertyIndex": 1,
+                    "propertyKey": "onError",
+                    "pw": {
+                        "displayName": "onError",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "f3b0039192a247d68962b3c3bcdbc6a0",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "h40195d6d72f4e26b743cb5a3c3791b9",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "onCancelTransfer",
+                    "pw": {
+                        "displayName": "onCancelTransfer",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "f3b0039192a247d68962b3c3bcdbc6a0",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "g94de84924d043fdb0fd7a096deb4414",
+                    "paramList": [
+                        {
+                            "name": "collectionObj"
+                        }
+                    ],
+                    "propertyIndex": 4,
+                    "propertyKey": "createTransfer",
+                    "pw": {
+                        "displayName": "createTransfer",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "f3b0039192a247d68962b3c3bcdbc6a0",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "d8d82fab9ce04f9d82d085f9cad54112",
+                    "paramList": [
+                        {
+                            "name": "errorObj"
+                        }
+                    ],
+                    "propertyIndex": 5,
+                    "propertyKey": "showErrorMessage",
+                    "pw": {
+                        "displayName": "showErrorMessage",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "f3b0039192a247d68962b3c3bcdbc6a0",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "h83178a795664b3688800b168e1b6aee",
+                    "paramList": [],
+                    "propertyIndex": 6,
+                    "propertyKey": "subscribeToTouchEnd",
+                    "pw": {
+                        "displayName": "subscribeToTouchEnd",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "f3b0039192a247d68962b3c3bcdbc6a0",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "b557a9b93f6d4c72aa3d00535c5a5db9",
+                    "paramList": [],
+                    "propertyIndex": 7,
+                    "propertyKey": "updateTouchEndSubscriber",
+                    "pw": {
+                        "displayName": "updateTouchEndSubscriber",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "f3b0039192a247d68962b3c3bcdbc6a0",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n    \"PurposeCodes\": {\n        \"Service\": \"TransactionObjects\",\n        \"Object\": \"ExternalCodes\",\n        \"Verb\": \"getPurposeCodes\",\n        \"Criteria\": {\n            \"id\": \"PurpCd\"\n        }\n    },\n    \"ClearingIdentifierCodes\": {\n        \"Service\": \"TransactionObjects\",\n        \"Object\": \"ExternalCodes\",\n        \"Verb\": \"getPurposeCodes\",\n        \"Criteria\": {\n            \"id\": \"ClearingSysId\"\n        }\n    },\n    \"GetAccountsPostLogin\": {\n        \"Service\": \"Holdings\",\n        \"Object\": \"DigitalArrangements\",\n        \"Verb\": \"getList\",\n        \"Criteria\": {}\n    },\n    \"GetCreditCardAccounts\": {\n        \"Service\": \"TransactionObjects\",\n        \"Object\": \"CreditCard\",\n        \"Verb\": \"getCreditCardAccounts\",\n        \"Criteria\": {}\n    },\n    \"GetExternalPayees\": {\n        \"Service\": \"PayeeObjects\",\n        \"Object\": \"Recipients\",\n        \"Verb\": \"getExternalPayees\",\n        \"Criteria\": {}\n    },\n    \"GetBankDate\": {\n        \"Service\": \"TransactionObjects\",\n        \"Object\": \"BankDate\",\n        \"Verb\": \"getBankDate\",\n        \"Criteria\": {}\n    },\n    \"GetAllCountries\": {\n        \"Service\": \"RBObjects\",\n        \"Object\": \"Country\",\n        \"Verb\": \"getAllCountries\",\n        \"Criteria\": {}\n    },\n    \"GetAllRegions\": {\n        \"Service\": \"RBObjects\",\n        \"Object\": \"States\",\n        \"Verb\": \"getAllRegions\",\n        \"Criteria\": {}\n    },\n    \"IsValidIBAN\": {\n        \"Service\": \"PayeeManagement\",\n        \"Object\": \"BankDetails\",\n        \"Verb\": \"isValidIBAN\",\n        \"Criteria\": {\n            \"iban\": \"${Collection.Recipients.accountNumber}\"\n        }\n    },\n    \"GetSwiftCodeFromIBAN\": {\n        \"Service\": \"PayeeManagement\",\n        \"Object\": \"BankDetails\",\n        \"Verb\": \"getSwiftCode\",\n        \"Criteria\": {\n            \"iban\": \"${Collection.Recipients.accountNumber}\",\n            \"countryCode\": \"\"\n        }\n    },\n    \"GetBankDetailsFromBicCode\": {\n        \"Service\": \"PayeeManagement\",\n        \"Object\": \"BankDetails\",\n        \"Verb\": \"getBankDetailsFromBicCode\",\n        \"Criteria\": {\n            \"swiftCode\": \"${Collection.BankDetails.swiftCode}\"\n        }\n    },\n    \"GetBeneficiaryName\": {\n        \"Service\": \"PayeeManagement\",\n        \"Object\": \"Payee_Name\",\n        \"Verb\": \"getPayeeName\",\n        \"Criteria\": {\n            \"accountNumber\": \"${Collection.Recipients.accountNumber}\"\n        }\n    },\n    \"ValidateIntermediaryBicCode\": {\n        \"Service\": \"PayeeManagement\",\n        \"Object\": \"BankDetails\",\n        \"Verb\": \"getBankDetailsFromBicCode\",\n        \"Criteria\": {\n            \"swiftCode\": \"${Collection.BankDetails.intermediaryBicCode}\"\n        }\n    },\n    \"GetBCCFromBankDetails\": {\n        \"Service\": \"TransactionObjects\",\n        \"Object\": \"ExternalCodes\",\n        \"Verb\": \"getPurposeCodes\",\n        \"Criteria\": {\n            \"id\": \"PurpCd\"\n        }\n    },\n    \"GetBICFromBankDetails\": {\n        \"Service\": \"PayeeManagement\",\n        \"Object\": \"BankDetails\",\n        \"Verb\": \"getBICFromBankDetails\",\n        \"Criteria\": {\n            \"bankName\": \"${Collection.BankDetails.lookupBankName}\",\n            \"branch\": \"${Collection.BankDetails.lookupBranchName}\",\n            \"city\": \"${Collection.BankDetails.lookupCity}\",\n            \"country\": \"${Collection.BankDetails.lookupCountry}\"\n        }\n    },\n    \"GetAccountDetails\": {\n        \"Service\": \"Holdings\",\n        \"Object\": \"ArrangementDetails\",\n        \"Verb\": \"getDetails\",\n        \"Criteria\": {\n            \"accountID\": \"${Collection.Transaction.toAccountNumber}\"\n        }\n    },\n    \"InterBankAccFundTransfer\": {\n        \"Service\": \"TransactionObjects\",\n        \"Object\": \"Transaction\",\n        \"Verb\": \"InterBankAccFundTransfer\",\n        \"Criteria\": {\n            \"ExternalAccountNumber\": \"${Collection.Transaction.toAccountNumber}\",\n            \"amount\": \"${Collection.Transaction.amount}\",\n            \"beneficiaryAddressLine1\": \"${Collection.Recipients.addressLine1}\",\n            \"beneficiaryAddressLine2\": \"${Collection.Recipients.addressLine2}\",\n            \"beneficiaryBankName\": \"${Collection.BankDetails.bankName}\",\n            \"beneficiaryCity\": \"${Collection.Recipients.city}\",\n            \"beneficiarycountry\": \"${Collection.Recipients.country}\",\n            \"beneficiaryEmail\": \"${Collection.Recipients.email}\",\n            \"beneficiaryName\": \"${Collection.Transaction.beneficiaryName}\",\n            \"beneficiaryNickname\": \"\",\n            \"beneficiaryPhone\": \"${Collection.Recipients.phone}\",\n            \"beneficiaryState\": \"${Collection.Recipients.state}\",\n            \"beneficiaryZipcode\": \"${Collection.Recipients.zipCode}\",\n            \"clearingCode\": \"${Collection.Transaction.clearingCode1}\",\n            \"createWithPaymentId\": \"true\",\n            \"deletedDocuments\": \"\",\n            \"e2eReference\": \"${Collection.Transaction.e2eReference}\",\n            \"frequencyEndDate\": \"${Collection.Transaction.frequencyEndDate}\",\n            \"frequencyStartDate\": \"${Collection.Transaction.frequencyStartDate}\",\n            \"frequencyType\": \"${Collection.Transaction.frequencyType}\",\n            \"fromAccountCurrency\": \"${Collection.Transaction.fromAccountCurrency}\",\n            \"fromAccountNumber\": \"${Collection.Transaction.fromAccountNumber}\",\n            \"iban\": \"\",\n            \"intermediaryBicCode\": \"${Collection.BankDetails.intermediaryBicCode}\",\n            \"isScheduled\": \"${Collection.Transaction.isScheduled}\",\n            \"numberOfRecurrences\": \"${Collection.Transaction.numberOfRecurrences}\",\n            \"paidBy\": \"${Collection.Transaction.paidBy}\",\n            \"paymentType\": \"${Collection.Transaction.paymentType}\",\n            \"scheduledDate\": \"${Collection.Transaction.scheduledDate}\",\n            \"serviceName\": \"INTER_BANK_ACCOUNT_FUND_TRANSFER_CREATE\",\n            \"swiftCode\": \"${Collection.BankDetails.swiftCode}\",\n            \"toAccountCurrency\": \"${Collection.Transaction.toAccountCurrency}\",\n            \"toAccountNumber\": \"${Collection.Transaction.toAccountNumber}\",\n            \"transactionCurrency\": \"${Collection.Transaction.transactionCurrency}\",\n            \"transactionId\": \"\",\n            \"transactionType\": \"${Collection.Transaction.transactionType}\",\n            \"transactionsNotes\": \"${Collection.Transaction.transactionsNotes}\",\n            \"localInstrumentProprietary\": \"${Collection.Transaction.localInstrumentProprietary}\",\n            \"purposeCode\": \"${Collection.Transaction.purposeCode}\",\n            \"serviceLevelProprietary\": \"${Collection.Transaction.serviceLevelProprietary}\",\n            \"uploadedattachments\": \"\",\n            \"userId\": \"\",\n            \"validate\": \"true\"\n        }\n    },\n    \"IntraBankAccFundTransfer\": {\n        \"Service\": \"TransactionObjects\",\n        \"Object\": \"Transaction\",\n        \"Verb\": \"IntraBankAccFundTransfer\",\n        \"Criteria\": {\n            \"ExternalAccountNumber\": \"${Collection.Transaction.toAccountNumber}\",\n            \"amount\": \"${Collection.Transaction.amount}\",\n            \"beneficiaryAddressLine1\": \"${Collection.Recipients.addressLine1}\",\n            \"beneficiaryAddressLine2\": \"${Collection.Recipients.addressLine2}\",\n            \"beneficiaryCity\": \"${Collection.Recipients.city}\",\n            \"beneficiarycountry\": \"${Collection.Recipients.country}\",\n            \"beneficiaryEmail\": \"${Collection.Recipients.email}\",\n            \"beneficiaryName\": \"${Collection.Transaction.beneficiaryName}\",\n            \"beneficiaryNickname\": \"\",\n            \"beneficiaryPhone\": \"${Collection.Recipients.phone}\",\n            \"beneficiaryState\": \"${Collection.Recipients.state}\",\n            \"beneficiaryZipcode\": \"${Collection.Recipients.zipCode}\",\n            \"createWithPaymentId\": \"true\",\n            \"deletedDocuments\": \"\",\n            \"frequencyEndDate\": \"${Collection.Transaction.frequencyEndDate}\",\n            \"frequencyStartDate\": \"${Collection.Transaction.frequencyStartDate}\",\n            \"frequencyType\": \"${Collection.Transaction.frequencyType}\",\n            \"fromAccountCurrency\": \"${Collection.Transaction.fromAccountCurrency}\",\n            \"fromAccountNumber\": \"${Collection.Transaction.fromAccountNumber}\",\n            \"iban\": \"\",\n            \"isScheduled\": \"${Collection.Transaction.isScheduled}\",\n            \"numberOfRecurrences\": \"${Collection.Transaction.numberOfRecurrences}\",\n            \"paidBy\": \"\",\n            \"paymentType\": \"\",\n            \"scheduledDate\": \"${Collection.Transaction.scheduledDate}\",\n            \"serviceName\": \"INTRA_BANK_FUND_TRANSFER_CREATE\",\n            \"swiftCode\": \"\",\n            \"toAccountCurrency\": \"${Collection.Transaction.toAccountCurrency}\",\n            \"toAccountNumber\": \"${Collection.Transaction.toAccountNumber}\",\n            \"transactionCurrency\": \"${Collection.Transaction.transactionCurrency}\",\n            \"transactionId\": \"\",\n            \"transactionType\": \"${Collection.Transaction.transactionType}\",\n            \"transactionsNotes\": \"${Collection.Transaction.transactionsNotes}\",\n            \"uploadedattachments\": \"\",\n            \"userId\": \"\",\n            \"validate\": \"true\"\n        }\n    },\n    \"InternationalAccFundTransfer\": {\n        \"Service\": \"TransactionObjects\",\n        \"Object\": \"Transaction\",\n        \"Verb\": \"InternationalAccFundTransfer\",\n        \"Criteria\": {\n            \"ExternalAccountNumber\": \"${Collection.Transaction.toAccountNumber}\",\n            \"amount\": \"${Collection.Transaction.amount}\",\n            \"beneficiaryAddressLine1\": \"${Collection.Recipients.addressLine1}\",\n            \"beneficiaryAddressLine2\": \"${Collection.Recipients.addressLine2}\",\n            \"beneficiaryBankName\": \"${Collection.BankDetails.bankName}\",\n            \"beneficiaryCity\": \"${Collection.Recipients.city}\",\n            \"beneficiarycountry\": \"${Collection.Recipients.country}\",\n            \"beneficiaryEmail\": \"${Collection.Recipients.email}\",\n            \"beneficiaryName\": \"${Collection.Transaction.beneficiaryName}\",\n            \"beneficiaryNickname\": \"\",\n            \"beneficiaryPhone\": \"${Collection.Recipients.phone}\",\n            \"beneficiaryState\": \"${Collection.Recipients.state}\",\n            \"beneficiaryZipcode\": \"${Collection.Recipients.zipCode}\",\n            \"clearingCode\": \"${Collection.Transaction.clearingCode1}\",\n            \"createWithPaymentId\": \"true\",\n            \"deletedDocuments\": \"\",\n            \"frequencyEndDate\": \"${Collection.Transaction.frequencyEndDate}\",\n            \"frequencyStartDate\": \"${Collection.Transaction.frequencyStartDate}\",\n            \"frequencyType\": \"${Collection.Transaction.frequencyType}\",\n            \"fromAccountCurrency\": \"${Collection.Transaction.fromAccountCurrency}\",\n            \"fromAccountNumber\": \"${Collection.Transaction.fromAccountNumber}\",\n            \"iban\": \"\",\n            \"intermediaryBicCode\": \"${Collection.BankDetails.intermediaryBicCode}\",\n            \"isScheduled\": \"${Collection.Transaction.isScheduled}\",\n            \"numberOfRecurrences\": \"${Collection.Transaction.numberOfRecurrences}\",\n            \"paidBy\": \"${Collection.Transaction.paidBy}\",\n            \"paymentType\": \"${Collection.Transaction.paymentType}\",\n            \"scheduledDate\": \"${Collection.Transaction.scheduledDate}\",\n            \"serviceName\": \"INTERNATIONAL_ACCOUNT_FUND_TRANSFER_CREATE\",\n            \"swiftCode\": \"${Collection.BankDetails.swiftCode}\",\n            \"toAccountCurrency\": \"${Collection.Transaction.toAccountCurrency}\",\n            \"toAccountNumber\": \"${Collection.Transaction.toAccountNumber}\",\n            \"transactionCurrency\": \"${Collection.Transaction.transactionCurrency}\",\n            \"transactionId\": \"\",\n            \"transactionType\": \"${Collection.Transaction.transactionType}\",\n            \"transactionsNotes\": \"${Collection.Transaction.transactionsNotes}\",\n            \"uploadedattachments\": \"\",\n            \"userId\": \"\",\n            \"validate\": \"true\"\n        }\n    },\n    \"TransferToOwnAccounts\": {\n        \"Service\": \"TransactionObjects\",\n        \"Object\": \"Transaction\",\n        \"Verb\": \"TransferToOwnAccounts\",\n        \"Criteria\": {\n            \"ExternalAccountNumber\": \"${Collection.Transaction.toAccountNumber}\",\n            \"amount\": \"${Collection.Transaction.amount}\",\n            \"beneficiaryName\": \"${Collection.Transaction.beneficiaryName}\",\n            \"beneficiaryNickname\": \"\",\n            \"createWithPaymentId\": \"true\",\n            \"deletedDocuments\": \"\",\n            \"frequencyEndDate\": \"${Collection.Transaction.frequencyEndDate}\",\n            \"frequencyStartDate\": \"${Collection.Transaction.frequencyStartDate}\",\n            \"frequencyType\": \"${Collection.Transaction.frequencyType}\",\n            \"fromAccountCurrency\": \"${Collection.Transaction.fromAccountCurrency}\",\n            \"fromAccountNumber\": \"${Collection.Transaction.fromAccountNumber}\",\n            \"iban\": \"\",\n            \"isScheduled\": \"${Collection.Transaction.isScheduled}\",\n            \"numberOfRecurrences\": \"${Collection.Transaction.numberOfRecurrences}\",\n            \"paidBy\": \"\",\n            \"paymentType\": \"\",\n            \"scheduledDate\": \"${Collection.Transaction.scheduledDate}\",\n            \"serviceName\": \"TRANSFER_BETWEEN_OWN_ACCOUNT_CREATE\",\n            \"swiftCode\": \"\",\n            \"toAccountCurrency\": \"${Collection.Transaction.toAccountCurrency}\",\n            \"toAccountNumber\": \"${Collection.Transaction.toAccountNumber}\",\n            \"transactionCurrency\": \"${Collection.Transaction.transactionCurrency}\",\n            \"transactionId\": \"\",\n            \"transactionType\": \"${Collection.Transaction.transactionType}\",\n            \"transactionsNotes\": \"${Collection.Transaction.transactionsNotes}\",\n            \"uploadedattachments\": \"\",\n            \"userId\": \"\",\n            \"validate\": \"true\"\n        }\n    },\n    \"CreateOneTimeTransfer\": {\n        \"Service\": \"Transfers\",\n        \"Object\": \"OneTimeTransfer\",\n        \"Verb\": \"Create\",\n        \"Criteria\": {\n            \"ExternalAccountNumber\": \"${Collection.Recipients.accountNumber}\",\n            \"amount\": \"${Collection.Transaction.amount}\",\n            \"beneficiaryAddressLine1\": \"${Collection.Recipients.addressLine1}\",\n            \"beneficiaryAddressLine2\": \"${Collection.Recipients.addressLine2}\",\n            \"beneficiaryBankName\": \"${Collection.BankDetails.bankName}\",\n            \"beneficiaryCity\": \"${Collection.Recipients.city}\",\n            \"beneficiarycountry\": \"${Collection.Recipients.country}\",\n            \"beneficiaryEmail\": \"${Collection.Recipients.email}\",\n            \"beneficiaryName\": \"${Collection.Recipients.payeeName}\",\n            \"beneficiaryNickname\": \"\",\n            \"beneficiaryPhone\": \"${Collection.Recipients.phone}\",\n            \"beneficiaryState\": \"${Collection.Recipients.state}\",\n            \"beneficiaryZipcode\": \"${Collection.Recipients.zipCode}\",\n            \"clearingCode\": \"${Collection.Transaction.clearingCode1}\",\n            \"createWithPaymentId\": \"true\",\n            \"deletedDocuments\": \"\",\n            \"e2eReference\": \"${Collection.Transaction.e2eReference}\",\n            \"frequencyEndDate\": \"${Collection.Transaction.frequencyEndDate}\",\n            \"frequencyStartDate\": \"${Collection.Transaction.frequencyStartDate}\",\n            \"frequencyType\": \"${Collection.Transaction.frequencyType}\",\n            \"fromAccountCurrency\": \"${Collection.Transaction.fromAccountCurrency}\",\n            \"fromAccountNumber\": \"${Collection.Transaction.fromAccountNumber}\",\n            \"iban\": \"\",\n            \"intermediaryBicCode\": \"${Collection.BankDetails.intermediaryBicCode}\",\n            \"isScheduled\": \"${Collection.Transaction.isScheduled}\",\n            \"numberOfRecurrences\": \"${Collection.Transaction.numberOfRecurrences}\",\n            \"paidBy\": \"${Collection.Transaction.paidBy}\",\n            \"paymentType\": \"${Collection.Transaction.paymentType}\",\n            \"scheduledDate\": \"${Collection.Transaction.scheduledDate}\",\n            \"serviceName\": \"${Collection.Transaction.serviceName}\",\n            \"swiftCode\": \"${Collection.BankDetails.swiftCode}\",\n            \"toAccountCurrency\": \"${Collection.Transaction.toAccountCurrency}\",\n            \"toAccountNumber\": \"${Collection.Recipients.accountNumber}\",\n            \"transactionCurrency\": \"${Collection.Transaction.transactionCurrency}\",\n            \"transactionId\": \"\",\n            \"transactionType\": \"${Collection.Transaction.transactionType}\",\n            \"transactionsNotes\": \"${Collection.Transaction.transactionsNotes}\",\n            \"localInstrumentProprietary\": \"${Collection.Transaction.localInstrumentProprietary}\",\n            \"purposeCode\": \"${Collection.Transaction.purposeCode}\",\n            \"clearingIdentifierCode\": \"${Collection.Transaction.clearingIdentifierCode}\",\n            \"serviceLevelProprietary\": \"${Collection.Transaction.serviceLevelProprietary}\",\n            \"uploadedattachments\": \"\",\n            \"userId\": \"\",\n            \"validate\": \"true\"\n        }\n    },\n    \"createCreditCardTransfer\": {\n        \"Service\": \"RBObjects\",\n        \"Object\": \"Transaction\",\n        \"Verb\": \"createCreditCardTransfer\",\n        \"Criteria\": {\n            \"ExternalAccountNumber\": \"${Collection.Transaction.toAccountNumber}\",\n            \"amount\": \"${Collection.Transaction.amount}\",\n            \"beneficiaryName\": \"${Collection.Transaction.beneficiaryName}\",\n            \"beneficiaryNickname\": \"\",\n            \"deletedDocuments\": \"\",\n            \"frequencyEndDate\": \"${Collection.Transaction.frequencyEndDate}\",\n            \"frequencyStartDate\": \"${Collection.Transaction.frequencyStartDate}\",\n            \"frequencyType\": \"${Collection.Transaction.frequencyType}\",\n            \"fromAccountCurrency\": \"${Collection.Transaction.fromAccountCurrency}\",\n            \"fromAccountNumber\": \"${Collection.Transaction.fromAccountNumber}\",\n            \"iban\": \"\",\n            \"isScheduled\": \"${Collection.Transaction.isScheduled}\",\n            \"numberOfRecurrences\": \"${Collection.Transaction.numberOfRecurrences}\",\n            \"scheduledDate\": \"${Collection.Transaction.scheduledDate}\",\n            \"serviceName\": \"\",\n            \"toAccountCurrency\": \"${Collection.Transaction.toAccountCurrency}\",\n            \"toAccountNumber\": \"${Collection.Transaction.toAccountNumber}\",\n            \"transactionCurrency\": \"${Collection.Transaction.transactionCurrency}\",\n            \"transactionId\": \"\",\n            \"transactionType\": \"${Collection.Transaction.transactionType}\",\n            \"transactionsNotes\": \"${Collection.Transaction.transactionsNotes}\",\n            \"uploadedattachments\": \"\",\n            \"userId\": \"\",\n            \"validate\": \"true\"\n        }\n    },\n    \"P2PTransfer\": {\n        \"Service\": \"DigitalTransfer\",\n        \"Object\": \"Payment_P2P\",\n        \"Verb\": \"createTransfer\",\n        \"Criteria\": {\n            \"ExternalAccountNumber\": \"\",\n            \"amount\": \"${Collection.Transaction.amount}\",\n            \"beneficiaryEmail\": \"${Collection.Recipients.email}\",\n            \"beneficiaryId\": \"\",\n            \"beneficiaryName\": \"${Collection.Transaction.beneficiaryName}\",\n            \"beneficiaryPhone\": \"${Collection.Recipients.phone}\",\n            \"frequencyEndDate\": \"${Collection.Transaction.frequencyEndDate}\",\n            \"frequencyStartDate\": \"${Collection.Transaction.frequencyStartDate}\",\n            \"frequencyType\": \"${Collection.Transaction.frequencyType}\",\n            \"fromAccountCurrency\": \"${Collection.Transaction.fromAccountCurrency}\",\n            \"fromAccountNumber\": \"${Collection.Transaction.fromAccountNumber}\",\n            \"isScheduled\": \"${Collection.Transaction.isScheduled}\",\n            \"numberOfRecurrences\": \"${Collection.Transaction.numberOfRecurrences}\",\n            \"paidBy\": \"${Collection.Transaction.paidBy}\",\n            \"personId\": \"${Collection.Transaction.personId}\",\n            \"scheduledDate\": \"${Collection.Transaction.scheduledDate}\",\n            \"toAccountCurrency\": \"${Collection.Transaction.transactionCurrency}\",\n            \"transactionAmount\": \"${Collection.Transaction.amount}\",\n            \"transactionCurrency\": \"${Collection.Transaction.transactionCurrency}\",\n            \"transactionType\": \"P2P\",\n            \"transactionsNotes\": \"${Collection.Transaction.transactionsNotes}\"\n        }\n    },\n    \"GetOtherBanks\":{\n    \"Service\": \"HBLOtherBankTransfers\",\n    \"Object\": \"CIPSTransfers\",\n    \"Verb\": \"getOtherBankDetails\",\n    \"Criteria\": {}\n  },\n  \"ValidateBank\":{\n    \"Service\": \"HBLOtherBankTransfers\",\n    \"Object\": \"CIPSTransfers\",\n    \"Verb\": \"validateOtherBankAccount\",\n    \"Criteria\": {\n      \"accountId\": \"${Collection.Transaction.accountId}\",\n      \"bankId\": \"${Collection.Transaction.bankId}\",\n      \"accountName\": \"${Collection.Transaction.accountName}\"\n    }\n  },\n    \"GetBeneficiaryCurrency\": {\n        \"Service\": \"PayeeManagement\",\n        \"Object\": \"Payee_Name\",\n        \"Verb\": \"getPayeeName\",\n        \"Criteria\": {\n            \"accountNumber\": \"${Collection.Transaction.toAccountNumber}\"\n        }\n    }\n}",
+                    "group": "General",
+                    "kuid": "i0f77c3a2ff242f0af276eb605ee0647",
+                    "originalPropertyKey": "serviceParameters",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 1,
+                    "propertyKey": "serviceParameters",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Service Parameters",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "f3b0039192a247d68962b3c3bcdbc6a0",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"labels\": {\n    \"lblFromKey\": \"${i18n{i18n.UnifiedTransfer.FromAccount}}\",\n    \"lblToKey\": \"${i18n{i18n.UnifiedTransfer.ToAccount}}\",\n    \"lblNoFromRecordMessage\": \"${i18n{i18n.UnifiedTransfer.FromAccountsEmptyRecordMessage}}\",\n    \"lblNoFromRecordAction\": \"\",\n    \"lblNoToRecordMessage\": \"${i18n{i18n.UnifiedTransfer.ToAccountsEmptyRecordMessage}}\",\n    \"lblNoToRecordAction\": \"${i18n{i18n.UnifiedTransfer.TransferToANewPayee}}\",\n    \"lblAccountNumberKey\": \"${i18n{i18n.common.accountNumber}}\",\n    \"lblReEnterAccountNumberKey\": \"${i18n{i18n.UnifiedAddBeneficiary.ReenterAccountNumber}}\",\n    \"lblPayeeDetail1\": \"${i18n{i18n.TransfersEur.BICSWIFT}}\",\n    \"lblPayeeDetail2\": \"${i18n{i18n.UnifiedTransfer.ClearingCode1}}\",\n    \"lblPayeeDetail3\": \"${i18n{i18n.UnifiedTransfer.ClearingCode2}}\",\n    \"lblPayeeDetail4\": \"${i18n{i18n.transfers.bankName}}\",\n    \"lblTransferCurrency\": \"${i18n{i18n.WireTransfer.TransferCurrency}}\",\n    \"lblAmount\": \"${i18n{i18n.transfers.lblAmount}}\",\n    \"lblFXRate\": \"${i18n{i18n.UnifiedTransfer.FxRateReference}}\",\n    \"lblPaymentMethod\": \"${i18n{i18n.TransfersEur.PaymentMethod}}\",\n    \"lblFrequency\": \"${i18n{i18n.transfers.lblFrequency}}\",\n    \"lblTransferDuration\": \"${i18n{i18n.transfers.lblForHowLong}}\",\n    \"lblStartDate\": \"${i18n{i18n.transfers.send_on}}\",\n    \"lblEndDate\": \"${i18n{i18n.transfers.end_date}}\",\n    \"lblRecurrences\": \"${i18n{i18n.transfers.lblNumberOfRecurrences}}\",\n    \"lblFeesPaidBy\": \"${i18n{i18n.TransfersEur.FeesPaidBy}}\",\n    \"lblIntermediaryBic\": \"${i18n{kony.i18n.verifyDetails.intermediatoryBIC}}\",\n    \"lblE2EReference\": \"${i18n{i18n.UnifiedTransfer.E2EReferenceOptional}}\",\n    \"lblNotes\": \"${i18n{i18n.UnifiedTransfer.PaymentDetailsOptional}}\",\n    \"lblAddressField1\": \"${i18n{i18n.konybb.manageUser.PhoneNo}}\",\n    \"lblAddressField2\": \"${i18n{i18n.konybb.manageUser.EmailID}}\",\n    \"lblAddressField3\": \"${i18n{i18n.TransfersEur.AddressLine01}}\",\n    \"lblAddressField4\": \"${i18n{i18n.TransfersEur.AddressLine02}}\",\n    \"lblAddressField5\": \"${i18n{i18n.TransfersEur.City}}\",\n    \"lblAddressField6\": \"${i18n{i18n.common.state}}\",\n    \"lblAddressField7\": \"${i18n{i18n.TransfersEur.Country}}\",\n    \"lblAddressField8\": \"${i18n{i18n.common.zipcode}}\",\n    \"lblPayeeAddressDetail\": \"${i18n{i18n.UnifiedTransfer.BeneficiaryAddressDetails}}\",\n    \"lblSupportingDocuments\": \"${i18n{i18n.UnifiedTransfer.AttachDocuments}}\",\n    \"lblPayeeOptional\": \"${i18n{i18n.UnifiedTransfer.Optional}}\",\n    \"lblSupportingOptional\": \"${i18n{i18n.UnifiedTransfer.Optional}}\",\n    \"lblLookupTitle\": \"${i18n{i18n.TransfersEur.SWIFTBICSearch}}\",\n    \"lblLookupDescription\": \"${i18n{i18n.TransfersEur.TofindyourSWIFTcodepleaseenterbankdetailsthenhitSearch}}\",\n    \"lblSearchField1\": \"${i18n{i18n.transfers.bankName}}\",\n    \"lblSearchField2\": \"${i18n{i18n.LocateUs.BranchName}}\",\n    \"lblSearchField3\": \"${i18n{i18n.TransfersEur.Country}}\",\n    \"lblSearchField4\": \"${i18n{i18n.TransfersEur.City}}\",\n    \"lblSupportingDocumentsInfoHeader\": \"${i18n{i18n.UnifiedTransfer.attachmentRules}}\",\n    \"lblSupportingDocumentInfo1\": \"${i18n{i18n.UnifiedTransfer.attachmentRule1}}\",\n    \"lblSupportingDocumentInfo2\": \"${i18n{i18n.UnifiedTransfer.attachmentRule2}}\",\n    \"lblSupportingDocumentInfo3\": \"${i18n{i18n.UnifiedTransfer.attachmentRule3}}\",\n    \"lblSupportingDocumentInfo4\": \"${i18n{i18n.UnifiedTransfer.attachmentRule4}}\"\n  },\n  \"textboxes\": {\n    \"tbxFromAccount\": {\n      \"placeHolder\": \"${i18n{i18n.TransfersEur.Selecttheaccountyouwanttopayfrom}}\"\n    },\n    \"tbxToAccount\": {\n      \"placeHolder\": \"${i18n{i18n.TransfersEur.SelecttheToaccount}}\"\n    },\n    \"tbxAccountNumber\": {\n      \"mapping\": \"${Collection.Recipients.accountNumber}\",\n      \"placeHolder\": \"${i18n{i18n.UnifiedAddBeneficiary.AccountNumber}}\"\n    },\n    \"tbxReEnterAccountNumber\": {\n      \"mapping\": \"${Collection.Recipients.reenterAccountNumber}\",\n      \"placeHolder\": \"${i18n{i18n.UnifiedAddBeneficiary.ReenterAccountNumber}}\"\n    },\n    \"tbxPayeeName\": {\n      \"mapping\": \"${Collection.Recipients.payeeName}\",\n      \"placeHolder\": \"${i18n{i18n.UnifiedAddBeneficiary.EnterPayeeName}}\"\n    },\n    \"tbxPayeeDetail1\": {\n      \"mapping\": \"${Collection.BankDetails.swiftCode}\",\n      \"placeHolder\": \"${i18n{i18n.UnifiedAddBeneficiary.SwiftCode}}\"\n    },\n    \"tbxPayeeDetail2\": {\n      \"mapping\": \"${Collection.Transaction.clearingCode1}\",\n      \"placeHolder\": \"${i18n{i18n.UnifiedAddBeneficiary.enterClearingCode1}}\"\n    },\n    \"tbxPayeeDetail3\": {\n      \"mapping\": \"${Collection.Transaction.clearingCode2\",\n      \"placeHolder\": \"${i18n{i18n.UnifiedAddBeneficiary.enterClearingCode2}}\"\n    },\n    \"tbxPayeeDetail4\": {\n      \"mapping\": \"${Collection.BankDetails.bankName}\",\n      \"placeHolder\": \"${i18n{i18n.UnifiedAddBeneficiary.enterBankName}}\"\n    },\n    \"tbxAmount\": {\n      \"mapping\": \"${Collection.Transaction.amount}\",\n      \"placeHolder\": \"0.00\"\n    },\n    \"tbxPaymentAmount4\": {\n      \"mapping\": \"${Collection.Transaction.amount}\",\n      \"placeHolder\": \"0.00\"\n    },\n    \"tbxRecurrences\": {\n      \"mapping\": \"${Collection.Transaction.numberOfRecurrences}\",\n      \"placeHolder\": \"${i18n{i18n.PayAPerson.EnterNumberOfRecurrences}}\"\n    },\n    \"tbxIntermediaryBic\": {\n      \"mapping\": \"${Collection.BankDetails.intermediaryBicCode}\",\n      \"placeHolder\": \"${i18n{i18n.UnifiedTransfer.EnterIntermediaryBIC}}\"\n    },\n    \"tbxE2EReference\": {\n      \"mapping\": \"${Collection.Transaction.e2eReference}\",\n      \"placeHolder\": \"${i18n{i18n.UnifiedTransfer.EnterE2EReference}}\"\n    },\n    \"txtNotes\": {\n      \"mapping\": \"${Collection.Transaction.transactionsNotes}\",\n      \"placeHolder\": \"${i18n{i18n.UnifiedTransfer.NotePlaceholder}}\"\n    },\n    \"tbxAddressField1\": {\n      \"mapping\": \"${Collection.Recipients.phone}\",\n      \"placeHolder\": \"${i18n{i18n.UnifiedTransfer.EnterPhoneNumber}}\"\n    },\n    \"tbxAddressField2\": {\n      \"mapping\": \"${Collection.Recipients.email}\",\n      \"placeHolder\": \"${i18n{i18n.UnifiedTransfer.EnterEmailId}}\"\n    },\n    \"tbxAddressField3\": {\n      \"mapping\": \"${Collection.Recipients.addressLine1}\",\n      \"placeHolder\": \"${i18n{i18n.UnifiedTransfer.EnterAddressLine01}}\"\n    },\n    \"tbxAddressField4\": {\n      \"mapping\": \"${Collection.Recipients.addressLine2}\",\n      \"placeHolder\": \"${i18n{i18n.UnifiedTransfer.EnterAddressLine02}}\"\n    },\n    \"tbxAddressField5\": {\n      \"mapping\": \"${Collection.Recipients.city}\",\n      \"placeHolder\": \"${i18n{i18n.UnifiedTransfer.EnterCity}}\"\n    },\n    \"tbxAddressField8\": {\n      \"mapping\": \"${Collection.Recipients.zipCode}\",\n      \"placeHolder\": \"${i18n{i18n.UnifiedTransfer.EnterZipCode}}\"\n    },\n    \"txtBoxSearchField1\": {\n      \"mapping\": \"${Collection.BankDetails.lookupBankName}\",\n      \"placeHolder\": \"${i18n{i18n.UnifiedAddBeneficiary.enterBankName}}\"\n    },\n    \"txtBoxSearchField2\": {\n      \"mapping\": \"${Collection.BankDetails.lookupBranchName}\",\n      \"placeHolder\": \"${i18n{i18n.UnifiedAddBeneficiary.enterBranchName}}\"\n    },\n    \"txtBoxSearchField3\": {\n      \"mapping\": \"${Collection.BankDetails.lookupCountry}\",\n      \"placeHolder\": \"${i18n{i18n.UnifiedTransfer.EnterCountry}}\"\n    },\n    \"txtBoxSearchField4\": {\n      \"mapping\": \"${Collection.BankDetails.lookupCity}\",\n      \"placeHolder\": \"${i18n{i18n.UnifiedTransfer.EnterCity}}\"\n    }\n  },\n  \"listboxes\": {\n    \"lbxAddressField6\": {\n      \"mapping\": \"${Collection.Recipients.state}\",\n      \"placeHolder\": \"\"\n    },\n    \"lbxAddressField7\": {\n      \"mapping\": \"${Collection.Recipients.country}\",\n      \"placeHolder\": \"\"\n    }\n  },\n  \"buttons\": {\n    \"btn1\": {\n      \"text\": \"${i18n{i18n.TransfersEur.btnCancel}}\",\n      \"toolTip\": \"${i18n{i18n.TransfersEur.btnCancel}}\"\n    },\n    \"btn2\": {\n      \"text\": \"${i18n{i18n.TransfersEur.btnContinue}}\",\n      \"toolTip\": \"${i18n{i18n.TransfersEur.btnContinue}}\"\n    },\n    \"btnSearch\": {\n      \"text\": \"${i18n{i18n.billPay.Search}}\",\n      \"toolTip\": \"${i18n{i18n.billPay.Search}}\"\n    }\n  },\n  \"segments\": {\n    \"segFromAccounts\": {\n      \"segmentMasterData\": \"${Collection.fromAccounts}\",\n      \"segmentUI\": {\n        \"lblRecordField1\": \"${segmentMasterData.accountNameFormatted}\",\n        \"lblRecordField2\": \"${segmentMasterData.availableBalanceFormatted}\",\n        \"lblRecordField3\": \"${segmentMasterData.accountType}\"\n      }\n    },\n    \"segToAccounts\": {\n      \"segmentMasterData\": \"${Collection.toAccounts}\",\n      \"segmentUI\": {\n        \"lblRecordField1\": \"${segmentMasterData.accountNameFormatted}\",\n        \"lblRecordField2\": \"${segmentMasterData.availableBalanceFormatted}\",\n        \"lblRecordField3\": \"${segmentMasterData.accountType}\"\n      }\n    },\n    \"segLookupRecords\": {\n      \"segmentMasterData\": \"${Collection.swiftCodeLookup}\",\n      \"segmentUI\": {\n        \"lblLookupColumn1Value\": \"${segmentMasterData.bic}\",\n        \"lblLookupColumnValue2\": \"${segmentMasterData.bankName}\",\n        \"lblLookupColumnValue3\": \"${i18n{i18n.TransfersEur.selectSwift}}\"\n      }\n    }\n  },\n  \"frequencies\": {\n    \"Once\": \"${i18n{i18n.transfers.frequency.once}}\",\n    \"Daily\": \"${i18n{i18n.Transfers.Daily}}\",\n    \"Weekly\": \"${i18n{i18n.Transfers.Weekly}}\",\n    \"BiWeekly\": \"${i18n{i18n.savingsPot.biWeekly}}\",\n    \"Monthly\": \"${i18n{i18n.Transfers.Monthly}}\",\n    \"Quarterly\": \"${i18n{i18n.Transfers.Quaterly}}\",\n    \"Half Yearly\": \"${i18n{i18n.Transfers.HalfYearly}}\",\n    \"Yearly\": \"${i18n{i18n.Transfers.Yearly}}\"\n  },\n  \"transferDurations\": {\n    \"ON_SPECIFIC_DATE\": \"${i18n{i18n.transfers.lbxOnSpecificDate}}\",\n    \"NO_OF_RECURRENCES\": \"${i18n{i18n.transfers.lblNumberOfRecurrences}}\"\n  },\n  \"currencies\": {\n    \"USD\": \"USD\",\n    \"EUR\": \"EUR\",\n    \"INR\": \"INR\",\n    \"BGN\": \"BGN\"\n  },\n  \"paymentMethods\": {\n    \"EUR\": [\"SEPA\", \"INSTANT\"],\n    \"USD\": [\"FEDWIRE\", \"ACH\"],\n    \"GBP\": [\"CHAPS\", \"FASTER PAYMENT\"],\n    \"BGN\": [\"RINGS\", \"BISERA\"]\n  }\n}",
+                    "group": "General",
+                    "kuid": "ed7d84f13a3444b1b5ae93acb0d5f810",
+                    "originalPropertyKey": "dataMapping",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 2,
+                    "propertyKey": "dataMapping",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Data Mapping",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "f3b0039192a247d68962b3c3bcdbc6a0",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"CUSTOM_DATE\": {\n    \"BusinessRuleType\": \"FORMAT_DATE\",\n    \"BusinessRule\": {\n      \"inputFormat\": \"YYYY-MM-DD\",\n      \"displayFormat\": \"DD/MM/YYYY\"\n    }\n  }\n}",
+                    "group": "General",
+                    "kuid": "c557d7bdce004d4b825bbb177926f49e",
+                    "originalPropertyKey": "dataFormatting",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 3,
+                    "propertyKey": "dataFormatting",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Data Formatting",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "f3b0039192a247d68962b3c3bcdbc6a0",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"BP1\": 640,\n  \"BP2\": 1024,\n  \"BP3\": 1366,\n  \"BP4\": 1380\n}",
+                    "group": "General",
+                    "kuid": "d4a1f9c189df4cacaee6791bf189ac03",
+                    "originalPropertyKey": "breakpoints",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 4,
+                    "propertyKey": "breakpoints",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Breakpoints",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "f3b0039192a247d68962b3c3bcdbc6a0",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"segToAccounts\": \"${Collection.toAccounts.accountType}\"\n}",
+                    "group": "General",
+                    "kuid": "e3955ee3135e4fd888910a811a360817",
+                    "originalPropertyKey": "conditionalMappingKey",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 5,
+                    "propertyKey": "conditionalMappingKey",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Conditional Mapping Key",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "f3b0039192a247d68962b3c3bcdbc6a0",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"segToAccounts\": {\n    \"Loan\" : {\n      \"lblRecordField1\": \"${segmentMasterData.accountNameFormatted}\",\n      \"lblRecordField2\": \"${segmentMasterData.availableBalanceFormatted}\"\n    },\n    \"CreditCard\" : {\n      \"lblRecordField1\": \"${segmentMasterData.accountNameFormatted}\",\n      \"lblRecordField2\": \"${segmentMasterData.principalBalanceFormatted}\"\n    },\n    \"External\": {\n      \"lblRecordField1\": \"${segmentMasterData.beneficiaryNameFormatted}\",\n      \"lblRecordField2\": \"${segmentMasterData.availableBalanceFormatted}\",\n      \"lblRecordField3\": \"\"\n    }\n  }\n}",
+                    "group": "General",
+                    "kuid": "e3fd3ecd76e246398b9bb16e9671e105",
+                    "originalPropertyKey": "conditionalMapping",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 6,
+                    "propertyKey": "conditionalMapping",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Conditional Mapping",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "f3b0039192a247d68962b3c3bcdbc6a0",
+                    "type": "json",
+                    "value": ""
+                }
+            ],
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "b937c21b37aa420eb0dbf19dab745569",
+                    "originalPropertyKey": "autoComplete",
+                    "propertyIndex": 7,
+                    "propertyKey": "autoComplete1",
+                    "pw": {
+                        "access": "readwrite",
+                        "applicablePSPplatform": "desktopweb",
+                        "category": "widget",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "tbxPayeeDetail1 Auto Complete",
+                        "isHiddenInTool": false,
+                        "pspPlatform": {
+                            "desktop": [
+                                "desktopweb"
+                            ],
+                            "mobile": [],
+                            "tablet": []
+                        },
+                        "srcWidget": "tbxPayeeDetail1",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "TextField"
+                    },
+                    "srcWgtKUID": "d64acc480858484ba09984ddda83ea2f"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "i1bec13e13944e89912fd42b663557dc",
+                    "originalPropertyKey": "autoComplete",
+                    "propertyIndex": 8,
+                    "propertyKey": "autoComplete2",
+                    "pw": {
+                        "access": "readwrite",
+                        "applicablePSPplatform": "desktopweb",
+                        "category": "widget",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "tbxPayeeDetail2 Auto Complete",
+                        "isHiddenInTool": false,
+                        "pspPlatform": {
+                            "desktop": [
+                                "desktopweb"
+                            ],
+                            "mobile": [],
+                            "tablet": []
+                        },
+                        "srcWidget": "tbxPayeeDetail2",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "TextField"
+                    },
+                    "srcWgtKUID": "j7b5b4d4c0054679bc836cd1303ab672"
+                }
+            ]
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfinityOLB.Transfers",
+    "version": "1.0.0"
+}

@@ -1,0 +1,69 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "DNDConfig": null,
+    "_children_": [],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s24c92fc23b14f5484b693ee9b8a9b35",
+    "_top_": {
+        "type": "string",
+        "value": "-1dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 0,
+    "data": {
+        "headerLabel": "i18n.wealth.news",
+        "objName": "InstrumentDetails",
+        "objService": "WealthOrder",
+        "operation": "getStockNews",
+        "skinHeading": "bbSKnFlxffffff"
+    },
+    "id": "marketNewsCardComp",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "i08a6558de164116aae5dcbac13f37d9",
+    "masterType": 1,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "flxStocks",
+    "pf": "userwidgetmodel",
+    "responsiveData": {
+        "b1": {},
+        "b2": {
+            "top": {
+                "type": "string",
+                "value": ""
+            }
+        },
+        "b4": {}
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "sourceUserWidget": "g1dc41484a9f4c418e3c632793051675",
+    "wType": "UserWidgetInstance"
+}

@@ -1,0 +1,32 @@
+{
+    "AS_Button_g810c69807684403b331330cb298b3c4": {
+        "id": "AS_Button_g810c69807684403b331330cb298b3c4",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmDashboard",
+            "type": "forms",
+            "platform": "",
+            "KUID": "f008b8b804aa46ac8e1e56fddb197964"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "NAVIGATE_TO_FORM__b936372fb13844ea96bebdb69db4271f",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "frmHBLDashboard",
+            "friendlyName": "frmHBLDashboard",
+            "formKUID": "ccc9621ea7974d74be7837e317359547",
+            "projectName": "HomepageMA",
+            "mappings": {},
+            "mappingsOrder": [],
+            "enableMappingEditor": true,
+            "package": "AccountsUIModule",
+            "enableNavigationObj": true,
+            "navigationObj": "{\n    \"_meta_\": {\n        \"eventName\": \"onClick\",\n        \"widgetId\": \"btnNewDashboard\"\n    }\n}",
+            "isCustomInput": false
+        }]
+    }
+}

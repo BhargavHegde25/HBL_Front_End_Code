@@ -1,0 +1,59 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "DNDConfig": null,
+    "_children_": [],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s7dde23fb760457b8244840795b10032",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 0,
+    "data": {
+        "headerTemaplateId": "flxAllocationHead",
+        "rowTemplateId": "flxAllocation",
+        "segHeader": "{\n  \"lblAssetName\": \"Segment\",\n  \"lblCurrentWeight\": \"Current Weight\",\n  \"lblStrategyWeight\": \"Strategy Weight\"\n\n}",
+        "widgetMapping": "{\n  \"flxAllocation\": \"flxAllocation\",\n \"lblAssetName\": \"assetName\",\n \"lblCurrentWeight\" : \"CurrentWeight\",\n \"lblStrategyWeight\": \"StrategyWeight\",\n \"imgHealth\": \"imgHealth\",\n \"imgArrow\": \"imgArrow\",\n \"flxAssetName\": \"flxAssetName\"\n}"
+    },
+    "id": "sampledrilldown",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "e00fad5c9dcf4b99ae614ceae4dcf7b3",
+    "masterType": 1,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "flxDrillDown",
+    "pf": "userwidgetmodel",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "sourceUserWidget": "cbed52ce0af24316b8e8ba5f377663dd",
+    "wType": "UserWidgetInstance",
+    "zindex": 1
+}

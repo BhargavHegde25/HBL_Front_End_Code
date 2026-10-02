@@ -1,0 +1,50 @@
+{
+  "PresentationControllerConfig": {
+    "Default": {
+      "PresentationExtensions": [
+        "EnrollUIModule/PresentationControllers/PresentationController_Extension"
+      ],
+      "PresentationControllerClass": "EnrollUIModule/PresentationControllers/PresentationController"
+    },
+    "Desktop": {
+      "PresentationControllerClass": "EnrollUIModule/PresentationControllers/PresentationController_Desktop",
+      "PresentationExtensions": []
+    }
+  },
+  "Forms": {
+    "desktop": {
+      "frmEnrollBusiness": {
+        "Controller": "EnrollUIModule/frmEnrollBusinessController",
+        "ControllerExtensions": [],
+        "FormController": "kony.mvc.MDAFormController",
+        "FormName": "EnrollUIModule/frmEnrollBusiness",
+        "friendlyName": "frmEnrollBusiness"
+      },
+      "frmEnrollNow": {
+        "Controller": "EnrollUIModule/frmEnrollNowController",
+        "ControllerExtensions": [],
+        "FormController": "kony.mvc.MDAFormController",
+        "FormName": "EnrollUIModule/frmEnrollNow",
+        "friendlyName": "frmEnrollNow"
+      }
+    },
+    "mobile": {
+      "frmEnrollTermsCondition": {
+        "ControllerExtensions": [],
+        "FormController": "kony.mvc.MDAFormController",
+        "Controller": "EnrollUIModule/frmEnrollTermsConditionController",
+        "FormName": "EnrollUIModule/frmEnrollTermsCondition",
+        "friendlyName": "frmEnrollTermsCondition"
+      },
+      "frmEnrollSupport": {
+        "ControllerExtensions": [],
+        "FormController": "kony.mvc.MDAFormController",
+        "Controller": "EnrollUIModule/frmEnrollSupportController",
+        "FormName": "EnrollUIModule/frmEnrollSupport",
+        "friendlyName": "frmEnrollSupport"
+      }
+    }
+  },
+  "ModuleType": "UIModule",
+  "ModuleName": "UIModule"
+}

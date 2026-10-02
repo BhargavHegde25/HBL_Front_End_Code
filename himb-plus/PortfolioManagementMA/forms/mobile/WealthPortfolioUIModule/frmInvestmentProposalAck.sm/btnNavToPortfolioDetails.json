@@ -1,0 +1,57 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_bottom_": {
+        "type": "string",
+        "value": "20dp"
+    },
+    "_height_": {
+        "type": "string",
+        "value": "48dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "sc61e719c72447bf9f14db24bea23eb3",
+    "_text_": "Back to Accounts Details",
+    "_width_": {
+        "type": "string",
+        "value": "330dp"
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "disabledSkins": {
+        "focusSkin": "seac1ba6ca7c414b9c70447cef4ff8f1"
+    },
+    "displaytext": true,
+    "id": "btnNavToPortfolioDetails",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "d6531a4dd28b44da95f12ebfda288c20",
+    "name": "kony.ui.Button",
+    "parent": "flxAck",
+    "pf": "frmInvestmentProposalAck",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "texti18n": "i18n.wealth.backToAccDetails",
+    "wType": "Button"
+}

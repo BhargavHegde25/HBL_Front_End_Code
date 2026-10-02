@@ -1,0 +1,100 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "DNDConfig": null,
+    "_children_": [],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s7dde23fb760457b8244840795b10032",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 0,
+    "data": {
+        "headerTemaplateId": "flxAllocatHeader",
+        "rowTemplateId": "flxAllocat",
+        "segHeader": "{\n      \"lblAssetName\": \"Segment\",\n      \"lblCurrentWeight\": \"Weight\"\n    }",
+        "widgetMapping": "{\n  \"flxAllocat\": \"flxAllocation\",\n \"lblAssetName\": \"assetName\",\n \"lblCurrentWeight\" : \"StrategyWeight\",\n \"imgArrow\": \"imgArrow\",\n \"flxAssetName\": \"flxAssetName\",\n  \"flxSep\":\"flxSep\"\n}"
+    },
+    "id": "sampledrilldown",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "ef6cffa0c38640c899d10fe62dc1ee3a",
+    "masterType": 1,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "flxDrillDown",
+    "pf": "userwidgetmodel",
+    "responsiveData": {
+        "b1": {
+            "height": {
+                "type": "ref",
+                "value": "preferred"
+            }
+        },
+        "b2": {
+            "height": {
+                "type": "ref",
+                "value": "preferred"
+            },
+            "left": {
+                "type": "string",
+                "value": "0dp"
+            },
+            "top": {
+                "type": "string",
+                "value": "0dp"
+            },
+            "width": {
+                "type": "string",
+                "value": "100%"
+            },
+            "zIndex": 1
+        },
+        "b3": {
+            "left": {
+                "type": "string",
+                "value": "0dp"
+            },
+            "top": {
+                "type": "string",
+                "value": "0dp"
+            },
+            "width": {
+                "type": "string",
+                "value": "100%"
+            }
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "sourceUserWidget": "cbed52ce0af24316b8e8ba5f377663dd",
+    "wType": "UserWidgetInstance",
+    "zindex": 1
+}

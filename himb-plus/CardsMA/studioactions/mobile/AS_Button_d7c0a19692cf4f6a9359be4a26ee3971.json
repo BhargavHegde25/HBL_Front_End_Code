@@ -1,0 +1,30 @@
+{
+    "AS_Button_d7c0a19692cf4f6a9359be4a26ee3971": {
+        "id": "AS_Button_d7c0a19692cf4f6a9359be4a26ee3971",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTopUpDomesticCardConsentScreen",
+            "type": "forms",
+            "platform": "",
+            "KUID": "e66ef45452e44f0a9ba761094acb5415"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "NAVIGATE_TO_FORM__fffb5cf6eac14a3b83d48a921b0a6dc1",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "frmtopUpDomesticCardReviewScreen",
+            "friendlyName": "frmtopUpDomesticCardReviewScreen",
+            "formKUID": "e02cd7ba505a4791b6e6f3163e01d3e9",
+            "projectName": "CardsMA",
+            "mappings": {},
+            "mappingsOrder": [],
+            "enableMappingEditor": true,
+            "package": "ManageCardsUIModule",
+            "isCustomInput": false
+        }]
+    }
+}

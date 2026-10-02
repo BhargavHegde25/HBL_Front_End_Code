@@ -1,0 +1,56 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "45dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "5%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s8330988041f4463b893582a86369462",
+    "_text_": "",
+    "_width_": {
+        "type": "string",
+        "value": "85%"
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "centery": {
+        "type": "string",
+        "value": "90%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "scd4895ddb484ee8bacbeceb7784fc50",
+    "id": "btnLoginNow",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": false,
+    "kuid": "fbd504a47c594e3e9dffd1c64f2e0321",
+    "name": "kony.ui.Button",
+    "parent": "frmEnrollSuccess",
+    "pf": "frmEnrollSuccess",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "texti18n": "kony.mb.enrollment.loginNow",
+    "wType": "Button",
+    "zindex": 1
+}

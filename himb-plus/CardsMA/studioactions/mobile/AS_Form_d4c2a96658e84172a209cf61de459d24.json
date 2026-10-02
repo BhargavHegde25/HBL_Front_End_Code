@@ -1,0 +1,23 @@
+{
+    "AS_Form_d4c2a96658e84172a209cf61de459d24": {
+        "id": "AS_Form_d4c2a96658e84172a209cf61de459d24",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTopUpDomesticCardConsentScreen",
+            "type": "forms",
+            "platform": "",
+            "KUID": "e66ef45452e44f0a9ba761094acb5415"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_aefab362b8474e5aab9464ed2a335408",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.preShow();",
+            "parentId": null
+        }]
+    }
+}

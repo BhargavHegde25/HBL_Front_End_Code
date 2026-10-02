@@ -1,0 +1,106 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_bottom_": {
+        "type": "string",
+        "value": ""
+    },
+    "_height_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_right_": {
+        "type": "string",
+        "value": "190dp"
+    },
+    "_skin_": "s53f35797e894740848702af91fb98cb",
+    "_text_": "CANCEL",
+    "_top_": {
+        "type": "string",
+        "value": "20dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "150dp"
+    },
+    "accessibilityconfig": {
+        "a11yLabel": "Cancel"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "desktopweb": {
+        "psp": {
+            "hoverSkin": "s7ab6326aaf94c28b90b61fcb1b54547"
+        }
+    },
+    "disabledSkins": {
+        "focusSkin": "saefaf3143da4aabb5f35a6f3fb4e38c"
+    },
+    "displaytext": true,
+    "id": "btnTemporaryPinCancel",
+    "info": null,
+    "isvisible": true,
+    "kuid": "c4aabb75838d49fbbd80e31c980ff6fc",
+    "name": "kony.ui.Button",
+    "parent": "flxResetTemporaryPinButtons",
+    "pf": "frmResetTransactionPin",
+    "responsiveData": {
+        "b1": {
+            "right": {
+                "type": "string",
+                "value": "170dp"
+            }
+        },
+        "b2": {
+            "right": {
+                "type": "string",
+                "value": "170dp"
+            },
+            "top": {
+                "type": "string",
+                "value": "30dp"
+            }
+        },
+        "b3": {
+            "bottom": {
+                "type": "string",
+                "value": ""
+            },
+            "desktopweb": {
+                "bottom": {
+                    "type": "string",
+                    "value": ""
+                }
+            },
+            "right": {
+                "type": "string",
+                "value": "5%"
+            },
+            "top": {
+                "type": "string",
+                "value": "10dp"
+            },
+            "width": {
+                "type": "string",
+                "value": "90%"
+            }
+        }
+    },
+    "texti18n": "i18n.transfers.Cancel",
+    "tooltip": "Cancel",
+    "wType": "Button",
+    "zindex": 1
+}

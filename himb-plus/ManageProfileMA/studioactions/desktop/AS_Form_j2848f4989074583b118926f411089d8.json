@@ -1,0 +1,27 @@
+{
+    "AS_Form_j2848f4989074583b118926f411089d8": {
+        "id": "AS_Form_j2848f4989074583b118926f411089d8",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmEditTransactionflow",
+            "type": "forms",
+            "platform": null,
+            "KUID": "hd9e69afd39349a78f30e69e5d4646cc"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__ide_init_e96d12f5ebd64383a472cf439c32c74b",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "init",
+            "display": "init",
+            "inputparams": [],
+            "callbackType": null,
+            "disabled": null,
+            "source": "controller"
+        }]
+    }
+}

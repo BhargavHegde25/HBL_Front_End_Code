@@ -1,0 +1,8 @@
+{
+    "ModuleName": "MenuHandler",
+	"ModuleType": "Manager",
+    "BusinessControllerConfig": {
+        "BusinessExtensions": ["MenuHandler/BusinessControllers/BusinessController_Extension"],
+        "BusinessControllerClass": "MenuHandler/BusinessControllers/BusinessController"
+    }
+}

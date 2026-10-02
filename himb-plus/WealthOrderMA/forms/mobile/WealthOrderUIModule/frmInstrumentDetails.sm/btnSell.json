@@ -1,0 +1,53 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "50dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "18dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "se59c7b9f58b4d91b86ff5304e2cdb6b",
+    "_text_": "Sell",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "47%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "disabledSkins": {},
+    "displaytext": true,
+    "focusskin": "s61262a2e7e14deaa0157536ef889c3b",
+    "id": "btnSell",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "facbfc5801574880a677fec97a06b819",
+    "name": "kony.ui.Button",
+    "parent": "flxInstrumentOrder",
+    "pf": "frmInstrumentDetails",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "texti18n": "i18n.wealth.Sell",
+    "wType": "Button",
+    "zindex": 1
+}

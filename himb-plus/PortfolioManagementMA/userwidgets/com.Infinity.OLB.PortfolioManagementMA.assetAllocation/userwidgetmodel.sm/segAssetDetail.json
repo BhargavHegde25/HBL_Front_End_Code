@@ -1,0 +1,198 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "_bottom_": {
+        "type": "string",
+        "value": "20dp"
+    },
+    "_data_": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+    ],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "number",
+        "value": ""
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "10dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "80%"
+    },
+    "alternaterowskin": null,
+    "autogrowmode": 1,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "counter": "02",
+    "desktop": {
+        "_data_": [
+            {
+                "lblAsset": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Share"
+                },
+                "lblValue": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "$28,612.70"
+                },
+                "lblWeight": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "(28.8%)"
+                }
+            },
+            {
+                "lblAsset": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Fund"
+                },
+                "lblValue": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "$4,940.00"
+                },
+                "lblWeight": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "(5.6%)"
+                }
+            },
+            {
+                "lblAsset": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Cash"
+                },
+                "lblValue": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "$15,432.00"
+                },
+                "lblWeight": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "(15.60%)"
+                }
+            }
+        ],
+        "rowTemplateId": "e23a087f593741babd349d02a6109fc6",
+        "rowtemplate": "flxSegAssetValue",
+        "sectionHeaderTemplateId": null,
+        "selectionBehaviorConfig": null,
+        "widgetdatamap": {
+            "flxAssetDetail": "flxAssetDetail",
+            "flxDot": "flxDot",
+            "flxSegAssetValue": "flxSegAssetValue",
+            "flxValue": "flxValue",
+            "lblAsset": "lblAsset",
+            "lblValue": "lblValue",
+            "lblWeight": "lblWeight"
+        }
+    },
+    "focusedindex": null,
+    "focuseditem": null,
+    "groupcells": false,
+    "hasSections": false,
+    "id": "segAssetDetail",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "u8a80caa068e42259257a26df2617986",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom",
+        "vdistance": 1
+    },
+    "parent": "flxGraph",
+    "pf": "userwidgetmodel",
+    "pushtorefreshskin": null,
+    "responsiveData": {
+        "b2": {
+            "left": {
+                "type": "string",
+                "value": "-10dp"
+            },
+            "top": {
+                "type": "string",
+                "value": "20dp"
+            },
+            "width": {
+                "type": "string",
+                "value": "50%"
+            }
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainselection": false,
+    "rowcounter": 2,
+    "rowfocusskin": null,
+    "rowskin": "scf5f90f6ac04976ab88b2a4f7153285",
+    "rowtemplate": null,
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionheaderskin": "scf5f90f6ac04976ab88b2a4f7153285",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "separatorcolor": "aaaaaa00",
+    "separatorrequired": false,
+    "separatorthickness": 1,
+    "showscrollbars": false,
+    "swipeContext": {
+        "currentPage": 0,
+        "imageWidth": 547,
+        "widthRatio": 0
+    },
+    "viewtype": "tableview",
+    "vizProps": {},
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "flxDot": "flxDot",
+        "flxSegAssetValue": "flxSegAssetValue",
+        "lblAsset": "lblAsset",
+        "lblValue": "lblValue",
+        "lblWeight": "lblWeight"
+    }
+}

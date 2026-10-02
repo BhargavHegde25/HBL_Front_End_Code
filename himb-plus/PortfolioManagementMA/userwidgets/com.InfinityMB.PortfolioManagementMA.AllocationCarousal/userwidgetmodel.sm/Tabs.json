@@ -1,0 +1,162 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "DNDConfig": null,
+    "_children_": [],
+    "_height_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_right_": {
+        "type": "string",
+        "value": "0"
+    },
+    "_skin_": "sf524be4ebca4062931b9eb3dcff175b",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "areflexpropsreferenced": false,
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "clipbounds": true,
+    "containerweight": 0,
+    "dataDiffs": {
+        "Tabs": {
+            "__events__": {},
+            "__info__": {
+                "isRoot": true,
+                "kuid": "u26fbb5165974bcfb614e5d3b28e4b58",
+                "srcKUID": "u83cfaa3d6cd47e38eab1c9c6531804a",
+                "wType": "FlexContainer"
+            },
+            "centerX": {
+                "Default": {
+                    "type": "string",
+                    "value": "50%"
+                }
+            },
+            "isVisible": false,
+            "left": {
+                "Default": {
+                    "type": "string",
+                    "value": "0"
+                }
+            },
+            "right": {
+                "Default": {
+                    "type": "string",
+                    "value": "0"
+                }
+            },
+            "width": {
+                "Default": {
+                    "type": "ref",
+                    "value": "preferred"
+                }
+            }
+        },
+        "btn0": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "u0f4865fe109406cb9317f8e2d7db05b",
+                "srcKUID": "u82c47f2ab1d4724865e2ffb19d350aa",
+                "wType": "Button"
+            },
+            "width": {
+                "Default": {
+                    "type": "string",
+                    "value": "25%"
+                }
+            }
+        },
+        "btn00": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "ua43e813666e471989b0a832968d99c8",
+                "srcKUID": "u475780cbbae4dccaf4346f14b5b370c",
+                "wType": "Button"
+            },
+            "text": "currency",
+            "width": {
+                "Default": {
+                    "type": "string",
+                    "value": "25%"
+                }
+            }
+        },
+        "btn01": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "u8dbd9d208124f888afface43f8fb0fc",
+                "srcKUID": "u9a6b3893af34c338b4d1184f392eab2",
+                "wType": "Button"
+            },
+            "width": {
+                "Default": {
+                    "type": "string",
+                    "value": "25%"
+                }
+            }
+        },
+        "flxScrollTabs": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "ubff5aa90d64471cb76a99cd06aeeb6b",
+                "srcKUID": "ue88abbea8984ece9efada4ddc9f756d",
+                "wType": "FlexScrollContainer"
+            },
+            "width": {
+                "Default": {
+                    "type": "string",
+                    "value": "100%"
+                }
+            }
+        }
+    },
+    "enablescrolling": true,
+    "id": "Tabs",
+    "info": null,
+    "iscustomlayout": false,
+    "isdatareferenced": false,
+    "isvisible": false,
+    "kuid": "u26fbb5165974bcfb614e5d3b28e4b58",
+    "layouttype": 2,
+    "masterType": 0,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "flxTabMain",
+    "pf": "userwidgetmodel",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "sourceUserWidget": "u83cfaa3d6cd47e38eab1c9c6531804a",
+    "wType": "UserWidgetInstance",
+    "zindex": 1
+}

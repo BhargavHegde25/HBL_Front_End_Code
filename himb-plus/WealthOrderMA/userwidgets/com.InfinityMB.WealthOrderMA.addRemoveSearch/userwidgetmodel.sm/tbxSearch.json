@@ -1,0 +1,88 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizTextBox2",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "38dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "4%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        40,
+        8,
+        40,
+        0
+    ],
+    "_placeholder_": "Add/Remove Instruments",
+    "_skin_": "s0dc17f0cd7748588ff8f32c2bdd41e3",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "76%"
+    },
+    "accessibilityconfig": {
+        "a11yLabel": "Search"
+    },
+    "android": {
+        "psp": {
+            "keyboardActionLabel": 12
+        }
+    },
+    "autocapitalize": "none",
+    "autocomplete": false,
+    "autocorrect": false,
+    "autofilter": false,
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerheight": "",
+    "containerheightmode": 1,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "focusskin": "s3eaacc3cd154862b4935c9ce116df1c",
+    "id": "tbxSearch",
+    "info": null,
+    "inputAccessoryViewType": 4,
+    "iphone": {
+        "psp": {
+            "inputAccessoryViewType": 4,
+            "keyboardActionLabel": 3,
+            "showClearButton": false,
+            "showCloseButton": false
+        }
+    },
+    "iscustomlayout": true,
+    "isvisible": true,
+    "keyboardactionlabel": 3,
+    "keyboardtype": "A",
+    "kuid": "c4ae4d9063e14e13b3d1bf1216a7221e",
+    "mode": "A",
+    "name": "kony.ui.TextBox2",
+    "paddinginpixel": true,
+    "parent": "flxSearchMain",
+    "pf": "userwidgetmodel",
+    "placeholderi18n": "i18n.wealth.addOrRemoveInstruments",
+    "placeholderskin": "s3eaacc3cd154862b4935c9ce116df1c",
+    "retaincontentalignment": true,
+    "retainflexpositionproperties": false,
+    "securetextentry": false,
+    "showclearbutton": false,
+    "textinputmode": "A",
+    "tooltip": "",
+    "viewtype": "default",
+    "wType": "TextField"
+}

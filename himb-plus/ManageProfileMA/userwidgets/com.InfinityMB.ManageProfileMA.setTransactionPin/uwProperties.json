@@ -1,0 +1,301 @@
+{
+    "classname": "setTransactionPin",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "g112b07c29494305afd1044d1b777e0e",
+                    "paramList": [],
+                    "propertyKey": "showErrorMessage",
+                    "pw": {
+                        "displayName": "showErrorMessage",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "fb3299a6560843d3a8e796f16ff78204",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "b874915ddf814f1c9666229bc4aaba3f",
+                    "paramList": [],
+                    "propertyKey": "resetUI",
+                    "pw": {
+                        "displayName": "resetUI",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "fb3299a6560843d3a8e796f16ff78204",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "b66c5a3404474e2fb1c7f9cc3e63521c",
+                    "paramList": [
+                        {
+                            "name": "response"
+                        }
+                    ],
+                    "propertyIndex": 1,
+                    "propertyKey": "onSuccessCallback",
+                    "pw": {
+                        "displayName": "onSuccessCallback",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "fb3299a6560843d3a8e796f16ff78204",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "f8cbb9a46c824e6c879a9752a0580e93",
+                    "paramList": [
+                        {
+                            "name": "response"
+                        }
+                    ],
+                    "propertyIndex": 1,
+                    "propertyKey": "onFailureCallback",
+                    "pw": {
+                        "displayName": "onFailureCallback",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "fb3299a6560843d3a8e796f16ff78204",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "a08291a584bc44c89d1b74fcea379efd",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "onCancel",
+                    "pw": {
+                        "displayName": "onCancel",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "fb3299a6560843d3a8e796f16ff78204",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [
+                "Images",
+                "Skins",
+                "Object Service"
+            ],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "sknHBLBtnf4f5f8Rounded8pxffffff100pr",
+                    "group": "Skins",
+                    "kuid": "a2d58c37a44a41b5a4391cd791e78b39",
+                    "originalPropertyKey": "buttonDisabledSkin",
+                    "propertyIndex": 1,
+                    "propertyKey": "buttonDisabledSkin",
+                    "pw": {
+                        "displayName": "Button Disabled Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fb3299a6560843d3a8e796f16ff78204",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "UserManagement",
+                    "group": "Object Service",
+                    "kuid": "g698f3a50f544e73ad99efb3caf2347b",
+                    "originalPropertyKey": "objectServiceName",
+                    "propertyIndex": 1,
+                    "propertyKey": "objectServiceName",
+                    "pw": {
+                        "displayName": "Object Service Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fb3299a6560843d3a8e796f16ff78204",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "viewicon.png",
+                    "group": "Images",
+                    "kuid": "c47a539d8a7a4bd0937864a4947cc14c",
+                    "originalPropertyKey": "textVisiblityOff",
+                    "propertyIndex": 1,
+                    "propertyKey": "textVisiblityOff",
+                    "pw": {
+                        "displayName": "Textbox Visibility Off",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fb3299a6560843d3a8e796f16ff78204",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknHBLBtn851a1cRounded8pxffffff100pr",
+                    "group": "Skins",
+                    "kuid": "cfb92e7a35fa47df9470b7d7898ce641",
+                    "originalPropertyKey": "buttonEnabledSkin",
+                    "propertyIndex": 2,
+                    "propertyKey": "buttonEnabledSkin",
+                    "pw": {
+                        "displayName": "Button Enabled Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fb3299a6560843d3a8e796f16ff78204",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ExternalUsers",
+                    "group": "Object Service",
+                    "kuid": "jc594f511dc84d6f8c823b803704af98",
+                    "originalPropertyKey": "dataModel",
+                    "propertyIndex": 2,
+                    "propertyKey": "dataModel",
+                    "pw": {
+                        "displayName": "Data Model",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fb3299a6560843d3a8e796f16ff78204",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "viewactive.png",
+                    "group": "Images",
+                    "kuid": "d5cb4fe194874838bc6384f37637fbb6",
+                    "originalPropertyKey": "textVisiblityOn",
+                    "propertyIndex": 2,
+                    "propertyKey": "textVisiblityOn",
+                    "pw": {
+                        "displayName": "Textbox Visibility On",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fb3299a6560843d3a8e796f16ff78204",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "updateUserPassword",
+                    "group": "Object Service",
+                    "kuid": "e8d8b2ac3f43429980caecb9a3b51d42",
+                    "originalPropertyKey": "updatePassword",
+                    "propertyIndex": 3,
+                    "propertyKey": "updatePassword",
+                    "pw": {
+                        "displayName": "Update Password Operation Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fb3299a6560843d3a8e796f16ff78204",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "greentick.png",
+                    "group": "Images",
+                    "kuid": "a823ce9ef99f4613bb5d915efcf3e229",
+                    "originalPropertyKey": "greenTick",
+                    "propertyIndex": 3,
+                    "propertyKey": "greenTick",
+                    "pw": {
+                        "displayName": "Green Tick",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fb3299a6560843d3a8e796f16ff78204",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "verifyExistingPassword",
+                    "group": "Object Service",
+                    "kuid": "h06a6ca0a501469aaad9683420f7b4b7",
+                    "originalPropertyKey": "verifyExistingPassword",
+                    "propertyIndex": 4,
+                    "propertyKey": "verifyExistingPassword",
+                    "pw": {
+                        "displayName": "Verify Existing Password Operation",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fb3299a6560843d3a8e796f16ff78204",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "tickmark.png",
+                    "group": "Images",
+                    "kuid": "d09dee3ab98b4c9985a922edac52b5ef",
+                    "originalPropertyKey": "grayTick",
+                    "propertyIndex": 4,
+                    "propertyKey": "grayTick",
+                    "pw": {
+                        "displayName": "Gray Tick",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fb3299a6560843d3a8e796f16ff78204",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ExternalUsers_2",
+                    "group": "Object Service",
+                    "kuid": "dcf9b685987d44a59c4a1c1718568c17",
+                    "originalPropertyKey": "dbxUserDataModel",
+                    "propertyIndex": 5,
+                    "propertyKey": "dbxUserDataModel",
+                    "pw": {
+                        "displayName": "User Data Model Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fb3299a6560843d3a8e796f16ff78204",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "getPasswordRulesAndPolicy",
+                    "group": "Object Service",
+                    "kuid": "geec4fd0d58e4c01832fd114cbf0b43e",
+                    "originalPropertyKey": "getPasswordRulesAndPolicy",
+                    "propertyIndex": 6,
+                    "propertyKey": "getPasswordRulesAndPolicy",
+                    "pw": {
+                        "displayName": "Get Password Rules Operation Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fb3299a6560843d3a8e796f16ff78204",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfinityMB.ManageProfileMA",
+    "version": "1.0.0"
+}

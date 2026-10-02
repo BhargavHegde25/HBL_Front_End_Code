@@ -1,0 +1,205 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "_data_": [
+        {
+            "lblKey": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Card Type"
+            },
+            "lblValue": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "International"
+            }
+        },
+        {
+            "lblKey": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Card Name "
+            },
+            "lblValue": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Virtual Visa Card"
+            }
+        },
+        {
+            "lblKey": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Daily Purchase Limit"
+            },
+            "lblValue": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "USD 30,000"
+            }
+        },
+        {
+            "lblKey": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Daily Withdrawal Limit"
+            },
+            "lblValue": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "USD 10,000"
+            }
+        },
+        {
+            "lblKey": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Issuance Fee"
+            },
+            "lblValue": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "USD 15"
+            }
+        },
+        {
+            "lblKey": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Validity"
+            },
+            "lblValue": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "1 Year"
+            }
+        },
+        {
+            "lblKey": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Name on the Card"
+            },
+            "lblValue": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Nikit Poudel"
+            }
+        },
+        {
+            "lblKey": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Preferred Branch for Card Collection"
+            },
+            "lblValue": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Kathmandu Durbar Marg"
+            }
+        },
+        {
+            "lblKey": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "PAN Number"
+            },
+            "lblValue": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "567801677"
+            }
+        },
+        {
+            "lblKey": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Amount"
+            },
+            "lblValue": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "USD 300"
+            }
+        }
+    ],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "3%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "92%"
+    },
+    "autogrowmode": 1,
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "counter": "09",
+    "focusedindex": null,
+    "focuseditem": null,
+    "groupcells": false,
+    "hasSections": false,
+    "id": "segCardDetails",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "indicator": "none"
+        }
+    },
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "f20d82aa93a242e8b5ed35a51ab8e18d",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "flxMainContainer",
+    "pf": "frmCardRequestSuccess",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainselection": false,
+    "rowTemplateId": "add2ec835d4548c7bc06eb80b688b02c",
+    "rowcounter": 9,
+    "rowfocusskin": "s2dee8ba04ed42f0870b98d0ca3b85f3",
+    "rowskin": "scf5f90f6ac04976ab88b2a4f7153285",
+    "rowtemplate": "flxSegTransferNew",
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionheaderskin": "sbb16ef8093f4eefab3d6ed47a1ef57d",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "separatorcolor": "aaaaaa00",
+    "separatorrequired": true,
+    "separatorthickness": 1,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "vizProps": {},
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "flxSegTransferNew": "flxSegTransferNew",
+        "lblKey": "lblKey",
+        "lblLineSeperator": "lblLineSeperator",
+        "lblValue": "lblValue"
+    }
+}

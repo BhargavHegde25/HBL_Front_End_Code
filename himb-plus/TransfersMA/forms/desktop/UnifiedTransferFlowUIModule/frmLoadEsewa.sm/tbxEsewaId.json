@@ -1,0 +1,88 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizTextBox2",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        2,
+        0,
+        0,
+        0
+    ],
+    "_placeholder_": "Enter eSewa Id",
+    "_skin_": "s0ee5c78c88c4841b39edc94e4cf051f",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "96%"
+    },
+    "autocapitalize": "none",
+    "autocomplete": false,
+    "autocorrect": false,
+    "autofilter": false,
+    "canUpdateUI": true,
+    "containerheight": "",
+    "containerheightmode": 1,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "desktopweb": {
+        "placeholderSkin": "s053121b48b6465cba0331cda4ce88d0",
+        "psp": {
+            "hoverSkin": "s60ee52f2a09465fb7d068c397a7bb20"
+        }
+    },
+    "disabledSkins": {},
+    "focusskin": null,
+    "id": "tbxEsewaId",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "keyboardstyle": "A",
+    "keyboardtype": "A",
+    "kuid": "b7bafaecae0e4636a5274e1936c2d996",
+    "maxtextlength": 255,
+    "mode": "A",
+    "name": "kony.ui.TextBox2",
+    "parent": "flxEsewaValue",
+    "pf": "frmLoadEsewa",
+    "placeholderi18n": "i18n.eSewa.enterEsewaId",
+    "placeholderskin": "s6bef0f091374991a154eb89a7b6eef8",
+    "responsiveData": {
+        "b2": {
+            "height": {
+                "type": "string",
+                "value": "100%"
+            }
+        },
+        "b3": {
+            "desktopweb": {
+                "placeholderSkin": "s2fa3916bba54444a9903e226b31cded"
+            },
+            "placeholderSkin": "s2fa3916bba54444a9903e226b31cded"
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "securetextentry": false,
+    "textinputmode": "A",
+    "tooltip": "",
+    "viewtype": "default",
+    "wType": "TextField",
+    "zindex": 1
+}

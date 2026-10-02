@@ -1,0 +1,190 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizScrollFlexForm",
+    "CopyflxTitleSeparator0b7f94a24f63d4b": {
+        "DNDConfig": null,
+        "_bottom_": {
+            "type": "string",
+            "value": "0dp"
+        },
+        "_height_": {
+            "type": "string",
+            "value": "1dp"
+        },
+        "_left_": {
+            "type": "string",
+            "value": "0dp"
+        },
+        "_margin_": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "_orientation_": 6,
+        "_padding_": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "_percent_": true,
+        "_skin_": "s0074dd8bb9a4167846e00f5c2732998",
+        "_width_": {
+            "type": "string",
+            "value": "100%"
+        },
+        "allboxes": [],
+        "autogrowmode": 0,
+        "canUpdateUI": true,
+        "children": [],
+        "clipbounds": true,
+        "containerweight": 100,
+        "enablescrolling": true,
+        "genericProperties": {},
+        "id": "CopyflxTitleSeparator0b7f94a24f63d4b",
+        "info": null,
+        "iscustomlayout": false,
+        "isvisible": true,
+        "kuid": "a75ce05c242a4b359ef13070dfc8b9fa",
+        "layouttype": 2,
+        "name": "kony.ui.FlexContainer",
+        "parent": "CopyflxTitle0jd0849352cb74a",
+        "pf": "frmHBLUnifiedDashboard",
+        "retaincontentalignment": false,
+        "retainflexpositionproperties": false,
+        "snapgridsize": 10,
+        "snapshot": {
+            "md5": "9f5BAltXEYGgZ/i2e1UwPsgBQp4="
+        },
+        "snaptogrid": true,
+        "wType": "FlexContainer",
+        "widgetalignment": 1,
+        "zindex": 1
+    },
+    "DNDConfig": null,
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_pxMenuIndex": [
+        0,
+        1,
+        0,
+        1
+    ],
+    "_skin_": "s458f5cae179417d981f5e53f5afc274",
+    "_title_": "My Accounts",
+    "accessibilityconfig": {
+        "a11yNavigationMode": 0
+    },
+    "addWidgetsdone": false,
+    "allboxes": [],
+    "allowverticalbounce": true,
+    "android": {
+        "needAppMenu": false,
+        "psp": {
+            "windowSoftInputMode": 2
+        },
+        "titleBar": false
+    },
+    "bounces": false,
+    "canUpdateUI": true,
+    "children": [
+        "flxTitle",
+        "flxBody",
+        "flxMenu",
+        "flxHamburger",
+        "ShowCommonPopup",
+        "flxAccInfoPopupContainer",
+        "flxPopup"
+    ],
+    "configureExtendTop": true,
+    "containerweight": 100,
+    "controllerInfo": {
+        "default": {
+            "channel": "mobile",
+            "name": "frmHBLUnifiedDashboardController"
+        }
+    },
+    "currentLocale": "default",
+    "desktopweb": {
+        "needAppMenu": false
+    },
+    "device": "Pixel2XL",
+    "displayorientation": 1,
+    "enabledforidletimeout": true,
+    "enablescrolling": false,
+    "footeroverlap": false,
+    "friendlyName": "frmHBLUnifiedDashboard",
+    "headeroverlap": false,
+    "id": "frmHBLUnifiedDashboard",
+    "ide_init": "AS_Form_bbd6d3781bd64e85b11fbe06a8d9961b",
+    "ide_onHide": "AS_Form_f5b202d391ed4d0d915b1863ff50a934",
+    "ide_preShow": "AS_Form_dd23bd35a533431cac06b5d355725902",
+    "info": null,
+    "initdone": false,
+    "inputaccessoryviewtype": 4,
+    "ipad": {
+        "psp": {
+            "inputAccessoryViewType": 4
+        }
+    },
+    "iphone": {
+        "needAppMenu": false,
+        "psp": {
+            "configureExtendTop": false,
+            "configureStatusBarStyle": true,
+            "inputAccessoryViewType": 4,
+            "needsIndicatorDuringPostShow": false,
+            "requiresBottomSafeAreaInset": false,
+            "requiresLeftSafeAreaInset": false,
+            "requiresRightSafeAreaInset": false,
+            "requiresTopSafeAreaInset": false,
+            "titleBarAttributes": {
+                "barStyle": 0,
+                "hidesBackButton": true,
+                "kuid": "d0c0eb3859f54a3f95be9f537476da90",
+                "leftBarButtonItems": [],
+                "leftItemsSupplementBackButton": true,
+                "prompt": "",
+                "renderTitleText": true,
+                "rightBarButtonItems": [],
+                "tintColor": "ffffff00",
+                "translucent": false
+            }
+        },
+        "titleBar": false
+    },
+    "isvisible": true,
+    "kuid": "d3b7739ea59d4b4786a835f1a1fc1222",
+    "layouttype": 2,
+    "name": "kony.ui.Form2",
+    "needappmenu": true,
+    "paddinginpixel": false,
+    "pagingenabled": false,
+    "platform": "android",
+    "prevDevice": "iPhone13",
+    "prevPlatform": "iphone",
+    "requiresBottomSafeAreaInset": false,
+    "requiresLeftSafeAreaInset": false,
+    "requiresRightSafeAreaInset": false,
+    "requiresTopSafeAreaInset": false,
+    "retainscrollposition": true,
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "texti18n": "kony.mb.MyAccounts.Title",
+    "titleBarSkin": "scb8fcbdebb649d1b5900564018c8da5",
+    "titlebar": false,
+    "type": 3,
+    "wType": "Form"
+}

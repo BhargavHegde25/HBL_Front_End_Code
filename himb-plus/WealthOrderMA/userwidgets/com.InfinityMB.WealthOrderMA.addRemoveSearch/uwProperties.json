@@ -1,0 +1,81 @@
+{
+    "classname": "addRemoveSearch",
+    "definitions": {
+        "apis": {
+            "custom": [],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "b93de8223ba8487b913f2c8cae128ac3",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "showVisibleSearchWatch",
+                    "pw": {
+                        "displayName": "showVisibleSearchWatch",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "b2ed7211fe3c4c2bafd63a5e52386008",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "g95446da1a39454d88dffdaa3481cfee",
+                    "paramList": [],
+                    "propertyIndex": 2,
+                    "propertyKey": "viewInstrumentDetails",
+                    "pw": {
+                        "displayName": "viewInstrumentDetails",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "b2ed7211fe3c4c2bafd63a5e52386008",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n\"ObjectName\": \"FavouriteInstruments\",\n\"ServiceName\": \"WealthOrder\",\n\"OperationName\": \"getSearchFavoriteInstruments\"\n}",
+                    "group": "General",
+                    "kuid": "ded8b4c32eaa4c058d162a624f194e2c",
+                    "originalPropertyKey": "servicecall",
+                    "propertyIndex": 1,
+                    "propertyKey": "servicecall",
+                    "pw": {
+                        "displayName": "Service Call",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b2ed7211fe3c4c2bafd63a5e52386008",
+                    "type": "json",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfinityMB.WealthOrderMA",
+    "version": "1.0.0"
+}

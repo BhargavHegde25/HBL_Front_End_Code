@@ -1,0 +1,83 @@
+{
+    "classname": "Reports",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "ife1116af0864076a4695a8233f9f9e8",
+                    "paramList": [],
+                    "propertyKey": "generateReport",
+                    "pw": {
+                        "displayName": "generateReport",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "afce075927ea4d88885727e5d0f4ea8f",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "jbd12f84509a4de083aff64aba7e5aff",
+                    "paramList": [],
+                    "propertyKey": "preshow",
+                    "pw": {
+                        "displayName": "preshow",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "afce075927ea4d88885727e5d0f4ea8f",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "f5d72ade60ce4bbaacf083ba7768a357",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "onOptionSelect",
+                    "pw": {
+                        "displayName": "onOptionSelect",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "afce075927ea4d88885727e5d0f4ea8f",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "a79168e3cb36436a91cbe150b096141f",
+                    "paramList": [],
+                    "propertyIndex": 2,
+                    "propertyKey": "btnVisibility",
+                    "pw": {
+                        "displayName": "btnVisibility",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "afce075927ea4d88885727e5d0f4ea8f",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.Infinity.MB.PortfolioManagementMA",
+    "version": "1.0.0"
+}

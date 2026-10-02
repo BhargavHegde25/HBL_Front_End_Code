@@ -1,0 +1,159 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "DNDConfig": null,
+    "_children_": [],
+    "_height_": {
+        "type": "string",
+        "value": "60dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "se15a2ce22274d8bafc3956d7d10af30",
+    "_top_": {
+        "type": "string",
+        "value": "30dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "areflexpropsreferenced": false,
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50.00%"
+    },
+    "clipbounds": false,
+    "containerweight": 0,
+    "dataDiffs": {
+        "AlterneteActions": {
+            "__events__": {},
+            "__info__": {
+                "isRoot": true,
+                "kuid": "f28b6c36b8f9426c87ee8a0c27c0308d",
+                "srcKUID": "ba68e7f06305436fa6ebfcbc05efdfaf",
+                "wType": "FlexContainer"
+            },
+            "autogrowMode": {
+                "Default": 0
+            },
+            "height": {
+                "Default": {
+                    "type": "string",
+                    "value": "60dp"
+                }
+            },
+            "isVisible": false,
+            "responsiveData": {},
+            "top": {
+                "Default": {
+                    "type": "string",
+                    "value": "30dp"
+                }
+            },
+            "width": {
+                "Default": {
+                    "type": "string",
+                    "value": "100%"
+                }
+            }
+        },
+        "flcVerticalBar": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "de53afa5d64b4abc967a8a2e98e62f3a",
+                "srcKUID": "c1e3a82dec2c494da32fadaf2ab509f8",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxImgContainer": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "def6f7bede7c477b84ad7a76987fb854",
+                "srcKUID": "a5b043f56ff04c68b0d8766aeb55b239",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxImgMain": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "b06651343c044b71a7f745ea9f332c9f",
+                "srcKUID": "b04cedab42e84d7dae9726a221da10c1",
+                "wType": "FlexContainer"
+            }
+        },
+        "fontIconOption": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "fadc82c6b93f4f8f9b175eb2d8947f51",
+                "srcKUID": "ca39e4c59b8c42d9a5bc72d83c9a2ff8",
+                "wType": "Label"
+            },
+            "responsiveData": {},
+            "text": "r"
+        },
+        "imgOptionKA": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "c6b4ebffa10643ca8f84edfeba18554f",
+                "srcKUID": "a1d6b1a537f741ed86fe089d4f49bfdb",
+                "wType": "Image"
+            },
+            "responsiveData": {},
+            "src": "reset_password.png"
+        },
+        "imgRightTip": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "fc55e6fcfaff4d118675551d54b44f4c",
+                "srcKUID": "fd6a5a99442143d381c3d4fc2afbaf67",
+                "wType": "Image"
+            },
+            "src": "lefy_arrow_white.png"
+        },
+        "rtxCVV": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "ed08bb05899a4e9f9f9ac7d074da6f9d",
+                "srcKUID": "h34b4091f7d347fcb7805380e64df24f",
+                "wType": "RichText"
+            },
+            "i18n_text": "i18n.common.lostDeviceBindaNewOne",
+            "responsiveData": {},
+            "text": "Lost device, bind a new one"
+        }
+    },
+    "enablescrolling": true,
+    "focusskin": null,
+    "id": "lostDevice",
+    "info": null,
+    "isdatareferenced": false,
+    "isvisible": false,
+    "kuid": "f28b6c36b8f9426c87ee8a0c27c0308d",
+    "layouttype": 2,
+    "masterType": 0,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "flxOptions",
+    "pf": "userwidgetmodel",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "sourceUserWidget": "ba68e7f06305436fa6ebfcbc05efdfaf",
+    "wType": "UserWidgetInstance"
+}

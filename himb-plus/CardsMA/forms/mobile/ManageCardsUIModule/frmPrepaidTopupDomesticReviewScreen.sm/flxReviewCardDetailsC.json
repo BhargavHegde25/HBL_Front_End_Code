@@ -1,0 +1,149 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "DNDConfig": null,
+    "_children_": [],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s89a867252bb4ccd9771a2970eccd5ce",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "areflexpropsreferenced": false,
+    "autogrowmode": 1,
+    "canUpdateUI": true,
+    "clipbounds": false,
+    "containerweight": 0,
+    "dataDiffs": {
+        "flxFromAccDetails": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "d430e33c3d804af48e8a7d1e113bc26a",
+                "srcKUID": "gedfbca123a04240a7c833be1bfc90e1",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxFromAccDetailsMain": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "ba371bdd60284102a8a1b5d5d267c94f",
+                "srcKUID": "g98fa7b9f7054236b1ebfcfb615e7946",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxFromAccMain": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "a85863bb0ce54edfbb125d5e183993e6",
+                "srcKUID": "a225e4c0da8a4d1c96da2d9efa905e81",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxFromAccountNumberContainer": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "e87e71e3e08f4b83b386ac878dd970c5",
+                "srcKUID": "fc98e3e4bb9c47d0afb539c09da42bdb",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxLeftRed": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "ab90b3be9f834eb1bee57de4e626d90c",
+                "srcKUID": "d4d2c32887b948de9dd885312e808a72",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxReviewFromAccDetails": {
+            "__events__": {},
+            "__info__": {
+                "isRoot": true,
+                "kuid": "jfd87112eac1403e848148d801fb3813",
+                "srcKUID": "b956abb4f311413eb31fe3217129fce2",
+                "wType": "FlexContainer"
+            }
+        },
+        "imgPeek": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "cd48ad0922b94fd1a28fa1719bbbedab",
+                "srcKUID": "a126222007df4f81ae7471ba8c1ff27f",
+                "wType": "Image"
+            },
+            "isVisible": false
+        },
+        "lblFromAccHolderName": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "ca149d786f5644a0884f215e3969e176",
+                "srcKUID": "h51966e851454d6080e9f3feb1be005a",
+                "wType": "Label"
+            },
+            "text": ""
+        },
+        "lblFromAccNumber": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "b202bfb9908f4e4e94fec6c2d68bb2ac",
+                "srcKUID": "j36d7e7916e7480faa052d41a976cdd7",
+                "wType": "Label"
+            },
+            "text": ""
+        },
+        "lblFromAccTitle": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "jdc1c71144d34b3dba520fde8e8afe43",
+                "srcKUID": "d4a934da5cd442aebcea305422f3ef98",
+                "wType": "Label"
+            },
+            "i18n_text": "kony.mb.cardManage.cardDetails",
+            "text": ""
+        }
+    },
+    "enablescrolling": true,
+    "id": "flxReviewCardDetailsC",
+    "info": null,
+    "iscustomlayout": false,
+    "isdatareferenced": false,
+    "isvisible": true,
+    "kuid": "jfd87112eac1403e848148d801fb3813",
+    "layouttype": 2,
+    "masterType": 0,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "flxToCardDetails",
+    "pf": "frmPrepaidTopupDomesticReviewScreen",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "sourceUserWidget": "b956abb4f311413eb31fe3217129fce2",
+    "wType": "UserWidgetInstance",
+    "zindex": 1
+}

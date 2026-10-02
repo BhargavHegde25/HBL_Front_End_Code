@@ -1,0 +1,22 @@
+{
+    "AS_Form_e6b97be9c4354349a27ded788f8e926b": {
+        "id": "AS_Form_e6b97be9c4354349a27ded788f8e926b",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "CopyfrmCrossBorderAcknowledgement",
+            "type": "forms",
+            "platform": null,
+            "KUID": "i907dcffa6c947b484560d2b54b69997"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_init_e44e8a8700714f499ef6c4638d310f35",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.init();"
+        }]
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "AS_Form_ja47a2fdb3b54ed08088491b57ac927d": {
+        "id": "AS_Form_ja47a2fdb3b54ed08088491b57ac927d",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "type": "forms",
+            "platform": "",
+            "KUID": "g1329e605edd467e9cae5c0ca145c8d6",
+            "name": "frmCurrencyConverterConfirm"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__a2ab0982f5bd43de9ca106d141dcfb0e",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "init",
+            "display": "init",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null,
+            "source": "controller"
+        }]
+    }
+}

@@ -1,0 +1,67 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "42dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "21dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "sdbbccbd1d224646bda17c38efb9ccb8",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "1dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "90%"
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "desktopweb": {
+        "psp": {
+            "hoverSkin": "s0f5748e0ea447b99601a5b7d636357c"
+        }
+    },
+    "disabledSkins": {
+        "focusSkin": "sf96860c334a4c7aa40472c787ec8206"
+    },
+    "displaytext": true,
+    "id": "btnAddDomesticAccount",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "f0a1553b433142bfaa87eeabcb1fa7ac",
+    "name": "kony.ui.Button",
+    "parent": "flxAddDomesticAccount",
+    "pf": "frmSameBankAddBeneficiary",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "texti18n": "i18n.payments.addDomesticAccount",
+    "wType": "Button",
+    "zindex": 1
+}

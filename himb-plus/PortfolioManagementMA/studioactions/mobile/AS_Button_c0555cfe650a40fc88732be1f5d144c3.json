@@ -1,0 +1,23 @@
+{
+    "AS_Button_c0555cfe650a40fc88732be1f5d144c3": {
+        "id": "AS_Button_c0555cfe650a40fc88732be1f5d144c3",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmRecommendedStrategyAck",
+            "type": "forms",
+            "platform": "",
+            "KUID": "ec57f2d68afa4b6784ebd0d7468aba08"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_f0037463257741bf930d72343fafca1d",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": " this.navigateStrategyAllocation();",
+            "parentId": null
+        }]
+    }
+}

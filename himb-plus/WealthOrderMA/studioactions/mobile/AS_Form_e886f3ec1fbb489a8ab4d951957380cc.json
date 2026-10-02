@@ -1,0 +1,22 @@
+{
+    "AS_Form_e886f3ec1fbb489a8ab4d951957380cc": {
+        "id": "AS_Form_e886f3ec1fbb489a8ab4d951957380cc",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmConvertCurrencyVerify",
+            "type": "forms",
+            "platform": null,
+            "KUID": "dad3edc4880240c0b445feb7bbf5cdde"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_preShow_e4a55c5be7cf4998bdfa87b35195af99",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.preShow();"
+        }]
+    }
+}

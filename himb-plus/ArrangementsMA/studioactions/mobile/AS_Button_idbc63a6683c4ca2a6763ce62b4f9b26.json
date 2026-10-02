@@ -1,0 +1,24 @@
+{
+    "AS_Button_idbc63a6683c4ca2a6763ce62b4f9b26": {
+        "id": "AS_Button_idbc63a6683c4ca2a6763ce62b4f9b26",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "NAVIGATE_TO_FORM__ide_onClick_ieb12e13e4804490a229db7ddb568435",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "frmCardlessCashAck",
+            "friendlyName": "frmCardlessCashAck",
+            "formKUID": "ddfc4b0e6b814fae95259f2fea18fbe8",
+            "projectName": "ArrangementsMA",
+            "mappings": {},
+            "mappingsOrder": [],
+            "enableMappingEditor": true,
+            "package": "CardLessUIModule",
+            "isCustomInput": false
+        }]
+    }
+}

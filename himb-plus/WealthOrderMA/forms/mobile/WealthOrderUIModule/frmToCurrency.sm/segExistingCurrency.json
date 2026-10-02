@@ -1,0 +1,270 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "_bottom_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_data_": [
+        {
+            "imgFlag": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "usdollar.png"
+            },
+            "imgRadio": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "radiobuttoninactive.png"
+            },
+            "lblCurrencyType": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "USD - United States Dollar"
+            },
+            "lblSeparator": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            }
+        },
+        {
+            "imgFlag": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "euro.png"
+            },
+            "imgRadio": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "radiobuttoninactive.png"
+            },
+            "lblCurrencyType": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EURO - Euro"
+            },
+            "lblSeparator": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            }
+        },
+        {
+            "imgFlag": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "swissfranc.png"
+            },
+            "imgRadio": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "radiobuttoninactive.png"
+            },
+            "lblCurrencyType": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "CHF - Swiss Franc"
+            },
+            "lblSeparator": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            }
+        },
+        {
+            "imgFlag": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "britishpound.png"
+            },
+            "imgRadio": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "radiobuttoninactive.png"
+            },
+            "lblCurrencyType": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "GBP - Pound Sterling"
+            },
+            "lblSeparator": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            }
+        },
+        {
+            "imgFlag": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "britishpound.png"
+            },
+            "imgRadio": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "radiobuttoninactive.png"
+            },
+            "lblCurrencyType": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "GBP - Pound Sterling"
+            },
+            "lblSeparator": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            }
+        },
+        {
+            "imgFlag": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "britishpound.png"
+            },
+            "imgRadio": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "radiobuttoninactive.png"
+            },
+            "lblCurrencyType": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "GBP - Pound Sterling"
+            },
+            "lblSeparator": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            }
+        },
+        {
+            "imgFlag": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "euro.png"
+            },
+            "imgRadio": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "radiobuttoninactive.png"
+            },
+            "lblCurrencyType": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EURO - Euro"
+            },
+            "lblSeparator": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            }
+        },
+        {
+            "imgFlag": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "euro.png"
+            },
+            "imgRadio": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "radiobuttoninactive.png"
+            },
+            "lblCurrencyType": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EURO - Euro"
+            },
+            "lblSeparator": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            }
+        },
+        {
+            "imgFlag": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "euro.png"
+            },
+            "imgRadio": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "radiobuttoninactive.png"
+            },
+            "lblCurrencyType": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "EURO - Euro"
+            },
+            "lblSeparator": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            }
+        }
+    ],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_right_": {
+        "type": "number",
+        "value": "0"
+    },
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "autogrowmode": 1,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "counter": "08",
+    "disabledSkins": {},
+    "focusedindex": null,
+    "focuseditem": null,
+    "groupcells": false,
+    "hasSections": false,
+    "id": "segExistingCurrency",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "enableDictionary": true,
+            "indicator": "none"
+        }
+    },
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "f787faee3d6141f58de596c39488caa7",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "flxExstAcc",
+    "pf": "frmToCurrency",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainselection": false,
+    "rowTemplateId": "hb932297cf6a4c24b88e85fda74bcb59",
+    "rowcounter": 8,
+    "rowfocusskin": "s02d7ca459a74168b4573e79b9d8efec",
+    "rowskin": "s18472307db04580a2a9cb6f4681ebec",
+    "rowtemplate": "flexSelectCurrencyContainer",
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionHeaderTemplateId": null,
+    "sectionheaderskin": "s65e8b0a8be54624ac979cda71a22cac",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "separatorrequired": false,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "vizProps": {},
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "flexSelectCurrencyContainer": "flexSelectCurrencyContainer",
+        "imgFlag": "imgFlag",
+        "imgRadio": "imgRadio",
+        "lblCurrencyType": "lblCurrencyType",
+        "lblSeparator": "lblSeparator"
+    },
+    "zindex": 1
+}

@@ -1,0 +1,444 @@
+{
+    "classname": "viewTransactions",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "ca7659bece81428caedcbbb366e396aa",
+                    "paramList": [],
+                    "propertyKey": "setPortfolio",
+                    "pw": {
+                        "displayName": "setPortfolio",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "cd8f11f71f524ec2a13e6943601e2fda",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "f6893146be104355af8166f51138c8f2",
+                    "paramList": [],
+                    "propertyKey": "onBreakPointChangeComponent",
+                    "pw": {
+                        "displayName": "onBreakPointChangeComponent",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "cd8f11f71f524ec2a13e6943601e2fda",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "d934856b148149d0b106bfdc404d4dcc",
+                    "paramList": [],
+                    "propertyKey": "returnCurrComponent",
+                    "pw": {
+                        "displayName": "returnCurrComponent",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "cd8f11f71f524ec2a13e6943601e2fda",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "bd7ae14385ef4c02839aead999303d1a",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "requestStart",
+                    "pw": {
+                        "displayName": "requestStart",
+                        "toolTip": "Request Start",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "cd8f11f71f524ec2a13e6943601e2fda",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "d2e54459a4514530905cbdb4031681c6",
+                    "paramList": [],
+                    "propertyIndex": 2,
+                    "propertyKey": "requestEnd",
+                    "pw": {
+                        "displayName": "requestEnd",
+                        "toolTip": "Request End",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "cd8f11f71f524ec2a13e6943601e2fda",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [
+                "Row Data",
+                "Get Attachment Service",
+                "Data Format",
+                "Date Picker",
+                "Skins"
+            ],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "{   \"One\": {     \"value\": \"tradeDate\",     \"type\": \"date\",     \"displayName\": \"{i.i18n.wealth.tradeDate}\",     \"default\": \"false\"   },   \"Two\": {     \"value\": \"orderType\",     \"type\": \"text\",     \"displayName\": \"{i.i18n.common.Type}\",     \"default\": \"false\"   },   \"Three\": {     \"value\": \"quantity\",     \"type\": \"textAmount\",     \"displayName\": \"{i.i18n.wealth.qty}\",     \"default\": \"false\"   },   \"Four\": {     \"value\": \"limitPrice\",     \"type\": \"normalAmount\",     \"currency\": \"instrumentCurrency\",     \"displayName\": \"{i.i18n.wealth.price}\",     \"default\": \"false\"   },   \"Five\": {     \"value\": \"exchangeRate\",     \"type\": \"normalAmount\",     \"currency\": \"referenceCurrency\",     \"displayName\": \"{i.i18n.ForeignExchange.ExchangeRate}\",     \"default\": \"false\"   },   \"Six\": {     \"value\": \"instrumentAmount\",     \"type\": \"normalAmount\",     \"currency\": \"referenceCurrency\",     \"displayName\": \"{i.i18n.transfers.amountlabel}\",     \"default\": \"false\"   },   \"Seven\": {     \"value\": \"netAmount\",     \"type\": \"normalAmount\",     \"currency\": \"instrumentCurrency\",     \"displayName\": \"{i.i18n.wealth.instrumentAmount}\",     \"default\": \"false\"   },   \"Eight\": {     \"value\": \"valueDate\",     \"type\": \"date\",     \"displayName\": \"{i.i18n.wealth.valueDate}\",     \"default\": \"false\"   },   \"Nine\": {     \"value\": \"fees\",     \"type\": \"normalAmount\",     \"currency\": \"feesCurrency\",     \"displayName\": \"{i.i18n.wealth.fees}\",     \"default\": \"false\"   },   \"Ten\": {     \"value\": \"total\",     \"type\": \"normalAmount\",     \"currency\": \"referenceCurrency\",     \"displayName\": \"{i.i18n.wealth.total}\",     \"default\": \"false\"   } }",
+                    "group": "Row Data",
+                    "kuid": "b3dccffbecfd4bcf92395dc4defff54e",
+                    "originalPropertyKey": "fieldsData",
+                    "propertyIndex": 1,
+                    "propertyKey": "fieldsData",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Fields",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "cd8f11f71f524ec2a13e6943601e2fda",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "WealthObjects",
+                    "group": "Get Attachment Service",
+                    "kuid": "e2c2e0476d174262b684c269f8ca74a3",
+                    "originalPropertyKey": "GAobjectServiceName",
+                    "propertyIndex": 1,
+                    "propertyKey": "GAobjectServiceName",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "GA Object ServiceName",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "cd8f11f71f524ec2a13e6943601e2fda",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{ \"locale\":\"\", \"positiveFormat\" : \"{CS}{D}\", \"negativeFormat\" : \"-{CS}{D}\", \"fractionDigits\":\"2\"}",
+                    "group": "Data Format",
+                    "kuid": "ca2335ea6a254f20a741aa2297acf87e",
+                    "originalPropertyKey": "amountFormat",
+                    "propertyIndex": 1,
+                    "propertyKey": "amountFormat",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Amount Format",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "cd8f11f71f524ec2a13e6943601e2fda",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "7D,30D,3M,6M",
+                    "group": "Date Picker",
+                    "kuid": "fabe9426763846b5947dd7e4783b7c1a",
+                    "originalPropertyKey": "dateFilterKeys",
+                    "propertyIndex": 1,
+                    "propertyKey": "dateFilterKeys",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Date Filter Keys",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "cd8f11f71f524ec2a13e6943601e2fda",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknLabelBgDBDBDB",
+                    "group": "Skins",
+                    "kuid": "c5ba0227b7e74e0994ce4d19f623e0b6",
+                    "originalPropertyKey": "rowSeperatorSkin",
+                    "propertyIndex": 1,
+                    "propertyKey": "rowSeperatorSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "row Seperator Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "cd8f11f71f524ec2a13e6943601e2fda",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "DownloadPDF",
+                    "group": "Get Attachment Service",
+                    "kuid": "g818127cfed4411382147d2c513add0a",
+                    "originalPropertyKey": "GAobjectName",
+                    "propertyIndex": 2,
+                    "propertyKey": "GAobjectName",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "GA Object Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "cd8f11f71f524ec2a13e6943601e2fda",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "m/d/Y",
+                    "group": "Data Format",
+                    "kuid": "fe0192c7527b4603b592a992ee6407e6",
+                    "originalPropertyKey": "dateFormat",
+                    "propertyIndex": 2,
+                    "propertyKey": "dateFormat",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Date Format",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "cd8f11f71f524ec2a13e6943601e2fda",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{i.i18n.wealth.datePicker.previousSevenDays},{i.i18n.wealth.datePicker.previousThirtyDays},{i.i18n.wealth.datePicker.threeMonths},{i.i18n.wealth.datePicker.sixMonths}",
+                    "group": "Date Picker",
+                    "kuid": "dd606937e7434692a089cc4454e2f308",
+                    "originalPropertyKey": "dateFilterLabels",
+                    "propertyIndex": 2,
+                    "propertyKey": "dateFilterLabels",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Date Filter Labels",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "cd8f11f71f524ec2a13e6943601e2fda",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknSSP72727213Px",
+                    "group": "Skins",
+                    "kuid": "c3542a2040944fd9be64e27734bca6ff",
+                    "originalPropertyKey": "tableHeaderLabelSkin",
+                    "propertyIndex": 2,
+                    "propertyKey": "tableHeaderLabelSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Table Header Label Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "cd8f11f71f524ec2a13e6943601e2fda",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "WealthObjects",
+                    "group": "Row Data",
+                    "kuid": "d65c00d7f21d4666b0ff4526a23a301c",
+                    "originalPropertyKey": "objService",
+                    "propertyIndex": 3,
+                    "propertyKey": "objService",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Object Service",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "cd8f11f71f524ec2a13e6943601e2fda",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "generatePDF",
+                    "group": "Get Attachment Service",
+                    "kuid": "dae68169cb724e0e8ebc427d12cce2d1",
+                    "originalPropertyKey": "GAoperationName",
+                    "propertyIndex": 3,
+                    "propertyKey": "GAoperationName",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "GA Operation Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "cd8f11f71f524ec2a13e6943601e2fda",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Y-m-d",
+                    "group": "Data Format",
+                    "kuid": "g32a41e2c6d6402fb6989265c346065d",
+                    "originalPropertyKey": "backendDateFormat",
+                    "propertyIndex": 3,
+                    "propertyKey": "backendDateFormat",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "backend Date Format",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "cd8f11f71f524ec2a13e6943601e2fda",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ICSknLblSSP42424215px",
+                    "group": "Skins",
+                    "kuid": "d9f93082420940bfac6fd4c90b701910",
+                    "originalPropertyKey": "tableFieldLabelSkin",
+                    "propertyIndex": 3,
+                    "propertyKey": "tableFieldLabelSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Table Field Label Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "cd8f11f71f524ec2a13e6943601e2fda",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "30D",
+                    "group": "Date Picker",
+                    "kuid": "a2b9fea0c4774245ae63975a436c28ea",
+                    "originalPropertyKey": "defaultDateFilterKey",
+                    "propertyIndex": 3,
+                    "propertyKey": "defaultDateFilterKey",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "default Date Filter Key",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "cd8f11f71f524ec2a13e6943601e2fda",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Portfolio",
+                    "group": "Row Data",
+                    "kuid": "ecd9d4a24cef4d23be34dd2c8f178a34",
+                    "originalPropertyKey": "objName",
+                    "propertyIndex": 4,
+                    "propertyKey": "objName",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Object Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "cd8f11f71f524ec2a13e6943601e2fda",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknCalTransactions",
+                    "group": "Skins",
+                    "kuid": "b29a479f7a97462eb0313351707aa4a1",
+                    "originalPropertyKey": "calendarSkin",
+                    "propertyIndex": 4,
+                    "propertyKey": "calendarSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Calendar Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "cd8f11f71f524ec2a13e6943601e2fda",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "getInstrumentTransactions",
+                    "group": "Row Data",
+                    "kuid": "ae063cd33efe485786f465f9b6447ec4",
+                    "originalPropertyKey": "operationName",
+                    "propertyIndex": 5,
+                    "propertyKey": "operationName",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Operation Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "cd8f11f71f524ec2a13e6943601e2fda",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{  \"portfolioId\":\"{$.c.portfolioId}\",   \"instrumentId\":\"{$.c.instrumentId}\",   \"sortBy\":\"{$.c.sortBy}\",    \"pageSize\":\"{$.c.pageSize}\",   \"pageOffset\":\"{$.c.pageOffset}\", \"startDate\":\"{$.c.startDate}\", \"endDate\":\"{$.c.endDate}\", \"sortOrder\":\"{$.c.sortOrder}\", \"downloadFormat\":\"pdf\"}",
+                    "group": "Row Data",
+                    "kuid": "aa061464ce784c9699117ff6124b756b",
+                    "originalPropertyKey": "objCriteria",
+                    "propertyIndex": 6,
+                    "propertyKey": "objCriteria",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Criteria",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "cd8f11f71f524ec2a13e6943601e2fda",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "portfolioTransactions",
+                    "group": "Row Data",
+                    "kuid": "efb4b1426dc748c89e0daecb877365b6",
+                    "originalPropertyKey": "serviceResponseKey",
+                    "propertyIndex": 7,
+                    "propertyKey": "serviceResponseKey",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Service Response Key",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "cd8f11f71f524ec2a13e6943601e2fda",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "\"{i.i18n.wealth.error.noTransaction}\"",
+                    "group": "Row Data",
+                    "kuid": "a4a13b86c026462c86abc1168a1df9b5",
+                    "originalPropertyKey": "errorText",
+                    "propertyIndex": 9,
+                    "propertyKey": "errorText",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Error Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "cd8f11f71f524ec2a13e6943601e2fda",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfinityOLB.WealthOrderMA",
+    "version": "1.0.0"
+}

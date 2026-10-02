@@ -1,0 +1,58 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "20dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s1ba251bcd374b38a477c71e7d26bfd5",
+    "_text_": "Add Favourite",
+    "_top_": {
+        "type": "string",
+        "value": "10dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "80%"
+    },
+    "activeNativeBorderCornerRadiusControl": "topLeftControl",
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "disabledSkins": {},
+    "displaytext": true,
+    "focusskin": "s1ba251bcd374b38a477c71e7d26bfd5",
+    "id": "btnMakeAnotherPayment",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": false,
+    "kuid": "e5c40a53f0e54bd7a7e3b696766fb761",
+    "name": "kony.ui.Button",
+    "parent": "flxPayButtons",
+    "pf": "frmBillPayAcknowledgement",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "texti18n": "i18n.billPay.MakeAnotherPayment",
+    "wType": "Button",
+    "zindex": 1
+}

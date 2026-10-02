@@ -1,0 +1,16 @@
+{
+    "AS_BarButtonItem_a3fabfc865714c28a55291f0733b4b5e": {
+        "id": "AS_BarButtonItem_a3fabfc865714c28a55291f0733b4b5e",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_hb6dec9ac97943b887e0d3ea1168ee3b",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.flxCancelOnClick();"
+        }]
+    }
+}

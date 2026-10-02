@@ -1,0 +1,726 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "DNDConfig": null,
+    "_children_": [],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s1d5d3417cb74ec9883e5f01b8521945",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "areflexpropsreferenced": false,
+    "autogrowmode": 1,
+    "canUpdateUI": true,
+    "clipbounds": false,
+    "containerweight": 0,
+    "dataDiffs": {
+        "OTPPostLogin": {
+            "__events__": {},
+            "__info__": {
+                "isRoot": true,
+                "kuid": "b54b065f49ef4008a25e6dfd543f2729",
+                "srcKUID": "d7263e9543e34c41802d5aeb4c51483d",
+                "wType": "FlexContainer"
+            }
+        },
+        "btnCancel": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "c8211c5a918e4d8eaf2f7eff20b87f28",
+                "srcKUID": "f0645c42725d4ee8a03b69af198dcac8",
+                "wType": "Button"
+            }
+        },
+        "btnCancel1": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "d4c68199a7cb474f852fc3756a48900c",
+                "srcKUID": "ddd0cced73964085b5da4331d439fe36",
+                "wType": "Button"
+            },
+            "isVisible": false,
+            "responsiveData": {
+                "b3": {}
+            }
+        },
+        "btnModify1": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "bf7e785380e44be89691d101a070c3cb",
+                "srcKUID": "e8476b36aa0a4bd38a2922a428e7c5de",
+                "wType": "Button"
+            },
+            "i18n_text": "i18n.MFA.RESEND",
+            "isVisible": true,
+            "responsiveData": {
+                "b3": {}
+            }
+        },
+        "btnProceed": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "ib14c29b906e4a238f61f45e9ad39143",
+                "srcKUID": "d32044cd2cee4848aefc3000ed104a1b",
+                "wType": "Button"
+            },
+            "i18n_text": "i18n.enrollNow.proceed",
+            "responsiveData": {
+                "b1": {},
+                "b2": {},
+                "b3": {}
+            }
+        },
+        "btnProfileSettings": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "g61cba2061764d12a09778b6ada6c6ac",
+                "srcKUID": "jfcda208d9924eec9a29f5d1833c342e",
+                "wType": "Button"
+            }
+        },
+        "btnProfileSettings1": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "ab2271f6fc554758933059607e073416",
+                "srcKUID": "dd3b9373672f49679b3978d35306065d",
+                "wType": "Button"
+            }
+        },
+        "btnResendCode": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "e2e5283022bc4894b76787a434a9fd49",
+                "srcKUID": "fc7e982ac4f84397a843b0c4f7330f30",
+                "wType": "Button"
+            }
+        },
+        "btnTandC1": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "d62033d2f5a84bdc81a9fd1cf3b86252",
+                "srcKUID": "f20394d0627149a881771b8c07a01865",
+                "wType": "Button"
+            }
+        },
+        "btnVerifyPin": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "e48850461894417088a8c93bb85e80dc",
+                "srcKUID": "e9bc32bbd904429fb0dcb2276add33d2",
+                "wType": "Button"
+            },
+            "i18n_text": "i18n.LoginActivation.Verify",
+            "responsiveData": {
+                "b1": {},
+                "b3": {}
+            }
+        },
+        "flexcheckuncheck1": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "ib63fe7450984591b5cee1125e954b37",
+                "srcKUID": "ea616ea5fee445c8b4cfe83e7e187fa3",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxActions": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "dec6e6c9025049e0b9a6710b5647c131",
+                "srcKUID": "e89ef86898a04e1ca65ed53671db4055",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxAgree1": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "f9b8d30bbe4c4dfcad23aae27c918138",
+                "srcKUID": "abf32e10ac6b4e9f9504ad8153bcaa57",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxButtons1": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "jbc65c402c3742c8810827e4fe9bfb90",
+                "srcKUID": "h102f4783b1047ff922f78986be274b2",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxCVV1": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "g7bd0d9f8e664e09bd796ad5a41e6d0a",
+                "srcKUID": "d2ca69ea277d4fc19e0302c9c0a954fc",
+                "wType": "FlexContainer"
+            },
+            "left": {
+                "Default": {
+                    "type": "string",
+                    "value": "0dp"
+                }
+            },
+            "responsiveData": {
+                "b3": {
+                    "width": null
+                }
+            },
+            "width": {
+                "Default": {
+                    "type": "string",
+                    "value": "80%"
+                }
+            }
+        },
+        "flxClick1": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "i87477a947164681b7f1878eb708e5a8",
+                "srcKUID": "ff07d0f5bc4049f697c107458e74a389",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxConfirmButtons": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "c6dff1069acd499fb354c1be76688db4",
+                "srcKUID": "g6664456ba5b4ae0b78c29606f59f526",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxDescription": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "d9f97b50f0634fe3bc889763a2b61d06",
+                "srcKUID": "d330066c45614bb9bcc72dc34bc2ee27",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxEnterOTP": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "c6600b59819b45cbbf3b8c13fa82daed",
+                "srcKUID": "aa13850510ad4c99af671499a7fd20cb",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxEnterOTPCode": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "da59448718a646a7a06d9dde955a1fa5",
+                "srcKUID": "fcd8f0abb4e0474cb854ccba7500f0bb",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxEnterSecureAccessCode": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "e74502372d6149aaa373991242c5d2e6",
+                "srcKUID": "ffdda3da5d1c49c0bd1f40b07b9dd00d",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxExtendedNotes": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "fc433a8267a148b8ac4463ecabad4469",
+                "srcKUID": "d14291e01dbb4541be15859d9c6e3d90",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxExtendedNotes1": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "ad47c3f826dd4b25923ec409d7bf62ed",
+                "srcKUID": "f5eea8df2a2648ba99b06db38b919edf",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxImgTxt": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "j3d7bda01d0c41a7823298cfc58c1fd2",
+                "srcKUID": "f3a645c7e54842fc98a2e93e39b2a88d",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxNotes1": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "bb8c23d11fb04936ac12c8b1b9a8a710",
+                "srcKUID": "ca464a4a2f304401a50bef2a0eeec2a8",
+                "wType": "FlexContainer"
+            },
+            "isVisible": true,
+            "left": {
+                "Default": {
+                    "type": "string",
+                    "value": "5dp"
+                }
+            },
+            "responsiveData": {},
+            "width": {
+                "Default": {
+                    "type": "string",
+                    "value": "80%"
+                }
+            }
+        },
+        "flxOTPHeader": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "iea9d77a4c5d4697927335219ae49193",
+                "srcKUID": "d9da642446e94a5b9c3600bb0dbc452d",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxProfileSetting": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "j555467025ad436b8a0461478fb565a7",
+                "srcKUID": "d0bb786061f949628fa282f7a7fa1f38",
+                "wType": "FlexContainer"
+            },
+            "isVisible": false,
+            "responsiveData": {}
+        },
+        "flxRemember1": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "a59791967a2b465489cc87679b224f25",
+                "srcKUID": "bf8432698fde4d94a88cf703db6418b5",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxRememberMe1": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "e3835cc7aa754b9198a64e77e9eb9cf0",
+                "srcKUID": "baf56332675547628ade82a2174ba91a",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxSep": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "febb6cad3ae74de2bcb2618291c06bea",
+                "srcKUID": "b4fb3cc2659a490ba85600e913a40b36",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxSeparator2": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "b1410469f15443d8a00883b14287347a",
+                "srcKUID": "d4801da47f774bd79ef43e016e54d56a",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxTransactionPin": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "f72f644c393c4395befb0714f6639428",
+                "srcKUID": "g3106a407ef84205850224fc3f40044a",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxWarning": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "ac85daee393848a0bbb6a22c70e474d8",
+                "srcKUID": "e09a156551b54e6b96906ba17ce55c2d",
+                "wType": "FlexContainer"
+            }
+        },
+        "flximgrtx1": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "f3ae7e2ff2ea4265b67d634212aa9c1b",
+                "srcKUID": "e366911ceb254caa97d084f3f84fa70e",
+                "wType": "FlexContainer"
+            }
+        },
+        "imgNext": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "ebb5076d089b4458a540194d91b4f02c",
+                "srcKUID": "bf8cc5a928134248a27f3ee7fb1d0e25",
+                "wType": "Image"
+            },
+            "src": "right_arrow1.png"
+        },
+        "imgOtp": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "h739c09443424ef1a60507cc687eb2e8",
+                "srcKUID": "ac10231656b94fa8b4cb8f152603d1da",
+                "wType": "Image"
+            },
+            "centerX": {
+                "Default": {
+                    "type": "string",
+                    "value": ""
+                }
+            },
+            "left": {
+                "Default": {
+                    "type": "string",
+                    "value": "5dp"
+                }
+            },
+            "responsiveData": {},
+            "src": "pin.png"
+        },
+        "imgRememberMe1": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "cb0e79b41afe45899e21b4f433b101b8",
+                "srcKUID": "c6dac2e381f347fd84e2eb0e5b9a1686",
+                "wType": "Image"
+            }
+        },
+        "imgView": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "dd85909f07d04ed885a06486e0b9f818",
+                "srcKUID": "i07719c2070045769bac4532f7b25a44",
+                "wType": "Image"
+            },
+            "responsiveData": {},
+            "src": "view_2.png",
+            "zIndex": {
+                "Default": 100
+            }
+        },
+        "imgViewOTPCode": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "c34f023832374c66ba4912dd42622383",
+                "srcKUID": "gdb94b8d9753443e835a35619ba4b186",
+                "wType": "Image"
+            }
+        },
+        "imgWarning": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "c4d436543d4545739cca0cc7bea644ca",
+                "srcKUID": "dd3bba1c93344e098a9ddf440a3081bb",
+                "wType": "Image"
+            }
+        },
+        "lblFavoriteEmailCheckBox1": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "f115ce7bd8924d159819c45501daf747",
+                "srcKUID": "e6ed6a54146c48c293b268a703f45d4a",
+                "wType": "Label"
+            }
+        },
+        "lblHeader": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "j57feb525a5b4b52bdca6f4fda0017a0",
+                "srcKUID": "jb2a90607c214c4b88ef921cc75cc97e",
+                "wType": "Label"
+            }
+        },
+        "lblHeaderOTP": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "ee40fecb54f94239abaad1543fddc8d4",
+                "srcKUID": "icc13c5ebd614380ade118b6c13bbed0",
+                "wType": "Label"
+            }
+        },
+        "lblIAccept1": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "f56fea267f9641418def7066f634e0f3",
+                "srcKUID": "ddb5c560c3b0406bb32f68fee68e1c93",
+                "wType": "Label"
+            }
+        },
+        "lblMRememberMe1": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "bb5028c2d97c4ec3b906c68498b321d4",
+                "srcKUID": "aa3a27596c6f4500a8f2a9485ee83296",
+                "wType": "Label"
+            }
+        },
+        "lblNote": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "c8d2435d2aaf4037a321faaf10b9d7cf",
+                "srcKUID": "abb809408d3d435f88858eadda9cd8a5",
+                "wType": "Label"
+            }
+        },
+        "lblNote1": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "a749aa6f83284489a4f30ac2dc79119b",
+                "srcKUID": "f32c7fdcdf7e42d5b9644f9d7c280e6e",
+                "wType": "Label"
+            },
+            "i18n_text": null,
+            "responsiveData": {},
+            "text": "Note: Your OTP is confidential. Please do not share with anyone via phone, email or any other medium.",
+            "width": {
+                "Default": {
+                    "type": "string",
+                    "value": "100%"
+                }
+            }
+        },
+        "lblOTP": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "c2034ccf914b486092732d19d8628577",
+                "srcKUID": "c91f04c2675a4b49b9d69b41bacf3895",
+                "wType": "Label"
+            }
+        },
+        "lblPhone": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "e822e5b2f06d4df9a96a7557745175e3",
+                "srcKUID": "b5cbaf81f0fe49bf8c05b6dbd87f884d",
+                "wType": "Label"
+            }
+        },
+        "lblPhoneOTP": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "i9d9907b95394f0f9cea2fd2f29a3c1e",
+                "srcKUID": "j4a421f3fe264272a0139aa58e1f5763",
+                "wType": "Label"
+            }
+        },
+        "lblPinError": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "a80c4444a0874161ab9cbb4b96227b90",
+                "srcKUID": "bd3287b21cff4f61b501a56c72ed791b",
+                "wType": "Label"
+            }
+        },
+        "lblProfileSetting": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "e6201b075aaa46d5b32f92911dae8db4",
+                "srcKUID": "cc504ec0567545db9ea0c77b23d3d08f",
+                "wType": "Label"
+            }
+        },
+        "lblRegisteredEmail": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "hae34552dff1426c976d417072f034ed",
+                "srcKUID": "b222322c98084f618e1265e061debbb3",
+                "wType": "Label"
+            }
+        },
+        "lblRegisteredPhone": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "be3db53516294829859a8259066be3ec",
+                "srcKUID": "dacc197e47c94bf39d97d02b19376de4",
+                "wType": "Label"
+            }
+        },
+        "lblRememberMe1": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "h7d1c260f6ad4a6eba33a50816d2959d",
+                "srcKUID": "c83e3cdf0c9a4cf487786074d98f2752",
+                "wType": "Label"
+            }
+        },
+        "lblResendMessage": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "d4eaad19bc214dbbbc47aff5332a9207",
+                "srcKUID": "fe1a0d1ec645497db369e1112ea5fd8e",
+                "wType": "Label"
+            }
+        },
+        "lblResendOTPMsg": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "e800161fab504fbab944b105e40c9281",
+                "srcKUID": "e4454cd0c0da4a7295808d86b9d3ff6e",
+                "wType": "Label"
+            },
+            "isVisible": true,
+            "responsiveData": {},
+            "text": "If you have not received the OTP on your phone/email, please use the resend option.",
+            "top": {
+                "Default": {
+                    "type": "string",
+                    "value": "90dp"
+                }
+            }
+        },
+        "lblSecureAccessCodeNotes": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "e6680e7c6cb64dca9ee5710d86d003be",
+                "srcKUID": "c70db674eae841b4a27e0a3ca2c78f39",
+                "wType": "Label"
+            }
+        },
+        "lblSecureAccessCodeNotes1": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "d97214427c954b268b0203b08bdcb0a4",
+                "srcKUID": "j2478fb8b6f84925b896f17675450066",
+                "wType": "Label"
+            }
+        },
+        "lblTransactionPin": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "aeebe0fd21434827a511824f665e99c3",
+                "srcKUID": "df84d6e605d345aba7d14ceafc67ce57",
+                "wType": "Label"
+            },
+            "i18n_text": null,
+            "left": {
+                "Default": {
+                    "type": "string",
+                    "value": "1dp"
+                }
+            },
+            "responsiveData": {},
+            "text": "One time password will be sent  to your  primary email or phone number",
+            "top": {
+                "Default": {
+                    "type": "string",
+                    "value": "10dp"
+                }
+            },
+            "width": {
+                "Default": {
+                    "type": "string",
+                    "value": "100%"
+                }
+            }
+        },
+        "lblWrongOTP": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "ff0716ef05404102958806aa642d4e1b",
+                "srcKUID": "d1e590b942fe46c586a27838733a71ad",
+                "wType": "Label"
+            }
+        },
+        "lbxEmail": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "b7c6f40ff5d540b3a9bba729788259f8",
+                "srcKUID": "a174c13b38b8436c8b7b32b928bf6fe9",
+                "wType": "ListBox"
+            }
+        },
+        "lbxPhone": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "i375ef139b9d477a87e100f825fdef45",
+                "srcKUID": "jc9631732196436fb5a47da62008a101",
+                "wType": "ListBox"
+            }
+        },
+        "rtxEnterCVVCod": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "baf4f01a0a114f76818710580f823ea8",
+                "srcKUID": "j4a62cc795f9425c9e807e368c874af4",
+                "wType": "RichText"
+            },
+            "height": {
+                "Default": {
+                    "type": "string",
+                    "value": "30dp"
+                }
+            },
+            "i18n_text": null,
+            "responsiveData": {},
+            "text": "Enter One time password",
+            "top": {
+                "Default": {
+                    "type": "string",
+                    "value": "15dp"
+                }
+            }
+        },
+        "rtxHeaderOTP": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "af7aab1a191e4c6487d79ecaf2de2fff",
+                "srcKUID": "j5ddc070ba0e4f2e83962a1b1ea74457",
+                "wType": "RichText"
+            }
+        },
+        "tbxEnterOTPCode": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "fdbee6a3efa54721a7a3b3d772220771",
+                "srcKUID": "d898736e416d48fcb8cf4d070180ea75",
+                "wType": "TextField"
+            }
+        },
+        "tbxPin": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "a8c1a17c60274bfa94573976b7b37f11",
+                "srcKUID": "e97d3ba2a7a64811a82b3bb98b4f086d",
+                "wType": "TextField"
+            },
+            "i18n_placeholder": null,
+            "placeholder": "Enter OTP",
+            "responsiveData": {},
+            "text": ""
+        }
+    },
+    "enablescrolling": true,
+    "id": "OTPPostLogin",
+    "info": null,
+    "isdatareferenced": false,
+    "isvisible": true,
+    "kuid": "b54b065f49ef4008a25e6dfd543f2729",
+    "layouttype": 4,
+    "masterType": 0,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "flxMFA",
+    "pf": "userwidgetmodel",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "sourceUserWidget": "d7263e9543e34c41802d5aeb4c51483d",
+    "wType": "UserWidgetInstance"
+}

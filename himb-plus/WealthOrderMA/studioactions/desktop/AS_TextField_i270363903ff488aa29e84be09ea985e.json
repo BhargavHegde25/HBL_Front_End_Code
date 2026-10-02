@@ -1,0 +1,31 @@
+{
+    "AS_TextField_i270363903ff488aa29e84be09ea985e": {
+        "id": "AS_TextField_i270363903ff488aa29e84be09ea985e",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "changedtext"
+        }],
+        "contextObj": {
+            "type": "forms",
+            "platform": "",
+            "KUID": "df336a49059240909206ab5f8f5b99ab",
+            "name": "frmCurrencyConverter"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__e450ce4688a048088bb86fab0c779613",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "searchInModal",
+            "display": "searchInModal",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null,
+            "source": "controller"
+        }]
+    }
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service serviceGroup="" cachable="false" cacheduration="" customOperation="false" description="" endpoint="" groupType="" id="" passwordencrypted="" security="authorized_app_user" type="" smscode="" smsenabled="false">
+    <service-config>
+        <config-param api-version="" appid="" name="preprocessorname" value="[{&quot;name&quot;:&quot;com.infinity.dbx.temenos.TemenosBasePreProcessor&quot;,&quot;disabled&quot;:false,&quot;isBase&quot;:true}]"/>
+        <config-param api-version="" appid="" name="postprocessorname" value="[]"/>
+        <config-param api-version="" appid="" name="endpointUrl" value="/v3.0.0/reference/BankCodes/BICs?bankName='$bankName'&amp;country='$country'&amp;city='$city'&amp;institution='$institution'"/>
+    </service-config>
+    <service-input passthrough="false" isExtended="false">
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="institution" order="" paramOrder="4" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="true">
+            <inOutPathInBase>[]</inOutPathInBase>
+            <accessType></accessType>
+        </param>
+    </service-input>
+    <service-output passthrough="false" isExtended="false"/>
+</service>

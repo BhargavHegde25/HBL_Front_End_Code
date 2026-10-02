@@ -1,0 +1,31 @@
+{
+    "AS_UWI_cb20e678c2c94b4b95445611585d325f": {
+        "id": "AS_UWI_cb20e678c2c94b4b95445611585d325f",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "filter",
+            "datatype": "collection"
+        }],
+        "contextObj": {
+            "type": "forms",
+            "platform": "",
+            "KUID": "df336a49059240909206ab5f8f5b99ab",
+            "name": "frmCurrencyConverter"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__b336e5b23ed344e69a43c01915f0ec87",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "chartService",
+            "display": "chartService",
+            "inputparams": [{
+                "name": "filter",
+                "value": "filter"
+            }],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null,
+            "source": "controller"
+        }]
+    }
+}

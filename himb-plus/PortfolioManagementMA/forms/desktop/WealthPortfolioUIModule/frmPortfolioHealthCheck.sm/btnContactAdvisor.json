@@ -1,0 +1,71 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_right_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_skin_": "sa611611b2f24e93bcfd09e1606c0d86",
+    "_text_": "Contact Advisor",
+    "_top_": {
+        "type": "string",
+        "value": "0"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "250dp"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "desktopweb": {
+        "psp": {
+            "hoverSkin": "s83729feaa224e359d660d5af05c4bac"
+        }
+    },
+    "disabledSkins": {
+        "focusSkin": "sf44d06ca8224832827ea7fdff757013"
+    },
+    "displaytext": true,
+    "id": "btnContactAdvisor",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "j19f7221b0864e209f691f4ad6b5621d",
+    "name": "kony.ui.Button",
+    "parent": "flxButton",
+    "pf": "frmPortfolioHealthCheck",
+    "responsiveData": {
+        "b3": {
+            "top": {
+                "type": "string",
+                "value": "20dp"
+            }
+        },
+        "b4": {}
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "texti18n": "i18n.wealth.contactAdvisor",
+    "wType": "Button"
+}

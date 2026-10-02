@@ -1,0 +1,303 @@
+{
+    "classname": "WatchlistExtended",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "b4f178d82ee544ddafccca6b436c221f",
+                    "paramList": [],
+                    "propertyKey": "onBreakPointChangeComponent",
+                    "pw": {
+                        "displayName": "onBreakPointChangeComponent",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "aa04bb008a54491a91e7935e2d58cc22",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "a496ecb2e46a4fc09d0e4be865273db9",
+                    "paramList": [],
+                    "propertyKey": "onRefresh",
+                    "pw": {
+                        "displayName": "onRefresh",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "aa04bb008a54491a91e7935e2d58cc22",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "dafa67268d83452b99154997d6a73ebf",
+                    "paramList": [],
+                    "propertyKey": "onRefreshTablet",
+                    "pw": {
+                        "displayName": "onRefreshTablet",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "aa04bb008a54491a91e7935e2d58cc22",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "c8f235d168124ddaa862da12cb727e97",
+                    "paramList": [],
+                    "propertyKey": "onRemoveAlert",
+                    "pw": {
+                        "displayName": "onRemoveAlert",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "aa04bb008a54491a91e7935e2d58cc22",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "d91a685d50484b6684b9e7c65e354151",
+                    "paramList": [],
+                    "propertyKey": "closePopup",
+                    "pw": {
+                        "displayName": "closePopup",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "aa04bb008a54491a91e7935e2d58cc22",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "b2ff54548ebe44599dab4d7aa4865407",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "requestStart",
+                    "pw": {
+                        "displayName": "requestStart",
+                        "toolTip": "Request Start",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "aa04bb008a54491a91e7935e2d58cc22",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "j8fd07ac7aab474fb2e81c624565ce62",
+                    "paramList": [],
+                    "propertyIndex": 2,
+                    "propertyKey": "requestEnd",
+                    "pw": {
+                        "displayName": "requestEnd",
+                        "toolTip": "Request End",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "aa04bb008a54491a91e7935e2d58cc22",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "bdd5b116f5bd46cdb356381b8367ff4a",
+                    "paramList": [],
+                    "propertyIndex": 3,
+                    "propertyKey": "cancelPopUp",
+                    "pw": {
+                        "displayName": "cancelPopUp",
+                        "toolTip": "cancelPopUp",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "aa04bb008a54491a91e7935e2d58cc22",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "bbb4bb26dca6472d8744e9d7c68bf0bb",
+                    "paramList": [],
+                    "propertyIndex": 4,
+                    "propertyKey": "ackPopUp",
+                    "pw": {
+                        "displayName": "ackPopUp",
+                        "toolTip": "ackPopUp",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "aa04bb008a54491a91e7935e2d58cc22",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "WealthOrder",
+                    "group": "General",
+                    "kuid": "e3b67c4f9edf4dbf97deb6775325708f",
+                    "originalPropertyKey": "objService",
+                    "propertyIndex": 1,
+                    "propertyKey": "objService",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Object Servicxe",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "aa04bb008a54491a91e7935e2d58cc22",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "FavouriteInstruments",
+                    "group": "General",
+                    "kuid": "d777aba8f5fe4322b41bfb8ece816714",
+                    "originalPropertyKey": "objName",
+                    "propertyIndex": 2,
+                    "propertyKey": "objName",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Object Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "aa04bb008a54491a91e7935e2d58cc22",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "getFavoriteInstruments",
+                    "group": "General",
+                    "kuid": "fc2b4ac226a54700bce64cc368220f73",
+                    "originalPropertyKey": "operation",
+                    "propertyIndex": 3,
+                    "propertyKey": "operation",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Operation Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "aa04bb008a54491a91e7935e2d58cc22",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"pageSize\": \"10\", \"pageOffset \": \"0\", \"downloadFormat \": \"pdf\"}",
+                    "group": "General",
+                    "kuid": "c9e2d205260b466e9da2b7ac05f973c4",
+                    "originalPropertyKey": "criteria",
+                    "propertyIndex": 4,
+                    "propertyKey": "criteria",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Criteria",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "aa04bb008a54491a91e7935e2d58cc22",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "favoriteInstruments",
+                    "group": "General",
+                    "kuid": "ie7a7c2a7d3d4ecc883c1943c0a7292c",
+                    "originalPropertyKey": "serviceResponseKey",
+                    "propertyIndex": 5,
+                    "propertyKey": "serviceResponseKey",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Service Response Key",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "aa04bb008a54491a91e7935e2d58cc22",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "PrintAndDownload",
+                    "group": "General",
+                    "kuid": "e264facdd75743b4a1b14d4ea0a5c18d",
+                    "originalPropertyKey": "options",
+                    "propertyIndex": 6,
+                    "propertyKey": "options",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Options",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "aa04bb008a54491a91e7935e2d58cc22",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "WealthOrder",
+                    "group": "General",
+                    "kuid": "b5445bb60cd24d23834f0107156487d8",
+                    "originalPropertyKey": "GAobjectServiceName",
+                    "propertyIndex": 7,
+                    "propertyKey": "GAobjectServiceName",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "GAobjectServiceName",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "aa04bb008a54491a91e7935e2d58cc22",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "DownloadPDF",
+                    "group": "General",
+                    "kuid": "j2ff7e7077a344c995f767cd1a1260d7",
+                    "originalPropertyKey": "GAobjectName",
+                    "propertyIndex": 8,
+                    "propertyKey": "GAobjectName",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "GAobjectName",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "aa04bb008a54491a91e7935e2d58cc22",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "generatePDF",
+                    "group": "General",
+                    "kuid": "e249352eb65f4118a360d62498c80c1c",
+                    "originalPropertyKey": "GAoperationName",
+                    "propertyIndex": 9,
+                    "propertyKey": "GAoperationName",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "GAoperationName",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "aa04bb008a54491a91e7935e2d58cc22",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InifintyOLB.WealthOrderMA",
+    "version": "1.0.0"
+}

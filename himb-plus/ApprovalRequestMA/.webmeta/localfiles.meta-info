@@ -1,0 +1,51 @@
+{
+    "HEAD": "wf10f096c00d4efe97ddd7e883bb0f3b",
+    "w3b5a56605744c61b293bef2ac4123ca": {
+        "extension": "html",
+        "kuid": "w3b5a56605744c61b293bef2ac4123ca",
+        "name": "index.html",
+        "parent": "w69c332b2e6648f1b9d572a0817415b7",
+        "type": "F"
+    },
+    "w69c332b2e6648f1b9d572a0817415b7": {
+        "children": [
+            "w3b5a56605744c61b293bef2ac4123ca",
+            "wc16d54803314c44974de00b4cfd65b9",
+            "wf692dd082f24289ac30147158f25812",
+            "w908f976dcad4302a4c1109b51d91ccb"
+        ],
+        "kuid": "w69c332b2e6648f1b9d572a0817415b7",
+        "name": "circular",
+        "parent": "wf10f096c00d4efe97ddd7e883bb0f3b",
+        "type": "D"
+    },
+    "w908f976dcad4302a4c1109b51d91ccb": {
+        "extension": "css",
+        "kuid": "w908f976dcad4302a4c1109b51d91ccb",
+        "name": "style.css",
+        "parent": "w69c332b2e6648f1b9d572a0817415b7",
+        "type": "F"
+    },
+    "wc16d54803314c44974de00b4cfd65b9": {
+        "extension": "html",
+        "kuid": "wc16d54803314c44974de00b4cfd65b9",
+        "name": "index2.html",
+        "parent": "w69c332b2e6648f1b9d572a0817415b7",
+        "type": "F"
+    },
+    "wf10f096c00d4efe97ddd7e883bb0f3b": {
+        "children": [
+            "w69c332b2e6648f1b9d572a0817415b7"
+        ],
+        "kuid": "wf10f096c00d4efe97ddd7e883bb0f3b",
+        "name": "localfiles",
+        "type": "L"
+    },
+    "wf692dd082f24289ac30147158f25812": {
+        "extension": "js",
+        "kuid": "wf692dd082f24289ac30147158f25812",
+        "name": "script.js",
+        "parent": "w69c332b2e6648f1b9d572a0817415b7",
+        "type": "F"
+    }
+}

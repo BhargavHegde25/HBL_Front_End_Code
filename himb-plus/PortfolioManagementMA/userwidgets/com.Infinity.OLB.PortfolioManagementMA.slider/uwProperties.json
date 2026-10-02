@@ -1,0 +1,71 @@
+{
+    "classname": "slider",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "de4b610aa65c48508b61e0152930146f",
+                    "paramList": [],
+                    "propertyKey": "setContext",
+                    "pw": {
+                        "displayName": "setContext",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "b1cd7cb1bf40494cb4cbd6292f7b5b39",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "a5dfab65392c47fd93a6c2760fdfeef4",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "setButtonValues",
+                    "pw": {
+                        "displayName": "setButtonValues",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "b1cd7cb1bf40494cb4cbd6292f7b5b39",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "e4d7f7782e3a4170a54aa6f3b963f58c",
+                    "paramList": [],
+                    "propertyIndex": 2,
+                    "propertyKey": "sendUpdatedTarget",
+                    "pw": {
+                        "displayName": "sendUpdatedTarget",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "b1cd7cb1bf40494cb4cbd6292f7b5b39",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.Infinity.OLB.PortfolioManagementMA",
+    "version": "1.0.0"
+}

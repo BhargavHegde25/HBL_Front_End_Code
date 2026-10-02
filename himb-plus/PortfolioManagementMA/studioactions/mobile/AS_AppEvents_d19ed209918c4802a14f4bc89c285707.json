@@ -1,0 +1,17 @@
+{
+    "AS_AppEvents_d19ed209918c4802a14f4bc89c285707": {
+        "id": "AS_AppEvents_d19ed209918c4802a14f4bc89c285707",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_d06d36c23d15404c8c88fa722602dff6",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "//kony.lang.setUncaughtExceptionHandler(GlobalExceptionHandler.exceptionHandler);\ntry\n{\n  var ApplicationManager = require('ApplicationManager');\n  applicationManager = ApplicationManager.getApplicationManager();\n  //applicationManager.init();\n  //applicationManager.preappInitCalls();\n  //registerWatchCallback();\n  if (!kony.sdk.isNullOrUndefined(langObjFromStorage)) {\n        config.configurations.setItem(\"LOCALE\", config.locale[langObjFromStorage.language]);\n        config.configurations.setItem('DATEFORMAT', config.frontendDateFormat[config.getLocale()]);\n    } else {\n        config.configurations.setItem(\"LOCALE\", \"en_US\");\n        config.configurations.setItem('DATEFORMAT', config.frontendDateFormat[\"en_US\"]);\n    }\n}\ncatch(err) {\n  //throw GlobalExceptionHandler.addMessageAndActionForException(err, \"kony.error.App_Initialisation_Failed\", GlobalExceptionHandler.ActionConstants.BLOCK, arguments.callee.name);\n}",
+            "parentId": null
+        }]
+    }
+}

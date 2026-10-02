@@ -1,0 +1,38 @@
+{
+    "AS_Button_f9b07d96bdb248aebd1c7c76876e6650": {
+        "id": "AS_Button_f9b07d96bdb248aebd1c7c76876e6650",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "type": "forms",
+            "platform": "",
+            "KUID": "df336a49059240909206ab5f8f5b99ab",
+            "name": "frmCurrencyConverter"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "NAVIGATE_TO_FORM__f56ae4892d2244ee8100ec8cc635bfd5",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "frmPortfolioOverview",
+            "friendlyName": "frmPortfolioOverview",
+            "formKUID": "ica4ac064ba049a4a892b4c1c58b2cfc",
+            "projectName": "PortfolioManagementMA",
+            "mappings": {},
+            "mappingsOrder": [],
+            "parentId": null,
+            "callbackType": null,
+            "enableMappingEditor": true,
+            "package": "WealthPortfolioUIModule",
+            "isCustomInput": false
+        }, {
+            "id": "ADD_SNIPPET_bdc19d7834df46029ed2087d39c5b426",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.application.destroyForm(\"frmCurrencyConverter\");",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

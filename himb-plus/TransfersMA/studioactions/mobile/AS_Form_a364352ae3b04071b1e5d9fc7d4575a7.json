@@ -1,0 +1,22 @@
+{
+    "AS_Form_a364352ae3b04071b1e5d9fc7d4575a7": {
+        "id": "AS_Form_a364352ae3b04071b1e5d9fc7d4575a7",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "CopyfrmCrossBorderConsent",
+            "type": "forms",
+            "platform": null,
+            "KUID": "bd9205d054734ad781c4ca1ebc544e7b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_preShow_e3b70ebe901543f18e5cbb9ce128b627",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.preShow();"
+        }]
+    }
+}

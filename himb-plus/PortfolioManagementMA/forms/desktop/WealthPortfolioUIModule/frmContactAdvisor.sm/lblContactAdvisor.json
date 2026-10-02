@@ -1,0 +1,98 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizLabel",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "25dp"
+    },
+    "_i18n_text_": "i18n.wealth.contactAdvisor",
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        1,
+        1,
+        1,
+        1
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s67762f7fa44429cb51bc95041cc4265",
+    "_text_": "Contact Advisor",
+    "_top_": {
+        "type": "string",
+        "value": "20dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "132dp"
+    },
+    "_wrapping_": 2,
+    "android": {
+        "textStyle": {
+            "letterSpacing": 0,
+            "strikeThrough": false
+        }
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "id": "lblContactAdvisor",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "iphone": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "i5fbe41e18e54ae2b17a79da43daa296",
+    "name": "kony.ui.Label",
+    "parent": "flxContactAdvisor",
+    "pf": "frmContactAdvisor",
+    "responsiveData": {
+        "b1": {
+            "height": {
+                "type": "ref",
+                "value": "preferred"
+            },
+            "i18n_text": "i18n.wealth.contactAdvisor",
+            "skin": "s109e6fb16394c2facad78f49aeddd21",
+            "text": "",
+            "top": {
+                "type": "string",
+                "value": "28px"
+            },
+            "width": {
+                "type": "ref",
+                "value": "preferred"
+            }
+        },
+        "b2": {
+            "height": {
+                "type": "ref",
+                "value": "preferred"
+            },
+            "skin": "s109e6fb16394c2facad78f49aeddd21",
+            "width": {
+                "type": "ref",
+                "value": "preferred"
+            }
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "texti18n": "i18n.wealth.contactAdvisor",
+    "tooltip": "",
+    "wType": "Label"
+}

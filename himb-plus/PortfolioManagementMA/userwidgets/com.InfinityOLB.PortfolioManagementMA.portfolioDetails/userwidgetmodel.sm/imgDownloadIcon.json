@@ -1,0 +1,88 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizLabel",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "20dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s5e396cd484a4e88b4dac9fda68241a9",
+    "_text_": "D",
+    "_width_": {
+        "type": "string",
+        "value": "30dp"
+    },
+    "_wrapping_": 2,
+    "accessibilityconfig": {
+        "a11yLabel": "Download"
+    },
+    "android": {
+        "textStyle": {
+            "letterSpacing": 0,
+            "strikeThrough": false
+        }
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "desktopweb": {
+        "psp": {
+            "hoverSkin": "se207ebcf3a0408988b3f339e5032a52"
+        }
+    },
+    "id": "imgDownloadIcon",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "iphone": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "isvisible": true,
+    "kuid": "c356c1dc82da46dfb4df5d79a79be143",
+    "name": "kony.ui.Label",
+    "parent": "flxDownload",
+    "pf": "userwidgetmodel",
+    "responsiveData": {
+        "b1": {
+            "isVisible": true,
+            "skin": "s5e396cd484a4e88b4dac9fda68241a9",
+            "width": {
+                "type": "string",
+                "value": "13dp"
+            }
+        },
+        "b2": {
+            "width": {
+                "type": "string",
+                "value": "15dp"
+            }
+        }
+    },
+    "tooltip": "Download",
+    "wType": "Label",
+    "zindex": 1
+}

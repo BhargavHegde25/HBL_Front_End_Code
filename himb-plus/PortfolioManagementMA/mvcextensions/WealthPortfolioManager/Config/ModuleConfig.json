@@ -1,0 +1,16 @@
+{
+    "BusinessControllerConfig": {
+        "BusinessExtensions": [],
+        "CommandHandler": [],
+        "BusinessControllerClass": "WealthPortfolioManager/BusinessControllers/BusinessController"
+    },
+    "PresentationControllerConfig": {
+        "Default": {
+            "PresentationExtensions": [],
+            "PresentationControllerClass": "WealthPortfolioManager/PresentationControllers/PresentationController"
+        }
+    },
+    "Forms": {},
+    "ModuleName": "WealthPortfolioManager",
+    "ModuleType": "Manager"
+}

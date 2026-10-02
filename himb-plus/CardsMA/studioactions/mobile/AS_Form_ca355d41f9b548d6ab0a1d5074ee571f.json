@@ -1,0 +1,23 @@
+{
+    "AS_Form_ca355d41f9b548d6ab0a1d5074ee571f": {
+        "id": "AS_Form_ca355d41f9b548d6ab0a1d5074ee571f",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmReqVirtualDollerCard",
+            "type": "forms",
+            "platform": "",
+            "KUID": "c63ce6f4bce246e3b9ec299885b99e2c"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_bc625cc3f5304c52a12f11243cc36d00",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.preShow();",
+            "parentId": null
+        }]
+    }
+}

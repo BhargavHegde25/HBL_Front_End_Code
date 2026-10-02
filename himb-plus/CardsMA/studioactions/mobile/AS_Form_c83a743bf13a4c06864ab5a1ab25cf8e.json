@@ -1,0 +1,23 @@
+{
+    "AS_Form_c83a743bf13a4c06864ab5a1ab25cf8e": {
+        "id": "AS_Form_c83a743bf13a4c06864ab5a1ab25cf8e",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTopUpVirtualCardConsentScreen",
+            "type": "forms",
+            "platform": "",
+            "KUID": "e01dc67fb0674f1ab6d1c79d9f465c60"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_fd74ea7ff5aa40afbe89f7c697552df1",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.preShow();",
+            "parentId": null
+        }]
+    }
+}

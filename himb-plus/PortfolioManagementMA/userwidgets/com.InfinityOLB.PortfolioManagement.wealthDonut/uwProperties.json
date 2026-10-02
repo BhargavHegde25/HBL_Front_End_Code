@@ -1,0 +1,44 @@
+{
+    "classname": "wealthDonut",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "efba9950761e43bb901ddbc22bf551f4",
+                    "paramList": [],
+                    "propertyKey": "drawDataChart",
+                    "pw": {
+                        "displayName": "drawDataChart",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "a2d10fa1e2fe4eef8e4e882c91f1d420",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfinityOLB.PortfolioManagement",
+    "version": "1.0.0"
+}

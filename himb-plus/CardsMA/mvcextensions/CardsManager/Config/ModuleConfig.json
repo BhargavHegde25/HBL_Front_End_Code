@@ -1,0 +1,10 @@
+{
+    "ModuleName": "CardsManager",
+    "BusinessControllerConfig": {
+        "BusinessExtensions": [
+            "CardsManager/BusinessControllers/BusinessController_Extension"
+        ],
+        "BusinessControllerClass": "CardsManager/BusinessControllers/BusinessController"
+    },
+    "ModuleType": "Manager"
+}

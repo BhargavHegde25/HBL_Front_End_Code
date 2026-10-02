@@ -1,0 +1,23 @@
+{
+    "AS_FlexContainer_fd31843eafb5476f90901c4c76cf3f93": {
+        "id": "AS_FlexContainer_fd31843eafb5476f90901c4c76cf3f93",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmForgotEnterEmailID",
+            "type": "forms",
+            "platform": "",
+            "KUID": "h2d91e77de0147b7873a945d57f46c9b"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ce3d211c4b7e4a95bd5bfae6dde9c802",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.navigateBack();",
+            "parentId": null
+        }]
+    }
+}

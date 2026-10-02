@@ -1,0 +1,17 @@
+{
+  "type" : "svcdriven",
+  "custom" : false,
+  "junction" : false,
+  "customizable" : false,
+  "verbs" : {
+    "updateP2PPayee" : "updateP2PPayeeMapping",
+    "deleteP2PPayee" : "deleteP2PPayeeMapping",
+    "createP2PPayee" : "createP2PPayeeMapping",
+    "getP2PPayees" : "getP2PPayeesMapping"
+  },
+  "entityProperties" : {
+    "BatchMode" : "buffer",
+    "backendMeta" : { },
+    "designTimeBackendMeta" : { }
+  }
+}

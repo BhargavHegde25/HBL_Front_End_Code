@@ -1,0 +1,11 @@
+{
+    "ModuleName": "ValidationUtilManager",
+    "ModuleType": "Manager",
+    "BusinessControllerConfig": {
+        "BusinessExtensions": [
+            "ValidationUtilManager/BusinessControllers/BusinessController_Extension",
+            "ValidationUtilManager/BusinessControllers/BusinessController_Extension_Mobile"
+        ],
+        "BusinessControllerClass": "ValidationUtilManager/BusinessControllers/BusinessController"
+    }
+}

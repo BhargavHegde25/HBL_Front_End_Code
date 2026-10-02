@@ -1,0 +1,55 @@
+{
+    "AS_Label_aed08beab7304ff5b69f0e5ef6dede9f": {
+        "id": "AS_Label_aed08beab7304ff5b69f0e5ef6dede9f",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmQRScan",
+            "type": "forms",
+            "platform": "",
+            "KUID": "fd1bb1a83b0f4d55a7b6052941cd29c5"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "MOVE_ACTION_c80cbbf526f84c94ad686a60ac62b932",
+            "type": "MOVE_ACTION",
+            "itemType": "FORM",
+            "itemId": "frmQRScan",
+            "widgetId": "flxTabmover",
+            "itemKUID": "fd1bb1a83b0f4d55a7b6052941cd29c5",
+            "widgetKUID": "ia0491e3c8c740be80513abe01edaefc",
+            "wType": "FlexContainer",
+            "animationObject": {
+                "left": "33%",
+                "anchorPoint": {},
+                "stepConfig": {
+                    "timingFunction": "kony.anim.EASE"
+                }
+            },
+            "config": {
+                "delay": "0",
+                "iterationCount": 1,
+                "fillMode": "kony.anim.FILL_MODE_FORWARDS",
+                "duration": "250"
+            },
+            "start": "Immediately",
+            "animationId": "MOVE_ACTION_c80cbbf526f84c94ad686a60ac62b932",
+            "displayAnimationId": "MOVE_ACTION_c80cbbf526f84c94ad686a60ac62b932",
+            "forkedPlatform": "all",
+            "widgetPath": "this.view.flxTabmover"
+        }, {
+            "id": "ADD_SNIPPET_c43b7c2e0ba0458796e0f68127de7c2d",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.view.customHeader.lblLocateUs.text=kony.i18n.getLocalizedString(\"i18n.qrpayments.Scan\");\r\nthis.view.title=kony.i18n.getLocalizedString(\"i18n.qrpayments.Scan\");\r\nthis.view.lblRecent.skin=\"sknFontFFFFFSemioild\";\r\nthis.view.lblScan.skin=\"sknFont851A1CSemioild\";\r\nthis.view.lblMycode.skin=\"sknFontFFFFFSemioild\";\r\nthis.view.flxShare.setVisibility(false);\r\nthis.view.flxMainContainer.setVisibility(true);\r\nthis.view.flxRecentTransactions.setVisibility(false);\r\n\r\n"
+        }]
+    }
+}

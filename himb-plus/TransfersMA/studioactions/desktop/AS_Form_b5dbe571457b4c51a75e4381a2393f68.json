@@ -1,0 +1,26 @@
+{
+    "AS_Form_b5dbe571457b4c51a75e4381a2393f68": {
+        "id": "AS_Form_b5dbe571457b4c51a75e4381a2393f68",
+        "type": "ACTION_SEQUENCE",
+        "params": [
+            {
+                "datatype": "collection",
+                "name": "eventobject"
+            }
+        ],
+        "contextObj": {
+            "name": "frmRequestFDConfirmation",
+            "type": "forms",
+            "platform": null,
+            "KUID": "a12b0c7e6c5c4d4092275acc765db612"
+        },
+        "language": "js",
+        "actions": [
+            {
+                "id": "ADD_SNIPPET_ide_init_d8ad946f37834606992cbca97a3ce1d2",
+                "type": "ADD_SNIPPET",
+                "codeSnippet": "this.init();"
+            }
+        ]
+    }
+}

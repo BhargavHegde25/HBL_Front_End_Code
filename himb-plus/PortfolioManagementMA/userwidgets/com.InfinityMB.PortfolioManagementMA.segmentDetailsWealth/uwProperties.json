@@ -1,0 +1,1415 @@
+{
+    "classname": "segmentDetailsWealth",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "gcd65ac5759d4ed38b2a81537c8a4d98",
+                    "paramList": [],
+                    "propertyKey": "setContext",
+                    "pw": {
+                        "displayName": "setContext",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "fdde45de24a04b9aab1ddac29d88537e",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "b34414fa52f0450a9e45afa909141520",
+                    "paramList": [
+                        {
+                            "name": "params"
+                        }
+                    ],
+                    "propertyKey": "setLblPreviousDays",
+                    "pw": {
+                        "displayName": "setLblPreviousDays",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "fdde45de24a04b9aab1ddac29d88537e",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "ae85b8356cc94277baaca348eda4a830",
+                    "paramList": [],
+                    "propertyKey": "getPreviousDaysText",
+                    "pw": {
+                        "displayName": "getPreviousDaysText",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "fdde45de24a04b9aab1ddac29d88537e",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "b7bfc1e96f2e4edfb6b9342d039db373",
+                    "paramList": [],
+                    "propertyKey": "getCriteriaObjValue",
+                    "pw": {
+                        "displayName": "getCriteriaObjValue",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "fdde45de24a04b9aab1ddac29d88537e",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "e9cc9d5f3fda4d4aa5d9b930142d9427",
+                    "paramList": [],
+                    "propertyKey": "getRefCurrency",
+                    "pw": {
+                        "displayName": "getRefCurrency",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "fdde45de24a04b9aab1ddac29d88537e",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "dfb10267b2754b5b8200387e0b1a71e0",
+                    "paramList": [],
+                    "propertyKey": "setCashAccounts",
+                    "pw": {
+                        "displayName": "setCashAccounts",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "fdde45de24a04b9aab1ddac29d88537e",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "fe7ea0cb281b4edc8647e89f299c72c5",
+                    "paramList": [],
+                    "propertyKey": "cancelOrder",
+                    "pw": {
+                        "displayName": "cancelOrder",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "fdde45de24a04b9aab1ddac29d88537e",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "j837c19c59ac44ed8a00c684c3a44830",
+                    "paramList": [],
+                    "propertyKey": "callOrderHistory",
+                    "pw": {
+                        "displayName": "callOrderHistory",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "fdde45de24a04b9aab1ddac29d88537e",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "ee65fd0558ee41119c6978fe8dbe9616",
+                    "paramList": [],
+                    "propertyKey": "onActionSelect",
+                    "pw": {
+                        "displayName": "onActionSelect",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "fdde45de24a04b9aab1ddac29d88537e",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "feeb22a3d103459fb885c5fc92fbba2a",
+                    "paramList": [],
+                    "propertyKey": "setCriteriaObjectValue",
+                    "pw": {
+                        "displayName": "setCriteriaObjectValue",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "fdde45de24a04b9aab1ddac29d88537e",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "bafdc9b62929439daf25ec454d6187aa",
+                    "paramList": [
+                        {
+                            "name": "isEuroFlow"
+                        }
+                    ],
+                    "propertyKey": "setEuroFlow",
+                    "pw": {
+                        "displayName": "setEuroFlow",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "fdde45de24a04b9aab1ddac29d88537e",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "f9097a6a42ee4f6cb5e39025198a5f4c",
+                    "paramList": [],
+                    "propertyKey": "getFeaturesAndPermissions",
+                    "pw": {
+                        "displayName": "getFeaturesAndPermissions",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "fdde45de24a04b9aab1ddac29d88537e",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "cbd9f18c9ec54ec18eebac7bce4b7add",
+                    "paramList": [],
+                    "propertyKey": "setVisibleActionImage",
+                    "pw": {
+                        "displayName": "setVisibleActionImage",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "fdde45de24a04b9aab1ddac29d88537e",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "e06ce297eadb417da8153d707d7378c8",
+                    "paramList": [],
+                    "propertyKey": "getHoldingsTopDetails",
+                    "pw": {
+                        "displayName": "getHoldingsTopDetails",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "fdde45de24a04b9aab1ddac29d88537e",
+                    "type": "event"
+                }
+            ],
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "d123c5ec91d241a3a2d7e682d4c6edc2",
+                    "originalPropertyKey": "removeAll",
+                    "propertyKey": "removeAll",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "action",
+                        "displayName": "removeAll",
+                        "srcWidget": "segList",
+                        "type": "action",
+                        "uiRepresentation": "Label-Label-Button-Button",
+                        "wType": "Segment"
+                    },
+                    "srcWgtKUID": "d6c8aa54b3d54f9389d93d3fcc7db9c8"
+                }
+            ]
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "cda8cc799f6f48bca644c6f37b67e9e4",
+                    "paramList": [
+                        {
+                            "name": "params"
+                        },
+                        {
+                            "name": "rowData"
+                        }
+                    ],
+                    "propertyIndex": 2,
+                    "propertyKey": "onActionButtonClicked",
+                    "pw": {
+                        "displayName": "onActionButtonClicked",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "fdde45de24a04b9aab1ddac29d88537e",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "g32ae4ee30ec4331bcd0061ca4fd3540",
+                    "paramList": [
+                        {
+                            "name": "params"
+                        }
+                    ],
+                    "propertyIndex": 4,
+                    "propertyKey": "onRowClickEvent",
+                    "pw": {
+                        "displayName": "onRowClickEvent",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "fdde45de24a04b9aab1ddac29d88537e",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "a4dab0b8d89b4543a206def5917cd84c",
+                    "paramList": [],
+                    "propertyIndex": 5,
+                    "propertyKey": "onMoveToDateRange",
+                    "pw": {
+                        "displayName": "onMoveToDateRange",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "fdde45de24a04b9aab1ddac29d88537e",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "dde7b5cdd0534ae28499e608ae763ce9",
+                    "paramList": [],
+                    "propertyIndex": 6,
+                    "propertyKey": "onClickOpenOrders",
+                    "pw": {
+                        "displayName": "onClickOpenOrders",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "fdde45de24a04b9aab1ddac29d88537e",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "a41544e6c47b4116952cbff264653204",
+                    "paramList": [],
+                    "propertyIndex": 7,
+                    "propertyKey": "onClickOrderHistory",
+                    "pw": {
+                        "displayName": "onClickOrderHistory",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "fdde45de24a04b9aab1ddac29d88537e",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "a5e0e48ba3274a3abbad521f4b37b8ab",
+                    "paramList": [],
+                    "propertyIndex": 8,
+                    "propertyKey": "onRequestStart",
+                    "pw": {
+                        "displayName": "onRequestStart",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "fdde45de24a04b9aab1ddac29d88537e",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "bb7b409334704f01be7dc5f6f99460b4",
+                    "paramList": [],
+                    "propertyIndex": 9,
+                    "propertyKey": "onRequestEnd",
+                    "pw": {
+                        "displayName": "onRequestEnd",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "fdde45de24a04b9aab1ddac29d88537e",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "d28c61a237b946d29f336c0327b033b8",
+                    "paramList": [],
+                    "propertyIndex": 10,
+                    "propertyKey": "onMoveToCashAccounts",
+                    "pw": {
+                        "displayName": "onMoveToCashAccounts",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "fdde45de24a04b9aab1ddac29d88537e",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "c8237c76abfa4d7f87b3e1cb422fcd96",
+                    "paramList": [],
+                    "propertyIndex": 11,
+                    "propertyKey": "onOrdersComponentLoad",
+                    "pw": {
+                        "displayName": "onOrdersComponentLoad",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "fdde45de24a04b9aab1ddac29d88537e",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "c374ff0f68454dbea00c79be11f03978",
+                    "paramList": [
+                        {
+                            "name": "response"
+                        }
+                    ],
+                    "propertyIndex": 12,
+                    "propertyKey": "onCancelPopup",
+                    "pw": {
+                        "displayName": "onCancelPopup",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "fdde45de24a04b9aab1ddac29d88537e",
+                    "type": "event"
+                }
+            ],
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "a85ba6b4c3d145f9a539c33882e562f1",
+                    "originalPropertyKey": "preShow",
+                    "propertyIndex": 3,
+                    "propertyKey": "preShow",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "action",
+                        "displayName": "preShow",
+                        "srcWidget": "segmentDetailsWealth",
+                        "type": "action",
+                        "uiRepresentation": "Label-Label-Button-Button",
+                        "wType": "FlexContainer"
+                    },
+                    "srcWgtKUID": "fdde45de24a04b9aab1ddac29d88537e",
+                    "translateAtInstance": false
+                }
+            ]
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [
+                "Row Data",
+                "UI Properties",
+                "Skins",
+                "Error Handling",
+                "Data Format",
+                "Service Handlers",
+                "portfolio Values",
+                "Features And Permission",
+                "Newproposal Values"
+            ],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "sknLbl424242SSPReg26px",
+                    "group": "Skins",
+                    "kuid": "fd4d1a0801c448b29c18629885f01649",
+                    "originalPropertyKey": "fieldOneValueSkin",
+                    "propertyIndex": 1,
+                    "propertyKey": "fieldOneValueSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "field 1 Val Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fdde45de24a04b9aab1ddac29d88537e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "No records to show",
+                    "group": "Error Handling",
+                    "kuid": "id162f0f779b49c4be287e07dd48a835",
+                    "originalPropertyKey": "noRecordsFoundText",
+                    "propertyIndex": 1,
+                    "propertyKey": "noRecordsFoundText",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "record not found Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fdde45de24a04b9aab1ddac29d88537e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Trade Date:",
+                    "group": "Row Data",
+                    "kuid": "c73a7b09f31942159bb6547af2d8df4b",
+                    "originalPropertyKey": "fieldOneKey",
+                    "propertyIndex": 1,
+                    "propertyKey": "fieldOneKey",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "field 1 key",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fdde45de24a04b9aab1ddac29d88537e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{ \"locale\":\"\", \"positiveFormat\" : \"{CS}{D}\", \"negativeFormat\" : \"-{CS}{D}\", \"fractionDigits\":\"2\"}",
+                    "group": "Data Format",
+                    "kuid": "ad48e5827de74ff79c8f3b57cd59bbf0",
+                    "originalPropertyKey": "amountFormat",
+                    "propertyIndex": 1,
+                    "propertyKey": "amountFormat",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "amount Format",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fdde45de24a04b9aab1ddac29d88537e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "getTransactionDetails",
+                    "group": "Service Handlers",
+                    "kuid": "g21ae87a14f9424e90094e83a3d30ed1",
+                    "originalPropertyKey": "operationName",
+                    "propertyIndex": 1,
+                    "propertyKey": "operationName",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "operation Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fdde45de24a04b9aab1ddac29d88537e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Transactions",
+                    "group": "UI Properties",
+                    "kuid": "a95f90bdc4f44669a3599ff2ea06982e",
+                    "originalPropertyKey": "topFlex",
+                    "propertyIndex": 1,
+                    "propertyKey": "topFlex",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "top Flex Name",
+                        "uiRepresentation": "Label-Combobox"
+                    },
+                    "srcWgtKUID": "fdde45de24a04b9aab1ddac29d88537e",
+                    "type": "list selector",
+                    "value": [
+                        "Transactions",
+                        "Holdings",
+                        "Accounts",
+                        "Orders",
+                        "Watchlist",
+                        "InstrumentTransactions",
+                        "ReviewProposals",
+                        "ReviewPastProposals"
+                    ]
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Total Value",
+                    "group": "portfolio Values",
+                    "kuid": "b0e09b0abfeb4a6695fe5f1a7423573b",
+                    "originalPropertyKey": "totalValueKey",
+                    "propertyIndex": 1,
+                    "propertyKey": "totalValueKey",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "total Value Key",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fdde45de24a04b9aab1ddac29d88537e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "referenceCurrency",
+                    "group": "General",
+                    "kuid": "cb6bc6d74bf94424a21d6c236d4e14cc",
+                    "originalPropertyKey": "referenceCurrency",
+                    "propertyIndex": 1,
+                    "propertyKey": "referenceCurrency",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "reference Currency",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fdde45de24a04b9aab1ddac29d88537e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Features And Permission",
+                    "kuid": "hdf3729bb186451d873fa57c6a0023a1",
+                    "originalPropertyKey": "featuresAndPermission",
+                    "propertyIndex": 1,
+                    "propertyKey": "featuresAndPermission",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Features & Permission",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fdde45de24a04b9aab1ddac29d88537e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Proposal Date:",
+                    "group": "Newproposal Values",
+                    "kuid": "e944d7dda0af45a98d3f345ad8d1396f",
+                    "originalPropertyKey": "proposalDate",
+                    "propertyIndex": 1,
+                    "propertyKey": "proposalDate",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "proposal Date",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fdde45de24a04b9aab1ddac29d88537e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknLbl424242SSPReg26px",
+                    "group": "Skins",
+                    "kuid": "c4180fc50c554bf1b645e5e788e4d277",
+                    "originalPropertyKey": "fieldTwoValueSkin",
+                    "propertyIndex": 2,
+                    "propertyKey": "fieldTwoValueSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "field 2 Val Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fdde45de24a04b9aab1ddac29d88537e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "m/d/Y",
+                    "group": "Data Format",
+                    "kuid": "g522cd75650b492284877ef549935bc0",
+                    "originalPropertyKey": "dateFormat",
+                    "propertyIndex": 2,
+                    "propertyKey": "dateFormat",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "date Format",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fdde45de24a04b9aab1ddac29d88537e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "PortfolioDetails",
+                    "group": "Service Handlers",
+                    "kuid": "a4adbdb4c55b4c4890363e85c1afcfe5",
+                    "originalPropertyKey": "objectName",
+                    "propertyIndex": 2,
+                    "propertyKey": "objectName",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "object Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fdde45de24a04b9aab1ddac29d88537e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Search...",
+                    "group": "UI Properties",
+                    "kuid": "e3219e3d2f7f4f9a9908987cd4edd584",
+                    "originalPropertyKey": "placeholderSearchText",
+                    "propertyIndex": 2,
+                    "propertyKey": "placeholderSearchText",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "placeholder Search Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fdde45de24a04b9aab1ddac29d88537e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "marketValue",
+                    "group": "portfolio Values",
+                    "kuid": "b1055ed0b1f64193a7f4c269eb6fa6e6",
+                    "originalPropertyKey": "totalValue",
+                    "propertyIndex": 2,
+                    "propertyKey": "totalValue",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "total Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fdde45de24a04b9aab1ddac29d88537e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "proposaldateTime",
+                    "group": "Newproposal Values",
+                    "kuid": "de7a631cd7d94975b9ecf4285eaf4631",
+                    "originalPropertyKey": "proposalDateVal",
+                    "propertyIndex": 2,
+                    "propertyKey": "proposalDateVal",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "proposal Date Val",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fdde45de24a04b9aab1ddac29d88537e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknLbl424242SSPReg26px",
+                    "group": "Skins",
+                    "kuid": "a9eadc5b2bae45b8af84cb48f563549d",
+                    "originalPropertyKey": "fieldThreeValueSkin",
+                    "propertyIndex": 3,
+                    "propertyKey": "fieldThreeValueSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "field 3 Val Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fdde45de24a04b9aab1ddac29d88537e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "PL:",
+                    "group": "Row Data",
+                    "kuid": "hf4980f0fbe74cafb10697075e409124",
+                    "originalPropertyKey": "fieldFourKey",
+                    "propertyIndex": 3,
+                    "propertyKey": "fieldFourKey",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "field 4 key",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fdde45de24a04b9aab1ddac29d88537e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Y-m-d",
+                    "group": "Data Format",
+                    "kuid": "a16c68aefa9f40bf9a7c67b88d101d00",
+                    "originalPropertyKey": "backendDateFormat",
+                    "propertyIndex": 3,
+                    "propertyKey": "backendDateFormat",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "backend Date Format",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fdde45de24a04b9aab1ddac29d88537e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "PortfolioServicing",
+                    "group": "Service Handlers",
+                    "kuid": "g25ff933a83d41e5b694f7382cf6ed5a",
+                    "originalPropertyKey": "serviceName",
+                    "propertyIndex": 3,
+                    "propertyKey": "serviceName",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "service Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fdde45de24a04b9aab1ddac29d88537e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "false",
+                    "group": "UI Properties",
+                    "kuid": "cdf519135e77496c9c3a32c04a8743db",
+                    "originalPropertyKey": "orderToggleIsVisible",
+                    "propertyIndex": 3,
+                    "propertyKey": "orderToggleIsVisible",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "order Toggle Visibility",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fdde45de24a04b9aab1ddac29d88537e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Total Order Amount",
+                    "group": "Newproposal Values",
+                    "kuid": "af18cafc08784ee3a20f9024ecb20f1d",
+                    "originalPropertyKey": "reviewTotal",
+                    "propertyIndex": 3,
+                    "propertyKey": "reviewTotal",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "review Total",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fdde45de24a04b9aab1ddac29d88537e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Order Type:",
+                    "group": "Row Data",
+                    "kuid": "i05816b7606d406cae7bc08ff8df0c96",
+                    "originalPropertyKey": "fieldThreeKey",
+                    "propertyIndex": 4,
+                    "propertyKey": "fieldThreeKey",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "field 3 key",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fdde45de24a04b9aab1ddac29d88537e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{   \"portfolioId\":\"{$.c.portfolioId}\",   \"startDate\":\"{$.c.startDate}\",   \"endDate\":\"{$.c.endDate}\",   \"searchByInstrumentName\":\"{$.c.instrumentName}\",   \"sortBy\":\"{$.c.quantity}\"  }",
+                    "group": "Service Handlers",
+                    "kuid": "f0fed57b92374eb2b5adeeb5114438e2",
+                    "originalPropertyKey": "requestParam",
+                    "propertyIndex": 4,
+                    "propertyKey": "requestParam",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "request Param",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fdde45de24a04b9aab1ddac29d88537e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "totalOrderAmount",
+                    "group": "Newproposal Values",
+                    "kuid": "f8827c234c164f1189080301c9987a53",
+                    "originalPropertyKey": "reviewTotalVal",
+                    "propertyIndex": 4,
+                    "propertyKey": "reviewTotalVal",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "review Total Value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fdde45de24a04b9aab1ddac29d88537e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknLbl424242SSPReg26px",
+                    "group": "Skins",
+                    "kuid": "e5ee4e8ec2684cde9a3d70e6c751059e",
+                    "originalPropertyKey": "fieldFiveValueSkin",
+                    "propertyIndex": 5,
+                    "propertyKey": "fieldFiveValueSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "field 5 Val Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fdde45de24a04b9aab1ddac29d88537e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Total:",
+                    "group": "Row Data",
+                    "kuid": "f60549202f1b45c392abfb17ebc204ec",
+                    "originalPropertyKey": "fieldFiveKey",
+                    "propertyIndex": 5,
+                    "propertyKey": "fieldFiveKey",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "field 5 key",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fdde45de24a04b9aab1ddac29d88537e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "portfolioTransactions",
+                    "group": "Service Handlers",
+                    "kuid": "b7f57473db624ad7ab3f4bc514f0d575",
+                    "originalPropertyKey": "serviceResponseKey",
+                    "propertyIndex": 5,
+                    "propertyKey": "serviceResponseKey",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "service Response Key",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fdde45de24a04b9aab1ddac29d88537e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Fees & Taxes",
+                    "group": "Newproposal Values",
+                    "kuid": "aadf86a415ce43158c1719c02143bbf6",
+                    "originalPropertyKey": "feesAndTax",
+                    "propertyIndex": 5,
+                    "propertyKey": "feesAndTax",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "fees And Tax",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fdde45de24a04b9aab1ddac29d88537e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknLbl424242SSPReg26px",
+                    "group": "Skins",
+                    "kuid": "d72374fcc2fd4c398bfa7cabeda117af",
+                    "originalPropertyKey": "fieldFourValueSkin",
+                    "propertyIndex": 6,
+                    "propertyKey": "fieldFourValueSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "field 4 Val Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fdde45de24a04b9aab1ddac29d88537e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "totalFeesTaxes",
+                    "group": "Newproposal Values",
+                    "kuid": "d8e5a20df6644b87b9b1f676be8e1ba1",
+                    "originalPropertyKey": "feesAndTaxVal",
+                    "propertyIndex": 6,
+                    "propertyKey": "feesAndTaxVal",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "fees And Tax Val",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fdde45de24a04b9aab1ddac29d88537e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknflxe3e3e3border",
+                    "group": "Skins",
+                    "kuid": "ad9d943a705b4d868c5a9c1621642417",
+                    "originalPropertyKey": "rowSeperatorSkin",
+                    "propertyIndex": 7,
+                    "propertyKey": "rowSeperatorSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "row Seperator Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fdde45de24a04b9aab1ddac29d88537e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "tradeDate",
+                    "group": "Row Data",
+                    "kuid": "e746303603084a6b8dfa74f1a4db8dbf",
+                    "originalPropertyKey": "fieldOneValue",
+                    "propertyIndex": 7,
+                    "propertyKey": "fieldOneValue",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "field 1 value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fdde45de24a04b9aab1ddac29d88537e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "amount",
+                    "group": "Row Data",
+                    "kuid": "j8f5cb74494546deb8d46c198b41fe3a",
+                    "originalPropertyKey": "fieldFiveValue",
+                    "propertyIndex": 8,
+                    "propertyKey": "fieldFiveValue",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "field 5 value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fdde45de24a04b9aab1ddac29d88537e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknLbl424242SSPReg26px",
+                    "group": "Skins",
+                    "kuid": "h14e92fdc1e34f32bfb0613adf85b743",
+                    "originalPropertyKey": "fieldZeroValueSkin",
+                    "propertyIndex": 8,
+                    "propertyKey": "fieldZeroValueSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "field 0 Val Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fdde45de24a04b9aab1ddac29d88537e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "orderType",
+                    "group": "Row Data",
+                    "kuid": "cd7865338a954a678777c54f12be7b9e",
+                    "originalPropertyKey": "fieldThreeValue",
+                    "propertyIndex": 9,
+                    "propertyKey": "fieldThreeValue",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "field 3 value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fdde45de24a04b9aab1ddac29d88537e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "limitPrice",
+                    "group": "Row Data",
+                    "kuid": "j02fcb22dcd649d282958d8c44531c06",
+                    "originalPropertyKey": "fieldTwoValue",
+                    "propertyIndex": 10,
+                    "propertyKey": "fieldTwoValue",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "field 2 value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fdde45de24a04b9aab1ddac29d88537e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "quantity",
+                    "group": "Row Data",
+                    "kuid": "c6df99c02029467c9b44d671bc547690",
+                    "originalPropertyKey": "fieldFourValue",
+                    "propertyIndex": 11,
+                    "propertyKey": "fieldFourValue",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "field 4 value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fdde45de24a04b9aab1ddac29d88537e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ISIN",
+                    "group": "Row Data",
+                    "kuid": "gcff8184f3374abeb71897d1934d17ca",
+                    "originalPropertyKey": "fieldIdOne",
+                    "propertyIndex": 12,
+                    "propertyKey": "fieldIdOne",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "field ID part 1",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fdde45de24a04b9aab1ddac29d88537e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "description",
+                    "group": "Row Data",
+                    "kuid": "d7c401a62e284c81a2a8887757afd2a8",
+                    "originalPropertyKey": "fieldName",
+                    "propertyIndex": 14,
+                    "propertyKey": "fieldName",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "field Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fdde45de24a04b9aab1ddac29d88537e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "chevron.png",
+                    "group": "Row Data",
+                    "kuid": "h877be4e9b534e08b93da35ac96c8a85",
+                    "originalPropertyKey": "actionImgSrc",
+                    "propertyIndex": 15,
+                    "propertyKey": "actionImgSrc",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "action Image Source",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fdde45de24a04b9aab1ddac29d88537e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Row Data",
+                    "kuid": "c192498aa5af474dab84efe8b80af877",
+                    "originalPropertyKey": "logoImgSrc",
+                    "propertyIndex": 16,
+                    "propertyKey": "logoImgSrc",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "logo image Source",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fdde45de24a04b9aab1ddac29d88537e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "false",
+                    "group": "Row Data",
+                    "kuid": "cd8b1106f85a4deb80b9eb64701e2e18",
+                    "originalPropertyKey": "logoIsVisible",
+                    "propertyIndex": 17,
+                    "propertyKey": "logoIsVisible",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "logo Img Visibility",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fdde45de24a04b9aab1ddac29d88537e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "false",
+                    "group": "Row Data",
+                    "kuid": "b87d11ae3f46449188a213c7d111e58f",
+                    "originalPropertyKey": "actionImgIsVisible",
+                    "propertyIndex": 18,
+                    "propertyKey": "actionImgIsVisible",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "action Img Visibility",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fdde45de24a04b9aab1ddac29d88537e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Date",
+                    "group": "Row Data",
+                    "kuid": "b0d4a04338eb4dfc9bab19955c5d11ef",
+                    "originalPropertyKey": "fieldOneType",
+                    "propertyIndex": 19,
+                    "propertyKey": "fieldOneType",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "field 1 Type",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fdde45de24a04b9aab1ddac29d88537e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Text",
+                    "group": "Row Data",
+                    "kuid": "b4cc0ae57ffb4c279061c436316cd599",
+                    "originalPropertyKey": "fieldThreeType",
+                    "propertyIndex": 20,
+                    "propertyKey": "fieldThreeType",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "field 3 Type",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fdde45de24a04b9aab1ddac29d88537e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Text",
+                    "group": "Row Data",
+                    "kuid": "e47fcca744f24bdbb752f03e4870454e",
+                    "originalPropertyKey": "fieldFiveType",
+                    "propertyIndex": 21,
+                    "propertyKey": "fieldFiveType",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "field 5 Type",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fdde45de24a04b9aab1ddac29d88537e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Percentage",
+                    "group": "Row Data",
+                    "kuid": "ffdd194853b3430a98124b38a7de1d8f",
+                    "originalPropertyKey": "fieldFourType",
+                    "propertyIndex": 22,
+                    "propertyKey": "fieldFourType",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "field 4 Type",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fdde45de24a04b9aab1ddac29d88537e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Amount",
+                    "group": "Row Data",
+                    "kuid": "i5528237fe92483988037381fea4e13e",
+                    "originalPropertyKey": "fieldTwoType",
+                    "propertyIndex": 23,
+                    "propertyKey": "fieldTwoType",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "field 2 Type",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fdde45de24a04b9aab1ddac29d88537e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "instrumentCurrency",
+                    "group": "Row Data",
+                    "kuid": "fcc4f58f077045ce88a9c15ca58e2d77",
+                    "originalPropertyKey": "currencyCode",
+                    "propertyIndex": 25,
+                    "propertyKey": "currencyCode",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "currency Code",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fdde45de24a04b9aab1ddac29d88537e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Price:",
+                    "group": "Row Data",
+                    "kuid": "i9176b70abc2477d88a2ff5f76cf2661",
+                    "originalPropertyKey": "fieldTwoKey",
+                    "propertyIndex": 31,
+                    "propertyKey": "fieldTwoKey",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "field 2 key",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fdde45de24a04b9aab1ddac29d88537e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "holdingsType",
+                    "group": "Row Data",
+                    "kuid": "gfbe9ab2cb834d79b94d81c3cd518d66",
+                    "originalPropertyKey": "fieldIdTwo",
+                    "propertyIndex": 32,
+                    "propertyKey": "fieldIdTwo",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "field ID part 2",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fdde45de24a04b9aab1ddac29d88537e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknlbl727272SSP93pr",
+                    "group": "Row Data",
+                    "kuid": "f55018999f6740aca90d3ac7dac63f1c",
+                    "originalPropertyKey": "allFieldKeySkin",
+                    "propertyIndex": 33,
+                    "propertyKey": "allFieldKeySkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "all Field Key SKin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fdde45de24a04b9aab1ddac29d88537e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "false",
+                    "group": "Row Data",
+                    "kuid": "cdd2745690f94e8a8446b188dc53431f",
+                    "originalPropertyKey": "orderStatusIsVisible",
+                    "propertyIndex": 34,
+                    "propertyKey": "orderStatusIsVisible",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "order Status Visibility",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fdde45de24a04b9aab1ddac29d88537e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "statusImg",
+                    "group": "Row Data",
+                    "kuid": "df837888d4ca46dc862e05d3a10ee68e",
+                    "originalPropertyKey": "statusImgSrc",
+                    "propertyIndex": 35,
+                    "propertyKey": "statusImgSrc",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "status Img Src",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fdde45de24a04b9aab1ddac29d88537e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "orderStatus",
+                    "group": "Row Data",
+                    "kuid": "b7c0975cb26e42a6a9e6dd442c789ee5",
+                    "originalPropertyKey": "statusText",
+                    "propertyIndex": 36,
+                    "propertyKey": "statusText",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "status Text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fdde45de24a04b9aab1ddac29d88537e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Value Date:",
+                    "group": "Row Data",
+                    "kuid": "a4b73083190044e8ae64ed5a3983da99",
+                    "originalPropertyKey": "fieldZeroKey",
+                    "propertyIndex": 37,
+                    "propertyKey": "fieldZeroKey",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "field 0 key",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fdde45de24a04b9aab1ddac29d88537e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "valueDate",
+                    "group": "Row Data",
+                    "kuid": "d7e119e854614cba9463db10ed8e9bb0",
+                    "originalPropertyKey": "fieldZeroValue",
+                    "propertyIndex": 38,
+                    "propertyKey": "fieldZeroValue",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "field 0 value",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fdde45de24a04b9aab1ddac29d88537e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Date",
+                    "group": "Row Data",
+                    "kuid": "h8a5e140cd8f465a80a7db04b319b5db",
+                    "originalPropertyKey": "fieldZeroType",
+                    "propertyIndex": 39,
+                    "propertyKey": "fieldZeroType",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "field 0 Type",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "fdde45de24a04b9aab1ddac29d88537e",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfinityMB.PortfolioManagementMA",
+    "version": "1.0.0"
+}

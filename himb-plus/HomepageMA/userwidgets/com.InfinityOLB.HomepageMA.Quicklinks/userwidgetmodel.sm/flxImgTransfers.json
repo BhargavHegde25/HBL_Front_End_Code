@@ -1,0 +1,78 @@
+{
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "85dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "4%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "sb57ded5f3434dc8814e240f9acc7d8e",
+    "_top_": {
+        "type": "string",
+        "value": "10dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "65dp"
+    },
+    "allboxes": [],
+    "canUpdateUI": true,
+    "children": [
+        "flxImgTransferCont",
+        "lblTransfers"
+    ],
+    "clipbounds": false,
+    "containerweight": 100,
+    "desktopweb": {
+        "psp": {}
+    },
+    "enablescrolling": true,
+    "hoverskin": "",
+    "id": "flxImgTransfers",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "c63212b0f86d489fb9d19391cdfab3ae",
+    "layouttype": 2,
+    "name": "kony.ui.FlexContainer",
+    "parent": "flxImg",
+    "pf": "userwidgetmodel",
+    "responsiveData": {
+        "b1": {},
+        "b3": {
+            "desktopweb": {
+                "psp": {
+                    "hoverSkin": "s05eb10355194e1ebdde101dd1529a0d"
+                }
+            },
+            "disabledSkins": {},
+            "height": {
+                "type": "string",
+                "value": "120dp"
+            }
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1
+}

@@ -1,0 +1,23 @@
+{
+    "AS_Form_da74259060f74d059a4d163f46b2a438": {
+        "id": "AS_Form_da74259060f74d059a4d163f46b2a438",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmCardLesscashHome",
+            "type": "forms",
+            "platform": null,
+            "KUID": "gd5c29131ec345ef950ddd988754b395"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_aa029e57367d46bbbaea9216ccfb42c7",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "alert(\"preshow\");",
+            "parentId": null
+        }]
+    }
+}

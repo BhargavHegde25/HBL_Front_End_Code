@@ -1,0 +1,17 @@
+{
+  "type" : "svcdriven",
+  "custom" : false,
+  "junction" : false,
+  "customizable" : false,
+  "verbs" : {
+    "getBillPayPayees" : "getBillPayPayeesMapping",
+    "deleteBillPayPayee" : "deleteBillPayPayeeMapping",
+    "updateBillPayPayee" : "updateBillPayPayeeMapping",
+    "createBillPayPayee" : "createBillPayPayeeMapping"
+  },
+  "entityProperties" : {
+    "BatchMode" : "buffer",
+    "backendMeta" : { },
+    "designTimeBackendMeta" : { }
+  }
+}

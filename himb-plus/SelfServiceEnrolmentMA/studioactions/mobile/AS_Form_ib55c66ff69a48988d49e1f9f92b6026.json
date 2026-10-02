@@ -1,0 +1,23 @@
+{
+    "AS_Form_ib55c66ff69a48988d49e1f9f92b6026": {
+        "id": "AS_Form_ib55c66ff69a48988d49e1f9f92b6026",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmEnrollEmail",
+            "type": "forms",
+            "platform": null,
+            "KUID": "f6e2dff5f9354925a705aae63b16b91a"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_preShow_e7f92c242b9441eb86afee70572e7445",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.preShow();",
+            "callbackType": null
+        }]
+    }
+}

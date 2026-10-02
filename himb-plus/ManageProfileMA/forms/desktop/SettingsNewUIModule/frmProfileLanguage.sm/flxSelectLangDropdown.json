@@ -1,0 +1,146 @@
+{
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "220dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "41dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s25afbe5758e4a41997ec67679c58850",
+    "_top_": {
+        "type": "string",
+        "value": "33dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "allboxes": [],
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "number",
+        "value": ""
+    },
+    "children": [
+        "lblSelectedLang",
+        "lblArrow"
+    ],
+    "clipbounds": false,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "flxSelectLangDropdown",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "edd824ebaa1b4f26adc20305cf79568f",
+    "layouttype": 2,
+    "name": "kony.ui.FlexContainer",
+    "parent": "flxChangeLanguageCont",
+    "pf": "frmProfileLanguage",
+    "responsiveData": {
+        "b1": {
+            "height": {
+                "type": "string",
+                "value": "50dp"
+            },
+            "isVisible": false,
+            "left": {
+                "type": "string",
+                "value": "0dp"
+            },
+            "skin": "sdffe766d3fd4732817c2969d5342d75",
+            "top": {
+                "type": "string",
+                "value": "30dp"
+            },
+            "width": {
+                "type": "string",
+                "value": "440dp"
+            }
+        },
+        "b2": {
+            "height": {
+                "type": "string",
+                "value": "50dp"
+            },
+            "isVisible": false,
+            "left": {
+                "type": "string",
+                "value": "0dp"
+            },
+            "skin": "s721abc18aec4320bcb998e8b97be445",
+            "top": {
+                "type": "string",
+                "value": "30dp"
+            },
+            "width": {
+                "type": "string",
+                "value": "240dp"
+            }
+        },
+        "b3": {
+            "centerX": {
+                "type": "string",
+                "value": ""
+            },
+            "height": {
+                "type": "string",
+                "value": "50dp"
+            },
+            "isVisible": false,
+            "left": {
+                "type": "string",
+                "value": "0dp"
+            },
+            "skin": "s721abc18aec4320bcb998e8b97be445",
+            "top": {
+                "type": "string",
+                "value": "30dp"
+            }
+        },
+        "b4": {
+            "height": {
+                "type": "string",
+                "value": "50dp"
+            },
+            "isVisible": false,
+            "left": {
+                "type": "string",
+                "value": "0dp"
+            },
+            "skin": "s721abc18aec4320bcb998e8b97be445",
+            "top": {
+                "type": "string",
+                "value": "30dp"
+            },
+            "width": {
+                "type": "string",
+                "value": "440dp"
+            }
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1,
+    "zindex": 1
+}

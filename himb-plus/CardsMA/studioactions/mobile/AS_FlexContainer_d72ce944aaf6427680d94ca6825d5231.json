@@ -1,0 +1,27 @@
+{
+    "AS_FlexContainer_d72ce944aaf6427680d94ca6825d5231": {
+        "id": "AS_FlexContainer_d72ce944aaf6427680d94ca6825d5231",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__ide_onTouchStart_h0fb427a590d42fdaacded74e9a1311e",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "flxArrowOnclick",
+            "display": "flxArrowOnclick",
+            "inputparams": [],
+            "callbackType": null,
+            "disabled": null,
+            "source": "controller"
+        }]
+    }
+}

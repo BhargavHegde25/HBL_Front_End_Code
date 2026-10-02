@@ -1,0 +1,22 @@
+{
+    "AS_Form_ad6b3fdfaf114c5aa3c934bfdf568241": {
+        "id": "AS_Form_ad6b3fdfaf114c5aa3c934bfdf568241",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmCashAccounts",
+            "type": "forms",
+            "platform": null,
+            "KUID": "c2420eb7f71c4538afc63d4b124d9fa3"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_init_g8100f0dddd444da894cea90cc6747da",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.init();"
+        }]
+    }
+}

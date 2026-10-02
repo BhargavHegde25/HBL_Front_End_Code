@@ -1,0 +1,95 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "DNDConfig": null,
+    "_children_": [],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_render_": true,
+    "_skin_": "s7b436962d6a4647b197083ac7d03d39",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "android": {},
+    "canUpdateUI": true,
+    "containerweight": 0,
+    "data": {
+        "actionImgSrc": "",
+        "backendDateFormat": "Ymd",
+        "currencyCode": "currencyId",
+        "featuresAndPermission": "{\"viewAccountDetails\":[\"WEALTH_PORTFOLIO_DETAILS_ACCOUNT_SUMMARY_VIEW\"]}",
+        "fieldFiveKey": "",
+        "fieldFiveType": "Amount",
+        "fieldFiveValue": "balance",
+        "fieldFourKey": "",
+        "fieldFourType": "accountDateFormat",
+        "fieldFourValue": "bookingDate",
+        "fieldIdOne": "",
+        "fieldIdTwo": "",
+        "fieldName": "",
+        "fieldOneKey": "",
+        "fieldOneType": "",
+        "fieldOneValue": "",
+        "fieldThreeKey": "",
+        "fieldThreeType": "Amount",
+        "fieldThreeValue": "amount",
+        "fieldTwoKey": "",
+        "fieldTwoType": "Text",
+        "fieldTwoValue": "displayName",
+        "noRecordsFoundText": "{i.i18n.wealth.noAccountMovements}",
+        "objectName": "PortfolioDetails",
+        "operationName": "getAccountActivity",
+        "placeholderSearchText": "{i.i18n.wealth.placeHolder.searchByAccountMovementType}",
+        "referenceCurrency": "currencyId",
+        "requestParam": "{   \"portfolioId\":\"{$.c.portfolioId}\",   \"accountId\":\"{$.c.accountId}\", \"dateFrom\":\"{$.c.dateFrom}\", \"dateTo\":\"{$.c.dateTo}\", \"listType\":\"{$.c.listType}\", \"sortBy\":\"{$.c.sortBy}\", \"searchByInstrumentName\":\"{$.c.searchByInstrumentName}\" }",
+        "serviceResponseKey": "accountActivityList.body",
+        "topFlex": "Accounts",
+        "totalValue": "",
+        "totalValueKey": ""
+    },
+    "id": "segmentDetailsWealth",
+    "info": null,
+    "iphone": {
+        "top": {
+            "type": "string",
+            "value": "0dp"
+        }
+    },
+    "iscustomlayout": false,
+    "issegmentchild": false,
+    "isvisible": true,
+    "kuid": "b72c8898a87c4a60b849f05053088e0c",
+    "masterType": 1,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "flxMainContainer",
+    "pf": "frmAccounts",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "sourceUserWidget": "fdde45de24a04b9aab1ddac29d88537e",
+    "wType": "UserWidgetInstance"
+}

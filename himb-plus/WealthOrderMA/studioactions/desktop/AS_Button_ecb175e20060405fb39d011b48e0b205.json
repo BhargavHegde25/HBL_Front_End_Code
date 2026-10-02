@@ -1,0 +1,28 @@
+{
+    "AS_Button_ecb175e20060405fb39d011b48e0b205": {
+        "id": "AS_Button_ecb175e20060405fb39d011b48e0b205",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "type": "forms",
+            "platform": "",
+            "KUID": "df336a49059240909206ab5f8f5b99ab",
+            "name": "frmCurrencyConverter"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__e45004b421ea4fdbb9d28e27d145f040",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "setValueTo",
+            "display": "setValueTo",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null,
+            "source": "controller"
+        }]
+    }
+}

@@ -1,0 +1,12 @@
+{
+  "serviceType" : "integration",
+  "jars" : [ {
+    "name" : "dbp-productservices.jar",
+    "type" : "jar"
+  }, {
+    "name" : "dbp-nonproductservices.jar",
+    "type" : "servicejar"
+  } ],
+  "empty" : true,
+  "mapType" : "java.util.HashMap"
+}

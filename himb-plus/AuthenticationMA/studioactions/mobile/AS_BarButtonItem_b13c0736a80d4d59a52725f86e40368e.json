@@ -1,0 +1,17 @@
+{
+    "AS_BarButtonItem_b13c0736a80d4d59a52725f86e40368e": {
+        "id": "AS_BarButtonItem_b13c0736a80d4d59a52725f86e40368e",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_f0233a4560df4dc68f6ef12d5db93259",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var scope = this;\n var navigationMan=applicationManager.getNavigationManager();\n  if(scope.view.flxMainContainer.isVisible){\n            navigationMan.goBack();\n          }else{\n           scope.loginCancel();\n          }",
+            "parentId": null
+        }]
+    }
+}

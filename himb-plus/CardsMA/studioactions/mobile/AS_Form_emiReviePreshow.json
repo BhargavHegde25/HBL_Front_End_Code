@@ -1,0 +1,24 @@
+{
+    "AS_Form_c0e536a970b24e1fb57a4e2fd38f01a9": {
+        "id": "AS_Form_c0e536a970b24e1fb57a4e2fd38f01a9",
+        "type": "ACTION_SEQUENCE",
+        "name": "AS_Form_emiReviePreshow",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmUnBilledTranConvertEMIReviewScreen",
+            "type": "forms",
+            "platform": "",
+            "KUID": "je6e084ed00c4ecdb459010d87b361c5"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_c87b2f5c076c42ef8185a1315bc93e89",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.preShow();",
+            "parentId": null
+        }]
+    }
+}

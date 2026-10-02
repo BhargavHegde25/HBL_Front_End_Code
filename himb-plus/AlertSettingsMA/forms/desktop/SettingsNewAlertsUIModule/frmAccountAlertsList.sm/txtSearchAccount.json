@@ -1,0 +1,141 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizTextBox2",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_i18n_placeholder_": "i18n.Alerts.SearchOrSelectAccount",
+    "_left_": {
+        "type": "string",
+        "value": "0"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        3,
+        0,
+        0,
+        0
+    ],
+    "_placeholder_": "",
+    "_skin_": "s1051a07848641f4902ce765624ea9dc",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "0"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "300dp"
+    },
+    "accessibilityconfig": {},
+    "autocapitalize": "none",
+    "autocomplete": false,
+    "autocorrect": false,
+    "autofilter": false,
+    "canUpdateUI": true,
+    "containerheight": "",
+    "containerheightmode": 1,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "desktopweb": {},
+    "disabledSkins": {},
+    "focusskin": "s0003d88727f4dd9895d28e4c99312d9",
+    "id": "txtSearchAccount",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "keyboardtype": "A",
+    "kuid": "c1817d8dff7e4fc29bc4e8ec090f8faa",
+    "mode": "A",
+    "name": "kony.ui.TextBox2",
+    "paddinginpixel": false,
+    "parent": "flxSearchOrSelectAccount",
+    "pf": "frmAccountAlertsList",
+    "placeholderi18n": "i18n.Alerts.SearchOrSelectAccount",
+    "placeholderskin": "s5b39e4a75ca4e1f8749d796150d7ab9",
+    "responsiveData": {
+        "b1": {
+            "accessibilityConfig": {
+                "a11yLabel": "Search by account name or number"
+            },
+            "desktopweb": {},
+            "disabledSkins": {
+                "placeholderSkin": "s04be13dd85e4d90b7bf784e81760d74"
+            },
+            "height": {
+                "type": "string",
+                "value": "100%"
+            },
+            "i18n_placeholder": "i18n.Alerts.SearchOrSelectAccount",
+            "isVisible": true,
+            "left": {
+                "type": "string",
+                "value": "0%"
+            },
+            "padding": [
+                2,
+                0,
+                0,
+                0
+            ],
+            "placeholder": "Search or select account",
+            "placeholderSkin": "s5b39e4a75ca4e1f8749d796150d7ab9",
+            "skin": "sdd854e366514ea799a519f2e53b1e14",
+            "top": {
+                "type": "string",
+                "value": "0dp"
+            },
+            "width": {
+                "type": "string",
+                "value": "100%"
+            },
+            "zIndex": 5
+        },
+        "b2": {
+            "height": {
+                "type": "string",
+                "value": "100%"
+            },
+            "i18n_placeholder": "i18n.Alerts.SearchOrSelectAccount",
+            "left": {
+                "type": "string",
+                "value": "0dp"
+            },
+            "placeholder": "Search or select account",
+            "placeholderSkin": "sdd854e366514ea799a519f2e53b1e14",
+            "skin": "sdd854e366514ea799a519f2e53b1e14",
+            "width": {
+                "type": "string",
+                "value": "100%"
+            },
+            "zIndex": 5
+        },
+        "b3": {
+            "height": {
+                "type": "string",
+                "value": "100%"
+            },
+            "placeholder": "Search or select account",
+            "skin": "sdd854e366514ea799a519f2e53b1e14",
+            "width": {
+                "type": "string",
+                "value": "100%"
+            },
+            "zIndex": 5
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "securetextentry": false,
+    "textinputmode": "A",
+    "tooltip": "",
+    "viewtype": "default",
+    "wType": "TextField",
+    "zindex": 1
+}

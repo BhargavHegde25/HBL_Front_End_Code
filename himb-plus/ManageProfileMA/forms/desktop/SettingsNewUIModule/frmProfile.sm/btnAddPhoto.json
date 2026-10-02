@@ -1,0 +1,105 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "35dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0px"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s219852cffcc4c968a5be158c33ccd91",
+    "_text_": "+  ADD PHOTO",
+    "_top_": {
+        "type": "string",
+        "value": "185dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100dp"
+    },
+    "accessibilityconfig": {
+        "a11yARIA": {
+            "tabindex": 0
+        },
+        "a11yLabel": "+ Add Photo"
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "desktopweb": {
+        "psp": {
+            "hoverSkin": "seebde668fd244159cf9c42660975ac7"
+        }
+    },
+    "disabledSkins": {
+        "focusSkin": "sf44d06ca8224832827ea7fdff757013"
+    },
+    "displaytext": true,
+    "focusskin": null,
+    "id": "btnAddPhoto",
+    "info": null,
+    "isvisible": false,
+    "kuid": "a681dc1da7074b5b8043c5efef21958c",
+    "name": "kony.ui.Button",
+    "parent": "flxAddPhoto",
+    "pf": "frmProfile",
+    "responsiveData": {
+        "b1": {
+            "centerX": {
+                "type": "string",
+                "value": ""
+            },
+            "top": {
+                "type": "string",
+                "value": "0dp"
+            }
+        },
+        "b2": {
+            "centerX": {
+                "type": "string",
+                "value": ""
+            },
+            "top": {
+                "type": "string",
+                "value": "0dp"
+            }
+        },
+        "b3": {
+            "top": {
+                "type": "string",
+                "value": "0dp"
+            }
+        },
+        "b4": {
+            "centerX": {
+                "type": "string",
+                "value": ""
+            },
+            "top": {
+                "type": "string",
+                "value": "0dp"
+            }
+        }
+    },
+    "tooltip": "",
+    "wType": "Button",
+    "zindex": 1
+}

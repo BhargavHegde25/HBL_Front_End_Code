@@ -1,0 +1,86 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_right_": {
+        "type": "string",
+        "value": "30dp"
+    },
+    "_skin_": "sdbbccbd1d224646bda17c38efb9ccb8",
+    "_text_": "Button",
+    "_top_": {
+        "type": "number",
+        "value": ""
+    },
+    "_width_": {
+        "type": "string",
+        "value": "140dp"
+    },
+    "accessibilityconfig": {
+        "a11yARIA": {},
+        "a11yLabel": "Modify"
+    },
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "desktopweb": {
+        "psp": {
+            "hoverSkin": "s9042082e5f84feaa3bdfc6ca0a4943a"
+        }
+    },
+    "disabledSkins": {
+        "focusSkin": "sf44d06ca8224832827ea7fdff757013"
+    },
+    "displaytext": true,
+    "id": "btnModifyTopUpConfirm",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "f25b9108363f44689afc04ea4eb370bc",
+    "name": "kony.ui.Button",
+    "parent": "flxConfirmButonsTopUp",
+    "pf": "frmCardManagement",
+    "responsiveData": {
+        "b2": {},
+        "b3": {
+            "centerY": {
+                "type": "string",
+                "value": ""
+            },
+            "top": {
+                "type": "string",
+                "value": "10dp"
+            }
+        },
+        "b4": {}
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "texti18n": "i18n.transfers.Modify",
+    "tooltip": "Modify",
+    "wType": "Button",
+    "zindex": 5
+}

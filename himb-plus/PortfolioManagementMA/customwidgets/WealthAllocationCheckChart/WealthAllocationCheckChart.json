@@ -1,0 +1,22 @@
+{
+    "customComponent": {
+        "i18nSupported": true,
+        "id": "awa813b055b5e547d6bcc6b2b9a189fdc2",
+        "isOverride": false,
+        "konyWrapperFiles": [
+            "resources/thirdpartywidgets/widgetwrapper/tp-WealthAllocationCheckChart-wrapper.js"
+        ],
+        "libraryFiles": [
+            "resources/thirdpartywidgets/chartist/chartist.min.js",
+            "resources/thirdpartywidgets/chartist/chartist.min.css",
+            "resources/thirdpartywidgets/chartist/wealthAllocationCheckChart.css",
+            "resources/thirdpartywidgets/chartist/wealthAllocationCheckChart.js"
+        ],
+        "libraryName": "chartist",
+        "marginSupported": true,
+        "name": "WealthAllocationCheckChart",
+        "paddingSupported": true,
+        "platformID": "0",
+        "property": []
+    }
+}

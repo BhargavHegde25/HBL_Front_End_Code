@@ -1,0 +1,248 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "DNDConfig": null,
+    "_children_": [],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "10%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_render_": true,
+    "_skin_": "s24c92fc23b14f5484b693ee9b8a9b35",
+    "_top_": {
+        "type": "string",
+        "value": "300dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "270dp"
+    },
+    "android": {},
+    "androidwearos": {},
+    "areflexpropsreferenced": false,
+    "autogrowmode": 1,
+    "canUpdateUI": true,
+    "clipbounds": false,
+    "containerweight": 0,
+    "dataDiffs": {
+        "AllForms": {
+            "__events__": {},
+            "__info__": {
+                "isRoot": true,
+                "kuid": "f5684d6daf7a4a71ac2e6dd5719b2fbd",
+                "srcKUID": "aef6ac17436948abacbe12ea5a1d5e5b",
+                "wType": "FlexContainer"
+            },
+            "isVisible": false,
+            "left": {
+                "Default": {
+                    "type": "string",
+                    "value": "10%"
+                }
+            },
+            "responsiveData": {
+                "b1": {
+                    "isVisible": false,
+                    "left": {
+                        "type": "string",
+                        "value": "10%"
+                    },
+                    "top": {
+                        "type": "string",
+                        "value": "300dp"
+                    },
+                    "width": {
+                        "type": "string",
+                        "value": "270dp"
+                    }
+                },
+                "b2": {
+                    "isVisible": null,
+                    "left": {
+                        "type": "string",
+                        "value": "24%"
+                    }
+                }
+            },
+            "top": {
+                "Default": {
+                    "type": "string",
+                    "value": "300dp"
+                }
+            },
+            "width": {
+                "Default": {
+                    "type": "string",
+                    "value": "270dp"
+                }
+            },
+            "zIndex": {
+                "Default": 20
+            }
+        },
+        "RichTextInfo": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "a81f96d9f521456db241a9a3e8b83021",
+                "srcKUID": "i86f020750564f6ba173ce46ea601ab5",
+                "wType": "RichText"
+            },
+            "text": "The Account which is chosen by the user will be successfully set as your default account for all future bill payments. You can opt to change it in Account Settings",
+            "width": {
+                "Default": {
+                    "type": "string",
+                    "value": "83%"
+                }
+            }
+        },
+        "RichTextInfoArabic": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "dc4804a99b664c0699d34b8b227f253f",
+                "srcKUID": "gf6b074d9d61410cabce2e46c0e3e943",
+                "wType": "RichText"
+            },
+            "text": " سيتم تعيين الحساب الذي يختاره المستخدم بنجاح كحساب افتراضي لجميع مدفوعات الفواتير المستقبلية. يمكنك اختيار تغييره في إعدادات الحساب."
+        },
+        "flxAccountType": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "aa4513b2876445f7b56cea622fbf735c",
+                "srcKUID": "ed52287fd449401ba9a5f005c99e3f35",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxCross": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "iacd0629c2af4c1c8dcbf233311afb58",
+                "srcKUID": "d452c358ed1445a58e5fdff55685498f",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxInformation": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "f900d01c8a8049e5b36e88bfa43dbfce",
+                "srcKUID": "be414255ea60408894eb2a9b719b864e",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxInformationText": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "e8f2b29d1b654cfb8b134a33fb3f9713",
+                "srcKUID": "fa4dbab87ecf4647a21060118b02bd03",
+                "wType": "FlexContainer"
+            }
+        },
+        "imgCross": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "i7e59e4d04084aafb78c22474df1d9ad",
+                "srcKUID": "d86a08cea857467eae13f42ed033a771",
+                "wType": "Image"
+            },
+            "src": "bbcloseicon.png"
+        },
+        "imgToolTip": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "f624a32fdb9d415ba96fd2594bcd8225",
+                "srcKUID": "f9274528aa6b41bfb057f17c510b73b5",
+                "wType": "Image"
+            },
+            "left": {
+                "Default": {
+                    "type": "string",
+                    "value": "39%"
+                }
+            },
+            "src": "tool_tip.png"
+        },
+        "lblInfo": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "jc3e9b1a28b94aafad4a9b68a5556bfc",
+                "srcKUID": "c6ecc9c129c943b396152e99a30763f6",
+                "wType": "Label"
+            },
+            "i18n_text": "i18n.WireTransfers.Information",
+            "responsiveData": {}
+        },
+        "lblSeperator": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "cc75508fa70643e1a68d266a5baa8746",
+                "srcKUID": "f142d5aa44384a3fb94504a874cbbb95",
+                "wType": "Label"
+            }
+        }
+    },
+    "desktopweb": {},
+    "id": "AllForms",
+    "info": null,
+    "ipad": {},
+    "iphone": {},
+    "isdatareferenced": false,
+    "isvisible": false,
+    "kuid": "f5684d6daf7a4a71ac2e6dd5719b2fbd",
+    "layouttype": 4,
+    "masterType": 0,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "flxConsentContainer",
+    "pf": "frmBillPayNew",
+    "responsiveData": {
+        "b1": {
+            "isVisible": false,
+            "left": {
+                "type": "string",
+                "value": "10%"
+            },
+            "top": {
+                "type": "string",
+                "value": "300dp"
+            },
+            "width": {
+                "type": "string",
+                "value": "270dp"
+            }
+        },
+        "b2": {
+            "isVisible": null,
+            "left": {
+                "type": "string",
+                "value": "24%"
+            }
+        }
+    },
+    "snaptogrid": true,
+    "sourceUserWidget": "aef6ac17436948abacbe12ea5a1d5e5b",
+    "spabb": {},
+    "tabrcandroid": {},
+    "vizProps": {
+        "hidewidgethierarchy": false
+    },
+    "vizprops": {
+        "hidewidgethierarchy": false
+    },
+    "wType": "UserWidgetInstance",
+    "zindex": 20
+}

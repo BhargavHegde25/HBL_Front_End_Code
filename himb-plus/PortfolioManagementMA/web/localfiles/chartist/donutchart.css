@@ -1,0 +1,31 @@
+body{
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#293276), to(#1e588b));
+}
+
+.bgContainer{
+  position:absolute;
+  left:0px;
+  top:0px;
+  height:100%;
+  width:100%;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#293276), to(#1e588b));
+}
+
+.spendingContainer{
+  position:absolute;
+  left:0px;
+  right:0px;
+  height:180px;
+  background-color:rgba(0,0,0,0);  
+}
+
+.ct-label{
+	fill: rgba(255,255,255,.8);
+	font-size: 0.8rem;
+}
+
+.ct-slice-donut-solid{
+	stroke: gray !important;
+	stroke-width: 1px !important;
+	fill: #D5E8FC !important;
+}

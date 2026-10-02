@@ -1,0 +1,201 @@
+{
+    "classname": "sampledrilldown",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "b58f327291fa4b2dbcfca1fa970aa29f",
+                    "paramList": [
+                        {
+                            "name": "data"
+                        },
+                        {
+                            "name": "initialstoredata"
+                        }
+                    ],
+                    "propertyKey": "setData",
+                    "pw": {
+                        "displayName": "setData",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "cbed52ce0af24316b8e8ba5f377663dd",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "ab29aa828a1a4c06a90de0da4901a455",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "sendData",
+                    "pw": {
+                        "displayName": "sendData",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "cbed52ce0af24316b8e8ba5f377663dd",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "dc40209787ff4006b37e5d28286a8aa5",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "SelectedIndex",
+                    "pw": {
+                        "displayName": "SelectedIndex",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "cbed52ce0af24316b8e8ba5f377663dd",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "d23ea8da7b174847b47c9c38e5429096",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "segData",
+                    "pw": {
+                        "displayName": "segData",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "cbed52ce0af24316b8e8ba5f377663dd",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "e9f61be00d474321bfe3c2abd67c44ef",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "isDelete",
+                    "pw": {
+                        "displayName": "isDelete",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "cbed52ce0af24316b8e8ba5f377663dd",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "c722c01a7da549b0b3b0f9d1bc98621b",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "Data",
+                    "pw": {
+                        "displayName": "Data",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "cbed52ce0af24316b8e8ba5f377663dd",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "flxAllocation",
+                    "group": "General",
+                    "kuid": "bcd7815d8ac14d10ae63dc4ba801f370",
+                    "originalPropertyKey": "rowTemplateId",
+                    "propertyIndex": 1,
+                    "propertyKey": "rowTemplateId",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Row Template Id",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "cbed52ce0af24316b8e8ba5f377663dd",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "flxAllocationHead",
+                    "group": "General",
+                    "kuid": "fdb82cff62eb4809b8d392cf8237e1cd",
+                    "originalPropertyKey": "headerTemaplateId",
+                    "propertyIndex": 2,
+                    "propertyKey": "headerTemaplateId",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Header Template Id",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "cbed52ce0af24316b8e8ba5f377663dd",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"flxAllocat\": \"flxAllocation\",\n \"lblAssetName\": \"assetName\",\n \"lblCurrentWeight\" : \"CurrentWeight\",\n \"lblStrategyWeight\": \"StrategyWeight\",\n \"imgHealth\": \"imgHealth\",\n \"imgArrow\": \"imgArrow\",\n \"flxAssetName\": \"flxAssetName\"\n}",
+                    "group": "General",
+                    "kuid": "d5288e3b9bbb4fb495865c42c288ccdd",
+                    "originalPropertyKey": "widgetMapping",
+                    "propertyIndex": 3,
+                    "propertyKey": "widgetMapping",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Widget Mapping",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "cbed52ce0af24316b8e8ba5f377663dd",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n      \"lblAssetName\": \"Segment\",\n      \"lblCurrentWeight\": \"Current Weight\",\n      \"lblStrategyWeight\": \"Strategy Weight\"\n  \n    }",
+                    "group": "General",
+                    "kuid": "ac1a144b23f14847bedb1a7ebb8c2d9e",
+                    "originalPropertyKey": "segHeader",
+                    "propertyIndex": 4,
+                    "propertyKey": "segHeader",
+                    "pw": {
+                        "displayName": "Segment Header",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "cbed52ce0af24316b8e8ba5f377663dd",
+                    "type": "json",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.Infinity.OLB.PortfolioMangementMA",
+    "version": "1.0.0"
+}

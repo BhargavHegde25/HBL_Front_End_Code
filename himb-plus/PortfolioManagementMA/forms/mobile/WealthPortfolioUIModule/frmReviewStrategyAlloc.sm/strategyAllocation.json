@@ -1,0 +1,57 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "DNDConfig": null,
+    "_children_": [],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s49cf0b089fa45cdbdd4d28fcc3e59a5",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 0,
+    "data": {
+        "configParam": "{\n  \"reviewForm\": \"frmReviewStrategyAlloc\",\n  \"defaultView\": \"graph\"\n}",
+        "serviceParam": "{\n  \"ObjectName\": \"Strategies\",\n  \"ServiceName\": \"PortfolioServicing\",\n  \"OperationName\": \"getStrategyAllocation\"\n}"
+    },
+    "id": "strategyAllocation",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "i9e3762c7af94158b1fe8bfac9ef09ed",
+    "masterType": 1,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "flxContent",
+    "pf": "frmReviewStrategyAlloc",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "sourceUserWidget": "u4c1917d82ec46dfaa1da694458db4ff",
+    "wType": "UserWidgetInstance",
+    "zindex": 1
+}

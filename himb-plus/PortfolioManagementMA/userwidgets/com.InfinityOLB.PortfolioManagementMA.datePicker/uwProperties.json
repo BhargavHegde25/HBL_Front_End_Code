@@ -1,0 +1,641 @@
+{
+    "classname": "datePicker",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "abd61af45b854fb4b3e5175108e907ea",
+                    "paramList": [
+                        {
+                            "name": "filterKey"
+                        }
+                    ],
+                    "propertyKey": "setDefaultDateFilter",
+                    "pw": {
+                        "displayName": "setDefaultDateFilter",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "d59baf5a9c5c48d0a1f21b09dfcf7542",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "f384b701177749519b2df2449810edaa",
+                    "paramList": [],
+                    "propertyKey": "setSelectedDate",
+                    "pw": {
+                        "displayName": "setSelectedDate",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "d59baf5a9c5c48d0a1f21b09dfcf7542",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "d461f056f0f64117a1f49bf39be1d10e",
+                    "paramList": [],
+                    "propertyKey": "setSelectedDateTo",
+                    "pw": {
+                        "displayName": "setSelectedDateTo",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "d59baf5a9c5c48d0a1f21b09dfcf7542",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "hcfe2298245945eb9b8e0099e193192d",
+                    "paramList": [],
+                    "propertyKey": "setMonthLabelText",
+                    "pw": {
+                        "displayName": "setMonthLabelText",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "d59baf5a9c5c48d0a1f21b09dfcf7542",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "c8407f506bd8454ea269295e24d513de",
+                    "paramList": [],
+                    "propertyKey": "setMonthLabelTextTo",
+                    "pw": {
+                        "displayName": "setMonthLabelTextTo",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "d59baf5a9c5c48d0a1f21b09dfcf7542",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "gb20912331e641b8a188b223598d4a50",
+                    "paramList": [],
+                    "propertyKey": "setMonthData",
+                    "pw": {
+                        "displayName": "setMonthData",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "d59baf5a9c5c48d0a1f21b09dfcf7542",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "fd622ffe52f4486292924a486ac58445",
+                    "paramList": [],
+                    "propertyKey": "setMonthDataTo",
+                    "pw": {
+                        "displayName": "setMonthDataTo",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "d59baf5a9c5c48d0a1f21b09dfcf7542",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "c63f30ece42f474fa664714a456f7544",
+                    "paramList": [],
+                    "propertyKey": "updateDateBulletsTo",
+                    "pw": {
+                        "displayName": "updateDateBulletsTo",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "d59baf5a9c5c48d0a1f21b09dfcf7542",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "ff1bbdae3a1d44348faa705a3166f4c6",
+                    "paramList": [],
+                    "propertyKey": "updateDateBullets",
+                    "pw": {
+                        "displayName": "updateDateBullets",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "d59baf5a9c5c48d0a1f21b09dfcf7542",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "a61868327a48425bac2c0dac99b9b756",
+                    "paramList": [],
+                    "propertyKey": "reRenderCurrentMonthSkins",
+                    "pw": {
+                        "displayName": "reRenderCurrentMonthSkins",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "d59baf5a9c5c48d0a1f21b09dfcf7542",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "j17ab7da4e794b66885d09f8514292e0",
+                    "paramList": [],
+                    "propertyKey": "reRenderCurrentMonthSkinsTo",
+                    "pw": {
+                        "displayName": "reRenderCurrentMonthSkinsTo",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "d59baf5a9c5c48d0a1f21b09dfcf7542",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "fd025fdeb57e4a088c3a7f5705f0aff9",
+                    "paramList": [],
+                    "propertyKey": "setUpDateFilter",
+                    "pw": {
+                        "displayName": "setUpDateFilter",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "d59baf5a9c5c48d0a1f21b09dfcf7542",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "i8e5de70f47b47008de348281ed723f6",
+                    "paramList": [],
+                    "propertyKey": "resetCalendar",
+                    "pw": {
+                        "displayName": "resetCalendar",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "d59baf5a9c5c48d0a1f21b09dfcf7542",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "g52e96ca3fd74f0c8157f4d819663ebf",
+                    "paramList": [
+                        {
+                            "name": "dateObj"
+                        }
+                    ],
+                    "propertyIndex": 1,
+                    "propertyKey": "updateDates",
+                    "pw": {
+                        "displayName": "updateDates",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "d59baf5a9c5c48d0a1f21b09dfcf7542",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [
+                "Skins",
+                "Images",
+                "Labels",
+                "Format"
+            ],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "{i.i18n.wealth.datePicker.previousSevenDays},{i.i18n.wealth.datePicker.previousThirtyDays},{i.i18n.wealth.datePicker.threeMonths},{i.i18n.wealth.datePicker.sixMonths},{i.i18n.wealth.datePicker.oneYear},{i.i18n.wealth.datePicker.YTD},{i.i18n.wealth.datePicker.sinceInception}",
+                    "group": "General",
+                    "kuid": "e92df44c09dd43f480109ea13cde47fd",
+                    "originalPropertyKey": "defaultDateSelectionLabels",
+                    "propertyIndex": 1,
+                    "propertyKey": "defaultDateSelectionLabels",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Default Date Selection Labels ",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "d59baf5a9c5c48d0a1f21b09dfcf7542",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknLblSSPFFFFFF15PxBg003E75",
+                    "group": "Skins",
+                    "kuid": "ea34c2c016554ff98a55aedb721eec2f",
+                    "originalPropertyKey": "selectedDateSkin",
+                    "propertyIndex": 1,
+                    "propertyKey": "selectedDateSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Selected Date Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "d59baf5a9c5c48d0a1f21b09dfcf7542",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Images",
+                    "kuid": "dd6aed6a090f433e943b69d76676d6fb",
+                    "originalPropertyKey": "previousMonthImage",
+                    "propertyIndex": 1,
+                    "propertyKey": "previousMonthImage",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Previous Month Image",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "d59baf5a9c5c48d0a1f21b09dfcf7542",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "\"{i.i18n.wealth.datePicker.apply}\"",
+                    "group": "Labels",
+                    "kuid": "bb375cea3c0646f0bd7e916ef7a92780",
+                    "originalPropertyKey": "primaryButtonLabel",
+                    "propertyIndex": 1,
+                    "propertyKey": "primaryButtonLabel",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Primary Button Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "d59baf5a9c5c48d0a1f21b09dfcf7542",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Format",
+                    "kuid": "fdddb092f9394e858f8ff5f779adaebc",
+                    "originalPropertyKey": "customDateFormat",
+                    "propertyIndex": 1,
+                    "propertyKey": "customDateFormat",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Custom Date Format",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "d59baf5a9c5c48d0a1f21b09dfcf7542",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "7D,30D,90D,180D,365D,YTD,sinceInception",
+                    "group": "General",
+                    "kuid": "f44f3744f8b649fc83291cb26703eaf8",
+                    "originalPropertyKey": "defaultDateSelectionKeys",
+                    "propertyIndex": 2,
+                    "propertyKey": "defaultDateSelectionKeys",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Default Date Selection Keys",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "d59baf5a9c5c48d0a1f21b09dfcf7542",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "bbSknLblSSP4176A415Px",
+                    "group": "Skins",
+                    "kuid": "d7302e141237443f9aa15ddaba6c8344",
+                    "originalPropertyKey": "unselectedDateSkin",
+                    "propertyIndex": 2,
+                    "propertyKey": "unselectedDateSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Unselected Date Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "d59baf5a9c5c48d0a1f21b09dfcf7542",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Images",
+                    "kuid": "cd3efb1864ca4f2da2f98cef402184e1",
+                    "originalPropertyKey": "nextMonthImage",
+                    "propertyIndex": 2,
+                    "propertyKey": "nextMonthImage",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Next Month Image",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "d59baf5a9c5c48d0a1f21b09dfcf7542",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "\"{i.i18n.wealth.datePicker.clear}\"",
+                    "group": "Labels",
+                    "kuid": "g70833acd50545cbbc125cdd6c4f9d0a",
+                    "originalPropertyKey": "secondaryButtonLabel",
+                    "propertyIndex": 2,
+                    "propertyKey": "secondaryButtonLabel",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Secondary Button Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "d59baf5a9c5c48d0a1f21b09dfcf7542",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Format",
+                    "kuid": "d0294e708119405e8513d564ca706003",
+                    "originalPropertyKey": "defaultDateFormat",
+                    "propertyIndex": 2,
+                    "propertyKey": "defaultDateFormat",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Default Date Format",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "d59baf5a9c5c48d0a1f21b09dfcf7542",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "bbSknLbl727272SSP15Px",
+                    "group": "Skins",
+                    "kuid": "i6767196a14742d5ae48aeff9e5b8bf0",
+                    "originalPropertyKey": "disabledDateSkin",
+                    "propertyIndex": 3,
+                    "propertyKey": "disabledDateSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Disabled Date Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "d59baf5a9c5c48d0a1f21b09dfcf7542",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Images",
+                    "kuid": "f178d08c69ca40808b99806fc71e9904",
+                    "originalPropertyKey": "nextYearImage",
+                    "propertyIndex": 3,
+                    "propertyKey": "nextYearImage",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Next Year Image",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "d59baf5a9c5c48d0a1f21b09dfcf7542",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "\"{i.i18n.wealth.datePicker.from}\"",
+                    "group": "Labels",
+                    "kuid": "e0611ac7a8cf4d90bce8eb6ec242d451",
+                    "originalPropertyKey": "fromLabel",
+                    "propertyIndex": 3,
+                    "propertyKey": "fromLabel",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "From Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "d59baf5a9c5c48d0a1f21b09dfcf7542",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "portfolioDetails",
+                    "group": "General",
+                    "kuid": "d69b962ee7ca4080ac29d3154656b0e1",
+                    "originalPropertyKey": "parentComponentName",
+                    "propertyIndex": 3,
+                    "propertyKey": "parentComponentName",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "parent Component Widget Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "d59baf5a9c5c48d0a1f21b09dfcf7542",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknBtnNormalSSPFFFFFF15Px",
+                    "group": "Skins",
+                    "kuid": "j3347a04ff2d42d8b142a65b347292c4",
+                    "originalPropertyKey": "primaryButtonSkin",
+                    "propertyIndex": 4,
+                    "propertyKey": "primaryButtonSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Primary Button Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "d59baf5a9c5c48d0a1f21b09dfcf7542",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Images",
+                    "kuid": "cc3ed4790c1e49cb9d50912da7cdc4da",
+                    "originalPropertyKey": "previousYearImage",
+                    "propertyIndex": 4,
+                    "propertyKey": "previousYearImage",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Previous Year Image",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "d59baf5a9c5c48d0a1f21b09dfcf7542",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "\"{i.i18n.wealth.datePicker.to}\"",
+                    "group": "Labels",
+                    "kuid": "i64503c157d3406eb12c507103af8904",
+                    "originalPropertyKey": "toLabel",
+                    "propertyIndex": 4,
+                    "propertyKey": "toLabel",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "To Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "d59baf5a9c5c48d0a1f21b09dfcf7542",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknBtnSSP0273e3Border0273e3",
+                    "group": "Skins",
+                    "kuid": "a044ade6270b4b78ab6aacbf9d5cf388",
+                    "originalPropertyKey": "secondaryButtonSkin",
+                    "propertyIndex": 5,
+                    "propertyKey": "secondaryButtonSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Secondary Button Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "d59baf5a9c5c48d0a1f21b09dfcf7542",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknLbl003e75SSP15px",
+                    "group": "Skins",
+                    "kuid": "gcfffc47848a4d7095a49081654375a2",
+                    "originalPropertyKey": "currentDateSkin",
+                    "propertyIndex": 6,
+                    "propertyKey": "currentDateSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Current Date Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "d59baf5a9c5c48d0a1f21b09dfcf7542",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "bbSknLbl727272SSP15Px",
+                    "group": "Skins",
+                    "kuid": "h4ec7526d1d7412baea6b718cf56cb6d",
+                    "originalPropertyKey": "weekEndSkin",
+                    "propertyIndex": 7,
+                    "propertyKey": "weekEndSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Week End Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "d59baf5a9c5c48d0a1f21b09dfcf7542",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknLblSSPSB42424215Px",
+                    "group": "Skins",
+                    "kuid": "ha2a59e8cb5e4d4c826a8c2513d3b5b5",
+                    "originalPropertyKey": "fromToSkin",
+                    "propertyIndex": 8,
+                    "propertyKey": "fromToSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "From To Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "d59baf5a9c5c48d0a1f21b09dfcf7542",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Skins",
+                    "kuid": "f0f354f61c904dfb9d4b6ca24159f9bf",
+                    "originalPropertyKey": "dateFlexSkin",
+                    "propertyIndex": 9,
+                    "propertyKey": "dateFlexSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Date Flex Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "d59baf5a9c5c48d0a1f21b09dfcf7542",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknLbl4176A4SSP15Px",
+                    "group": "Skins",
+                    "kuid": "af53b035576f485bb294fa2f0bb5ebea",
+                    "originalPropertyKey": "startDateRangeSkin",
+                    "propertyIndex": 10,
+                    "propertyKey": "startDateRangeSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Start Date Range Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "d59baf5a9c5c48d0a1f21b09dfcf7542",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknLbl4176A4SSP15Px",
+                    "group": "Skins",
+                    "kuid": "hbd0c8f65c3842449ddc2d91b7a62438",
+                    "originalPropertyKey": "unSelectedRangeSkin",
+                    "propertyIndex": 11,
+                    "propertyKey": "unSelectedRangeSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "UnSelected Range Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "d59baf5a9c5c48d0a1f21b09dfcf7542",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "bbSknLbl727272SSP15Px",
+                    "group": "Skins",
+                    "kuid": "j512fb9dd8d5420b834d6b1e9511caf5",
+                    "originalPropertyKey": "disabledRangeSkin",
+                    "propertyIndex": 12,
+                    "propertyKey": "disabledRangeSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Disabled Range Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "d59baf5a9c5c48d0a1f21b09dfcf7542",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfinityOLB.PortfolioManagementMA",
+    "version": "1.0.0"
+}

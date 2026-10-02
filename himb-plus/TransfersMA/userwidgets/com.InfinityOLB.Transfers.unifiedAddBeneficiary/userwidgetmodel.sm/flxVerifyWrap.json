@@ -1,0 +1,103 @@
+{
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "40px"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "sec564c664d345f5a494dcc6fbd46b53",
+    "_top_": {
+        "type": "string",
+        "value": "0"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "children": [
+        "flxVerifyCheckbox",
+        "lblverifyText",
+        "flxVerifyInfoIcon",
+        "flxVerifyInfo"
+    ],
+    "clipbounds": false,
+    "containerweight": 100,
+    "desktop": {
+        "responsiveconfig": {
+            "offset": {
+                "b1": 0,
+                "b2": 0,
+                "b3": 0,
+                "b4": 0
+            },
+            "span": {
+                "b1": 3,
+                "b2": 4,
+                "b3": 6,
+                "b4": 3
+            }
+        }
+    },
+    "enablescrolling": true,
+    "id": "flxVerifyWrap",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "ae6c8a38ce23416f98a9acf03b2e794b",
+    "layouttype": 3,
+    "mobile": {
+        "responsiveconfig": {
+            "offset": {
+                "landscape": 0,
+                "portrait": 0
+            },
+            "span": {
+                "landscape": 6,
+                "portrait": 12
+            }
+        }
+    },
+    "name": "kony.ui.FlexContainer",
+    "parent": "flxPayeeVerify",
+    "pf": "userwidgetmodel",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "tablet": {
+        "responsiveconfig": {
+            "offset": {
+                "landscape": 0,
+                "portrait": 0
+            },
+            "span": {
+                "landscape": 3,
+                "portrait": 6
+            }
+        }
+    },
+    "wType": "FlexContainer",
+    "widgetalignment": 1,
+    "zindex": 1
+}

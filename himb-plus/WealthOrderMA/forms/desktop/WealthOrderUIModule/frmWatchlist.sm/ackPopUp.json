@@ -1,0 +1,154 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "DNDConfig": null,
+    "_children_": [],
+    "_height_": {
+        "type": "string",
+        "value": "268dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s701065f11074080832b59947e731160",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "500dp"
+    },
+    "areflexpropsreferenced": false,
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "clipbounds": false,
+    "containerweight": 0,
+    "dataDiffs": {
+        "ackPopUp": {
+            "__events__": {},
+            "__info__": {
+                "isRoot": true,
+                "kuid": "de3994f7da77454ebc70f4b3e8946771",
+                "srcKUID": "e0f2500d63b64950b72ddc2feec17a64",
+                "wType": "FlexContainer"
+            },
+            "responsiveData": {
+                "b1": {},
+                "b2": {},
+                "b3": {}
+            },
+            "width": {
+                "Default": {
+                    "type": "string",
+                    "value": "500dp"
+                }
+            }
+        },
+        "flxCross": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "h3f98ec0241247d58103ae62f53be889",
+                "srcKUID": "d6f063843d23417c95bd669f4731b042",
+                "wType": "Button"
+            }
+        },
+        "flxHeader": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "e051ba50a28a48038ae2c3b778d7a1b8",
+                "srcKUID": "ee4d0fcf41454dfc926a6428db7e4c60",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxSeperator": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "i10635bd49034e3ca916307d67ea49b4",
+                "srcKUID": "j3d281234d05416189f0c51ee0c69dda",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxSeperator2": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "d4841b84ef91446986d72e20ee4f0a47",
+                "srcKUID": "ba949496f92b4b7882a794ef25e23175",
+                "wType": "FlexContainer"
+            }
+        },
+        "imgSuccess": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "ba455448fbd844ceb3adb3aeecc055b8",
+                "srcKUID": "c57c18880b2e4319993eef3d78a7507e",
+                "wType": "Image"
+            },
+            "responsiveData": {},
+            "src": "success_green_2.png",
+            "width": {
+                "Default": {
+                    "type": "string",
+                    "value": "50dp"
+                }
+            }
+        },
+        "lblHeading": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "a2df9ba1f7144264b6c90205dc08d01d",
+                "srcKUID": "c0806f54031b4b8b8f7bc810210a18a1",
+                "wType": "Label"
+            },
+            "i18n_text": "i18n.wealth.watchlist.alertMsg",
+            "responsiveData": {
+                "b3": {}
+            },
+            "text": "Alert Message"
+        },
+        "lblPopupMessage": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "bc9309960518423f92091b1c49aafd2e",
+                "srcKUID": "f6993fdf87c24f368c18e35095705a56",
+                "wType": "Label"
+            }
+        }
+    },
+    "enablescrolling": true,
+    "id": "ackPopUp",
+    "info": null,
+    "isdatareferenced": false,
+    "isvisible": true,
+    "kuid": "de3994f7da77454ebc70f4b3e8946771",
+    "layouttype": 2,
+    "masterType": 0,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "flxAckPopUp",
+    "pf": "frmWatchlist",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "sourceUserWidget": "e0f2500d63b64950b72ddc2feec17a64",
+    "wType": "UserWidgetInstance"
+}

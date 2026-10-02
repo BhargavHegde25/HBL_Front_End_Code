@@ -1,0 +1,55 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "20dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_right_": {
+        "type": "string",
+        "value": "20dp"
+    },
+    "_skin_": "s4c7b9e6ce2a4c1f9e7a517485864c02",
+    "_text_": "Close Saving Goal",
+    "accessibilityconfig": {
+        "a11yLabel": "CONFIRM"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "disabledSkins": {},
+    "displaytext": true,
+    "focusskin": "sd85a0f475ff4b3b9f0a5e4b82f68213",
+    "id": "btnClose",
+    "info": null,
+    "iphone": {
+        "psp": {
+            "showProgressIndicator": false
+        }
+    },
+    "isvisible": true,
+    "kuid": "baf8ea68bae94f8e973754a050d79e10",
+    "name": "kony.ui.Button",
+    "parent": "flxButtons",
+    "pf": "frmCreateGoalVerifyDetails",
+    "texti18n": "i18n.savingspot.closeSavingGoal",
+    "wType": "Button",
+    "zindex": 1
+}

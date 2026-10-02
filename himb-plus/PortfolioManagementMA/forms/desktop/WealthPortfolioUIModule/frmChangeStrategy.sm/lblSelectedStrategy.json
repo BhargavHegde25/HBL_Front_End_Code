@@ -1,0 +1,106 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizLabel",
+    "DNDConfig": null,
+    "_bottom_": {
+        "type": "string",
+        "value": "16dp"
+    },
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "16dp"
+    },
+    "_margin_": [
+        1,
+        1,
+        1,
+        1
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "sf45ca27a4704285be2caf389f55adc3",
+    "_text_": "Selected Strategy",
+    "_top_": {
+        "type": "string",
+        "value": "16dp"
+    },
+    "_width_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_wrapping_": 2,
+    "android": {
+        "textStyle": {
+            "letterSpacing": 0,
+            "strikeThrough": false
+        }
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "id": "lblSelectedStrategy",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "iphone": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "a773da2996b043f6ab185661761d1602",
+    "name": "kony.ui.Label",
+    "parent": "flxGreen",
+    "pf": "frmChangeStrategy",
+    "responsiveData": {
+        "b1": {
+            "height": {
+                "type": "string",
+                "value": "25dp"
+            },
+            "skin": "s45e060b381b468e9c06d791c62b02b7",
+            "top": {
+                "type": "string",
+                "value": "14dp"
+            }
+        },
+        "b2": {
+            "height": {
+                "type": "string",
+                "value": "25dp"
+            },
+            "skin": "s45e060b381b468e9c06d791c62b02b7",
+            "top": {
+                "type": "string",
+                "value": "14dp"
+            }
+        },
+        "b4": {
+            "height": {
+                "type": "string",
+                "value": "25dp"
+            },
+            "skin": "s45e060b381b468e9c06d791c62b02b7",
+            "top": {
+                "type": "string",
+                "value": "14dp"
+            }
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "texti18n": "i18n.wealth.selectedStrategy",
+    "tooltip": "",
+    "wType": "Label"
+}

@@ -1,0 +1,24 @@
+{
+    "AS_Button_c95f65c9cd08484498c40624a41bd90c": {
+        "id": "AS_Button_c95f65c9cd08484498c40624a41bd90c",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "NAVIGATE_TO_FORM__ide_onClick_e94f9f3b21cd488297aff87b6b874add",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "frmCardlessCashConfirm",
+            "friendlyName": "frmCardlessCashConfirm",
+            "formKUID": "da435711f89c458b8708f84db5daa6d0",
+            "projectName": "ArrangementsMA",
+            "mappings": {},
+            "mappingsOrder": [],
+            "enableMappingEditor": true,
+            "package": "CardLessUIModule",
+            "isCustomInput": false
+        }]
+    }
+}

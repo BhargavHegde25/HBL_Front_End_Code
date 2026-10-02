@@ -1,0 +1,1415 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "_data_": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+    ],
+    "_height_": {
+        "type": "string",
+        "value": "240dp"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "0"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "accessibilityconfig": "",
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "counter": "19",
+    "focusedindex": null,
+    "focuseditem": null,
+    "groupcells": false,
+    "hasSections": true,
+    "id": "segSelectAccounts",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "g8aa6aa70cb04721bcd9b67e1d24a550",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "flxSearchAccountsSegmentContainer",
+    "pf": "frmAccountAlertsList",
+    "responsiveData": {
+        "b1": {
+            "accessibilityConfig": {
+                "a11yARIA": {
+                    "tabindex": -1
+                }
+            },
+            "data": [
+                [
+                    {
+                        "imgDropDown": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": "P"
+                        },
+                        "lblAccountsSearchHeader": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": "Label"
+                        },
+                        "lblSeparator": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": ""
+                        },
+                        "lblTopSeparator": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": ""
+                        }
+                    },
+                    [
+                        {
+                            "lblAccType": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Checking"
+                            },
+                            "lblAccountCustomer": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Airbnb - 1212"
+                            },
+                            "lblAccountName": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "My Account 1234"
+                            },
+                            "lblSeparator": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": ""
+                            }
+                        },
+                        {
+                            "lblAccType": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Checking"
+                            },
+                            "lblAccountCustomer": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Airbnb - 1212"
+                            },
+                            "lblAccountName": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "My Account 1234"
+                            },
+                            "lblSeparator": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": ""
+                            }
+                        },
+                        {
+                            "lblAccType": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Checking"
+                            },
+                            "lblAccountCustomer": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Airbnb - 1212"
+                            },
+                            "lblAccountName": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "My Account 1234"
+                            },
+                            "lblSeparator": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": ""
+                            }
+                        },
+                        {
+                            "lblAccType": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Checking"
+                            },
+                            "lblAccountCustomer": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Airbnb - 1212"
+                            },
+                            "lblAccountName": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "My Account 1234"
+                            },
+                            "lblSeparator": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": ""
+                            }
+                        },
+                        {
+                            "lblAccType": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Checking"
+                            },
+                            "lblAccountCustomer": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Airbnb - 1212"
+                            },
+                            "lblAccountName": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "My Account 1234"
+                            },
+                            "lblSeparator": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": ""
+                            }
+                        },
+                        {
+                            "lblAccType": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Checking"
+                            },
+                            "lblAccountCustomer": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Airbnb - 1212"
+                            },
+                            "lblAccountName": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "My Account 1234"
+                            },
+                            "lblSeparator": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": ""
+                            }
+                        },
+                        {
+                            "lblAccType": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Checking"
+                            },
+                            "lblAccountCustomer": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Airbnb - 1212"
+                            },
+                            "lblAccountName": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "My Account 1234"
+                            },
+                            "lblSeparator": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": ""
+                            }
+                        },
+                        {
+                            "lblAccType": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Checking"
+                            },
+                            "lblAccountCustomer": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Airbnb - 1212"
+                            },
+                            "lblAccountName": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "My Account 1234"
+                            },
+                            "lblSeparator": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": ""
+                            }
+                        },
+                        {
+                            "lblAccType": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Checking"
+                            },
+                            "lblAccountCustomer": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Airbnb - 1212"
+                            },
+                            "lblAccountName": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "My Account 1234"
+                            },
+                            "lblSeparator": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": ""
+                            }
+                        },
+                        {
+                            "lblAccType": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Checking"
+                            },
+                            "lblAccountCustomer": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Airbnb - 1212"
+                            },
+                            "lblAccountName": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "My Account 1234"
+                            },
+                            "lblSeparator": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": ""
+                            }
+                        }
+                    ]
+                ],
+                [
+                    {
+                        "imgDropDown": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": "P"
+                        },
+                        "lblAccountsSearchHeader": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": "Label"
+                        },
+                        "lblSeparator": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": ""
+                        },
+                        "lblTopSeparator": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": ""
+                        }
+                    },
+                    [
+                        {
+                            "lblAccType": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Checking"
+                            },
+                            "lblAccountCustomer": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Airbnb - 1212"
+                            },
+                            "lblAccountName": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "My Account 1234"
+                            },
+                            "lblSeparator": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": ""
+                            }
+                        },
+                        {
+                            "lblAccType": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Checking"
+                            },
+                            "lblAccountCustomer": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Airbnb - 1212"
+                            },
+                            "lblAccountName": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "My Account 1234"
+                            },
+                            "lblSeparator": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": ""
+                            }
+                        },
+                        {
+                            "lblAccType": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Checking"
+                            },
+                            "lblAccountCustomer": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Airbnb - 1212"
+                            },
+                            "lblAccountName": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "My Account 1234"
+                            },
+                            "lblSeparator": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": ""
+                            }
+                        },
+                        {
+                            "lblAccType": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Checking"
+                            },
+                            "lblAccountCustomer": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Airbnb - 1212"
+                            },
+                            "lblAccountName": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "My Account 1234"
+                            },
+                            "lblSeparator": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": ""
+                            }
+                        },
+                        {
+                            "lblAccType": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Checking"
+                            },
+                            "lblAccountCustomer": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Airbnb - 1212"
+                            },
+                            "lblAccountName": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "My Account 1234"
+                            },
+                            "lblSeparator": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": ""
+                            }
+                        },
+                        {
+                            "lblAccType": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Checking"
+                            },
+                            "lblAccountCustomer": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Airbnb - 1212"
+                            },
+                            "lblAccountName": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "My Account 1234"
+                            },
+                            "lblSeparator": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": ""
+                            }
+                        },
+                        {
+                            "lblAccType": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Checking"
+                            },
+                            "lblAccountCustomer": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Airbnb - 1212"
+                            },
+                            "lblAccountName": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "My Account 1234"
+                            },
+                            "lblSeparator": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": ""
+                            }
+                        },
+                        {
+                            "lblAccType": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Checking"
+                            },
+                            "lblAccountCustomer": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Airbnb - 1212"
+                            },
+                            "lblAccountName": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "My Account 1234"
+                            },
+                            "lblSeparator": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": ""
+                            }
+                        },
+                        {
+                            "lblAccType": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Checking"
+                            },
+                            "lblAccountCustomer": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Airbnb - 1212"
+                            },
+                            "lblAccountName": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "My Account 1234"
+                            },
+                            "lblSeparator": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": ""
+                            }
+                        },
+                        {
+                            "lblAccType": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Checking"
+                            },
+                            "lblAccountCustomer": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Airbnb - 1212"
+                            },
+                            "lblAccountName": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "My Account 1234"
+                            },
+                            "lblSeparator": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": ""
+                            }
+                        }
+                    ]
+                ]
+            ],
+            "height": {
+                "type": "string",
+                "value": "100%"
+            },
+            "isVisible": true,
+            "left": {
+                "type": "string",
+                "value": "0dp"
+            },
+            "rowTemplate": "b77fa31d9ec646229471fd343d62051d",
+            "sectionHeaderTemplate": "bcbd71d9145c49cdb4a5f9d514332f5f",
+            "top": {
+                "type": "string",
+                "value": "5dp"
+            },
+            "widgetDataMap": {
+                "flxAccountTypeContainer": "flxAccountTypeContainer",
+                "flxAlertsAccountsSearchHeader": "flxAlertsAccountsSearchHeader",
+                "flxAlertsAccountsSearchList": "flxAlertsAccountsSearchList",
+                "flxAlertsSearchAccountListItem": "flxAlertsSearchAccountListItem",
+                "flxDropDown": "flxDropDown",
+                "imgDropDown": "imgDropDown",
+                "lblAccType": "lblAccType",
+                "lblAccountCustomer": "lblAccountCustomer",
+                "lblAccountName": "lblAccountName",
+                "lblAccountsSearchHeader": "lblAccountsSearchHeader",
+                "lblSeparator": "lblSeparator",
+                "lblTopSeparator": "lblTopSeparator"
+            },
+            "zIndex": 5
+        },
+        "b2": {
+            "data": [
+                [
+                    {
+                        "imgDropDown": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": "P"
+                        },
+                        "lblAccountsSearchHeader": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": "Label"
+                        },
+                        "lblSeparator": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": ""
+                        },
+                        "lblTopSeparator": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": ""
+                        }
+                    },
+                    [
+                        {
+                            "lblAccType": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Checking"
+                            },
+                            "lblAccountCustomer": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Airbnb - 1212"
+                            },
+                            "lblAccountName": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "My Account 1234"
+                            },
+                            "lblSeparator": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": ""
+                            }
+                        },
+                        {
+                            "lblAccType": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Checking"
+                            },
+                            "lblAccountCustomer": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Airbnb - 1212"
+                            },
+                            "lblAccountName": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "My Account 1234"
+                            },
+                            "lblSeparator": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": ""
+                            }
+                        },
+                        {
+                            "lblAccType": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Checking"
+                            },
+                            "lblAccountCustomer": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Airbnb - 1212"
+                            },
+                            "lblAccountName": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "My Account 1234"
+                            },
+                            "lblSeparator": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": ""
+                            }
+                        },
+                        {
+                            "lblAccType": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Checking"
+                            },
+                            "lblAccountCustomer": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Airbnb - 1212"
+                            },
+                            "lblAccountName": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "My Account 1234"
+                            },
+                            "lblSeparator": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": ""
+                            }
+                        },
+                        {
+                            "lblAccType": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Checking"
+                            },
+                            "lblAccountCustomer": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Airbnb - 1212"
+                            },
+                            "lblAccountName": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "My Account 1234"
+                            },
+                            "lblSeparator": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": ""
+                            }
+                        },
+                        {
+                            "lblAccType": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Checking"
+                            },
+                            "lblAccountCustomer": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Airbnb - 1212"
+                            },
+                            "lblAccountName": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "My Account 1234"
+                            },
+                            "lblSeparator": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": ""
+                            }
+                        },
+                        {
+                            "lblAccType": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Checking"
+                            },
+                            "lblAccountCustomer": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Airbnb - 1212"
+                            },
+                            "lblAccountName": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "My Account 1234"
+                            },
+                            "lblSeparator": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": ""
+                            }
+                        },
+                        {
+                            "lblAccType": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Checking"
+                            },
+                            "lblAccountCustomer": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Airbnb - 1212"
+                            },
+                            "lblAccountName": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "My Account 1234"
+                            },
+                            "lblSeparator": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": ""
+                            }
+                        },
+                        {
+                            "lblAccType": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Checking"
+                            },
+                            "lblAccountCustomer": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Airbnb - 1212"
+                            },
+                            "lblAccountName": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "My Account 1234"
+                            },
+                            "lblSeparator": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": ""
+                            }
+                        },
+                        {
+                            "lblAccType": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Checking"
+                            },
+                            "lblAccountCustomer": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Airbnb - 1212"
+                            },
+                            "lblAccountName": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "My Account 1234"
+                            },
+                            "lblSeparator": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": ""
+                            }
+                        }
+                    ]
+                ],
+                [
+                    {
+                        "imgDropDown": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": "P"
+                        },
+                        "lblAccountsSearchHeader": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": "Label"
+                        },
+                        "lblSeparator": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": ""
+                        },
+                        "lblTopSeparator": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": ""
+                        }
+                    },
+                    [
+                        {
+                            "lblAccType": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Checking"
+                            },
+                            "lblAccountCustomer": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Airbnb - 1212"
+                            },
+                            "lblAccountName": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "My Account 1234"
+                            },
+                            "lblSeparator": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": ""
+                            }
+                        },
+                        {
+                            "lblAccType": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Checking"
+                            },
+                            "lblAccountCustomer": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Airbnb - 1212"
+                            },
+                            "lblAccountName": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "My Account 1234"
+                            },
+                            "lblSeparator": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": ""
+                            }
+                        },
+                        {
+                            "lblAccType": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Checking"
+                            },
+                            "lblAccountCustomer": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Airbnb - 1212"
+                            },
+                            "lblAccountName": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "My Account 1234"
+                            },
+                            "lblSeparator": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": ""
+                            }
+                        },
+                        {
+                            "lblAccType": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Checking"
+                            },
+                            "lblAccountCustomer": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Airbnb - 1212"
+                            },
+                            "lblAccountName": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "My Account 1234"
+                            },
+                            "lblSeparator": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": ""
+                            }
+                        },
+                        {
+                            "lblAccType": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Checking"
+                            },
+                            "lblAccountCustomer": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Airbnb - 1212"
+                            },
+                            "lblAccountName": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "My Account 1234"
+                            },
+                            "lblSeparator": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": ""
+                            }
+                        },
+                        {
+                            "lblAccType": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Checking"
+                            },
+                            "lblAccountCustomer": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Airbnb - 1212"
+                            },
+                            "lblAccountName": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "My Account 1234"
+                            },
+                            "lblSeparator": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": ""
+                            }
+                        },
+                        {
+                            "lblAccType": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Checking"
+                            },
+                            "lblAccountCustomer": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Airbnb - 1212"
+                            },
+                            "lblAccountName": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "My Account 1234"
+                            },
+                            "lblSeparator": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": ""
+                            }
+                        },
+                        {
+                            "lblAccType": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Checking"
+                            },
+                            "lblAccountCustomer": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Airbnb - 1212"
+                            },
+                            "lblAccountName": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "My Account 1234"
+                            },
+                            "lblSeparator": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": ""
+                            }
+                        },
+                        {
+                            "lblAccType": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Checking"
+                            },
+                            "lblAccountCustomer": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Airbnb - 1212"
+                            },
+                            "lblAccountName": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "My Account 1234"
+                            },
+                            "lblSeparator": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": ""
+                            }
+                        },
+                        {
+                            "lblAccType": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Checking"
+                            },
+                            "lblAccountCustomer": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Airbnb - 1212"
+                            },
+                            "lblAccountName": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "My Account 1234"
+                            },
+                            "lblSeparator": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": ""
+                            }
+                        }
+                    ]
+                ]
+            ],
+            "height": {
+                "type": "string",
+                "value": "100%"
+            },
+            "isVisible": true,
+            "rowTemplate": "b77fa31d9ec646229471fd343d62051d",
+            "sectionHeaderTemplate": "bcbd71d9145c49cdb4a5f9d514332f5f",
+            "top": {
+                "type": "string",
+                "value": "5dp"
+            },
+            "widgetDataMap": {
+                "flxAccountTypeContainer": "flxAccountTypeContainer",
+                "flxAlertsAccountsSearchHeader": "flxAlertsAccountsSearchHeader",
+                "flxAlertsAccountsSearchList": "flxAlertsAccountsSearchList",
+                "flxAlertsSearchAccountListItem": "flxAlertsSearchAccountListItem",
+                "flxDropDown": "flxDropDown",
+                "imgDropDown": "imgDropDown",
+                "lblAccType": "lblAccType",
+                "lblAccountCustomer": "lblAccountCustomer",
+                "lblAccountName": "lblAccountName",
+                "lblAccountsSearchHeader": "lblAccountsSearchHeader",
+                "lblSeparator": "lblSeparator",
+                "lblTopSeparator": "lblTopSeparator"
+            },
+            "zIndex": 5
+        },
+        "b3": {
+            "data": [
+                [
+                    {
+                        "imgDropDown": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": "P"
+                        },
+                        "lblAccountsSearchHeader": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": "Label"
+                        },
+                        "lblSeparator": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": ""
+                        },
+                        "lblTopSeparator": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": ""
+                        }
+                    },
+                    [
+                        {
+                            "lblAccType": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Checking"
+                            },
+                            "lblAccountCustomer": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Airbnb - 1212"
+                            },
+                            "lblAccountName": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "My Account 1234"
+                            },
+                            "lblSeparator": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": ""
+                            }
+                        },
+                        {
+                            "lblAccType": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Checking"
+                            },
+                            "lblAccountCustomer": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Airbnb - 1212"
+                            },
+                            "lblAccountName": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "My Account 1234"
+                            },
+                            "lblSeparator": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": ""
+                            }
+                        },
+                        {
+                            "lblAccType": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Checking"
+                            },
+                            "lblAccountCustomer": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Airbnb - 1212"
+                            },
+                            "lblAccountName": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "My Account 1234"
+                            },
+                            "lblSeparator": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": ""
+                            }
+                        },
+                        {
+                            "lblAccType": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Checking"
+                            },
+                            "lblAccountCustomer": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Airbnb - 1212"
+                            },
+                            "lblAccountName": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "My Account 1234"
+                            },
+                            "lblSeparator": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": ""
+                            }
+                        },
+                        {
+                            "lblAccType": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Checking"
+                            },
+                            "lblAccountCustomer": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Airbnb - 1212"
+                            },
+                            "lblAccountName": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "My Account 1234"
+                            },
+                            "lblSeparator": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": ""
+                            }
+                        },
+                        {
+                            "lblAccType": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Checking"
+                            },
+                            "lblAccountCustomer": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Airbnb - 1212"
+                            },
+                            "lblAccountName": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "My Account 1234"
+                            },
+                            "lblSeparator": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": ""
+                            }
+                        },
+                        {
+                            "lblAccType": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Checking"
+                            },
+                            "lblAccountCustomer": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Airbnb - 1212"
+                            },
+                            "lblAccountName": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "My Account 1234"
+                            },
+                            "lblSeparator": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": ""
+                            }
+                        },
+                        {
+                            "lblAccType": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Checking"
+                            },
+                            "lblAccountCustomer": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Airbnb - 1212"
+                            },
+                            "lblAccountName": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "My Account 1234"
+                            },
+                            "lblSeparator": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": ""
+                            }
+                        },
+                        {
+                            "lblAccType": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Checking"
+                            },
+                            "lblAccountCustomer": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Airbnb - 1212"
+                            },
+                            "lblAccountName": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "My Account 1234"
+                            },
+                            "lblSeparator": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": ""
+                            }
+                        },
+                        {
+                            "lblAccType": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Checking"
+                            },
+                            "lblAccountCustomer": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Airbnb - 1212"
+                            },
+                            "lblAccountName": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "My Account 1234"
+                            },
+                            "lblSeparator": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": ""
+                            }
+                        }
+                    ]
+                ],
+                [
+                    {
+                        "imgDropDown": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": "P"
+                        },
+                        "lblAccountsSearchHeader": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": "Label"
+                        },
+                        "lblSeparator": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": ""
+                        },
+                        "lblTopSeparator": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": ""
+                        }
+                    },
+                    [
+                        {
+                            "lblAccType": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Checking"
+                            },
+                            "lblAccountCustomer": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Airbnb - 1212"
+                            },
+                            "lblAccountName": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "My Account 1234"
+                            },
+                            "lblSeparator": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": ""
+                            }
+                        },
+                        {
+                            "lblAccType": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Checking"
+                            },
+                            "lblAccountCustomer": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Airbnb - 1212"
+                            },
+                            "lblAccountName": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "My Account 1234"
+                            },
+                            "lblSeparator": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": ""
+                            }
+                        },
+                        {
+                            "lblAccType": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Checking"
+                            },
+                            "lblAccountCustomer": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Airbnb - 1212"
+                            },
+                            "lblAccountName": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "My Account 1234"
+                            },
+                            "lblSeparator": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": ""
+                            }
+                        },
+                        {
+                            "lblAccType": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Checking"
+                            },
+                            "lblAccountCustomer": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Airbnb - 1212"
+                            },
+                            "lblAccountName": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "My Account 1234"
+                            },
+                            "lblSeparator": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": ""
+                            }
+                        },
+                        {
+                            "lblAccType": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Checking"
+                            },
+                            "lblAccountCustomer": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Airbnb - 1212"
+                            },
+                            "lblAccountName": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "My Account 1234"
+                            },
+                            "lblSeparator": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": ""
+                            }
+                        },
+                        {
+                            "lblAccType": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Checking"
+                            },
+                            "lblAccountCustomer": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Airbnb - 1212"
+                            },
+                            "lblAccountName": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "My Account 1234"
+                            },
+                            "lblSeparator": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": ""
+                            }
+                        },
+                        {
+                            "lblAccType": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Checking"
+                            },
+                            "lblAccountCustomer": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Airbnb - 1212"
+                            },
+                            "lblAccountName": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "My Account 1234"
+                            },
+                            "lblSeparator": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": ""
+                            }
+                        },
+                        {
+                            "lblAccType": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Checking"
+                            },
+                            "lblAccountCustomer": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Airbnb - 1212"
+                            },
+                            "lblAccountName": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "My Account 1234"
+                            },
+                            "lblSeparator": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": ""
+                            }
+                        },
+                        {
+                            "lblAccType": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Checking"
+                            },
+                            "lblAccountCustomer": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Airbnb - 1212"
+                            },
+                            "lblAccountName": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "My Account 1234"
+                            },
+                            "lblSeparator": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": ""
+                            }
+                        },
+                        {
+                            "lblAccType": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Checking"
+                            },
+                            "lblAccountCustomer": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "Airbnb - 1212"
+                            },
+                            "lblAccountName": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": "My Account 1234"
+                            },
+                            "lblSeparator": {
+                                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                                "text": ""
+                            }
+                        }
+                    ]
+                ]
+            ],
+            "height": {
+                "type": "string",
+                "value": "100%"
+            },
+            "rowTemplate": "b77fa31d9ec646229471fd343d62051d",
+            "sectionHeaderTemplate": "bcbd71d9145c49cdb4a5f9d514332f5f",
+            "widgetDataMap": {
+                "flxAccountTypeContainer": "flxAccountTypeContainer",
+                "flxAlertsAccountsSearchHeader": "flxAlertsAccountsSearchHeader",
+                "flxAlertsAccountsSearchList": "flxAlertsAccountsSearchList",
+                "flxAlertsSearchAccountListItem": "flxAlertsSearchAccountListItem",
+                "flxDropDown": "flxDropDown",
+                "imgDropDown": "imgDropDown",
+                "lblAccType": "lblAccType",
+                "lblAccountCustomer": "lblAccountCustomer",
+                "lblAccountName": "lblAccountName",
+                "lblAccountsSearchHeader": "lblAccountsSearchHeader",
+                "lblSeparator": "lblSeparator",
+                "lblTopSeparator": "lblTopSeparator"
+            },
+            "zIndex": 5
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainselection": false,
+    "rowTemplateId": null,
+    "rowcounter": 9,
+    "rowfocusskin": "sb7b06f2ca194091ac7446d91622710f",
+    "rowskin": "s78c1bba9ed64fcebfaf97246b36f988",
+    "rowtemplate": null,
+    "screenlevelwidget": false,
+    "seccounter": 1,
+    "sectionHeaderTemplateId": null,
+    "sectionheaderskin": "sb98e76b7862440fb9cd80d2acace7b1",
+    "sectionheadertemplate": null,
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "separatorrequired": false,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "vizProps": {},
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {},
+    "zindex": 1
+}

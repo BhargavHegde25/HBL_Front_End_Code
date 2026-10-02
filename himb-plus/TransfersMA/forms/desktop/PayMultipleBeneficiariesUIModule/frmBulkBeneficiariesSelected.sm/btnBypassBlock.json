@@ -1,0 +1,60 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "45dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "10%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s6db41f7ed1b4bb6868f3a50f8d86c36",
+    "_text_": "Skip to add new beneficiary",
+    "_top_": {
+        "type": "string",
+        "value": "10dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "300dp"
+    },
+    "accessibilityconfig": {
+        "a11yARIA": {
+            "tabindex": 0
+        }
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "s8d2977b3100463485e9a361fe3d21e9",
+    "id": "btnBypassBlock",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "i394d7edccb54c118f01bc8c0e01f19a",
+    "name": "kony.ui.Button",
+    "parent": "flxContentHeader",
+    "pf": "frmBulkBeneficiariesSelected",
+    "responsiveData": {
+        "b2": {
+            "isVisible": false
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "wType": "Button"
+}

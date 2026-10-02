@@ -1,0 +1,10 @@
+{
+    "ModuleName": "InformationManager",
+    "BusinessControllerConfig": {
+        "BusinessExtensions": [
+            "InformationManager/BusinessControllers/BusinessController_Extension"
+        ],
+        "BusinessControllerClass": "InformationManager/BusinessControllers/BusinessController"
+    },
+    "ModuleType": "Manager"
+}

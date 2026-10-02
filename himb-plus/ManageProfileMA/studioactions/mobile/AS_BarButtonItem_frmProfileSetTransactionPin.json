@@ -1,0 +1,18 @@
+{
+    "AS_BarButtonItem_d457c09104364fd89cff32fd281a8336": {
+        "id": "AS_BarButtonItem_d457c09104364fd89cff32fd281a8336",
+        "type": "ACTION_SEQUENCE",
+        "name": "AS_BarButtonItem_frmProfileSetTransactionPin",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_a4a2c7c485b444b3a0cd652e5eb15dc9",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.navToSettings();",
+            "parentId": null
+        }]
+    }
+}

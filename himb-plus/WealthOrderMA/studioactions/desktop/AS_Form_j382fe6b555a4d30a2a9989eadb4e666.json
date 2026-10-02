@@ -1,0 +1,28 @@
+{
+    "AS_Form_j382fe6b555a4d30a2a9989eadb4e666": {
+        "id": "AS_Form_j382fe6b555a4d30a2a9989eadb4e666",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "type": "forms",
+            "platform": "",
+            "KUID": "d94271563cc247e3861256523498606b",
+            "name": "frmCurrencyConverterAcknowledge"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__e0a70d972fe642f0bd12b7674cd25947",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "postShow",
+            "display": "postShow",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null,
+            "source": "controller"
+        }]
+    }
+}

@@ -1,0 +1,58 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizRichText",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s4f2605389b140e2a7cbbd0fc58f853b",
+    "_text_": "konybank.creditcards@kony.com",
+    "_top_": {
+        "type": "string",
+        "value": "0px"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "89%"
+    },
+    "_wrapping_": 1,
+    "accessibilityconfig": {
+        "a11yLabel": "konybank.creditcards@kony.com"
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerId": true,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "id": "rtxEmailId",
+    "info": null,
+    "iphone": {
+        "wrapping": 1
+    },
+    "isvisible": true,
+    "kuid": "ff02af01510b47feb5a6e008847dc383",
+    "name": "kony.ui.RichText",
+    "parent": "flxDetails",
+    "pf": "segCustomerServiceMobile",
+    "wType": "RichText",
+    "watchos": {
+        "render": false
+    },
+    "widgetalignment": 5,
+    "zindex": 1
+}

@@ -1,0 +1,91 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizTextBox2",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "102%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "-1%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        16,
+        0,
+        0,
+        0
+    ],
+    "_placeholder_": "Username",
+    "_right_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_skin_": "s039301545174ce686ecaec59a9e23ad",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "-1%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "102%"
+    },
+    "accessibilityconfig": {
+        "a11yLabel": "Username"
+    },
+    "android": {
+        "psp": {
+            "keyboardActionLabel": 4
+        }
+    },
+    "autocapitalize": "none",
+    "autocomplete": false,
+    "autocorrect": false,
+    "autofilter": false,
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerheight": "",
+    "containerheightmode": 1,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "disabledSkins": {},
+    "focusskin": "s2688670ed0f4789900f7368aeda469c",
+    "id": "tbxUsername",
+    "info": null,
+    "iphone": {
+        "psp": {
+            "closeButtonText": "Cancel",
+            "keyboardActionLabel": 4,
+            "showCloseButton": true
+        }
+    },
+    "isvisible": true,
+    "keyboardactionlabel": 4,
+    "keyboardtype": "A",
+    "kuid": "g98e206984804f0fa425cb69d1a49ca5",
+    "mode": "A",
+    "name": "kony.ui.TextBox2",
+    "parent": "flxUsername",
+    "pf": "userwidgetmodel",
+    "placeholderi18n": "kony.mb.login.username",
+    "placeholderskin": "s1bcf8b78d1649a9a56fc498f08472f8",
+    "securetextentry": false,
+    "textinputmode": "A",
+    "tooltip": "",
+    "viewtype": "default",
+    "wType": "TextField",
+    "zindex": 2
+}

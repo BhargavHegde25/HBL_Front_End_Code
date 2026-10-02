@@ -1,0 +1,23 @@
+{
+    "AS_Form_f1de47fe74914f68b6d6ceb26b2238c9": {
+        "id": "AS_Form_f1de47fe74914f68b6d6ceb26b2238c9",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmHblCards",
+            "type": "forms",
+            "platform": null,
+            "KUID": "f6850f11f2f84796a9bd0e8b0b0ed01a"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_baa46c2e8127411393b17ccc933a3e93",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.preShow();",
+            "parentId": null
+        }]
+    }
+}

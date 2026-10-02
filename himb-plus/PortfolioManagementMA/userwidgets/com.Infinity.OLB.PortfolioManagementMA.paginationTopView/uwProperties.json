@@ -1,0 +1,619 @@
+{
+    "classname": "paginationTopView",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "c519bcbc7a8846a898d863ea197427ec",
+                    "paramList": [],
+                    "propertyKey": "updatePaginationBar",
+                    "pw": {
+                        "displayName": "updatePaginationBar",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "u303524e2ad94a3588f080b6ea8501e8",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "ae28fd53da7e484e89bd157b2394e54e",
+                    "paramList": [],
+                    "propertyKey": "setDropDownSelectedKey",
+                    "pw": {
+                        "displayName": "setDropDownSelectedKey",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "u303524e2ad94a3588f080b6ea8501e8",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "a11696828b6c4a52bcf211ca76aa9d7d",
+                    "paramList": [],
+                    "propertyKey": "getDefaultOffsetAndLimit",
+                    "pw": {
+                        "displayName": "getDefaultOffsetAndLimit",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "u303524e2ad94a3588f080b6ea8501e8",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "f0a22129b4d04a4eb468c0541fa95c99",
+                    "paramList": [],
+                    "propertyKey": "resetStartIndex",
+                    "pw": {
+                        "displayName": "resetStartIndex",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "u303524e2ad94a3588f080b6ea8501e8",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "de7155339a364cbe9be1128aa868c2b2",
+                    "paramList": [],
+                    "propertyKey": "collapseDropDown",
+                    "pw": {
+                        "displayName": "collapseDropDown",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "u303524e2ad94a3588f080b6ea8501e8",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "ib9438ff71ef4fd78bb879ddb618183f",
+                    "paramList": [],
+                    "propertyKey": "setLayoutForMobileRTL",
+                    "pw": {
+                        "displayName": "setLayoutForMobileRTL",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "u303524e2ad94a3588f080b6ea8501e8",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "h4554acd04c84c9cbb752b03102093a8",
+                    "paramList": [],
+                    "propertyKey": "setLayoutForMobile",
+                    "pw": {
+                        "displayName": "setLayoutForMobile",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "u303524e2ad94a3588f080b6ea8501e8",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "e0695d6656154d40add6289479c5b303",
+                    "paramList": [],
+                    "propertyKey": "setLayoutForTabletRTL",
+                    "pw": {
+                        "displayName": "setLayoutForTabletRTL",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "u303524e2ad94a3588f080b6ea8501e8",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "ed17c1ce6d6240cb8562c538f56b0687",
+                    "paramList": [],
+                    "propertyKey": "setLayoutForTablet",
+                    "pw": {
+                        "displayName": "setLayoutForTablet",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "u303524e2ad94a3588f080b6ea8501e8",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "h585dba84d934a47a405e2e28d49bce2",
+                    "paramList": [],
+                    "propertyKey": "setLayoutForDesktopRTL",
+                    "pw": {
+                        "displayName": "setLayoutForDesktopRTL",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "u303524e2ad94a3588f080b6ea8501e8",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "be5fa3d178294b8293a9db1b1009ed52",
+                    "paramList": [],
+                    "propertyKey": "setLayoutForDesktop",
+                    "pw": {
+                        "displayName": "setLayoutForDesktop",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "u303524e2ad94a3588f080b6ea8501e8",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "bdee4b51f723403295092d163be3c7c3",
+                    "paramList": [],
+                    "propertyKey": "closePaginationDropDown",
+                    "pw": {
+                        "displayName": "closePaginationDropDown",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "u303524e2ad94a3588f080b6ea8501e8",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "hf8032ebf4774f49a647f8296655ce3a",
+                    "paramList": [
+                        {
+                            "name": "offset"
+                        },
+                        {
+                            "name": "pageSize"
+                        }
+                    ],
+                    "propertyIndex": 16,
+                    "propertyKey": "fetchPaginatedRecords",
+                    "pw": {
+                        "displayName": "fetchPaginatedRecords",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "u303524e2ad94a3588f080b6ea8501e8",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "g4811e9511644fd98837ac3f170eabf9",
+                    "paramList": [],
+                    "propertyIndex": 17,
+                    "propertyKey": "onError",
+                    "pw": {
+                        "displayName": "onError",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "u303524e2ad94a3588f080b6ea8501e8",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [
+                "Icons",
+                "Skins"
+            ],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"img\": \"pagination_back_blue.png\"}",
+                    "group": "Icons",
+                    "kuid": "ba3bd45e1a114a41bb2a78d45e99bb0c",
+                    "originalPropertyKey": "iconPaginationPreviousEnabled",
+                    "propertyIndex": 1,
+                    "propertyKey": "iconPaginationPreviousEnabled",
+                    "pw": {
+                        "displayName": "Bar Enabled Previous Icon ",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u303524e2ad94a3588f080b6ea8501e8",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"$.BREAKPTS.BP1\":\"ICSknLblSSP42424214px\",\"default\":\"ICSknLblSSP42424215px\"}",
+                    "group": "Skins",
+                    "kuid": "d6b55c6664a54437ae510025c63c1fd2",
+                    "originalPropertyKey": "sknPaginationText",
+                    "propertyIndex": 1,
+                    "propertyKey": "sknPaginationText",
+                    "pw": {
+                        "displayName": "Pagination bar text skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u303524e2ad94a3588f080b6ea8501e8",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Show all",
+                    "group": "General",
+                    "kuid": "ge6962be41154bc1912367c8a315ca87",
+                    "originalPropertyKey": "componentVisibility",
+                    "propertyIndex": 1,
+                    "propertyKey": "componentVisibility",
+                    "pw": {
+                        "displayName": "Visibility",
+                        "uiRepresentation": "Label-Combobox"
+                    },
+                    "srcWgtKUID": "u303524e2ad94a3588f080b6ea8501e8",
+                    "type": "list selector",
+                    "value": [
+                        "Show all",
+                        "Hide all",
+                        "Hide dropdown",
+                        "Hide pagination bar"
+                    ]
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"img\": \"pagination_blue.png\"}",
+                    "group": "Icons",
+                    "kuid": "i65893caa73f49cdaff3a62eaffb2b2e",
+                    "originalPropertyKey": "iconPaginationNextEnabled",
+                    "propertyIndex": 2,
+                    "propertyKey": "iconPaginationNextEnabled",
+                    "pw": {
+                        "displayName": "Bar Enabled Next Icon",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u303524e2ad94a3588f080b6ea8501e8",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknlbl42424215px",
+                    "group": "Skins",
+                    "kuid": "b4dedb1097fd487bb932c77d3a16ccf3",
+                    "originalPropertyKey": "sknRecordsPerPageLabel",
+                    "propertyIndex": 2,
+                    "propertyKey": "sknRecordsPerPageLabel",
+                    "pw": {
+                        "displayName": "Dropdown label skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u303524e2ad94a3588f080b6ea8501e8",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"BP1\":\"640\",\"BP2\":\"1024\",\"BP3\":\"1366\"}",
+                    "group": "General",
+                    "kuid": "a8fb6abcd88a4944958f0e89a25e6d20",
+                    "originalPropertyKey": "BREAKPTS",
+                    "propertyIndex": 2,
+                    "propertyKey": "BREAKPTS",
+                    "pw": {
+                        "displayName": "Break Point configuration",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u303524e2ad94a3588f080b6ea8501e8",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "20",
+                    "group": "General",
+                    "kuid": "h5d617a114e64285b684a1b0bcececf7",
+                    "originalPropertyKey": "recordsPerPage",
+                    "propertyIndex": 3,
+                    "propertyKey": "recordsPerPage",
+                    "pw": {
+                        "displayName": "Default records per page ",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u303524e2ad94a3588f080b6ea8501e8",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"img\": \"pagination_last_active.png\"}",
+                    "group": "Icons",
+                    "kuid": "fa35f4276e6c42c39c1c874d91c8505a",
+                    "originalPropertyKey": "iconPaginationLastEnabled",
+                    "propertyIndex": 3,
+                    "propertyKey": "iconPaginationLastEnabled",
+                    "pw": {
+                        "displayName": "Bar Enabled Last Icon",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u303524e2ad94a3588f080b6ea8501e8",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"$.BREAKPTS.BP1\":\"ICSknBtnSSP72727213px\",\"default\":\"ICSknBtnSSP72727215px\"}",
+                    "group": "Skins",
+                    "kuid": "g33121f5c82d4695a17e255bb6d34051",
+                    "originalPropertyKey": "sknRecordsPerPageListItems",
+                    "propertyIndex": 3,
+                    "propertyKey": "sknRecordsPerPageListItems",
+                    "pw": {
+                        "displayName": "Dropdown list value skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u303524e2ad94a3588f080b6ea8501e8",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"img\":\"pagination_first_active.png\"}",
+                    "group": "Icons",
+                    "kuid": "g81a27be5aaf4eb8bcbb6b9ee365e4f9",
+                    "originalPropertyKey": "iconPaginationFirstEnabled",
+                    "propertyIndex": 4,
+                    "propertyKey": "iconPaginationFirstEnabled",
+                    "pw": {
+                        "displayName": "Bar Enabled First Icon",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u303524e2ad94a3588f080b6ea8501e8",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "1",
+                    "group": "General",
+                    "kuid": "c75819ba428444c19b94007c36d30b6f",
+                    "originalPropertyKey": "defaultPageNumber",
+                    "propertyIndex": 4,
+                    "propertyKey": "defaultPageNumber",
+                    "pw": {
+                        "displayName": "Default Page Number",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u303524e2ad94a3588f080b6ea8501e8",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"$.BREAKPTS.BP1\":\"ICSknLblSSP42424213px\",\"default\":\"ICSknLblSSP42424215px\"}",
+                    "group": "Skins",
+                    "kuid": "j19eec38a2d547659f5e8f694c5f3ef8",
+                    "originalPropertyKey": "sknRecordsPerPageSelected",
+                    "propertyIndex": 4,
+                    "propertyKey": "sknRecordsPerPageSelected",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Dropdown Selected Label Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u303524e2ad94a3588f080b6ea8501e8",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{   \"default\": \"{$.t.startIndex}-{$.t.endIndex}  of {$.t.totalPages}\",   \"$.BREAKPTS.BP1\": \"{$.t.startIndex}-{$.t.endIndex}  of {$.t.totalPages}\"}",
+                    "group": "General",
+                    "kuid": "a87532b3701b4df6840d2daa4550777c",
+                    "originalPropertyKey": "paginationText",
+                    "propertyIndex": 5,
+                    "propertyKey": "paginationText",
+                    "pw": {
+                        "displayName": "Pagination bar label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u303524e2ad94a3588f080b6ea8501e8",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"img\": \"dropdown_expand.png\"}",
+                    "group": "Icons",
+                    "kuid": "a39b58d9f45c474e9531993c18c241a0",
+                    "originalPropertyKey": "dropdownExpandIcon",
+                    "propertyIndex": 5,
+                    "propertyKey": "dropdownExpandIcon",
+                    "pw": {
+                        "displayName": "Dropdown expand Icon",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u303524e2ad94a3588f080b6ea8501e8",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"default\": \"View:\"} ",
+                    "group": "General",
+                    "kuid": "cd53417693b64e7aa069437a84884007",
+                    "originalPropertyKey": "recordsPerPageLabel",
+                    "propertyIndex": 6,
+                    "propertyKey": "recordsPerPageLabel",
+                    "pw": {
+                        "displayName": "Dropdown Label",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u303524e2ad94a3588f080b6ea8501e8",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"img\": \"pagination_back_inactive.png\"}",
+                    "group": "Icons",
+                    "kuid": "b2da2e145afb4f6696d09bc6a1131a31",
+                    "originalPropertyKey": "iconPaginationPreviousDisabled",
+                    "propertyIndex": 6,
+                    "propertyKey": "iconPaginationPreviousDisabled",
+                    "pw": {
+                        "displayName": "Bar Disabled Previous Icon ",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u303524e2ad94a3588f080b6ea8501e8",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "[{\"10\":\"10 Per Page\"},{\"20\":\"20 Per Page\"}]",
+                    "group": "General",
+                    "kuid": "ce901f5ddd7f4516be72c383766ceca6",
+                    "originalPropertyKey": "recordsPerPageList",
+                    "propertyIndex": 7,
+                    "propertyKey": "recordsPerPageList",
+                    "pw": {
+                        "displayName": "Dropdown values ",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u303524e2ad94a3588f080b6ea8501e8",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"img\": \"pagination_next_inactive.png\"}",
+                    "group": "Icons",
+                    "kuid": "b34f479c436f4708bd0067c8aa4f220a",
+                    "originalPropertyKey": "iconPaginationNextDisabled",
+                    "propertyIndex": 7,
+                    "propertyKey": "iconPaginationNextDisabled",
+                    "pw": {
+                        "displayName": "Bar Disabled Next icon",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u303524e2ad94a3588f080b6ea8501e8",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"img\":\"pagination_last_inactive.png\"}",
+                    "group": "Icons",
+                    "kuid": "i066ab3622794da4bf5bbd191990d40d",
+                    "originalPropertyKey": "iconPaginationLastDisabled",
+                    "propertyIndex": 8,
+                    "propertyKey": "iconPaginationLastDisabled",
+                    "pw": {
+                        "displayName": "Bar Disabled Last Icon",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u303524e2ad94a3588f080b6ea8501e8",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"img\": \"pagination_inactive.png\"}",
+                    "group": "Icons",
+                    "kuid": "dcfcf3d1197146a5aba42c8f23e85aa2",
+                    "originalPropertyKey": "iconPaginationFirstDisabled",
+                    "propertyIndex": 9,
+                    "propertyKey": "iconPaginationFirstDisabled",
+                    "pw": {
+                        "displayName": "Bar Disabled First Icon",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u303524e2ad94a3588f080b6ea8501e8",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"img\": \"dropdown_collapse.png\"}",
+                    "group": "Icons",
+                    "kuid": "c48922311a544a77a54ae0e2242f11b2",
+                    "originalPropertyKey": "dropdownCollapseIcon",
+                    "propertyIndex": 10,
+                    "propertyKey": "dropdownCollapseIcon",
+                    "pw": {
+                        "displayName": "Dropdown collapse Icon",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "u303524e2ad94a3588f080b6ea8501e8",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "g97c3a61485d4112ab09518b5ecd9971",
+                    "originalPropertyKey": "right",
+                    "propertyIndex": 8,
+                    "propertyKey": "flxPaginationNextRight",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "defaultValue": {
+                            "type": "string",
+                            "value": ""
+                        },
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Right",
+                        "forkablePlatforms": {
+                            "desktop": [
+                                "desktopweb"
+                            ],
+                            "mobile": [
+                                "iphone",
+                                "android"
+                            ],
+                            "tablet": [
+                                "ipad",
+                                "android"
+                            ]
+                        },
+                        "isHiddenInTool": false,
+                        "srcWidget": "flxPaginationNext",
+                        "type": "object",
+                        "uiConfig": {
+                            "Combobox": {
+                                "masterData": [
+                                    [
+                                        "Dp",
+                                        "dp"
+                                    ],
+                                    [
+                                        "Px",
+                                        "px"
+                                    ],
+                                    [
+                                        "%",
+                                        "%"
+                                    ],
+                                    [
+                                        "Default",
+                                        "Default"
+                                    ]
+                                ]
+                            },
+                            "Label": {},
+                            "Textbox": {}
+                        },
+                        "uiRepresentation": "Label-Textbox-Combobox",
+                        "wType": "FlexContainer"
+                    },
+                    "srcWgtKUID": "u15c4944462e4901a09ef0b1fa61bbc1"
+                }
+            ]
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.Infinity.OLB.PortfolioManagementMA",
+    "version": "1.0.0"
+}

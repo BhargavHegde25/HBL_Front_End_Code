@@ -1,0 +1,61 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "20dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "se4cbdf6e51f48eda9966caa941c6a19",
+    "_text_": "6 Months",
+    "_width_": {
+        "type": "string",
+        "value": "150dp"
+    },
+    "accessibilityconfig": {
+        "a11yLabel": "Privacy Policy"
+    },
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "desktopweb": {
+        "psp": {
+            "hoverSkin": "s293e226e8f945ddb4137c09ee51b794"
+        }
+    },
+    "disabledSkins": {
+        "focusSkin": "s293e226e8f945ddb4137c09ee51b794"
+    },
+    "displaytext": true,
+    "focusskin": null,
+    "id": "btnSixMonths",
+    "ide_onClick": "AS_Button_c4cc36d969a64c359a7ed65ba9677db8",
+    "info": null,
+    "isvisible": true,
+    "kuid": "j5db11a61621418994a0274de72fa683",
+    "name": "kony.ui.Button",
+    "parent": "flxDateRange",
+    "pf": "userwidgetmodel",
+    "tooltip": "Privacy Policy",
+    "wType": "Button",
+    "zindex": 1
+}

@@ -1,0 +1,82 @@
+{
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "350dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "sdba34cffa8d499eaaad5931ff092382",
+    "_top_": {
+        "type": "string",
+        "value": "0"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "children": [
+        "flxRiskGraph",
+        "flxLegendWrapper"
+    ],
+    "clipbounds": false,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "flxMainContent",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "i525616da7a140f7a7f0d16de66d1b66",
+    "layouttype": 3,
+    "name": "kony.ui.FlexContainer",
+    "parent": "RiskAnalysisGraph",
+    "pf": "userwidgetmodel",
+    "responsiveData": {
+        "b1": {
+            "left": {
+                "type": "string",
+                "value": "30dp"
+            },
+            "top": {
+                "type": "string",
+                "value": "30px"
+            },
+            "width": {
+                "type": "string",
+                "value": "97%"
+            }
+        },
+        "b2": {
+            "layoutType": 4
+        },
+        "b3": {
+            "layoutType": 4
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1
+}

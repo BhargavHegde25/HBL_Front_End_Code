@@ -1,0 +1,63 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "20dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        2,
+        0,
+        2,
+        0
+    ],
+    "_skin_": "sbb3319a91464659a4339aefc47731bc",
+    "_text_": "Portfolio Summary",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "disabledSkins": {
+        "focusSkin": "sadee24f71b64d3c835d5f78c79ab4c4"
+    },
+    "displaytext": true,
+    "id": "btnTab1",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "i8c0f3dcaa484e2ea54dd32669893fee",
+    "name": "kony.ui.Button",
+    "parent": "flxTitle",
+    "pf": "frmPortfolioOverview",
+    "responsiveData": {
+        "b2": {
+            "skin": "sbb3319a91464659a4339aefc47731bc"
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "texti18n": "i18n.wealth.portfolioSummary",
+    "wType": "Button",
+    "zindex": 1
+}

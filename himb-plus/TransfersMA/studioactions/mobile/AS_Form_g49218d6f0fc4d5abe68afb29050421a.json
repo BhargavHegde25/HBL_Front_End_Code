@@ -1,0 +1,32 @@
+{
+    "AS_Form_g49218d6f0fc4d5abe68afb29050421a": {
+        "id": "AS_Form_g49218d6f0fc4d5abe68afb29050421a",
+        "type": "ACTION_SEQUENCE",
+        "params": [
+            {
+                "datatype": "collection",
+                "name": "eventobject"
+            }
+        ],
+        "contextObj": {
+            "name": "frmFundTransferMain",
+            "type": "forms",
+            "platform": "",
+            "KUID": "d8b8aea701de46ed98a79f677f45e8b0"
+        },
+        "language": "js",
+        "actions": [
+            {
+                "id": "INVOKE_FUNCTION__b825996cccf74b53adb78969914f2351",
+                "type": "INVOKE_FUNCTION",
+                "sequenceKUID": "preShow",
+                "display": "preShow",
+                "inputparams": [],
+                "parentId": null,
+                "callbackType": null,
+                "disabled": null,
+                "source": "controller"
+            }
+        ]
+    }
+}

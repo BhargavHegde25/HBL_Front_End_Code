@@ -1,0 +1,23 @@
+{
+    "AS_Form_ef033f52258c401cbecd5dc0d30a703f": {
+        "id": "AS_Form_ef033f52258c401cbecd5dc0d30a703f",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmProfileResetTransactionPinInfo",
+            "type": "forms",
+            "platform": null,
+            "KUID": "f1056ad0a2794d60b4b6c9e2a8dba432"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_preShow_e3ea193349b748519e8118587d304d6a",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.preShow();",
+            "callbackType": null
+        }]
+    }
+}

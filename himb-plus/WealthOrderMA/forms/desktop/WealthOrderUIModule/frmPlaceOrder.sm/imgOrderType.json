@@ -1,0 +1,63 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizImage2",
+    "DNDConfig": null,
+    "_base64_": null,
+    "_height_": {
+        "type": "string",
+        "value": "7dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": ""
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_right_": {
+        "type": "string",
+        "value": "14dp"
+    },
+    "_skin_": "s8ee487de5774c1eb668e74bf92f5cdd",
+    "_src_": "arrow_down.png",
+    "_width_": {
+        "type": "string",
+        "value": "14dp"
+    },
+    "accessibilityconfig": {
+        "a11yLabel": "Account Types",
+        "a11yValue": ""
+    },
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "id": "imgOrderType",
+    "imagescalemode": 1,
+    "imagewhiledownloading": "img_transparent.png",
+    "info": null,
+    "invokedProperty": "src",
+    "isvisible": false,
+    "kuid": "jcc5c999484c4159832a153af6289a24",
+    "name": "kony.ui.Image2",
+    "parent": "flxOrderType",
+    "pf": "frmPlaceOrder",
+    "responsiveData": {
+        "b3": {}
+    },
+    "srcType": 1,
+    "tooltip": "Account Type",
+    "wType": "Image",
+    "widgetalignment": 5,
+    "zindex": 1
+}

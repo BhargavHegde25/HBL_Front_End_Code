@@ -1,0 +1,1483 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "_data_": [
+        {
+            "lblCashBuying": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "-"
+            },
+            "lblCashMixReveal": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "-"
+            },
+            "lblCashSelling": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "-"
+            },
+            "lblCurrency": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "-"
+            },
+            "lblSepartor": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblSepartor1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblSepartor2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblSepartor3": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblSepartor4": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblSepartor5": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblSepartor6": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblSepartor7": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblTcBuying": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "-"
+            },
+            "lblTcMixReveal": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "-"
+            },
+            "lblTcSelling": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "-"
+            },
+            "lblUnit": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "-"
+            }
+        },
+        {
+            "lblCashBuying": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "-"
+            },
+            "lblCashMixReveal": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "-"
+            },
+            "lblCashSelling": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "-"
+            },
+            "lblCurrency": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "-"
+            },
+            "lblSepartor": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblSepartor1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblSepartor2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblSepartor3": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblSepartor4": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblSepartor5": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblSepartor6": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblSepartor7": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblTcBuying": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "-"
+            },
+            "lblTcMixReveal": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "-"
+            },
+            "lblTcSelling": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "-"
+            },
+            "lblUnit": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "-"
+            }
+        },
+        {
+            "lblCashBuying": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "-"
+            },
+            "lblCashMixReveal": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "-"
+            },
+            "lblCashSelling": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "-"
+            },
+            "lblCurrency": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "-"
+            },
+            "lblSepartor": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblSepartor1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblSepartor2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblSepartor3": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblSepartor4": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblSepartor5": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblSepartor6": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblSepartor7": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblTcBuying": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "-"
+            },
+            "lblTcMixReveal": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "-"
+            },
+            "lblTcSelling": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "-"
+            },
+            "lblUnit": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "-"
+            }
+        },
+        {
+            "lblCashBuying": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "-"
+            },
+            "lblCashMixReveal": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "-"
+            },
+            "lblCashSelling": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "-"
+            },
+            "lblCurrency": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "-"
+            },
+            "lblSepartor": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblSepartor1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblSepartor2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblSepartor3": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblSepartor4": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblSepartor5": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblSepartor6": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblSepartor7": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblTcBuying": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "-"
+            },
+            "lblTcMixReveal": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "-"
+            },
+            "lblTcSelling": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "-"
+            },
+            "lblUnit": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "-"
+            }
+        },
+        {
+            "lblCashBuying": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "-"
+            },
+            "lblCashMixReveal": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "-"
+            },
+            "lblCashSelling": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "-"
+            },
+            "lblCurrency": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "-"
+            },
+            "lblSepartor": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblSepartor1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblSepartor2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblSepartor3": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblSepartor4": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblSepartor5": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblSepartor6": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblSepartor7": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblTcBuying": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "-"
+            },
+            "lblTcMixReveal": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "-"
+            },
+            "lblTcSelling": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "-"
+            },
+            "lblUnit": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "-"
+            }
+        },
+        {
+            "lblCashBuying": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "-"
+            },
+            "lblCashMixReveal": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "-"
+            },
+            "lblCashSelling": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "-"
+            },
+            "lblCurrency": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "-"
+            },
+            "lblSepartor": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblSepartor1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblSepartor2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblSepartor3": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblSepartor4": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblSepartor5": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblSepartor6": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblSepartor7": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblTcBuying": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "-"
+            },
+            "lblTcMixReveal": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "-"
+            },
+            "lblTcSelling": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "-"
+            },
+            "lblUnit": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "-"
+            }
+        },
+        {
+            "lblCashBuying": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "-"
+            },
+            "lblCashMixReveal": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "-"
+            },
+            "lblCashSelling": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "-"
+            },
+            "lblCurrency": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "-"
+            },
+            "lblSepartor": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblSepartor1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblSepartor2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblSepartor3": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblSepartor4": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblSepartor5": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblSepartor6": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblSepartor7": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblTcBuying": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "-"
+            },
+            "lblTcMixReveal": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "-"
+            },
+            "lblTcSelling": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "-"
+            },
+            "lblUnit": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "-"
+            }
+        },
+        {
+            "lblCashBuying": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "-"
+            },
+            "lblCashMixReveal": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "-"
+            },
+            "lblCashSelling": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "-"
+            },
+            "lblCurrency": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "-"
+            },
+            "lblSepartor": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblSepartor1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblSepartor2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblSepartor3": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblSepartor4": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblSepartor5": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblSepartor6": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblSepartor7": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblTcBuying": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "-"
+            },
+            "lblTcMixReveal": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "-"
+            },
+            "lblTcSelling": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "-"
+            },
+            "lblUnit": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "-"
+            }
+        },
+        {
+            "lblCashBuying": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "-"
+            },
+            "lblCashMixReveal": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "-"
+            },
+            "lblCashSelling": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "-"
+            },
+            "lblCurrency": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "-"
+            },
+            "lblSepartor": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblSepartor1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblSepartor2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblSepartor3": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblSepartor4": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblSepartor5": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblSepartor6": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblSepartor7": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblTcBuying": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "-"
+            },
+            "lblTcMixReveal": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "-"
+            },
+            "lblTcSelling": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "-"
+            },
+            "lblUnit": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "-"
+            }
+        },
+        {
+            "lblCashBuying": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "-"
+            },
+            "lblCashMixReveal": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "-"
+            },
+            "lblCashSelling": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "-"
+            },
+            "lblCurrency": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "-"
+            },
+            "lblSepartor": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblSepartor1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblSepartor2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblSepartor3": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblSepartor4": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblSepartor5": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblSepartor6": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblSepartor7": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Label"
+            },
+            "lblTcBuying": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "-"
+            },
+            "lblTcMixReveal": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "-"
+            },
+            "lblTcSelling": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "-"
+            },
+            "lblUnit": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "-"
+            }
+        }
+    ],
+    "_height_": {
+        "type": "string",
+        "value": "240dp"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "0"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "counter": "09",
+    "focusedindex": null,
+    "focuseditem": null,
+    "groupcells": false,
+    "hasSections": false,
+    "id": "segExchangeRate",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "c9e3805ec21246a288c88d2d0bd40015",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "flxExchangeSegment",
+    "pf": "frmExchangeRate",
+    "responsiveData": {
+        "b3": {
+            "data": [
+                {
+                    "lblCashBuying": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "-"
+                    },
+                    "lblCashMixReveal": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "-"
+                    },
+                    "lblCashSelling": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "-"
+                    },
+                    "lblCurrency": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "-"
+                    },
+                    "lblSepartor": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label"
+                    },
+                    "lblSepartor1": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label"
+                    },
+                    "lblSepartor2": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label"
+                    },
+                    "lblSepartor3": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label"
+                    },
+                    "lblSepartor4": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label"
+                    },
+                    "lblSepartor5": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label"
+                    },
+                    "lblSepartor6": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label"
+                    },
+                    "lblSepartor7": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label"
+                    },
+                    "lblTcBuying": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "-"
+                    },
+                    "lblTcMixReveal": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "-"
+                    },
+                    "lblTcSelling": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "-"
+                    },
+                    "lblUnit": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "-"
+                    }
+                },
+                {
+                    "lblCashBuying": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "-"
+                    },
+                    "lblCashMixReveal": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "-"
+                    },
+                    "lblCashSelling": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "-"
+                    },
+                    "lblCurrency": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "-"
+                    },
+                    "lblSepartor": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label"
+                    },
+                    "lblSepartor1": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label"
+                    },
+                    "lblSepartor2": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label"
+                    },
+                    "lblSepartor3": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label"
+                    },
+                    "lblSepartor4": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label"
+                    },
+                    "lblSepartor5": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label"
+                    },
+                    "lblSepartor6": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label"
+                    },
+                    "lblSepartor7": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label"
+                    },
+                    "lblTcBuying": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "-"
+                    },
+                    "lblTcMixReveal": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "-"
+                    },
+                    "lblTcSelling": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "-"
+                    },
+                    "lblUnit": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "-"
+                    }
+                },
+                {
+                    "lblCashBuying": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "-"
+                    },
+                    "lblCashMixReveal": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "-"
+                    },
+                    "lblCashSelling": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "-"
+                    },
+                    "lblCurrency": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "-"
+                    },
+                    "lblSepartor": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label"
+                    },
+                    "lblSepartor1": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label"
+                    },
+                    "lblSepartor2": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label"
+                    },
+                    "lblSepartor3": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label"
+                    },
+                    "lblSepartor4": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label"
+                    },
+                    "lblSepartor5": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label"
+                    },
+                    "lblSepartor6": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label"
+                    },
+                    "lblSepartor7": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label"
+                    },
+                    "lblTcBuying": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "-"
+                    },
+                    "lblTcMixReveal": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "-"
+                    },
+                    "lblTcSelling": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "-"
+                    },
+                    "lblUnit": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "-"
+                    }
+                },
+                {
+                    "lblCashBuying": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "-"
+                    },
+                    "lblCashMixReveal": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "-"
+                    },
+                    "lblCashSelling": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "-"
+                    },
+                    "lblCurrency": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "-"
+                    },
+                    "lblSepartor": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label"
+                    },
+                    "lblSepartor1": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label"
+                    },
+                    "lblSepartor2": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label"
+                    },
+                    "lblSepartor3": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label"
+                    },
+                    "lblSepartor4": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label"
+                    },
+                    "lblSepartor5": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label"
+                    },
+                    "lblSepartor6": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label"
+                    },
+                    "lblSepartor7": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label"
+                    },
+                    "lblTcBuying": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "-"
+                    },
+                    "lblTcMixReveal": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "-"
+                    },
+                    "lblTcSelling": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "-"
+                    },
+                    "lblUnit": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "-"
+                    }
+                },
+                {
+                    "lblCashBuying": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "-"
+                    },
+                    "lblCashMixReveal": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "-"
+                    },
+                    "lblCashSelling": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "-"
+                    },
+                    "lblCurrency": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "-"
+                    },
+                    "lblSepartor": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label"
+                    },
+                    "lblSepartor1": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label"
+                    },
+                    "lblSepartor2": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label"
+                    },
+                    "lblSepartor3": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label"
+                    },
+                    "lblSepartor4": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label"
+                    },
+                    "lblSepartor5": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label"
+                    },
+                    "lblSepartor6": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label"
+                    },
+                    "lblSepartor7": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label"
+                    },
+                    "lblTcBuying": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "-"
+                    },
+                    "lblTcMixReveal": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "-"
+                    },
+                    "lblTcSelling": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "-"
+                    },
+                    "lblUnit": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "-"
+                    }
+                },
+                {
+                    "lblCashBuying": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "-"
+                    },
+                    "lblCashMixReveal": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "-"
+                    },
+                    "lblCashSelling": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "-"
+                    },
+                    "lblCurrency": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "-"
+                    },
+                    "lblSepartor": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label"
+                    },
+                    "lblSepartor1": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label"
+                    },
+                    "lblSepartor2": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label"
+                    },
+                    "lblSepartor3": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label"
+                    },
+                    "lblSepartor4": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label"
+                    },
+                    "lblSepartor5": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label"
+                    },
+                    "lblSepartor6": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label"
+                    },
+                    "lblSepartor7": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label"
+                    },
+                    "lblTcBuying": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "-"
+                    },
+                    "lblTcMixReveal": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "-"
+                    },
+                    "lblTcSelling": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "-"
+                    },
+                    "lblUnit": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "-"
+                    }
+                },
+                {
+                    "lblCashBuying": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "-"
+                    },
+                    "lblCashMixReveal": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "-"
+                    },
+                    "lblCashSelling": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "-"
+                    },
+                    "lblCurrency": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "-"
+                    },
+                    "lblSepartor": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label"
+                    },
+                    "lblSepartor1": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label"
+                    },
+                    "lblSepartor2": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label"
+                    },
+                    "lblSepartor3": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label"
+                    },
+                    "lblSepartor4": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label"
+                    },
+                    "lblSepartor5": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label"
+                    },
+                    "lblSepartor6": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label"
+                    },
+                    "lblSepartor7": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label"
+                    },
+                    "lblTcBuying": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "-"
+                    },
+                    "lblTcMixReveal": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "-"
+                    },
+                    "lblTcSelling": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "-"
+                    },
+                    "lblUnit": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "-"
+                    }
+                },
+                {
+                    "lblCashBuying": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "-"
+                    },
+                    "lblCashMixReveal": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "-"
+                    },
+                    "lblCashSelling": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "-"
+                    },
+                    "lblCurrency": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "-"
+                    },
+                    "lblSepartor": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label"
+                    },
+                    "lblSepartor1": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label"
+                    },
+                    "lblSepartor2": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label"
+                    },
+                    "lblSepartor3": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label"
+                    },
+                    "lblSepartor4": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label"
+                    },
+                    "lblSepartor5": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label"
+                    },
+                    "lblSepartor6": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label"
+                    },
+                    "lblSepartor7": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label"
+                    },
+                    "lblTcBuying": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "-"
+                    },
+                    "lblTcMixReveal": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "-"
+                    },
+                    "lblTcSelling": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "-"
+                    },
+                    "lblUnit": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "-"
+                    }
+                },
+                {
+                    "lblCashBuying": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "-"
+                    },
+                    "lblCashMixReveal": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "-"
+                    },
+                    "lblCashSelling": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "-"
+                    },
+                    "lblCurrency": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "-"
+                    },
+                    "lblSepartor": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label"
+                    },
+                    "lblSepartor1": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label"
+                    },
+                    "lblSepartor2": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label"
+                    },
+                    "lblSepartor3": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label"
+                    },
+                    "lblSepartor4": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label"
+                    },
+                    "lblSepartor5": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label"
+                    },
+                    "lblSepartor6": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label"
+                    },
+                    "lblSepartor7": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label"
+                    },
+                    "lblTcBuying": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "-"
+                    },
+                    "lblTcMixReveal": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "-"
+                    },
+                    "lblTcSelling": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "-"
+                    },
+                    "lblUnit": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "-"
+                    }
+                },
+                {
+                    "lblCashBuying": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "-"
+                    },
+                    "lblCashMixReveal": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "-"
+                    },
+                    "lblCashSelling": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "-"
+                    },
+                    "lblCurrency": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "-"
+                    },
+                    "lblSepartor": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label"
+                    },
+                    "lblSepartor1": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label"
+                    },
+                    "lblSepartor2": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label"
+                    },
+                    "lblSepartor3": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label"
+                    },
+                    "lblSepartor4": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label"
+                    },
+                    "lblSepartor5": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label"
+                    },
+                    "lblSepartor6": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label"
+                    },
+                    "lblSepartor7": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Label"
+                    },
+                    "lblTcBuying": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "-"
+                    },
+                    "lblTcMixReveal": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "-"
+                    },
+                    "lblTcSelling": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "-"
+                    },
+                    "lblUnit": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "-"
+                    }
+                }
+            ],
+            "rowTemplate": "b4952a1b896a47608587db44ccb7a8be",
+            "sectionHeaderTemplate": null,
+            "widgetDataMap": {
+                "flxCash": "flxCash",
+                "flxCashBuying": "flxCashBuying",
+                "flxCashMixReveal": "flxCashMixReveal",
+                "flxCashSelling": "flxCashSelling",
+                "flxCurrency": "flxCurrency",
+                "flxExchangeRateList": "flxExchangeRateList",
+                "flxTC": "flxTC",
+                "flxTcBuying": "flxTcBuying",
+                "flxTcMixReveal": "flxTcMixReveal",
+                "flxTcSelling": "flxTcSelling",
+                "flxUnit": "flxUnit",
+                "lblCashBuying": "lblCashBuying",
+                "lblCashMixReveal": "lblCashMixReveal",
+                "lblCashSelling": "lblCashSelling",
+                "lblCurrency": "lblCurrency",
+                "lblSepartor": "lblSepartor",
+                "lblSepartor1": "lblSepartor1",
+                "lblSepartor2": "lblSepartor2",
+                "lblSepartor3": "lblSepartor3",
+                "lblSepartor4": "lblSepartor4",
+                "lblSepartor5": "lblSepartor5",
+                "lblSepartor6": "lblSepartor6",
+                "lblSepartor7": "lblSepartor7",
+                "lblTcBuying": "lblTcBuying",
+                "lblTcMixReveal": "lblTcMixReveal",
+                "lblTcSelling": "lblTcSelling",
+                "lblUnit": "lblUnit"
+            }
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainselection": false,
+    "rowTemplateId": "b4952a1b896a47608587db44ccb7a8be",
+    "rowcounter": 9,
+    "rowfocusskin": "sb786571d39341718661cdf8110d1451",
+    "rowskin": "s9ede665a85942788c6c910be0d7381d",
+    "rowtemplate": "flxExchangeRateList",
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionHeaderTemplateId": null,
+    "sectionheaderskin": "s16abf1baa214c2b8ab54192c35a8b96",
+    "sectionheadertemplate": null,
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "separatorcolor": "aaaaaa00",
+    "separatorrequired": true,
+    "separatorthickness": 1,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "vizProps": {},
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "flxCash": "flxCash",
+        "flxCashBuying": "flxCashBuying",
+        "flxCashMixReveal": "flxCashMixReveal",
+        "flxCashSelling": "flxCashSelling",
+        "flxCurrency": "flxCurrency",
+        "flxExchangeRateList": "flxExchangeRateList",
+        "flxTC": "flxTC",
+        "flxTcBuying": "flxTcBuying",
+        "flxTcMixReveal": "flxTcMixReveal",
+        "flxTcSelling": "flxTcSelling",
+        "flxUnit": "flxUnit",
+        "lblCashBuying": "lblCashBuying",
+        "lblCashMixReveal": "lblCashMixReveal",
+        "lblCashSelling": "lblCashSelling",
+        "lblCurrency": "lblCurrency",
+        "lblSepartor": "lblSepartor",
+        "lblSepartor1": "lblSepartor1",
+        "lblSepartor2": "lblSepartor2",
+        "lblSepartor3": "lblSepartor3",
+        "lblSepartor4": "lblSepartor4",
+        "lblSepartor5": "lblSepartor5",
+        "lblSepartor6": "lblSepartor6",
+        "lblSepartor7": "lblSepartor7",
+        "lblTcBuying": "lblTcBuying",
+        "lblTcMixReveal": "lblTcMixReveal",
+        "lblTcSelling": "lblTcSelling",
+        "lblUnit": "lblUnit"
+    }
+}

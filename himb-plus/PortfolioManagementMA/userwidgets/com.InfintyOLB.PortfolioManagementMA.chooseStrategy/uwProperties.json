@@ -1,0 +1,71 @@
+{
+    "classname": "chooseStrategy",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "a328c69e78f142c189e35ed206376909",
+                    "paramList": [],
+                    "propertyKey": "setData",
+                    "pw": {
+                        "displayName": "setData",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "j98c5b8a0f6c430587a9ea6e91b80b84",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "d2751cd9868d4398aa56fe136213b7e7",
+                    "paramList": [],
+                    "propertyKey": "onToggleToRecommendStrategy",
+                    "pw": {
+                        "displayName": "onToggleToRecommendStrategy",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "j98c5b8a0f6c430587a9ea6e91b80b84",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "e88b5855407e446e91b3a7f98f1dac63",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "onToggle",
+                    "pw": {
+                        "displayName": "onToggle",
+                        "toolTip": "Toggle from Alternate Strategy to Recommended Strategy ",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "j98c5b8a0f6c430587a9ea6e91b80b84",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfintyOLB.PortfolioManagementMA",
+    "version": "1.0.0"
+}

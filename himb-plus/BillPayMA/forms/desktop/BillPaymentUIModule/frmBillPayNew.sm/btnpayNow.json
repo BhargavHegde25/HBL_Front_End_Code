@@ -1,0 +1,91 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_bottom_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_height_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": ""
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_right_": {
+        "type": "string",
+        "value": "20px"
+    },
+    "_skin_": "sbb254ec64344072940fb411d755530a",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": ""
+    },
+    "_width_": {
+        "type": "string",
+        "value": "150px"
+    },
+    "accessibilityconfig": {
+        "a11yLabel": "Confirm"
+    },
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": ""
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "desktopweb": {
+        "psp": {
+            "hoverSkin": "s81054b5e2b74f17a5261991df565427"
+        }
+    },
+    "disabledSkins": {
+        "focusSkin": "sf91035b6e01489a9ac12a484e39cb1f"
+    },
+    "displaytext": true,
+    "id": "btnpayNow",
+    "ide_onClick": "AS_Button_b2d7390d6f2c44479d31798d90544c74",
+    "info": null,
+    "isvisible": true,
+    "kuid": "bd4577d4afd042a99b24fa316afb75d1",
+    "name": "kony.ui.Button",
+    "parent": "flxButtons",
+    "pf": "frmBillPayNew",
+    "responsiveData": {
+        "b1": {},
+        "b2": {},
+        "b3": {
+            "left": {
+                "type": "string",
+                "value": "2.50%"
+            },
+            "right": {
+                "type": "string",
+                "value": "25%"
+            },
+            "width": {
+                "type": "string",
+                "value": "95%"
+            }
+        }
+    },
+    "texti18n": "i18n.common.proceed",
+    "tooltip": "Confirm",
+    "wType": "Button",
+    "zindex": 1
+}

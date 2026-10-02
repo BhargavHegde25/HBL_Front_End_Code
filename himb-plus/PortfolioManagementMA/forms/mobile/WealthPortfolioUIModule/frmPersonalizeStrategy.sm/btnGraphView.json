@@ -1,0 +1,57 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "36dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "-2dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s9787f76437840ad9d4dffe6ce899a83",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "0"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "75%"
+    },
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "disabledSkins": {
+        "focusSkin": "s344358aaecf45c8bd1e938367e779e1"
+    },
+    "displaytext": true,
+    "id": "btnGraphView",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "acc68a1dc4e847deace49d37ad407774",
+    "name": "kony.ui.Button",
+    "parent": "flxGraphViewBtn",
+    "pf": "frmPersonalizeStrategy",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "texti18n": "i18n.wealth.graphView",
+    "wType": "Button"
+}

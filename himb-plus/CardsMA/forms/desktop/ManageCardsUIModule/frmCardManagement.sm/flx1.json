@@ -1,0 +1,78 @@
+{
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "50dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s89a867252bb4ccd9771a2970eccd5ce",
+    "_top_": {
+        "type": "string",
+        "value": "20dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "90%"
+    },
+    "accessibilityconfig": {
+        "a11yARIA": {
+            "role": "link",
+            "tabindex": 0
+        }
+    },
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "children": [
+        "flxRequestANewCard"
+    ],
+    "clipbounds": true,
+    "containerweight": 100,
+    "desktopweb": {
+        "psp": {
+            "hoverSkin": "se48d9a7fffd424188760d3ca6c460d9"
+        }
+    },
+    "disabledSkins": {},
+    "enablescrolling": true,
+    "id": "flx1",
+    "ide_onClick": "AS_FlexContainer_e2b045e73d35448abeb2d332471a96d5",
+    "info": null,
+    "isvisible": true,
+    "kuid": "c921fa520b74485bb88549873f729773",
+    "layouttype": 2,
+    "name": "kony.ui.FlexContainer",
+    "parent": "flxCardAccounts",
+    "pf": "frmCardManagement",
+    "responsiveData": {
+        "b1": {
+            "disabledSkins": {
+                "hoverSkin": "se48d9a7fffd424188760d3ca6c460d9"
+            },
+            "skin": "s89a867252bb4ccd9771a2970eccd5ce"
+        },
+        "b4": {}
+    },
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1,
+    "zindex": 1
+}

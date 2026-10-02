@@ -1,0 +1,97 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_left_": {
+        "type": "number",
+        "value": ""
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_right_": {
+        "type": "string",
+        "value": "170dp"
+    },
+    "_skin_": "sdbbccbd1d224646bda17c38efb9ccb8",
+    "_text_": "Cancel",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "150dp"
+    },
+    "canUpdateUI": true,
+    "centery": {
+        "type": "number",
+        "value": ""
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "desktopweb": {
+        "psp": {
+            "hoverSkin": "sdbbccbd1d224646bda17c38efb9ccb8"
+        }
+    },
+    "disabledSkins": {},
+    "displaytext": true,
+    "focusskin": "sb950bc796154e88a6e0b3ebde988534",
+    "hoverskin": "",
+    "id": "btn1",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "c0255db3448b4d4daa0b448f35af3f6c",
+    "name": "kony.ui.Button",
+    "parent": "flxActionButtons",
+    "pf": "frmLoadEsewa",
+    "responsiveData": {
+        "b1": {
+            "desktopweb": {
+                "psp": {}
+            },
+            "disabledSkins": {}
+        },
+        "b3": {
+            "centerY": {
+                "type": "string",
+                "value": ""
+            },
+            "left": {
+                "type": "string",
+                "value": "1px"
+            },
+            "right": {
+                "type": "string",
+                "value": "0dp"
+            },
+            "top": {
+                "type": "string",
+                "value": "20dp"
+            },
+            "width": {
+                "type": "string",
+                "value": "100%"
+            }
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "texti18n": "i18n.transfers.Cancel",
+    "wType": "Button",
+    "zindex": 1
+}

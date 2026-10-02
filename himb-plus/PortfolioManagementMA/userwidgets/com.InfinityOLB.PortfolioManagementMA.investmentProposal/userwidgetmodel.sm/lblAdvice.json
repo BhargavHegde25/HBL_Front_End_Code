@@ -1,0 +1,83 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizLabel",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        1,
+        1,
+        1,
+        1
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s575c3b3144e40cf911f587474d3ad72",
+    "_text_": "We have prepared some new advice for your review.",
+    "_top_": {
+        "type": "string",
+        "value": "192dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "240dp"
+    },
+    "_wrapping_": 2,
+    "android": {
+        "textStyle": {
+            "letterSpacing": 0,
+            "strikeThrough": false
+        }
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "id": "lblAdvice",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "iphone": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "j280b7aac1924edb9609f64abdcf291b",
+    "name": "kony.ui.Label",
+    "parent": "flxDown",
+    "pf": "userwidgetmodel",
+    "responsiveData": {
+        "b2": {
+            "top": {
+                "type": "string",
+                "value": "150dp"
+            },
+            "width": {
+                "type": "string",
+                "value": "325dp"
+            }
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "texti18n": "i18n.wealth.newAdviceContent",
+    "tooltip": "",
+    "wType": "Label"
+}

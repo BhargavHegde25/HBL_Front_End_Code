@@ -1,0 +1,12 @@
+{
+  "serviceType" : "integration",
+  "jars" : [ {
+    "name" : "dbp-commonutilityservices.jar",
+    "type" : "jar"
+  }, {
+    "name" : "HBLServices.jar",
+    "type" : "jar"
+  } ],
+  "empty" : true,
+  "mapType" : "java.util.HashMap"
+}

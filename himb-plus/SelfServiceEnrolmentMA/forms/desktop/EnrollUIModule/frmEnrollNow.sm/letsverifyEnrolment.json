@@ -1,0 +1,1820 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "DNDConfig": null,
+    "_bottom_": {
+        "type": "number",
+        "value": ""
+    },
+    "_children_": [],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s1d5d3417cb74ec9883e5f01b8521945",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "areflexpropsreferenced": false,
+    "autogrowmode": 1,
+    "canUpdateUI": true,
+    "centery": {
+        "type": "number",
+        "value": ""
+    },
+    "clipbounds": false,
+    "containerweight": 0,
+    "dataDiffs": {
+        "DateInput": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "dd9cacc768614b5f8a64a53c8cab672f",
+                "srcKUID": "adebbbf5b4df4d40907e4fefb9ac42c8",
+                "wType": "UserWidgetInstance"
+            }
+        },
+        "DateInput.flxDateInputKA": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "c39191bb0c224a78a6b4302f81719f13",
+                "srcKUID": "h64f2cbdc09047ff824a7f78447345ab",
+                "wType": "FlexContainer"
+            }
+        },
+        "DateInput.lblDatePlaceholderKA": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "f2c8de7b8ac449a187469f42c5dbc417",
+                "srcKUID": "ia8bb100cdfd4da8bfb64f38c0f139ce",
+                "wType": "Label"
+            }
+        },
+        "DateInput.lblEnteredDateKA": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "a30e392ec1b84f689f6d792beaa2541f",
+                "srcKUID": "f9d4d851d42e4ae58163f898209443e2",
+                "wType": "Label"
+            }
+        },
+        "DateInput.tbxDateInputKA": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "b805beedad4646e3bc4aa2784d2669e2",
+                "srcKUID": "gd5f7cf7ddb94727a582aa6c8a24f68f",
+                "wType": "TextField"
+            }
+        },
+        "btnPhone": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "b97ae65ff3dd4afe8a73705ec8c642f7",
+                "srcKUID": "hc3c29eb13f244539f7f13dad0752a1e",
+                "wType": "Button"
+            },
+            "isVisible": true,
+            "responsiveData": {
+                "b1": {
+                    "isVisible": false,
+                    "text": "1004267689"
+                },
+                "b2": {
+                    "isVisible": false,
+                    "text": "1004267689"
+                },
+                "b3": {
+                    "isVisible": false
+                },
+                "b4": {
+                    "isVisible": false
+                }
+            },
+            "text": "1004267689"
+        },
+        "btnProceed": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "cd4477680b6a4d0bbfc4b5e3195937c0",
+                "srcKUID": "i8a7976e3e44454583278f86d9191f9a",
+                "wType": "Button"
+            },
+            "centerX": {
+                "Default": {
+                    "type": "string",
+                    "value": "50%"
+                }
+            },
+            "left": {
+                "Default": {
+                    "type": "number",
+                    "value": ""
+                }
+            },
+            "responsiveData": {
+                "b3": {
+                    "centerX": {
+                        "type": "string",
+                        "value": ""
+                    },
+                    "left": {
+                        "type": "string",
+                        "value": "80dp"
+                    },
+                    "top": {
+                        "type": "string",
+                        "value": "20dp"
+                    }
+                },
+                "b4": {
+                    "centerX": {
+                        "type": "string",
+                        "value": ""
+                    },
+                    "left": {
+                        "type": "string",
+                        "value": "80dp"
+                    },
+                    "top": {
+                        "type": "string",
+                        "value": "30dp"
+                    }
+                }
+            },
+            "top": {
+                "Default": {
+                    "type": "string",
+                    "value": "42dp"
+                }
+            }
+        },
+        "flexSSN": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "e23869ac95d64802a552ed29b8fac4e0",
+                "srcKUID": "a98ab0661a304c61a3baa0c3fe20e626",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxCaptcha": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "aad5cea694e44f1fa8f725298e3b4679",
+                "srcKUID": "j48b7e6fe8254a72ba5776a13790c56d",
+                "wType": "FlexContainer"
+            },
+            "centerX": {
+                "Default": {
+                    "type": "string",
+                    "value": ""
+                }
+            },
+            "left": {
+                "Default": {
+                    "type": "string",
+                    "value": "0"
+                }
+            },
+            "responsiveData": {
+                "b1": {
+                    "centerX": {
+                        "type": "string",
+                        "value": "50%"
+                    },
+                    "left": {
+                        "type": "string",
+                        "value": "80dp"
+                    },
+                    "top": {
+                        "type": "string",
+                        "value": "20dp"
+                    },
+                    "width": {
+                        "type": "string",
+                        "value": "68%"
+                    }
+                },
+                "b2": {
+                    "left": {
+                        "type": "string",
+                        "value": "80dp"
+                    },
+                    "top": {
+                        "type": "string",
+                        "value": "20dp"
+                    },
+                    "width": {
+                        "type": "string",
+                        "value": "68%"
+                    }
+                },
+                "b3": {
+                    "centerX": {
+                        "type": "string",
+                        "value": ""
+                    },
+                    "left": {
+                        "type": "string",
+                        "value": "80dp"
+                    },
+                    "top": {
+                        "type": "string",
+                        "value": "20dp"
+                    },
+                    "width": {
+                        "type": "string",
+                        "value": "68%"
+                    }
+                },
+                "b4": {
+                    "centerX": {
+                        "type": "string",
+                        "value": ""
+                    },
+                    "left": {
+                        "type": "string",
+                        "value": "80dp"
+                    },
+                    "top": {
+                        "type": "string",
+                        "value": "20dp"
+                    },
+                    "width": {
+                        "type": "string",
+                        "value": "68%"
+                    }
+                }
+            },
+            "top": {
+                "Default": {
+                    "type": "string",
+                    "value": "25dp"
+                }
+            },
+            "width": {
+                "Default": {
+                    "type": "string",
+                    "value": "100%"
+                }
+            }
+        },
+        "flxCaptchaImg": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "c10631beac6a448f9b5de5da009d5b52",
+                "srcKUID": "e243d166f0e3433b867e7923b68d3a4c",
+                "wType": "FlexContainer"
+            },
+            "left": {
+                "Default": {
+                    "type": "string",
+                    "value": ""
+                }
+            },
+            "responsiveData": {
+                "b1": {
+                    "width": {
+                        "type": "string",
+                        "value": "100%"
+                    }
+                },
+                "b2": {
+                    "left": {
+                        "type": "number",
+                        "value": "0"
+                    },
+                    "width": {
+                        "type": "string",
+                        "value": "100%"
+                    }
+                },
+                "b3": {
+                    "width": {
+                        "type": "string",
+                        "value": "100%"
+                    }
+                },
+                "b4": {
+                    "width": {
+                        "type": "string",
+                        "value": "100%"
+                    }
+                }
+            },
+            "width": {
+                "Default": {
+                    "type": "string",
+                    "value": "85%"
+                }
+            }
+        },
+        "flxCaptchaText": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "ff3341aa77ba48b18bd575b9c9ec4583",
+                "srcKUID": "f9d874fe8735448a88a1ca5878537113",
+                "wType": "FlexContainer"
+            },
+            "left": {
+                "Default": {
+                    "type": "string",
+                    "value": ""
+                }
+            },
+            "responsiveData": {
+                "b1": {
+                    "width": {
+                        "type": "string",
+                        "value": "100%"
+                    }
+                },
+                "b2": {
+                    "width": {
+                        "type": "string",
+                        "value": "100%"
+                    }
+                },
+                "b3": {
+                    "width": {
+                        "type": "string",
+                        "value": "100%"
+                    }
+                },
+                "b4": {
+                    "width": {
+                        "type": "string",
+                        "value": "100%"
+                    }
+                }
+            },
+            "width": {
+                "Default": {
+                    "type": "string",
+                    "value": "85%"
+                }
+            }
+        },
+        "flxDOB": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "g72d287c50714b959c38e72a3a5ddf76",
+                "srcKUID": "fa5d72e9051047868d9c56be6cc4fe3f",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxDateInput": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "bd570ab4027f4cb29ec528ee8603f220",
+                "srcKUID": "f0cdcb69dfa146a9a25d98fa4af29f79",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxEnrollment": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "fa92a929ba434b0d82fb3d6f590979ca",
+                "srcKUID": "c2233de3a42147898ba218d620f2b7ca",
+                "wType": "FlexContainer"
+            },
+            "autogrowMode": {
+                "Default": 0
+            },
+            "bottom": {
+                "Default": {
+                    "type": "number",
+                    "value": ""
+                }
+            },
+            "height": {
+                "Default": {
+                    "type": "ref",
+                    "value": "preferred"
+                }
+            },
+            "responsiveData": {
+                "b2": {
+                    "height": {
+                        "type": "string",
+                        "value": "100%"
+                    }
+                }
+            }
+        },
+        "flxLetsVerifyCntr": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "b55ffd507abb4d6eb6c9083b7c4e265a",
+                "srcKUID": "cb733c57968a48d0845ce569f03f67f2",
+                "wType": "FlexContainer"
+            },
+            "autogrowMode": {
+                "Default": 0
+            },
+            "height": {
+                "Default": {
+                    "type": "string",
+                    "value": "64dp"
+                }
+            },
+            "left": {
+                "Default": {
+                    "type": "string",
+                    "value": "0dp"
+                }
+            },
+            "responsiveData": {
+                "b1": {
+                    "top": null
+                },
+                "b2": {
+                    "left": {
+                        "type": "string",
+                        "value": "0dp"
+                    },
+                    "top": null
+                },
+                "b3": {
+                    "top": null
+                }
+            },
+            "top": {
+                "Default": {
+                    "type": "string",
+                    "value": "120dp"
+                }
+            },
+            "width": {
+                "Default": {
+                    "type": "string",
+                    "value": "100%"
+                }
+            }
+        },
+        "flxPhone": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "i3bfa58dc94a4e7e836dfb4b4d5656f5",
+                "srcKUID": "g4df303680824a0b80e79b5c9c2a2355",
+                "wType": "FlexContainer"
+            },
+            "bottom": {
+                "Default": {
+                    "type": "string",
+                    "value": "25dp"
+                }
+            },
+            "centerX": {
+                "Default": {
+                    "type": "string",
+                    "value": "49%"
+                }
+            },
+            "isVisible": true,
+            "responsiveData": {
+                "b3": {
+                    "width": {
+                        "type": "string",
+                        "value": "100%"
+                    }
+                }
+            },
+            "width": {
+                "Default": {
+                    "type": "string",
+                    "value": "85%"
+                }
+            }
+        },
+        "flxPhoneNumber": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "ieef5200c8064f0d8d5f098e99181ae1",
+                "srcKUID": "j23f52c732c5437c9aaac92bc77b2ff5",
+                "wType": "FlexContainer"
+            },
+            "autogrowMode": {
+                "Default": 0
+            },
+            "centerX": {
+                "Default": {
+                    "type": "string",
+                    "value": "50%"
+                }
+            },
+            "height": {
+                "Default": {
+                    "type": "string",
+                    "value": "40dp"
+                }
+            },
+            "left": {
+                "Default": {
+                    "type": "string",
+                    "value": "0dp"
+                }
+            },
+            "responsiveData": {
+                "b1": {
+                    "height": {
+                        "type": "string",
+                        "value": "50dp"
+                    },
+                    "left": {
+                        "type": "string",
+                        "value": "80dp"
+                    },
+                    "top": {
+                        "type": "string",
+                        "value": "10dp"
+                    },
+                    "width": {
+                        "type": "string",
+                        "value": "68%"
+                    }
+                },
+                "b2": {
+                    "height": {
+                        "type": "string",
+                        "value": "50dp"
+                    },
+                    "left": {
+                        "type": "string",
+                        "value": "80dp"
+                    },
+                    "top": {
+                        "type": "string",
+                        "value": "10dp"
+                    },
+                    "width": {
+                        "type": "string",
+                        "value": "68%"
+                    }
+                },
+                "b3": {
+                    "centerX": {
+                        "type": "string",
+                        "value": ""
+                    },
+                    "height": {
+                        "type": "string",
+                        "value": "50dp"
+                    },
+                    "left": {
+                        "type": "string",
+                        "value": "80dp"
+                    },
+                    "top": {
+                        "type": "string",
+                        "value": "20dp"
+                    },
+                    "width": {
+                        "type": "string",
+                        "value": "68%"
+                    }
+                },
+                "b4": {
+                    "centerX": {
+                        "type": "string",
+                        "value": ""
+                    },
+                    "height": null,
+                    "left": {
+                        "type": "string",
+                        "value": "80dp"
+                    },
+                    "width": {
+                        "type": "string",
+                        "value": "68%"
+                    }
+                }
+            },
+            "top": {
+                "Default": {
+                    "type": "string",
+                    "value": "20dp"
+                }
+            },
+            "width": {
+                "Default": {
+                    "type": "string",
+                    "value": "85%"
+                }
+            }
+        },
+        "flxRefresh": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "g55ea6685d314e1a9d4947a95b6664d7",
+                "srcKUID": "a5a6d35aa6fb45ceb29ec903c62ac671",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxUserVerify": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "hb45241324824874b89f971efb51c7b8",
+                "srcKUID": "cbd42a35b77643f4a2648c3ecec3fc39",
+                "wType": "FlexContainer"
+            },
+            "autogrowMode": {
+                "Default": 0
+            },
+            "height": {
+                "Default": {
+                    "type": "string",
+                    "value": "60dp"
+                }
+            },
+            "left": {
+                "Default": {
+                    "type": "string",
+                    "value": "7%"
+                }
+            },
+            "responsiveData": {
+                "b1": {
+                    "height": {
+                        "type": "string",
+                        "value": "60dp"
+                    }
+                }
+            },
+            "top": {
+                "Default": {
+                    "type": "string",
+                    "value": "0.6600000000000001%"
+                }
+            },
+            "width": {
+                "Default": {
+                    "type": "string",
+                    "value": "60dp"
+                }
+            }
+        },
+        "flxWhatIsSSN": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "c85e4db7e22a4fb0bf654e1cd73d018b",
+                "srcKUID": "c5475377dbf54791afbfadcc7e191685",
+                "wType": "FlexContainer"
+            }
+        },
+        "imgCaptcha": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "j66bb6de15324b14b52d51088a6f243b",
+                "srcKUID": "hac9722325474bcb9f5e604b452c32df",
+                "wType": "Image"
+            },
+            "height": {
+                "Default": {
+                    "type": "string",
+                    "value": "100%"
+                }
+            },
+            "responsiveData": {},
+            "src": "imagedrag.png",
+            "width": {
+                "Default": {
+                    "type": "string",
+                    "value": "80%"
+                }
+            }
+        },
+        "imgUserVerify": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "a9d6e98761d749dc877b447555b7bcd8",
+                "srcKUID": "cf720da29a454ab6b0dcc499de4405ed",
+                "wType": "Image"
+            },
+            "left": {
+                "Default": {
+                    "type": "number",
+                    "value": "0"
+                }
+            },
+            "responsiveData": {
+                "b4": {
+                    "left": null,
+                    "top": null
+                }
+            },
+            "src": "user_verify.png",
+            "top": {
+                "Default": {
+                    "type": "string",
+                    "value": "0dp"
+                }
+            }
+        },
+        "imgWhatIsSSN": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "ca87671802aa4569939cac79455bb89b",
+                "srcKUID": "b1cc06aeca6c485281022a2a94f6a64d",
+                "wType": "Image"
+            }
+        },
+        "lblAccNum": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "i4d74881020047a389f863ec55c1436a",
+                "srcKUID": "d55fca7969244fe1888c8e6dc2334da3",
+                "wType": "Label"
+            },
+            "i18n_text": "kony.mb.enroll.accountNumber",
+            "left": {
+                "Default": {
+                    "type": "string",
+                    "value": "7.50%"
+                }
+            },
+            "responsiveData": {
+                "b1": {
+                    "left": {
+                        "type": "string",
+                        "value": "80dp"
+                    },
+                    "top": {
+                        "type": "string",
+                        "value": "10dp"
+                    }
+                },
+                "b2": {
+                    "left": {
+                        "type": "string",
+                        "value": "80dp"
+                    },
+                    "top": {
+                        "type": "string",
+                        "value": "10dp"
+                    }
+                },
+                "b3": {
+                    "left": {
+                        "type": "string",
+                        "value": "80dp"
+                    },
+                    "top": {
+                        "type": "string",
+                        "value": "10dp"
+                    }
+                },
+                "b4": {
+                    "left": {
+                        "type": "string",
+                        "value": "80dp"
+                    },
+                    "top": {
+                        "type": "string",
+                        "value": "10dp"
+                    }
+                }
+            },
+            "top": {
+                "Default": {
+                    "type": "string",
+                    "value": "30dp"
+                }
+            },
+            "width": {
+                "Default": {
+                    "type": "string",
+                    "value": "68%"
+                }
+            }
+        },
+        "lblCallUs": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "e74e4d4ed7b340ea94567bc7ffec6c1e",
+                "srcKUID": "e7f856796a0f4b318a888a29c365e5f7",
+                "wType": "Label"
+            },
+            "bottom": {
+                "Default": {
+                    "type": "string",
+                    "value": ""
+                }
+            },
+            "centerX": {
+                "Default": {
+                    "type": "string",
+                    "value": "50.00%"
+                }
+            },
+            "i18n_text": null,
+            "left": {
+                "Default": {
+                    "type": "number",
+                    "value": ""
+                }
+            },
+            "responsiveData": {
+                "b1": {
+                    "i18n_text": "i18n.hbl.commons.CallSupportTeams",
+                    "text": null
+                },
+                "b2": {
+                    "bottom": {
+                        "type": "string",
+                        "value": "25dp"
+                    },
+                    "text": null
+                },
+                "b3": {
+                    "centerX": {
+                        "type": "string",
+                        "value": ""
+                    },
+                    "left": {
+                        "type": "string",
+                        "value": "50dp"
+                    },
+                    "text": null,
+                    "width": {
+                        "type": "string",
+                        "value": "80%"
+                    }
+                },
+                "b4": {
+                    "centerX": {
+                        "type": "string",
+                        "value": ""
+                    },
+                    "left": {
+                        "type": "string",
+                        "value": "55dp"
+                    },
+                    "text": null,
+                    "top": {
+                        "type": "string",
+                        "value": ""
+                    },
+                    "width": {
+                        "type": "string",
+                        "value": "80%"
+                    }
+                }
+            },
+            "text": "Or call our Support team: 01-5971399",
+            "top": {
+                "Default": {
+                    "type": "string",
+                    "value": ""
+                }
+            },
+            "width": {
+                "Default": {
+                    "type": "ref",
+                    "value": "preferred"
+                }
+            }
+        },
+        "lblDOB": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "aa76602c2fb345a6a3886389e78b617a",
+                "srcKUID": "i67d131beeb24aebaba6157eeda47eb6",
+                "wType": "Label"
+            }
+        },
+        "lblEmail": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "da572a9ffd55428bb51a21b1f0df24b1",
+                "srcKUID": "d8796872074947809b2dba5937ae4660",
+                "wType": "Label"
+            },
+            "i18n_text": "Kony.mb.enroll.accountemail",
+            "left": {
+                "Default": {
+                    "type": "string",
+                    "value": "7.45%"
+                }
+            },
+            "responsiveData": {
+                "b1": {
+                    "left": {
+                        "type": "string",
+                        "value": "80dp"
+                    },
+                    "top": null,
+                    "width": {
+                        "type": "string",
+                        "value": "68%"
+                    }
+                },
+                "b2": {
+                    "left": {
+                        "type": "string",
+                        "value": "80dp"
+                    },
+                    "top": null,
+                    "width": {
+                        "type": "string",
+                        "value": "68%"
+                    }
+                },
+                "b3": {
+                    "left": {
+                        "type": "string",
+                        "value": "80dp"
+                    },
+                    "top": null,
+                    "width": {
+                        "type": "string",
+                        "value": "68%"
+                    }
+                },
+                "b4": {
+                    "left": {
+                        "type": "string",
+                        "value": "80dp"
+                    },
+                    "top": null,
+                    "width": {
+                        "type": "string",
+                        "value": "68%"
+                    }
+                }
+            },
+            "top": {
+                "Default": {
+                    "type": "string",
+                    "value": "20dp"
+                }
+            },
+            "width": {
+                "Default": {
+                    "type": "ref",
+                    "value": "preferred"
+                }
+            }
+        },
+        "lblLastName": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "gdd20071a36f493abe5b9ca4d2b2860b",
+                "srcKUID": "c75e874edd184f57ba8256d38aa2d299",
+                "wType": "Label"
+            },
+            "i18n_text": "kony.mb.enroll.accountHolderName",
+            "left": {
+                "Default": {
+                    "type": "string",
+                    "value": "7.45%"
+                }
+            },
+            "responsiveData": {
+                "b1": {
+                    "left": {
+                        "type": "string",
+                        "value": "80dp"
+                    },
+                    "top": {
+                        "type": "string",
+                        "value": "20dp"
+                    },
+                    "width": {
+                        "type": "string",
+                        "value": "68%"
+                    }
+                },
+                "b2": {
+                    "left": {
+                        "type": "string",
+                        "value": "75dp"
+                    },
+                    "top": {
+                        "type": "string",
+                        "value": "20dp"
+                    },
+                    "width": {
+                        "type": "string",
+                        "value": "68%"
+                    }
+                },
+                "b3": {
+                    "left": {
+                        "type": "string",
+                        "value": "80dp"
+                    },
+                    "text": "Account Holder Name",
+                    "top": {
+                        "type": "string",
+                        "value": "20dp"
+                    },
+                    "width": {
+                        "type": "string",
+                        "value": "68%"
+                    }
+                },
+                "b4": {
+                    "left": {
+                        "type": "string",
+                        "value": "80dp"
+                    },
+                    "top": {
+                        "type": "string",
+                        "value": "20dp"
+                    },
+                    "width": {
+                        "type": "string",
+                        "value": "68%"
+                    }
+                }
+            },
+            "text": "Account Holder Name",
+            "top": {
+                "Default": {
+                    "type": "string",
+                    "value": "40dp"
+                }
+            },
+            "width": {
+                "Default": {
+                    "type": "ref",
+                    "value": "preferred"
+                }
+            }
+        },
+        "lblLetsVerify": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "f85965e63512431584bc610a0a4f91ea",
+                "srcKUID": "a7aef6d062fb41f988957e245d073351",
+                "wType": "Label"
+            },
+            "centerX": {
+                "Default": {
+                    "type": "string",
+                    "value": ""
+                }
+            },
+            "left": {
+                "Default": {
+                    "type": "string",
+                    "value": "20dp"
+                }
+            },
+            "responsiveData": {
+                "b2": {
+                    "left": {
+                        "type": "string",
+                        "value": "100dp"
+                    },
+                    "width": {
+                        "type": "string",
+                        "value": "50%"
+                    }
+                },
+                "b3": {
+                    "centerX": null,
+                    "left": null,
+                    "top": null
+                },
+                "b4": {
+                    "centerX": null,
+                    "left": null,
+                    "top": null
+                }
+            },
+            "top": {
+                "Default": {
+                    "type": "string",
+                    "value": "10dp"
+                }
+            },
+            "width": {
+                "Default": {
+                    "type": "string",
+                    "value": "100%"
+                }
+            }
+        },
+        "lblMobileNum": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "d729d71ea48d4a5599d4aff8c83f4722",
+                "srcKUID": "i7e5f507dd084de398ddde2650a3cc2e",
+                "wType": "Label"
+            },
+            "i18n_text": "Kony.mb.enroll.accountMobile",
+            "left": {
+                "Default": {
+                    "type": "string",
+                    "value": "7.45%"
+                }
+            },
+            "responsiveData": {
+                "b1": {
+                    "left": {
+                        "type": "string",
+                        "value": "80dp"
+                    },
+                    "top": {
+                        "type": "string",
+                        "value": "20dp"
+                    },
+                    "width": {
+                        "type": "string",
+                        "value": "68%"
+                    }
+                },
+                "b2": {
+                    "left": {
+                        "type": "string",
+                        "value": "80dp"
+                    },
+                    "top": {
+                        "type": "string",
+                        "value": "20dp"
+                    },
+                    "width": {
+                        "type": "string",
+                        "value": "68%"
+                    }
+                },
+                "b3": {
+                    "left": {
+                        "type": "string",
+                        "value": "80dp"
+                    },
+                    "top": {
+                        "type": "string",
+                        "value": "20dp"
+                    },
+                    "width": {
+                        "type": "string",
+                        "value": "68%"
+                    }
+                },
+                "b4": {
+                    "left": {
+                        "type": "string",
+                        "value": "80dp"
+                    },
+                    "top": {
+                        "type": "string",
+                        "value": "20dp"
+                    },
+                    "width": {
+                        "type": "string",
+                        "value": "68%"
+                    }
+                }
+            },
+            "top": {
+                "Default": {
+                    "type": "string",
+                    "value": "40dp"
+                }
+            },
+            "width": {
+                "Default": {
+                    "type": "ref",
+                    "value": "preferred"
+                }
+            }
+        },
+        "lblRefresh": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "c0f9ca2756c84889ad32f154e34071db",
+                "srcKUID": "bc1e46938e514364b0a2148a248c3489",
+                "wType": "Label"
+            }
+        },
+        "lblSSN": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "ea4156409c164c108bb48112a80eaa9f",
+                "srcKUID": "af068415100446ee887b1dc26ed6748e",
+                "wType": "Label"
+            }
+        },
+        "lblTaxID": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "g26186cf03334844a6e76c01b073a4c6",
+                "srcKUID": "bc48c3615a6140faa444a1eb31e84f7c",
+                "wType": "Label"
+            }
+        },
+        "lblWrongInfo": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "g4f8c4ffc6c44a429072fbbf2d1930da",
+                "srcKUID": "g96f66fd55064f57a1887af1fb18a6cb",
+                "wType": "Label"
+            },
+            "isVisible": true,
+            "responsiveData": {},
+            "top": {
+                "Default": {
+                    "type": "string",
+                    "value": "15dp"
+                }
+            }
+        },
+        "lbxDate": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "ab78fea2aa9f449c9ad3292918c459c4",
+                "srcKUID": "af48079655c544dbbdf292e1b7b85acb",
+                "wType": "ListBox"
+            }
+        },
+        "lbxMonth": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "e81ad67f4f67431aa44056da96c8049a",
+                "srcKUID": "ec1de5e9273e4b2188d58b21466bff0a",
+                "wType": "ListBox"
+            }
+        },
+        "lbxYear": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "bf575e32dced4768ac3e6cfaa198c7d8",
+                "srcKUID": "jb3fd7716aec41aaa8efb1112043f525",
+                "wType": "ListBox"
+            }
+        },
+        "letsverifyEnrolment": {
+            "__events__": {},
+            "__info__": {
+                "isRoot": true,
+                "kuid": "a63552bb0eb545c5afdc85aac41fbd3a",
+                "srcKUID": "ddeb04a2398b4ec9a71701dde2e5a09c",
+                "wType": "FlexContainer"
+            },
+            "autogrowMode": {
+                "Default": 1
+            },
+            "bottom": {
+                "Default": {
+                    "type": "number",
+                    "value": ""
+                }
+            },
+            "centerY": {
+                "Default": {
+                    "type": "number",
+                    "value": ""
+                }
+            },
+            "height": {
+                "Default": {
+                    "type": "ref",
+                    "value": "preferred"
+                }
+            },
+            "isVisible": false,
+            "left": {
+                "Default": {
+                    "type": "string",
+                    "value": "0dp"
+                }
+            },
+            "maxWidth": {
+                "Default": {
+                    "type": "number",
+                    "value": ""
+                }
+            },
+            "responsiveData": {
+                "b1": {
+                    "isVisible": null
+                },
+                "b2": {
+                    "centerY": {
+                        "type": "string",
+                        "value": ""
+                    },
+                    "height": {
+                        "type": "string",
+                        "value": "64dp"
+                    },
+                    "left": {
+                        "type": "number",
+                        "value": "0"
+                    },
+                    "maxWidth": {
+                        "type": "string",
+                        "value": ""
+                    },
+                    "top": {
+                        "type": "string",
+                        "value": "0dp"
+                    },
+                    "width": {
+                        "type": "string",
+                        "value": "100%"
+                    }
+                }
+            },
+            "top": {
+                "Default": {
+                    "type": "string",
+                    "value": "0dp"
+                }
+            },
+            "width": {
+                "Default": {
+                    "type": "string",
+                    "value": "100%"
+                }
+            },
+            "zIndex": {
+                "Default": 1
+            }
+        },
+        "tbxAccNum": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "df98df8f6fc84a9b9a4569e7391ce2b1",
+                "srcKUID": "a83e1705788e4a6fbd82ff960547314b",
+                "wType": "TextField"
+            },
+            "centerX": {
+                "Default": {
+                    "type": "string",
+                    "value": "49%"
+                }
+            },
+            "i18n_placeholder": "Kony.mb.enroll.enteraccnumber",
+            "left": {
+                "Default": {
+                    "type": "string",
+                    "value": "0%"
+                }
+            },
+            "placeholder": "Enter your Account Number",
+            "responsiveData": {
+                "b1": {
+                    "left": {
+                        "type": "string",
+                        "value": "80dp"
+                    },
+                    "top": {
+                        "type": "string",
+                        "value": "10dp"
+                    },
+                    "width": {
+                        "type": "string",
+                        "value": "68%"
+                    }
+                },
+                "b2": {
+                    "left": {
+                        "type": "string",
+                        "value": "80dp"
+                    },
+                    "top": {
+                        "type": "string",
+                        "value": "10dp"
+                    },
+                    "width": {
+                        "type": "string",
+                        "value": "68%"
+                    }
+                },
+                "b3": {
+                    "centerX": {
+                        "type": "string",
+                        "value": ""
+                    },
+                    "left": {
+                        "type": "string",
+                        "value": "80dp"
+                    },
+                    "top": {
+                        "type": "string",
+                        "value": "10dp"
+                    },
+                    "width": {
+                        "type": "string",
+                        "value": "68%"
+                    }
+                },
+                "b4": {
+                    "centerX": {
+                        "type": "string",
+                        "value": ""
+                    },
+                    "left": {
+                        "type": "string",
+                        "value": "80dp"
+                    },
+                    "text": "",
+                    "top": {
+                        "type": "string",
+                        "value": "10dp"
+                    },
+                    "width": {
+                        "type": "string",
+                        "value": "68%"
+                    }
+                }
+            },
+            "text": "",
+            "top": {
+                "Default": {
+                    "type": "string",
+                    "value": "3dp"
+                }
+            },
+            "width": {
+                "Default": {
+                    "type": "string",
+                    "value": "85%"
+                }
+            }
+        },
+        "tbxCaptcha": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "c666d0023c64468eb0d69231f8274f01",
+                "srcKUID": "e09b6cbbcda545bc99d2c982a24abfcb",
+                "wType": "TextField"
+            },
+            "left": {
+                "Default": {
+                    "type": "string",
+                    "value": "100dp"
+                }
+            },
+            "responsiveData": {
+                "b1": {
+                    "left": {
+                        "type": "string",
+                        "value": "0dp"
+                    },
+                    "text": "",
+                    "width": {
+                        "type": "string",
+                        "value": "100%"
+                    }
+                },
+                "b2": {
+                    "left": {
+                        "type": "string",
+                        "value": "0dp"
+                    },
+                    "width": {
+                        "type": "string",
+                        "value": "100%"
+                    }
+                },
+                "b3": {
+                    "left": {
+                        "type": "string",
+                        "value": "0dp"
+                    },
+                    "width": {
+                        "type": "string",
+                        "value": "100%"
+                    }
+                },
+                "b4": {
+                    "left": {
+                        "type": "string",
+                        "value": "0dp"
+                    },
+                    "width": {
+                        "type": "string",
+                        "value": "100%"
+                    }
+                }
+            },
+            "text": "",
+            "width": {
+                "Default": {
+                    "type": "string",
+                    "value": "85%"
+                }
+            }
+        },
+        "tbxCunCode": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "aac8c7c79e7e4023a8ba04277098e274",
+                "srcKUID": "edbb709e089f492eb88be531cfde1938",
+                "wType": "TextField"
+            },
+            "placeholder": "+977",
+            "responsiveData": {
+                "b2": {
+                    "right": null,
+                    "width": null
+                }
+            },
+            "right": {
+                "Default": {
+                    "type": "string",
+                    "value": "0dp"
+                }
+            },
+            "width": {
+                "Default": {
+                    "type": "string",
+                    "value": "17%"
+                }
+            }
+        },
+        "tbxEmail": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "b2d34e208ad443b793bc71bb4131fa50",
+                "srcKUID": "acf77b97988746c48865a360c586a1c8",
+                "wType": "TextField"
+            },
+            "centerX": {
+                "Default": {
+                    "type": "string",
+                    "value": "50%"
+                }
+            },
+            "i18n_placeholder": "Kony.mb.enroll.enteremail",
+            "left": {
+                "Default": {
+                    "type": "number",
+                    "value": ""
+                }
+            },
+            "responsiveData": {
+                "b1": {
+                    "left": {
+                        "type": "string",
+                        "value": "80dp"
+                    },
+                    "top": {
+                        "type": "string",
+                        "value": "10dp"
+                    },
+                    "width": {
+                        "type": "string",
+                        "value": "68%"
+                    }
+                },
+                "b2": {
+                    "left": {
+                        "type": "string",
+                        "value": "80dp"
+                    },
+                    "top": {
+                        "type": "string",
+                        "value": "10dp"
+                    },
+                    "width": {
+                        "type": "string",
+                        "value": "68%"
+                    }
+                },
+                "b3": {
+                    "centerX": {
+                        "type": "string",
+                        "value": ""
+                    },
+                    "left": {
+                        "type": "string",
+                        "value": "80dp"
+                    },
+                    "top": {
+                        "type": "string",
+                        "value": "10dp"
+                    },
+                    "width": {
+                        "type": "string",
+                        "value": "68%"
+                    }
+                },
+                "b4": {
+                    "centerX": {
+                        "type": "string",
+                        "value": ""
+                    },
+                    "left": {
+                        "type": "string",
+                        "value": "80dp"
+                    },
+                    "top": {
+                        "type": "string",
+                        "value": "10dp"
+                    },
+                    "width": {
+                        "type": "string",
+                        "value": "68%"
+                    }
+                }
+            },
+            "top": {
+                "Default": {
+                    "type": "string",
+                    "value": "3dp"
+                }
+            },
+            "width": {
+                "Default": {
+                    "type": "string",
+                    "value": "85%"
+                }
+            }
+        },
+        "tbxLastName": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "f6f0f8acbe8b4f3ba838dbf1574d8ccb",
+                "srcKUID": "e1d959604f994436afc54cfb5f13816c",
+                "wType": "TextField"
+            },
+            "centerX": {
+                "Default": {
+                    "type": "string",
+                    "value": "49%"
+                }
+            },
+            "i18n_placeholder": "Kony.mb.enroll.enteraccname",
+            "left": {
+                "Default": {
+                    "type": "number",
+                    "value": ""
+                }
+            },
+            "responsiveData": {
+                "b1": {
+                    "left": {
+                        "type": "string",
+                        "value": "80dp"
+                    },
+                    "top": {
+                        "type": "string",
+                        "value": "10dp"
+                    },
+                    "width": {
+                        "type": "string",
+                        "value": "68%"
+                    }
+                },
+                "b2": {
+                    "left": {
+                        "type": "string",
+                        "value": "80dp"
+                    },
+                    "top": {
+                        "type": "string",
+                        "value": "10dp"
+                    },
+                    "width": {
+                        "type": "string",
+                        "value": "68%"
+                    }
+                },
+                "b3": {
+                    "centerX": {
+                        "type": "string",
+                        "value": ""
+                    },
+                    "left": {
+                        "type": "string",
+                        "value": "80dp"
+                    },
+                    "top": {
+                        "type": "string",
+                        "value": "10dp"
+                    },
+                    "width": {
+                        "type": "string",
+                        "value": "68%"
+                    }
+                },
+                "b4": {
+                    "centerX": {
+                        "type": "string",
+                        "value": ""
+                    },
+                    "left": {
+                        "type": "string",
+                        "value": "80dp"
+                    },
+                    "top": {
+                        "type": "string",
+                        "value": "10dp"
+                    },
+                    "width": {
+                        "type": "string",
+                        "value": "68%"
+                    }
+                }
+            },
+            "text": "",
+            "top": {
+                "Default": {
+                    "type": "string",
+                    "value": "3dp"
+                }
+            },
+            "width": {
+                "Default": {
+                    "type": "string",
+                    "value": "85%"
+                }
+            }
+        },
+        "tbxMobileNum": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "fc8624b63e3943848345be3495239684",
+                "srcKUID": "b1437fcee92c432db9c4c28b1c4fe446",
+                "wType": "TextField"
+            },
+            "i18n_placeholder": "Kony.mb.enroll.entermobilenumber",
+            "responsiveData": {
+                "b2": {
+                    "width": null
+                }
+            },
+            "right": {
+                "Default": {
+                    "type": "string",
+                    "value": "0dp"
+                }
+            },
+            "text": "",
+            "top": {
+                "Default": {
+                    "type": "string",
+                    "value": "3dp"
+                }
+            },
+            "width": {
+                "Default": {
+                    "type": "string",
+                    "value": "82%"
+                }
+            }
+        },
+        "tbxSSN": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "a05cb6ac83364efe9534743149353b8f",
+                "srcKUID": "c8b8d0403db446199ff56ecbe1a8ff17",
+                "wType": "TextField"
+            }
+        },
+        "tbxTaxID": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "df1f691d84a648bb85ca9d2e0d981434",
+                "srcKUID": "ed4b83772d8b45b29889e503f1f5b767",
+                "wType": "TextField"
+            }
+        }
+    },
+    "enablescrolling": true,
+    "id": "letsverifyEnrolment",
+    "info": null,
+    "isdatareferenced": false,
+    "isvisible": false,
+    "kuid": "a63552bb0eb545c5afdc85aac41fbd3a",
+    "layouttype": 4,
+    "masterType": 0,
+    "maxwidth": {
+        "type": "number",
+        "value": ""
+    },
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "flxVerification",
+    "pf": "frmEnrollNow",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "sourceUserWidget": "ddeb04a2398b4ec9a71701dde2e5a09c",
+    "wType": "UserWidgetInstance",
+    "zindex": 1
+}

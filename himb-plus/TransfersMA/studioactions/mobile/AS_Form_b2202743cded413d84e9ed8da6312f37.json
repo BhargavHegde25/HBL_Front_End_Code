@@ -1,0 +1,23 @@
+{
+    "AS_Form_b2202743cded413d84e9ed8da6312f37": {
+        "id": "AS_Form_b2202743cded413d84e9ed8da6312f37",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmQRScanandPay",
+            "type": "forms",
+            "platform": "",
+            "KUID": "cdc28b9d548c45a998a2ca0572cf5851"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_f4d465b5cba64b57b448f2deb933551c",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.preshow();",
+            "parentId": null
+        }]
+    }
+}

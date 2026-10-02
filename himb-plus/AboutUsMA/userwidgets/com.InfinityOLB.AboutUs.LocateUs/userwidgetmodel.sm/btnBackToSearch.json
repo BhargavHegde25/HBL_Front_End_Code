@@ -1,0 +1,60 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_bottom_": {
+        "type": "number",
+        "value": "20"
+    },
+    "_height_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "51.58%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "sdbbccbd1d224646bda17c38efb9ccb8",
+    "_text_": "BACK TO SEARCH",
+    "_width_": {
+        "type": "string",
+        "value": "44.47%"
+    },
+    "accessibilityconfig": {
+        "a11yARIA": {
+            "tabindex": 0
+        }
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "desktopweb": {
+        "psp": {
+            "hoverSkin": "s0f5748e0ea447b99601a5b7d636357c"
+        }
+    },
+    "disabledSkins": {},
+    "displaytext": true,
+    "focusskin": "sdbbccbd1d224646bda17c38efb9ccb8",
+    "id": "btnBackToSearch",
+    "info": null,
+    "isvisible": true,
+    "kuid": "e7a48115027c4998be1272668a54637c",
+    "name": "kony.ui.Button",
+    "parent": "flxDirectionsButtons",
+    "pf": "userwidgetmodel",
+    "tooltip": "",
+    "wType": "Button",
+    "zindex": 1
+}

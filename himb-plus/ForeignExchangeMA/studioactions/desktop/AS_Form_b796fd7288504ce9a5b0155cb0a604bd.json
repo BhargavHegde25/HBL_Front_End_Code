@@ -1,0 +1,23 @@
+{
+    "AS_Form_b796fd7288504ce9a5b0155cb0a604bd": {
+        "id": "AS_Form_b796fd7288504ce9a5b0155cb0a604bd",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmExchangeRate",
+            "type": "forms",
+            "platform": "",
+            "KUID": "a092e2fcbbea417d8ee4bf8453478f65"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_fa67c6f0677244d48f49c995f1e6c008",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.preShow();",
+            "parentId": null
+        }]
+    }
+}

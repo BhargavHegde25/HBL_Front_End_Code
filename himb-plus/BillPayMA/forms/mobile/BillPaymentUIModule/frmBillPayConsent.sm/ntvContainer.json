@@ -1,0 +1,44 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizNativeContainer",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 0,
+    "desktopweb": {
+        "render": false
+    },
+    "id": "ntvContainer",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "bcbedbaa97cd45a19ba86d83cf0bb235",
+    "name": "kony.ui.NativeContainer",
+    "parent": "flxBrowser",
+    "pf": "frmBillPayConsent",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "wType": "NativeContainer",
+    "watchos": {
+        "render": false
+    },
+    "zindex": 1
+}

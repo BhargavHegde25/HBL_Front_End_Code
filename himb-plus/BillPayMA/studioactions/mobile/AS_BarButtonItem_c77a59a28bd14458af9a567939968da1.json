@@ -1,0 +1,17 @@
+{
+    "AS_BarButtonItem_c77a59a28bd14458af9a567939968da1": {
+        "id": "AS_BarButtonItem_c77a59a28bd14458af9a567939968da1",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_fd1201a77fce46649e395bb37405f1be",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.modifyMerchant();",
+            "parentId": null
+        }]
+    }
+}

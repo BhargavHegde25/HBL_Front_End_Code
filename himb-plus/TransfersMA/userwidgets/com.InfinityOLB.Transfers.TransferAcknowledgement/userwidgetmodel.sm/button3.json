@@ -1,0 +1,167 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_bottom_": {
+        "type": "number",
+        "value": ""
+    },
+    "_height_": {
+        "type": "string",
+        "value": "40px"
+    },
+    "_left_": {
+        "type": "number",
+        "value": ""
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_right_": {
+        "type": "string",
+        "value": "362dp"
+    },
+    "_skin_": "sb950bc796154e88a6e0b3ebde988534",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "20dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "250px"
+    },
+    "accessibilityconfig": {
+        "a11yARIA": {
+            "role": "button",
+            "tabindex": 0
+        },
+        "a11yLabel": "View Transfer Activities"
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "number",
+        "value": ""
+    },
+    "centery": {
+        "type": "number",
+        "value": ""
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "desktopweb": {
+        "psp": {
+            "hoverSkin": "sb9eda8d41e842358b6411ac9d8b43b5"
+        }
+    },
+    "disabledSkins": {},
+    "displaytext": true,
+    "focusskin": "sb950bc796154e88a6e0b3ebde988534",
+    "id": "button3",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "ecde02fb22b042b19ec90c89d4ff57a3",
+    "name": "kony.ui.Button",
+    "parent": "flxAckButtons",
+    "pf": "userwidgetmodel",
+    "responsiveData": {
+        "b1": {
+            "desktopweb": {
+                "psp": {}
+            },
+            "height": {
+                "type": "string",
+                "value": "40dp"
+            },
+            "right": {
+                "type": "string",
+                "value": "20dp"
+            },
+            "top": {
+                "type": "string",
+                "value": "30dp"
+            },
+            "width": {
+                "type": "string",
+                "value": "250dp"
+            }
+        },
+        "b2": {
+            "disabledSkins": {},
+            "height": {
+                "type": "string",
+                "value": "40dp"
+            },
+            "right": {
+                "type": "string",
+                "value": "20dp"
+            },
+            "top": {
+                "type": "string",
+                "value": "30dp"
+            },
+            "width": {
+                "type": "string",
+                "value": "25%"
+            }
+        },
+        "b3": {
+            "bottom": {
+                "type": "string",
+                "value": ""
+            },
+            "centerX": {
+                "type": "string",
+                "value": "50%"
+            },
+            "centerY": {
+                "type": "string",
+                "value": ""
+            },
+            "left": {
+                "type": "string",
+                "value": "2%"
+            },
+            "right": {
+                "type": "string",
+                "value": "2%"
+            },
+            "top": {
+                "type": "string",
+                "value": "20px"
+            },
+            "width": {
+                "type": "string",
+                "value": "96%"
+            }
+        },
+        "b4": {
+            "right": {
+                "type": "string",
+                "value": "20dp"
+            },
+            "top": {
+                "type": "string",
+                "value": "30dp"
+            },
+            "width": {
+                "type": "string",
+                "value": "250dp"
+            }
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "texti18n": "i18n.PayAPerson.AddAnotherRecipient",
+    "wType": "Button",
+    "zindex": 1
+}

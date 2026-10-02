@@ -1,0 +1,12 @@
+{
+    "BusinessControllerConfig": {
+        "BusinessControllerClass": "RegistrationManager/BusinessControllers/BusinessController",
+        "CommandHandler": [],
+        "BusinessExtensions": [
+            "RegistrationManager/BusinessControllers/BusinessController_Extension"
+        ]
+    },
+    "Forms": {},
+    "ModuleName": "RegistrationManager",
+    "ModuleType": "Manager"
+}

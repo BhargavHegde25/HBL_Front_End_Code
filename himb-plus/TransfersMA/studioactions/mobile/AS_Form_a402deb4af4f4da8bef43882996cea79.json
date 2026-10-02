@@ -1,0 +1,23 @@
+{
+    "AS_Form_a402deb4af4f4da8bef43882996cea79": {
+        "id": "AS_Form_a402deb4af4f4da8bef43882996cea79",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmCreditCardPaymentFromAcc",
+            "type": "forms",
+            "platform": null,
+            "KUID": "h39a0c39941445bfbe02c7a5135e3eb0"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_h723bdd5652a438a81a7495529b7d2b9",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.init();",
+            "parentId": null
+        }]
+    }
+}

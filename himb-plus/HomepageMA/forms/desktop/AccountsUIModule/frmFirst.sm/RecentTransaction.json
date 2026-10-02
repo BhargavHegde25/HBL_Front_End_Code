@@ -1,0 +1,495 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "DNDConfig": null,
+    "_children_": [],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "sdc143f0e5b64ae3a3f155f691c73fa7",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "android": {},
+    "androidwearos": {},
+    "areflexpropsreferenced": false,
+    "autogrowmode": 1,
+    "canUpdateUI": true,
+    "clipbounds": false,
+    "containerweight": 0,
+    "dataDiffs": {
+        "RecentTransaction": {
+            "__events__": {},
+            "__info__": {
+                "isRoot": true,
+                "kuid": "f657dce6dd8b4f8593d4c3f60f91fe07",
+                "srcKUID": "b5bc3694aed4407c89220032894f5e02",
+                "wType": "FlexContainer"
+            },
+            "autogrowMode": {
+                "Default": 1
+            },
+            "height": {
+                "Default": {
+                    "type": "ref",
+                    "value": "preferred"
+                }
+            },
+            "responsiveData": {}
+        },
+        "btnViewAll": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "jb1139f1872640f0b060e2d0149a36a6",
+                "srcKUID": "debc71ff978b441597b0fb1f93d3b3ac",
+                "wType": "Button"
+            },
+            "isVisible": false,
+            "responsiveData": {}
+        },
+        "flxHeader": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "cd19f8b0043a493daae813de8393a379",
+                "srcKUID": "bed6e81ce27142cda607967eb67238a7",
+                "wType": "FlexContainer"
+            },
+            "autogrowMode": {
+                "Default": 0
+            },
+            "centerX": {
+                "Default": {
+                    "type": "number",
+                    "value": ""
+                }
+            },
+            "height": {
+                "Default": {
+                    "type": "string",
+                    "value": "45dp"
+                }
+            },
+            "responsiveData": {
+                "b1": {
+                    "centerX": {
+                        "type": "string",
+                        "value": "50%"
+                    },
+                    "width": {
+                        "type": "string",
+                        "value": "95%"
+                    }
+                }
+            },
+            "width": {
+                "Default": {
+                    "type": "string",
+                    "value": "100%"
+                }
+            }
+        },
+        "flxNoTransactionWrapper": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "f3e7a4896e204050a4498143d86c02b4",
+                "srcKUID": "ded5de983ed04741b63672fe9f8ed9e3",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxNoTransactions": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "b947ed27425d491e93ef72b05056fdc0",
+                "srcKUID": "b0c96cde141846cda6c649ab54524c53",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxSeparator": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "d8882c4b269044bbb947dbdd8e11654d",
+                "srcKUID": "c5759dc2866941c88dd553c5d5c2b7bb",
+                "wType": "FlexContainer"
+            },
+            "isVisible": true,
+            "responsiveData": {
+                "b1": {
+                    "isVisible": false
+                }
+            }
+        },
+        "flxSeparatorUpcomingTransactions": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "ab230212b6d540e6b7715ea2061286f7",
+                "srcKUID": "ef16934b6eb84cd19aa78f9705770c4d",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxTransactionWrapper": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "cc87bb87a71c4f74847eaa44d16b6c48",
+                "srcKUID": "a11ac0e7cff946489c043e3f0e3d6faa",
+                "wType": "FlexContainer"
+            },
+            "centerX": {
+                "Default": {
+                    "type": "number",
+                    "value": ""
+                }
+            },
+            "clipBounds": true,
+            "left": {
+                "Default": {
+                    "type": "string",
+                    "value": "0dp"
+                }
+            },
+            "maxHeight": {
+                "Default": {
+                    "type": "string",
+                    "value": "260dp"
+                }
+            },
+            "responsiveData": {
+                "b1": {
+                    "centerX": {
+                        "type": "string",
+                        "value": "50%"
+                    },
+                    "left": {
+                        "type": "string",
+                        "value": ""
+                    },
+                    "width": {
+                        "type": "string",
+                        "value": "95%"
+                    }
+                }
+            },
+            "width": {
+                "Default": {
+                    "type": "string",
+                    "value": "100%"
+                }
+            }
+        },
+        "imgHeader": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "a26ef9d6635842cfb1dda335cd67c9a3",
+                "srcKUID": "d90a61a16dc741b287e198bb58f9af85",
+                "wType": "Image"
+            },
+            "centerY": {
+                "Default": {
+                    "type": "string",
+                    "value": "33.35%"
+                }
+            },
+            "height": {
+                "Default": {
+                    "type": "string",
+                    "value": "32dp"
+                }
+            },
+            "left": {
+                "Default": {
+                    "type": "string",
+                    "value": "-0.07%"
+                }
+            },
+            "responsiveData": {},
+            "src": "recent_transaction.png",
+            "width": {
+                "Default": {
+                    "type": "string",
+                    "value": "32dp"
+                }
+            }
+        },
+        "imgInfo": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "bae7b622dfe34af8ba9f8ac1b2a3b69c",
+                "srcKUID": "he702dd8f63849a8a5d29ec31d22d6d1",
+                "wType": "Image"
+            }
+        },
+        "lblHeader": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "aefbe943095f49cf9c712bdb9e7c50a8",
+                "srcKUID": "e577b34fee3b489ab9ba5b363c3c7493",
+                "wType": "Label"
+            },
+            "i18n_text": null,
+            "left": {
+                "Default": {
+                    "type": "string",
+                    "value": "8%"
+                }
+            },
+            "responsiveData": {
+                "b1": {
+                    "left": {
+                        "type": "string",
+                        "value": "10%"
+                    }
+                }
+            },
+            "text": "Recent Transactions"
+        },
+        "lblbottomSpacer": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "ebe390e5f7dc4a8aaebcde05c561aafd",
+                "srcKUID": "gd97c1bcc708444e8c15fa7084490dbf",
+                "wType": "FlexContainer"
+            }
+        },
+        "rtxNoPaymentMessage": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "efd9b6ca2af74a60814a1037fb38d4f3",
+                "srcKUID": "cd9581bdd949426f84bb4d6f03435804",
+                "wType": "RichText"
+            }
+        },
+        "segUpcomingTransactions": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "bcd09969a8364eceb7a5d8eef4dccaf1",
+                "srcKUID": "f6de469cb5e04ede850444f3730f4029",
+                "wType": "Segment"
+            },
+            "data": [
+                [
+                    {
+                        "lblAmountl": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": ""
+                        },
+                        "lblAmountr": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": "$400.00"
+                        },
+                        "lblDatel": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": ""
+                        },
+                        "lblDater": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": "12-09-2019"
+                        },
+                        "lblSeparatorfull": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": "a"
+                        },
+                        "lblSeparatorhalf": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": "a"
+                        },
+                        "lblSepratorl": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": "a"
+                        },
+                        "lblSepratorr": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": "a"
+                        },
+                        "lblToValuel": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": "AT & T Communication"
+                        },
+                        "lblToValuer": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": "AT & T Communication"
+                        },
+                        "lblTol": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": ""
+                        },
+                        "lblTor": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "i18nkey": "i18n.StopCheckPayments.To",
+                            "text": "To:"
+                        },
+                        "lblTranTypeIconl": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": "a"
+                        },
+                        "lblTranTypeIconr": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": "a"
+                        },
+                        "lblTranTypel": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": ""
+                        },
+                        "lblTranTyper": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": "Bill Pay"
+                        },
+                        "lblfull": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": " "
+                        },
+                        "lblhalf": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": " "
+                        }
+                    },
+                    []
+                ],
+                [
+                    {
+                        "lblAmountl": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": ""
+                        },
+                        "lblAmountr": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": "$400.00"
+                        },
+                        "lblDatel": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": ""
+                        },
+                        "lblDater": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": "12-09-2019"
+                        },
+                        "lblSeparatorfull": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": "a"
+                        },
+                        "lblSeparatorhalf": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": "a"
+                        },
+                        "lblSepratorl": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": "a"
+                        },
+                        "lblSepratorr": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": "a"
+                        },
+                        "lblToValuel": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": "AT & T Communication"
+                        },
+                        "lblToValuer": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": "AT & T Communication"
+                        },
+                        "lblTol": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": ""
+                        },
+                        "lblTor": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "i18nkey": "i18n.StopCheckPayments.To",
+                            "text": "To:"
+                        },
+                        "lblTranTypeIconl": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": "a"
+                        },
+                        "lblTranTypeIconr": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": "a"
+                        },
+                        "lblTranTypel": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": ""
+                        },
+                        "lblTranTyper": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": "Bill Pay"
+                        },
+                        "lblfull": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": " "
+                        },
+                        "lblhalf": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": " "
+                        }
+                    },
+                    []
+                ]
+            ],
+            "maxHeight": {
+                "Default": {
+                    "type": "string",
+                    "value": "260dp"
+                }
+            },
+            "responsiveData": {
+                "b1": {
+                    "data": null
+                }
+            },
+            "top": {
+                "Default": {
+                    "type": "string",
+                    "value": "0dp"
+                }
+            }
+        }
+    },
+    "desktopweb": {},
+    "enablescrolling": true,
+    "id": "RecentTransaction",
+    "info": null,
+    "ipad": {},
+    "iphone": {},
+    "iscustomlayout": false,
+    "isdatareferenced": false,
+    "isvisible": true,
+    "kuid": "f657dce6dd8b4f8593d4c3f60f91fe07",
+    "layouttype": 4,
+    "masterType": 0,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "flxMarketNewsContainer",
+    "pf": "frmFirst",
+    "responsiveData": {},
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "sourceUserWidget": "b5bc3694aed4407c89220032894f5e02",
+    "spabb": {},
+    "tabrcandroid": {},
+    "vizProps": {
+        "hidewidgethierarchy": false
+    },
+    "wType": "UserWidgetInstance"
+}

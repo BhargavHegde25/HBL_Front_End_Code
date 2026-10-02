@@ -1,0 +1,23 @@
+{
+    "AS_Form_h63d213983384bbbb03fd871cfe363ad": {
+        "id": "AS_Form_h63d213983384bbbb03fd871cfe363ad",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmProfileSetTransactionPin",
+            "type": "forms",
+            "platform": null,
+            "KUID": "d325cf72b73d494990db7ebeca1692ee"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_preShow_c3f4de2029534c8893f6c0166b93ac0b",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.preShow();",
+            "callbackType": null
+        }]
+    }
+}

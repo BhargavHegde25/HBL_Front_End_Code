@@ -1,0 +1,23 @@
+{
+    "AS_Form_b0aefd8dcaec4a8fa07e2ed94418b955": {
+        "id": "AS_Form_b0aefd8dcaec4a8fa07e2ed94418b955",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmConvertEMISelectTransaction",
+            "type": "forms",
+            "platform": "",
+            "KUID": "bd84f11fc6ae44f6bf64e0a6ff2fbb2f"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_h5569a31d6344254b25caf3691b3d54c",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.preShow();",
+            "parentId": null
+        }]
+    }
+}

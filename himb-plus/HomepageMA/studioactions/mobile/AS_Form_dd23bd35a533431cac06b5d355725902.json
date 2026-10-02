@@ -1,0 +1,23 @@
+{
+    "AS_Form_dd23bd35a533431cac06b5d355725902": {
+        "id": "AS_Form_dd23bd35a533431cac06b5d355725902",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmHBLUnifiedDashboard",
+            "type": "forms",
+            "platform": null,
+            "KUID": "d3b7739ea59d4b4786a835f1a1fc1222"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_e5007511a7494e5ba1137240ad46486f",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.preShow();",
+            "parentId": null
+        }]
+    }
+}

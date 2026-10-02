@@ -1,0 +1,22 @@
+{
+    "AS_Form_e1e41c288506444bbbaef9b03561c463": {
+        "id": "AS_Form_e1e41c288506444bbbaef9b03561c463",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "CopyfrmEnrollInfo",
+            "type": "forms",
+            "platform": null,
+            "KUID": "e066b2a01e624f2bbe13cc07f13c6b42"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_init_a26e037dfb3f43f28583533d58698af3",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.onInit();"
+        }]
+    }
+}

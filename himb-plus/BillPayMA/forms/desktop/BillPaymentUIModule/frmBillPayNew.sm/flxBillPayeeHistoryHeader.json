@@ -1,0 +1,61 @@
+{
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s224b8144dd141b4831993360c872d13",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "children": [
+        "flxSortSixColumn"
+    ],
+    "clipbounds": false,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "flxBillPayeeHistoryHeader",
+    "info": null,
+    "isTemplate": true,
+    "isvisible": true,
+    "kuid": "b506f12d189d452e9d6d670f817cfd77",
+    "layouttype": 2,
+    "name": "kony.ui.FlexContainer",
+    "parent": "flxTransactionHistory",
+    "pf": "frmBillPayNew",
+    "responsiveData": {
+        "b3": {
+            "isVisible": false
+        }
+    },
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1
+}

@@ -1,0 +1,11 @@
+{
+    "ModuleName": "UserPreferencesManager",
+    "ModuleType": "Manager",
+    "BusinessControllerConfig": {
+        "BusinessExtensions": [
+            "UserPreferencesManager/BusinessControllers/BusinessController_Extension",
+            "UserPreferencesManager/BusinessControllers/BusinessController_Extension_Mobile"
+        ],
+        "BusinessControllerClass": "UserPreferencesManager/BusinessControllers/BusinessController"
+    }
+}

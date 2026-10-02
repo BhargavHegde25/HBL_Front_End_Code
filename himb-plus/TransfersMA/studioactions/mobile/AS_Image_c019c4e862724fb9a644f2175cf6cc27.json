@@ -1,0 +1,28 @@
+{
+    "AS_Image_c019c4e862724fb9a644f2175cf6cc27": {
+        "id": "AS_Image_c019c4e862724fb9a644f2175cf6cc27",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmFundDomesticTransferMain",
+            "type": "forms",
+            "platform": null,
+            "KUID": "cf99409b041c4e70894145cb3c1626c4"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onTouchEnd_b9258b0b0ef04be092052f0d5ef1b318",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.view.flxPopupfrombottoms.setVisibility(false);"
+        }]
+    }
+}

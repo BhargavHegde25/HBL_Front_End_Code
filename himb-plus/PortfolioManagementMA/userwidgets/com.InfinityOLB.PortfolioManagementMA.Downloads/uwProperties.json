@@ -1,0 +1,71 @@
+{
+    "classname": "Downloads",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "ec69d991a15e4a7b92b351d1102c9c5a",
+                    "paramList": [],
+                    "propertyKey": "postshow",
+                    "pw": {
+                        "displayName": "postshow",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "i60bd1e35b99481893d32b4486de9039",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "e9721c16fdef4b98b6e9558365f6dbfb",
+                    "paramList": [],
+                    "propertyIndex": 2,
+                    "propertyKey": "offDownloadVisibility",
+                    "pw": {
+                        "displayName": "offDownloadVisibility",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "i60bd1e35b99481893d32b4486de9039",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "i9677a601e0f4838ba63ea54d624a640",
+                    "paramList": [],
+                    "propertyIndex": 3,
+                    "propertyKey": "downloadFormatParams",
+                    "pw": {
+                        "displayName": "downloadFormatParams",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "i60bd1e35b99481893d32b4486de9039",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfinityOLB.PortfolioManagementMA",
+    "version": "1.0.0"
+}

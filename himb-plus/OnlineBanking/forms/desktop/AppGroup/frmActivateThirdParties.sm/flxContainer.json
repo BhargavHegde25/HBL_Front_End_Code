@@ -1,0 +1,80 @@
+{
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s3485c5cc21d4a578c25d38dc4b8bf05",
+    "_top_": {
+        "type": "string",
+        "value": "100dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "500dp"
+    },
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "children": [
+        "flxHeaderNError",
+        "flxLoginUser",
+        "flxUserNameLabel",
+        "flxUserName",
+        "flxPasswordLabel",
+        "flxPassword",
+        "flxSignIn",
+        "flxHorizontalLine",
+        "lblMobilebankingText",
+        "flxImages"
+    ],
+    "clipbounds": false,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "flxContainer",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": false,
+    "kuid": "h7d1607fc4564309949448f46d77dc88",
+    "layouttype": 4,
+    "name": "kony.ui.FlexContainer",
+    "parent": "frmActivateThirdParties",
+    "pf": "frmActivateThirdParties",
+    "responsiveData": {
+        "b2": {},
+        "b3": {
+            "isVisible": false,
+            "width": {
+                "type": "string",
+                "value": "100%"
+            }
+        },
+        "b4": {}
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1,
+    "zindex": 1
+}

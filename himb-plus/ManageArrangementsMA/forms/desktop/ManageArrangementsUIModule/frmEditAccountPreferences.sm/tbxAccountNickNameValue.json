@@ -1,0 +1,97 @@
+{
+  "@class": "com.kony.gen.viz.model.component.KVizTextBox2",
+  "DNDConfig": null,
+  "_height_": {
+    "type": "string",
+    "value": "40dp"
+  },
+  "_left_": {
+    "type": "string",
+    "value": "0dp"
+  },
+  "_margin_": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "_padding_": [
+    3,
+    0,
+    0,
+    0
+  ],
+  "_placeholder_": "",
+  "_skin_": "sa8b0e74bf1c4e51ba184e3c8b168b7e",
+  "_text_": "My Savings Account",
+  "_top_": {
+    "type": "string",
+    "value": "22dp"
+  },
+  "_width_": {
+    "type": "string",
+    "value": "90%"
+  },
+  "accessibilityconfig": {
+    "a11yARIA": {
+      "tabindex": 0,
+      "aria-autocomplete": "none",
+      "aria-labelledby": "lblAccountNickNameKey"
+    },
+    "a11yHidden": true,
+    "a11yLabel": ""
+  },
+  "autocapitalize": "none",
+  "autocomplete": false,
+  "autocorrect": false,
+  "autofilter": false,
+  "canUpdateUI": true,
+  "centery": {
+    "type": "string",
+    "value": "50%"
+  },
+  "containerheight": "",
+  "containerheightmode": 1,
+  "containerweight": 100,
+  "contentalignment": 4,
+  "id": "tbxAccountNickNameValue",
+  "info": null,
+  "isvisible": true,
+  "keyboardtype": "A",
+  "kuid": "feb456db1dcc43de896b8b3ae314dac0",
+  "maxtextlength": 35,
+  "mode": "A",
+  "name": "kony.ui.TextBox2",
+  "parent": "flxAccountNickNameValue",
+  "pf": "frmEditAccountPreferences",
+  "responsiveData": {
+    "b1": {
+      "height": {
+        "type": "string",
+        "value": "30dp"
+      },
+      "text": "My Savings Account"
+    },
+    "b3": {},
+    "b4": {
+      "height": {
+        "type": "string",
+        "value": "30dp"
+      },
+      "top": {
+        "type": "string",
+        "value": ""
+      }
+    }
+  },
+  "securetextentry": false,
+  "textinputmode": "A",
+  "viewtype": "default",
+  "wType": "TextField",
+  "zindex": 1,
+  "desktopweb": {
+    "psp": {
+      "autoComplete": "nickname"
+    }
+  }
+}

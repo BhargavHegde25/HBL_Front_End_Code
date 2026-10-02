@@ -1,0 +1,17 @@
+{
+    "AS_BarButtonItem_f8f93dab8fde47eb8250480864dfa8fb": {
+        "id": "AS_BarButtonItem_f8f93dab8fde47eb8250480864dfa8fb",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_c882eecb0ba14e45af5df3fb3f1d74f0",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.flxBackOnClick();",
+            "parentId": null
+        }]
+    }
+}

@@ -1,0 +1,73 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizTextBox2",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_left_": {
+        "type": "number",
+        "value": "0"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        2,
+        0,
+        2,
+        0
+    ],
+    "_placeholder_": "Enter Transaction Pin",
+    "_skin_": "s0ee5c78c88c4841b39edc94e4cf051f",
+    "_text_": "",
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "accessibilityconfig": {
+        "a11yARIA": {
+            "aria-labelledby": "rtxEnterCVVCode",
+            "aria-required": true
+        }
+    },
+    "autocapitalize": "none",
+    "autocomplete": false,
+    "autocorrect": false,
+    "autofilter": false,
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerheight": "",
+    "containerheightmode": 1,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "desktopweb": {
+        "psp": {
+            "hoverSkin": "s0ee5c78c88c4841b39edc94e4cf051f"
+        }
+    },
+    "disabledSkins": {},
+    "focusskin": "s0ee5c78c88c4841b39edc94e4cf051f",
+    "id": "tbxPin",
+    "info": null,
+    "isvisible": true,
+    "keyboardtype": "A",
+    "kuid": "e97d3ba2a7a64811a82b3bb98b4f086d",
+    "mode": "A",
+    "name": "kony.ui.TextBox2",
+    "paddinginpixel": false,
+    "parent": "flxCVV1",
+    "pf": "userwidgetmodel",
+    "placeholderi18n": "i18n.HBL.EnterTpin",
+    "securetextentry": true,
+    "textinputmode": "A",
+    "viewtype": "default",
+    "wType": "TextField",
+    "zindex": 1
+}

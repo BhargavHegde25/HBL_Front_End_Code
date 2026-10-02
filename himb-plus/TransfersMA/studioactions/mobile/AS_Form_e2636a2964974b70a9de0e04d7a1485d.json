@@ -1,0 +1,23 @@
+{
+    "AS_Form_e2636a2964974b70a9de0e04d7a1485d": {
+        "id": "AS_Form_e2636a2964974b70a9de0e04d7a1485d",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmFundDomesticTransferMain",
+            "type": "forms",
+            "platform": null,
+            "KUID": "cf99409b041c4e70894145cb3c1626c4"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_c7bf043a8015432c8424d52b3dbdebbf",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.init();",
+            "parentId": null
+        }]
+    }
+}

@@ -1,0 +1,55 @@
+{
+    "AS_Label_eed6aed170cf4178841018409e7c522f": {
+        "id": "AS_Label_eed6aed170cf4178841018409e7c522f",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmQRScan",
+            "type": "forms",
+            "platform": "",
+            "KUID": "fd1bb1a83b0f4d55a7b6052941cd29c5"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "MOVE_ACTION_a700a803b9154979bd1b41863ea019f6",
+            "type": "MOVE_ACTION",
+            "itemType": "FORM",
+            "itemId": "frmQRScan",
+            "widgetId": "flxTabmover",
+            "itemKUID": "fd1bb1a83b0f4d55a7b6052941cd29c5",
+            "widgetKUID": "ia0491e3c8c740be80513abe01edaefc",
+            "wType": "FlexContainer",
+            "animationObject": {
+                "left": "66%",
+                "anchorPoint": {},
+                "stepConfig": {
+                    "timingFunction": "kony.anim.EASE"
+                }
+            },
+            "config": {
+                "delay": "0",
+                "iterationCount": 1,
+                "fillMode": "kony.anim.FILL_MODE_FORWARDS",
+                "duration": "250"
+            },
+            "start": "Immediately",
+            "animationId": "MOVE_ACTION_a700a803b9154979bd1b41863ea019f6",
+            "displayAnimationId": "MOVE_ACTION_a700a803b9154979bd1b41863ea019f6",
+            "forkedPlatform": "all",
+            "widgetPath": "this.view.flxTabmover"
+        }, {
+            "id": "ADD_SNIPPET_gc41fdb1a075448684066dfa3dbf1ae8",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.view.lblRecent.skin=\"sknFontFFFFFSemioild\";\r\nthis.view.lblScan.skin=\"sknFontFFFFFSemioild\";\r\nthis.view.lblMycode.skin=\"sknFont851A1CSemioild\";\r\nthis.view.flxShare.setVisibility(true);\r\nthis.view.flxMainContainer.setVisibility(false);\r\nthis.view.flxRecentTransactions.setVisibility(false);\r\nthis.view.flxShare.right=\"0%\";"
+        }]
+    }
+}

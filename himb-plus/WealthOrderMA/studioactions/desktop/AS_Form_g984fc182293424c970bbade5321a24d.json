@@ -1,0 +1,23 @@
+{
+    "AS_Form_g984fc182293424c970bbade5321a24d": {
+        "id": "AS_Form_g984fc182293424c970bbade5321a24d",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "type": "forms",
+            "platform": null,
+            "KUID": "e7b5fe8d99a14d90a21de59e14dc662d",
+            "name": "frmProductDetails"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_preShow_ccd4cefd7ed94f7ba720cdd9e029b2b4",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.preshow()",
+            "callbackType": null
+        }]
+    }
+}

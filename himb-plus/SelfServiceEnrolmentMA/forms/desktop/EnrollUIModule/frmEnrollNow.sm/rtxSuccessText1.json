@@ -1,0 +1,51 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizRichText",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "15%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s1a7d9e62f58455594fea7c4563ce38a",
+    "_text_": "<b>Your enrolment request for Online Banking has been received. Our team will review your request and get in touch with you shortly.</b><br><br>The user ID and an activation code for mobile banking has been sent to your registered email address and mobile number. \n<br>\n<br>\nPlease <b>'Activate Your Profile' </b>to start using Mobile Banking.\n",
+    "_top_": {
+        "type": "string",
+        "value": "20dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "70%"
+    },
+    "_wrapping_": 2,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "id": "rtxSuccessText1",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "j23d7e69d7e94415b25c4f16894d593d",
+    "linkskin": "s55eb654d13a4870a40beec0897f0aad",
+    "name": "kony.ui.RichText",
+    "parent": "flxAckScreen2",
+    "pf": "frmEnrollNow",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "wType": "RichText",
+    "widgetalignment": 5
+}

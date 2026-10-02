@@ -1,0 +1,108 @@
+{
+    "classname": "PortfolioHealthCheck",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "b618363b87944cd4b1dc41220685b783",
+                    "paramList": [],
+                    "propertyKey": "setContext",
+                    "pw": {
+                        "displayName": "setContext",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "jc8b384c7e1e4cd39fae6ffc3c0a3c52",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "e80b540d98dc49c48353eb0e884fcf64",
+                    "paramList": [],
+                    "propertyKey": "setDataPointsWidth",
+                    "pw": {
+                        "displayName": "setDataPointsWidth",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "jc8b384c7e1e4cd39fae6ffc3c0a3c52",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "j37022ab2dfc470588d77ebfe45fa25e",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "btnClick",
+                    "pw": {
+                        "displayName": "btnClick",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "jc8b384c7e1e4cd39fae6ffc3c0a3c52",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "c2ce1978c4694c8faa40f63ce0439e34",
+                    "paramList": [],
+                    "propertyIndex": 2,
+                    "propertyKey": "onError",
+                    "pw": {
+                        "displayName": "onError",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "jc8b384c7e1e4cd39fae6ffc3c0a3c52",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"ObjectName\": \"PortfolioHealth\",\n  \"ServiceName\": \"PortfolioServicing\",\n  \"OperationName\": \"getPortfolioHealth\"\n}",
+                    "group": "General",
+                    "kuid": "c785136d7ca34ef39412cbc561315cce",
+                    "originalPropertyKey": "serviceCall",
+                    "propertyIndex": 1,
+                    "propertyKey": "serviceCall",
+                    "pw": {
+                        "displayName": "Service Call",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "jc8b384c7e1e4cd39fae6ffc3c0a3c52",
+                    "type": "json",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfinityOLB.PortfolioManagementMA",
+    "version": "1.0.0"
+}

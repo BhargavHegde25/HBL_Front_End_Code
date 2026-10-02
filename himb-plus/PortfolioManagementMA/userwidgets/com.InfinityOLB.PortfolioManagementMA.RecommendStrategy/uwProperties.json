@@ -1,0 +1,108 @@
+{
+    "classname": "RecommendStrategy",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "ce30ed2d16574fedb174b26a38d7d3fe",
+                    "paramList": [],
+                    "propertyKey": "setData",
+                    "pw": {
+                        "displayName": "setData",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "de9103eedaa34ace843782916f6bbecb",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "b2e904f5c1804c9cbaf460a59c3678f0",
+                    "paramList": [],
+                    "propertyKey": "resizeComponent",
+                    "pw": {
+                        "displayName": "resizeComponent",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "de9103eedaa34ace843782916f6bbecb",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "h07ae3c0b4a84d3b968627c577c455ea",
+                    "paramList": [],
+                    "propertyKey": "setDataOne",
+                    "pw": {
+                        "displayName": "setDataOne",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "de9103eedaa34ace843782916f6bbecb",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "abd47995310d4b829581145412480393",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "onClickButton",
+                    "pw": {
+                        "displayName": "onClickButton",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "de9103eedaa34ace843782916f6bbecb",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n\"ObjectName\": \"Strategies\",\n\"ServiceName\": \"PortfolioServicing\",\n\"OperationName\": \"getRcmdStrategy\"\n}",
+                    "group": "General",
+                    "kuid": "af2fad0f68e44aaa98392e5374909003",
+                    "originalPropertyKey": "serviceCall",
+                    "propertyIndex": 1,
+                    "propertyKey": "serviceCall",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "ServiceCall",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "de9103eedaa34ace843782916f6bbecb",
+                    "type": "json",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfinityOLB.PortfolioManagementMA",
+    "version": "1.0.0"
+}

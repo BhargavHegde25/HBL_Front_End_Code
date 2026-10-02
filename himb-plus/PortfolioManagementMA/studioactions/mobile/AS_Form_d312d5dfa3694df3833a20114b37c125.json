@@ -1,0 +1,23 @@
+{
+    "AS_Form_d312d5dfa3694df3833a20114b37c125": {
+        "id": "AS_Form_d312d5dfa3694df3833a20114b37c125",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmDownload",
+            "type": "forms",
+            "platform": "",
+            "KUID": "eacc6980b0344de7b3dc172c2cdab5e8"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_bce7e8310fec47989e8f57f049f7d600",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.postShow();",
+            "parentId": null
+        }]
+    }
+}

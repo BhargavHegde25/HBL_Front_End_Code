@@ -1,0 +1,23 @@
+{
+    "AS_Form_b839298562fa4b7ebbe5495fcc090227": {
+        "id": "AS_Form_b839298562fa4b7ebbe5495fcc090227",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmExchangeRateTableScreen",
+            "type": "forms",
+            "platform": "",
+            "KUID": "a808a5daf02740cdbc4e7dad1dc685fc"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_g63e127a8e1f43418c3711fa3410b21d",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.preShow();",
+            "parentId": null
+        }]
+    }
+}

@@ -1,0 +1,143 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "_data_": [
+        {
+            "imgBankLogo": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "hbl_nobg.png"
+            },
+            "imgThreeDot": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "activewealth.png"
+            },
+            "lblAccountHolderName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Account Holder Name "
+            },
+            "lblAccountNumber": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Account Number"
+            },
+            "lblBankName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Bank Name"
+            },
+            "lblNickName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Bank Name"
+            },
+            "lblVerified": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Account Number"
+            }
+        }
+    ],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "1.50%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "92%"
+    },
+    "autogrowmode": 1,
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "counter": "00",
+    "focusedindex": null,
+    "focuseditem": null,
+    "groupcells": false,
+    "hasSections": false,
+    "id": "segOtherBank",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "indicator": "none"
+        }
+    },
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "ab4a0231d19345248df9ead3129ba381",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "flxMainContainer",
+    "pf": "frmManageBeneficiary",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainselection": false,
+    "rowTemplateId": "bcf51421175545c7be41683f272879e1",
+    "rowcounter": 0,
+    "rowfocusskin": "s2dee8ba04ed42f0870b98d0ca3b85f3",
+    "rowskin": "s1b1452780984b24b09ff8f9ea482593",
+    "rowtemplate": "flxHblSegOtherBankList",
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionheaderskin": "sbb16ef8093f4eefab3d6ed47a1ef57d",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "separatorrequired": false,
+    "separatorthickness": 0,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "vizProps": {},
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "flxAccountDetails": "flxAccountDetails",
+        "flxBankLogo": "flxBankLogo",
+        "flxHblSegOtherBankList": "flxHblSegOtherBankList",
+        "flxMain": "flxMain",
+        "flxThreeDot": "flxThreeDot",
+        "flxVerified": "flxVerified",
+        "imgBankLogo": "imgBankLogo",
+        "imgThreeDot": "imgThreeDot",
+        "lblAccountHolderName": "lblAccountHolderName",
+        "lblAccountNumber": "lblAccountNumber",
+        "lblBankName": "lblBankName",
+        "lblNickName": "lblNickName",
+        "lblVerified": "lblVerified"
+    }
+}

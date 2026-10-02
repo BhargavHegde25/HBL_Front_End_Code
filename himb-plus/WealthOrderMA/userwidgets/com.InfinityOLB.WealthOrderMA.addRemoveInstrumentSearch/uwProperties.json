@@ -1,0 +1,214 @@
+{
+    "classname": "addRemoveInstrumentSearch",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "e9cd584f1ba447ff80fd91d4d8c53193",
+                    "paramList": [
+                        {
+                            "name": "data"
+                        }
+                    ],
+                    "propertyKey": "setPortfolioId",
+                    "pw": {
+                        "displayName": "setPortfolioId",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "e6f8ae5e996e4d2eb9f7e06c0723411c",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "fc73cdabed304dadbe0767b310827c2f",
+                    "paramList": [],
+                    "propertyKey": "setContext",
+                    "pw": {
+                        "displayName": "setContext",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "e6f8ae5e996e4d2eb9f7e06c0723411c",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "b7ffe48e21a748088378d8d7709c3c4c",
+                    "paramList": [],
+                    "propertyKey": "updateInstrumentSeg",
+                    "pw": {
+                        "displayName": "updateInstrumentSeg",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "e6f8ae5e996e4d2eb9f7e06c0723411c",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "h48481521b3d4b589b8a24ec06e3a0d7",
+                    "paramList": [],
+                    "propertyKey": "onsegInstrumentRowClick",
+                    "pw": {
+                        "displayName": "onsegInstrumentRowClick",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "e6f8ae5e996e4d2eb9f7e06c0723411c",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "h17672bb169e4b5db9a498ce023ba965",
+                    "paramList": [],
+                    "propertyKey": "returnCurrComponent",
+                    "pw": {
+                        "displayName": "returnCurrComponent",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "e6f8ae5e996e4d2eb9f7e06c0723411c",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "be7c2687fbce45c0823a9c5c8c679a6c",
+                    "paramList": [],
+                    "propertyKey": "onSearchClear",
+                    "pw": {
+                        "displayName": "onSearchClear",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "e6f8ae5e996e4d2eb9f7e06c0723411c",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "f6a84b5642994861acf1be24a4b927d2",
+                    "paramList": [
+                        {
+                            "name": "errorObj"
+                        }
+                    ],
+                    "propertyIndex": 1,
+                    "propertyKey": "onError",
+                    "pw": {
+                        "displayName": "onError",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "e6f8ae5e996e4d2eb9f7e06c0723411c",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "e182c7e1987a4b888b375ee378672275",
+                    "paramList": [],
+                    "propertyIndex": 2,
+                    "propertyKey": "viewInstrumentDetails",
+                    "pw": {
+                        "displayName": "viewInstrumentDetails",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "e6f8ae5e996e4d2eb9f7e06c0723411c",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [
+                "Component Config",
+                "Search",
+                "Segment",
+                "Skins",
+                "Icons"
+            ],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "WealthOrder",
+                    "group": "Segment",
+                    "kuid": "cab858a1216543faa3407b0fd7dbf51b",
+                    "originalPropertyKey": "segObjService",
+                    "propertyIndex": 2,
+                    "propertyKey": "segObjService",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Obj Service",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "e6f8ae5e996e4d2eb9f7e06c0723411c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "FavouriteInstruments",
+                    "group": "Segment",
+                    "kuid": "jb3c03ce0d714a7b9333ab837274bdcf",
+                    "originalPropertyKey": "segObjName",
+                    "propertyIndex": 3,
+                    "propertyKey": "segObjName",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Obj Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "e6f8ae5e996e4d2eb9f7e06c0723411c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "getSearchFavoriteInstruments",
+                    "group": "Segment",
+                    "kuid": "b8838d97f37e4013a79554fc63a13cf7",
+                    "originalPropertyKey": "segOperation",
+                    "propertyIndex": 4,
+                    "propertyKey": "segOperation",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Operation",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "e6f8ae5e996e4d2eb9f7e06c0723411c",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "S1",
+                    "group": "Segment",
+                    "kuid": "f25bfb40b4444c9abe2d2793bc8ace02",
+                    "originalPropertyKey": "segIdentifier",
+                    "propertyIndex": 6,
+                    "propertyKey": "segIdentifier",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Identifier",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "e6f8ae5e996e4d2eb9f7e06c0723411c",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfinityOLB.WealthOrderMA",
+    "version": "1.0.0"
+}

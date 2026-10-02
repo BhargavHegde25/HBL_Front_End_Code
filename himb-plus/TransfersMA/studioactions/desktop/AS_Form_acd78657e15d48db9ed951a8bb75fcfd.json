@@ -1,0 +1,23 @@
+{
+    "AS_Form_acd78657e15d48db9ed951a8bb75fcfd": {
+        "id": "AS_Form_acd78657e15d48db9ed951a8bb75fcfd",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmLoadEsewaConfirm",
+            "type": "forms",
+            "platform": null,
+            "KUID": "h8d90e3883df43558fbfcee25d85cb9d"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_b3944396be01474bb4740b02ccb60e4b",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.preShow();",
+            "parentId": null
+        }]
+    }
+}

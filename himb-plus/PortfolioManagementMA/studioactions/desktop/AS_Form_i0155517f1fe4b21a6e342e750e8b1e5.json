@@ -1,0 +1,23 @@
+{
+    "AS_Form_i0155517f1fe4b21a6e342e750e8b1e5": {
+        "id": "AS_Form_i0155517f1fe4b21a6e342e750e8b1e5",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmPortfolioHealthCheck",
+            "type": "forms",
+            "platform": "",
+            "KUID": "bd54317c829242c592ff53f909d693ac"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_a7b981fc0e34480ba73a6c4a43fc3009",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.postShow();",
+            "parentId": null
+        }]
+    }
+}

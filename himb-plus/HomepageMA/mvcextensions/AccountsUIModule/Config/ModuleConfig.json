@@ -1,0 +1,92 @@
+{
+    "Forms": {
+        "desktop": {
+            "frmCustomViews": {
+                "Controller": "AccountsUIModule/frmCustomViewsController",
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "FormName": "AccountsUIModule/frmCustomViews"
+            },
+            "frmDashboard": {
+                "Controller": "AccountsUIModule/frmDashboardController",
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "FormName": "AccountsUIModule/frmDashboard",
+                "friendlyName": "frmDashboard"
+            },
+            "frmLogin": {
+                "Controller": "AccountsUIModule/frmLoginController",
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "FormName": "AccountsUIModule/frmLogin"
+            },
+            "frmFirst": {
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "Controller": "AccountsUIModule/frmFirstController",
+                "FormName": "AccountsUIModule/frmFirst",
+                "friendlyName": "frmFirst"
+            }
+        },
+        "mobile": {
+            "frmFilterAccounts": {
+                "Controller": "AccountsUIModule/frmFilterAccountsController",
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "FormName": "AccountsUIModule/frmFilterAccounts",
+                "friendlyName": "frmFilterAccounts"
+            },
+            "frmLegalEntitySwitch": {
+                "Controller": "AccountsUIModule/frmLegalEntitySwitchController",
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "FormName": "AccountsUIModule/frmLegalEntitySwitch",
+                "friendlyName": "frmLegalEntitySwitch"
+            },
+            "frmLegalEntityTermsAndConditions": {
+                "Controller": "AccountsUIModule/frmLegalEntityTermsAndConditionsController",
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "FormName": "AccountsUIModule/frmLegalEntityTermsAndConditions",
+                "friendlyName": "frmLegalEntityTermsAndConditions"
+            },
+            "frmLogin": {
+                "Controller": "AccountsUIModule/frmLoginController",
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "FormName": "AccountsUIModule/frmLogin",
+                "friendlyName": "frmLogin"
+            },
+            "frmUnifiedDashboard": {
+                "Controller": "AccountsUIModule/frmUnifiedDashboardController",
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "FormName": "AccountsUIModule/frmUnifiedDashboard",
+                "friendlyName": "frmUnifiedDashboard"
+            },
+            "frmHBLUnifiedDashboard": {
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "Controller": "AccountsUIModule/frmHBLUnifiedDashboardController",
+                "FormName": "AccountsUIModule/frmHBLUnifiedDashboard",
+                "friendlyName": "frmHBLUnifiedDashboard"
+            }
+        }
+    },
+    "ModuleName": "AccountsUIModule",
+    "ModuleType": "UIModule",
+    "PresentationControllerConfig": {
+        "Default": {
+            "PresentationControllerClass": "AccountsUIModule/PresentationControllers/PresentationController",
+            "PresentationExtensions": [
+                "AccountsUIModule/PresentationControllers/PresentationController_Extension"
+            ]
+        },
+        "Mobile": {
+            "PresentationControllerClass": "AccountsUIModule/PresentationControllers/PresentationController_Mobile",
+            "PresentationExtensions": [
+			"AccountsUIModule/PresentationControllers/PresentationController_Mobile_Extension"
+			]
+        }
+    }
+}

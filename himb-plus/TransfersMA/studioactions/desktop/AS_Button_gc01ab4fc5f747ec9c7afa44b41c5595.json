@@ -1,0 +1,23 @@
+{
+    "AS_Button_gc01ab4fc5f747ec9c7afa44b41c5595": {
+        "id": "AS_Button_gc01ab4fc5f747ec9c7afa44b41c5595",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmCBCSuccess",
+            "type": "forms",
+            "platform": "",
+            "KUID": "c5aec44bb47b4f7cb76d441e8c1e8c43"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_fedfbf131c9944de99f947c9dfa2ad63",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var authModule = kony.mvc.MDAApplication.getSharedInstance().getModuleManager().getModule({\n                    \"appName\": \"AuthenticationMA\",\n                    \"moduleName\": \"AuthUIModule\"\n                });\n\t\t        kony.application.showLoadingScreen();\n                var navManager = applicationManager.getNavigationManager();\n                var x = navManager.getCustomInfo('AuthParam');\n                authModule.presentationController.postLoginCall(x);",
+            "parentId": null
+        }]
+    }
+}

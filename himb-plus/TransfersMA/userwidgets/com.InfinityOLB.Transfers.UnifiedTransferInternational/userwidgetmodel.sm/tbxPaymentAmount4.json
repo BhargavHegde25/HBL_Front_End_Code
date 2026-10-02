@@ -1,0 +1,75 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizTextBox2",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        10,
+        3,
+        1,
+        3
+    ],
+    "_placeholder_": "0.00",
+    "_skin_": "s52414dd8c484d1b9991579329537b4d",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "autocapitalize": "none",
+    "autocomplete": false,
+    "autocorrect": false,
+    "autofilter": false,
+    "canUpdateUI": true,
+    "containerheight": "",
+    "containerheightmode": 1,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "desktopweb": {
+        "placeholderSkin": "s053121b48b6465cba0331cda4ce88d0"
+    },
+    "focusskin": null,
+    "id": "tbxPaymentAmount4",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "keyboardtype": "A",
+    "kuid": "a373ecfbb7b94b39905303311aa1d3a9",
+    "mode": "A",
+    "name": "kony.ui.TextBox2",
+    "parent": "flxPaymentAmount4TextBox",
+    "pf": "userwidgetmodel",
+    "placeholderskin": "s053121b48b6465cba0331cda4ce88d0",
+    "responsiveData": {
+        "b3": {
+            "desktopweb": {
+                "placeholderSkin": "s2fa3916bba54444a9903e226b31cded"
+            },
+            "placeholderSkin": "s2fa3916bba54444a9903e226b31cded"
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "securetextentry": false,
+    "textinputmode": "A",
+    "tooltip": "",
+    "viewtype": "default",
+    "wType": "TextField",
+    "zindex": 1
+}

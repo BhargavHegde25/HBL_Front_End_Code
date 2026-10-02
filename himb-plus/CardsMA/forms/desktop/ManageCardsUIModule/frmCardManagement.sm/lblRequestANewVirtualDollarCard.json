@@ -1,0 +1,72 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizLabel",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "49dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "7.69%"
+    },
+    "_margin_": [
+        1,
+        1,
+        1,
+        1
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s558870758b94d19832ca420b4e7542e",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_wrapping_": 2,
+    "accessibilityconfig": {
+        "a11yARIA": {
+            "tabindex": -1
+        },
+        "a11yLabel": "Manage Travel Plans",
+        "tagName": "span"
+    },
+    "android": {
+        "textStyle": {
+            "letterSpacing": 0,
+            "strikeThrough": false
+        }
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "id": "lblRequestANewVirtualDollarCard",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "iphone": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "isvisible": true,
+    "kuid": "fd7824a5b6ed413888cda73f54e4d5dd",
+    "name": "kony.ui.Label",
+    "parent": "flxRequestANewVirtualDollarCard",
+    "pf": "frmCardManagement",
+    "texti18n": "i18n.HBL.Cards.RequestNewVirtualDollarCard",
+    "tooltip": "Manage Travel Plans",
+    "wType": "Label",
+    "zindex": 1
+}

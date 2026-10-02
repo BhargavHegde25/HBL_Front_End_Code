@@ -1,0 +1,22 @@
+{
+    "AS_BarButtonItem_cff667944b9148d793c5631e66db22d3": {
+        "id": "AS_BarButtonItem_cff667944b9148d793c5631e66db22d3",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_a9fef13129264e58a106d767e72f0a63",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.flxBackOnClick();",
+            "parentId": null
+        }, {
+            "id": "ADD_SNIPPET_c633f7bf3f45435c9b49dde8a6fe855b",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.flxBackOnClick();",
+            "parentId": null
+        }]
+    }
+}

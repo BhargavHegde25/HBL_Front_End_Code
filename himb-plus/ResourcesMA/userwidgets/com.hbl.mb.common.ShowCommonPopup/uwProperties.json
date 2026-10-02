@@ -1,0 +1,247 @@
+{
+    "classname": "ShowCommonPopup",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "eaf5e7ac1d384748ba722344c97f9fe9",
+                    "paramList": [
+                        {
+                            "name": "header"
+                        },
+                        {
+                            "name": "msg"
+                        },
+                        {
+                            "name": "yesHandler"
+                        },
+                        {
+                            "name": "yesLabel"
+                        },
+                        {
+                            "name": "noHandler"
+                        },
+                        {
+                            "name": "noLabel"
+                        }
+                    ],
+                    "propertyKey": "showInfoPopup",
+                    "pw": {
+                        "displayName": "showInfoPopup",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ud6150bcf4444f91ae7b622d57266d5b",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "b00468426a13491e88f833d6334c2bc9",
+                    "paramList": [
+                        {
+                            "name": "header"
+                        },
+                        {
+                            "name": "msg"
+                        },
+                        {
+                            "name": "yesHandler"
+                        },
+                        {
+                            "name": "yesLabel"
+                        },
+                        {
+                            "name": "noHandler"
+                        },
+                        {
+                            "name": "noLabel"
+                        }
+                    ],
+                    "propertyKey": "showConfirmationPopup",
+                    "pw": {
+                        "displayName": "showConfirmationPopup",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ud6150bcf4444f91ae7b622d57266d5b",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "h305fdb5772b45329949c2082f66da9f",
+                    "paramList": [
+                        {
+                            "name": "header"
+                        },
+                        {
+                            "name": "msg"
+                        },
+                        {
+                            "name": "showCancel"
+                        },
+                        {
+                            "name": "showOk"
+                        },
+                        {
+                            "name": "btnOkSkin"
+                        },
+                        {
+                            "name": "btnCancelSkin"
+                        },
+                        {
+                            "name": "btnOkHandler"
+                        },
+                        {
+                            "name": "btnCancelHandler"
+                        },
+                        {
+                            "name": "iconText"
+                        },
+                        {
+                            "name": "isIconVisible"
+                        },
+                        {
+                            "name": "iconSrc"
+                        },
+                        {
+                            "name": "iconCrossHandler"
+                        },
+                        {
+                            "name": "lblHeaderskin"
+                        },
+                        {
+                            "name": "lblAlertMessageskin"
+                        },
+                        {
+                            "name": "btnOkText"
+                        },
+                        {
+                            "name": "btnCancelText"
+                        }
+                    ],
+                    "propertyKey": "showAlertWithSkin",
+                    "pw": {
+                        "displayName": "showAlertWithSkin",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ud6150bcf4444f91ae7b622d57266d5b",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "de412a7645f04590877c3b587a873fd0",
+                    "paramList": [
+                        {
+                            "name": "header"
+                        },
+                        {
+                            "name": "msg"
+                        },
+                        {
+                            "name": "btnOkSkin"
+                        },
+                        {
+                            "name": "btnOkHandler"
+                        },
+                        {
+                            "name": "iconText"
+                        },
+                        {
+                            "name": "isIconVisible"
+                        },
+                        {
+                            "name": "iconSrc"
+                        },
+                        {
+                            "name": "iconCrossHandler"
+                        },
+                        {
+                            "name": "lblHeaderskin"
+                        },
+                        {
+                            "name": "lblAlertMessageskin"
+                        },
+                        {
+                            "name": "btnOkText"
+                        },
+                        {
+                            "name": "btnCancelText"
+                        }
+                    ],
+                    "propertyKey": "showOnlyContinueButtonWithSkin",
+                    "pw": {
+                        "displayName": "showOnlyContinueButtonWithSkin",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ud6150bcf4444f91ae7b622d57266d5b",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "e80e965c4b4049a196afb7fd00010c52",
+                    "paramList": [],
+                    "propertyKey": "reset",
+                    "pw": {
+                        "displayName": "reset",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ud6150bcf4444f91ae7b622d57266d5b",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "ecde1f3340a94bea9b99b885fd00d76b",
+                    "paramList": [
+                        {
+                            "name": "header"
+                        },
+                        {
+                            "name": "msg"
+                        },
+                        {
+                            "name": "yesHandler"
+                        },
+                        {
+                            "name": "yesLabel"
+                        },
+                        {
+                            "name": "noHandler"
+                        },
+                        {
+                            "name": "noLabel"
+                        }
+                    ],
+                    "propertyKey": "showErrorPopup",
+                    "pw": {
+                        "displayName": "showErrorPopup",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ud6150bcf4444f91ae7b622d57266d5b",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.hbl.mb.common",
+    "version": "1.0.0"
+}

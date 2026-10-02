@@ -1,0 +1,83 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "-21dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "sc9a8d9928fa45e3b0521a368d88d247",
+    "_text_": "Button",
+    "_top_": {
+        "type": "string",
+        "value": "0"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "number",
+        "value": ""
+    },
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "disabledSkins": {},
+    "displaytext": true,
+    "focusskin": "s5495bd040c94991a043932d65a33261",
+    "id": "btnSwitch",
+    "ide_onClick": "AS_Button_i38e8c8f66d04c1ca45f13673dc5e721",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "g81de6d39f29430598c011d0d5d5c176",
+    "name": "kony.ui.Button",
+    "parent": "flxVerticalDashBg",
+    "pf": "frmCurrencyConverter",
+    "responsiveData": {
+        "b1": {
+            "centerX": {
+                "type": "string",
+                "value": "50%"
+            },
+            "disabledSkins": {
+                "focusSkin": "sc2014abe0204f928d0cb8528597d67e"
+            },
+            "displayText": false,
+            "text": ""
+        },
+        "b2": {
+            "disabledSkins": {
+                "focusSkin": "s5495bd040c94991a043932d65a33261"
+            },
+            "left": {
+                "type": "string",
+                "value": "-20dp"
+            }
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "wType": "Button",
+    "zindex": 5
+}

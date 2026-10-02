@@ -1,0 +1,24 @@
+{
+    "customComponent": {
+        "i18nSupported": true,
+        "id": "awa813b055b5e547d6bcc6d1a9c299fdc3",
+        "isOverride": false,
+        "konyWrapperFiles": [
+            "resources/thirdpartywidgets/widgetwrapper/tp-StrategyDonutChart-wrapper.js"
+        ],
+        "libraryFiles": [
+            "resources/thirdpartywidgets/chartist/chartist.min.js",
+            "resources/thirdpartywidgets/chartist/chartist.min.css",
+            "resources/thirdpartywidgets/chartist/strategyDonutChart.css",
+            "resources/thirdpartywidgets/chartist/strategyDonutChart.js",
+			"resources/thirdpartywidgets/chartist/jquery-3.6.0.js",
+			"resources/thirdpartywidgets/chartist/donutchart-tooltip.js"
+        ],
+        "libraryName": "chartist",
+        "marginSupported": true,
+        "name": "StrategyDonutChart",
+        "paddingSupported": true,
+        "platformID": "0",
+        "property": []
+    }
+}

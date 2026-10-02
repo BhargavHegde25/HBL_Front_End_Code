@@ -1,0 +1,244 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "_data_": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+    ],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "0"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "autogrowmode": 1,
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "counter": "10",
+    "desktop": {
+        "_data_": [
+            [
+                {
+                    "lblAssetName": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Segment"
+                    },
+                    "lblCurrentWeight": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Current Weight"
+                    },
+                    "lblHealthStatus": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": ""
+                    },
+                    "lblStrategyWeight": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Strategy Weight"
+                    }
+                },
+                [
+                    {
+                        "TextArea0j763fe4fc42747": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": ""
+                        },
+                        "imgArrow": {
+                            "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                            "src": ""
+                        },
+                        "imgHealth": {
+                            "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                            "src": ""
+                        },
+                        "lblAssetName": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": ""
+                        },
+                        "lblCurrentWeight": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": ""
+                        },
+                        "lblStrategyWeight": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": ""
+                        }
+                    }
+                ]
+            ],
+            [
+                {
+                    "lblAssetName": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Segment"
+                    },
+                    "lblCurrentWeight": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Current Weight"
+                    },
+                    "lblHealthStatus": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": ""
+                    },
+                    "lblStrategyWeight": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Strategy Weight"
+                    }
+                },
+                [
+                    {
+                        "TextArea0j763fe4fc42747": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": ""
+                        },
+                        "imgArrow": {
+                            "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                            "src": ""
+                        },
+                        "imgHealth": {
+                            "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                            "src": ""
+                        },
+                        "lblAssetName": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": ""
+                        },
+                        "lblCurrentWeight": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": ""
+                        },
+                        "lblStrategyWeight": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": ""
+                        }
+                    }
+                ]
+            ]
+        ],
+        "rowTemplateId": "a3b7255926f14ec1a88d40a0487e797b",
+        "rowtemplate": "flxAllocation",
+        "sectionHeaderTemplateId": "c393a1a4100c49f98a60da6afb998e01",
+        "sectionheadertemplate": "flxAllocationHead",
+        "widgetdatamap": {
+            "TextArea0j763fe4fc42747": "TextArea0j763fe4fc42747",
+            "flxAllocation": "flxAllocation",
+            "flxAllocationHead": "flxAllocationHead",
+            "flxAssetName": "flxAssetName",
+            "flxCurrentWeight": "flxCurrentWeight",
+            "flxHealth": "flxHealth",
+            "flxHealthStatus": "flxHealthStatus",
+            "flxStrategyWeight": "flxStrategyWeight",
+            "imgArrow": "imgArrow",
+            "imgHealth": "imgHealth",
+            "lblAssetName": "lblAssetName",
+            "lblCurrentWeight": "lblCurrentWeight",
+            "lblHealthStatus": "lblHealthStatus",
+            "lblStrategyWeight": "lblStrategyWeight"
+        }
+    },
+    "focusedindex": null,
+    "focuseditem": null,
+    "groupcells": false,
+    "hasSections": true,
+    "id": "segDrillDown",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "g901351b2da0418f876229fcea02f40c",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "allocationDrillDown",
+    "pf": "userwidgetmodel",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainselection": false,
+    "rowcounter": 0,
+    "rowfocusskin": "s27271a192ac4bbeb4ba645499d0f094",
+    "rowskin": "sb549ea29b37430184f7a93c7a9584c0",
+    "rowtemplate": null,
+    "screenlevelwidget": false,
+    "seccounter": 1,
+    "sectionheaderskin": "scf5f90f6ac04976ab88b2a4f7153285",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "separatorcolor": "aaaaaa00",
+    "separatorrequired": false,
+    "separatorthickness": 1,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "vizProps": {},
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "flxAllocation": "flxAllocation",
+        "flxAllocationHead": "flxAllocationHead",
+        "flxAssetName": "flxAssetName",
+        "flxCurrentWeight": "flxCurrentWeight",
+        "flxHealth": "flxHealth",
+        "flxHealthStatus": "flxHealthStatus",
+        "flxStrategyWeight": "flxStrategyWeight",
+        "imgArrow": "imgArrow",
+        "imgHealth": "imgHealth",
+        "lblAssetName": "lblAssetName",
+        "lblCurrentWeight": "lblCurrentWeight",
+        "lblHealthStatus": "lblHealthStatus",
+        "lblStrategyWeight": "lblStrategyWeight"
+    },
+    "widgetskin": "sac637543d3f41a4aa3559ed65f94c79"
+}

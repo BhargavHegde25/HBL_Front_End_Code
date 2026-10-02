@@ -1,0 +1,22 @@
+{
+    "AS_Form_be4376e018df45e1ad90d3205160928b": {
+        "id": "AS_Form_be4376e018df45e1ad90d3205160928b",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmOrderSortBy",
+            "type": "forms",
+            "platform": null,
+            "KUID": "h3c601edfc714b6ea5e52ccbb9d051e7"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_init_b8fe9eecf38745c092e2b8d19c585667",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.init();"
+        }]
+    }
+}

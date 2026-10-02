@@ -1,0 +1,203 @@
+{
+    "NativeFunctionAPI": {
+        "iOS": {
+            "14.3": {},
+            "14.0": {
+                "KonympSocialShare-iOS-14.0": {
+                    "title": "KonympSocialShare",
+                    "platform": "iOS",
+                    "os": "14.0",
+                    "isDefault": false,
+                    "filename": "KonympSocialShare-iOS-14.0.zip",
+                    "nfiversion": "3.0",
+                    "enable": true
+                }
+            },
+            "16.0": {
+                "KonyHIDIntegration-iOS-16.0": {
+                    "title": "KonyHIDIntegration",
+                    "platform": "iOS",
+                    "os": "16.0",
+                    "isDefault": false,
+                    "filename": "KonyHIDIntegration-iOS-16.0.zip",
+                    "nfiversion": "3.0",
+                    "enable": false
+                },
+                "RELID-iOS-16.0": {
+                    "title": "RELID",
+                    "platform": "iOS",
+                    "os": "16.0",
+                    "isDefault": false,
+                    "filename": "RELID-iOS-16.0.zip",
+                    "nfiversion": "3.0",
+                    "enable": false
+                },
+                "RELIDNFI-iOS-16.0": {
+                    "title": "RELIDNFI",
+                    "platform": "iOS",
+                    "os": "16.0",
+                    "isDefault": false,
+                    "filename": "RELIDNFI-iOS-16.0.zip",
+                    "nfiversion": "3.0",
+                    "enable": false
+                },
+                "RELID_IDV_CORE-iOS-16.0": {
+                    "title": "RELID_IDV_CORE",
+                    "platform": "iOS",
+                    "os": "16.0",
+                    "isDefault": false,
+                    "filename": "RELID_IDV_CORE-iOS-16.0.zip",
+                    "nfiversion": "3.0",
+                    "enable": false
+                },
+                "RELID_IDV_SELFIE_CAPTURE-iOS-16.0": {
+                    "title": "RELID_IDV_SELFIE_CAPTURE",
+                    "platform": "iOS",
+                    "os": "16.0",
+                    "isDefault": false,
+                    "filename": "RELID_IDV_SELFIE_CAPTURE-iOS-16.0.zip",
+                    "nfiversion": "3.0",
+                    "enable": false
+                },
+                "Kony_FileStorage-iOS-16.0": {
+                    "title": "Kony_FileStorage",
+                    "platform": "iOS",
+                    "os": "16.0",
+                    "ci": true,
+                    "isDefault": true,
+                    "filename": "Kony_FileStorage-iOS-16.0.zip",
+                    "nfiversion": "3.0",
+                    "enable": true
+                },
+                "Kony_SDKCommons-iOS-16.0": {
+                    "title": "Kony_SDKCommons",
+                    "platform": "iOS",
+                    "os": "16.0",
+                    "ci": true,
+                    "isDefault": true,
+                    "filename": "Kony_SDKCommons-iOS-16.0.zip",
+                    "nfiversion": "3.0",
+                    "enable": true
+                },
+                "Kony_SyncV2-iOS-16.0": {
+                    "title": "Kony_SyncV2",
+                    "platform": "iOS",
+                    "os": "16.0",
+                    "ci": true,
+                    "isDefault": true,
+                    "filename": "Kony_SyncV2-iOS-16.0.zip",
+                    "nfiversion": "3.0",
+                    "enable": true
+                }
+            },
+            "17.0": {
+                "AVFoundation-iOS-17.0": {
+                    "apiKey": "AVFoundation-iOS-17.0",
+                    "title": "AVFoundation",
+                    "platform": "iOS",
+                    "os": "17.0",
+                    "url": "/visualizer/nativeframeworks/3.0/ios/4.0/AVFoundation-iOS-17.0.zip",
+                    "checksum": "651d98e71a5f13f0b561261b01101adf11daddb8",
+                    "filename": "AVFoundation-iOS-17.0.zip",
+                    "isDefault": false,
+                    "nfiversion": "3.0",
+                    "enable": true
+                },
+                "AVKit-iOS-17.0": {
+                    "apiKey": "AVKit-iOS-17.0",
+                    "title": "AVKit",
+                    "platform": "iOS",
+                    "os": "17.0",
+                    "url": "/visualizer/nativeframeworks/3.0/ios/4.0/AVKit-iOS-17.0.zip",
+                    "checksum": "b75cf95a4af7710ff7902382e944d320d80b3d38",
+                    "filename": "AVKit-iOS-17.0.zip",
+                    "isDefault": false,
+                    "nfiversion": "3.0",
+                    "enable": true
+                }
+            },
+            "18.0": {
+                "ShareFramework-iOS-18.0": {
+                    "title": "ShareFramework",
+                    "platform": "iOS",
+                    "os": "18.0",
+                    "isDefault": false,
+                    "filename": "ShareFramework-iOS-18.0.zip",
+                    "nfiversion": "3.0",
+                    "enable": true
+                },
+                "QRCodeFramework-iOS-18.0": {
+                    "title": "QRCodeFramework",
+                    "platform": "iOS",
+                    "os": "18.0",
+                    "isDefault": false,
+                    "filename": "QRCodeFramework-iOS-18.0.zip",
+                    "nfiversion": "3.0",
+                    "enable": true
+                },
+                "QRScannerFramework-iOS-18.0": {
+                    "title": "QRScannerFramework",
+                    "platform": "iOS",
+                    "os": "18.0",
+                    "isDefault": false,
+                    "filename": "QRScannerFramework-iOS-18.0.zip",
+                    "nfiversion": "3.0",
+                    "enable": true
+                },
+                "MyPaymentUrlFramework-iOS-18.0": {
+                    "title": "MyPaymentUrlFramework",
+                    "platform": "iOS",
+                    "os": "18.0",
+                    "isDefault": false,
+                    "filename": "MyPaymentUrlFramework-iOS-18.0.zip",
+                    "nfiversion": "3.0",
+                    "enable": true
+                }
+            }
+        },
+        "Android": {
+            "4.0": {
+                "konympsocialshare-Android-4.0": {
+                    "title": "konympsocialshare",
+                    "platform": "Android",
+                    "os": "4.0",
+                    "isDefault": false,
+                    "filename": "konympsocialshare-Android-4.0.zip",
+                    "enable": true
+                },
+                "Kony_FileStorage-Android-4.0": {
+                    "title": "Kony_FileStorage",
+                    "platform": "Android",
+                    "os": "4.0",
+                    "ci": true,
+                    "isDefault": true,
+                    "filename": "Kony_FileStorage-Android-4.0.zip",
+                    "enable": true
+                },
+                "Kony_SDKCommons-Android-4.0": {
+                    "title": "Kony_SDKCommons",
+                    "platform": "Android",
+                    "os": "4.0",
+                    "ci": true,
+                    "isDefault": true,
+                    "filename": "Kony_SDKCommons-Android-4.0.zip",
+                    "enable": true
+                },
+                "Kony_SyncV2-Android-4.0": {
+                    "title": "Kony_SyncV2",
+                    "platform": "Android",
+                    "os": "4.0",
+                    "ci": true,
+                    "isDefault": true,
+                    "filename": "Kony_SyncV2-Android-4.0.zip",
+                    "enable": true
+                }
+            }
+        }
+    },
+    "Metadata": {
+        "Version": {
+            "iOS": "3.0"
+        }
+    }
+}

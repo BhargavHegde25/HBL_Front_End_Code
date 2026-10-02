@@ -1,0 +1,28 @@
+{
+    "AS_Form_f6f38ffb5dad45a2bf492ff6b05586b0": {
+        "id": "AS_Form_f6f38ffb5dad45a2bf492ff6b05586b0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmHoldings",
+            "type": "forms",
+            "platform": null,
+            "KUID": "bed627ab9ee944dabaf1b2d56f6df3cd"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__e6e836b34ec442879f0c16c8c20584b8",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "init",
+            "display": "init",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null,
+            "source": "controller"
+        }]
+    }
+}

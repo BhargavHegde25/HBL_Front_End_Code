@@ -1,0 +1,12 @@
+{
+    "BusinessControllerConfig": {
+        "BusinessControllerClass": "SettingsManager/BusinessControllers/BusinessController",
+        "BusinessExtensions": [
+            "SettingsManager/BusinessControllers/BusinessController_Extension",
+	    "SettingsManager/BusinessControllers/BusinessController_Extension_Mobile"
+        ]
+    },
+    "Forms": {},
+    "ModuleName": "SettingsManager",
+    "ModuleType": "Manager"
+}

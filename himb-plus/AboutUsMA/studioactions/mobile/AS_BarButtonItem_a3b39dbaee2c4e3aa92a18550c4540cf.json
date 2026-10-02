@@ -1,0 +1,17 @@
+{
+    "AS_BarButtonItem_a3b39dbaee2c4e3aa92a18550c4540cf": {
+        "id": "AS_BarButtonItem_a3b39dbaee2c4e3aa92a18550c4540cf",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_e06368a0342440ae8e4c88f078b9e5d1",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.customHeaderBtnRightOnClick();",
+            "parentId": null
+        }]
+    }
+}

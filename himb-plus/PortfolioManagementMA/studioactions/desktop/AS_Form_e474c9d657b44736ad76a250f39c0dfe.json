@@ -1,0 +1,23 @@
+{
+    "AS_Form_e474c9d657b44736ad76a250f39c0dfe": {
+        "id": "AS_Form_e474c9d657b44736ad76a250f39c0dfe",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmRiskAppetite",
+            "type": "forms",
+            "platform": "",
+            "KUID": "ee45c829eb4f474f96bab250af02571a"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_j7be861cce424f8ea60a64c5dffa32cc",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.frmPreShow();",
+            "parentId": null
+        }]
+    }
+}

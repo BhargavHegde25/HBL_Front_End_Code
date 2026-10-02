@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<endpoint name="default" type="JSON" url="https://_$_T24_TRANSACTIONS_HOST_URL_$_" encryptSecureInfo="false">
+    <config>
+        <entry>
+            <key>ignorehttpproxy</key>
+            <value>true</value>
+        </entry>
+        <entry>
+            <key>identityProviderType</key>
+            <value>custom</value>
+        </entry>
+        <entry>
+            <key>urlprovider</key>
+            <value>com.kony.dbx.util.ServiceURLProvider</value>
+        </entry>
+        <entry>
+            <key>identityProvider</key>
+            <value>DbxUserLogin</value>
+        </entry>
+    </config>
+    <apiThrottling>
+        <entry>
+            <key>rateLimitPerIP</key>
+            <value>100</value>
+        </entry>
+        <entry>
+            <key>totalRateLimit</key>
+            <value>100</value>
+        </entry>
+    </apiThrottling>
+    <jsonpath>false</jsonpath>
+</endpoint>

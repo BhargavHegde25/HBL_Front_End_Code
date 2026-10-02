@@ -1,0 +1,29 @@
+{
+  "version" : "1.0",
+  "intSvcs" : [ {
+    "name" : "ClientCredentials",
+    "version" : "1.0",
+    "etag" : "f48905b8-cf5b-47b8-ac79-35a17c77b25b"
+  }, {
+    "name" : "dbpTransactionServices",
+    "version" : "1.0",
+    "etag" : "dd64ed1a-fcde-482c-960b-8b46c0dffb80"
+  }, {
+    "name" : "T24ISPaymentOrders",
+    "version" : "1.0",
+    "etag" : "ad468655-5275-4af1-95ec-0d98028c8cd9"
+  }, {
+    "name" : "T24ISPaymentsView",
+    "version" : "1.0",
+    "etag" : "09d955a4-e8c1-47a8-b69b-fad96b62eadc"
+  } ],
+  "objectSvcs" : [ {
+    "name" : "TransactionObjects",
+    "version" : "1.0",
+    "etag" : "bbbf6de0-b607-4a07-8208-471ea0cf1b95"
+  }, {
+    "name" : "Transfers",
+    "version" : "1.0",
+    "etag" : "93aae1f4-031d-402e-bdc6-03c9f08ec4f1"
+  } ]
+}

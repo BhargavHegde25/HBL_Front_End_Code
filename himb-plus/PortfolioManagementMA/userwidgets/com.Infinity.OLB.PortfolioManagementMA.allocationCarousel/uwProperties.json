@@ -1,0 +1,44 @@
+{
+    "classname": "allocationCarousel",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "ba0bc0aedd7d4196aa578bb614f781da",
+                    "paramList": [],
+                    "propertyKey": "setServiceParm",
+                    "pw": {
+                        "displayName": "setServiceParm",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ucb6ef15493c41e09d99d236f04ccdd3",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.Infinity.OLB.PortfolioManagementMA",
+    "version": "1.0.0"
+}

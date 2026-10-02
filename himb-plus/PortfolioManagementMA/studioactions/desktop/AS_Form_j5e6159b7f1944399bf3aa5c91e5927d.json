@@ -1,0 +1,23 @@
+{
+    "AS_Form_j5e6159b7f1944399bf3aa5c91e5927d": {
+        "id": "AS_Form_j5e6159b7f1944399bf3aa5c91e5927d",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmMyStrategyAcknowledgement",
+            "type": "forms",
+            "platform": "",
+            "KUID": "e85b8b5e62e64f78a4c979a5a99b8749"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_fbc20c87ca8748fba4c0df35ff6e4c12",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.init();",
+            "parentId": null
+        }]
+    }
+}

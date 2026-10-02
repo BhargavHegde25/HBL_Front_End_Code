@@ -1,0 +1,101 @@
+{
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "25dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "83dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s4554df0b23a4035958ca4e00a77cbba",
+    "_top_": {
+        "type": "string",
+        "value": "26.60%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "97%"
+    },
+    "accessibilityconfig": {
+        "a11yARIA": {
+            "tabindex": -1
+        }
+    },
+    "allboxes": [],
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "number",
+        "value": ""
+    },
+    "children": [
+        "btnLocateUs",
+        "flxVBar1",
+        "btnContactUs",
+        "flxVBar2",
+        "btnPrivacy",
+        "flxVBar3",
+        "btnTermsAndConditions",
+        "flxVBar4",
+        "btnFaqs",
+        "flxVBar5",
+        "btnExchangeRate",
+        "flxVBar6",
+        "btnDepositIntrest",
+        "flxVBar7",
+        "btnLoanIntrest"
+    ],
+    "clipbounds": false,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "flxFooterMenu",
+    "info": null,
+    "isvisible": true,
+    "kuid": "e6b5bc6faf00428680c4dedfe25a0b9a",
+    "layouttype": 3,
+    "name": "kony.ui.FlexContainer",
+    "parent": "customfooter",
+    "pf": "userwidgetmodel",
+    "responsiveData": {
+        "b1": {},
+        "b2": {},
+        "b3": {
+            "centerX": {
+                "type": "string",
+                "value": "50%"
+            },
+            "height": {
+                "type": "string",
+                "value": "300dp"
+            },
+            "layoutType": 2,
+            "width": {
+                "type": "string",
+                "value": "30%"
+            }
+        },
+        "b4": {}
+    },
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "vizProps": {
+        "lock": true
+    },
+    "wType": "FlexContainer",
+    "widgetalignment": 1,
+    "zindex": 1
+}

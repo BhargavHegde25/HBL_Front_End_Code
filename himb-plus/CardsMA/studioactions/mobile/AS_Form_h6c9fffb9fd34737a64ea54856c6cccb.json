@@ -1,0 +1,23 @@
+{
+    "AS_Form_h6c9fffb9fd34737a64ea54856c6cccb": {
+        "id": "AS_Form_h6c9fffb9fd34737a64ea54856c6cccb",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmCardMngNewPin",
+            "type": "forms",
+            "platform": "",
+            "KUID": "cb3d4ae8c89e407b92be666d3d6dd659"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_d7708488de854bbfa67ea25a4d1e5535",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.preShow();",
+            "parentId": null
+        }]
+    }
+}

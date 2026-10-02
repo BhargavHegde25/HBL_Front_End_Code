@@ -1,0 +1,59 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "DNDConfig": null,
+    "_children_": [],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_render_": true,
+    "_skin_": "s24c92fc23b14f5484b693ee9b8a9b35",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 0,
+    "data": {
+        "searchLabel1": "\"{i.i18n.wealth.byKeywordsWithColon}\"",
+        "searchLabel2": "\"{i.i18n.wealth.cashAccountWithColon}\"",
+        "tabOneFields": "{\"One\":{\"value\":\"description\",\"type\":\"text\",\"displayName\":\"{i.i18n.wealth.watchlist.instrument}\",\"default\":\"true\"},\"Two\":{\"value\":\"quantity\",\"type\":\"textAmount\",\"displayName\":\"{i.i18n.wealth.accountActivity.quantity}\",\"default\":\"true\"},\"Three\":{\"value\":\"marketPrice\",\"type\":\"normalAmount\",\"displayName\":\"{i.i18n.wealth.latestPrice}\",\"currency\":\"secCCy\",\"default\":\"true\"},\"Four\":{\"value\":\"costPrice\",\"type\":\"normalAmount\",\"currency\":\"secCCy\",\"displayName\":\"{i.i18n.wealth.averageCost}\",\"default\":\"true\"},\"Five\":{\"value\":\"marketValue\",\"type\":\"normalAmount\",\"currency\":\"referenceCurrency\",\"displayName\":\"{i.i18n.wealth.holdings.marketValue}\",\"default\":\"true\"},\"Six\":{\"value\":\"weightPercentage\",\"type\":\"percentage\",\"displayName\":\"{i.i18n.wealth.holdings.weight}\",\"default\":\"true\"},\"Seven\":{\"value\":\"unrealPLMkt\",\"type\":\"amount\",\"currency\":\"referenceCurrency\",\"displayName\":\"{i.i18n.wealth.sortUnrealizedPL}\",\"default\":\"true\"},\"Eight\":{\"value\":\"assetClass\",\"type\":\"text\",\"displayName\":\"{i.i18n.wealth.assetClass}\",\"default\":\"false\"},\"Nine\":{\"value\":\"subAssetClass\",\"type\":\"text\",\"displayName\":\"{i.i18n.wealth.subAssetClass}\",\"default\":\"false\"},\"Ten\":{\"value\":\"region\",\"type\":\"text\",\"displayName\":\"{i.i18n.wealth.region}\",\"default\":\"false\"},\"Eleven\":{\"value\":\"sector\",\"type\":\"text\",\"displayName\":\"{i.i18n.wealth.sector}\",\"default\":\"false\"},\"Twelve\":{\"value\":\"secCCy\",\"type\":\"text\",\"displayName\":\"{i.i18n.wealth.watchlist.currency}\",\"default\":\"false\"},\"Thirteen\":{\"value\":\"exchangeRate\",\"type\":\"textAmount\",\"displayName\":\"{i.i18n.ForeignExchange.ExchangeRate}\",\"default\":\"false\"},\"Fourteen\":{\"value\":\"marketValPOS\",\"type\":\"normalAmount\",\"currency\":\"secCCy\",\"displayName\":\"{i.i18n.wealth.marketValuePosCcy}\",\"default\":\"false\"},\"Fifteen\":{\"value\":\"costValue\",\"type\":\"normalAmount\",\"currency\":\"referenceCurrency\",\"displayName\":\"{i.i18n.wealth.costValue}\",\"default\":\"false\"},\"Sixteen\":{\"value\":\"costExchangeRate\",\"type\":\"normalAmount\",\"currency\":\"referenceCurrency\",\"displayName\":\"{i.i18n.wealth.costExchangeRate}\",\"default\":\"false\"},\"Seventeen\":{\"value\":\"unRealizedPLPercentage\",\"type\":\"colorpercentage\",\"displayName\":\"{i.i18n.wealth.holdings.unrealisedPL}\",\"default\":\"false\"},\"Eighteen\":{\"value\":\"dailyPL\",\"type\":\"amount\",\"currency\":\"secCCy\",\"displayName\":\"{i.i18n.wealth.holdings.dailyPL}\",\"default\":\"false\"},\"Nineteen\":{\"value\":\"dailyPLPercentage\",\"type\":\"colorpercentage\",\"displayName\":\"{i.i18n.wealth.holdings.dailyPLPercent}\",\"default\":\"false\"}}"
+    },
+    "id": "portfolioDetails",
+    "info": null,
+    "iscustomlayout": false,
+    "issegmentchild": false,
+    "isvisible": true,
+    "kuid": "d2a48997c9b64a96b993294645260ef2",
+    "masterType": 1,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "flxComponent",
+    "pf": "frmPortfolioOverview",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "sourceUserWidget": "e7823a112276466eb139a20dcd899d80",
+    "wType": "UserWidgetInstance"
+}

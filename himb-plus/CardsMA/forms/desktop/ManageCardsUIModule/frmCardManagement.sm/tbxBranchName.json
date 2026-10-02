@@ -1,0 +1,79 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizTextBox2",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_i18n_placeholder_": "i18n.HBL.PleaseSelect",
+    "_left_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        1,
+        1,
+        1,
+        1
+    ],
+    "_placeholder_": "Enter Name on Card",
+    "_skin_": "sb7fc2dbf077409e8c9768d0678b148c",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "10dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "accessibilityconfig": {
+        "a11yARIA": {
+            "aria-autocomplete": "none",
+            "aria-labelledby": "lblNameOnCard",
+            "role": "textbox",
+            "tabindex": 0
+        }
+    },
+    "autocapitalize": "none",
+    "autocomplete": false,
+    "autocorrect": false,
+    "autofilter": false,
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerheight": "",
+    "containerheightmode": 1,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "focusskin": "s2faf9c2766d4142ab33d0bf97445ae0",
+    "id": "tbxBranchName",
+    "info": null,
+    "isvisible": true,
+    "keyboardtype": "A",
+    "kuid": "f9e35bc9c3214b778566faf23a5585a9",
+    "maxtextlength": 28,
+    "mode": "A",
+    "name": "kony.ui.TextBox2",
+    "paddingLocked": true,
+    "paddinginpixel": false,
+    "parent": "flxBranchtextBox",
+    "pf": "frmCardManagement",
+    "placeholderi18n": "i18n.HBL.PleaseSelect",
+    "responsiveData": {
+        "b4": {}
+    },
+    "securetextentry": false,
+    "textinputmode": "A",
+    "viewtype": "default",
+    "wType": "TextField",
+    "zindex": 1
+}

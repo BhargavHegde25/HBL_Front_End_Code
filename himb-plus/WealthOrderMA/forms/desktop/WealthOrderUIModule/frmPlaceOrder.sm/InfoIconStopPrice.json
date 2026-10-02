@@ -1,0 +1,359 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "DNDConfig": null,
+    "_children_": [],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s24c92fc23b14f5484b693ee9b8a9b35",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "android": {},
+    "androidwearos": {},
+    "areflexpropsreferenced": false,
+    "autogrowmode": 1,
+    "canUpdateUI": true,
+    "clipbounds": true,
+    "containerweight": 0,
+    "dataDiffs": {
+        "InfoIconOrderType": {
+            "__events__": {},
+            "__info__": {
+                "isRoot": true,
+                "kuid": "cd711c65f65f4972b0a7a740a444163d",
+                "srcKUID": "uf214d5e7aa042d1a5f00be658939a9b",
+                "wType": "FlexContainer"
+            },
+            "responsiveData": {},
+            "width": {
+                "Default": {
+                    "type": "ref",
+                    "value": "preferred"
+                }
+            }
+        },
+        "RichTextMarket": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "i5a255bf4e4c447fb887b614292e2a47",
+                "srcKUID": "u3331e18d3ae4fc7aab28435198af0fd",
+                "wType": "RichText"
+            },
+            "i18n_text": "i18n.wealth.stopLossText",
+            "responsiveData": {},
+            "text": "An order to buy or sell that becomes active only after the specified Stop Price has been reached at which point the order is immediately converted to a market order."
+        },
+        "flxCross": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "gdfbf0806fc14cbf8ffa6cc077dd516c",
+                "srcKUID": "u5b747e669274cf5b6725a9328be86c8",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxLimit": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "f298eec3aec8474f9947e9f752bb3197",
+                "srcKUID": "u1563fd79bd84d33955e3c2a8f10faca",
+                "wType": "FlexContainer"
+            },
+            "autogrowMode": {
+                "Default": 0
+            },
+            "height": {
+                "Default": {
+                    "type": "string",
+                    "value": "20dp"
+                }
+            },
+            "isVisible": false,
+            "responsiveData": {}
+        },
+        "flxMarketTitle": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "c23dbe2598844090940c32f48978c4cf",
+                "srcKUID": "u1ef0ceccd9c405a929e791c310d0bc2",
+                "wType": "FlexContainer"
+            },
+            "autogrowMode": {
+                "Default": 0
+            },
+            "height": {
+                "Default": {
+                    "type": "string",
+                    "value": "20dp"
+                }
+            },
+            "isVisible": false,
+            "responsiveData": {}
+        },
+        "flxOrderType": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "h552271b422e482a90751f00a1145267",
+                "srcKUID": "ua54ccead8804218ad3ce74f51c7d61c",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxOrderTypeText": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "j27bfd5441fe457d9a30e543e5c0312b",
+                "srcKUID": "u41a93444536400db62599d17e8ba33c",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxStopLimit": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "c59b33ca5bec44cfb79e3734942b268f",
+                "srcKUID": "u6785dab8c3d4392aa1abb30d4895b98",
+                "wType": "FlexContainer"
+            },
+            "isVisible": false,
+            "responsiveData": {}
+        },
+        "flxStopLoss": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "e56f2ae7e94a4de4a6753a7dc51f5246",
+                "srcKUID": "u06ab573d9164e3f955a5db21a9402e3",
+                "wType": "FlexContainer"
+            },
+            "isVisible": false,
+            "responsiveData": {}
+        },
+        "flxTypes": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "e5527549791f46cc93f54075d06fc370",
+                "srcKUID": "u560f2a9131845659e5060c51f836929",
+                "wType": "FlexContainer"
+            }
+        },
+        "imgCross": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "d9bf03372bd349d28755f38da999a898",
+                "srcKUID": "u8a57d2d8ac34ff0bd0d12ca78f48e26",
+                "wType": "Image"
+            },
+            "src": "bbcloseicon.png"
+        },
+        "imgLimit": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "dc2f2b3ed2d740f3b71b22aea058da1f",
+                "srcKUID": "uf4c8f5b4f564ccebd61f0a1c78ea95f",
+                "wType": "Image"
+            },
+            "centerY": {
+                "Default": {
+                    "type": "string",
+                    "value": "50%"
+                }
+            },
+            "responsiveData": {},
+            "src": "pageoffdot.png"
+        },
+        "imgMarket": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "fd76e781ac924762869f8bf2be5c513e",
+                "srcKUID": "u24b2babe09f4b05b1e5a3a353cd5b4e",
+                "wType": "Image"
+            },
+            "centerY": {
+                "Default": {
+                    "type": "string",
+                    "value": "50%"
+                }
+            },
+            "responsiveData": {},
+            "src": "pageoffdot.png"
+        },
+        "imgStopLimit": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "a74ebe6de7b5457b915c4560aab6e209",
+                "srcKUID": "u7a0fcc30f1841598a1cf1085e0018fc",
+                "wType": "Image"
+            }
+        },
+        "imgStoploss": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "c57c26cb334f4789bf22846331759a8b",
+                "srcKUID": "u3cd780eb6a443aca4e8c29992404241",
+                "wType": "Image"
+            },
+            "src": "pageoffdot.png"
+        },
+        "imgToolTip": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "b243231bf1644c04abe277e8eb29b004",
+                "srcKUID": "uc9910e7b8a24e2caf56f1d2859c4120",
+                "wType": "Image"
+            },
+            "src": "tool_tip.png"
+        },
+        "lblLimit": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "e065bed47e854607a8fab7247c4450a5",
+                "srcKUID": "u8cd2e3a121746f3b933bce629377973",
+                "wType": "Label"
+            },
+            "centerY": {
+                "Default": {
+                    "type": "string",
+                    "value": "50%"
+                }
+            },
+            "i18n_text": "i18n.wealth.goodTillCanceled",
+            "responsiveData": {},
+            "text": ""
+        },
+        "lblMarket": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "a21e0542ce8148c693da8406ac02578b",
+                "srcKUID": "u5e05114c2cd43a28f8c4a0d89b5ea99",
+                "wType": "Label"
+            },
+            "centerY": {
+                "Default": {
+                    "type": "string",
+                    "value": "50%"
+                }
+            },
+            "i18n_text": "i18n.wealth.dayOrder",
+            "responsiveData": {},
+            "text": ""
+        },
+        "lblOrderType": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "e441e692593b4cfebecb54f1e7b06474",
+                "srcKUID": "u390a35e38b14e3e9375e178368c493d",
+                "wType": "Label"
+            },
+            "i18n_text": "i18n.wealth.orders.stopPrice",
+            "responsiveData": {},
+            "text": "Stop Price"
+        },
+        "lblSeperator": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "dd3c23c2b89f40028933783b84102feb",
+                "srcKUID": "u88ed052baab42129ea3615ba1fe430b",
+                "wType": "Label"
+            }
+        },
+        "lblStopLimit": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "b2df5770bf9248c49ba51a8185927635",
+                "srcKUID": "ub1e50318156433ea1fa9d6299199fc3",
+                "wType": "Label"
+            }
+        },
+        "lblStopLoss": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "gdcc16e2f9eb4993bf899ad8a144de8b",
+                "srcKUID": "u2f9c664762f41b4b5a27ea99caf3b1c",
+                "wType": "Label"
+            }
+        },
+        "richTextLimit": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "c6a49e50fbf94472b5b6115819c04b54",
+                "srcKUID": "u160020ce79e471c838464d82dfe1ab9",
+                "wType": "RichText"
+            },
+            "i18n_text": "i18n.wealth.goodTillCanceledText",
+            "isVisible": false,
+            "responsiveData": {},
+            "text": ""
+        },
+        "richTextStopLimit": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "j1aa36f4fe0843179f43edc9314878f8",
+                "srcKUID": "uf418ca112564544a35e02c047833a66",
+                "wType": "RichText"
+            },
+            "isVisible": false,
+            "responsiveData": {}
+        },
+        "richTextStopLoss": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "c37c80933ff74cd9ba949b4ce393d252",
+                "srcKUID": "u5cf224b3ca04c118c95210ac9f57f09",
+                "wType": "RichText"
+            },
+            "isVisible": false,
+            "responsiveData": {}
+        }
+    },
+    "desktopweb": {},
+    "enablescrolling": true,
+    "id": "InfoIconStopPrice",
+    "info": null,
+    "ipad": {},
+    "iphone": {},
+    "iscustomlayout": false,
+    "isdatareferenced": false,
+    "isvisible": true,
+    "kuid": "cd711c65f65f4972b0a7a740a444163d",
+    "layouttype": 4,
+    "masterType": 0,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "flxInfoStopPrice",
+    "pf": "frmPlaceOrder",
+    "responsiveData": {},
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "sourceUserWidget": "uf214d5e7aa042d1a5f00be658939a9b",
+    "spabb": {},
+    "tabrcandroid": {},
+    "vizProps": {
+        "hidewidgethierarchy": false
+    },
+    "wType": "UserWidgetInstance",
+    "zindex": 1
+}

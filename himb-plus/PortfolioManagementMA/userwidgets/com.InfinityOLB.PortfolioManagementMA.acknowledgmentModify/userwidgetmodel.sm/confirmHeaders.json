@@ -1,0 +1,85 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "DNDConfig": null,
+    "_children_": [],
+    "_height_": {
+        "type": "string",
+        "value": "60dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s576844bc0e148a9a02e6171eac305ac",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "areflexpropsreferenced": false,
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "clipbounds": true,
+    "containerweight": 0,
+    "dataDiffs": {
+        "confirmHeaders": {
+            "__events__": {},
+            "__info__": {
+                "isRoot": true,
+                "kuid": "cc70915227ac4031ba7f8128f0faa39c",
+                "srcKUID": "u62c63adbc064b7ab5f96ede9f5ecd4b",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxHeader": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "f9210e7812e94d509878dd84e08aaf96",
+                "srcKUID": "u9928af62ab643cab59903e1eecf249d",
+                "wType": "FlexContainer"
+            }
+        },
+        "lblHeading": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "e2652d525ac44990b444fa863288ed7d",
+                "srcKUID": "u641191d95fe41fba28f03b9dc09cd71",
+                "wType": "Label"
+            },
+            "i18n_text": "i18n.transfers.Acknowledgement",
+            "responsiveData": {}
+        }
+    },
+    "enablescrolling": true,
+    "id": "confirmHeaders",
+    "info": null,
+    "isdatareferenced": false,
+    "isvisible": true,
+    "kuid": "cc70915227ac4031ba7f8128f0faa39c",
+    "layouttype": 2,
+    "masterType": 0,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "acknowledgmentModify",
+    "pf": "userwidgetmodel",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "sourceUserWidget": "u62c63adbc064b7ab5f96ede9f5ecd4b",
+    "wType": "UserWidgetInstance"
+}

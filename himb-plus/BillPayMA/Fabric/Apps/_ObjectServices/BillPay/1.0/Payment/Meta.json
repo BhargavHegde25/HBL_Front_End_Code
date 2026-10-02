@@ -1,0 +1,17 @@
+{
+  "type" : "svcdriven",
+  "custom" : false,
+  "junction" : false,
+  "customizable" : false,
+  "verbs" : {
+    "createPayment_bulk" : "createPayment_bulkMapping",
+    "createPayment" : "createPaymentMapping",
+    "updatePayment" : "updatePaymentMapping",
+    "updatePayment_delete" : "updatePayment_deleteMapping"
+  },
+  "entityProperties" : {
+    "BatchMode" : "buffer",
+    "backendMeta" : { },
+    "designTimeBackendMeta" : { }
+  }
+}

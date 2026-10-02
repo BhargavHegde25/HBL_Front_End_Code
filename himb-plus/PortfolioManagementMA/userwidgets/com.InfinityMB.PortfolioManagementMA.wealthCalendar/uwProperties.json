@@ -1,0 +1,116 @@
+{
+    "classname": "wealthCalendar",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "ad8e590252ba4283849c17199ea87d86",
+                    "paramList": [],
+                    "propertyKey": "preShow",
+                    "pw": {
+                        "displayName": "preShow",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "h652ac750c4d413796f5850c4de18bda",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "a41b149c080a481db9ec857f06960904",
+                    "paramList": [],
+                    "propertyKey": "updateDateBullets",
+                    "pw": {
+                        "displayName": "updateDateBullets",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "h652ac750c4d413796f5850c4de18bda",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "c6f85e33176f4a39b26bdd5a8f90b155",
+                    "paramList": [],
+                    "propertyKey": "setFirstEnabledDate",
+                    "pw": {
+                        "displayName": "setFirstEnabledDate",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "h652ac750c4d413796f5850c4de18bda",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "ad88f9469d9345618d0ffe2e9da90ac6",
+                    "paramList": [],
+                    "propertyKey": "setLastEnabledDate",
+                    "pw": {
+                        "displayName": "setLastEnabledDate",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "h652ac750c4d413796f5850c4de18bda",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "a3f21589342f4a459b818cdb4e674ad3",
+                    "paramList": [],
+                    "propertyKey": "setSelectedDate",
+                    "pw": {
+                        "displayName": "setSelectedDate",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "h652ac750c4d413796f5850c4de18bda",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "h388201a552d4a1ea8674ce746c69ca0",
+                    "paramList": [],
+                    "propertyKey": "resetCal",
+                    "pw": {
+                        "displayName": "resetCal",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "h652ac750c4d413796f5850c4de18bda",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "e64ec18bfc5b481f9b940fb60e1e82c0",
+                    "paramList": [],
+                    "propertyKey": "setMonthLabelText",
+                    "pw": {
+                        "displayName": "setMonthLabelText",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "h652ac750c4d413796f5850c4de18bda",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfinityMB.PortfolioManagementMA",
+    "version": "1.0.0"
+}

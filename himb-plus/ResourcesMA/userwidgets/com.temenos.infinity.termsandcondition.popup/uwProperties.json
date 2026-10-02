@@ -1,0 +1,246 @@
+{
+    "classname": "popup",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "a57494bb674b459ea8a3bc641156e039",
+                    "paramList": [],
+                    "propertyKey": "hideTerms",
+                    "pw": {
+                        "displayName": "hideTerms",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "u450cdaed03a425b97e0d488ace64c00",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "f4697b645dbf475ba13d22b8e0e7e784",
+                    "paramList": [],
+                    "propertyKey": "showTerms",
+                    "pw": {
+                        "displayName": "showTerms",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "u450cdaed03a425b97e0d488ace64c00",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "f7d3a2e5128f4067814752f3d4b6271f",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "showCallback",
+                    "pw": {
+                        "displayName": "showCallback",
+                        "toolTip": "showCallback",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "u450cdaed03a425b97e0d488ace64c00",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "fb347833709c40638b870ac209e24528",
+                    "paramList": [],
+                    "propertyIndex": 2,
+                    "propertyKey": "setTerms",
+                    "pw": {
+                        "displayName": "setTerms",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "u450cdaed03a425b97e0d488ace64c00",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [],
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "c68247b421834a3e897ae25a02150fe7",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 1,
+                    "propertyKey": "lblHeaderMsg",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "lblHeaderMsg",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblHeaderMsg",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "u32fbf1ff3854eb78907d546520d8e70"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "db254f8f90694a3e87fb6f28437456c9",
+                    "originalPropertyKey": "src",
+                    "propertyIndex": 2,
+                    "propertyKey": "imgCross",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "widget",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "imgCross",
+                        "isHiddenInTool": false,
+                        "srcWidget": "imgCross",
+                        "type": "string",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "Imagelist",
+                                "dataUpdaterId": "Imagelist",
+                                "popupId": "Imagelist",
+                                "type": "ImageEditBtn"
+                            },
+                            "Label": {}
+                        },
+                        "uiRepresentation": "Label-Label-Button",
+                        "wType": "Image"
+                    },
+                    "srcWgtKUID": "u1d77c6268c74b938e4d796b1dfbea4c"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "e6675437f1364a55b5405f93a9804cae",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 3,
+                    "propertyKey": "lblRichTextMsg",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "lblRichTextMsg",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblRichTextMsg",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textarea",
+                        "wType": "RichText"
+                    },
+                    "srcWgtKUID": "ubc8c40408e44c9ca7953bedd97420ad"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "e392f9a555fb494982cb19db4f885145",
+                    "originalPropertyKey": "src",
+                    "propertyIndex": 4,
+                    "propertyKey": "imgCheckboxIcon",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "widget",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "imgCheckboxIcon",
+                        "isHiddenInTool": false,
+                        "srcWidget": "imgCheckboxIcon",
+                        "type": "string",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "Imagelist",
+                                "dataUpdaterId": "Imagelist",
+                                "popupId": "Imagelist",
+                                "type": "ImageEditBtn"
+                            },
+                            "Label": {}
+                        },
+                        "uiRepresentation": "Label-Label-Button",
+                        "wType": "Image"
+                    },
+                    "srcWgtKUID": "u4f80da8b0474fd895be6db754b7f50a"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "ade988ebc38549978becaf77d2918855",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 5,
+                    "propertyKey": "lblImpMesg",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependencyConditions": {},
+                        "dependentKeysKUIDs": null,
+                        "displayName": "lblImpMesg",
+                        "isHiddenInTool": false,
+                        "srcWidget": "lblImpMesg",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "u2aa6dbe7f244200907cf7f196895167"
+                },
+                {
+                    "access": "Enable",
+                    "defaultSkinKUID": "s7e66ff3426a4c3aac9e2251dede0fad",
+                    "group": "General",
+                    "kuid": "idcd61131a5f43c782ac7f5e58050961",
+                    "originalPropertyKey": "skin",
+                    "propertyIndex": 6,
+                    "propertyKey": "btnDecline",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "skin",
+                        "dependentKeysKUIDs": null,
+                        "displayName": "btnDecline",
+                        "isHiddenInTool": false,
+                        "srcWidget": "btnDecline",
+                        "wType": "Button"
+                    },
+                    "srcWgtKUID": "u05bb8d16d724cbfa31d04c62dbad6ab"
+                },
+                {
+                    "access": "Enable",
+                    "defaultSkinKUID": "s53f6d735c2146ee83c4f34cad5ba1e6",
+                    "group": "General",
+                    "kuid": "e60498ef25ab4e03819b9cbda894222c",
+                    "originalPropertyKey": "skin",
+                    "propertyIndex": 7,
+                    "propertyKey": "btnAccept",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "skin",
+                        "dependentKeysKUIDs": null,
+                        "displayName": "btnAccept",
+                        "isHiddenInTool": false,
+                        "srcWidget": "btnAccept",
+                        "wType": "Button"
+                    },
+                    "srcWgtKUID": "u5deed55dba04264bc87514a6e0b3284"
+                }
+            ]
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.temenos.infinity.termsandcondition",
+    "version": "1.0.0"
+}

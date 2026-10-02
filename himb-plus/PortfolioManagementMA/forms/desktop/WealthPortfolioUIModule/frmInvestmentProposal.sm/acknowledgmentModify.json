@@ -1,0 +1,200 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "DNDConfig": null,
+    "_children_": [],
+    "_height_": {
+        "type": "string",
+        "value": "410dp"
+    },
+    "_left_": "0dp",
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "sf052fd82d224fc1a020a88977067dd5",
+    "_top_": "0dp",
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "areflexpropsreferenced": false,
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "clipbounds": true,
+    "containerweight": 0,
+    "dataDiffs": {
+        "ImgAcknowledged": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "h93fc5bb8fe9482d8ec6c750e34c673d",
+                "srcKUID": "u76512f902d2434eab9b6d4a3d6fcff6",
+                "wType": "Image"
+            },
+            "height": {
+                "Default": {
+                    "type": "string",
+                    "value": "80dp"
+                }
+            },
+            "responsiveData": {},
+            "src": "success_icon.png",
+            "top": {
+                "Default": {
+                    "type": "string",
+                    "value": "140dp"
+                }
+            },
+            "width": {
+                "Default": {
+                    "type": "string",
+                    "value": "80dp"
+                }
+            }
+        },
+        "acknowledgmentModify": {
+            "__events__": {},
+            "__info__": {
+                "isRoot": true,
+                "kuid": "f67eede59960482ea4778d2769c4ce05",
+                "srcKUID": "uc754cc239e143c8835e9c4b4c8f1876",
+                "wType": "FlexContainer"
+            }
+        },
+        "btnModifyTransfer": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "c29635881afe482da1920d49c3a6f111",
+                "srcKUID": "u6714d28328b4faca8b983a178654156",
+                "wType": "Button"
+            },
+            "isVisible": false,
+            "responsiveData": {}
+        },
+        "confirmHeaders": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "if678f1b09a447de897353b215475977",
+                "srcKUID": "cc70915227ac4031ba7f8128f0faa39c",
+                "wType": "UserWidgetInstance"
+            }
+        },
+        "confirmHeaders.flxHeader": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "fe8325f80e674132afe1348754789690",
+                "srcKUID": "f9210e7812e94d509878dd84e08aaf96",
+                "wType": "FlexContainer"
+            }
+        },
+        "confirmHeaders.lblHeading": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "bce0181a11354a94a00fe1acafd77fa8",
+                "srcKUID": "e2652d525ac44990b444fa863288ed7d",
+                "wType": "Label"
+            },
+            "i18n_text": "i18n.wealth.acknowledgement",
+            "responsiveData": {}
+        },
+        "flxBalance": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "e6c4172c22aa44b4a357e6470018d2bc",
+                "srcKUID": "uf6d4d0183914d77905407357449f07f",
+                "wType": "FlexContainer"
+            },
+            "isVisible": false,
+            "responsiveData": {}
+        },
+        "flxSep": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "ee6962bfa23942f183df657974e5c6f5",
+                "srcKUID": "ua372de269f14239af4423b121b23a0d",
+                "wType": "FlexContainer"
+            }
+        },
+        "lblBalance": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "e50bdea9a5fc4ad49182056c6d966802",
+                "srcKUID": "ua3dbae2b8624df482e56f900e6ab5a6",
+                "wType": "Label"
+            }
+        },
+        "lblBalanceValue": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "jc42961db96342d9ba8594597a853c1b",
+                "srcKUID": "u09f75d7e22f4cc284da009ba26e5889",
+                "wType": "Label"
+            }
+        },
+        "lblRefrenceNumber": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "fac871e51782497894c771c369f5e028",
+                "srcKUID": "u69c676d1b9a47d3adf2c5568e8d9ec6",
+                "wType": "Label"
+            },
+            "isVisible": false,
+            "responsiveData": {}
+        },
+        "lblRefrenceNumberValue": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "gcf84e3adedd4f6985ade7147e4bc0da",
+                "srcKUID": "uf5c84b3871a4f09971f5b01b91bb3ff",
+                "wType": "Label"
+            },
+            "isVisible": false,
+            "responsiveData": {}
+        },
+        "lblTransactionDate": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "j021efc38c7a4e6da2e8f4d0340d9ddf",
+                "srcKUID": "ud0d813fe5c9473aa16489ad5a6fa24a",
+                "wType": "Label"
+            },
+            "isVisible": false,
+            "responsiveData": {}
+        },
+        "lblTransactionMessage": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "d905d065480f470db2fd02a61a34acac",
+                "srcKUID": "u9ee2c72bbc045ed860fbf282deb68e5",
+                "wType": "Label"
+            },
+            "i18n_text": "i18n.wealth.thankYouAck",
+            "responsiveData": {},
+            "text": ""
+        }
+    },
+    "enablescrolling": true,
+    "id": "acknowledgmentModify",
+    "info": null,
+    "isdatareferenced": false,
+    "isvisible": true,
+    "kuid": "f67eede59960482ea4778d2769c4ce05",
+    "layouttype": 2,
+    "masterType": 0,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "flxAck",
+    "pf": "frmInvestmentProposal",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "sourceUserWidget": "uc754cc239e143c8835e9c4b4c8f1876",
+    "wType": "UserWidgetInstance"
+}

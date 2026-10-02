@@ -1,0 +1,56 @@
+body {
+  overflow: hidden; /* Hide scrollbars */
+}
+
+#WealthRiskAnalysisGraph .ct-series .ct-bar {
+			stroke-width: 30;
+			stroke:#3645A7;
+		}
+
+		#WealthRiskAnalysisGraph .ct-chart-bar {
+			overflow: visible;
+			margin : 0 0 30px 0;
+		}
+
+		#WealthRiskAnalysisGraph .ct-grid{ 
+			stroke: grey;
+		}
+		
+		#WealthRiskAnalysisGraph svg {
+	width: 90% !important;
+	left:40px;
+	position:absolute;
+}
+
+		#WealthRiskAnalysisGraph .chart-box { 
+			min-height :300px; 
+			min-width: 500px;
+		}
+		
+#WealthRiskAnalysisGraph .ct-vertical {
+    stroke-dasharray: 0px !important;
+    stroke: #E2E9F0 ;	
+	  
+}
+        
+		#WealthRiskAnalysisGraph .ct-vertical~.ct-vertical{
+			display: none;
+		}
+		
+		#WealthRiskAnalysisGraph .ct-horizontal {
+			stroke-dasharray : 0px;
+			stroke: #E2E9F0 ;
+		}
+		
+		#WealthRiskAnalysisGraph .ct-chart {
+			position: fixed;
+			width: 100%;
+			overflow-x : hidden !important;
+			overflow-y : hidden !important;
+		}
+		
+		#WealthRiskAnalysisGraph .ct-label, #WealthAllocationCheckChart .ct-barlabel {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #424242;
+    font-size: 13px;
+}

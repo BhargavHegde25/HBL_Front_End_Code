@@ -1,0 +1,1858 @@
+{
+    "classname": "instrumentDetails",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "ic994aaf3b6e47c1a154783d5c98b6d0",
+                    "paramList": [
+                        {
+                            "name": "data"
+                        },
+                        {
+                            "name": "instruObj"
+                        }
+                    ],
+                    "propertyKey": "setInstrumentDetails",
+                    "pw": {
+                        "displayName": "setInstrumentDetails",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "jd12393805a5416d923b7178f0775a0b",
+                    "paramList": [
+                        {
+                            "name": "dataObj"
+                        }
+                    ],
+                    "propertyKey": "setFeaturesAndPermissions",
+                    "pw": {
+                        "displayName": "setFeaturesAndPermissions",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "h8f52d57a25c4c4f93cf247f336c44da",
+                    "paramList": [
+                        {
+                            "name": "width"
+                        }
+                    ],
+                    "propertyKey": "onBreakPointChangeComponent",
+                    "pw": {
+                        "displayName": "onBreakPointChangeComponent",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "ab137d2765e74e78b622d0e1dceb1aa2",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "onClickBuy",
+                    "pw": {
+                        "displayName": "onClickBuy",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "j632170be054477baa1994a86e86c1f5",
+                    "paramList": [],
+                    "propertyIndex": 2,
+                    "propertyKey": "onClickSell",
+                    "pw": {
+                        "displayName": "onClickSell",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "j38c0f699b1d4cd48df28eae67b93a7a",
+                    "paramList": [],
+                    "propertyIndex": 3,
+                    "propertyKey": "requestStart",
+                    "pw": {
+                        "displayName": "requestStart",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "b9f3f352e1f544cca14e1ec38c1e88b6",
+                    "paramList": [],
+                    "propertyIndex": 4,
+                    "propertyKey": "requestEnd",
+                    "pw": {
+                        "displayName": "requestEnd",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "cc7ed5ec0515480ab9ee78967e5fe03b",
+                    "paramList": [],
+                    "propertyIndex": 5,
+                    "propertyKey": "setProductDetailsData",
+                    "pw": {
+                        "displayName": "setProductDetailsData",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "acc6a0fc4a7646aeb3f41c51625c41df",
+                    "paramList": [],
+                    "propertyIndex": 6,
+                    "propertyKey": "setInstrumentDetailsData",
+                    "pw": {
+                        "displayName": "setInstrumentDetailsData",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "d723250b172449ce8caf65601649b3de",
+                    "paramList": [],
+                    "propertyIndex": 7,
+                    "propertyKey": "onClickViewTransactions",
+                    "pw": {
+                        "displayName": "onClickViewTransactions",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "j0978bb48e3f4942a9525bfa843a9da8",
+                    "paramList": [
+                        {
+                            "name": "data"
+                        }
+                    ],
+                    "propertyIndex": 8,
+                    "propertyKey": "setInstrumentsData",
+                    "pw": {
+                        "displayName": "setInstrumentsData",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [
+                "Instrument Details Service",
+                "Holdings Details Service",
+                "Historical Data Service",
+                "Get Favorite Instrument",
+                "Update Favorite Instrument",
+                "Entitlements",
+                "Asset Types",
+                "Skins"
+            ],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "WealthObjects",
+                    "group": "Instrument Details Service",
+                    "kuid": "aeed90a1f27b45e4a5f8030c6f1eaee5",
+                    "originalPropertyKey": "instrumentObjectService",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 1,
+                    "propertyKey": "instrumentObjectService",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Obj Service",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "WealthObjects",
+                    "group": "Holdings Details Service",
+                    "kuid": "bb3bddf0595446d2b4cf2f590c5472c2",
+                    "originalPropertyKey": "holdingsObjectService",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 1,
+                    "propertyKey": "holdingsObjectService",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Obj Service",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "WealthObjects",
+                    "group": "Historical Data Service",
+                    "kuid": "jfe02dde38f14c8ba0c585adca55f1e4",
+                    "originalPropertyKey": "historyDataObjectService",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 1,
+                    "propertyKey": "historyDataObjectService",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Obj Service",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "WealthObjects",
+                    "group": "Get Favorite Instrument",
+                    "kuid": "h8bb234d4d4e45e7b897246f0c18b49d",
+                    "originalPropertyKey": "getFavObjectService",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 1,
+                    "propertyKey": "getFavObjectService",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Obj Service",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "WealthObjects",
+                    "group": "Update Favorite Instrument",
+                    "kuid": "e371cdc821ce4751999d7add03eb8bfe",
+                    "originalPropertyKey": "updateFavObjectService",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 1,
+                    "propertyKey": "updateFavObjectService",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Obj Service",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"entitlement_keys\":[\"WEALTH_PRODUCT_DETAILS_INSTRUMENT_VIEW&&WEALTH_PRODUCT_DETAILS\"]}",
+                    "group": "Entitlements",
+                    "kuid": "e97e76d1fb814a2d97f39d78f19fd46c",
+                    "originalPropertyKey": "instrumentEntitlement",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 1,
+                    "propertyKey": "instrumentEntitlement",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Instrument Details",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{ \"displayName\":\"Sector:\", \"fieldName\":\"sector\",\"type\":\"String\"}",
+                    "group": "Asset Types",
+                    "kuid": "b545eefe12c64ee7ba6a87391fe6f8ba",
+                    "originalPropertyKey": "assetTypeField1",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 1,
+                    "propertyKey": "assetTypeField1",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 1",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknIW2F8523",
+                    "group": "Skins",
+                    "kuid": "be49cfbba2094a09a682240634c3e729",
+                    "originalPropertyKey": "positiveSkin",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 1,
+                    "propertyKey": "positiveSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Positive Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "ProductDetails",
+                    "group": "Instrument Details Service",
+                    "kuid": "c7268c87b7574acba65436e1041d93b0",
+                    "originalPropertyKey": "instrumentObjectName",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 2,
+                    "propertyKey": "instrumentObjectName",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Obj Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "getPortfolioHoldings",
+                    "group": "Holdings Details Service",
+                    "kuid": "b23e4fc2320743bd8764c6cb7d733c31",
+                    "originalPropertyKey": "holdingsOperation",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 2,
+                    "propertyKey": "holdingsOperation",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Operation",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "CurrencyDetails",
+                    "group": "Historical Data Service",
+                    "kuid": "ce2b9ee9d14e4fb4b7eb564a9ebf9e0f",
+                    "originalPropertyKey": "historyDataObjectName",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 2,
+                    "propertyKey": "historyDataObjectName",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Obj Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Watchlist",
+                    "group": "Get Favorite Instrument",
+                    "kuid": "f0d71951b9ad45f4bca8f210ba9c1618",
+                    "originalPropertyKey": "getFavObjectName",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 2,
+                    "propertyKey": "getFavObjectName",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Obj Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Watchlist",
+                    "group": "Update Favorite Instrument",
+                    "kuid": "h85d9dae71ad453fa29f2b0b718f6237",
+                    "originalPropertyKey": "updateFavObjectName",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 2,
+                    "propertyKey": "updateFavObjectName",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Obj Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"entitlement_keys\":[\"WEALTH_PRODUCT_DETAILS_CURRENT_POSITION_VIEW&&WEALTH_PRODUCT_DETAILS\"]}",
+                    "group": "Entitlements",
+                    "kuid": "be38f4f9788a4c69b9908c636ccb1ac7",
+                    "originalPropertyKey": "currentPositionEntitlement",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 2,
+                    "propertyKey": "currentPositionEntitlement",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Current Position",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{ \"displayName\":\"Region:\", \"fieldName\":\"region\",\"type\":\"String\"}",
+                    "group": "Asset Types",
+                    "kuid": "a864bde0a05446a3af70c1d09292090a",
+                    "originalPropertyKey": "assetTypeField2",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 2,
+                    "propertyKey": "assetTypeField2",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 2",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknlblff000015px",
+                    "group": "Skins",
+                    "kuid": "da300fcc4fe74fe09a6688122164f5f0",
+                    "originalPropertyKey": "negativeSkin",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 2,
+                    "propertyKey": "negativeSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Negative Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "getProductDetailsFromId",
+                    "group": "Instrument Details Service",
+                    "kuid": "hbdf3e4689364e5a8d2dbdce653a0b5d",
+                    "originalPropertyKey": "instrumentOperation",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 3,
+                    "propertyKey": "instrumentOperation",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Operation",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "Portfolio",
+                    "group": "Holdings Details Service",
+                    "kuid": "d6ce1fd8737d44789ffc400c8fe3644c",
+                    "originalPropertyKey": "holdingsObjectName",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 3,
+                    "propertyKey": "holdingsObjectName",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Obj Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "getCurrencyGraph",
+                    "group": "Historical Data Service",
+                    "kuid": "fc50cb7492b44f5c81cff1d22bd1f4b9",
+                    "originalPropertyKey": "historyDataOperation",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 3,
+                    "propertyKey": "historyDataOperation",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Operation",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "getWatchlistDB",
+                    "group": "Get Favorite Instrument",
+                    "kuid": "fae0aa60fabe41f6ae62dc8c2ded0ddc",
+                    "originalPropertyKey": "getFavOperation",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 3,
+                    "propertyKey": "getFavOperation",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Operation",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "updateWatchlistDB",
+                    "group": "Update Favorite Instrument",
+                    "kuid": "be53ed59013c4c26849d3ff5976d9e0f",
+                    "originalPropertyKey": "updateFavOperation",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 3,
+                    "propertyKey": "updateFavOperation",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Operation",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"entitlement_keys\":[\"WEALTH_PRODUCT_DETAILS_PRICING_DATA_VIEW&&WEALTH_PRODUCT_DETAILS\"]}",
+                    "group": "Entitlements",
+                    "kuid": "a4a7be8ea3d249ddb32d679f1c89c728",
+                    "originalPropertyKey": "pricingDataEntitlement",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 3,
+                    "propertyKey": "pricingDataEntitlement",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Pricing Data",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{ \"displayName\":\"Country:\", \"fieldName\":\"country\",\"type\":\"String\"}",
+                    "group": "Asset Types",
+                    "kuid": "j3e1a39baae343c18bac34190265d60b",
+                    "originalPropertyKey": "assetTypeField3",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 3,
+                    "propertyKey": "assetTypeField3",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 3",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "bbSknLbl424242SSP17Px",
+                    "group": "Skins",
+                    "kuid": "if2462971fce4fcb90be68375b45b042",
+                    "originalPropertyKey": "neutralSkin",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 3,
+                    "propertyKey": "neutralSkin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Normal Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"ISINCode\":\"{$.c.ISINCode}\",\"RICCode\":\"{$.c.RICCode}\",\"instrumentId\":\"{$.c.instrumentId}\"}",
+                    "group": "Instrument Details Service",
+                    "kuid": "ded986ea36204a99bd4597ff66bda8a7",
+                    "originalPropertyKey": "instrumentCriteria",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 4,
+                    "propertyKey": "instrumentCriteria",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Criteria",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "S2",
+                    "group": "Holdings Details Service",
+                    "kuid": "fc99574eaeb841dc87a58af46f9f1377",
+                    "originalPropertyKey": "holdingsIdentifier",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 4,
+                    "propertyKey": "holdingsIdentifier",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Identifier",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"RICCode\":\"{$.c.RICCode}\",\"dateOrPeriod\":\"{$.c.dateOrPeriod}\"}",
+                    "group": "Historical Data Service",
+                    "kuid": "c1085e0b9df3431a95ed0b72b825e595",
+                    "originalPropertyKey": "historyDataCriteria",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 4,
+                    "propertyKey": "historyDataCriteria",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Criteria",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{}",
+                    "group": "Get Favorite Instrument",
+                    "kuid": "h883823b0d1045bdb53432ef26393885",
+                    "originalPropertyKey": "getFavCriteria",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 4,
+                    "propertyKey": "getFavCriteria",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Criteria",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"operation\":\"{$.c.operation}\",\"RICCode\":\"{$.c.RICCode}\",\"instrumentId\":\"{$.c.instrumentId}\"}",
+                    "group": "Update Favorite Instrument",
+                    "kuid": "a44b7f4f47fe43b9954167265c4db1e3",
+                    "originalPropertyKey": "updateFavCriteria",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 4,
+                    "propertyKey": "updateFavCriteria",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Criteria",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"entitlement_keys\":[\"WEALTH_NEWS_AND_DOCUMENTS_DOCUMENTS_VIEW&&WEALTH_NEWS_AND_DOCUMENTS\"]}",
+                    "group": "Entitlements",
+                    "kuid": "gf60b5f2ba564ff5b3b04072a0b22cf4",
+                    "originalPropertyKey": "documentsEntitlement",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 4,
+                    "propertyKey": "documentsEntitlement",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Documents",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{ \"displayName\":\"Interest Rate:\", \"fieldName\":\"interestRate\",\"type\":\"Percent\"}",
+                    "group": "Asset Types",
+                    "kuid": "af5d8a6841f141bbbd2e019ddac8397e",
+                    "originalPropertyKey": "assetTypeField4",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 4,
+                    "propertyKey": "assetTypeField4",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 4",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "S1",
+                    "group": "Instrument Details Service",
+                    "kuid": "g028e19b3b5845e78d989ffa27ab82e4",
+                    "originalPropertyKey": "instrumentIdentifier",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 5,
+                    "propertyKey": "instrumentIdentifier",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Identifier",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"searchByInstrumentName\":\"{$.c.searchByInstrumentName}\",\"portfolioId\":\"{$.c.portfolioId}\",\"sortBy\":\"{$.c.sortBy}\",\"navPage\":\"{$.c.navPage}\",\"instrumentId\":\"{$.c.instrumentId}\",\"ISINCode\":\"{$.c.ISINCode}\",\"RICCode\":\"{$.c.RICCode}\"}",
+                    "group": "Holdings Details Service",
+                    "kuid": "bdea748df8394ba9aa339dbed92c44c3",
+                    "originalPropertyKey": "holdingsCriteria",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 5,
+                    "propertyKey": "holdingsCriteria",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Criteria",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "S3",
+                    "group": "Historical Data Service",
+                    "kuid": "fb9122154d214967b0dbdc5fae7c55d0",
+                    "originalPropertyKey": "historyDataIdentifier",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 5,
+                    "propertyKey": "historyDataIdentifier",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Identifier",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "S4",
+                    "group": "Get Favorite Instrument",
+                    "kuid": "be7bf049739343e19b2f6cd8f5cb204c",
+                    "originalPropertyKey": "getFavIdentifier",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 5,
+                    "propertyKey": "getFavIdentifier",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Identifier",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "S5",
+                    "group": "Update Favorite Instrument",
+                    "kuid": "f3fc13fda8e94449b13f397925e81d49",
+                    "originalPropertyKey": "updateFavIdentifier",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 5,
+                    "propertyKey": "updateFavIdentifier",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Identifier",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"entitlement_keys\":[\"WEALTH_NEWS_AND_DOCUMENTS_STOCK_NEWS_VIEW&&WEALTH_NEWS_AND_DOCUMENTS\"]}",
+                    "group": "Entitlements",
+                    "kuid": "d56517f168434d21885ce7c69520a39c",
+                    "originalPropertyKey": "stockNewsEntitlement",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 5,
+                    "propertyKey": "stockNewsEntitlement",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Stock News",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{ \"displayName\":\"Contract Type:\", \"fieldName\":\"contractType\",\"type\":\"String\"}",
+                    "group": "Asset Types",
+                    "kuid": "dff26d79cee04f48bf892b833c227b43",
+                    "originalPropertyKey": "assetTypeField5",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 5,
+                    "propertyKey": "assetTypeField5",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 5",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{$.S1.instrumentDetails}",
+                    "group": "Instrument Details Service",
+                    "kuid": "h085fdf11d2345b798c1ffd317c51f11",
+                    "originalPropertyKey": "instrumentResponseArray",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 6,
+                    "propertyKey": "instrumentResponseArray",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Response Array Instrument",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "L2",
+                    "group": "Holdings Details Service",
+                    "kuid": "ieb54234e7424ef9ae2d41ba2e2b670e",
+                    "originalPropertyKey": "holdingsResponseId",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 6,
+                    "propertyKey": "holdingsResponseId",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "ResponseId",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{$.S3.historicalData}",
+                    "group": "Historical Data Service",
+                    "kuid": "d66a2cd0c7c54701b960e1e1aa025707",
+                    "originalPropertyKey": "historyDataResponseArray",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 6,
+                    "propertyKey": "historyDataResponseArray",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Response Array",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{$.S4.favInstrumentCodes}",
+                    "group": "Get Favorite Instrument",
+                    "kuid": "c47f4f3ccb4b4c438838e297afc8ad37",
+                    "originalPropertyKey": "getFavCodesResponseArray",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 6,
+                    "propertyKey": "getFavCodesResponseArray",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Response Array Fav Instrument Codes",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "Update Favorite Instrument",
+                    "kuid": "d998be2776e445eabea48517af9e6751",
+                    "originalPropertyKey": "updateFavResponseArray",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 6,
+                    "propertyKey": "updateFavResponseArray",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Response Array",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"entitlement_keys\":[\"WEALTH_WATCHLIST_INSTRUMENT_CREATE&&WEALTH_WATCHLIST\"]}",
+                    "group": "Entitlements",
+                    "kuid": "bc443505203642158a5a4471eb5293d5",
+                    "originalPropertyKey": "favouriteEntitlement",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 6,
+                    "propertyKey": "favouriteEntitlement",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Favourite",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{ \"displayName\":\"Next Coupon Date:\", \"fieldName\":\"nxtCoupnDate\",\"type\":\"Date\"}",
+                    "group": "Asset Types",
+                    "kuid": "j059e9ddcdbf499c9f4c136ac10e2a28",
+                    "originalPropertyKey": "assetTypeField6",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 6,
+                    "propertyKey": "assetTypeField6",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 6",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "L1",
+                    "group": "Instrument Details Service",
+                    "kuid": "ad8ea80f4e45495fb640244d9d948b02",
+                    "originalPropertyKey": "instrumentResponseId",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 7,
+                    "propertyKey": "instrumentResponseId",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "ResponseId",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{$.S2.portfolioHoldings}",
+                    "group": "Holdings Details Service",
+                    "kuid": "g04f3241fbdf445186f1936195f3945a",
+                    "originalPropertyKey": "holdingsResponseArray",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 7,
+                    "propertyKey": "holdingsResponseArray",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Response Array",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "L3",
+                    "group": "Historical Data Service",
+                    "kuid": "c9bdbaff4c0246f185965f5a44a1cdc4",
+                    "originalPropertyKey": "historyDataResponseId",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 7,
+                    "propertyKey": "historyDataResponseId",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "ResponseId",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "L4",
+                    "group": "Get Favorite Instrument",
+                    "kuid": "bbec8afbe0a54330a8d199da4706f986",
+                    "originalPropertyKey": "getFavResponseId",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 7,
+                    "propertyKey": "getFavResponseId",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "ResponseId",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "L5",
+                    "group": "Update Favorite Instrument",
+                    "kuid": "g8bc077e1de24be9b0369fa899d7fce6",
+                    "originalPropertyKey": "updateFavResponseId",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 7,
+                    "propertyKey": "updateFavResponseId",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "ResponseId",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"entitlement_keys\":[\"WEALTH_ORDER_MGMT_BUY_ORDER_CREATE&&WEALTH_ORDER_MANAGEMENT\"]}",
+                    "group": "Entitlements",
+                    "kuid": "b1b92a37ef7a409ab8f2231d57049aa7",
+                    "originalPropertyKey": "buyEntitlement",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 7,
+                    "propertyKey": "buyEntitlement",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Buy",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{ \"displayName\":\"Maturity Date:\", \"fieldName\":\"maturityDate\",\"type\":\"Date\"}",
+                    "group": "Asset Types",
+                    "kuid": "d69e0c3f0f754e0a88ca2b1d8f50256b",
+                    "originalPropertyKey": "assetTypeField7",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 7,
+                    "propertyKey": "assetTypeField7",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 7",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{$.S1.documentDetails}",
+                    "group": "Instrument Details Service",
+                    "kuid": "iaa866ad3574495da9f2197228719971",
+                    "originalPropertyKey": "instrumentDocumentsResponseArray",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 8,
+                    "propertyKey": "instrumentDocumentsResponseArray",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Response Array Documents",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"displayName\":\"Market Value:\", \"fieldName\":\"marketValPOS\",\"type\":\"Amount\",\"currency\":\"secCCy\"}",
+                    "group": "Holdings Details Service",
+                    "kuid": "aa7189c89fdb4ed59c2980e28d8dd8c5",
+                    "originalPropertyKey": "holdingsField7",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 8,
+                    "propertyKey": "holdingsField7",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Holdings Field 1",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{$.S4.favInstrumentIds}",
+                    "group": "Get Favorite Instrument",
+                    "kuid": "g04a0d7a95d34ba3b2978fba16f81ce7",
+                    "originalPropertyKey": "getFavIdsResponseArray",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 8,
+                    "propertyKey": "getFavIdsResponseArray",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Response Array Fav Instrument Ids",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"entitlement_keys\":[\"WEALTH_ORDER_MGMT_SELL_ORDER_CREATE&&WEALTH_ORDER_MANAGEMENT\"]}",
+                    "group": "Entitlements",
+                    "kuid": "efc01ff0f6b34f6e971c9f4678f55389",
+                    "originalPropertyKey": "sellEntitlement",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 8,
+                    "propertyKey": "sellEntitlement",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Sell",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{ \"displayName\":\"Duration:\", \"fieldName\":\"duration\",\"type\":\"String\"}",
+                    "group": "Asset Types",
+                    "kuid": "c7d08fa79c1d41139a357843930bf669",
+                    "originalPropertyKey": "assetTypeField8",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 8,
+                    "propertyKey": "assetTypeField8",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 8",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{$.S1.pricingDetails}",
+                    "group": "Instrument Details Service",
+                    "kuid": "ecd6b2a23129495eb57ec2045c96ceb6",
+                    "originalPropertyKey": "instrumentPricingDataResponseArray",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 9,
+                    "propertyKey": "instrumentPricingDataResponseArray",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Response Array Pricing Data",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"displayName\":\"Balance:\", \"fieldName\":\"balance\",\"type\":\"Amount\",\"currency\":\"secCCy\"}",
+                    "group": "Holdings Details Service",
+                    "kuid": "h2ea1e01b0014a11bcb336e78b89234c",
+                    "originalPropertyKey": "holdingsField8",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 9,
+                    "propertyKey": "holdingsField8",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Holdings Field 2",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{ \"displayName\":\"Modified Duration:\", \"fieldName\":\"modifiedDuration\",\"type\":\"String\"}",
+                    "group": "Asset Types",
+                    "kuid": "ac175e3c26d24902b71de7d961c3a097",
+                    "originalPropertyKey": "assetTypeField9",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 9,
+                    "propertyKey": "assetTypeField9",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 9",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{$.S1.instrumentMinimal}",
+                    "group": "Instrument Details Service",
+                    "kuid": "d5668f44cb224c66b1d2e835192d0294",
+                    "originalPropertyKey": "instrumentMinimalResponseArray",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 10,
+                    "propertyKey": "instrumentMinimalResponseArray",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Response Array Instrument Minimal",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"displayName\":\"Unrealized P&L:\", \"fieldName\":\"unrealizedProfitLossSecCcy\",\"type\":\"ColourAmount\",\"currency\":\"secCCy\"}",
+                    "group": "Holdings Details Service",
+                    "kuid": "h03f1806154d4e07b1da06bc3d15439d",
+                    "originalPropertyKey": "holdingsField9",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 10,
+                    "propertyKey": "holdingsField9",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Holdings Field 3",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{ \"displayName\":\"Rating:\", \"fieldName\":\"rating\",\"type\":\"String\"}",
+                    "group": "Asset Types",
+                    "kuid": "j3ce02c74da6478eb76fcdef5d9f7a9c",
+                    "originalPropertyKey": "assetTypeField10",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 10,
+                    "propertyKey": "assetTypeField10",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 10",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"displayName\":\"Nominal:\", \"fieldName\":\"quantity\",\"type\":\"String\"}",
+                    "group": "Holdings Details Service",
+                    "kuid": "a75d0c9e1227405aa27dbd3aeb7b743e",
+                    "originalPropertyKey": "holdingsField10",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 11,
+                    "propertyKey": "holdingsField10",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Holdings Field 4",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{ \"displayName\":\"Issuer:\", \"fieldName\":\"issuer\",\"type\":\"String\"}",
+                    "group": "Asset Types",
+                    "kuid": "f551b0fbb7f140d1b1dd52c60f36406b",
+                    "originalPropertyKey": "assetTypeField11",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 11,
+                    "propertyKey": "assetTypeField11",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 11",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"displayName\":\"Weight%:\", \"fieldName\":\"weightPercentage\",\"type\":\"Percentage\"}",
+                    "group": "Holdings Details Service",
+                    "kuid": "jcc35a0fc6774954ae262dc5c6d2e076",
+                    "originalPropertyKey": "holdingsField11",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 12,
+                    "propertyKey": "holdingsField11",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Holdings Field 5",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{ \"displayName\":\"Type:\", \"fieldName\":\"type\",\"type\":\"String\"}",
+                    "group": "Asset Types",
+                    "kuid": "if6b0713d30249258e90d7f49afa4f56",
+                    "originalPropertyKey": "assetTypeField12",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 12,
+                    "propertyKey": "assetTypeField12",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 12",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{ \"displayName\":\"Bid:\", \"fieldName\":\"bidRate\",\"type\":\"Amount\",\"currency\":\"referenceCurrency\"}",
+                    "group": "Instrument Details Service",
+                    "kuid": "ifffa1f17c8e4f82838c6b44c31b2b68",
+                    "originalPropertyKey": "instrumentField21",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 13,
+                    "propertyKey": "instrumentField21",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Pricing Data Field 1",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{ \"displayName\":\"Underlying:\", \"fieldName\":\"underlying\",\"type\":\"String\"}",
+                    "group": "Asset Types",
+                    "kuid": "afff5fca3cb84accba00d17b1830973f",
+                    "originalPropertyKey": "assetTypeField13",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 13,
+                    "propertyKey": "assetTypeField13",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 13",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"displayName\":\"Average Cost:\", \"fieldName\":\"costPrice\",\"type\":\"Amount\",\"currency\":\"secCCy\"}",
+                    "group": "Holdings Details Service",
+                    "kuid": "gef844d3365049eb9bb3a1c75089307c",
+                    "originalPropertyKey": "holdingsField12",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 13,
+                    "propertyKey": "holdingsField12",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Holdings Field 6",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{ \"displayName\":\"Bid Vol:\", \"fieldName\":\"bidVolume\",\"type\":\"String\"}",
+                    "group": "Instrument Details Service",
+                    "kuid": "c101b83c53d74ab981032314f981837c",
+                    "originalPropertyKey": "instrumentField22",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 14,
+                    "propertyKey": "instrumentField22",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Pricing Data Field 2",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{ \"displayName\":\"Contract Size:\", \"fieldName\":\"contractSize\",\"type\":\"String\"}",
+                    "group": "Asset Types",
+                    "kuid": "f2402a8895f84242bd52713bf9d3a3fe",
+                    "originalPropertyKey": "assetTypeField14",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 14,
+                    "propertyKey": "assetTypeField14",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 14",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"displayName\":\"Accrued Interest:\", \"fieldName\":\"accruedInterest\",\"type\":\"Amount\",\"currency\":\"secCCy\"}",
+                    "group": "Holdings Details Service",
+                    "kuid": "a6b0c1264e4f4ca3a7506f4bee83fa32",
+                    "originalPropertyKey": "holdingsField13",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 14,
+                    "propertyKey": "holdingsField13",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Holdings Field 7",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{ \"displayName\":\"Ask:\", \"fieldName\":\"askRate\",\"type\":\"Amount\",\"currency\":\"referenceCurrency\"}",
+                    "group": "Instrument Details Service",
+                    "kuid": "c7ab10a1639d41c5a10d2fe8824cc7cc",
+                    "originalPropertyKey": "instrumentField23",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 15,
+                    "propertyKey": "instrumentField23",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Pricing Data Field 3",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{ \"displayName\":\"Strike Price:\", \"fieldName\":\"strikePrice\",\"type\":\"Amount\",\"currency\":\"referenceCurrency\"}",
+                    "group": "Asset Types",
+                    "kuid": "jaaff5fde6bf4fcc846e53ec5a7cccea",
+                    "originalPropertyKey": "assetTypeField15",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 15,
+                    "propertyKey": "assetTypeField15",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 15",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"displayName\":\"Amount Bought:\", \"fieldName\":\"amountBought\",\"type\":\"Amount\",\"currency\":\"secCCy\"}",
+                    "group": "Holdings Details Service",
+                    "kuid": "c86b39053de649f0bda4924fa342e978",
+                    "originalPropertyKey": "holdingsField14",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 15,
+                    "propertyKey": "holdingsField14",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Holdings Field 8",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{ \"displayName\":\"Ask Vol:\", \"fieldName\":\"askVolume\",\"type\":\"String\"}",
+                    "group": "Instrument Details Service",
+                    "kuid": "jb1d04933aa943edaf756c393e3c28a5",
+                    "originalPropertyKey": "instrumentField24",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 16,
+                    "propertyKey": "instrumentField24",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Pricing Data Field 4",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{ \"displayName\":\"Expiry Date:\", \"fieldName\":\"expiryDate\",\"type\":\"Date\"}",
+                    "group": "Asset Types",
+                    "kuid": "c84a44cde5ff486fb43462a1018583b0",
+                    "originalPropertyKey": "assetTypeField16",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 16,
+                    "propertyKey": "assetTypeField16",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 16",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"displayName\":\"Amount Sold:\", \"fieldName\":\"amountSold\",\"type\":\"Amount\",\"currency\":\"secCCy\"}",
+                    "group": "Holdings Details Service",
+                    "kuid": "d25783f4908443d49d67c5fdc4560a8c",
+                    "originalPropertyKey": "holdingsField15",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 16,
+                    "propertyKey": "holdingsField15",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Holdings Field 9",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{ \"displayName\":\"Volume:\", \"fieldName\":\"volume\",\"type\":\"String\"}",
+                    "group": "Instrument Details Service",
+                    "kuid": "d13d19f1b0eb490287de0588e3a62cc8",
+                    "originalPropertyKey": "instrumentField25",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 17,
+                    "propertyKey": "instrumentField25",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Pricing Data Field 5",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{ \"displayName\":\"Option Class:\", \"fieldName\":\"optionClass\",\"type\":\"String\"}",
+                    "group": "Asset Types",
+                    "kuid": "c5cc71c7bece4da78c9db67c61fbac06",
+                    "originalPropertyKey": "assetTypeField17",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 17,
+                    "propertyKey": "assetTypeField17",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 17",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"displayName\":\"Quote:\", \"fieldName\":\"quote\",\"type\":\"Amount\",\"currency\":\"secCCy\"}",
+                    "group": "Holdings Details Service",
+                    "kuid": "d317a3dd9c614ec8b54fb282e361b31c",
+                    "originalPropertyKey": "holdingsField16",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 17,
+                    "propertyKey": "holdingsField16",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Holdings Field 10",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{ \"displayName\":\"Open:\", \"fieldName\":\"openRate\",\"type\":\"Amount\",\"currency\":\"referenceCurrency\"}",
+                    "group": "Instrument Details Service",
+                    "kuid": "cf515d78d47c4e659fbc34c21e448610",
+                    "originalPropertyKey": "instrumentField26",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 18,
+                    "propertyKey": "instrumentField26",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Pricing Data Field 6",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{ \"displayName\":\"Option Style:\", \"fieldName\":\"optionStyle\",\"type\":\"Date\"}",
+                    "group": "Asset Types",
+                    "kuid": "f17f1daf05ae4b4d85f13c22e7f53233",
+                    "originalPropertyKey": "assetTypeField18",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 18,
+                    "propertyKey": "assetTypeField18",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 18",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"displayName\":\"Cost Quote:\", \"fieldName\":\"costQuote\",\"type\":\"Amount\",\"currency\":\"secCCy\"}",
+                    "group": "Holdings Details Service",
+                    "kuid": "f6eeb051091e4ab980d952971435ab97",
+                    "originalPropertyKey": "holdingsField17",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 18,
+                    "propertyKey": "holdingsField17",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Holdings Field 11",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{ \"displayName\":\"Close:\", \"fieldName\":\"closeRate\",\"type\":\"Amount\",\"currency\":\"referenceCurrency\"}",
+                    "group": "Instrument Details Service",
+                    "kuid": "a81530ce6c174949b4359cad99153aca",
+                    "originalPropertyKey": "instrumentField27",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 19,
+                    "propertyKey": "instrumentField27",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Pricing Data Field 7",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"displayName\":\"Counterpart Amount:\", \"fieldName\":\"counterpartAmount\",\"type\":\"Amount\",\"currency\":\"secCCy\"}",
+                    "group": "Holdings Details Service",
+                    "kuid": "g001d572e0db475aaa02458cafd75192",
+                    "originalPropertyKey": "holdingsField18",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 19,
+                    "propertyKey": "holdingsField18",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Holdings Field 12",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"displayName\":\"Yield to Maturity:\", \"fieldName\":\"yield\",\"type\":\"Percentage\"}",
+                    "group": "Asset Types",
+                    "kuid": "ia327dad145e404a958c99e0b0d9e2ce",
+                    "originalPropertyKey": "assetTypeField19",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 19,
+                    "propertyKey": "assetTypeField19",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Field 19",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{ \"displayName\":\"52W High:\", \"fieldName\":\"high52W\",\"type\":\"Amount\",\"currency\":\"referenceCurrency\"}",
+                    "group": "Instrument Details Service",
+                    "kuid": "i349e1cb75074a0f8c5b6c8a350b558f",
+                    "originalPropertyKey": "instrumentField28",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 20,
+                    "propertyKey": "instrumentField28",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Pricing Data Field 8",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{ \"displayName\":\"52W Low:\", \"fieldName\":\"low52W\",\"type\":\"Amount\",\"currency\":\"referenceCurrency\"}",
+                    "group": "Instrument Details Service",
+                    "kuid": "ffafe8e7fee04fcb828554335470d6f8",
+                    "originalPropertyKey": "instrumentField29",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 21,
+                    "propertyKey": "instrumentField29",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Pricing Data Field 9",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{ \"displayName\":\"Latest:\", \"fieldName\":\"latestRate\",\"type\":\"Amount\",\"currency\":\"referenceCurrency\"}",
+                    "group": "Instrument Details Service",
+                    "kuid": "f6714e2d49fa49c38ebda981f190ca67",
+                    "originalPropertyKey": "instrumentField30",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 22,
+                    "propertyKey": "instrumentField30",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Pricing Data Field 10",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{$.S1.instrumentAssets}",
+                    "group": "Instrument Details Service",
+                    "kuid": "h64e44079bc8481997de901a57c85fba",
+                    "originalPropertyKey": "instrumentAssetsResponseArray",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 23,
+                    "propertyKey": "instrumentAssetsResponseArray",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Response Array Instrument Assets",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "h29733d2cedd40888bfd0d4e871ad828",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfinityOLB.WealthOrderMA",
+    "version": "1.0.0"
+}

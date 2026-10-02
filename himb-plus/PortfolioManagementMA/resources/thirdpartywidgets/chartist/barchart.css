@@ -1,0 +1,52 @@
+#multiLinechart.ct-series .ct-bar {
+  stroke-width: 9px;
+  stroke:#6753EC;
+ 
+}
+
+
+#multiLinechart .ct-bar {
+  fill: none;
+  stroke-width: 14px;
+
+}
+
+#multiLinechart .ct-chart-bar {
+  overflow: visible;
+  margin : 0 0 30px 0;
+
+}
+
+#multiLinechart .ct-grid {
+  stroke: rgb(0 0 0 / 20%);
+  stroke-width: 1px;
+  stroke-dasharray: 2px;
+}
+
+
+
+#multiLinechart .ct-label{
+  color: #424242;
+  font: normal normal 15px SourceSansPro-Regular;
+  font-size: 13px;
+  text-align: center;
+  }
+
+#multiLinechart .ct-chart-bar.ct-horizontal-bars .ct-label.ct-vertical.ct-start {
+  align-items: center;
+  justify-content: flex-end;
+  text-align: right;
+  text-anchor: start;
+}
+#multiLinechart.ct-grids{
+	left:10px
+}
+
+#multiLinechart .ct-chart-bar.ct-horizontal-bars .ct-label.ct-horizontal.ct-end {
+    align-items: flex-end;
+    justify-content: center;
+    text-align: left;
+    text-anchor: start;
+}
+
+

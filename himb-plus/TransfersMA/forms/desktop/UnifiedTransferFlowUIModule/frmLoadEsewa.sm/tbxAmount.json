@@ -1,0 +1,87 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizTextBox2",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "2%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        2,
+        0,
+        0,
+        0
+    ],
+    "_placeholder_": "0.00",
+    "_skin_": "s0ee5c78c88c4841b39edc94e4cf051f",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "96%"
+    },
+    "autocapitalize": "none",
+    "autocomplete": false,
+    "autocorrect": false,
+    "autofilter": false,
+    "canUpdateUI": true,
+    "containerheight": "",
+    "containerheightmode": 1,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "desktopweb": {
+        "placeholderSkin": "s053121b48b6465cba0331cda4ce88d0",
+        "psp": {
+            "hoverSkin": "s40e477dd9954b3980d21e7c11738aae"
+        }
+    },
+    "disabledSkins": {},
+    "focusskin": "s856e9c9d80a4d3698b1333b9677c7f2",
+    "id": "tbxAmount",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "keyboardstyle": "A",
+    "keyboardtype": "A",
+    "kuid": "e565e0908ca24cc3a598d4555b8f913a",
+    "maxtextlength": 15,
+    "mode": "A",
+    "name": "kony.ui.TextBox2",
+    "parent": "flxCurrencyValue",
+    "pf": "frmLoadEsewa",
+    "placeholderskin": "s6bef0f091374991a154eb89a7b6eef8",
+    "responsiveData": {
+        "b2": {
+            "height": {
+                "type": "string",
+                "value": "100%"
+            }
+        },
+        "b3": {
+            "desktopweb": {
+                "placeholderSkin": "s2fa3916bba54444a9903e226b31cded"
+            },
+            "placeholderSkin": "s2fa3916bba54444a9903e226b31cded"
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "securetextentry": false,
+    "textinputmode": "A",
+    "tooltip": "",
+    "viewtype": "default",
+    "wType": "TextField",
+    "zindex": 1
+}

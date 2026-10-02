@@ -1,0 +1,71 @@
+{
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "60dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "sa5106fc4fda4cb9a938afcbd3148afb",
+    "_top_": {
+        "type": "string",
+        "value": "0"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "68dp"
+    },
+    "allboxes": [],
+    "canUpdateUI": true,
+    "children": [
+        "imgCombinedshapeChat",
+        "imgChat"
+    ],
+    "clipbounds": false,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "flxImgChat",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "i13b2a37276340df837d697f30a67003",
+    "layouttype": 2,
+    "name": "kony.ui.FlexContainer",
+    "parent": "flxChat",
+    "pf": "frmContactAdvisor",
+    "responsiveData": {
+        "b1": {
+            "height": {
+                "type": "string",
+                "value": "100%"
+            },
+            "width": {
+                "type": "string",
+                "value": "18%"
+            }
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1
+}

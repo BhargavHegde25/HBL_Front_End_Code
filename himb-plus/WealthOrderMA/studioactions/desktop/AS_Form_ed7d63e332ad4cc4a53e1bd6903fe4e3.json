@@ -1,0 +1,24 @@
+{
+    "AS_Form_ed7d63e332ad4cc4a53e1bd6903fe4e3": {
+        "id": "AS_Form_ed7d63e332ad4cc4a53e1bd6903fe4e3",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmWatchlist",
+            "type": "forms",
+            "platform": "",
+            "KUID": "j5009d8a779a4a488549baef06b2b2f8"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_de8f11321c114a56a8732347082a0d93",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.postShow();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,122 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizLabel",
+    "DNDConfig": null,
+    "_bottom_": {
+        "type": "number",
+        "value": ""
+    },
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_i18n_text_": "i18n.wealth.strategy",
+    "_left_": {
+        "type": "string",
+        "value": "0"
+    },
+    "_margin_": [
+        1,
+        1,
+        1,
+        1
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s9afc629656e4e22895081bb8d498c93",
+    "_text_": "Label",
+    "_top_": {
+        "type": "string",
+        "value": "0"
+    },
+    "_width_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_wrapping_": 2,
+    "android": {
+        "textStyle": {
+            "letterSpacing": 0,
+            "strikeThrough": false
+        }
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "id": "lblStrategy",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "iphone": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "h6c3377e39db4f05b0d271065d34e362",
+    "name": "kony.ui.Label",
+    "parent": "flxStrategy",
+    "pf": "frmMyStrategyAck",
+    "responsiveData": {
+        "b1": {
+            "bottom": {
+                "type": "string",
+                "value": "20dp"
+            },
+            "i18n_text": "i18n.wealth.strategy",
+            "left": {
+                "type": "string",
+                "value": "30dp"
+            },
+            "text": "Strategy",
+            "top": {
+                "type": "string",
+                "value": "20dp"
+            }
+        },
+        "b2": {
+			"i18n_text": "i18n.wealth.strategy",
+            "height": {
+                "type": "string",
+                "value": "20dp"
+            },
+            "left": {
+                "type": "string",
+                "value": "20dp"
+            },
+            "text": "Strategy",
+            "top": {
+                "type": "string",
+                "value": "20dp"
+            }
+        },
+        "b4": {
+			"i18n_text": "i18n.wealth.strategy",
+            "bottom": {
+                "type": "string",
+                "value": "20dp"
+            },
+            "left": {
+                "type": "string",
+                "value": "30dp"
+            },
+            "text": "Strategy",
+            "top": {
+                "type": "string",
+                "value": "20dp"
+            }
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "texti18n": "i18n.wealth.strategy",
+    "tooltip": "",
+    "wType": "Label"
+}

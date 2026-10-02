@@ -1,0 +1,59 @@
+{
+    "HEAD": "w92f08fd12e0445888b286e268945ddd",
+    "w53cbf6e62484bbc8ca7e04b7fbc7dab": {
+        "extension": "html",
+        "kuid": "w53cbf6e62484bbc8ca7e04b7fbc7dab",
+        "name": "richtextViewer.html",
+        "parent": "w92f08fd12e0445888b286e268945ddd",
+        "type": "F"
+    },
+    "w6b5667c66e747e0a41787359aa73a5d": {
+        "children": [
+            "w860fefd82124d35930c9df8aa5a1a9e",
+            "w8bef3b5ff46427ca361413119ef4dd1",
+            "wa63820e3737413dbb9abf03061279b2",
+            "web792ce891a40eaa3a02b53aea499d7"
+        ],
+        "kuid": "w6b5667c66e747e0a41787359aa73a5d",
+        "name": "QRCodeGenerator",
+        "parent": "w92f08fd12e0445888b286e268945ddd",
+        "type": "D"
+    },
+    "w860fefd82124d35930c9df8aa5a1a9e": {
+        "extension": "html",
+        "kuid": "w860fefd82124d35930c9df8aa5a1a9e",
+        "name": "index.html",
+        "parent": "w6b5667c66e747e0a41787359aa73a5d",
+        "type": "F"
+    },
+    "w8bef3b5ff46427ca361413119ef4dd1": {
+        "extension": "js",
+        "kuid": "w8bef3b5ff46427ca361413119ef4dd1",
+        "name": "jquery.min.js",
+        "parent": "w6b5667c66e747e0a41787359aa73a5d",
+        "type": "F"
+    },
+    "w92f08fd12e0445888b286e268945ddd": {
+        "children": [
+            "w53cbf6e62484bbc8ca7e04b7fbc7dab",
+            "w6b5667c66e747e0a41787359aa73a5d"
+        ],
+        "kuid": "w92f08fd12e0445888b286e268945ddd",
+        "name": "localfiles",
+        "type": "L"
+    },
+    "wa63820e3737413dbb9abf03061279b2": {
+        "extension": "js",
+        "kuid": "wa63820e3737413dbb9abf03061279b2",
+        "name": "qrcode.js",
+        "parent": "w6b5667c66e747e0a41787359aa73a5d",
+        "type": "F"
+    },
+    "web792ce891a40eaa3a02b53aea499d7": {
+        "extension": "html",
+        "kuid": "web792ce891a40eaa3a02b53aea499d7",
+        "name": "setQRCodeProperties.html",
+        "parent": "w6b5667c66e747e0a41787359aa73a5d",
+        "type": "F"
+    }
+}

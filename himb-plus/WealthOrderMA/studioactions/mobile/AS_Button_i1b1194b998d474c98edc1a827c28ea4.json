@@ -1,0 +1,23 @@
+{
+    "AS_Button_i1b1194b998d474c98edc1a827c28ea4": {
+        "id": "AS_Button_i1b1194b998d474c98edc1a827c28ea4",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmSetPriceAlert",
+            "type": "forms",
+            "platform": "",
+            "KUID": "b06e7e2d84704179acd56c948152a23e"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_b8af0456c381494e90c5e9031ebaaaee",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.navigateToWatchList();",
+            "parentId": null
+        }]
+    }
+}

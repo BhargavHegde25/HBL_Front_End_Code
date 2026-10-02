@@ -1,0 +1,26 @@
+{
+    "AS_Form_f083985be997427294999522ffe0d9c2": {
+        "id": "AS_Form_f083985be997427294999522ffe0d9c2",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmBillPayConfirm",
+            "type": "forms",
+            "platform": "",
+            "KUID": "jcb9312a62ed4f0d96d6f125a509962e"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_LOCAL_VARIABLE_b29eac86b0214a21aeac9e731c4f6777",
+            "type": "ADD_LOCAL_VARIABLE",
+            "name": "",
+            "isGlobal": false,
+            "valuetype": "constant",
+            "datatype": "string",
+            "value": ""
+        }]
+    }
+}

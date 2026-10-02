@@ -1,0 +1,21 @@
+{
+    "AS_BarButtonItem_abe4eb924fbe4ec8a4b419b03aa10239": {
+        "id": "AS_BarButtonItem_abe4eb924fbe4ec8a4b419b03aa10239",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__ide_onClick_gafdea4fdf3d4a8baf94dfa538068af3",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "flxBackOnClick",
+            "display": "flxBackOnClick",
+            "inputparams": [],
+            "callbackType": null,
+            "disabled": null,
+            "source": "controller"
+        }]
+    }
+}

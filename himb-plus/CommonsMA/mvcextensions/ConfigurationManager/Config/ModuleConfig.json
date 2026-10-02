@@ -1,0 +1,11 @@
+{
+    "ModuleName": "ConfigurationManager",
+    "ModuleType": "Manager",
+    "BusinessControllerConfig": {
+        "BusinessExtensions": [
+            "ConfigurationManager/BusinessControllers/BusinessController_Extension",
+            "ConfigurationManager/BusinessControllers/BusinessController_Extension_Mobile"
+        ],
+        "BusinessControllerClass": "ConfigurationManager/BusinessControllers/BusinessController"
+    }
+}

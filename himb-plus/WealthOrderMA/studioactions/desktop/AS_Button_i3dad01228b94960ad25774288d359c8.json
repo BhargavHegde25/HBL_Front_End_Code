@@ -1,0 +1,38 @@
+{
+    "AS_Button_i3dad01228b94960ad25774288d359c8": {
+        "id": "AS_Button_i3dad01228b94960ad25774288d359c8",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "type": "forms",
+            "platform": "",
+            "KUID": "g1329e605edd467e9cae5c0ca145c8d6",
+            "name": "frmCurrencyConverterConfirm"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "NAVIGATE_TO_FORM__c7f2127e88eb486ba8644fe5418b414c",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "frmPortfolioOverview",
+            "friendlyName": "frmPortfolioOverview",
+            "formKUID": "ica4ac064ba049a4a892b4c1c58b2cfc",
+            "projectName": "konyonlinebankingvanathi",
+            "mappings": {},
+            "mappingsOrder": [],
+            "parentId": null,
+            "callbackType": null,
+            "enableMappingEditor": true,
+            "package": "WealthPortfolioModule",
+            "isCustomInput": false
+        }, {
+            "id": "ADD_SNIPPET_a7cb5ca0bbf04aa5b36246b568d819c1",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "kony.application.destroyForm(\"frmCurrencyConverter\");",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

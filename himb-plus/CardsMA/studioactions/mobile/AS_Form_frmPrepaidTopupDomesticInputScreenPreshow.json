@@ -1,0 +1,24 @@
+{
+    "AS_Form_d08d6a0503584a29b5f305947b107da3": {
+        "id": "AS_Form_d08d6a0503584a29b5f305947b107da3",
+        "type": "ACTION_SEQUENCE",
+        "name": "AS_Form_frmPrepaidTopupDomesticInputScreenPreshow",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmPrepaidTopupDomesticInputScreen",
+            "type": "forms",
+            "platform": null,
+            "KUID": "e5b11d1d754443e5900542541c740d26"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_fc2eb6d509f845cc9721366a2c6b9fad",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.preShow();",
+            "parentId": null
+        }]
+    }
+}

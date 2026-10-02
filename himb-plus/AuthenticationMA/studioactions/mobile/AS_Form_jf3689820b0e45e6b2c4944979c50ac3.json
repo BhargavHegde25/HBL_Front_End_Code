@@ -1,0 +1,23 @@
+{
+    "AS_Form_jf3689820b0e45e6b2c4944979c50ac3": {
+        "id": "AS_Form_jf3689820b0e45e6b2c4944979c50ac3",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmBiometric",
+            "type": "forms",
+            "platform": null,
+            "KUID": "c944ed5d40164429a2d27bc8dfbde17d"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_b7785b18ddb8470ebdb8cadd614c65df",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.preShow();",
+            "parentId": null
+        }]
+    }
+}

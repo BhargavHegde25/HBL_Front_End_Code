@@ -1,0 +1,23 @@
+{
+    "AS_Button_i76ae37a6f06484bbcb7c5c34c7acbb6": {
+        "id": "AS_Button_i76ae37a6f06484bbcb7c5c34c7acbb6",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmCreditCardPaymentFromAcc",
+            "type": "forms",
+            "platform": null,
+            "KUID": "h39a0c39941445bfbe02c7a5135e3eb0"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_eed5206d1d944ed3abbb28a60468799f",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.onClickCancel();",
+            "parentId": null
+        }]
+    }
+}

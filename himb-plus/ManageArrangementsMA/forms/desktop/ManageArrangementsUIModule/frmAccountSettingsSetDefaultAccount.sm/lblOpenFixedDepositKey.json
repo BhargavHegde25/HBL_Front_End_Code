@@ -1,0 +1,82 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizLabel",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "20dp"
+    },
+    "_i18n_text_": "kony.olb.settings.OpenFixedDeposit",
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        1,
+        1,
+        1,
+        1
+    ],
+    "_padding_": [
+        0,
+        0,
+        2,
+        0
+    ],
+    "_skin_": "s4adb862a1d741eaafba2145d8c99843",
+    "_text_": "",
+    "_width_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_wrapping_": 2,
+    "accessibilityconfig": {
+        "a11yLabel": "Bill Pay:"
+    },
+    "android": {
+        "textStyle": {
+            "letterSpacing": 0,
+            "strikeThrough": false
+        }
+    },
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 4,
+    "id": "lblOpenFixedDepositKey",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "iphone": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "isvisible": true,
+    "kuid": "h0c8f45d429a409a93030518bd99d096",
+    "name": "kony.ui.Label",
+    "paddinginpixel": false,
+    "parent": "flxOpenFixedDepositKey",
+    "pf": "frmAccountSettingsSetDefaultAccount",
+    "responsiveData": {
+        "b1": {
+            "accessibilityConfig": {},
+            "i18n_text": "kony.olb.settings.OpenFixedDeposit"
+        },
+        "b2": {
+            "i18n_text": "kony.olb.settings.OpenFixedDeposit"
+        },
+        "b3": {
+            "i18n_text": "kony.olb.settings.OpenFixedDeposit"
+        }
+    },
+    "texti18n": "kony.olb.settings.OpenFixedDeposit",
+    "tooltip": "",
+    "wType": "Label",
+    "zindex": 1
+}

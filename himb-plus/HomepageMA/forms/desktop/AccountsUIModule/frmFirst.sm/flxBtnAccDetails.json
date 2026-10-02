@@ -1,0 +1,112 @@
+{
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "220dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "39dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "sc885f20c4ee4d06a74f89e5424629d9",
+    "_top_": {
+        "type": "string",
+        "value": "233dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "200dp"
+    },
+    "allboxes": [],
+    "canUpdateUI": true,
+    "children": [
+        "imgAccDetails",
+        "lblAccDetails"
+    ],
+    "clipbounds": false,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "flxBtnAccDetails",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "je5a18bcbd0142fa9c58a60a41e0c70a",
+    "layouttype": 2,
+    "name": "kony.ui.FlexContainer",
+    "parent": "flxAccountDetails",
+    "pf": "frmFirst",
+    "responsiveData": {
+        "b1": {
+            "height": {
+                "type": "string",
+                "value": "45dp"
+            },
+            "layoutType": 3,
+            "left": {
+                "type": "string",
+                "value": "20dp"
+            },
+            "skin": "sd4ca2c5547249caa38ad041c1636396",
+            "top": {
+                "type": "string",
+                "value": "190dp"
+            },
+            "zIndex": 10
+        },
+        "b2": {
+            "height": {
+                "type": "string",
+                "value": "35dp"
+            },
+            "layoutType": 3,
+            "left": {
+                "type": "string",
+                "value": "25dp"
+            },
+            "skin": "sb3e4e5fec0a44a388a7b22fd206cdc5",
+            "top": {
+                "type": "string",
+                "value": "203dp"
+            },
+            "zIndex": 10
+        },
+        "b3": {
+            "height": {
+                "type": "string",
+                "value": "35dp"
+            },
+            "left": {
+                "type": "string",
+                "value": "25dp"
+            },
+            "skin": "sb3e4e5fec0a44a388a7b22fd206cdc5",
+            "top": {
+                "type": "string",
+                "value": "200dp"
+            },
+            "zIndex": 10
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1,
+    "zindex": 1
+}

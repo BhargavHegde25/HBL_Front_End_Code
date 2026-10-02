@@ -1,0 +1,81 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizLabel",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_i18n_text_": "i18n.wealth.acknowledgement.exchangeCurrency",
+    "_left_": {
+        "type": "string",
+        "value": "0"
+    },
+    "_margin_": [
+        1,
+        1,
+        1,
+        1
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "sac945497bde46c490aa09833e810d56",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "0"
+    },
+    "_width_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_wrapping_": 2,
+    "android": {
+        "textStyle": {
+            "letterSpacing": 0,
+            "strikeThrough": false
+        }
+    },
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 4,
+    "id": "lblFormName",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "iphone": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "c96402ddfc32453b8a8f978df9048078",
+    "name": "kony.ui.Label",
+    "parent": "flxFormNameContent",
+    "pf": "frmCurrencyConverterAcknowledge",
+    "responsiveData": {
+        "b1": {
+            "skin": "s18d3552bc4143569a7c5aef6bd5eaa1"
+        },
+        "b2": {
+            "i18n_text": "i18n.wealth.acknowledgement.exchangeCurrency",
+            "skin": "s18d3552bc4143569a7c5aef6bd5eaa1"
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "texti18n": "i18n.wealth.acknowledgement.exchangeCurrency",
+    "tooltip": "",
+    "wType": "Label"
+}

@@ -1,0 +1,23 @@
+{
+    "AS_FlexContainer_a5adb7a7491a4da2a21c0ceadd68a03d": {
+        "id": "AS_FlexContainer_a5adb7a7491a4da2a21c0ceadd68a03d",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmForgotEnterAccNum",
+            "type": "forms",
+            "platform": null,
+            "KUID": "iad34622bad4461eb3b436d453c3ae0c"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_fa0c252d9d604ca0adcdf066289dd735",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.onBack();",
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,202 @@
+{
+    "Forms": {
+        "desktop": {
+            "frmCurrencyConverter": {
+                "Controller": "WealthOrderUIModule/frmCurrencyConverterController",
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "FormName": "WealthOrderUIModule/frmCurrencyConverter",
+                "friendlyName": "frmCurrencyConverter"
+            },
+            "frmCurrencyConverterAcknowledge": {
+                "Controller": "WealthOrderUIModule/frmCurrencyConverterAcknowledgeController",
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "FormName": "WealthOrderUIModule/frmCurrencyConverterAcknowledge",
+                "friendlyName": "frmCurrencyConverterAcknowledge"
+            },
+            "frmCurrencyConverterConfirm": {
+                "Controller": "WealthOrderUIModule/frmCurrencyConverterConfirmController",
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "FormName": "WealthOrderUIModule/frmCurrencyConverterConfirm",
+                "friendlyName": "frmCurrencyConverterConfirm"
+            },
+            "frmLogin": {
+                "Controller": "WealthOrderUIModule/frmLoginController",
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "FormName": "WealthOrderUIModule/frmLogin",
+                "friendlyName": "frmLogin"
+            },
+            "frmProductDetails": {
+                "Controller": "WealthOrderUIModule/frmProductDetailsController",
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "FormName": "WealthOrderUIModule/frmProductDetails",
+                "friendlyName": "frmProductDetails"
+            },
+            "frmViewTransactions": {
+                "Controller": "WealthOrderUIModule/frmViewTransactionsController",
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "FormName": "WealthOrderUIModule/frmViewTransactions",
+                "friendlyName": "frmViewTransactions"
+            }
+        },
+        "mobile": {
+            "frmConvertCurrency": {
+                "Controller": "WealthOrderUIModule/frmConvertCurrencyController",
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "FormName": "WealthOrderUIModule/frmConvertCurrency",
+                "friendlyName": "frmConvertCurrency"
+            },
+            "frmConvertCurrencyAck": {
+                "Controller": "WealthOrderUIModule/frmConvertCurrencyAckController",
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "FormName": "WealthOrderUIModule/frmConvertCurrencyAck",
+                "friendlyName": "frmConvertCurrencyAck"
+            },
+            "frmConvertCurrencyVerify": {
+                "Controller": "WealthOrderUIModule/frmConvertCurrencyVerifyController",
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "FormName": "WealthOrderUIModule/frmConvertCurrencyVerify",
+                "friendlyName": "frmConvertCurrencyVerify"
+            },
+            "frmCurrencyChart": {
+                "Controller": "WealthOrderUIModule/frmCurrencyChartController",
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "FormName": "WealthOrderUIModule/frmCurrencyChart",
+                "friendlyName": "frmCurrencyChart"
+            },
+            "frmInstrumentDetails": {
+                "Controller": "WealthOrderUIModule/frmInstrumentDetailsController",
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "FormName": "WealthOrderUIModule/frmInstrumentDetails",
+                "friendlyName": "frmInstrumentDetails"
+            },
+            "frmInstrumentOrder": {
+                "Controller": "WealthOrderUIModule/frmInstrumentOrderController",
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "FormName": "WealthOrderUIModule/frmInstrumentOrder",
+                "friendlyName": "frmInstrumentOrder"
+            },
+            "frmInstrumentOrderAck": {
+                "Controller": "WealthOrderUIModule/frmInstrumentOrderAckController",
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "FormName": "WealthOrderUIModule/frmInstrumentOrderAck",
+                "friendlyName": "frmInstrumentOrderAck"
+            },
+            "frmInstrumentTransactions": {
+                "Controller": "WealthOrderUIModule/frmInstrumentTransactionsController",
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "FormName": "WealthOrderUIModule/frmInstrumentTransactions",
+                "friendlyName": "frmInstrumentTransactions"
+            },
+            "frmInvestmentAcc": {
+                "Controller": "WealthOrderUIModule/frmInvestmentAccController",
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "FormName": "WealthOrderUIModule/frmInvestmentAcc",
+                "friendlyName": "frmInvestmentAcc"
+            },
+            "frmLogin": {
+                "Controller": "WealthOrderUIModule/frmLoginController",
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "FormName": "WealthOrderUIModule/frmLogin",
+                "friendlyName": "frmLogin"
+            },
+            "frmOrderType": {
+                "Controller": "WealthOrderUIModule/frmOrderTypeController",
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "FormName": "WealthOrderUIModule/frmOrderType",
+                "friendlyName": "frmOrderType"
+            },
+            "frmPlaceOrder": {
+                "Controller": "WealthOrderUIModule/frmPlaceOrderController",
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "FormName": "WealthOrderUIModule/frmPlaceOrder",
+                "friendlyName": "frmPlaceOrder"
+            },
+            "frmPlaceOrderVerifyDetails": {
+                "Controller": "WealthOrderUIModule/frmPlaceOrderVerifyDetailsController",
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "FormName": "WealthOrderUIModule/frmPlaceOrderVerifyDetails",
+                "friendlyName": "frmPlaceOrderVerifyDetails"
+            },
+            "frmScheduleDate": {
+                "Controller": "WealthOrderUIModule/frmScheduleDateController",
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "FormName": "WealthOrderUIModule/frmScheduleDate",
+                "friendlyName": "frmScheduleDate"
+            },
+            "frmSelectCurrency": {
+                "Controller": "WealthOrderUIModule/frmSelectCurrencyController",
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "FormName": "WealthOrderUIModule/frmSelectCurrency",
+                "friendlyName": "frmSelectCurrency"
+            },
+            "frmToCurrency": {
+                "Controller": "WealthOrderUIModule/frmToCurrencyController",
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "FormName": "WealthOrderUIModule/frmToCurrency",
+                "friendlyName": "frmToCurrency"
+            },
+            "frmValidity": {
+                "Controller": "WealthOrderUIModule/frmValidityController",
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "FormName": "WealthOrderUIModule/frmValidity",
+                "friendlyName": "frmValidity"
+            },
+            "frmOrderDateRange": {
+                "Controller": "WealthOrderUIModule/frmOrderDateRangeController",
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "FormName": "WealthOrderUIModule/frmOrderDateRange",
+                "friendlyName": "frmOrderDateRange"
+            },
+            "frmOrderSortBy": {
+                "Controller": "WealthOrderUIModule/frmOrderSortByController",
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "FormName": "WealthOrderUIModule/frmOrderSortBy",
+                "friendlyName": "frmOrderSortBy"
+            },
+            "frmOrderViewTransactionDetails": {
+                "Controller": "WealthOrderUIModule/frmOrderViewTransactionDetailsController",
+                "ControllerExtensions": [],
+                "FormController": "kony.mvc.MDAFormController",
+                "FormName": "WealthOrderUIModule/frmOrderViewTransactionDetails",
+                "friendlyName": "frmOrderViewTransactionDetails"
+            }
+        }
+    },
+    "ModuleName": "WealthOrderUIModule",
+    "ModuleType": "UIModule",
+    "PresentationControllerConfig": {
+        "Default": {
+            "PresentationControllerClass": "WealthOrderUIModule/PresentationControllers/PresentationController",
+            "PresentationExtensions": []
+        },
+        "Mobile": {
+            "PresentationControllerClass": "WealthOrderUIModule/PresentationControllers/PresentationController_Mobile",
+            "PresentationExtensions": []
+        }
+    }
+}

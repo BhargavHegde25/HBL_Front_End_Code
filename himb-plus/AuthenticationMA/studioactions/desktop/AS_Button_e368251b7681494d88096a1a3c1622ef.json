@@ -1,0 +1,23 @@
+{
+    "AS_Button_e368251b7681494d88096a1a3c1622ef": {
+        "id": "AS_Button_e368251b7681494d88096a1a3c1622ef",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmEmbedOrigination",
+            "type": "forms",
+            "platform": "",
+            "KUID": "d2656e6941354b8895637882cf1e9fc8"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_a98ff3f43617491cb29f4a3647d4c0b3",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.showConfirmationPopUp();\r\nthis.destinationForm = \"PrivacyPolicy\";",
+            "parentId": null
+        }]
+    }
+}

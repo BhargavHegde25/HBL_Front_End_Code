@@ -1,0 +1,23 @@
+{
+    "AS_Button_e05bce154619411f8fc3416895337423": {
+        "id": "AS_Button_e05bce154619411f8fc3416895337423",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmForgotEnterAccNum",
+            "type": "forms",
+            "platform": null,
+            "KUID": "iad34622bad4461eb3b436d453c3ae0c"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_fa4bd79c6c89425a97b4ae8ac9ac77f0",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.onBack();",
+            "callbackType": null
+        }]
+    }
+}

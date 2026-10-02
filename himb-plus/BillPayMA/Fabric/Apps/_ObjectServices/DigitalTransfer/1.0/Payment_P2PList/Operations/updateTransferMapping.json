@@ -1,0 +1,52 @@
+{
+  "customCode" : {
+    "requestProcessorName" : "com.kony.transaction.preprocessors.CancelTransactionPreProcessor",
+    "responseProcessorName" : "com.kony.postprocessors.DeleteTransactionObjectServicePostProcessor"
+  },
+  "operationConfig" : {
+    "name" : "deleteTransaction4099",
+    "type" : "MappedToBackend",
+    "cachable" : false,
+    "smsEnabled" : false,
+    "security" : "authorized_app_user",
+    "responseEncoding" : "UTF-8",
+    "httpMethod" : "GET",
+    "decodeResponseBody" : false,
+    "iMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<mapper xmlns=\"http://www.kony.com/ns/mapper\">\n    <map inputpath=\"request_in\" outputpath=\"request_out\">\n        <set-param inputpath=\"transactionId\" outputpath=\"transactionId\"/>\n        <set-param inputpath=\"transactionType\" outputpath=\"transactionType\"/>\n    </map>\n</mapper>\n",
+    "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<mapper xmlns=\"http://www.kony.com/ns/mapper\">\n    <map inputpath=\"response_in\" outputpath=\"response_out\">\n        <map inputpath=\"\" outputpath=\"Payment_P2PList\">\n            <set-param inputpath=\"errmsg\" outputpath=\"errmsg\"/>\n            <set-param inputpath=\"success\" outputpath=\"success\"/>\n            <set-param inputpath=\"transactionId\" outputpath=\"transactionId\"/>\n        </map>\n    </map>\n</mapper>\n",
+    "iVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"request_in\",\"text\":\"Payment_P2PList\",\"xy\":\"150 100\"},{\"isGroup\":true,\"key\":\"request_out\",\"text\":\"InfinityTransactionServices (1.0).deleteTransaction\",\"xy\":\"770 100\"}],\"linkDataArray\":[{\"category\":\"Mapping\",\"from\":\"source:Payment_P2PList:transactionId:\",\"to\":\"target:transactionId:\",\"fromPort\":\"source:Payment_P2PList:transactionId:\",\"toPort\":\"target:transactionId:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:Payment_P2PList:transactionType:\",\"to\":\"target:transactionType:\",\"fromPort\":\"source:Payment_P2PList:transactionType:\",\"toPort\":\"target:transactionType:\",\"visible\":true,\"common\":true}]}",
+    "oVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"response_out\",\"text\":\"Payment_P2PList\",\"xy\":\"770 100\"},{\"isGroup\":true,\"key\":\"response_in\",\"text\":\"InfinityTransactionServices (1.0).deleteTransaction\",\"xy\":\"150 100\"}],\"linkDataArray\":[{\"category\":\"Mapping\",\"from\":\"source:errmsg:\",\"to\":\"target:Payment_P2PList:errmsg:\",\"fromPort\":\"source:errmsg:\",\"toPort\":\"target:Payment_P2PList:errmsg:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:success:\",\"to\":\"target:Payment_P2PList:success:\",\"fromPort\":\"source:success:\",\"toPort\":\"target:Payment_P2PList:success:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:transactionId:\",\"to\":\"target:Payment_P2PList:transactionId:\",\"fromPort\":\"source:transactionId:\",\"toPort\":\"target:Payment_P2PList:transactionId:\",\"visible\":true,\"common\":true}]}",
+    "applyCommonMapping" : false,
+    "applyRequestCommonMapping" : false,
+    "applyResponseCommonMapping" : false,
+    "backendMeta" : {
+      "serviceName" : "InfinityTransactionServices",
+      "serviceVersion" : "1.0",
+      "operationName" : "deleteTransaction"
+    },
+    "relationshipHierarchyMapping" : {
+      "name" : "Payment_P2PList",
+      "children" : [ ],
+      "actions" : { },
+      "selected" : true
+    },
+    "requestXmlMappingOverride" : false,
+    "responseXmlMappingOverride" : false,
+    "mapperData" : [ {
+      "name" : "base mapper1",
+      "order" : 1,
+      "iMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<mapper xmlns=\"http://www.kony.com/ns/mapper\">\n    <map inputpath=\"request_in\" outputpath=\"request_out\">\n        <set-param inputpath=\"transactionId\" outputpath=\"transactionId\"/>\n        <set-param inputpath=\"transactionType\" outputpath=\"transactionType\"/>\n    </map>\n</mapper>\n",
+      "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<mapper xmlns=\"http://www.kony.com/ns/mapper\">\n    <map inputpath=\"response_in\" outputpath=\"response_out\">\n        <map inputpath=\"\" outputpath=\"Payment_P2PList\">\n            <set-param inputpath=\"errmsg\" outputpath=\"errmsg\"/>\n            <set-param inputpath=\"success\" outputpath=\"success\"/>\n            <set-param inputpath=\"transactionId\" outputpath=\"transactionId\"/>\n        </map>\n    </map>\n</mapper>\n",
+      "iVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"request_in\",\"text\":\"Payment_P2PList\",\"xy\":\"150 100\"},{\"isGroup\":true,\"key\":\"request_out\",\"text\":\"InfinityTransactionServices (1.0).deleteTransaction\",\"xy\":\"770 100\"}],\"linkDataArray\":[{\"category\":\"Mapping\",\"from\":\"source:Payment_P2PList:transactionId:\",\"to\":\"target:transactionId:\",\"fromPort\":\"source:Payment_P2PList:transactionId:\",\"toPort\":\"target:transactionId:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:Payment_P2PList:transactionType:\",\"to\":\"target:transactionType:\",\"fromPort\":\"source:Payment_P2PList:transactionType:\",\"toPort\":\"target:transactionType:\",\"visible\":true,\"common\":true}]}",
+      "oVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"response_out\",\"text\":\"Payment_P2PList\",\"xy\":\"770 100\"},{\"isGroup\":true,\"key\":\"response_in\",\"text\":\"InfinityTransactionServices (1.0).deleteTransaction\",\"xy\":\"150 100\"}],\"linkDataArray\":[{\"category\":\"Mapping\",\"from\":\"source:errmsg:\",\"to\":\"target:Payment_P2PList:errmsg:\",\"fromPort\":\"source:errmsg:\",\"toPort\":\"target:Payment_P2PList:errmsg:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:success:\",\"to\":\"target:Payment_P2PList:success:\",\"fromPort\":\"source:success:\",\"toPort\":\"target:Payment_P2PList:success:\",\"visible\":true,\"common\":true},{\"category\":\"Mapping\",\"from\":\"source:transactionId:\",\"to\":\"target:Payment_P2PList:transactionId:\",\"fromPort\":\"source:transactionId:\",\"toPort\":\"target:Payment_P2PList:transactionId:\",\"visible\":true,\"common\":true}]}",
+      "requestXmlMappingOverride" : false,
+      "responseXmlMappingOverride" : false,
+      "disabled" : false,
+      "applyCommonMapping" : false,
+      "applyRequestCommonMapping" : false,
+      "applyResponseCommonMapping" : false
+    } ]
+  },
+  "enableFrontendUrl" : false,
+  "customVerb" : false
+}

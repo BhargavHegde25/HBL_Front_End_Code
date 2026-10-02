@@ -1,0 +1,74 @@
+{
+    "DNDConfig": null,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "30dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s89a867252bb4ccd9771a2970eccd5ce",
+    "_top_": {
+        "type": "string",
+        "value": "20dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "50.53%"
+    },
+    "accessibilityconfig": {
+        "a11yARIA": {
+            "tabindex": -1
+        }
+    },
+    "allboxes": [],
+    "autogrowmode": 1,
+    "canUpdateUI": true,
+    "children": [
+        "flxCardBillPayDetailsRow1",
+        "flxCardBillPayDetailsRow2",
+        "flxCardBillPayDetailsRow3",
+        "flxCardBillPayDetailsRow4",
+        "flxCardBillPayDetailsRow5",
+        "flxCardBillPayDetailsRow6"
+    ],
+    "clipbounds": true,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "flxCardBillPayDetails",
+    "info": null,
+    "isvisible": true,
+    "kuid": "f9fda70904aa4e01aef20c0aea7454c2",
+    "layouttype": 4,
+    "name": "kony.ui.FlexContainer",
+    "parent": "flxCardBillPayConfirm",
+    "pf": "frmCardManagement",
+    "responsiveData": {
+        "b1": {
+            "width": {
+                "type": "string",
+                "value": "80%"
+            }
+        }
+    },
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1,
+    "zindex": 1
+}

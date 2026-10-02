@@ -1,0 +1,30 @@
+{
+    "AS_Button_g438ea124b7c4b89b07eb10c9574e937": {
+        "id": "AS_Button_g438ea124b7c4b89b07eb10c9574e937",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmtopUpDomesticCardReviewScreen",
+            "type": "forms",
+            "platform": "",
+            "KUID": "e02cd7ba505a4791b6e6f3163e01d3e9"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "NAVIGATE_TO_FORM__i8737727865047e3ab313b7981ed9aaf",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "frmTopUpDomesticPrepaidCardAckScreen",
+            "friendlyName": "frmTopUpDomesticPrepaidCardAckScreen",
+            "formKUID": "e04240c130784b95b071e10f49938cb5",
+            "projectName": "CardsMA",
+            "mappings": {},
+            "mappingsOrder": [],
+            "enableMappingEditor": true,
+            "package": "ManageCardsUIModule",
+            "isCustomInput": false
+        }]
+    }
+}

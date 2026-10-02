@@ -1,0 +1,106 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_bottom_": {
+        "type": "string",
+        "value": "0px"
+    },
+    "_height_": {
+        "type": "string",
+        "value": "40px"
+    },
+    "_left_": {
+        "type": "number",
+        "value": ""
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_right_": {
+        "type": "string",
+        "value": "0px"
+    },
+    "_skin_": "sea1525e3fa24829a889b1fd650f3f24",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "31px"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "150px"
+    },
+    "accessibilityconfig": {
+        "a11yLabel": "Continue"
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "number",
+        "value": ""
+    },
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "desktopweb": {
+        "psp": {
+            "hoverSkin": "s81054b5e2b74f17a5261991df565427"
+        }
+    },
+    "disabledSkins": {
+        "blockedUISkin": "s1400c825f384a46b15a0f8d6829ecef",
+        "focusSkin": "sf44d06ca8224832827ea7fdff757013"
+    },
+    "displaytext": true,
+    "focusskin": null,
+    "id": "btnProceedPlaceOrder",
+    "info": null,
+    "isvisible": true,
+    "kuid": "c083a0b846c4474a8647d308d91ffda1",
+    "name": "kony.ui.Button",
+    "parent": "flxButtons1",
+    "pf": "frmPlaceOrder",
+    "responsiveData": {
+        "b3": {
+            "centerX": {
+                "type": "string",
+                "value": ""
+            },
+            "centerY": {
+                "type": "string",
+                "value": ""
+            },
+            "left": {
+                "type": "string",
+                "value": "0dp"
+            },
+            "right": {
+                "type": "string",
+                "value": ""
+            },
+            "top": {
+                "type": "string",
+                "value": "0dp"
+            },
+            "width": {
+                "type": "string",
+                "value": "100%"
+            }
+        }
+    },
+    "texti18n": "i18n.wealth.placeOrderButton",
+    "tooltip": "Continue",
+    "wType": "Button",
+    "zindex": 1
+}

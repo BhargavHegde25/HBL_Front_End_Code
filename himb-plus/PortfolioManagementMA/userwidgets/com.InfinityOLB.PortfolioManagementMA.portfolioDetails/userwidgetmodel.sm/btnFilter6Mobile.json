@@ -1,0 +1,76 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "10dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        1,
+        0,
+        1,
+        0
+    ],
+    "_right_": {
+        "type": "number",
+        "value": ""
+    },
+    "_skin_": "sa276989c8c24e4f8fc87205096d9c79",
+    "_text_": "Blocked Funds",
+    "_top_": {
+        "type": "string",
+        "value": "-1dp"
+    },
+    "_width_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "accessibilityconfig": {
+        "a11yLabel": "Withdrawals"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "desktopweb": {
+        "psp": {}
+    },
+    "disabledSkins": {
+        "hoverSkin": "s4802e6e48d549d5b706ec4cb18dc44d"
+    },
+    "displaytext": true,
+    "focusskin": "sc5202d3397f42098cb4e681f5de8459",
+    "id": "btnFilter6Mobile",
+    "info": null,
+    "isvisible": true,
+    "kuid": "f04ae9b0fe5041a5a5bdbdd0345af7d5",
+    "name": "kony.ui.Button",
+    "paddinginpixel": false,
+    "parent": "flxFiltersScroll",
+    "pf": "userwidgetmodel",
+    "responsiveData": {
+        "b3": {
+            "focusSkin": "s27f6cd6c9c74770abc929cdcac590fc",
+            "left": {
+                "type": "string",
+                "value": "10dp"
+            },
+            "right": {
+                "type": "string",
+                "value": "15dp"
+            }
+        }
+    },
+    "tooltip": "",
+    "wType": "Button",
+    "zindex": 1
+}

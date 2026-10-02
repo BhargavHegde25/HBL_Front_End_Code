@@ -1,0 +1,37 @@
+/*Type your css here*/
+body{
+	background-color:rgba(0,0,0,0);
+}
+.spendingContainer{
+  position:absolute;
+  left:0px;
+  right:0px;
+  height:145px;
+  top:20px;
+  background-color:rgba(0,0,0,0)
+}
+.pieSegment{
+  background-color:rgba(256,256,256,150);
+}
+
+
+.ct-series-a .ct-slice-donut,.ct-series-b .ct-slice-donut, .ct-series-c .ct-slice-donut {
+  /* give your pie slices some outline or separate them visually by using the background color here */
+  /*stroke: rgba(256,256,256,.5) !important;
+  stroke-width:20px !important;
+  stroke-linecap:butt;
+  
+  
+  /* outline width */
+}
+.ct-series-d .ct-slice-donut,.ct-series-e .ct-slice-donut, .ct-series-f .ct-slice-donut {
+  /* give your pie slices some outline or separate them visually by using the background color here */
+  /*stroke: rgba(256,256,256,.5);
+  /* outline width */
+}
+.ct-series-g .ct-slice-donut,.ct-series-h .ct-slice-donut, .ct-series-i .ct-slice-donut {
+  /* give your pie slices some outline or separate them visually by using the background color here */
+  /*stroke: white;
+  /* outline width */
+   /*stroke-linecap: flat;
+}

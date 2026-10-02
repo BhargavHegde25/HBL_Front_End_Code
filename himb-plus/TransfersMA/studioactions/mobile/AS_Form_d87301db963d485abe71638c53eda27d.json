@@ -1,0 +1,22 @@
+{
+    "AS_Form_d87301db963d485abe71638c53eda27d": {
+        "id": "AS_Form_d87301db963d485abe71638c53eda27d",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "CopyfrmAddNewPayee",
+            "type": "forms",
+            "platform": null,
+            "KUID": "a45df13b1dc7450096177b2c03ae87da"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_init_h3ff099c03d246b596bdc6c55affd707",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.init();"
+        }]
+    }
+}

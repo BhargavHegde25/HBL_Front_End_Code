@@ -1,0 +1,81 @@
+{
+    "DNDConfig": null,
+    "_bottom_": {
+        "type": "string",
+        "value": ""
+    },
+    "_height_": {
+        "type": "string",
+        "value": "90%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s7b436962d6a4647b197083ac7d03d38",
+    "_top_": {
+        "type": "string",
+        "value": "10.00%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "allboxes": [],
+    "android": {
+        "bottom": {
+            "type": "string",
+            "value": "0dp"
+        }
+    },
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "children": [
+        "flxShadowSepeartor2",
+        "flxDisclaimerPaperStatement",
+        "flxShadowSepeartor",
+        "flxShadowSepeartor4",
+        "flxSelectAccountForPaperStatement",
+        "flxTImeRangeWrapper",
+        "flxShadowSepeartor3",
+        "flxTest",
+        "flxbtnDownload"
+    ],
+    "clipbounds": true,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "flxPaperStatement",
+    "ide_onTouchStart": "AS_FlexScrollContainer_b5f594379a1e4348b4cc40e5d180756c",
+    "info": null,
+    "iphone": {},
+    "iscustomlayout": false,
+    "isvisible": false,
+    "kuid": "e4c38a408f3943e89c5dbae4e287ea7b",
+    "layouttype": 2,
+    "name": "kony.ui.FlexContainer",
+    "parent": "flxMainWrapper",
+    "pf": "frmAccStatements",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "vizProps": {},
+    "wType": "FlexContainer",
+    "widgetalignment": 1,
+    "zindex": 200
+}

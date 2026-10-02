@@ -1,0 +1,22 @@
+{
+    "AS_Form_f85b4ffd331c4e2d873524dfdc961ae8": {
+        "id": "AS_Form_f85b4ffd331c4e2d873524dfdc961ae8",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmeSewaHistoryDetails",
+            "type": "forms",
+            "platform": null,
+            "KUID": "aad399967cf6419e9747509f51524cdd"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_init_d7295eb8d6864c788518aa7664379886",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.init();"
+        }]
+    }
+}

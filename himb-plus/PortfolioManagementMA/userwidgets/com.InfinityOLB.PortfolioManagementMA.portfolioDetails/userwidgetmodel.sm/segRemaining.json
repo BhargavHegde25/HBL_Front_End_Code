@@ -1,0 +1,1101 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "_data_": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+    ],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "885dp"
+    },
+    "autogrowmode": 1,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "counter": "09",
+    "desktop": {
+        "_data_": [
+            {
+                "img5": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "orange.png"
+                },
+                "img6": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "orange.png"
+                },
+                "img7": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "imagedrag.png"
+                },
+                "img8": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "imagedrag.png"
+                },
+                "img9": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "imagedrag.png"
+                },
+                "lbl1": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 1"
+                },
+                "lbl10": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 9"
+                },
+                "lbl11": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 10"
+                },
+                "lbl12": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 9"
+                },
+                "lbl13": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 5"
+                },
+                "lbl14": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 6"
+                },
+                "lbl15": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 7"
+                },
+                "lbl16": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 8"
+                },
+                "lbl17": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 10"
+                },
+                "lbl18": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 17"
+                },
+                "lbl2": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 3"
+                },
+                "lbl3": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 2"
+                },
+                "lbl4": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 1"
+                },
+                "lbl5": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 4"
+                },
+                "lbl6": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 5"
+                },
+                "lbl7": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 6"
+                },
+                "lbl8": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 7"
+                },
+                "lbl9": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 8"
+                }
+            },
+            {
+                "img5": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "orange.png"
+                },
+                "img6": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "orange.png"
+                },
+                "img7": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "imagedrag.png"
+                },
+                "img8": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "imagedrag.png"
+                },
+                "img9": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "imagedrag.png"
+                },
+                "lbl1": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 1"
+                },
+                "lbl10": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 9"
+                },
+                "lbl11": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 10"
+                },
+                "lbl12": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 9"
+                },
+                "lbl13": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 5"
+                },
+                "lbl14": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 6"
+                },
+                "lbl15": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 7"
+                },
+                "lbl16": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 8"
+                },
+                "lbl17": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 10"
+                },
+                "lbl18": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 17"
+                },
+                "lbl2": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 3"
+                },
+                "lbl3": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 2"
+                },
+                "lbl4": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 1"
+                },
+                "lbl5": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 4"
+                },
+                "lbl6": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 5"
+                },
+                "lbl7": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 6"
+                },
+                "lbl8": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 7"
+                },
+                "lbl9": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 8"
+                }
+            },
+            {
+                "img5": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "orange.png"
+                },
+                "img6": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "orange.png"
+                },
+                "img7": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "imagedrag.png"
+                },
+                "img8": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "imagedrag.png"
+                },
+                "img9": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "imagedrag.png"
+                },
+                "lbl1": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 1"
+                },
+                "lbl10": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 9"
+                },
+                "lbl11": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 10"
+                },
+                "lbl12": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 9"
+                },
+                "lbl13": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 5"
+                },
+                "lbl14": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 6"
+                },
+                "lbl15": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 7"
+                },
+                "lbl16": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 8"
+                },
+                "lbl17": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 10"
+                },
+                "lbl18": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 17"
+                },
+                "lbl2": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 3"
+                },
+                "lbl3": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 2"
+                },
+                "lbl4": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 1"
+                },
+                "lbl5": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 4"
+                },
+                "lbl6": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 5"
+                },
+                "lbl7": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 6"
+                },
+                "lbl8": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 7"
+                },
+                "lbl9": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 8"
+                }
+            },
+            {
+                "img5": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "orange.png"
+                },
+                "img6": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "orange.png"
+                },
+                "img7": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "imagedrag.png"
+                },
+                "img8": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "imagedrag.png"
+                },
+                "img9": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "imagedrag.png"
+                },
+                "lbl1": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 1"
+                },
+                "lbl10": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 9"
+                },
+                "lbl11": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 10"
+                },
+                "lbl12": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 9"
+                },
+                "lbl13": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 5"
+                },
+                "lbl14": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 6"
+                },
+                "lbl15": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 7"
+                },
+                "lbl16": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 8"
+                },
+                "lbl17": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 10"
+                },
+                "lbl18": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 17"
+                },
+                "lbl2": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 3"
+                },
+                "lbl3": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 2"
+                },
+                "lbl4": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 1"
+                },
+                "lbl5": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 4"
+                },
+                "lbl6": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 5"
+                },
+                "lbl7": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 6"
+                },
+                "lbl8": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 7"
+                },
+                "lbl9": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 8"
+                }
+            },
+            {
+                "img5": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "orange.png"
+                },
+                "img6": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "orange.png"
+                },
+                "img7": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "imagedrag.png"
+                },
+                "img8": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "imagedrag.png"
+                },
+                "img9": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "imagedrag.png"
+                },
+                "lbl1": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 1"
+                },
+                "lbl10": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 9"
+                },
+                "lbl11": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 10"
+                },
+                "lbl12": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 9"
+                },
+                "lbl13": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 5"
+                },
+                "lbl14": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 6"
+                },
+                "lbl15": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 7"
+                },
+                "lbl16": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 8"
+                },
+                "lbl17": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 10"
+                },
+                "lbl18": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 17"
+                },
+                "lbl2": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 3"
+                },
+                "lbl3": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 2"
+                },
+                "lbl4": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 1"
+                },
+                "lbl5": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 4"
+                },
+                "lbl6": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 5"
+                },
+                "lbl7": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 6"
+                },
+                "lbl8": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 7"
+                },
+                "lbl9": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 8"
+                }
+            },
+            {
+                "img5": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "orange.png"
+                },
+                "img6": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "orange.png"
+                },
+                "img7": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "imagedrag.png"
+                },
+                "img8": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "imagedrag.png"
+                },
+                "img9": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "imagedrag.png"
+                },
+                "lbl1": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 1"
+                },
+                "lbl10": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 9"
+                },
+                "lbl11": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 10"
+                },
+                "lbl12": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 9"
+                },
+                "lbl13": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 5"
+                },
+                "lbl14": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 6"
+                },
+                "lbl15": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 7"
+                },
+                "lbl16": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 8"
+                },
+                "lbl17": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 10"
+                },
+                "lbl18": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 17"
+                },
+                "lbl2": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 3"
+                },
+                "lbl3": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 2"
+                },
+                "lbl4": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 1"
+                },
+                "lbl5": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 4"
+                },
+                "lbl6": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 5"
+                },
+                "lbl7": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 6"
+                },
+                "lbl8": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 7"
+                },
+                "lbl9": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 8"
+                }
+            },
+            {
+                "img5": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "orange.png"
+                },
+                "img6": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "orange.png"
+                },
+                "img7": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "imagedrag.png"
+                },
+                "img8": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "imagedrag.png"
+                },
+                "img9": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "imagedrag.png"
+                },
+                "lbl1": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 1"
+                },
+                "lbl10": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 9"
+                },
+                "lbl11": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 10"
+                },
+                "lbl12": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 9"
+                },
+                "lbl13": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 5"
+                },
+                "lbl14": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 6"
+                },
+                "lbl15": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 7"
+                },
+                "lbl16": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 8"
+                },
+                "lbl17": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 10"
+                },
+                "lbl18": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 17"
+                },
+                "lbl2": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 3"
+                },
+                "lbl3": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 2"
+                },
+                "lbl4": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 1"
+                },
+                "lbl5": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 4"
+                },
+                "lbl6": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 5"
+                },
+                "lbl7": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 6"
+                },
+                "lbl8": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 7"
+                },
+                "lbl9": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 8"
+                }
+            },
+            {
+                "img5": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "orange.png"
+                },
+                "img6": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "orange.png"
+                },
+                "img7": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "imagedrag.png"
+                },
+                "img8": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "imagedrag.png"
+                },
+                "img9": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "imagedrag.png"
+                },
+                "lbl1": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 1"
+                },
+                "lbl10": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 9"
+                },
+                "lbl11": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 10"
+                },
+                "lbl12": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 9"
+                },
+                "lbl13": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 5"
+                },
+                "lbl14": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 6"
+                },
+                "lbl15": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 7"
+                },
+                "lbl16": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 8"
+                },
+                "lbl17": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 10"
+                },
+                "lbl18": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 17"
+                },
+                "lbl2": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 3"
+                },
+                "lbl3": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 2"
+                },
+                "lbl4": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 1"
+                },
+                "lbl5": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 4"
+                },
+                "lbl6": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 5"
+                },
+                "lbl7": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 6"
+                },
+                "lbl8": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 7"
+                },
+                "lbl9": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 8"
+                }
+            },
+            {
+                "img5": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "orange.png"
+                },
+                "img6": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "orange.png"
+                },
+                "img7": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "imagedrag.png"
+                },
+                "img8": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "imagedrag.png"
+                },
+                "img9": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "imagedrag.png"
+                },
+                "lbl1": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 1"
+                },
+                "lbl10": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 9"
+                },
+                "lbl11": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 10"
+                },
+                "lbl12": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 9"
+                },
+                "lbl13": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 5"
+                },
+                "lbl14": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 6"
+                },
+                "lbl15": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 7"
+                },
+                "lbl16": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 8"
+                },
+                "lbl17": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 10"
+                },
+                "lbl18": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 17"
+                },
+                "lbl2": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 3"
+                },
+                "lbl3": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 2"
+                },
+                "lbl4": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 1"
+                },
+                "lbl5": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 4"
+                },
+                "lbl6": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 5"
+                },
+                "lbl7": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 6"
+                },
+                "lbl8": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 7"
+                },
+                "lbl9": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 8"
+                }
+            },
+            {
+                "img5": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "orange.png"
+                },
+                "img6": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "orange.png"
+                },
+                "img7": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "imagedrag.png"
+                },
+                "img8": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "imagedrag.png"
+                },
+                "img9": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "imagedrag.png"
+                },
+                "lbl1": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 1"
+                },
+                "lbl10": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 9"
+                },
+                "lbl11": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 10"
+                },
+                "lbl12": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 9"
+                },
+                "lbl13": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 5"
+                },
+                "lbl14": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 6"
+                },
+                "lbl15": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 7"
+                },
+                "lbl16": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 8"
+                },
+                "lbl17": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 10"
+                },
+                "lbl18": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 17"
+                },
+                "lbl2": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 3"
+                },
+                "lbl3": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 2"
+                },
+                "lbl4": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 1"
+                },
+                "lbl5": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 4"
+                },
+                "lbl6": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 5"
+                },
+                "lbl7": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 6"
+                },
+                "lbl8": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 7"
+                },
+                "lbl9": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Label 8"
+                }
+            }
+        ],
+        "rowTemplateId": "e46615e626a94299830f1d3e7366f955",
+        "rowtemplate": "flxRemaning",
+        "widgetdatamap": {
+            "flxHor": "flxHor",
+            "flxRemaning": "flxRemaning",
+            "flxSeparator": "flxSeparator",
+            "img5": "img5",
+            "img6": "img6",
+            "img7": "img7",
+            "img8": "img8",
+            "img9": "img9",
+            "lbl1": "lbl1",
+            "lbl10": "lbl10",
+            "lbl11": "lbl11",
+            "lbl12": "lbl12",
+            "lbl13": "lbl13",
+            "lbl14": "lbl14",
+            "lbl15": "lbl15",
+            "lbl16": "lbl16",
+            "lbl17": "lbl17",
+            "lbl18": "lbl18",
+            "lbl2": "lbl2",
+            "lbl3": "lbl3",
+            "lbl4": "lbl4",
+            "lbl5": "lbl5",
+            "lbl6": "lbl6",
+            "lbl7": "lbl7",
+            "lbl8": "lbl8",
+            "lbl9": "lbl9"
+        }
+    },
+    "focusedindex": null,
+    "focuseditem": null,
+    "groupcells": false,
+    "hasSections": false,
+    "id": "segRemaining",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "ddd524adf2b24267bbe1112642f27597",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "flxRemaining2",
+    "pf": "userwidgetmodel",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainselection": false,
+    "rowcounter": 9,
+    "rowfocusskin": "s0f9bf3c1b3e4a7bb6bf9fd18b0211f2",
+    "rowskin": "scf5f90f6ac04976ab88b2a4f7153285",
+    "rowtemplate": "flxRemaning",
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionheaderskin": "sdc4ff4ed1584272be2ae69045dfb29d",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "separatorcolor": "e3e3e300",
+    "separatorrequired": true,
+    "separatorthickness": 2,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "vizProps": {},
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "flxHor": "flxHor",
+        "flxRemaning": "flxRemaning",
+        "flxSeparator": "flxSeparator",
+        "lbl1": "lbl1",
+        "lbl10": "lbl10",
+        "lbl11": "lbl11",
+        "lbl12": "lbl12",
+        "lbl13": "lbl13",
+        "lbl14": "lbl14",
+        "lbl15": "lbl15",
+        "lbl16": "lbl16",
+        "lbl17": "lbl17",
+        "lbl2": "lbl2",
+        "lbl3": "lbl3",
+        "lbl4": "lbl4",
+        "lbl5": "lbl5",
+        "lbl6": "lbl6",
+        "lbl7": "lbl7",
+        "lbl8": "lbl8",
+        "lbl9": "lbl9"
+    },
+    "zindex": 1
+}

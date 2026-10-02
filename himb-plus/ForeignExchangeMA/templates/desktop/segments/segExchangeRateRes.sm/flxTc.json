@@ -1,0 +1,66 @@
+{
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "90dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "scbd4cac3526468089bf3013adff0549",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "children": [
+        "flxTcBuying1",
+        "lblSepartor9",
+        "flxTcBuying2",
+        "lblSepartor10",
+        "flxTcBuying3"
+    ],
+    "clipbounds": true,
+    "containerId": true,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "flxTc",
+    "ide_onClick": "AS_FlexContainer_iae2c3d66ec341d5bf34bf3898bf9606",
+    "info": null,
+    "isvisible": true,
+    "kuid": "iedf2c040cee4f0387f9564827afaa49",
+    "layouttype": 4,
+    "name": "kony.ui.FlexContainer",
+    "parent": "flxTcBuying",
+    "pf": "segExchangeRateRes",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1,
+    "zindex": 1
+}

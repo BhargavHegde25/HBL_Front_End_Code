@@ -1,0 +1,54 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_bottom_": {
+        "type": "string",
+        "value": "10dp"
+    },
+    "_height_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s3a6af80e8464e51af22769363bf659d",
+    "_text_": "Done",
+    "_width_": {
+        "type": "string",
+        "value": "90%"
+    },
+    "accessibilityconfig": {
+        "a11yHint": "Tap Continue to move to the next screen",
+        "a11yLabel": "Continue"
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "disabledSkins": {},
+    "displaytext": true,
+    "focusskin": "sd85a0f475ff4b3b9f0a5e4b82f68213",
+    "id": "btnContinue",
+    "info": null,
+    "isvisible": true,
+    "kuid": "aaa000b875084083bdd70ad0253b6ab8",
+    "name": "kony.ui.Button",
+    "parent": "flxDoneWrapper",
+    "pf": "frmOrderDateRange",
+    "texti18n": "i18n.Wealth.Done",
+    "wType": "Button",
+    "zindex": 1
+}

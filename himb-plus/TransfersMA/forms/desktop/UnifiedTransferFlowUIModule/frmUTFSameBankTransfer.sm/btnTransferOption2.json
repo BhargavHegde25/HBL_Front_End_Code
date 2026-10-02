@@ -1,0 +1,66 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "42dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "sdbbccbd1d224646bda17c38efb9ccb8",
+    "_text_": "",
+    "_width_": {
+        "type": "string",
+        "value": "90%"
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "desktopweb": {
+        "padding": [
+            8,
+            0,
+            0,
+            0
+        ],
+        "paddingInPixel": false,
+        "psp": {
+            "hoverSkin": "s0f5748e0ea447b99601a5b7d636357c"
+        }
+    },
+    "disabledSkins": {},
+    "displaytext": true,
+    "focusskin": "s178be07f5724e249969c637e82754a1",
+    "id": "btnTransferOption2",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "d7782a3a9b2e4e09af2dd401710a60b8",
+    "name": "kony.ui.Button",
+    "paddinginpixel": false,
+    "parent": "flxTransferOption2",
+    "pf": "frmUTFSameBankTransfer",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "texti18n": "i18n.UnifiedTransfer.domesticTransfer",
+    "wType": "Button",
+    "zindex": 5
+}

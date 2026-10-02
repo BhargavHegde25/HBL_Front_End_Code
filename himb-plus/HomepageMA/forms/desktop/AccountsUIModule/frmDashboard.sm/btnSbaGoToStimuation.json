@@ -1,0 +1,51 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_right_": {
+        "type": "string",
+        "value": "30dp"
+    },
+    "_skin_": "sda6b496fd94462ba06feb36e449fe30",
+    "_text_": "",
+    "_width_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "sda6b496fd94462ba06feb36e449fe30",
+    "id": "btnSbaGoToStimuation",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "g530875e258640fda7fccc92bb883a65",
+    "name": "kony.ui.Button",
+    "parent": "flxCFGraphHeader",
+    "pf": "frmDashboard",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "texti18n": "i18n.SBAdvisory.goToSimulator",
+    "wType": "Button"
+}

@@ -1,0 +1,56 @@
+{
+    "classname": "breadCrumb",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "fe33b6e213534e5386161c2de65f7a45",
+                    "paramList": [],
+                    "propertyKey": "loadButtons",
+                    "pw": {
+                        "displayName": "loadButtons",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "jbefe2892d664f3fa8922b954f15d5b1",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "df38ea1f230e4ca8b5d6574f272955e5",
+                    "paramList": [],
+                    "propertyKey": "setContext",
+                    "pw": {
+                        "displayName": "setContext",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "jbefe2892d664f3fa8922b954f15d5b1",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfinityMB.PortfolioManagementMA",
+    "version": "1.0.0"
+}

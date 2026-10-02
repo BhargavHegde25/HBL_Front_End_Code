@@ -1,0 +1,126 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_bottom_": {
+        "type": "string",
+        "value": "20dp"
+    },
+    "_height_": {
+        "type": "string",
+        "value": "50dp"
+    },
+    "_i18n_text_": "i18n.wealth.changeStrategy",
+    "_left_": {
+        "type": "string",
+        "value": "0"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s6b97b09be8943b8abf43e1b550329b2",
+    "_text_": "Button",
+    "_top_": {
+        "type": "string",
+        "value": ""
+    },
+    "_width_": {
+        "type": "string",
+        "value": "300dp"
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "number",
+        "value": ""
+    },
+    "centery": {
+        "type": "number",
+        "value": ""
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": null,
+    "id": "btnChangeStrategy",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "b0aff8ef7749460db18860272399fa8c",
+    "name": "kony.ui.Button",
+    "parent": "flxBodyMain",
+    "pf": "userwidgetmodel",
+    "responsiveData": {
+        "b1": {
+            "centerX": {
+                "type": "string",
+                "value": "50%"
+            },
+            "height": {
+                "type": "string",
+                "value": "40dp"
+            },
+            "i18n_text": "i18n.wealth.changeStrategy",
+            "skin": "sa611611b2f24e93bcfd09e1606c0d86",
+            "text": "",
+            "width": {
+                "type": "string",
+                "value": "250dp"
+            }
+        },
+        "b2": {
+            "centerX": {
+                "type": "string",
+                "value": "50%"
+            },
+            "centerY": {
+                "type": "string",
+                "value": ""
+            },
+			"i18n_text": "i18n.wealth.changeStrategy",
+            "contentAlignment": 5,
+            "height": {
+                "type": "string",
+                "value": "40dp"
+            },
+            "skin": "sa611611b2f24e93bcfd09e1606c0d86",
+            "text": "",
+            "width": {
+                "type": "string",
+                "value": "250dp"
+            }
+        },
+        "b3": {
+            "centerX": {
+                "type": "string",
+                "value": "50%"
+            },
+            "centerY": {
+                "type": "string",
+                "value": ""
+            },
+			"i18n_text": "i18n.wealth.changeStrategy",
+            "height": {
+                "type": "string",
+                "value": "40dp"
+            },
+            "skin": "sa611611b2f24e93bcfd09e1606c0d86",
+            "text": "",
+            "width": {
+                "type": "string",
+                "value": "250dp"
+            }
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "texti18n": "i18n.wealth.changeStrategy",
+    "wType": "Button"
+}

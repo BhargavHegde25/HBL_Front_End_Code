@@ -1,0 +1,29 @@
+{
+    "AS_Form_f451356922084c8b94f7ce6e20de3183": {
+        "id": "AS_Form_f451356922084c8b94f7ce6e20de3183",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmWatchlist",
+            "type": "forms",
+            "platform": "",
+            "KUID": "j5009d8a779a4a488549baef06b2b2f8"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_g03bca6baa7f47fca1a2d60a06e4ab6c",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.onRefresh();",
+            "parentId": null
+        }]
+    }
+}

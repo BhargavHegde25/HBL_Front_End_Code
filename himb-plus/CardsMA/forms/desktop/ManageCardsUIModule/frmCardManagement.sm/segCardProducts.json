@@ -1,0 +1,770 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "_data_": [
+        {
+            "btnSelect": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Select"
+            },
+            "imgCard": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "golden_cards.png"
+            },
+            "lblCardHeader": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Golden Credit Card"
+            },
+            "lblCardValue1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "* 0.25% cashback on your everyday spending"
+            },
+            "lblCardValue2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "* No fees abroad – you’ll be able to withdraw cash from a cash machine, buy your souvenirs without any charges and benefit from Visa’s competitive exchange rate."
+            },
+            "lblKey1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Representative"
+            },
+            "lblKey2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Purchase rate p.a."
+            },
+            "lblKey3": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Based on credit limit of\t"
+            },
+            "lblRepresentativeheader": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Representative example"
+            },
+            "lblSeparator2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "a"
+            },
+            "lblValue1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "22.9% APR (variable)"
+            },
+            "lblValue2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "22.9% (variable)"
+            },
+            "lblValue3": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": " £1,200"
+            },
+            "rchTxtDisclaimer": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "<b>Disclaimer:</b>"
+            },
+            "rtxValue": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "* 0.25% cashback on your everyday spending<br>\n* No fees abroad – you’ll be able to withdraw cash from a cash machine, buy your souvenirs without any charges and benefit from Visa’s competitive exchange rate."
+            }
+        },
+        {
+            "btnSelect": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Select"
+            },
+            "imgCard": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "golden_cards.png"
+            },
+            "lblCardHeader": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Golden Credit Card"
+            },
+            "lblCardValue1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "* 0.25% cashback on your everyday spending"
+            },
+            "lblCardValue2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "* No fees abroad – you’ll be able to withdraw cash from a cash machine, buy your souvenirs without any charges and benefit from Visa’s competitive exchange rate."
+            },
+            "lblKey1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Representative"
+            },
+            "lblKey2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Purchase rate p.a."
+            },
+            "lblKey3": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Based on credit limit of\t"
+            },
+            "lblRepresentativeheader": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Representative example"
+            },
+            "lblSeparator2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "a"
+            },
+            "lblValue1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "22.9% APR (variable)"
+            },
+            "lblValue2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "22.9% (variable)"
+            },
+            "lblValue3": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": " £1,200"
+            },
+            "rchTxtDisclaimer": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "<b>Disclaimer:</b>"
+            },
+            "rtxValue": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "* 0.25% cashback on your everyday spending<br>\n* No fees abroad – you’ll be able to withdraw cash from a cash machine, buy your souvenirs without any charges and benefit from Visa’s competitive exchange rate."
+            }
+        },
+        {
+            "btnSelect": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Select"
+            },
+            "imgCard": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "golden_cards.png"
+            },
+            "lblCardHeader": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Golden Credit Card"
+            },
+            "lblCardValue1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "* 0.25% cashback on your everyday spending"
+            },
+            "lblCardValue2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "* No fees abroad – you’ll be able to withdraw cash from a cash machine, buy your souvenirs without any charges and benefit from Visa’s competitive exchange rate."
+            },
+            "lblKey1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Representative"
+            },
+            "lblKey2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Purchase rate p.a."
+            },
+            "lblKey3": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Based on credit limit of\t"
+            },
+            "lblRepresentativeheader": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Representative example"
+            },
+            "lblSeparator2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "a"
+            },
+            "lblValue1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "22.9% APR (variable)"
+            },
+            "lblValue2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "22.9% (variable)"
+            },
+            "lblValue3": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": " £1,200"
+            },
+            "rchTxtDisclaimer": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "<b>Disclaimer:</b>"
+            },
+            "rtxValue": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "* 0.25% cashback on your everyday spending<br>\n* No fees abroad – you’ll be able to withdraw cash from a cash machine, buy your souvenirs without any charges and benefit from Visa’s competitive exchange rate."
+            }
+        },
+        {
+            "btnSelect": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Select"
+            },
+            "imgCard": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "golden_cards.png"
+            },
+            "lblCardHeader": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Golden Credit Card"
+            },
+            "lblCardValue1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "* 0.25% cashback on your everyday spending"
+            },
+            "lblCardValue2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "* No fees abroad – you’ll be able to withdraw cash from a cash machine, buy your souvenirs without any charges and benefit from Visa’s competitive exchange rate."
+            },
+            "lblKey1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Representative"
+            },
+            "lblKey2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Purchase rate p.a."
+            },
+            "lblKey3": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Based on credit limit of\t"
+            },
+            "lblRepresentativeheader": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Representative example"
+            },
+            "lblSeparator2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "a"
+            },
+            "lblValue1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "22.9% APR (variable)"
+            },
+            "lblValue2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "22.9% (variable)"
+            },
+            "lblValue3": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": " £1,200"
+            },
+            "rchTxtDisclaimer": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "<b>Disclaimer:</b>"
+            },
+            "rtxValue": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "* 0.25% cashback on your everyday spending<br>\n* No fees abroad – you’ll be able to withdraw cash from a cash machine, buy your souvenirs without any charges and benefit from Visa’s competitive exchange rate."
+            }
+        },
+        {
+            "btnSelect": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Select"
+            },
+            "imgCard": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "golden_cards.png"
+            },
+            "lblCardHeader": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Golden Credit Card"
+            },
+            "lblCardValue1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "* 0.25% cashback on your everyday spending"
+            },
+            "lblCardValue2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "* No fees abroad – you’ll be able to withdraw cash from a cash machine, buy your souvenirs without any charges and benefit from Visa’s competitive exchange rate."
+            },
+            "lblKey1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Representative"
+            },
+            "lblKey2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Purchase rate p.a."
+            },
+            "lblKey3": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Based on credit limit of\t"
+            },
+            "lblRepresentativeheader": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Representative example"
+            },
+            "lblSeparator2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "a"
+            },
+            "lblValue1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "22.9% APR (variable)"
+            },
+            "lblValue2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "22.9% (variable)"
+            },
+            "lblValue3": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": " £1,200"
+            },
+            "rchTxtDisclaimer": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "<b>Disclaimer:</b>"
+            },
+            "rtxValue": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "* 0.25% cashback on your everyday spending<br>\n* No fees abroad – you’ll be able to withdraw cash from a cash machine, buy your souvenirs without any charges and benefit from Visa’s competitive exchange rate."
+            }
+        },
+        {
+            "btnSelect": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Select"
+            },
+            "imgCard": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "golden_cards.png"
+            },
+            "lblCardHeader": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Golden Credit Card"
+            },
+            "lblCardValue1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "* 0.25% cashback on your everyday spending"
+            },
+            "lblCardValue2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "* No fees abroad – you’ll be able to withdraw cash from a cash machine, buy your souvenirs without any charges and benefit from Visa’s competitive exchange rate."
+            },
+            "lblKey1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Representative"
+            },
+            "lblKey2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Purchase rate p.a."
+            },
+            "lblKey3": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Based on credit limit of\t"
+            },
+            "lblRepresentativeheader": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Representative example"
+            },
+            "lblSeparator2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "a"
+            },
+            "lblValue1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "22.9% APR (variable)"
+            },
+            "lblValue2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "22.9% (variable)"
+            },
+            "lblValue3": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": " £1,200"
+            },
+            "rchTxtDisclaimer": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "<b>Disclaimer:</b>"
+            },
+            "rtxValue": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "* 0.25% cashback on your everyday spending<br>\n* No fees abroad – you’ll be able to withdraw cash from a cash machine, buy your souvenirs without any charges and benefit from Visa’s competitive exchange rate."
+            }
+        },
+        {
+            "btnSelect": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Select"
+            },
+            "imgCard": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "golden_cards.png"
+            },
+            "lblCardHeader": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Golden Credit Card"
+            },
+            "lblCardValue1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "* 0.25% cashback on your everyday spending"
+            },
+            "lblCardValue2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "* No fees abroad – you’ll be able to withdraw cash from a cash machine, buy your souvenirs without any charges and benefit from Visa’s competitive exchange rate."
+            },
+            "lblKey1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Representative"
+            },
+            "lblKey2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Purchase rate p.a."
+            },
+            "lblKey3": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Based on credit limit of\t"
+            },
+            "lblRepresentativeheader": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Representative example"
+            },
+            "lblSeparator2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "a"
+            },
+            "lblValue1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "22.9% APR (variable)"
+            },
+            "lblValue2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "22.9% (variable)"
+            },
+            "lblValue3": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": " £1,200"
+            },
+            "rchTxtDisclaimer": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "<b>Disclaimer:</b>"
+            },
+            "rtxValue": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "* 0.25% cashback on your everyday spending<br>\n* No fees abroad – you’ll be able to withdraw cash from a cash machine, buy your souvenirs without any charges and benefit from Visa’s competitive exchange rate."
+            }
+        },
+        {
+            "btnSelect": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Select"
+            },
+            "imgCard": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "golden_cards.png"
+            },
+            "lblCardHeader": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Golden Credit Card"
+            },
+            "lblCardValue1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "* 0.25% cashback on your everyday spending"
+            },
+            "lblCardValue2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "* No fees abroad – you’ll be able to withdraw cash from a cash machine, buy your souvenirs without any charges and benefit from Visa’s competitive exchange rate."
+            },
+            "lblKey1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Representative"
+            },
+            "lblKey2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Purchase rate p.a."
+            },
+            "lblKey3": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Based on credit limit of\t"
+            },
+            "lblRepresentativeheader": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Representative example"
+            },
+            "lblSeparator2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "a"
+            },
+            "lblValue1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "22.9% APR (variable)"
+            },
+            "lblValue2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "22.9% (variable)"
+            },
+            "lblValue3": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": " £1,200"
+            },
+            "rchTxtDisclaimer": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "<b>Disclaimer:</b>"
+            },
+            "rtxValue": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "* 0.25% cashback on your everyday spending<br>\n* No fees abroad – you’ll be able to withdraw cash from a cash machine, buy your souvenirs without any charges and benefit from Visa’s competitive exchange rate."
+            }
+        },
+        {
+            "btnSelect": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Select"
+            },
+            "imgCard": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "golden_cards.png"
+            },
+            "lblCardHeader": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Golden Credit Card"
+            },
+            "lblCardValue1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "* 0.25% cashback on your everyday spending"
+            },
+            "lblCardValue2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "* No fees abroad – you’ll be able to withdraw cash from a cash machine, buy your souvenirs without any charges and benefit from Visa’s competitive exchange rate."
+            },
+            "lblKey1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Representative"
+            },
+            "lblKey2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Purchase rate p.a."
+            },
+            "lblKey3": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Based on credit limit of\t"
+            },
+            "lblRepresentativeheader": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Representative example"
+            },
+            "lblSeparator2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "a"
+            },
+            "lblValue1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "22.9% APR (variable)"
+            },
+            "lblValue2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "22.9% (variable)"
+            },
+            "lblValue3": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": " £1,200"
+            },
+            "rchTxtDisclaimer": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "<b>Disclaimer:</b>"
+            },
+            "rtxValue": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "* 0.25% cashback on your everyday spending<br>\n* No fees abroad – you’ll be able to withdraw cash from a cash machine, buy your souvenirs without any charges and benefit from Visa’s competitive exchange rate."
+            }
+        },
+        {
+            "btnSelect": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Select"
+            },
+            "imgCard": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "golden_cards.png"
+            },
+            "lblCardHeader": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Golden Credit Card"
+            },
+            "lblCardValue1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "* 0.25% cashback on your everyday spending"
+            },
+            "lblCardValue2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "* No fees abroad – you’ll be able to withdraw cash from a cash machine, buy your souvenirs without any charges and benefit from Visa’s competitive exchange rate."
+            },
+            "lblKey1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Representative"
+            },
+            "lblKey2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Purchase rate p.a."
+            },
+            "lblKey3": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Based on credit limit of\t"
+            },
+            "lblRepresentativeheader": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Representative example"
+            },
+            "lblSeparator2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "a"
+            },
+            "lblValue1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "22.9% APR (variable)"
+            },
+            "lblValue2": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "22.9% (variable)"
+            },
+            "lblValue3": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": " £1,200"
+            },
+            "rchTxtDisclaimer": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "<b>Disclaimer:</b>"
+            },
+            "rtxValue": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "* 0.25% cashback on your everyday spending<br>\n* No fees abroad – you’ll be able to withdraw cash from a cash machine, buy your souvenirs without any charges and benefit from Visa’s competitive exchange rate."
+            }
+        }
+    ],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_right_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "99%"
+    },
+    "accessibilityconfig": {
+        "a11yARIA": {
+            "tabindex": -1
+        }
+    },
+    "autogrowmode": 1,
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "counter": "09",
+    "focusedindex": null,
+    "focuseditem": null,
+    "groupcells": false,
+    "hasSections": false,
+    "id": "segCardProducts",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "isvisible": true,
+    "kuid": "f5e907e33f5c4ce98ec02975d988c5f9",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "flxCardProductsSegments",
+    "pf": "frmCardManagement",
+    "responsiveData": {
+        "b1": {
+            "width": {
+                "type": "string",
+                "value": "100%"
+            }
+        },
+        "b4": {
+            "height": {
+                "type": "ref",
+                "value": "preferred"
+            },
+            "width": {
+                "type": "string",
+                "value": "100%"
+            }
+        }
+    },
+    "retainselection": false,
+    "rowTemplateId": "b723ba356f2e492bad6ad0b5902c1317",
+    "rowcounter": 9,
+    "rowfocusskin": "s9f69e977910472eb44c62ae28c41fe1",
+    "rowskin": "s81e45ca9be04bba9f11cf557d9d0c1e",
+    "rowtemplate": "flxCardProducts",
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionHeaderTemplateId": null,
+    "sectionheaderskin": "sdc4ff4ed1584272be2ae69045dfb29d",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "separatorrequired": false,
+    "separatorthickness": 0,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "vizProps": {},
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "btnSelect": "btnSelect",
+        "flxCardDetails": "flxCardDetails",
+        "flxCardImage": "flxCardImage",
+        "flxCardProducts": "flxCardProducts",
+        "flxCreditLimitKeyvalue": "flxCreditLimitKeyvalue",
+        "flxMyCards": "flxMyCards",
+        "flxProductDetails": "flxProductDetails",
+        "flxPurchaseKeyvalue": "flxPurchaseKeyvalue",
+        "flxRepresentative": "flxRepresentative",
+        "flxRepresentativeKeyValue": "flxRepresentativeKeyValue",
+        "imgCard": "imgCard",
+        "lblCardHeader": "lblCardHeader",
+        "lblCardValue1": "lblCardValue1",
+        "lblCardValue2": "lblCardValue2",
+        "lblKey1": "lblKey1",
+        "lblKey2": "lblKey2",
+        "lblKey3": "lblKey3",
+        "lblRepresentativeheader": "lblRepresentativeheader",
+        "lblSeparator2": "lblSeparator2",
+        "lblValue1": "lblValue1",
+        "lblValue2": "lblValue2",
+        "lblValue3": "lblValue3",
+        "rchTxtDisclaimer": "rchTxtDisclaimer",
+        "rtxValue": "rtxValue"
+    },
+    "zindex": 1
+}

@@ -1,0 +1,61 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizLabel",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "20dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        1,
+        1,
+        1,
+        1
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s099ef7f06a448f4829720e965b61e70",
+    "_text_": "s",
+    "_width_": {
+        "type": "string",
+        "value": "20dp"
+    },
+    "_wrapping_": 2,
+    "accessibilityconfig": {},
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "id": "imgAccountTypeIcon",
+    "info": null,
+    "iphone": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "isvisible": true,
+    "kuid": "cc570cfa5e44452e8467ec9bd3ec4029",
+    "name": "kony.ui.Label",
+    "parent": "flxImgAccountTypeIcon",
+    "pf": "frmPortfolioOverview",
+    "responsiveData": {
+        "b1": {},
+        "b2": {
+            "isVisible": true
+        },
+        "b3": {}
+    },
+    "tooltip": "Account Type",
+    "wType": "Label",
+    "zindex": 1
+}

@@ -1,0 +1,62 @@
+{
+    "DNDConfig": null,
+    "_bottom_": {
+        "type": "string",
+        "value": ""
+    },
+    "_height_": {
+        "type": "string",
+        "value": "80dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s24c92fc23b14f5484b693ee9b8a9b35",
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "children": [
+        "lblSelectDate",
+        "calendarDate"
+    ],
+    "clipbounds": true,
+    "containerweight": 100,
+    "desktopweb": {
+        "bottom": {
+            "type": "string",
+            "value": ""
+        }
+    },
+    "enablescrolling": true,
+    "id": "flxScheduleDate",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": false,
+    "kuid": "c6a9c7d888224f03af550fbccb9a720e",
+    "layouttype": 4,
+    "name": "kony.ui.FlexContainer",
+    "parent": "flxLeftHeader",
+    "pf": "frmCurrencyConverter",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1
+}

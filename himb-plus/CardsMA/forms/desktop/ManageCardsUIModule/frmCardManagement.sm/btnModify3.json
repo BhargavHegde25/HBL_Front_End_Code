@@ -1,0 +1,125 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_bottom_": {
+        "type": "number",
+        "value": ""
+    },
+    "_height_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_i18n_text_": null,
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_right_": {
+        "type": "string",
+        "value": "200dp"
+    },
+    "_skin_": "sb950bc796154e88a6e0b3ebde988534",
+    "_text_": "Back",
+    "_width_": {
+        "type": "string",
+        "value": "260dp"
+    },
+    "accessibilityconfig": {
+        "a11yLabel": "Cancel"
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "number",
+        "value": ""
+    },
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "desktopweb": {
+        "psp": {
+            "hoverSkin": "sdbbccbd1d224646bda17c38efb9ccb8"
+        }
+    },
+    "disabledSkins": {},
+    "displaytext": true,
+    "focusskin": "",
+    "hoverskin": "",
+    "id": "btnModify3",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "c9896f38cbaf4d179f67792c707e7d22",
+    "name": "kony.ui.Button",
+    "parent": "flxNewCardButtons2",
+    "pf": "frmCardManagement",
+    "responsiveData": {
+        "b1": {
+            "width": {
+                "type": "string",
+                "value": "150dp"
+            }
+        },
+        "b2": {
+            "centerY": {
+                "type": "string",
+                "value": "50%"
+            },
+            "width": {
+                "type": "string",
+                "value": "150dp"
+            }
+        },
+        "b3": {
+            "bottom": {
+                "type": "string",
+                "value": "80dp"
+            },
+            "centerX": {
+                "type": "string",
+                "value": "50%"
+            },
+            "centerY": {
+                "type": "string",
+                "value": ""
+            },
+            "width": {
+                "type": "string",
+                "value": "98%"
+            }
+        },
+        "b4": {
+            "desktopweb": {
+                "psp": {
+                    "hoverSkin": "s0f5748e0ea447b99601a5b7d636357c"
+                }
+            },
+            "disabledSkins": {},
+            "focusSkin": "sdbbccbd1d224646bda17c38efb9ccb8",
+            "i18n_text": "i18n.transfers.Modify",
+            "right": {
+                "type": "string",
+                "value": "200dp"
+            },
+            "skin": "sdbbccbd1d224646bda17c38efb9ccb8",
+            "width": {
+                "type": "string",
+                "value": "150dp"
+            }
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "wType": "Button",
+    "zindex": 5
+}

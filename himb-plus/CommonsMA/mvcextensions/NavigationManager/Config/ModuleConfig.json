@@ -1,0 +1,8 @@
+{
+    "ModuleName": "NavigationManager",
+	"ModuleType": "Manager",
+    "BusinessControllerConfig": {
+        "BusinessExtensions": ["NavigationManager/BusinessControllers/BusinessController_Extension"],
+        "BusinessControllerClass": "NavigationManager/BusinessControllers/BusinessController"
+    }
+}

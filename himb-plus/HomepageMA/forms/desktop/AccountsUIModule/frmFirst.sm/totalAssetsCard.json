@@ -1,0 +1,303 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "DNDConfig": null,
+    "_children_": [],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_right_": {
+        "type": "number",
+        "value": ""
+    },
+    "_skin_": "sdc143f0e5b64ae3a3f155f691c73fa7",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "android": {},
+    "androidwearos": {},
+    "areflexpropsreferenced": false,
+    "autogrowmode": 1,
+    "canUpdateUI": true,
+    "clipbounds": true,
+    "containerweight": 0,
+    "dataDiffs": {
+        "flxAssetDetails": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "a894db7fec994cce9fd6d6aaf3df9843",
+                "srcKUID": "b439c974e7324afe923e20f8e5d1d2d6",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxContent": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "bb009b3ab5f34fdfba2a4ae39c8dcd8f",
+                "srcKUID": "h73204756763470c82259be878466fbd",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxLegendScroll": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "c3e6a9d228fa4a0cb741f951f6f16462",
+                "srcKUID": "d9ae5013b3c542e88ebf2557f387a534",
+                "wType": "FlexScrollContainer"
+            }
+        },
+        "flxLegendTilte": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "cc1a9f40f0af4f1da2e2a2f1bc8fba39",
+                "srcKUID": "dffc9db222ad436ab8b7618d2bd8cd33",
+                "wType": "Label"
+            }
+        },
+        "flxSeparator": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "fafe57c6d501477492bd5caab5e61a60",
+                "srcKUID": "hb8476e443db42c5b197a9496060ffdf",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxTitle": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "a4d02fb9db9e4d5696cf71c00ccc3e77",
+                "srcKUID": "f24fdbf2b2cb48968b8c0c47597861ba",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxToalValue": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "he525e4ccbe04f3f9cac0e25853ff161",
+                "srcKUID": "i5cf8525988f4845a95dcf9341f1fadf",
+                "wType": "Label"
+            }
+        },
+        "lblTitle": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "fef95ebec4d744d485879d5cb990dc79",
+                "srcKUID": "b4e3910a982944f8998361c08168d9eb",
+                "wType": "Label"
+            }
+        },
+        "segLegend": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "cc32af8c30e7446ba9f79cf86ecce81f",
+                "srcKUID": "fa706df3662f4ecdb0ed3b5d2980aad0",
+                "wType": "Segment"
+            },
+            "data": {
+                "desktop": [
+                    {
+                        "flxAssetClass": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": "Cash (50%)"
+                        },
+                        "flxMarketValue": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": "$30,574.50"
+                        },
+                        "img1": {
+                            "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                            "src": "imagedrag.png"
+                        }
+                    },
+                    {
+                        "flxAssetClass": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": "Stocks (20%)"
+                        },
+                        "flxMarketValue": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": "$12,229.80"
+                        },
+                        "img1": {
+                            "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                            "src": "imagedrag.png"
+                        }
+                    },
+                    {
+                        "flxAssetClass": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": "Bond (16%)"
+                        },
+                        "flxMarketValue": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": "$9,783.84"
+                        },
+                        "img1": {
+                            "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                            "src": "imagedrag.png"
+                        }
+                    },
+                    {
+                        "flxAssetClass": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": "Mutual Fund (10%)"
+                        },
+                        "flxMarketValue": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": "$6,114.93"
+                        },
+                        "img1": {
+                            "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                            "src": "imagedrag.png"
+                        }
+                    },
+                    {
+                        "flxAssetClass": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": "Term Deposit (4%)"
+                        },
+                        "flxMarketValue": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": "$2,445.97"
+                        },
+                        "img1": {
+                            "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                            "src": "imagedrag.png"
+                        }
+                    }
+                ]
+            }
+        },
+        "totalAssetsCard": {
+            "__events__": {},
+            "__info__": {
+                "isRoot": true,
+                "kuid": "f912d13ab8c34e9d963c183746a553fa",
+                "srcKUID": "b1e59018a7c54103b02208130cd04d21",
+                "wType": "FlexContainer"
+            },
+            "isVisible": false,
+            "left": {
+                "Default": {
+                    "type": "string",
+                    "value": "0dp"
+                }
+            },
+            "responsiveData": {
+                "b3": {
+                    "left": {
+                        "type": "string",
+                        "value": "10dp"
+                    },
+                    "right": {
+                        "type": "string",
+                        "value": "10dp"
+                    },
+                    "width": {
+                        "type": "ref",
+                        "value": "preferred"
+                    }
+                }
+            },
+            "right": {
+                "Default": {
+                    "type": "number",
+                    "value": ""
+                }
+            },
+            "width": {
+                "Default": {
+                    "type": "string",
+                    "value": "100%"
+                }
+            }
+        },
+        "totalAssetsChart": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "fe3b03b6a3fe4a17abc608156f53221b",
+                "srcKUID": "d04b4d301d4f47f1a0968f4c5e62291b",
+                "wType": "Browser"
+            },
+            "height": {
+                "Default": {
+                    "type": "string",
+                    "value": "260dp"
+                }
+            },
+            "responsiveData": {},
+            "width": {
+                "Default": {
+                    "type": "string",
+                    "value": "260dp"
+                }
+            }
+        }
+    },
+    "desktopweb": {},
+    "enablescrolling": true,
+    "id": "totalAssetsCard",
+    "info": null,
+    "ipad": {},
+    "iphone": {},
+    "iscustomlayout": false,
+    "isdatareferenced": false,
+    "isvisible": false,
+    "kuid": "f912d13ab8c34e9d963c183746a553fa",
+    "layouttype": 4,
+    "masterType": 0,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "flxTotalAssetsContainer",
+    "pf": "frmFirst",
+    "responsiveData": {
+        "b3": {
+            "left": {
+                "type": "string",
+                "value": "10dp"
+            },
+            "right": {
+                "type": "string",
+                "value": "10dp"
+            },
+            "width": {
+                "type": "ref",
+                "value": "preferred"
+            }
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "sourceUserWidget": "b1e59018a7c54103b02208130cd04d21",
+    "spabb": {},
+    "tabrcandroid": {},
+    "vizProps": {
+        "hidewidgethierarchy": false
+    },
+    "wType": "UserWidgetInstance"
+}

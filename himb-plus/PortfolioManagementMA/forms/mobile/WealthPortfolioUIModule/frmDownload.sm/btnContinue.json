@@ -1,0 +1,55 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_bottom_": {
+        "type": "string",
+        "value": "20dp"
+    },
+    "_height_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "sf341527faf746a483a1c601a2d9002a",
+    "_text_": "Download",
+    "_width_": {
+        "type": "string",
+        "value": "90%"
+    },
+    "accessibilityconfig": {
+        "a11yHint": "Tap Continue to move to the next screen",
+        "a11yLabel": "Continue"
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "disabledSkins": {
+        "focusSkin": "sd85a0f475ff4b3b9f0a5e4b82f68213"
+    },
+    "displaytext": true,
+    "id": "btnContinue",
+    "info": null,
+    "isvisible": true,
+    "kuid": "fb5216831cdf4c38bdb939ee5d399644",
+    "name": "kony.ui.Button",
+    "parent": "flxDownloadWrapper",
+    "pf": "frmDownload",
+    "texti18n": "i18n.wealth.download",
+    "wType": "Button",
+    "zindex": 1
+}

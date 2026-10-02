@@ -1,0 +1,61 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_right_": {
+        "type": "string",
+        "value": "30dp"
+    },
+    "_skin_": "sb950bc796154e88a6e0b3ebde988534",
+    "_text_": "",
+    "_width_": {
+        "type": "string",
+        "value": "150dp"
+    },
+    "accessibilityconfig": {
+        "a11yARIA": {}
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "desktopweb": {
+        "psp": {
+            "hoverSkin": "sdbbccbd1d224646bda17c38efb9ccb8"
+        }
+    },
+    "disabledSkins": {},
+    "displaytext": true,
+    "focusskin": "sb950bc796154e88a6e0b3ebde988534",
+    "id": "btnCancel1",
+    "info": null,
+    "isvisible": true,
+    "kuid": "ddd0cced73964085b5da4331d439fe36",
+    "name": "kony.ui.Button",
+    "parent": "flxButtons1",
+    "pf": "userwidgetmodel",
+    "responsiveData": {
+        "b3": {}
+    },
+    "texti18n": "i18n.TransfersEur.btnCancel",
+    "wType": "Button",
+    "zindex": 2
+}

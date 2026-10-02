@@ -1,0 +1,59 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "20dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s4b17507e4254527bd4c3ac908e4cbf0",
+    "_text_": "Add Favourite",
+    "_top_": {
+        "type": "string",
+        "value": "10dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "80%"
+    },
+    "activeNativeBorderCornerRadiusControl": "topLeftControl",
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "disabledSkins": {
+        "focusSkin": "sdc25062569d4a47ba3137671095ff9c"
+    },
+    "displaytext": true,
+    "id": "btnBackDashboard",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "ib1f07823d4446239db98fba0bff67c2",
+    "name": "kony.ui.Button",
+    "parent": "flxActBtns",
+    "pf": "frmBillPayAcknowledgement",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "texti18n": "i18n.BillPay.BackDashboard",
+    "wType": "Button",
+    "zindex": 1
+}

@@ -1,0 +1,68 @@
+{
+    "classname": "StrategyCard",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "cfdec6263e8d45ff89b29373491abc57",
+                    "paramList": [],
+                    "propertyKey": "setData",
+                    "pw": {
+                        "displayName": "setData",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ga0dce8d95de40848a5fe25cfd90270b",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "c18b6515fc50490c8c9505ca7b0b4d4a",
+                    "paramList": [],
+                    "propertyKey": "updateSkins",
+                    "pw": {
+                        "displayName": "updateSkins",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ga0dce8d95de40848a5fe25cfd90270b",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "d61c24aa35bf4290a77710e1574269ba",
+                    "paramList": [],
+                    "propertyKey": "updateSkinsNull",
+                    "pw": {
+                        "displayName": "updateSkinsNull",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "ga0dce8d95de40848a5fe25cfd90270b",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfinityMB.PortfolioManagementMA",
+    "version": "1.0.0"
+}

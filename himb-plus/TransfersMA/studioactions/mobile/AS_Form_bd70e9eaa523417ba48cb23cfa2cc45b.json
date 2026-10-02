@@ -1,0 +1,22 @@
+{
+    "AS_Form_bd70e9eaa523417ba48cb23cfa2cc45b": {
+        "id": "AS_Form_bd70e9eaa523417ba48cb23cfa2cc45b",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "CopyfrmCrossBorderSelectAccount",
+            "type": "forms",
+            "platform": null,
+            "KUID": "d02d52982a2a4b9f80ff633386cbbc5e"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_init_h88820d5d861471db8d3171bc5056256",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.init();"
+        }]
+    }
+}

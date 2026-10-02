@@ -1,0 +1,108 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_left_": {
+        "type": "number",
+        "value": ""
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_right_": {
+        "type": "string",
+        "value": "25%"
+    },
+    "_skin_": "sa611611b2f24e93bcfd09e1606c0d86",
+    "_text_": "",
+    "_top_": {
+        "type": "number",
+        "value": ""
+    },
+    "_width_": {
+        "type": "string",
+        "value": "18.80%"
+    },
+    "accessibilityconfig": {
+        "a11yLabel": "Cancel"
+    },
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "desktopweb": {
+        "psp": {
+            "hoverSkin": "s83729feaa224e359d660d5af05c4bac"
+        }
+    },
+    "displaytext": true,
+    "focusskin": "sb23593b913b4005add4a246020aa1cc",
+    "id": "btnCancel",
+    "ide_onClick": "AS_Button_edafecdb627b4ea2b690d82352e9d295",
+    "info": null,
+    "isvisible": true,
+    "kuid": "be6bfda971ca4fa3b28e306cf9a0e46e",
+    "name": "kony.ui.Button",
+    "parent": "flxBottom",
+    "pf": "frmBillPayNew",
+    "responsiveData": {
+        "b1": {
+            "width": {
+                "type": "string",
+                "value": "150dp"
+            }
+        },
+        "b2": {
+            "right": {
+                "type": "string",
+                "value": "180dp"
+            },
+            "width": {
+                "type": "string",
+                "value": "150dp"
+            }
+        },
+        "b3": {
+            "centerX": {
+                "type": "string",
+                "value": "50%"
+            },
+            "centerY": {
+                "type": "string",
+                "value": ""
+            },
+            "left": {
+                "type": "string",
+                "value": "2.50%"
+            },
+            "skin": "s8e36b0f445c4bdebea8a7bf912a6e2a",
+            "top": {
+                "type": "number",
+                "value": "20"
+            },
+            "width": {
+                "type": "string",
+                "value": "95%"
+            }
+        }
+    },
+    "texti18n": "i18n.transfers.Cancel",
+    "tooltip": "Cancel",
+    "wType": "Button",
+    "zindex": 1
+}

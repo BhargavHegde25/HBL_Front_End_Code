@@ -1,0 +1,61 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "30dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "sa447ed7d7d14dff87c4fa47f1f9c5ac",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "accessibilityconfig": {
+        "a11yARIA": {
+            "role": "link",
+            "tabindex": 0
+        }
+    },
+    "canUpdateUI": true,
+    "containerId": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "desktopweb": {
+        "psp": {
+            "hoverSkin": "seaf35b8d04c47b0b8a2c4c009ceaf87"
+        }
+    },
+    "disabledSkins": {},
+    "displaytext": true,
+    "focusskin": "seaf35b8d04c47b0b8a2c4c009ceaf87",
+    "id": "btnAction3",
+    "info": null,
+    "isvisible": false,
+    "kuid": "ebad9468a7fb4c98bbefff7ca30a0b12",
+    "name": "kony.ui.Button",
+    "parent": "flxActionsContainer",
+    "pf": "segMyCardsCollapsed",
+    "wType": "Button",
+    "zindex": 1
+}

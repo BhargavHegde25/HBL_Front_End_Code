@@ -1,0 +1,17 @@
+{
+    "AS_BarButtonItem_a69d71958cbb4350a986670efb4893ef": {
+        "id": "AS_BarButtonItem_a69d71958cbb4350a986670efb4893ef",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_e62b734bcded4c1f93fbe63ac5f82389",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var scope=this;\r\nvar navManager = applicationManager.getNavigationManager();\r\n         navManager.setCustomInfo(\"flag\",scope.myForm);\r\n         var enrollMod = kony.mvc.MDAApplication.getSharedInstance().getModuleManager().getModule({\"moduleName\" : \"EnrollUIModule\", \"appName\": \"SelfServiceEnrolmentMA\"});\r\n    enrollMod.presentationController.resetEnrollObj();",
+            "parentId": null
+        }]
+    }
+}

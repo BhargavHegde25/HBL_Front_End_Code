@@ -1,0 +1,144 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizLabel",
+    "DNDConfig": null,
+    "_bottom_": {
+        "type": "number",
+        "value": "0"
+    },
+    "_height_": {
+        "type": "string",
+        "value": "31dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": ""
+    },
+    "_margin_": [
+        1,
+        1,
+        1,
+        1
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_right_": {
+        "type": "number",
+        "value": ""
+    },
+    "_skin_": "s041d667ab4145c5ab64995a5d102deb",
+    "_text_": "Success!!!",
+    "_top_": {
+        "type": "string",
+        "value": "5dp"
+    },
+    "_width_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_wrapping_": 2,
+    "accessibilityconfig": {
+        "a11yARIA": {
+            "tabindex": -1
+        },
+        "tagName": "span"
+    },
+    "android": {
+        "textStyle": {
+            "letterSpacing": 0,
+            "strikeThrough": false
+        }
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "centery": {
+        "type": "string",
+        "value": ""
+    },
+    "containerweight": 100,
+    "contentalignment": 4,
+    "id": "lblSuccess2",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "iphone": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "c3344122a5414de088fa82e65c1e32b7",
+    "maxheight": {
+        "type": "number",
+        "value": ""
+    },
+    "name": "kony.ui.Label",
+    "paddinginpixel": false,
+    "parent": "flxAckScreen2",
+    "pf": "frmEnrollNow",
+    "responsiveData": {
+        "b1": {},
+        "b2": {
+            "bottom": {
+                "type": "string",
+                "value": ""
+            },
+            "contentAlignment": 4,
+            "height": {
+                "type": "ref",
+                "value": "preferred"
+            },
+            "maxHeight": {
+                "type": "string",
+                "value": ""
+            },
+            "right": {
+                "type": "string",
+                "value": ""
+            }
+        },
+        "b3": {
+            "bottom": {
+                "type": "string",
+                "value": ""
+            },
+            "contentAlignment": 5,
+            "height": {
+                "type": "string",
+                "value": "25dp"
+            },
+            "padding": [
+                0,
+                0,
+                0,
+                0
+            ]
+        },
+        "b4": {
+            "bottom": {
+                "type": "number",
+                "value": "0"
+            },
+            "contentAlignment": 5,
+            "height": {
+                "type": "ref",
+                "value": "preferred"
+            }
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "tooltip": "",
+    "wType": "Label",
+    "zindex": 1
+}

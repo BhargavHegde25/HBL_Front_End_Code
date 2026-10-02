@@ -1,0 +1,87 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizTextBox2",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_i18n_placeholder_": "i18n.HBL.Cards.EnterPANnumber",
+    "_i18n_text_": "i18n.HBL.Cards.PANNo",
+    "_left_": {
+        "type": "string",
+        "value": "6%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        1,
+        1,
+        1,
+        1
+    ],
+    "_placeholder_": "",
+    "_skin_": "s0414960ae5e425a8d5653b2c9fa3f22",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": ""
+    },
+    "_width_": {
+        "type": "string",
+        "value": "60%"
+    },
+    "accessibilityconfig": {
+        "a11yLabel": "Optional"
+    },
+    "autocapitalize": "none",
+    "autocomplete": false,
+    "autocorrect": false,
+    "autofilter": false,
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerheight": "",
+    "containerheightmode": 1,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "desktopweb": {
+        "psp": {
+            "hoverSkin": "sc2a915af7374adb92c4d9b6e4a0fc6a"
+        }
+    },
+    "disabledSkins": {},
+    "focusskin": "s2faf9c2766d4142ab33d0bf97445ae0",
+    "id": "tbxPANNo",
+    "info": null,
+    "isvisible": true,
+    "keyboardstyle": "A",
+    "keyboardtype": "A",
+    "kuid": "eed42853dd0645199edfea1274aaca9e",
+    "maxtextlength": 9,
+    "mode": "A",
+    "name": "kony.ui.TextBox2",
+    "paddingLocked": true,
+    "paddinginpixel": false,
+    "parent": "flxPANNo",
+    "pf": "frmCardManagement",
+    "placeholderi18n": "i18n.HBL.Cards.EnterPANnumber",
+    "responsiveData": {
+        "b1": {},
+        "b4": {
+            "i18n_text": "i18n.HBL.Cards.PANNo",
+            "text": ""
+        }
+    },
+    "securetextentry": false,
+    "texti18n": "i18n.HBL.Cards.PANNo",
+    "textinputmode": "A",
+    "viewtype": "default",
+    "wType": "TextField",
+    "zindex": 1
+}

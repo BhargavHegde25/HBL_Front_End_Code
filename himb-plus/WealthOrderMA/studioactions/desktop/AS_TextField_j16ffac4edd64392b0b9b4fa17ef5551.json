@@ -1,0 +1,31 @@
+{
+    "AS_TextField_j16ffac4edd64392b0b9b4fa17ef5551": {
+        "id": "AS_TextField_j16ffac4edd64392b0b9b4fa17ef5551",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "changedtext"
+        }],
+        "contextObj": {
+            "type": "forms",
+            "platform": "",
+            "KUID": "df336a49059240909206ab5f8f5b99ab",
+            "name": "frmCurrencyConverter"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__a1ca63b70cba47829ff7c950acdb0361",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "convertCurrency",
+            "display": "convertCurrency",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null,
+            "source": "controller"
+        }]
+    }
+}

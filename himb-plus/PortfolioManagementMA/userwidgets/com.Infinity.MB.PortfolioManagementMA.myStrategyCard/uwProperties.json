@@ -1,0 +1,106 @@
+{
+    "classname": "myStrategyCard",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "aa15e9f60d524fd896072a0543780acb",
+                    "paramList": [],
+                    "propertyKey": "setContext",
+                    "pw": {
+                        "displayName": "setContext",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "gf61d99dfe934e6abbfed97c2bc90f53",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "bcc23cb409d7419fb6d41368990f4372",
+                    "paramList": [],
+                    "propertyKey": "hideFlex",
+                    "pw": {
+                        "displayName": "hideFlex",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "gf61d99dfe934e6abbfed97c2bc90f53",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"lblName\": \"assetName\",\n  \"lblPercent\": \"weight\",\n  \"flxLegend\": \"background\"\n}",
+                    "group": "General",
+                    "kuid": "g18ff3d6eb1741828a4b35bad4bd07a1",
+                    "originalPropertyKey": "widgetMapping",
+                    "propertyIndex": 1,
+                    "propertyKey": "widgetMapping",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "widget mapping",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "gf61d99dfe934e6abbfed97c2bc90f53",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n\"ObjectName\": \"Strategies\",\n\"ServiceName\": \"PortfolioServicing\",\n\"OperationName\": \"getMyStrategy\"\n}",
+                    "group": "General",
+                    "kuid": "hf5988656b1548f2b0674581c34db788",
+                    "originalPropertyKey": "serviceCall",
+                    "propertyIndex": 2,
+                    "propertyKey": "serviceCall",
+                    "pw": {
+                        "displayName": "service call",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "gf61d99dfe934e6abbfed97c2bc90f53",
+                    "type": "json",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.Infinity.MB.PortfolioManagementMA",
+    "version": "1.0.0"
+}

@@ -1,0 +1,56 @@
+{
+    "classname": "investmentFilter",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "baadcba1388346efa06e70374d9ff39c",
+                    "paramList": [],
+                    "propertyKey": "setFilterSegment",
+                    "pw": {
+                        "displayName": "setFilterSegment",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "h07c1bb3ff3f4caf97a6d52fd5a04e8b",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "b7896eb057ea4296acbbbfb24afe138f",
+                    "paramList": [],
+                    "propertyKey": "goBack",
+                    "pw": {
+                        "displayName": "goBack",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "h07c1bb3ff3f4caf97a6d52fd5a04e8b",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfinityMB.PortfolioManagementMA",
+    "version": "1.0.0"
+}

@@ -1,0 +1,16 @@
+{
+  "serviceType" : "integration",
+  "jars" : [ {
+    "name" : "dbp-paymentservices.jar",
+    "type" : "servicejar"
+  }, {
+    "name" : "t24common.jar",
+    "type" : "servicejar"
+  }, {
+    "name" : "com.temenos.infinity.integration.common.jar",
+    "type" : "servicejar"
+  } ],
+  "description" : "The T24 Payments Integration Service provides the Online banking and PSD2 related APIs.",
+  "empty" : true,
+  "mapType" : "java.util.HashMap"
+}

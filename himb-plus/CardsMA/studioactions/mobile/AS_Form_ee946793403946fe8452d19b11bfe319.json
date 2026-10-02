@@ -1,0 +1,23 @@
+{
+    "AS_Form_ee946793403946fe8452d19b11bfe319": {
+        "id": "AS_Form_ee946793403946fe8452d19b11bfe319",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmApplyForPrepaidCard",
+            "type": "forms",
+            "platform": null,
+            "KUID": "fdb8a4b719e54575883edf89b9b59b3f"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_e87c5a1e10964e9a8ec546d5e96854d3",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.init();",
+            "parentId": null
+        }]
+    }
+}

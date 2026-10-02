@@ -1,0 +1,30 @@
+{
+    "AS_Calendar_f6684423b8d341208d8cb1b21da424ee": {
+        "id": "AS_Calendar_f6684423b8d341208d8cb1b21da424ee",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "frmEarlyPayOff",
+            "type": "forms",
+            "platform": "",
+            "KUID": "d64090672d154513b98811fef1c45f07"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_be45d147568944c38bcbfd52c30b194d",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "self.view.flxInstructionPoint.zIndex = 0;\r\nself.view.flxFooter.zIndex = 0;",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

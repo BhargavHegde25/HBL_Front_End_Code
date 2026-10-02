@@ -1,0 +1,27 @@
+{
+    "AS_Form_hd1868dec3ad4655b78ae6a325a872b5": {
+        "id": "AS_Form_hd1868dec3ad4655b78ae6a325a872b5",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "type": "forms",
+            "platform": "",
+            "KUID": "cb3dbf81ba8f4518855cc5e4218619e6"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__bc3522d1c13843c9b10a55fedf9b6943",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "postShow",
+            "display": "postShow",
+            "inputparams": [],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null,
+            "source": "controller"
+        }]
+    }
+}

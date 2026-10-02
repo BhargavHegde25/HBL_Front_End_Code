@@ -1,0 +1,341 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "_data_": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+    ],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "5dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "autogrowmode": 1,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "counter": "01",
+    "desktop": {
+        "_data_": [
+            [
+                {
+                    "lblAmountl": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "+ Rs 15.000"
+                    },
+                    "lblAmountr": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "$400.00"
+                    },
+                    "lblDatel": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "12-09-2019"
+                    },
+                    "lblDater": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "12-09-2019"
+                    },
+                    "lblSeparatorfull": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "a"
+                    },
+                    "lblSeparatorhalf": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "a"
+                    },
+                    "lblSepratorl": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "a"
+                    },
+                    "lblSepratorr": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "a"
+                    },
+                    "lblToValuel": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "AT & T Communication"
+                    },
+                    "lblToValuer": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "AT & T Communication"
+                    },
+                    "lblTol": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Salary"
+                    },
+                    "lblTor": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "i18nkey": "i18n.StopCheckPayments.To",
+                        "text": "To:"
+                    },
+                    "lblTranTypeIconl": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "a"
+                    },
+                    "lblTranTypeIconr": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "a"
+                    },
+                    "lblTranTypel": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "20 Dec 2023, 8:20 AM"
+                    },
+                    "lblTranTyper": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Bill Pay"
+                    },
+                    "lblfull": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": " "
+                    },
+                    "lblhalf": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": " "
+                    }
+                },
+                []
+            ],
+            [
+                {
+                    "lblAmountl": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "+ Rs 15.000"
+                    },
+                    "lblAmountr": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "$400.00"
+                    },
+                    "lblDatel": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "12-09-2019"
+                    },
+                    "lblDater": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "12-09-2019"
+                    },
+                    "lblSeparatorfull": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "a"
+                    },
+                    "lblSeparatorhalf": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "a"
+                    },
+                    "lblSepratorl": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "a"
+                    },
+                    "lblSepratorr": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "a"
+                    },
+                    "lblToValuel": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "AT & T Communication"
+                    },
+                    "lblToValuer": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "AT & T Communication"
+                    },
+                    "lblTol": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Salary"
+                    },
+                    "lblTor": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "i18nkey": "i18n.StopCheckPayments.To",
+                        "text": "To:"
+                    },
+                    "lblTranTypeIconl": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "a"
+                    },
+                    "lblTranTypeIconr": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "a"
+                    },
+                    "lblTranTypel": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "20 Dec 2023, 8:20 AM"
+                    },
+                    "lblTranTyper": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Bill Pay"
+                    },
+                    "lblfull": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": " "
+                    },
+                    "lblhalf": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": " "
+                    }
+                },
+                []
+            ]
+        ],
+        "rowTemplateId": "eca72b487e5c49719892c8526d5b9e27",
+        "rowtemplate": "flxRecentTransactions",
+        "sectionHeaderTemplateId": "eca72b487e5c49719892c8526d5b9e27",
+        "sectionheadertemplate": "flxRecentTransactions",
+        "selectionBehaviorConfig": null,
+        "widgetdatamap": {
+            "flxLeft": "flxLeft",
+            "flxMidSeperatorFull": "flxMidSeperatorFull",
+            "flxMidSeperatorHalf": "flxMidSeperatorHalf",
+            "flxRecentTransactions": "flxRecentTransactions",
+            "flxRight": "flxRight",
+            "flxSeperatorl": "flxSeperatorl",
+            "flxSeperatorr": "flxSeperatorr",
+            "flxTranTypel": "flxTranTypel",
+            "flxTranTyper": "flxTranTyper",
+            "lblAmountl": "lblAmountl",
+            "lblAmountr": "lblAmountr",
+            "lblDatel": "lblDatel",
+            "lblDater": "lblDater",
+            "lblSeparatorfull": "lblSeparatorfull",
+            "lblSeparatorhalf": "lblSeparatorhalf",
+            "lblSepratorl": "lblSepratorl",
+            "lblSepratorr": "lblSepratorr",
+            "lblToValuel": "lblToValuel",
+            "lblToValuer": "lblToValuer",
+            "lblTol": "lblTol",
+            "lblTor": "lblTor",
+            "lblTranTypeIconl": "lblTranTypeIconl",
+            "lblTranTypeIconr": "lblTranTypeIconr",
+            "lblTranTypel": "lblTranTypel",
+            "lblTranTyper": "lblTranTyper",
+            "lblfull": "lblfull",
+            "lblhalf": "lblhalf"
+        }
+    },
+    "focusedindex": null,
+    "focuseditem": null,
+    "groupcells": false,
+    "hasSections": true,
+    "id": "segUpcomingTransactions",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "isvisible": true,
+    "kuid": "f6de469cb5e04ede850444f3730f4029",
+    "masterdata": {},
+    "maxheight": {
+        "type": "string",
+        "value": "360dp"
+    },
+    "mobile": {
+        "rowTemplateId": null,
+        "rowtemplate": null,
+        "sectionHeaderTemplateId": null
+    },
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom",
+        "vdistance": 1
+    },
+    "parent": "flxTransactionWrapper",
+    "pf": "userwidgetmodel",
+    "retainselection": false,
+    "rowcounter": 1,
+    "rowfocusskin": "s9f69e977910472eb44c62ae28c41fe1",
+    "rowskin": "scf5f90f6ac04976ab88b2a4f7153285",
+    "rowtemplate": null,
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionheaderskin": "sdc4ff4ed1584272be2ae69045dfb29d",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "selectionbehaviorconfig": null,
+    "separatorcolor": "64646400",
+    "separatorrequired": false,
+    "separatorthickness": 1,
+    "showscrollbars": false,
+    "swipeContext": {
+        "currentPage": 0,
+        "imageWidth": 0,
+        "widthRatio": 0
+    },
+    "viewtype": "tableview",
+    "vizProps": {},
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "flxLeft": "flxLeft",
+        "flxMidSeperatorFull": "flxMidSeperatorFull",
+        "flxMidSeperatorHalf": "flxMidSeperatorHalf",
+        "flxRecentTransactions": "flxRecentTransactions",
+        "flxRight": "flxRight",
+        "flxSeperatorl": "flxSeperatorl",
+        "flxSeperatorr": "flxSeperatorr",
+        "flxTranTypel": "flxTranTypel",
+        "flxTranTyper": "flxTranTyper",
+        "lblAmountl": "lblAmountl",
+        "lblAmountr": "lblAmountr",
+        "lblDatel": "lblDatel",
+        "lblDater": "lblDater",
+        "lblSeparatorfull": "lblSeparatorfull",
+        "lblSeparatorhalf": "lblSeparatorhalf",
+        "lblSepratorl": "lblSepratorl",
+        "lblSepratorr": "lblSepratorr",
+        "lblToValuel": "lblToValuel",
+        "lblToValuer": "lblToValuer",
+        "lblTol": "lblTol",
+        "lblTor": "lblTor",
+        "lblTranTypeIconl": "lblTranTypeIconl",
+        "lblTranTypeIconr": "lblTranTypeIconr",
+        "lblTranTypel": "lblTranTypel",
+        "lblTranTyper": "lblTranTyper",
+        "lblfull": "lblfull",
+        "lblhalf": "lblhalf"
+    },
+    "zindex": 1
+}

@@ -1,0 +1,22 @@
+{
+  "type" : "svcdriven",
+  "custom" : false,
+  "junction" : false,
+  "customizable" : false,
+  "verbs" : {
+    "uploadBWTemplateFile" : "uploadBWTemplateFileMapping",
+    "downloadFile" : "downloadFileMapping",
+    "uploadBWFile" : "uploadBWFileMapping",
+    "getBulkWireFileFormatTypes" : "getBulkWireFileFormatTypesMapping",
+    "getBulkWireFilesForUser" : "getBulkWireFilesForUserMapping",
+    "getBulkwireFileLineItems" : "getBulkwireFileLineItemsMapping",
+    "downloadSampleFile" : "downloadSampleFileMapping",
+    "downloadFileBulkWire" : "downloadFileBulkWireMapping",
+    "initiateDownloadBulkWireSampleFile" : "initiateDownloadBulkWireSampleFileMapping"
+  },
+  "entityProperties" : {
+    "BatchMode" : "buffer",
+    "backendMeta" : { },
+    "designTimeBackendMeta" : { }
+  }
+}

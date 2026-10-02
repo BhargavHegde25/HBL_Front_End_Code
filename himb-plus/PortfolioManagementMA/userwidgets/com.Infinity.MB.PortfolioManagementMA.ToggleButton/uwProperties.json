@@ -1,0 +1,144 @@
+{
+    "classname": "ToggleButton",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "f9f23c2fa4fe4295b53dbca8d22cb15b",
+                    "paramList": [],
+                    "propertyKey": "setContext",
+                    "pw": {
+                        "displayName": "setContext",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "f9889616aff644e38f5bdf5b7af38e0e",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "f8a36df9adb74b75a3c8f7e7925dbc3f",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "btnOneToggle",
+                    "pw": {
+                        "displayName": "btnOneToggle",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "f9889616aff644e38f5bdf5b7af38e0e",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "a78a00874d944cbda06fc532c45c48b0",
+                    "paramList": [],
+                    "propertyIndex": 2,
+                    "propertyKey": "btnTwoToggle",
+                    "pw": {
+                        "displayName": "btnTwoToggle",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "f9889616aff644e38f5bdf5b7af38e0e",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "sknbtn000000SSPSB15px",
+                    "group": "General",
+                    "kuid": "e7c4205846bf47679658f84fb1bfdb2a",
+                    "originalPropertyKey": "btn1Skin",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 1,
+                    "propertyKey": "btn1Skin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Button 1 skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "f9889616aff644e38f5bdf5b7af38e0e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "i18n.wealth.generateReport",
+                    "group": "General",
+                    "kuid": "be09e215b76547869c44aeb557be108f",
+                    "originalPropertyKey": "btn1Text",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 1,
+                    "propertyKey": "btn1Text",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Button 1 text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "f9889616aff644e38f5bdf5b7af38e0e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "sknBtnFFFFFFSSPSB15px",
+                    "group": "General",
+                    "kuid": "c7680e51b9dd4eb2b3b4cc8c0799768b",
+                    "originalPropertyKey": "btn2Skin",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 2,
+                    "propertyKey": "btn2Skin",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Button 2 skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "f9889616aff644e38f5bdf5b7af38e0e",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "i18n.wealth.downloadStatement",
+                    "group": "General",
+                    "kuid": "d935575e054143d28a5b8c165e57c46a",
+                    "originalPropertyKey": "btn2Text",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 3,
+                    "propertyKey": "btn2Text",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Button 2 text",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "f9889616aff644e38f5bdf5b7af38e0e",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.Infinity.MB.PortfolioManagementMA",
+    "version": "1.0.0"
+}

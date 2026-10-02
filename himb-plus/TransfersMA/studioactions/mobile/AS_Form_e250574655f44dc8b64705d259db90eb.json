@@ -1,0 +1,23 @@
+{
+    "AS_Form_e250574655f44dc8b64705d259db90eb": {
+        "id": "AS_Form_e250574655f44dc8b64705d259db90eb",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmScheduleFundTransfer",
+            "type": "forms",
+            "platform": null,
+            "KUID": "b0de6972ed264bab9fc26844961ad7fd"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_b31ada6d2acb44dfb6534d1dc4cb7188",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.preShow();",
+            "parentId": null
+        }]
+    }
+}

@@ -1,0 +1,194 @@
+{
+  "@class": "com.kony.gen.viz.model.component.KVizLabel",
+  "DNDConfig": null,
+  "_bottom_": {
+    "type": "number",
+    "value": ""
+  },
+  "_height_": {
+    "type": "ref",
+    "value": "preferred"
+  },
+  "_left_": {
+    "type": "string",
+    "value": "10dp"
+  },
+  "_margin_": [
+    1,
+    1,
+    1,
+    1
+  ],
+  "_padding_": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "_skin_": "s292454106504b3884e14bf2d65f8621",
+  "_text_": "Label",
+  "_top_": {
+    "type": "number",
+    "value": ""
+  },
+  "_width_": {
+    "type": "string",
+    "value": "75%"
+  },
+  "_wrapping_": 2,
+  "accessibilityconfig": {
+    "a11yARIA": {
+      "tabindex": -1
+    },
+    "tagName": "span"
+  },
+  "android": {
+    "textStyle": {
+      "letterSpacing": 0,
+      "strikeThrough": false
+    }
+  },
+  "canUpdateUI": true,
+  "centerx": {
+    "type": "number",
+    "value": ""
+  },
+  "containerweight": 100,
+  "contentalignment": 4,
+  "id": "lblCopyright",
+  "info": null,
+  "ipad": {
+    "psp": {
+      "wrapping": 2
+    }
+  },
+  "iphone": {
+    "psp": {
+      "wrapping": 2
+    }
+  },
+  "isvisible": true,
+  "kuid": "hd10e78011d045e89baf0415fee5668b",
+  "maxwidth": {
+    "type": "number",
+    "value": ""
+  },
+  "name": "kony.ui.Label",
+  "paddinginpixel": false,
+  "parent": "flxCopyRight",
+  "pf": "frmLogin",
+  "responsiveData": {
+    "b1": {
+      "bottom": {
+        "type": "string",
+        "value": ""
+      },
+      "contentAlignment": 1,
+      "height": {
+        "type": "string",
+        "value": "40dp"
+      },
+      "i18n_text": null,
+      "isVisible": true,
+      "left": {
+        "type": "string",
+        "value": "0dp"
+      },
+      "padding": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "skin": "s292454106504b3884e14bf2d65f8621",
+      "text": "Ⓒ  Copyright 2024 Himalayan Bank Limited. All Right Reserved",
+      "top": {
+        "type": "string",
+        "value": "1px"
+      }
+    },
+    "b2": {
+      "centerX": {
+        "type": "string",
+        "value": ""
+      },
+      "contentAlignment": 1,
+      "height": {
+        "type": "string",
+        "value": "40dp"
+      },
+      "i18n_text": null,
+      "isVisible": true,
+      "left": {
+        "type": "string",
+        "value": "30dp"
+      },
+      "skin": "s1792a0de97a4a129dbf161c3228b209",
+      "text": "Ⓒ Copyright 2024 Himalayan Bank Limited. All Right Reserved.",
+      "top": {
+        "type": "string",
+        "value": "2dp"
+      },
+      "width": {
+        "type": "ref",
+        "value": "preferred"
+      }
+    },
+    "b3": {
+      "bottom": {
+        "type": "string",
+        "value": ""
+      },
+      "centerX": {
+        "type": "string",
+        "value": "50%"
+      },
+      "contentAlignment": 5,
+      "height": {
+        "type": "string",
+        "value": "40dp"
+      },
+      "i18n_text": null,
+      "left": {
+        "type": "string",
+        "value": ""
+      },
+      "maxWidth": {
+        "type": "string",
+        "value": "90%"
+      },
+      "skin": "s1792a0de97a4a129dbf161c3228b209",
+      "text": "Ⓒ Copyright 2024 Himalayan Bank Limited. All Right Reserved.",
+      "top": {
+        "type": "string",
+        "value": "20dp"
+      }
+    },
+    "b4": {
+      "centerX": {
+        "type": "string",
+        "value": ""
+      },
+      "contentAlignment": 1,
+      "height": {
+        "type": "string",
+        "value": "40dp"
+      },
+      "i18n_text": null,
+      "isVisible": true,
+      "left": {
+        "type": "string",
+        "value": "50dp"
+      },
+      "skin": "s1792a0de97a4a129dbf161c3228b209",
+      "text": "Ⓒ Copyright 2024 Himalayan Bank Limited. All Right Reserved",
+      "top": {
+        "type": "string",
+        "value": "1dp"
+      }
+    }
+  },
+  "tooltip": "",
+  "wType": "Label",
+  "zindex": 1
+}

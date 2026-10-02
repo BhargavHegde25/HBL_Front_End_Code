@@ -1,0 +1,68 @@
+{
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "80%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s323d7cc320c428989b2047158bed9d6",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "children": [
+        "lblBioContent1",
+        "lblBioContent2",
+        "lblBioContent3",
+        "lblBioContentandroid1",
+        "lblBioContentandroid2",
+        "lblBioContentios",
+        "lblBioContentios1",
+        "lblBioContentios2",
+        "lblBioContenti4",
+        "rtxNeedassit"
+    ],
+    "clipbounds": false,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "flxBiometricContent",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "bd51f07a974c4124934fcdd9a27f638d",
+    "layouttype": 4,
+    "name": "kony.ui.FlexContainer",
+    "parent": "flxBiometricEnable",
+    "pf": "frmEnableBiometricMFA",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1
+}

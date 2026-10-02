@@ -1,0 +1,237 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "_data_": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+    ],
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "counter": "09",
+    "disabledSkins": {},
+    "focusedindex": null,
+    "focuseditem": null,
+    "groupcells": false,
+    "hasSections": false,
+    "id": "segmentBillpay",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "isvisible": true,
+    "kuid": "haee90f1d1f947598711d644ef3172ff",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "flxSegmentContainer",
+    "pf": "frmBillPayNew",
+    "responsiveData": {
+        "b3": {
+            "data": [
+                {
+                    "btnEdit": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "i18nkey": "i18n.transfers.downloadReport",
+                        "text": "Download Report"
+                    },
+                    "btnRepeat": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Repeat"
+                    },
+                    "lblDate": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "05/30/2017"
+                    },
+                    "lblDropdown": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "O"
+                    },
+                    "lblIdentifier": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Last payment: $66.51 on 01/12/2017"
+                    },
+                    "lblNotes": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "i18nkey": "i18n.transfers.Description",
+                        "text": ""
+                    },
+                    "lblNotesValue": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Lorem Ipsum Lorem Ipsum"
+                    },
+                    "lblRefrenceNumber": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "i18nkey": "i18n.transfers.RefrenceNumber",
+                        "text": "05/30/2017"
+                    },
+                    "lblRefrenceNumberValue": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "5534628647738"
+                    },
+                    "lblSendTo": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "AT&T Communication"
+                    },
+                    "lblSendToUser": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "r"
+                    },
+                    "lblSentFrom": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "i18nkey": "i18n.billPay.sentFrom",
+                        "text": "05/30/2017"
+                    },
+                    "lblSentFromUser": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "s"
+                    },
+                    "lblSentFromValue": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Checking Account...1233"
+                    },
+                    "lblSeparator": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": ""
+                    },
+                    "lblSeparator2": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": ""
+                    },
+                    "lblSeperatorone": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": ""
+                    },
+                    "lblSortAmount": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "$30.00"
+                    },
+                    "lblSortBalance": {
+                        "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                        "text": "Scheduled"
+                    }
+                }
+            ],
+            "rowTemplate": "ab2e8e7ed65e4dc29df71a8c393c57be",
+            "sectionHeaderTemplate": null,
+            "widgetDataMap": {
+                "btnEdit": "btnEdit",
+                "btnRepeat": "btnRepeat",
+                "flxAction": "flxAction",
+                "flxAmount": "flxAmount",
+                "flxBillPaymentHistorySelectedMobile": "flxBillPaymentHistorySelectedMobile",
+                "flxBottom": "flxBottom",
+                "flxDate": "flxDate",
+                "flxDropdown": "flxDropdown",
+                "flxEdit": "flxEdit",
+                "flxIdentifier": "flxIdentifier",
+                "flxMain": "flxMain",
+                "flxNotes": "flxNotes",
+                "flxRefrenceNumber": "flxRefrenceNumber",
+                "flxSendTo": "flxSendTo",
+                "flxSendToUser": "flxSendToUser",
+                "flxSentFrom": "flxSentFrom",
+                "flxSentFromUser": "flxSentFromUser",
+                "flxSentFromValue": "flxSentFromValue",
+                "flxStatus": "flxStatus",
+                "flxWrapper": "flxWrapper",
+                "flxleftBottom": "flxleftBottom",
+                "lblDate": "lblDate",
+                "lblDropdown": "lblDropdown",
+                "lblIdentifier": "lblIdentifier",
+                "lblNotes": "lblNotes",
+                "lblNotesValue": "lblNotesValue",
+                "lblRefrenceNumber": "lblRefrenceNumber",
+                "lblRefrenceNumberValue": "lblRefrenceNumberValue",
+                "lblSendTo": "lblSendTo",
+                "lblSendToUser": "lblSendToUser",
+                "lblSentFrom": "lblSentFrom",
+                "lblSentFromUser": "lblSentFromUser",
+                "lblSentFromValue": "lblSentFromValue",
+                "lblSeparator": "lblSeparator",
+                "lblSeparator2": "lblSeparator2",
+                "lblSeperatorone": "lblSeperatorone",
+                "lblSortAmount": "lblSortAmount",
+                "lblSortBalance": "lblSortBalance"
+            }
+        }
+    },
+    "retainselection": false,
+    "rowTemplateId": "a073305a3c5c422fa9f5bcebacbebc03",
+    "rowcounter": 9,
+    "rowfocusskin": "s9f69e977910472eb44c62ae28c41fe1",
+    "rowskin": "s971af14e3cc4643bed5bb37c330e87a",
+    "rowtemplate": "flxBillPaymentHistorySelected",
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionHeaderTemplateId": null,
+    "sectionheaderskin": "sdc4ff4ed1584272be2ae69045dfb29d",
+    "sectionheadertemplate": null,
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "separatorrequired": false,
+    "separatorthickness": 0,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "vizProps": {},
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {},
+    "widgetskin": "sb836d91cb364a16b70a7c6479aba93d",
+    "zindex": 1
+}

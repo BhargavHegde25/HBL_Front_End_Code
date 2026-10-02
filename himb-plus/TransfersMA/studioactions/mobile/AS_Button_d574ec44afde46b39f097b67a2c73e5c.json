@@ -1,0 +1,23 @@
+{
+    "AS_Button_d574ec44afde46b39f097b67a2c73e5c": {
+        "id": "AS_Button_d574ec44afde46b39f097b67a2c73e5c",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "CopyfrmTransferAmountEurope",
+            "type": "forms",
+            "platform": null,
+            "KUID": "b59dea3f5b7d4252b835ba06e231b7cd"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_onClick_g4e72a01279a43eebab5c70c650fbedf",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.setKeypadChar(2);",
+            "callbackType": null
+        }]
+    }
+}

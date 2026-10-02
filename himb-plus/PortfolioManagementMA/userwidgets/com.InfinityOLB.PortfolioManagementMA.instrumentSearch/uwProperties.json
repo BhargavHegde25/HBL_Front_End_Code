@@ -1,0 +1,438 @@
+{
+    "classname": "instrumentSearch",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "cab77d4ee94a47a8beeb56bf72aac9c2",
+                    "paramList": [
+                        {
+                            "name": "data"
+                        }
+                    ],
+                    "propertyKey": "setPortfolioId",
+                    "pw": {
+                        "displayName": "setPortfolioId",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "hc0e2e85acdd4c2981cfcccb4072a813",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "c64fdf250f28476799163bf3f74ead6a",
+                    "paramList": [],
+                    "propertyKey": "setContext",
+                    "pw": {
+                        "displayName": "setContext",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "hc0e2e85acdd4c2981cfcccb4072a813",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "gec9f029582c482d91a49eb2af53a448",
+                    "paramList": [],
+                    "propertyKey": "updateInstrumentSeg",
+                    "pw": {
+                        "displayName": "updateInstrumentSeg",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "hc0e2e85acdd4c2981cfcccb4072a813",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "c05debc2197b4be2bd21ddf91c03721e",
+                    "paramList": [],
+                    "propertyKey": "onsegInstrumentRowClick",
+                    "pw": {
+                        "displayName": "onsegInstrumentRowClick",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "hc0e2e85acdd4c2981cfcccb4072a813",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "b073edaffcad42ef94ecd6dd47c15b2a",
+                    "paramList": [],
+                    "propertyKey": "returnCurrComponent",
+                    "pw": {
+                        "displayName": "returnCurrComponent",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "hc0e2e85acdd4c2981cfcccb4072a813",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "e6c97d565e2c40fb9c0047c9f4d734ae",
+                    "paramList": [
+                        {
+                            "name": "errorObj"
+                        }
+                    ],
+                    "propertyIndex": 1,
+                    "propertyKey": "onError",
+                    "pw": {
+                        "displayName": "onError",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "hc0e2e85acdd4c2981cfcccb4072a813",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "e90755ba023e4ee0954d833a2bc3502b",
+                    "paramList": [],
+                    "propertyIndex": 2,
+                    "propertyKey": "viewInstrumentDetails",
+                    "pw": {
+                        "displayName": "viewInstrumentDetails",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "hc0e2e85acdd4c2981cfcccb4072a813",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [
+                "Component Config",
+                "Search",
+                "Segment",
+                "Skins",
+                "Icons"
+            ],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": true,
+                    "group": "General",
+                    "kuid": "f215953f85c14fa795ea741f66f0ac05",
+                    "originalPropertyKey": "isComponentEnabled",
+                    "propertyIndex": 1,
+                    "propertyKey": "isComponentEnabled",
+                    "pw": {
+                        "displayName": "Component Enabled",
+                        "uiRepresentation": "Label-Radiobuttongroup"
+                    },
+                    "srcWgtKUID": "hc0e2e85acdd4c2981cfcccb4072a813",
+                    "type": "boolean",
+                    "value": "true/false"
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "\"{i.i18n.wealth.instrumentSearch}\"",
+                    "group": "Search",
+                    "kuid": "a2f5dc90049d4352aa5fb0fe4d98d82d",
+                    "originalPropertyKey": "searchPlaceholder",
+                    "propertyIndex": 1,
+                    "propertyKey": "searchPlaceholder",
+                    "pw": {
+                        "displayName": "Search Placeholder",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "hc0e2e85acdd4c2981cfcccb4072a813",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"$.BREAKPTS.BP1\":\"ICSknFlxffffffBordere3e3e31pxRadius2px\",\"default\":\"ICSknFlxffffffBordere3e3e31pxRadius3px\"}",
+                    "group": "Skins",
+                    "kuid": "g45386771dc9445ca9a57ad91e1e1d9d",
+                    "originalPropertyKey": "sknSearchTextBoxNormal",
+                    "propertyIndex": 1,
+                    "propertyKey": "sknSearchTextBoxNormal",
+                    "pw": {
+                        "displayName": "Search TextBox Normal Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "hc0e2e85acdd4c2981cfcccb4072a813",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": true,
+                    "group": "General",
+                    "kuid": "c69bd4549d2b4429a7eabb83e8e5d78f",
+                    "originalPropertyKey": "isSearchEnabled",
+                    "propertyIndex": 2,
+                    "propertyKey": "isSearchEnabled",
+                    "pw": {
+                        "displayName": "Search Enabled",
+                        "uiRepresentation": "Label-Radiobuttongroup"
+                    },
+                    "srcWgtKUID": "hc0e2e85acdd4c2981cfcccb4072a813",
+                    "type": "boolean",
+                    "value": "true/false"
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"$.BREAKPTS.BP1\":\"ICSknTbxPlaceholderSSP72727213px\",\"default\":\"ICSknTbxPlaceholderSSP72727215px\"}",
+                    "group": "Skins",
+                    "kuid": "dfee2abd8f2045749122b8968e1043cf",
+                    "originalPropertyKey": "sknSearchPlaceHolder",
+                    "propertyIndex": 2,
+                    "propertyKey": "sknSearchPlaceHolder",
+                    "pw": {
+                        "displayName": "Search Placeholder Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "hc0e2e85acdd4c2981cfcccb4072a813",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "WealthOrder",
+                    "group": "Segment",
+                    "kuid": "e63fafd5154d46e2b1738430d6229672",
+                    "originalPropertyKey": "segObjService",
+                    "propertyIndex": 2,
+                    "propertyKey": "segObjService",
+                    "pw": {
+                        "displayName": "Obj Service",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "hc0e2e85acdd4c2981cfcccb4072a813",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"$.BREAKPTS.BP1\":\"ICSknTbxSSP42424213px\",\"default\":\"ICSknTbxSSP42424215px\"}",
+                    "group": "Skins",
+                    "kuid": "f15dd84c8d7e44e8aac8fa436922c0b8",
+                    "originalPropertyKey": "sknSearchText",
+                    "propertyIndex": 3,
+                    "propertyKey": "sknSearchText",
+                    "pw": {
+                        "displayName": "Search Text Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "hc0e2e85acdd4c2981cfcccb4072a813",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": true,
+                    "group": "General",
+                    "kuid": "ca366c6add1244829738d3b08b5880ae",
+                    "originalPropertyKey": "isSegmentEnabled",
+                    "propertyIndex": 3,
+                    "propertyKey": "isSegmentEnabled",
+                    "pw": {
+                        "displayName": "Segment Enabled",
+                        "uiRepresentation": "Label-Radiobuttongroup"
+                    },
+                    "srcWgtKUID": "hc0e2e85acdd4c2981cfcccb4072a813",
+                    "type": "boolean",
+                    "value": "true/false"
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "InstrumentDetails",
+                    "group": "Segment",
+                    "kuid": "b98274b000f143d6bec51a97d24ff7f6",
+                    "originalPropertyKey": "segObjName",
+                    "propertyIndex": 3,
+                    "propertyKey": "segObjName",
+                    "pw": {
+                        "displayName": "Obj Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "hc0e2e85acdd4c2981cfcccb4072a813",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"$.BREAKPTS.BP1\":\"ICSknFlxffffffBorder003e751pxRadius2px\",\"default\":\"ICSknFlxffffffBorder003e751pxRadius3px\"}",
+                    "group": "Skins",
+                    "kuid": "b7ab56e5b85a462ca9dd89665b04a773",
+                    "originalPropertyKey": "sknSearchTextBoxFocus",
+                    "propertyIndex": 4,
+                    "propertyKey": "sknSearchTextBoxFocus",
+                    "pw": {
+                        "displayName": "Search TextBox Focus Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "hc0e2e85acdd4c2981cfcccb4072a813",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "getSearchInstrumentList",
+                    "group": "Segment",
+                    "kuid": "d9b0bd6922604c88b82c6a02c85382c7",
+                    "originalPropertyKey": "segOperation",
+                    "propertyIndex": 4,
+                    "propertyKey": "segOperation",
+                    "pw": {
+                        "displayName": "Operation",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "hc0e2e85acdd4c2981cfcccb4072a813",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"portfolioId\":\"{$.c.portfolioId}\",  \"sortBy\":\"{$.c.sortBy}\",   \"searchByInstrumentName\":\"{$.c.searchByInstrumentName}\"}",
+                    "group": "Segment",
+                    "kuid": "d82bfb9ea0dc497c8288afe46b81cb9c",
+                    "originalPropertyKey": "segCriteria",
+                    "propertyIndex": 5,
+                    "propertyKey": "segCriteria",
+                    "pw": {
+                        "displayName": "Criteria",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "hc0e2e85acdd4c2981cfcccb4072a813",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"vizIcon\": \"e\",\"skin\":\"sknlblSearchfonticon17px0273e3\"}",
+                    "group": "Icons",
+                    "kuid": "a4a96caac8404d35816bc8f88d8a3fc9",
+                    "originalPropertyKey": "iconSearch",
+                    "propertyIndex": 5,
+                    "propertyKey": "iconSearch",
+                    "pw": {
+                        "displayName": "Search Icon",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "hc0e2e85acdd4c2981cfcccb4072a813",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"vizIcon\": \"J\",\"skin\":\"ICSknLblClearFontIcona0a0a016px\"}",
+                    "group": "Icons",
+                    "kuid": "e4eaeca414dd436da3400288d1157a38",
+                    "originalPropertyKey": "iconClear",
+                    "propertyIndex": 6,
+                    "propertyKey": "iconClear",
+                    "pw": {
+                        "displayName": "Clear Icon",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "hc0e2e85acdd4c2981cfcccb4072a813",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "S1",
+                    "group": "Segment",
+                    "kuid": "idd1a14e319d40f5b9c7cfe32b59c1d0",
+                    "originalPropertyKey": "segIdentifier",
+                    "propertyIndex": 6,
+                    "propertyKey": "segIdentifier",
+                    "pw": {
+                        "displayName": "Identifier",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "hc0e2e85acdd4c2981cfcccb4072a813",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{$.S1.instrumentList}",
+                    "group": "Segment",
+                    "kuid": "a18a15f2e2e54a07b2ff30ce7faaacd1",
+                    "originalPropertyKey": "segResponseArray",
+                    "propertyIndex": 7,
+                    "propertyKey": "segResponseArray",
+                    "pw": {
+                        "displayName": "Response Array",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "hc0e2e85acdd4c2981cfcccb4072a813",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "L1",
+                    "group": "Segment",
+                    "kuid": "g18d02b383b84648b76ff1e7927a4ab9",
+                    "originalPropertyKey": "segResponseId",
+                    "propertyIndex": 8,
+                    "propertyKey": "segResponseId",
+                    "pw": {
+                        "displayName": "Response Id",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "hc0e2e85acdd4c2981cfcccb4072a813",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{    \"One\":{       \"value\":\"description\",       \"type\":\"text\",       \"displayName\":\"\",       \"default\":\"true\"    }, \"Two\":{       \"value\":\"ISIN\",       \"type\":\"text\",       \"displayName\":\"\",       \"default\":\"true\"    }, \"One\":{       \"value\":\"holdingsType\",       \"type\":\"text\",       \"displayName\":\"\",       \"default\":\"true\"    }    }",
+                    "group": "Segment",
+                    "kuid": "c83b60dc0ddf4a6c887a36dc954795e1",
+                    "originalPropertyKey": "segFields",
+                    "propertyIndex": 9,
+                    "propertyKey": "segFields",
+                    "pw": {
+                        "displayName": "Fields",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "hc0e2e85acdd4c2981cfcccb4072a813",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\"$.BREAKPTS.BP1\":\"ICSknFlxf7f7f7\",\"default\":\"ICSknFlxffffff\"}",
+                    "group": "Skins",
+                    "kuid": "e888af56bfa04bdeb7d345daf6bbb565",
+                    "originalPropertyKey": "sknSearchBackground",
+                    "propertyIndex": 10,
+                    "propertyKey": "sknSearchBackground",
+                    "pw": {
+                        "displayName": "Search Background Skin",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "hc0e2e85acdd4c2981cfcccb4072a813",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfinityOLB.PortfolioManagementMA",
+    "version": "1.0.0"
+}

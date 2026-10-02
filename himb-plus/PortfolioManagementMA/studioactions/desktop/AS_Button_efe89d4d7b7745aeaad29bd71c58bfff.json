@@ -1,0 +1,30 @@
+{
+    "AS_Button_efe89d4d7b7745aeaad29bd71c58bfff": {
+        "id": "AS_Button_efe89d4d7b7745aeaad29bd71c58bfff",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmPersonalizeStrategyAck",
+            "type": "forms",
+            "platform": "",
+            "KUID": "bc475e61593940d481e10e8c5fdf1c6d"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "NAVIGATE_TO_FORM__h72947d2fc3f493dbbc6f3da850ebf38",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "frmPersonalizeStrategy",
+            "friendlyName": "frmPersonalizeStrategy",
+            "formKUID": "e7d30ff0e7af4d61bfdbc0c4adf7edc0",
+            "projectName": "PortfolioManagementMA",
+            "mappings": {},
+            "mappingsOrder": [],
+            "enableMappingEditor": true,
+            "package": "WealthPortfolioUIModule",
+            "isCustomInput": false
+        }]
+    }
+}

@@ -1,0 +1,63 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizImage2",
+    "DNDConfig": null,
+    "_base64_": null,
+    "_height_": {
+        "type": "string",
+        "value": "20dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "86%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s78a5f26c9f14cec9ebed1bb46098f80",
+    "_src_": "view.png",
+    "_width_": {
+        "type": "string",
+        "value": "20dp"
+    },
+    "accessibilityconfig": {
+        "a11yLabel": "Close",
+        "a11yValue": ""
+    },
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "id": "imgView1",
+    "imagescalemode": 1,
+    "imagewhiledownloading": "img_transparent.png",
+    "info": null,
+    "invokedProperty": "src",
+    "isvisible": true,
+    "kuid": "i10f0683bb23486cad01b980fc7a3975",
+    "name": "kony.ui.Image2",
+    "parent": "flxExistingPasswordValue",
+    "pf": "frmEditPassword",
+    "responsiveData": {
+        "b3": {
+            "height": {
+                "type": "string",
+                "value": "20dp"
+            }
+        }
+    },
+    "srcType": 1,
+    "wType": "Image",
+    "widgetalignment": 5,
+    "zindex": 1
+}

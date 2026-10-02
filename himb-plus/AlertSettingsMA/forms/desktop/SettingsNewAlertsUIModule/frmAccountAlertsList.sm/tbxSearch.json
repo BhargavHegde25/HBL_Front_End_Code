@@ -1,0 +1,165 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizTextBox2",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "15dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        3,
+        0,
+        0,
+        0
+    ],
+    "_placeholder_": "Search Account Number or Name",
+    "_skin_": "sea05f0b2f1f4b57a7c043d6c947516a",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "85%"
+    },
+    "autocapitalize": "none",
+    "autocomplete": false,
+    "autocorrect": false,
+    "autofilter": false,
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": ""
+    },
+    "centery": {
+        "type": "number",
+        "value": ""
+    },
+    "containerheight": "",
+    "containerheightmode": 1,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "disabledSkins": {},
+    "focusskin": "sff65e7c09cf4045a3ea2d9e236589a7",
+    "id": "tbxSearch",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "keyboardtype": "A",
+    "kuid": "bf13ea49922744b2b8663cd23c6b31ce",
+    "mode": "A",
+    "name": "kony.ui.TextBox2",
+    "paddinginpixel": true,
+    "parent": "flxSearch",
+    "pf": "frmAccountAlertsList",
+    "placeholderi18n": "i18n.AlertSettings.Accounts.Search",
+    "placeholderskin": "s0b89c3774d541c68616bda849c2ee9a",
+    "responsiveData": {
+        "b1": {
+            "centerY": {
+                "type": "string",
+                "value": "50%"
+            },
+            "disabledSkins": {},
+            "focusSkin": "sff65e7c09cf4045a3ea2d9e236589a7",
+            "left": {
+                "type": "string",
+                "value": "0dp"
+            },
+            "padding": [
+                30,
+                0,
+                0,
+                0
+            ],
+            "width": {
+                "type": "string",
+                "value": "100%"
+            }
+        },
+        "b2": {
+            "centerY": {
+                "type": "string",
+                "value": "50%"
+            },
+            "left": {
+                "type": "string",
+                "value": "0dp"
+            },
+            "padding": [
+                30,
+                0,
+                0,
+                0
+            ],
+            "width": {
+                "type": "string",
+                "value": "100%"
+            }
+        },
+        "b3": {
+            "centerX": {
+                "type": "string",
+                "value": ""
+            },
+            "centerY": {
+                "type": "string",
+                "value": "50%"
+            },
+            "contentAlignment": 4,
+            "left": {
+                "type": "string",
+                "value": "0dp"
+            },
+            "padding": [
+                30,
+                3,
+                1,
+                3
+            ],
+            "text": "",
+            "width": {
+                "type": "string",
+                "value": "100%"
+            }
+        },
+        "b4": {
+            "centerY": {
+                "type": "string",
+                "value": "50%"
+            },
+            "left": {
+                "type": "string",
+                "value": "0dp"
+            },
+            "padding": [
+                30,
+                0,
+                0,
+                0
+            ],
+            "width": {
+                "type": "string",
+                "value": "100%"
+            }
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "securetextentry": false,
+    "textinputmode": "A",
+    "tooltip": "",
+    "viewtype": "default",
+    "wType": "TextField",
+    "zindex": 1
+}

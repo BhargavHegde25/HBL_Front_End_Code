@@ -1,0 +1,85 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "DNDConfig": null,
+    "_children_": [],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "30dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "sdba34cffa8d499eaaad5931ff092382",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "accessibilityconfig": {
+        "a11yLabeli18n": "i18n.accounts.viewAccountInfo"
+    },
+    "canUpdateUI": true,
+    "containerweight": 0,
+    "data": {
+        "serviceParam": "{\n  \"ObjectName\": \"InvestmentProposal\",\n  \"ServiceName\": \"PortfolioServicing\",\n  \"OperationName\": \"getRiskAnalysisIP\"\n}"
+    },
+    "id": "RiskAnalysisGraph",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "h8789233ad0645488d7959090c9088d7",
+    "masterType": 1,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "flxRisk",
+    "pf": "frmInvestmentProposal",
+    "responsiveData": {
+        "b1": {
+            "left": {
+                "type": "string",
+                "value": ""
+            },
+            "top": {
+                "type": "string",
+                "value": ""
+            }
+        },
+        "b2": {
+            "left": {
+                "type": "string",
+                "value": "20dp"
+            },
+            "top": {
+                "type": "string",
+                "value": ""
+            },
+            "width": {
+                "type": "string",
+                "value": "98%"
+            }
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "sourceUserWidget": "c74c5fb20a504f97897408f571d30123",
+    "wType": "UserWidgetInstance",
+    "zindex": 1
+}

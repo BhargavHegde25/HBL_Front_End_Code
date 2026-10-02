@@ -1,0 +1,89 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_i18n_text_": "i18n.common.proceed",
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_right_": {
+        "type": "string",
+        "value": "20dp"
+    },
+    "_skin_": "sdc7361203bc408faf7a175e392acef4",
+    "_text_": "PROCEED",
+    "_top_": {
+        "type": "string",
+        "value": "20dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "200dp"
+    },
+    "accessibilityconfig": {
+        "a11yLabel": "Continue"
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "number",
+        "value": ""
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "desktopweb": {
+        "psp": {
+            "hoverSkin": "s81054b5e2b74f17a5261991df565427"
+        }
+    },
+    "disabledSkins": {
+        "focusSkin": "saefaf3143da4aabb5f35a6f3fb4e38c"
+    },
+    "displaytext": true,
+    "id": "btnResetTransactionPinProceed",
+    "info": null,
+    "isvisible": true,
+    "kuid": "c033d2e4d93b4bc6b56165500256dd3a",
+    "name": "kony.ui.Button",
+    "parent": "flxResetTransctionPinButtons",
+    "pf": "frmResetTransactionPin",
+    "responsiveData": {
+        "b1": {},
+        "b2": {
+            "i18n_text": "i18n.common.confirm",
+            "top": {
+                "type": "string",
+                "value": "30dp"
+            }
+        },
+        "b3": {
+            "centerX": {
+                "type": "string",
+                "value": "50%"
+            },
+            "top": {
+                "type": "string",
+                "value": "10dp"
+            },
+            "width": {
+                "type": "string",
+                "value": "300dp"
+            }
+        }
+    },
+    "texti18n": "i18n.common.proceed",
+    "tooltip": "Continue",
+    "wType": "Button",
+    "zindex": 1
+}

@@ -1,0 +1,23 @@
+{
+    "AS_Button_i7b1e630e0df45a18290b104341db3ea": {
+        "id": "AS_Button_i7b1e630e0df45a18290b104341db3ea",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmEmbedOrigination",
+            "type": "forms",
+            "platform": "",
+            "KUID": "d2656e6941354b8895637882cf1e9fc8"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_e3ae7c114c184201af71c78eb796540a",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.showConfirmationPopUp();\r\nthis.destinationForm = \"ContactUs\";",
+            "parentId": null
+        }]
+    }
+}

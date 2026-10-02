@@ -1,0 +1,24 @@
+{
+    "AS_Form_b8b132ad0fec453db2b43f735ace07be": {
+        "id": "AS_Form_b8b132ad0fec453db2b43f735ace07be",
+        "type": "ACTION_SEQUENCE",
+        "name": "AS_Form_cardTransactionDetailsPreshow",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmCardTransactionDetails",
+            "type": "forms",
+            "platform": "",
+            "KUID": "gcf26443b7024e9b868a8313ba1f6aa9"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_d3ae7b341c5546d4ba98522b749d442a",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.preShow();",
+            "parentId": null
+        }]
+    }
+}

@@ -1,0 +1,78 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_right_": {
+        "type": "string",
+        "value": "20dp"
+    },
+    "_skin_": "sa611611b2f24e93bcfd09e1606c0d86",
+    "_text_": "Improve Portfolio",
+    "_top_": {
+        "type": "string",
+        "value": "0"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "250dp"
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": ""
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "disabledSkins": {
+        "focusSkin": "seac1ba6ca7c414b9c70447cef4ff8f1"
+    },
+    "displaytext": true,
+    "id": "btnImprovePortfolio",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": false,
+    "kuid": "fec86353c9f043b7b3e32b3eea3e9a73",
+    "name": "kony.ui.Button",
+    "parent": "flxButton",
+    "pf": "frmPortfolioHealthCheck",
+    "responsiveData": {
+        "b1": {
+            "disabledSkins": {
+                "focusSkin": "sf44d06ca8224832827ea7fdff757013"
+            }
+        },
+        "b2": {
+            "disabledSkins": {
+                "focusSkin": "sf44d06ca8224832827ea7fdff757013"
+            }
+        },
+        "b3": {
+            "top": {
+                "type": "string",
+                "value": "20dp"
+            }
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "wType": "Button"
+}

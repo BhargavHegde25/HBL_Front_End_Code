@@ -1,0 +1,59 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "2%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_right_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_skin_": "sdf1999262774b4785eac1bdb9a50a76",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "0"
+    },
+    "_width_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 4,
+    "displaytext": true,
+    "focusskin": "sdf1999262774b4785eac1bdb9a50a76",
+    "id": "btnTNC",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "e34c56c67cf0451097fd282d1c3abf5b",
+    "name": "kony.ui.Button",
+    "parent": "flxAcceptTermNCond",
+    "pf": "frmReqVirtualDollerCard",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "texti18n": "i18n.common.TnC",
+    "wType": "Button"
+}

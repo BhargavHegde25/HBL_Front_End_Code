@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service serviceGroup="" cachable="false" cacheduration="" customOperation="false" description="" endpoint="default" groupType="" id="createStandingOrderWithApprover" passwordencrypted="false" security="authorized_app_user" type="jsonConnector" smscode="" smsenabled="false">
+    <service-config>
+        <config-param api-version="" appid="" name="preprocessorname" value="com.infinity.dbx.temenos.transfers.Psd2StandingOrderPreProcessor"/>
+        <config-param api-version="" appid="" name="postprocessorname" value="com.infinity.dbx.temenos.TemenosBasePostProcessor"/>
+        <config-param api-version="" appid="" name="preprocessorJS" value=""/>
+        <config-param api-version="" appid="" name="postprocessorJS" value=""/>
+        <config-param api-version="" appid="" name="preprocessorRules" value=""/>
+        <config-param api-version="" appid="" name="postprocessorRules" value=""/>
+        <config-param api-version="" appid="" name="kony_http_supported_methods" value="POST"/>
+        <config-param api-version="" appid="" name="endpointUrl" value="https://_$_T24_TRANSACTIONS_HOST_URL_$_/v1.0.0/order/standingOrders/$fromAccountNumber?validate_only=$validate"/>
+        <config-param api-version="" appid="" name="ignorehttpproxy" value="true"/>
+        <config-param api-version="" appid="" name="http.method" value="POST"/>
+        <config-param api-version="" appid="" name="dataObjectName" value=""/>
+        <config-param api-version="" appid="" name="sockettimeout" value=""/>
+        <config-param api-version="" appid="" name="responseEncoding" value="UTF-8"/>
+        <config-param api-version="" appid="" name="isembedxmlpresent" value="false"/>
+        <config-param api-version="" appid="" name="retrycount" value="0"/>
+        <config-param api-version="" appid="" name="urlprovider" value="com.kony.dbx.util.ServiceURLProvider"/>
+        <config-param api-version="" appid="" name="identityProvider" value="DbxUserLogin"/>
+        <config-param api-version="" appid="" name="identityProviderType" value="custom"/>
+    </service-config>
+    <service-input passthrough="false" isExtended="false">
+        <header datatype="" name="" passthrough="false" isExtended="false">
+            <param datatype="string" defaultvalue="" description="" encode="false" format="None" formatvalue="" name="Authorization" order="" paramOrder="0" parentOrder="0" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="" targetdatatype="" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="INFINITY" description="" encode="false" format="None" formatvalue="" name="channelName" order="" paramOrder="0" parentOrder="0" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="" targetdatatype="" testvalue="" value="INFINITY" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="false" format="None" formatvalue="" name="companyId" order="" paramOrder="0" parentOrder="0" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="" targetdatatype="" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="1" description="" encode="false" format="None" formatvalue="" name="numberOfAuthorisers" order="" paramOrder="0" parentOrder="0" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="" targetdatatype="" testvalue="" value="1" isExtended="false">
+                <accessType></accessType>
+            </param>
+        </header>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="fromAccountNumber" order="" paramOrder="1" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="118826" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="frequencyType" order="" paramOrder="2" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="Weekly" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="scheduledDate" order="" paramOrder="3" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="2020-04-30" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="amount" order="" paramOrder="4" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="50" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="toAccountNumber" order="" paramOrder="5" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="118796" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="frequencyEndDate" order="" paramOrder="6" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="currencyId" order="" paramOrder="7" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="USD" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="suppressFT" order="" paramOrder="8" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="currentFrequency" order="" paramOrder="9" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="20200430 e0Y e0M e1W e0D e0F" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="paymentMethod" order="" paramOrder="10" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="OT03" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="transactionType" order="" paramOrder="11" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="numberOfRecurrences" order="" paramOrder="12" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="transactionsNotes" order="" paramOrder="13" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="Salary Payment" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="beneficiaryName" order="" paramOrder="14" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="Chris Samuel" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="swiftCode" order="" paramOrder="15" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="beneficiaryId" order="" paramOrder="16" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="IBAN" order="" paramOrder="17" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="transactionCurrency" order="" paramOrder="18" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="SourceOfFunds" order="" paramOrder="19" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="fromAccountCurrency" order="" paramOrder="20" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="USD" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="validate" order="" paramOrder="21" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="SHA" description="" encode="true" format="None" formatvalue="" name="paidBy" order="" paramOrder="22" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="SHA" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="coreIdentifier" order="" paramOrder="23" parentOrder="-1" passnull="false" sms-name="" src="identity" sourcevalue="DbxUserLogin.profile.backendIdentifiers" srcformatvalue="" target="identity" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="isScheduled" order="" paramOrder="24" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="serviceName" order="" paramOrder="25" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="toAccountCurrency" order="" paramOrder="26" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="paymentType" order="" paramOrder="27" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="uploadedattachments" order="" paramOrder="28" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="userId" order="" paramOrder="29" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="intermediaryBicCode" order="" paramOrder="30" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="clearingCode" order="" paramOrder="31" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="e2eReference" order="" paramOrder="32" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="overrides" order="" paramOrder="33" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <template-param datatype="" defaultvalue="{&#10; &quot;header&quot;: {     &#10;    },&#10; &quot;body&quot;: {&#10;  &quot;startDate&quot;: &quot;$scheduledDate&quot;,&#10;  &quot;amount&quot;: &quot;$amount&quot;,&#10;  &quot;paymentOrderProductName&quot;: &quot;$transactionType&quot;,&#10;  &quot;suppressFT&quot;: &quot;$suppressFT&quot;,&#10;  &quot;currentFrequency&quot;: &quot;$currentFrequency&quot;,&#10;  &quot;paymentMethod&quot;: &quot;$paymentMethod&quot;,&#10;  &quot;currencyId&quot;: &quot;$transactionCurrency&quot;,&#10;   #if($transactionType==&quot;FEDWIRE&quot;)&#10;   &quot;paymentOrderProductName&quot;: &quot;FEDCTI&quot;,&#10;  #end&#10;  #if($transactionType==&quot;ACH&quot;)&#10;    &quot;paymentOrderProductName&quot;: &quot;ACHCTI&quot;,&#10;  #end&#10;  #if($validate == &quot;true&quot;)&#10;    &quot;validate_only&quot; : &quot;$validate&quot;,&#10;  #end&#10;    #if($frequencyEndDate &amp;&amp;  $frequencyEndDate!=&quot;&quot;)&#10;    &quot;currentEndDate&quot;: &quot;$frequencyEndDate&quot;,&#10;  #end&#10;  #if($SourceOfFunds)&#10;    &quot;SourceOfFunds&quot;:&quot;$SourceOfFunds&quot;,&#10;  #end&#10;    #if($intermediaryBicCode &amp;&amp;  $intermediaryBicCode!=&quot;&quot;)&#10;     &quot;intermediaryFiBicCode&quot;:&quot;$intermediaryBicCode&quot;,&#10;            #end&#10;   #if($clearingCode &amp;&amp; $clearingCode!=&quot;&quot;)&#10;               &quot;accountWithBankClearingCode&quot;:&quot;$clearingCode&quot;,&#10;            #end&#10;   #if($e2eReference &amp;&amp; $e2eReference!=&quot;&quot;)&#10;                 &quot;endToEndReference&quot;:&quot;$e2eReference&quot;,&#10;            #end&#10;  #if($transactionType == &quot;ACTRF&quot;)&#10;   &quot;counterPartyAccountId&quot;: &quot;$toAccountNumber&quot;&#10;  #elseif($transactionType == &quot;INATIONAL&quot;)&#10;   &quot;accountWithBanks&quot;: [&#10;        {&#10;         &quot;accountWithBank&quot;:&quot;$swiftCode&quot;&#10;        }&#10;    ],&#10;   &quot;beneficiaryAccountId&quot;:&quot;$toAccountNumber&quot;&#10;   #if($beneficiaryName!=&quot;null&quot; &amp;&amp; $beneficiaryName!= &quot;&quot;)&#10;   ,&quot;beneficiaryNames&quot;: [&#10;        {&#10;         &quot;beneficiaryName&quot;:&quot;$beneficiaryName&quot;&#10;        }&#10;    ]&#10;   #end&#10;  #elseif($transactionType == &quot;INSTPAY&quot; || $transactionType == &quot;SEPA&quot; || $transactionType == &quot;FEDWIRE&quot; || $transactionType == &quot;ACH&quot;)&#10;   &quot;beneficiaryAccountId&quot;: &quot;$toAccountNumber&quot;&#10;   #if($beneficiaryName!=&quot;null&quot; &amp;&amp; $beneficiaryName!= &quot;&quot;)&#10;   ,&quot;beneficiaryNames&quot;: [&#10;        {&#10;         &quot;beneficiaryName&quot;:&quot;$beneficiaryName&quot;&#10;        }&#10;    ]&#10; #end&#10;  #elseif($transactionType == &quot;DOMESTIC&quot;)&#10;   &quot;beneficiaryAccountId&quot;: &quot;$toAccountNumber&quot;&#10; #if($beneficiaryName!=&quot;null&quot; &amp;&amp; $beneficiaryName!= &quot;&quot;)&#10;   ,&quot;beneficiaryNames&quot;: [&#10;        {&#10;         &quot;beneficiaryName&quot;:&quot;$beneficiaryName&quot;&#10;        }&#10;    ]&#10; #end&#10;  #end&#10; #if($transactionsNotes!=&quot;null&quot; &amp;&amp; $transactionsNotes!= &quot;&quot;)&#10;   ,&quot;displayNames&quot;: $transactionsNotes&#10;  #end&#10;          #if($transactionType != &quot;ACTRF&quot; &amp;&amp; $paidBy &amp;&amp; $paidBy !=&quot;&quot;)&#10;              ,&quot;chargeBearer&quot; : &quot;$paidBy&quot;&#10;        #end&#10;    }&#10;}" description="" encode="false" format="" formatvalue="" name="message" order="" paramOrder="0" parentOrder="0" sms-name="" src="" sourcevalue="" srcformatvalue="" target="" targetdatatype="" value="{&#10; &quot;header&quot;: {     &#10;    },&#10; &quot;body&quot;: {&#10;  &quot;startDate&quot;: &quot;$scheduledDate&quot;,&#10;  &quot;amount&quot;: &quot;$amount&quot;,&#10;  &quot;paymentOrderProductName&quot;: &quot;$transactionType&quot;,&#10;  &quot;suppressFT&quot;: &quot;$suppressFT&quot;,&#10;  &quot;currentFrequency&quot;: &quot;$currentFrequency&quot;,&#10;  &quot;paymentMethod&quot;: &quot;$paymentMethod&quot;,&#10;  &quot;currencyId&quot;: &quot;$transactionCurrency&quot;,&#10;   #if($transactionType==&quot;FEDWIRE&quot;)&#10;   &quot;paymentOrderProductName&quot;: &quot;FEDCTI&quot;,&#10;  #end&#10;  #if($transactionType==&quot;ACH&quot;)&#10;    &quot;paymentOrderProductName&quot;: &quot;ACHCTI&quot;,&#10;  #end&#10;  #if($validate == &quot;true&quot;)&#10;    &quot;validate_only&quot; : &quot;$validate&quot;,&#10;  #end&#10;    #if($frequencyEndDate &amp;&amp;  $frequencyEndDate!=&quot;&quot;)&#10;    &quot;currentEndDate&quot;: &quot;$frequencyEndDate&quot;,&#10;  #end&#10;  #if($SourceOfFunds)&#10;    &quot;SourceOfFunds&quot;:&quot;$SourceOfFunds&quot;,&#10;  #end&#10;    #if($intermediaryBicCode &amp;&amp;  $intermediaryBicCode!=&quot;&quot;)&#10;     &quot;intermediaryFiBicCode&quot;:&quot;$intermediaryBicCode&quot;,&#10;            #end&#10;   #if($clearingCode &amp;&amp; $clearingCode!=&quot;&quot;)&#10;               &quot;accountWithBankClearingCode&quot;:&quot;$clearingCode&quot;,&#10;            #end&#10;   #if($e2eReference &amp;&amp; $e2eReference!=&quot;&quot;)&#10;                 &quot;endToEndReference&quot;:&quot;$e2eReference&quot;,&#10;            #end&#10;  #if($transactionType == &quot;ACTRF&quot;)&#10;   &quot;counterPartyAccountId&quot;: &quot;$toAccountNumber&quot;&#10;  #elseif($transactionType == &quot;INATIONAL&quot;)&#10;   &quot;accountWithBanks&quot;: [&#10;        {&#10;         &quot;accountWithBank&quot;:&quot;$swiftCode&quot;&#10;        }&#10;    ],&#10;   &quot;beneficiaryAccountId&quot;:&quot;$toAccountNumber&quot;&#10;   #if($beneficiaryName!=&quot;null&quot; &amp;&amp; $beneficiaryName!= &quot;&quot;)&#10;   ,&quot;beneficiaryNames&quot;: [&#10;        {&#10;         &quot;beneficiaryName&quot;:&quot;$beneficiaryName&quot;&#10;        }&#10;    ]&#10;   #end&#10;  #elseif($transactionType == &quot;INSTPAY&quot; || $transactionType == &quot;SEPA&quot; || $transactionType == &quot;FEDWIRE&quot; || $transactionType == &quot;ACH&quot;)&#10;   &quot;beneficiaryAccountId&quot;: &quot;$toAccountNumber&quot;&#10;   #if($beneficiaryName!=&quot;null&quot; &amp;&amp; $beneficiaryName!= &quot;&quot;)&#10;   ,&quot;beneficiaryNames&quot;: [&#10;        {&#10;         &quot;beneficiaryName&quot;:&quot;$beneficiaryName&quot;&#10;        }&#10;    ]&#10; #end&#10;  #elseif($transactionType == &quot;DOMESTIC&quot;)&#10;   &quot;beneficiaryAccountId&quot;: &quot;$toAccountNumber&quot;&#10; #if($beneficiaryName!=&quot;null&quot; &amp;&amp; $beneficiaryName!= &quot;&quot;)&#10;   ,&quot;beneficiaryNames&quot;: [&#10;        {&#10;         &quot;beneficiaryName&quot;:&quot;$beneficiaryName&quot;&#10;        }&#10;    ]&#10; #end&#10;  #end&#10; #if($transactionsNotes!=&quot;null&quot; &amp;&amp; $transactionsNotes!= &quot;&quot;)&#10;   ,&quot;displayNames&quot;: $transactionsNotes&#10;  #end&#10;          #if($transactionType != &quot;ACTRF&quot; &amp;&amp; $paidBy &amp;&amp; $paidBy !=&quot;&quot;)&#10;              ,&quot;chargeBearer&quot; : &quot;$paidBy&quot;&#10;        #end&#10;    }&#10;}" isExtended="false">
+            <accessType></accessType>
+        </template-param>
+        <stub-param value=""/>
+    </service-input>
+    <service-output passthrough="false" isExtended="false">
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="referenceId" order="" paramOrder="1" parentOrder="0" passnull="false" sms-name="" src="/header/id" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="status" order="" paramOrder="2" parentOrder="0" passnull="false" sms-name="" src="/header/status" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="transactStatus" order="" paramOrder="3" parentOrder="0" passnull="false" sms-name="" src="/header/transactionStatus" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+    </service-output>
+</service>

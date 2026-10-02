@@ -1,0 +1,154 @@
+{
+    "classname": "Quicklinks",
+    "definitions": {
+        "apis": {
+            "custom": [],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [],
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "f0a9dd75dfe9430c89bfccfab88799e3",
+                    "originalPropertyKey": "postShow",
+                    "propertyIndex": 1,
+                    "propertyKey": "getFlowDetails",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "action",
+                        "displayName": "getFlowDetails",
+                        "srcWidget": "Quicklinks",
+                        "toolTip": "getFlowDetails",
+                        "type": "action",
+                        "uiRepresentation": "Label-Label-Button-Button",
+                        "wType": "FlexContainer"
+                    },
+                    "srcWgtKUID": "b3dd501f66e04f63ae58a85ff13d2d9a",
+                    "translateAtInstance": false
+                }
+            ]
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "WealthObjects",
+                    "group": "General",
+                    "kuid": "f5f5a41fefdc44deb29429b81e83d837",
+                    "originalPropertyKey": "objService",
+                    "propertyIndex": 1,
+                    "propertyKey": "objService",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Object Service",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3dd501f66e04f63ae58a85ff13d2d9a",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "DailyMarket",
+                    "group": "General",
+                    "kuid": "db5dba05618e4e208a718081c5c92c44",
+                    "originalPropertyKey": "objName",
+                    "propertyIndex": 2,
+                    "propertyKey": "objName",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Object Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3dd501f66e04f63ae58a85ff13d2d9a",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "getDailyMarket",
+                    "group": "General",
+                    "kuid": "h51df4995ffe4bd1b830dd8225f6d4c4",
+                    "originalPropertyKey": "operation",
+                    "propertyIndex": 3,
+                    "propertyKey": "operation",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Operation Name",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "b3dd501f66e04f63ae58a85ff13d2d9a",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "visible",
+                    "group": "General",
+                    "kuid": "eac23853ea7b4ad7a13a1953a7045bd7",
+                    "originalPropertyKey": "viewAllBtnStatus",
+                    "propertyIndex": 4,
+                    "propertyKey": "viewAllBtnStatus",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Status of View All button (visible/hidden)",
+                        "uiRepresentation": "Label-Combobox"
+                    },
+                    "srcWgtKUID": "b3dd501f66e04f63ae58a85ff13d2d9a",
+                    "type": "list selector",
+                    "value": [
+                        "visible",
+                        "hidden"
+                    ]
+                }
+            ],
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "originalPropertyKey": "skin",
+                    "propertyIndex": 5,
+                    "propertyKey": "skin1",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "skin",
+                        "displayName": "Normal",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "f63d073726464b7f843288df63d99afc"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "originalPropertyKey": "hoverSkin",
+                    "propertyIndex": 6,
+                    "propertyKey": "hoverSkin",
+                    "pw": {
+                        "access": "readwrite",
+                        "applicablePSPplatform": "desktopweb",
+                        "category": "skin",
+                        "displayName": "Hover Skin",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "f63d073726464b7f843288df63d99afc"
+                }
+            ]
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfinityOLB.HomepageMA",
+    "version": "1.0.0"
+}

@@ -1,0 +1,126 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "_data_": [
+        {
+            "imgRadioSelectEMI": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": ""
+            },
+            "lblDateNdRefNo": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "lblEMITransactionTitle": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "lblTransactionAmount": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            }
+        }
+    ],
+    "_height_": {
+        "type": "string",
+        "value": "99%"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "10dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "98%"
+    },
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "counter": "00",
+    "focusedindex": null,
+    "focuseditem": null,
+    "groupcells": false,
+    "hasSections": false,
+    "id": "segTransactionEMI",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "b290c73213f2496994a4247398441843",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "flxSelectTransactionsContainer",
+    "pf": "frmConvertEMISelectTransaction",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainselection": false,
+    "rowTemplateId": "ba7e472f52874e94868905d387d99dca",
+    "rowcounter": 0,
+    "rowfocusskin": "s7f95e33b8254d6b95fa6d6a87823727",
+    "rowskin": "s8fe3287e79a4df1b2cdb276a7fd755d",
+    "rowtemplate": "flxEMISelectTransaction",
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionheaderskin": "s28ecf963e55427d8071b5cd09925a21",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "separatorrequired": false,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "vizProps": {},
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "flxEMISelectTransaction": "flxEMISelectTransaction",
+        "flxEMITransactionDetails": "flxEMITransactionDetails",
+        "flxLeftLineRed": "flxLeftLineRed",
+        "flxMain": "flxMain",
+        "flxMainEMITransactionDetails": "flxMainEMITransactionDetails",
+        "imgRadioSelectEMI": "imgRadioSelectEMI",
+        "lblDateNdRefNo": "lblDateNdRefNo",
+        "lblEMITransactionTitle": "lblEMITransactionTitle",
+        "lblTransactionAmount": "lblTransactionAmount"
+    }
+}

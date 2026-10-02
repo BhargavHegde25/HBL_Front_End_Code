@@ -1,0 +1,134 @@
+{
+    "classname": "suitabilityReview",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "de88585dabd440b39f70e07a96f70b93",
+                    "paramList": [],
+                    "propertyKey": "setContext",
+                    "pw": {
+                        "displayName": "setContext",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "b55660a5a441451294cabc103da4dfaa",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "a9d07e23fe0c43449991fd8f79aaa997",
+                    "paramList": [],
+                    "propertyKey": "onCancel",
+                    "pw": {
+                        "displayName": "onCancel",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "b55660a5a441451294cabc103da4dfaa",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "b7a3827d323348279f8454aaa22494bd",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "onRequestStart",
+                    "pw": {
+                        "displayName": "onRequestStart",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "b55660a5a441451294cabc103da4dfaa",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "f5c98090f264427f8091e5dc87c39fbd",
+                    "paramList": [],
+                    "propertyIndex": 2,
+                    "propertyKey": "onRequestEnd",
+                    "pw": {
+                        "displayName": "onRequestEnd",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "b55660a5a441451294cabc103da4dfaa",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"lblName\": \"suitabilityName\",\n  \"imgSuitability\" : \"img\",\n  \"flxMain\" : \"onClickevent\"\n}",
+                    "group": "General",
+                    "kuid": "je41d6393af54d4e88f0ae1c3c92218e",
+                    "originalPropertyKey": "widgetMapping",
+                    "propertyIndex": 1,
+                    "propertyKey": "widgetMapping",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "widget mapping",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b55660a5a441451294cabc103da4dfaa",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n\"ObjectName\": \"Strategies\",\n\"ServiceName\": \"PortfolioServicing\",\n\"OperationName\": \"getStrategyQuestions\"\n}",
+                    "group": "General",
+                    "kuid": "ee321ac9061c404292f9f85d6d8ae71c",
+                    "originalPropertyKey": "serviceCall",
+                    "propertyIndex": 2,
+                    "propertyKey": "serviceCall",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "service call",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "b55660a5a441451294cabc103da4dfaa",
+                    "type": "json",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfinityMB.PortfolioManagementMA",
+    "version": "1.0.0"
+}

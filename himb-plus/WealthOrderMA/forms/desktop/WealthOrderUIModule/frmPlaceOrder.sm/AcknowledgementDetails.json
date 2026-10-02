@@ -1,0 +1,1312 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "DNDConfig": null,
+    "_children_": [],
+    "_height_": {
+        "type": "string",
+        "value": "490dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s24c92fc23b14f5484b693ee9b8a9b35",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "android": {},
+    "androidwearos": {},
+    "areflexpropsreferenced": false,
+    "autogrowmode": 1,
+    "canUpdateUI": true,
+    "clipbounds": true,
+    "containerweight": 0,
+    "dataDiffs": {
+        "AcknowledgementDetails": {
+            "__events__": {},
+            "__info__": {
+                "isRoot": true,
+                "kuid": "bfe7c07b448749f4a3e1555b8baf6804",
+                "srcKUID": "ua56e7238cce4e0ab21ea6518d2e3134",
+                "wType": "FlexContainer"
+            },
+            "height": {
+                "Default": {
+                    "type": "string",
+                    "value": "490dp"
+                }
+            },
+            "isVisible": true,
+            "responsiveData": {
+                "b1": {
+                    "isVisible": true
+                },
+                "b2": {
+                    "isVisible": true
+                },
+                "b3": {
+                    "isVisible": true
+                },
+                "b4": {
+                    "isVisible": true
+                }
+            }
+        },
+        "confirmHeaders": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "f7a424bd0ba741de8c27fd432c1d0d65",
+                "srcKUID": "u8654509592549198756efa7d633601c",
+                "wType": "UserWidgetInstance"
+            }
+        },
+        "confirmHeaders.flxHeader": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "a81e578eaba642eeaef30739bd90c848",
+                "srcKUID": "u65451b49bbc4bea938d481d7b016fa5",
+                "wType": "FlexContainer"
+            }
+        },
+        "confirmHeaders.lblHeading": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "e4bebb80f6ab46a9adc523a59c5e347e",
+                "srcKUID": "u8fdcbf29e234ec79f7fe4211e642105",
+                "wType": "Label"
+            },
+            "i18n_text": "i18n.wealth.acknowledgement.orderDetails",
+            "left": {
+                "Default": {
+                    "type": "string",
+                    "value": "2.10%"
+                }
+            },
+            "responsiveData": {
+                "b2": {
+                    "left": {
+                        "type": "string",
+                        "value": "2%"
+                    },
+                    "width": {
+                        "type": "string",
+                        "value": "96%"
+                    }
+                }
+            },
+            "text": "",
+            "width": {
+                "Default": {
+                    "type": "ref",
+                    "value": "preferred"
+                }
+            }
+        },
+        "flxAccount": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "hf5a022ad8d94061b7815e1ef47ab4e8",
+                "srcKUID": "u55c069e897b43cab1aa206f1ff08737",
+                "wType": "FlexContainer"
+            },
+            "autogrowMode": {
+                "Default": 0
+            },
+            "height": {
+                "Default": {
+                    "type": "string",
+                    "value": "40dp"
+                }
+            },
+            "layoutType": 2,
+            "responsiveData": {
+                "b3": {
+                    "height": {
+                        "type": "string",
+                        "value": "50dp"
+                    },
+                    "layoutType": 4
+                }
+            }
+        },
+        "flxAddress": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "c4ebe69c4cfc4e9aab0f6bdd9e908c37",
+                "srcKUID": "ud02b0c65e1544cd9474a6d6a0304e78",
+                "wType": "FlexContainer"
+            },
+            "autogrowMode": {
+                "Default": 0
+            },
+            "height": {
+                "Default": {
+                    "type": "string",
+                    "value": "40dp"
+                }
+            },
+            "layoutType": 2,
+            "responsiveData": {
+                "b3": {
+                    "height": {
+                        "type": "string",
+                        "value": "50dp"
+                    },
+                    "layoutType": 4,
+                    "top": {
+                        "type": "string",
+                        "value": "2dp"
+                    }
+                }
+            },
+            "top": {
+                "Default": {
+                    "type": "string",
+                    "value": "0dp"
+                }
+            }
+        },
+        "flxChequeBooks": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "h958b77d9351439fad8730bd1895bead",
+                "srcKUID": "ud982505b91d4ed784e8ebac0b3a2898",
+                "wType": "FlexContainer"
+            },
+            "autogrowMode": {
+                "Default": 0
+            },
+            "height": {
+                "Default": {
+                    "type": "string",
+                    "value": "40dp"
+                }
+            },
+            "layoutType": 2,
+            "responsiveData": {
+                "b3": {
+                    "height": {
+                        "type": "string",
+                        "value": "50dp"
+                    },
+                    "layoutType": 4,
+                    "top": {
+                        "type": "string",
+                        "value": "2dp"
+                    }
+                }
+            },
+            "top": {
+                "Default": {
+                    "type": "string",
+                    "value": "0dp"
+                }
+            }
+        },
+        "flxDeliveryType": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "ge1d2ae2cdfc4a3bbcb3997e6c580499",
+                "srcKUID": "u499c9db535245e4843066a368205a08",
+                "wType": "FlexContainer"
+            },
+            "autogrowMode": {
+                "Default": 0
+            },
+            "height": {
+                "Default": {
+                    "type": "string",
+                    "value": "40dp"
+                }
+            },
+            "layoutType": 2,
+            "responsiveData": {
+                "b3": {
+                    "height": {
+                        "type": "string",
+                        "value": "50dp"
+                    },
+                    "layoutType": 4,
+                    "top": {
+                        "type": "string",
+                        "value": "2dp"
+                    }
+                }
+            },
+            "top": {
+                "Default": {
+                    "type": "string",
+                    "value": "0dp"
+                }
+            }
+        },
+        "flxExtra1": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "d1647bae2cfe4373969e850a25279493",
+                "srcKUID": "u14c830a8fac4537839801f44d69fa79",
+                "wType": "FlexContainer"
+            },
+            "autogrowMode": {
+                "Default": 0
+            },
+            "height": {
+                "Default": {
+                    "type": "string",
+                    "value": "40dp"
+                }
+            },
+            "isVisible": true,
+            "layoutType": 2,
+            "responsiveData": {
+                "b3": {
+                    "height": {
+                        "type": "string",
+                        "value": "50dp"
+                    },
+                    "isVisible": true,
+                    "layoutType": 4,
+                    "top": {
+                        "type": "string",
+                        "value": "2dp"
+                    }
+                }
+            },
+            "top": {
+                "Default": {
+                    "type": "string",
+                    "value": "0dp"
+                }
+            }
+        },
+        "flxExtra2": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "e1e029cef01c41a9a92bb2609247a45d",
+                "srcKUID": "u3aa04db08ec42a097172c6224a431ef",
+                "wType": "FlexContainer"
+            },
+            "autogrowMode": {
+                "Default": 0
+            },
+            "height": {
+                "Default": {
+                    "type": "string",
+                    "value": "40dp"
+                }
+            },
+            "isVisible": true,
+            "layoutType": 2,
+            "responsiveData": {
+                "b2": {
+                    "bottom": {
+                        "type": "string",
+                        "value": "10dp"
+                    }
+                },
+                "b3": {
+                    "height": {
+                        "type": "string",
+                        "value": "50dp"
+                    },
+                    "isVisible": true,
+                    "layoutType": 4,
+                    "top": {
+                        "type": "string",
+                        "value": "2dp"
+                    }
+                }
+            },
+            "top": {
+                "Default": {
+                    "type": "string",
+                    "value": "0dp"
+                }
+            }
+        },
+        "flxExtra3": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "id436556c7fa42489d4c49d2bd98e6db",
+                "srcKUID": "u5ed3e34a2004080a29e69c65e2d9057",
+                "wType": "FlexContainer"
+            },
+            "isVisible": false,
+            "responsiveData": {}
+        },
+        "flxFee": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "fb5e1ed9f79c46b28c5551f89d52fb9b",
+                "srcKUID": "udb301dda0654c718de538cf62adf4a4",
+                "wType": "FlexContainer"
+            },
+            "autogrowMode": {
+                "Default": 0
+            },
+            "height": {
+                "Default": {
+                    "type": "string",
+                    "value": "40dp"
+                }
+            },
+            "layoutType": 2,
+            "responsiveData": {
+                "b3": {
+                    "height": {
+                        "type": "string",
+                        "value": "50dp"
+                    },
+                    "layoutType": 4,
+                    "top": {
+                        "type": "string",
+                        "value": "2dp"
+                    }
+                }
+            },
+            "top": {
+                "Default": {
+                    "type": "string",
+                    "value": "0dp"
+                }
+            }
+        },
+        "flxIcon": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "e98887573534430dad3ae65786af8866",
+                "srcKUID": "u01fd975227e41aab4467dd825262336",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxLineSeparator1": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "ad9a23adbda4461fb9ee96c24e1a99f5",
+                "srcKUID": "uf9f899ca7464216ae5fdd91750ac32f",
+                "wType": "FlexContainer"
+            },
+            "centerX": {
+                "Default": {
+                    "type": "string",
+                    "value": ""
+                }
+            },
+            "left": {
+                "Default": {
+                    "type": "string",
+                    "value": "10dp"
+                }
+            },
+            "responsiveData": {
+                "b2": {
+                    "left": {
+                        "type": "string",
+                        "value": "2%"
+                    }
+                },
+                "b3": {
+                    "left": {
+                        "type": "string",
+                        "value": "0dp"
+                    },
+                    "width": {
+                        "type": "string",
+                        "value": "100%"
+                    }
+                }
+            },
+            "top": {
+                "Default": {
+                    "type": "string",
+                    "value": "0dp"
+                }
+            },
+            "width": {
+                "Default": {
+                    "type": "string",
+                    "value": "94%"
+                }
+            }
+        },
+        "flxMain": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "b6303e208cf14af4929b98642d27e55c",
+                "srcKUID": "u3a999c36ea84bb7b685c223a107d528",
+                "wType": "FlexContainer"
+            },
+            "height": {
+                "Default": {
+                    "type": "string",
+                    "value": "490dp"
+                }
+            },
+            "left": {
+                "Default": {
+                    "type": "string",
+                    "value": "10dp"
+                }
+            },
+            "responsiveData": {
+                "b2": {
+                    "left": {
+                        "type": "string",
+                        "value": "4dp"
+                    }
+                },
+                "b3": {
+                    "left": {
+                        "type": "string",
+                        "value": "0dp"
+                    }
+                }
+            },
+            "top": {
+                "Default": {
+                    "type": "string",
+                    "value": "0dp"
+                }
+            }
+        },
+        "flxNotes": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "fdd15b0c46a24d22b144d26485ddb6dd",
+                "srcKUID": "ud032378ab5f4816a8e5f51bc7516bbd",
+                "wType": "FlexContainer"
+            },
+            "autogrowMode": {
+                "Default": 0
+            },
+            "height": {
+                "Default": {
+                    "type": "string",
+                    "value": "40dp"
+                }
+            },
+            "layoutType": 2,
+            "responsiveData": {
+                "b3": {
+                    "height": {
+                        "type": "string",
+                        "value": "50dp"
+                    },
+                    "layoutType": 4,
+                    "top": {
+                        "type": "string",
+                        "value": "2dp"
+                    }
+                }
+            },
+            "top": {
+                "Default": {
+                    "type": "string",
+                    "value": "0dp"
+                }
+            }
+        },
+        "imgIcon": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "h768f18c1f084a93bc0fb1fa9bd3c92e",
+                "srcKUID": "u640a51fb4634d5ea73c0eaab6f6c7c4",
+                "wType": "Label"
+            }
+        },
+        "lblAccount": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "a49c833a17af48a09512335e7cf1a41f",
+                "srcKUID": "ua7df7b0adab40d1b6f7f6ce7cdae4a7",
+                "wType": "Label"
+            },
+            "centerY": {
+                "Default": {
+                    "type": "string",
+                    "value": "50%"
+                }
+            },
+            "i18n_text": "i18n.wealth.acknowledgement.refID",
+            "left": {
+                "Default": {
+                    "type": "string",
+                    "value": "15dp"
+                }
+            },
+            "responsiveData": {
+                "b2": {
+                    "left": {
+                        "type": "string",
+                        "value": "2%"
+                    }
+                },
+                "b3": {
+                    "centerY": {
+                        "type": "string",
+                        "value": ""
+                    },
+                    "top": {
+                        "type": "string",
+                        "value": "10dp"
+                    }
+                }
+            },
+            "text": "",
+            "top": {
+                "Default": {
+                    "type": "string",
+                    "value": "0"
+                }
+            }
+        },
+        "lblAccountValue": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "d478690d8d384615b97beb29c6392e64",
+                "srcKUID": "uf7206ac58a1466d96965c38dbb9c17b",
+                "wType": "Label"
+            },
+            "centerY": {
+                "Default": {
+                    "type": "string",
+                    "value": "50%"
+                }
+            },
+            "left": {
+                "Default": {
+                    "type": "string",
+                    "value": "42%"
+                }
+            },
+            "responsiveData": {
+                "b3": {
+                    "centerY": {
+                        "type": "string",
+                        "value": ""
+                    },
+                    "left": {
+                        "type": "string",
+                        "value": "15dp"
+                    },
+                    "top": {
+                        "type": "string",
+                        "value": "3dp"
+                    }
+                }
+            },
+            "text": "OPODSC2010861020",
+            "top": {
+                "Default": {
+                    "type": "number",
+                    "value": ""
+                }
+            }
+        },
+        "lblAddress": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "i77ce81abea34fc1b8751c08a0530068",
+                "srcKUID": "u2336134045a4607ad6d9b07c5406b17",
+                "wType": "Label"
+            },
+            "centerY": {
+                "Default": {
+                    "type": "string",
+                    "value": "50%"
+                }
+            },
+            "i18n_text": "i18n.wealth.limitPrice",
+            "left": {
+                "Default": {
+                    "type": "string",
+                    "value": "15dp"
+                }
+            },
+            "responsiveData": {
+                "b2": {
+                    "left": {
+                        "type": "string",
+                        "value": "2%"
+                    }
+                },
+                "b3": {
+                    "centerY": {
+                        "type": "string",
+                        "value": ""
+                    },
+                    "top": {
+                        "type": "string",
+                        "value": "10dp"
+                    }
+                }
+            },
+            "text": "",
+            "top": {
+                "Default": {
+                    "type": "string",
+                    "value": "0"
+                }
+            }
+        },
+        "lblAddressValue": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "i9cc04669437499bb0e2db233fc72efe",
+                "srcKUID": "u399b410add8455692c775bb8628f584",
+                "wType": "Label"
+            },
+            "centerY": {
+                "Default": {
+                    "type": "string",
+                    "value": "50%"
+                }
+            },
+            "left": {
+                "Default": {
+                    "type": "string",
+                    "value": "42%"
+                }
+            },
+            "responsiveData": {
+                "b3": {
+                    "centerY": {
+                        "type": "string",
+                        "value": ""
+                    },
+                    "left": {
+                        "type": "string",
+                        "value": "15dp"
+                    },
+                    "top": {
+                        "type": "string",
+                        "value": "3dp"
+                    }
+                }
+            },
+            "text": "$2,399.44",
+            "top": {
+                "Default": {
+                    "type": "number",
+                    "value": ""
+                }
+            }
+        },
+        "lblChequeBooks": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "c7f8875d779b4c038573ec3e5667215d",
+                "srcKUID": "u3398fe226e8449a9564a5941905662c",
+                "wType": "Label"
+            },
+            "centerY": {
+                "Default": {
+                    "type": "string",
+                    "value": "50%"
+                }
+            },
+            "i18n_text": "i18n.wealth.order",
+            "left": {
+                "Default": {
+                    "type": "string",
+                    "value": "15dp"
+                }
+            },
+            "responsiveData": {
+                "b2": {
+                    "left": {
+                        "type": "string",
+                        "value": "2%"
+                    }
+                },
+                "b3": {
+                    "centerY": {
+                        "type": "string",
+                        "value": ""
+                    },
+                    "left": {
+                        "type": "string",
+                        "value": "15dp"
+                    },
+                    "top": {
+                        "type": "string",
+                        "value": "10dp"
+                    }
+                }
+            },
+            "text": "",
+            "top": {
+                "Default": {
+                    "type": "string",
+                    "value": "0"
+                }
+            }
+        },
+        "lblChequeBooksValue": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "a1a236e6833144a381a7e7df3226390a",
+                "srcKUID": "u32a10bb72cc4c2e8ab2bb203e263b65",
+                "wType": "Label"
+            },
+            "centerY": {
+                "Default": {
+                    "type": "string",
+                    "value": "50%"
+                }
+            },
+            "left": {
+                "Default": {
+                    "type": "string",
+                    "value": "42%"
+                }
+            },
+            "responsiveData": {
+                "b3": {
+                    "centerY": {
+                        "type": "string",
+                        "value": ""
+                    },
+                    "left": {
+                        "type": "string",
+                        "value": "15dp"
+                    },
+                    "top": {
+                        "type": "string",
+                        "value": "3dp"
+                    }
+                }
+            },
+            "text": "Buy",
+            "top": {
+                "Default": {
+                    "type": "number",
+                    "value": ""
+                }
+            }
+        },
+        "lblDeliveryType": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "f5fcdc60ebac44cc833a50f977e4aff2",
+                "srcKUID": "u3a69b9418d9402197387da93b786a3c",
+                "wType": "Label"
+            },
+            "centerY": {
+                "Default": {
+                    "type": "string",
+                    "value": "50%"
+                }
+            },
+            "i18n_text": "i18n.wealth.orderType",
+            "left": {
+                "Default": {
+                    "type": "string",
+                    "value": "15dp"
+                }
+            },
+            "responsiveData": {
+                "b2": {
+                    "left": {
+                        "type": "string",
+                        "value": "2%"
+                    }
+                },
+                "b3": {
+                    "centerY": {
+                        "type": "string",
+                        "value": ""
+                    },
+                    "top": {
+                        "type": "string",
+                        "value": "10dp"
+                    }
+                }
+            },
+            "text": "",
+            "top": {
+                "Default": {
+                    "type": "string",
+                    "value": "0"
+                }
+            }
+        },
+        "lblDeliveryTypeValue": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "e9803043b58549539148b2879362ea55",
+                "srcKUID": "u2588d7292764f369d8eb618a60437eb",
+                "wType": "Label"
+            },
+            "centerY": {
+                "Default": {
+                    "type": "string",
+                    "value": "50%"
+                }
+            },
+            "left": {
+                "Default": {
+                    "type": "string",
+                    "value": "42%"
+                }
+            },
+            "responsiveData": {
+                "b3": {
+                    "centerY": {
+                        "type": "string",
+                        "value": ""
+                    },
+                    "left": {
+                        "type": "string",
+                        "value": "15dp"
+                    },
+                    "top": {
+                        "type": "string",
+                        "value": "3dp"
+                    }
+                }
+            },
+            "text": "Market",
+            "top": {
+                "Default": {
+                    "type": "number",
+                    "value": ""
+                }
+            }
+        },
+        "lblExtra1": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "d40a6b8f7d064187afa9c6ca0de32abf",
+                "srcKUID": "u938e4ff87e7431cbb4b48760a32e36f",
+                "wType": "Label"
+            },
+            "centerY": {
+                "Default": {
+                    "type": "string",
+                    "value": "50%"
+                }
+            },
+            "i18n_text": "i18n.wealth.totalOrderAmount",
+            "left": {
+                "Default": {
+                    "type": "string",
+                    "value": "15dp"
+                }
+            },
+            "responsiveData": {
+                "b2": {
+                    "left": {
+                        "type": "string",
+                        "value": "2%"
+                    }
+                },
+                "b3": {
+                    "centerY": {
+                        "type": "string",
+                        "value": ""
+                    },
+                    "top": {
+                        "type": "string",
+                        "value": "10dp"
+                    }
+                }
+            },
+            "text": "",
+            "top": {
+                "Default": {
+                    "type": "string",
+                    "value": "0"
+                }
+            }
+        },
+        "lblExtra1Value": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "e9bee0e0737c40518a09843c5a625a4e",
+                "srcKUID": "u14067746ec445cdaea11cb50c9d2d0c",
+                "wType": "Label"
+            },
+            "centerY": {
+                "Default": {
+                    "type": "string",
+                    "value": "50%"
+                }
+            },
+            "left": {
+                "Default": {
+                    "type": "string",
+                    "value": "42%"
+                }
+            },
+            "responsiveData": {
+                "b3": {
+                    "centerY": {
+                        "type": "string",
+                        "value": ""
+                    },
+                    "left": {
+                        "type": "string",
+                        "value": "15dp"
+                    },
+                    "top": {
+                        "type": "string",
+                        "value": "3dp"
+                    }
+                }
+            },
+            "text": "$9,598.76",
+            "top": {
+                "Default": {
+                    "type": "number",
+                    "value": ""
+                }
+            }
+        },
+        "lblExtra2": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "dff3e964bd464c65bb2c501f1d7b2a98",
+                "srcKUID": "uca85a4ef22d42e9814be92d0a22f5ac",
+                "wType": "Label"
+            },
+            "centerY": {
+                "Default": {
+                    "type": "string",
+                    "value": "50%"
+                }
+            },
+            "i18n_text": "i18n.wealth.estimatedFees",
+            "left": {
+                "Default": {
+                    "type": "string",
+                    "value": "15dp"
+                }
+            },
+            "responsiveData": {
+                "b2": {
+                    "left": {
+                        "type": "string",
+                        "value": "2%"
+                    }
+                },
+                "b3": {
+                    "centerY": {
+                        "type": "string",
+                        "value": ""
+                    },
+                    "top": {
+                        "type": "string",
+                        "value": "10dp"
+                    }
+                }
+            },
+            "text": "",
+            "top": {
+                "Default": {
+                    "type": "string",
+                    "value": "0"
+                }
+            }
+        },
+        "lblExtra2Value": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "d0d02d89c3fa46d0b553aca31d2efa24",
+                "srcKUID": "uc9c65714a104b00a001501fd308944c",
+                "wType": "Label"
+            },
+            "centerY": {
+                "Default": {
+                    "type": "string",
+                    "value": "50%"
+                }
+            },
+            "left": {
+                "Default": {
+                    "type": "string",
+                    "value": "42%"
+                }
+            },
+            "responsiveData": {
+                "b3": {
+                    "centerY": {
+                        "type": "string",
+                        "value": ""
+                    },
+                    "left": {
+                        "type": "string",
+                        "value": "15dp"
+                    },
+                    "top": {
+                        "type": "string",
+                        "value": "3dp"
+                    }
+                }
+            },
+            "text": "$2.00",
+            "top": {
+                "Default": {
+                    "type": "number",
+                    "value": ""
+                }
+            }
+        },
+        "lblExtra3": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "ff0c5d375ef444d99bad5dbe41626318",
+                "srcKUID": "u8aa5c8d3e25463489f1c1c435c98e42",
+                "wType": "Label"
+            },
+            "i18n_text": "i18n.wealth.limitPrice",
+            "responsiveData": {},
+            "text": ""
+        },
+        "lblExtra3Value": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "a5dc5d6fc38c4b5e908a86d53260a6b3",
+                "srcKUID": "uc3a250e40984608bbace425e6256718",
+                "wType": "Label"
+            },
+            "responsiveData": {},
+            "text": "$2,350.00"
+        },
+        "lblFee": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "e2952940e7884d738fc8f8342096cd46",
+                "srcKUID": "ue0d1050d3e64a07baa68474598839b0",
+                "wType": "Label"
+            },
+            "centerY": {
+                "Default": {
+                    "type": "string",
+                    "value": "50%"
+                }
+            },
+            "i18n_text": "i18n.wealth.Quantity",
+            "left": {
+                "Default": {
+                    "type": "string",
+                    "value": "15dp"
+                }
+            },
+            "responsiveData": {
+                "b2": {
+                    "left": {
+                        "type": "string",
+                        "value": "2%"
+                    }
+                },
+                "b3": {
+                    "centerY": {
+                        "type": "string",
+                        "value": ""
+                    },
+                    "top": {
+                        "type": "string",
+                        "value": "10dp"
+                    }
+                }
+            },
+            "text": "",
+            "top": {
+                "Default": {
+                    "type": "string",
+                    "value": "0"
+                }
+            }
+        },
+        "lblFeeValue": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "h1c6ecbc7cf6404d885ea43b56cbbdde",
+                "srcKUID": "ua713d54f98f4aa9997de184c2ac60f3",
+                "wType": "Label"
+            },
+            "centerY": {
+                "Default": {
+                    "type": "string",
+                    "value": "50%"
+                }
+            },
+            "left": {
+                "Default": {
+                    "type": "string",
+                    "value": "42%"
+                }
+            },
+            "responsiveData": {
+                "b3": {
+                    "centerY": {
+                        "type": "string",
+                        "value": ""
+                    },
+                    "left": {
+                        "type": "string",
+                        "value": "15dp"
+                    },
+                    "top": {
+                        "type": "string",
+                        "value": "3dp"
+                    }
+                }
+            },
+            "text": "4",
+            "top": {
+                "Default": {
+                    "type": "number",
+                    "value": ""
+                }
+            }
+        },
+        "lblNotes": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "b20a134c88de4ca2825f77b48aa71fcc",
+                "srcKUID": "u4a54c4eb1b14850a1ea282a17aef109",
+                "wType": "Label"
+            },
+            "centerY": {
+                "Default": {
+                    "type": "string",
+                    "value": "50%"
+                }
+            },
+            "i18n_text": "i18n.wealth.validity",
+            "left": {
+                "Default": {
+                    "type": "string",
+                    "value": "15dp"
+                }
+            },
+            "responsiveData": {
+                "b2": {
+                    "left": {
+                        "type": "string",
+                        "value": "2%"
+                    }
+                },
+                "b3": {
+                    "centerY": {
+                        "type": "string",
+                        "value": ""
+                    },
+                    "top": {
+                        "type": "string",
+                        "value": "10dp"
+                    }
+                }
+            },
+            "text": "",
+            "top": {
+                "Default": {
+                    "type": "string",
+                    "value": "0"
+                }
+            }
+        },
+        "lblNotesValue": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "aaa0fc2ee6ac472ab97d1726fcd93f40",
+                "srcKUID": "u135b16159014ac39b77c5a04de46f37",
+                "wType": "Label"
+            },
+            "centerY": {
+                "Default": {
+                    "type": "string",
+                    "value": "50%"
+                }
+            },
+            "left": {
+                "Default": {
+                    "type": "string",
+                    "value": "42%"
+                }
+            },
+            "responsiveData": {
+                "b3": {
+                    "centerY": {
+                        "type": "string",
+                        "value": ""
+                    },
+                    "left": {
+                        "type": "string",
+                        "value": "15dp"
+                    },
+                    "top": {
+                        "type": "string",
+                        "value": "3dp"
+                    }
+                }
+            },
+            "text": "Day order",
+            "top": {
+                "Default": {
+                    "type": "number",
+                    "value": ""
+                }
+            }
+        }
+    },
+    "desktopweb": {},
+    "enablescrolling": true,
+    "id": "AcknowledgementDetails",
+    "info": null,
+    "ipad": {},
+    "iphone": {},
+    "iscustomlayout": false,
+    "isdatareferenced": false,
+    "isvisible": true,
+    "kuid": "bfe7c07b448749f4a3e1555b8baf6804",
+    "layouttype": 2,
+    "masterType": 0,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "flxTransactionDetails",
+    "pf": "frmPlaceOrder",
+    "responsiveData": {
+        "b1": {
+            "isVisible": true
+        },
+        "b2": {
+            "isVisible": true
+        },
+        "b3": {
+            "isVisible": true
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "sourceUserWidget": "ua56e7238cce4e0ab21ea6518d2e3134",
+    "spabb": {},
+    "tabrcandroid": {},
+    "vizProps": {
+        "hidewidgethierarchy": false
+    },
+    "wType": "UserWidgetInstance"
+}

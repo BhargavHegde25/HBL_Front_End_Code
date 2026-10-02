@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service serviceGroup="" cachable="false" cacheduration="" customOperation="false" description="" endpoint="default" groupType="" id="lodgeBillPay" passwordencrypted="false" security="authorized_app_user" type="jsonConnector" smscode="" smsenabled="false">
+    <service-config>
+        <config-param api-version="" appid="" name="preprocessorname" value="com.bct.preprocessor.MerchantFormFieldValidationPreProcessor,com.bct.preprocessor.ConnectIPSAuthorizationPreprocessor"/>
+        <config-param api-version="" appid="" name="postprocessorname" value="com.bct.postprocessor.LodgeBillPayPostProcessor"/>
+        <config-param api-version="" appid="" name="preprocessorJS" value=""/>
+        <config-param api-version="" appid="" name="postprocessorJS" value=""/>
+        <config-param api-version="" appid="" name="preprocessorRules" value=""/>
+        <config-param api-version="" appid="" name="postprocessorRules" value=""/>
+        <config-param api-version="" appid="" name="kony_http_supported_methods" value="POST"/>
+        <config-param api-version="" appid="" name="endpointUrl" value="http://_$_CONNECTIPS_BASE_URL_$_api/billpayment/lodgebillpay.do"/>
+        <config-param api-version="" appid="" name="ignorehttpproxy" value="true"/>
+        <config-param api-version="" appid="" name="http.method" value="POST"/>
+        <config-param api-version="" appid="" name="dataObjectName" value=""/>
+        <config-param api-version="" appid="" name="sockettimeout" value=""/>
+        <config-param api-version="" appid="" name="responseEncoding" value="UTF-8"/>
+        <config-param api-version="" appid="" name="isembedxmlpresent" value="false"/>
+        <config-param api-version="" appid="" name="retrycount" value="0"/>
+        <config-param api-version="" appid="" name="urlprovider" value="com.kony.dbputilities.util.ServiceURLProvider"/>
+        <config-param api-version="" appid="" name="jsonpath" value="true"/>
+    </service-config>
+    <service-input passthrough="false" isExtended="false">
+        <header datatype="" name="" passthrough="false" isExtended="false">
+            <param datatype="string" defaultvalue="" description="" encode="false" format="None" formatvalue="" name="Authorization" order="" paramOrder="0" parentOrder="0" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="" targetdatatype="" testvalue="Bearer 5ae3da5c-cb1d-449c-b610-bc01dc2855d9" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+        </header>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="token" order="" paramOrder="1" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="batchId" order="" paramOrder="2" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="number" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="batchAmount" order="" paramOrder="3" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="number" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="batchCount" order="" paramOrder="4" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="batchCrncy" order="" paramOrder="5" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="categoryPurpose" order="" paramOrder="6" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="debtorAgent" order="" paramOrder="7" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="debtorBranch" order="" paramOrder="8" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="debtorName" order="" paramOrder="9" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="debtorAccount" order="" paramOrder="10" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="debtorIdType" order="" paramOrder="11" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="debtorIdValue" order="" paramOrder="12" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="debtorAddress" order="" paramOrder="13" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="debtorPhone" order="" paramOrder="14" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="debtorMobile" order="" paramOrder="15" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="debtorEmail" order="" paramOrder="16" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="instructionId" order="" paramOrder="17" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="endToEndId" order="" paramOrder="18" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="number" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="amount" order="" paramOrder="19" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="appId" order="" paramOrder="20" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="refId" order="" paramOrder="21" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="freeCode1" order="" paramOrder="22" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="remarks" order="" paramOrder="23" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="addenda3" order="" paramOrder="24" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="freeText1" order="" paramOrder="25" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="particulars" order="" paramOrder="26" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="addenda4" order="" paramOrder="27" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="freeCode2" order="" paramOrder="28" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="addenda1" order="" paramOrder="29" parentOrder="-1" passnull="false" sms-name="" src="request" sourcevalue="" srcformatvalue="" target="request" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <template-param datatype="" defaultvalue="{&#10;    &quot;cipsBatchDetail&quot;: {&#10;        &quot;batchId&quot;: &quot;$batchId&quot;,&#10;        &quot;batchAmount&quot;: &quot;$batchAmount&quot;,&#10;        &quot;batchCount&quot;: &quot;1&quot;,&#10;        &quot;batchCrncy&quot;: &quot;$batchCrncy&quot;,&#10;        &quot;categoryPurpose&quot;: &quot;$categoryPurpose&quot;,&#10;        &quot;debtorAgent&quot;: &quot;$debtorAgent&quot;,&#10;        &quot;debtorBranch&quot;: &quot;$debtorBranch&quot;,&#10;        &quot;debtorName&quot;: &quot;$debtorName&quot;,&#10;        &quot;debtorAccount&quot;: &quot;$debtorAccount&quot;&#10;       #if($debtorIdType &amp;&amp;  $debtorIdType!=&quot;&quot;)&#10;        ,&quot;debtorIdType&quot;:&quot;$debtorIdType&quot;&#10;       #end &#10;         #if($debtorIdValue &amp;&amp;  $debtorIdValue!=&quot;&quot;)&#10;        ,&quot;debtorIdValue&quot;:&quot;$debtorIdValue&quot;&#10;       #end &#10;        #if($debtorAddress &amp;&amp;  $debtorAddress!=&quot;&quot;)&#10;        ,&quot;debtorAddress&quot;:&quot;$debtorAddress&quot;&#10;       #end &#10;       #if($debtorPhone &amp;&amp;  $debtorPhone!=&quot;&quot;)&#10;        ,&quot;debtorPhone&quot;:&quot;$debtorPhone&quot;&#10;       #end &#10;        #if($debtorMobile &amp;&amp;  $debtorMobile!=&quot;&quot;)&#10;        ,&quot;debtorMobile&quot;:&quot;$debtorMobile&quot;&#10;       #end &#10;        #if($debtorEmail &amp;&amp;  $debtorEmail!=&quot;&quot;)&#10;        ,&quot;debtorEmail&quot;:&quot;$debtorEmail&quot;&#10;       #end &#10;    },&#10;    &quot;cipsTransactionDetail&quot;: {&#10;        &quot;instructionId&quot;: &quot;$instructionId&quot;,&#10;        &quot;endToEndId&quot;: &quot;$endToEndId&quot;&#10;        #if($amount &amp;&amp;  $amount!=&quot;&quot;)&#10;        ,&quot;amount&quot;:&quot;$amount&quot;&#10;        #end &#10;        #if($appId &amp;&amp;  $appId!=&quot;&quot;)&#10;        ,&quot;appId&quot;:&quot;$appId&quot;&#10;        #end &#10;        #if($refId &amp;&amp;  $refId!=&quot;&quot;)&#10;        ,&quot;refId&quot;:&quot;$refId&quot;&#10;        #end &#10;        #if($freeCode1 &amp;&amp;  $freeCode1!=&quot;&quot;)&#10;        ,&quot;freeCode1&quot;:&quot;$freeCode1&quot;&#10;        #end &#10;        #if($remarks &amp;&amp;  $remarks!=&quot;&quot;)&#10;        ,&quot;remarks&quot;:&quot;$remarks&quot;&#10;        #end&#10;        #if($addenda3 &amp;&amp;  $addenda3!=&quot;&quot;)&#10;        ,&quot;addenda3&quot;:&quot;$addenda3&quot;&#10;        #end&#10;        #if($freeText1 &amp;&amp;  $freeText1!=&quot;&quot;)&#10;        ,&quot;freeText1&quot;:&quot;$freeText1&quot;&#10;        #end&#10;        #if($particulars &amp;&amp;  $particulars!=&quot;&quot;)&#10;        ,&quot;particulars&quot;:&quot;$particulars&quot;&#10;        #end&#10;        #if($addenda4 &amp;&amp;  $addenda4!=&quot;&quot;)&#10;        ,&quot;addenda4&quot;:&quot;$addenda4&quot;&#10;        #end&#10;         #if($freeCode2 &amp;&amp;  $freeCode2!=&quot;&quot;)&#10;        ,&quot;freeCode2&quot;:&quot;$freeCode2&quot;&#10;        #end&#10;        #if($addenda1 &amp;&amp;  $addenda1!=&quot;&quot;)&#10;        ,&quot;addenda1&quot;:&quot;$addenda1&quot;&#10;        #end&#10;    },&#10;    &quot;token&quot;: &quot;$token&quot;&#10;}" description="" encode="false" format="" formatvalue="" name="message" order="" paramOrder="0" parentOrder="0" sms-name="" src="" sourcevalue="" srcformatvalue="" target="" targetdatatype="" value="{&#10;    &quot;cipsBatchDetail&quot;: {&#10;        &quot;batchId&quot;: &quot;$batchId&quot;,&#10;        &quot;batchAmount&quot;: &quot;$batchAmount&quot;,&#10;        &quot;batchCount&quot;: &quot;1&quot;,&#10;        &quot;batchCrncy&quot;: &quot;$batchCrncy&quot;,&#10;        &quot;categoryPurpose&quot;: &quot;$categoryPurpose&quot;,&#10;        &quot;debtorAgent&quot;: &quot;$debtorAgent&quot;,&#10;        &quot;debtorBranch&quot;: &quot;$debtorBranch&quot;,&#10;        &quot;debtorName&quot;: &quot;$debtorName&quot;,&#10;        &quot;debtorAccount&quot;: &quot;$debtorAccount&quot;&#10;       #if($debtorIdType &amp;&amp;  $debtorIdType!=&quot;&quot;)&#10;        ,&quot;debtorIdType&quot;:&quot;$debtorIdType&quot;&#10;       #end &#10;         #if($debtorIdValue &amp;&amp;  $debtorIdValue!=&quot;&quot;)&#10;        ,&quot;debtorIdValue&quot;:&quot;$debtorIdValue&quot;&#10;       #end &#10;        #if($debtorAddress &amp;&amp;  $debtorAddress!=&quot;&quot;)&#10;        ,&quot;debtorAddress&quot;:&quot;$debtorAddress&quot;&#10;       #end &#10;       #if($debtorPhone &amp;&amp;  $debtorPhone!=&quot;&quot;)&#10;        ,&quot;debtorPhone&quot;:&quot;$debtorPhone&quot;&#10;       #end &#10;        #if($debtorMobile &amp;&amp;  $debtorMobile!=&quot;&quot;)&#10;        ,&quot;debtorMobile&quot;:&quot;$debtorMobile&quot;&#10;       #end &#10;        #if($debtorEmail &amp;&amp;  $debtorEmail!=&quot;&quot;)&#10;        ,&quot;debtorEmail&quot;:&quot;$debtorEmail&quot;&#10;       #end &#10;    },&#10;    &quot;cipsTransactionDetail&quot;: {&#10;        &quot;instructionId&quot;: &quot;$instructionId&quot;,&#10;        &quot;endToEndId&quot;: &quot;$endToEndId&quot;&#10;        #if($amount &amp;&amp;  $amount!=&quot;&quot;)&#10;        ,&quot;amount&quot;:&quot;$amount&quot;&#10;        #end &#10;        #if($appId &amp;&amp;  $appId!=&quot;&quot;)&#10;        ,&quot;appId&quot;:&quot;$appId&quot;&#10;        #end &#10;        #if($refId &amp;&amp;  $refId!=&quot;&quot;)&#10;        ,&quot;refId&quot;:&quot;$refId&quot;&#10;        #end &#10;        #if($freeCode1 &amp;&amp;  $freeCode1!=&quot;&quot;)&#10;        ,&quot;freeCode1&quot;:&quot;$freeCode1&quot;&#10;        #end &#10;        #if($remarks &amp;&amp;  $remarks!=&quot;&quot;)&#10;        ,&quot;remarks&quot;:&quot;$remarks&quot;&#10;        #end&#10;        #if($addenda3 &amp;&amp;  $addenda3!=&quot;&quot;)&#10;        ,&quot;addenda3&quot;:&quot;$addenda3&quot;&#10;        #end&#10;        #if($freeText1 &amp;&amp;  $freeText1!=&quot;&quot;)&#10;        ,&quot;freeText1&quot;:&quot;$freeText1&quot;&#10;        #end&#10;        #if($particulars &amp;&amp;  $particulars!=&quot;&quot;)&#10;        ,&quot;particulars&quot;:&quot;$particulars&quot;&#10;        #end&#10;        #if($addenda4 &amp;&amp;  $addenda4!=&quot;&quot;)&#10;        ,&quot;addenda4&quot;:&quot;$addenda4&quot;&#10;        #end&#10;         #if($freeCode2 &amp;&amp;  $freeCode2!=&quot;&quot;)&#10;        ,&quot;freeCode2&quot;:&quot;$freeCode2&quot;&#10;        #end&#10;        #if($addenda1 &amp;&amp;  $addenda1!=&quot;&quot;)&#10;        ,&quot;addenda1&quot;:&quot;$addenda1&quot;&#10;        #end&#10;    },&#10;    &quot;token&quot;: &quot;$token&quot;&#10;}" isExtended="false">
+            <accessType></accessType>
+        </template-param>
+        <stub-param value=""/>
+    </service-input>
+    <service-output passthrough="false" isExtended="false">
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="responseDescription" order="" paramOrder="95" parentOrder="0" passnull="false" sms-name="" src="$.responseDescription" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="token" order="" paramOrder="96" parentOrder="0" passnull="false" sms-name="" src="$.token" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+            <accessType></accessType>
+        </param>
+        <record id="responseResult" order="" paramOrder="1" parentOrder="0" src="$.responseResult" isExtended="false">
+            <param datatype="record" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="billsPaymentResponseCode" order="" paramOrder="3" parentOrder="1" passnull="false" sms-name="" src="billsPaymentResponseCode" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="collection" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="fieldErrors" order="" paramOrder="4" parentOrder="1" passnull="false" sms-name="" src="fieldErrors[*]" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="responseDescription" order="" paramOrder="5" parentOrder="1" passnull="false" sms-name="" src="responseDescription" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="record" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="billsPaymentDescription" order="" paramOrder="6" parentOrder="1" passnull="false" sms-name="" src="billsPaymentDescription" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="responseCode" order="" paramOrder="7" parentOrder="1" passnull="false" sms-name="" src="responseCode" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+        </record>
+        <record id="responseBody" order="" paramOrder="2" parentOrder="0" src="$.responseBody" isExtended="false"/>
+        <record id="cipsTransactionDetail" order="" paramOrder="8" parentOrder="0" src="$.cipsTransactionDetail" isExtended="false">
+            <param datatype="record" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="ipsBatchId" order="" paramOrder="9" parentOrder="8" passnull="false" sms-name="" src="ipsBatchId" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="creditorName" order="" paramOrder="10" parentOrder="8" passnull="false" sms-name="" src="creditorName" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="appTxnId" order="" paramOrder="11" parentOrder="8" passnull="false" sms-name="" src="appTxnId" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="endToEndId" order="" paramOrder="12" parentOrder="8" passnull="false" sms-name="" src="endToEndId" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="record" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="freeText1" order="" paramOrder="13" parentOrder="8" passnull="false" sms-name="" src="freeText1" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="number" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="mode" order="" paramOrder="14" parentOrder="8" passnull="false" sms-name="" src="mode" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="record" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="freeText2" order="" paramOrder="15" parentOrder="8" passnull="false" sms-name="" src="freeText2" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="record" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="freeText3" order="" paramOrder="16" parentOrder="8" passnull="false" sms-name="" src="freeText3" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="record" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="freeText4" order="" paramOrder="17" parentOrder="8" passnull="false" sms-name="" src="freeText4" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="record" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="freeText5" order="" paramOrder="18" parentOrder="8" passnull="false" sms-name="" src="freeText5" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="number" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="merchantId" order="" paramOrder="19" parentOrder="8" passnull="false" sms-name="" src="merchantId" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="record" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="freeText6" order="" paramOrder="20" parentOrder="8" passnull="false" sms-name="" src="freeText6" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="record" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="beneficiaryName" order="" paramOrder="21" parentOrder="8" passnull="false" sms-name="" src="beneficiaryName" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="record" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="freeText7" order="" paramOrder="22" parentOrder="8" passnull="false" sms-name="" src="freeText7" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="appId" order="" paramOrder="23" parentOrder="8" passnull="false" sms-name="" src="appId" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="number" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="id" order="" paramOrder="24" parentOrder="8" passnull="false" sms-name="" src="id" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="rcreTime" order="" paramOrder="25" parentOrder="8" passnull="false" sms-name="" src="rcreTime" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="record" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="addenda1" order="" paramOrder="26" parentOrder="8" passnull="false" sms-name="" src="addenda1" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="record" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="addenda2" order="" paramOrder="27" parentOrder="8" passnull="false" sms-name="" src="addenda2" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="addenda3" order="" paramOrder="28" parentOrder="8" passnull="false" sms-name="" src="addenda3" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="creditorAgent" order="" paramOrder="29" parentOrder="8" passnull="false" sms-name="" src="creditorAgent" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="record" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="addenda4" order="" paramOrder="30" parentOrder="8" passnull="false" sms-name="" src="addenda4" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="number" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="isoTxnId" order="" paramOrder="31" parentOrder="8" passnull="false" sms-name="" src="isoTxnId" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="recDate" order="" paramOrder="32" parentOrder="8" passnull="false" sms-name="" src="recDate" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="record" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="creditorAddress" order="" paramOrder="33" parentOrder="8" passnull="false" sms-name="" src="creditorAddress" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="record" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="creditorIdValue" order="" paramOrder="34" parentOrder="8" passnull="false" sms-name="" src="creditorIdValue" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="creditorBranch" order="" paramOrder="35" parentOrder="8" passnull="false" sms-name="" src="creditorBranch" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="creditorAccount" order="" paramOrder="36" parentOrder="8" passnull="false" sms-name="" src="creditorAccount" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="instructionId" order="" paramOrder="37" parentOrder="8" passnull="false" sms-name="" src="instructionId" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="record" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="billPaymentPostRetryCount" order="" paramOrder="38" parentOrder="8" passnull="false" sms-name="" src="billPaymentPostRetryCount" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="record" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="creditorIdType" order="" paramOrder="39" parentOrder="8" passnull="false" sms-name="" src="creditorIdType" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="record" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="beneficiaryId" order="" paramOrder="40" parentOrder="8" passnull="false" sms-name="" src="beneficiaryId" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="record" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="freeCode2" order="" paramOrder="41" parentOrder="8" passnull="false" sms-name="" src="freeCode2" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="record" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="purpose" order="" paramOrder="42" parentOrder="8" passnull="false" sms-name="" src="purpose" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="record" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="freeCode1" order="" paramOrder="43" parentOrder="8" passnull="false" sms-name="" src="freeCode1" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="record" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="creditorEmail" order="" paramOrder="44" parentOrder="8" passnull="false" sms-name="" src="creditorEmail" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="orignBranchId" order="" paramOrder="45" parentOrder="8" passnull="false" sms-name="" src="orignBranchId" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="record" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="reversalStatus" order="" paramOrder="46" parentOrder="8" passnull="false" sms-name="" src="reversalStatus" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="number" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="batchId" order="" paramOrder="47" parentOrder="8" passnull="false" sms-name="" src="batchId" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="record" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="txnResponse" order="" paramOrder="48" parentOrder="8" passnull="false" sms-name="" src="txnResponse" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="number" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="chargeAmount" order="" paramOrder="49" parentOrder="8" passnull="false" sms-name="" src="chargeAmount" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="record" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="reasonCode" order="" paramOrder="50" parentOrder="8" passnull="false" sms-name="" src="reasonCode" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="particulars" order="" paramOrder="51" parentOrder="8" passnull="false" sms-name="" src="particulars" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="rcreUserId" order="" paramOrder="52" parentOrder="8" passnull="false" sms-name="" src="rcreUserId" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="record" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="creditorMobile" order="" paramOrder="53" parentOrder="8" passnull="false" sms-name="" src="creditorMobile" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="number" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="amount" order="" paramOrder="54" parentOrder="8" passnull="false" sms-name="" src="amount" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="boolean" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="replaceByOldAppGroup" order="" paramOrder="55" parentOrder="8" passnull="false" sms-name="" src="replaceByOldAppGroup" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="chargeLiability" order="" paramOrder="56" parentOrder="8" passnull="false" sms-name="" src="chargeLiability" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="record" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="creditStatus" order="" paramOrder="57" parentOrder="8" passnull="false" sms-name="" src="creditStatus" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="record" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="creditorPhone" order="" paramOrder="58" parentOrder="8" passnull="false" sms-name="" src="creditorPhone" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="refId" order="" paramOrder="59" parentOrder="8" passnull="false" sms-name="" src="refId" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="remarks" order="" paramOrder="60" parentOrder="8" passnull="false" sms-name="" src="remarks" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="record" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="reasonDesc" order="" paramOrder="61" parentOrder="8" passnull="false" sms-name="" src="reasonDesc" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+        </record>
+        <record id="cipsBatchDetail" order="" paramOrder="62" parentOrder="0" src="$.cipsBatchDetail" isExtended="false">
+            <param datatype="record" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="ipsBatchId" order="" paramOrder="63" parentOrder="62" passnull="false" sms-name="" src="ipsBatchId" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="batchCrncy" order="" paramOrder="64" parentOrder="62" passnull="false" sms-name="" src="batchCrncy" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="debtorAccount" order="" paramOrder="65" parentOrder="62" passnull="false" sms-name="" src="debtorAccount" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="record" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="fileName" order="" paramOrder="66" parentOrder="62" passnull="false" sms-name="" src="fileName" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="debtorBranch" order="" paramOrder="67" parentOrder="62" passnull="false" sms-name="" src="debtorBranch" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="record" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="debtorAddress" order="" paramOrder="68" parentOrder="62" passnull="false" sms-name="" src="debtorAddress" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="debtorAgent" order="" paramOrder="69" parentOrder="62" passnull="false" sms-name="" src="debtorAgent" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="batchId" order="" paramOrder="70" parentOrder="62" passnull="false" sms-name="" src="batchId" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="record" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="txnResponse" order="" paramOrder="71" parentOrder="62" passnull="false" sms-name="" src="txnResponse" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="number" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="batchCount" order="" paramOrder="72" parentOrder="62" passnull="false" sms-name="" src="batchCount" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="number" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="corporateId" order="" paramOrder="73" parentOrder="62" passnull="false" sms-name="" src="corporateId" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="record" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="initBranchId" order="" paramOrder="74" parentOrder="62" passnull="false" sms-name="" src="initBranchId" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="number" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="id" order="" paramOrder="75" parentOrder="62" passnull="false" sms-name="" src="id" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="rcreUserId" order="" paramOrder="76" parentOrder="62" passnull="false" sms-name="" src="rcreUserId" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="debitStatus" order="" paramOrder="77" parentOrder="62" passnull="false" sms-name="" src="debitStatus" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="channelId" order="" paramOrder="78" parentOrder="62" passnull="false" sms-name="" src="channelId" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="rcreTime" order="" paramOrder="79" parentOrder="62" passnull="false" sms-name="" src="rcreTime" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="record" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="debtorEmail" order="" paramOrder="80" parentOrder="62" passnull="false" sms-name="" src="debtorEmail" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="record" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="debitReasonCode" order="" paramOrder="81" parentOrder="62" passnull="false" sms-name="" src="debitReasonCode" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="record" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="debtorPhone" order="" paramOrder="82" parentOrder="62" passnull="false" sms-name="" src="debtorPhone" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="record" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="debtorIdType" order="" paramOrder="83" parentOrder="62" passnull="false" sms-name="" src="debtorIdType" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="number" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="isoTxnId" order="" paramOrder="84" parentOrder="62" passnull="false" sms-name="" src="isoTxnId" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="debtorName" order="" paramOrder="85" parentOrder="62" passnull="false" sms-name="" src="debtorName" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="record" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="settlementDate" order="" paramOrder="86" parentOrder="62" passnull="false" sms-name="" src="settlementDate" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="number" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="batchAmount" order="" paramOrder="87" parentOrder="62" passnull="false" sms-name="" src="batchAmount" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="recDate" order="" paramOrder="88" parentOrder="62" passnull="false" sms-name="" src="recDate" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="record" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="debtorMobile" order="" paramOrder="89" parentOrder="62" passnull="false" sms-name="" src="debtorMobile" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="string" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="categoryPurpose" order="" paramOrder="90" parentOrder="62" passnull="false" sms-name="" src="categoryPurpose" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="record" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="sessionSrlNo" order="" paramOrder="91" parentOrder="62" passnull="false" sms-name="" src="sessionSrlNo" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="record" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="debitReasonDesc" order="" paramOrder="92" parentOrder="62" passnull="false" sms-name="" src="debitReasonDesc" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="number" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="batchChargeAmount" order="" paramOrder="93" parentOrder="62" passnull="false" sms-name="" src="batchChargeAmount" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+            <param datatype="record" defaultvalue="" description="" encode="true" format="None" formatvalue="" name="debtorIdValue" order="" paramOrder="94" parentOrder="62" passnull="false" sms-name="" src="debtorIdValue" sourcevalue="" srcformatvalue="" target="response" targetdatatype="java.lang.String" testvalue="" value="" isExtended="false">
+                <accessType></accessType>
+            </param>
+        </record>
+    </service-output>
+</service>

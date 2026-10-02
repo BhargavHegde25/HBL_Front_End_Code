@@ -1,0 +1,67 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "2%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        1,
+        0,
+        1,
+        0
+    ],
+    "_skin_": "sbb3319a91464659a4339aefc47731bc",
+    "_text_": "Holdings",
+    "_top_": {
+        "type": "string",
+        "value": "-1dp"
+    },
+    "_width_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "accessibilityconfig": {
+        "a11yLabel": "All"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "desktopweb": {
+        "psp": {}
+    },
+    "disabledSkins": {
+        "hoverSkin": "sc00e69bcc754e6789e0cb7ca01c2727"
+    },
+    "displaytext": true,
+    "focusskin": "s6fd52bc149841159699ddc28fc1818d",
+    "id": "btnAll",
+    "info": null,
+    "isvisible": true,
+    "kuid": "h823c93e0c154659afb5f76d360ea93d",
+    "name": "kony.ui.Button",
+    "paddinginpixel": false,
+    "parent": "flxFilters",
+    "pf": "userwidgetmodel",
+    "responsiveData": {
+        "b2": {
+            "left": {
+                "type": "string",
+                "value": "1%"
+            }
+        }
+    },
+    "tooltip": "",
+    "wType": "Button",
+    "zindex": 1
+}

@@ -1,0 +1,51 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizRichText",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "220dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s1a7d9e62f58455594fea7c4563ce38a",
+    "_text_": "Dear Customer,<br><br>\nWe have received your request to reset your Transaction PIN.<br><br>\nYour Request ID is: XXXXXXXXXXX<br><br>\nKindly allow us X business days to validate your request.<br><br>\nOnce your request is approved, you will receive a link on your registered email address to reset your Transaction PIN.<br><br>\nIf you have any questions or need further assistance, please don’t hesitate to contact our support team. We’re here to help!",
+    "_top_": {
+        "type": "string",
+        "value": "0"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_wrapping_": 2,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "id": "rtxText1",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "g6531055deba47698fc81766a66c417b",
+    "linkskin": "sdd7bd882b104ac1b1d131ef2dd268c3",
+    "name": "kony.ui.RichText",
+    "parent": "flxResetTransactionPinAckContainer",
+    "pf": "frmResetTransactionPin",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "wType": "RichText",
+    "widgetalignment": 5
+}

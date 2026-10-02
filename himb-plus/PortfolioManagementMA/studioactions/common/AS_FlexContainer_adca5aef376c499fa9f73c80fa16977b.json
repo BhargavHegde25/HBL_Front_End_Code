@@ -1,0 +1,20 @@
+{
+    "AS_FlexContainer_adca5aef376c499fa9f73c80fa16977b": {
+        "id": "AS_FlexContainer_adca5aef376c499fa9f73c80fa16977b",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "number",
+            "name": "breakpoint"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_c706d58ece7844dc8c9657d1c0271415",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.onBreakPointChange();",
+            "parentId": null
+        }]
+    }
+}

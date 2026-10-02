@@ -1,0 +1,100 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_bottom_": {
+        "type": "number",
+        "value": ""
+    },
+    "_height_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": ""
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_right_": {
+        "type": "number",
+        "value": "50"
+    },
+    "_skin_": "sea1525e3fa24829a889b1fd650f3f24",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "0"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "30%"
+    },
+    "accessibilityconfig": {
+        "a11yLabel": "Button"
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "number",
+        "value": ""
+    },
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "desktopweb": {
+        "psp": {
+            "hoverSkin": "sbe376ffd8494a7b944d696c1fd2a52f"
+        }
+    },
+    "displaytext": true,
+    "focusskin": "s8a6b4eb97eb4b1494dc9a0618019abf",
+    "id": "btnSave",
+    "info": null,
+    "isvisible": true,
+    "kuid": "a29da617768c41a3841a75fe05846d33",
+    "name": "kony.ui.Button",
+    "parent": "flxGroupButtons",
+    "pf": "userwidgetmodel",
+    "responsiveData": {
+        "b1": {
+            "centerY": {
+                "type": "string",
+                "value": "50.00%"
+            }
+        },
+        "b2": {
+            "right": {
+                "type": "number",
+                "value": "25"
+            }
+        },
+        "b3": {
+            "height": {
+                "type": "string",
+                "value": "40dp"
+            }
+        },
+        "b4": {
+            "right": {
+                "type": "number",
+                "value": "25"
+            }
+        }
+    },
+    "texti18n": "i18n.common.saveChanges",
+    "tooltip": "Save",
+    "wType": "Button",
+    "zindex": 1
+}

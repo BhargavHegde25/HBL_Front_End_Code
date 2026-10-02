@@ -1,0 +1,67 @@
+{
+  "DNDConfig": null,
+  "_height_": {
+    "type": "string",
+    "value": "50%"
+  },
+  "_left_": {
+    "type": "string",
+    "value": "0dp"
+  },
+  "_margin_": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "_orientation_": 6,
+  "_padding_": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "_percent_": true,
+  "_skin_": "secff68ee7904525acebc42c36c39094",
+  "_width_": {
+    "type": "string",
+    "value": "100%"
+  },
+  "allboxes": [],
+  "allowhorizontalbounce": false,
+  "allowverticalbounce": true,
+  "bounces": true,
+  "canUpdateUI": true,
+  "children": [
+    "flxTabs",
+    "accountsTransactionListNative",
+    "flxLoading",
+    "flxAccountActivities"
+  ],
+  "clipbounds": true,
+  "containerweight": 100,
+  "decelerat": false,
+  "dragg": false,
+  "enablescrolling": true,
+  "horizontalscrollindicator": true,
+  "id": "flxAccountTransactions",
+  "info": null,
+  "iscustomlayout": false,
+  "isvisible": true,
+  "kuid": "dbffda4ba7514639adcaf8073f7c9df1",
+  "layouttype": 4,
+  "name": "kony.ui.FlexScrollContainer",
+  "pagingenabled": false,
+  "parent": "flxMainContainer",
+  "pf": "frmAccountDetails",
+  "retaincontentalignment": false,
+  "retainflexpositionproperties": false,
+  "retainflowhorizontalalignment": false,
+  "scrolldirection": 2,
+  "snapgridsize": 10,
+  "snaptogrid": true,
+  "track": false,
+  "verticalscrollindicator": true,
+  "wType": "FlexScrollContainer",
+  "widgetalignment": 1
+}

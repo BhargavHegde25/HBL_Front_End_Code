@@ -1,0 +1,22 @@
+{
+    "AS_Form_c4dd2f62c38640c59155908afb2a33ca": {
+        "id": "AS_Form_c4dd2f62c38640c59155908afb2a33ca",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmOrderViewTransactionDetails",
+            "type": "forms",
+            "platform": null,
+            "KUID": "aa6b823c59e9407bb7e9ce70d6e8c17a"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_postShow_e8d58ce28d344e74ae8dae8001722c24",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.postShow();"
+        }]
+    }
+}

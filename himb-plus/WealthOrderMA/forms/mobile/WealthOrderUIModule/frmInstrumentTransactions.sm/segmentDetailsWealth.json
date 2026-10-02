@@ -1,0 +1,91 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "DNDConfig": null,
+    "_children_": [],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_render_": true,
+    "_skin_": "s7b436962d6a4647b197083ac7d03d39",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "android": {},
+    "canUpdateUI": true,
+    "containerweight": 0,
+    "data": {
+        "featuresAndPermission": "{\"viewDetails\":[\"WEALTH_PORTFOLIO_DETAILS_TRANSACTIONS_VIEW\"]}",
+        "fieldFiveKey": "{i.i18n.wealth.total}",
+        "fieldFiveType": "Amount",
+        "fieldFiveValue": "total",
+        "fieldFourKey": "{i.i18n.wealth.valueDate}",
+        "fieldFourType": "Date",
+        "fieldFourValue": "valueDate",
+        "fieldIdOne": "",
+        "fieldIdTwo": "",
+        "fieldName": "",
+        "fieldOneKey": "{i.i18n.wealth.type}",
+        "fieldOneType": "Text",
+        "fieldOneValue": "orderType",
+        "fieldThreeKey": "{i.i18n.wealth.price}",
+        "fieldThreeType": "Amount",
+        "fieldThreeValue": "limitPrice",
+        "fieldTwoKey": "{i.i18n.wealth.qty}",
+        "fieldTwoType": "Text",
+        "fieldTwoValue": "quantity",
+        "fieldZeroKey": "{i.i18n.wealth.tradeDate}",
+        "fieldZeroValue": "tradeDate",
+        "noRecordsFoundText": "i18n.wealth.noTransactions",
+        "objectName": "InstrumentDetails",
+        "operationName": "getInstrumentTransactions",
+        "placeholderSearchText": "{i.i18n.wealth.searchKeywords}",
+        "requestParam": "{   \"portfolioId\":\"{$.c.portfolioId}\",   \"startDate\":\"{$.c.startDate}\",   \"endDate\":\"{$.c.endDate}\",   \"instrumentId\":\"{$.c.instrumentId}\",   \"sortBy\":\"{$.c.sortBy}\",   \"sortOrder\":\"{$.c.sortOrder}\"  }",
+        "serviceName": "WealthOrder",
+        "topFlex": "InstrumentTransactions"
+    },
+    "id": "segmentDetailsWealth",
+    "info": null,
+    "iphone": {
+        "top": {
+            "type": "string",
+            "value": "0dp"
+        }
+    },
+    "iscustomlayout": false,
+    "issegmentchild": false,
+    "isvisible": true,
+    "kuid": "bceb432a9244418081e6afb0e976db27",
+    "masterType": 1,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "flxScroll",
+    "pf": "frmInstrumentTransactions",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "sourceUserWidget": "fdde45de24a04b9aab1ddac29d88537e",
+    "wType": "UserWidgetInstance"
+}

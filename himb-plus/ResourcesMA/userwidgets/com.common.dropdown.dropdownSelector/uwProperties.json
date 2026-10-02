@@ -1,0 +1,58 @@
+{
+    "classname": "dropdownSelector",
+    "definitions": {
+        "apis": {
+            "custom": [],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "ce78f73e31bd4070a0b93d05805fe992",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "initComponent",
+                    "pw": {
+                        "displayName": "initComponent",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "aa2f8d5e7a8a45dfb98be651baf2c8c1",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "e1345a781df04e4ba62be9b670f1d9f2",
+                    "paramList": [],
+                    "propertyIndex": 2,
+                    "propertyKey": "ondropsownSelections",
+                    "pw": {
+                        "displayName": "ondropsownSelections",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "aa2f8d5e7a8a45dfb98be651baf2c8c1",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.common.dropdown",
+    "version": "1.0.0"
+}

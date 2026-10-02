@@ -1,0 +1,76 @@
+{
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "sddbe03611b54007856a197e91d61255",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "children": [
+        "flxTopSeparator",
+        "flxRecordType",
+        "flxBottomSeparator"
+    ],
+    "clipbounds": true,
+    "containerId": true,
+    "containerweight": 100,
+    "controllerInfo": {
+        "default": {
+            "channel": "desktop",
+            "name": "flxAccountsDropdownHeaderController"
+        }
+    },
+    "desktopweb": {
+        "ide_onKeyPress": "AS_FlexContainer_gdb66966d9094680940df7e8cb13c9a1",
+        "psp": {
+            "hoverSkin": "s045628a9b4145aa869ae89d3353a7aa"
+        }
+    },
+    "disabledSkins": {},
+    "enablescrolling": true,
+    "focusskin": "s045628a9b4145aa869ae89d3353a7aa",
+    "id": "flxAccountsDropdownHeader",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "fa9a3e41a50b4d69a2558bf9b070f614",
+    "layouttype": 2,
+    "name": "kony.ui.FlexContainer",
+    "parent": "ICSegAccountsDropdownHeader",
+    "pf": "ICSegAccountsDropdownHeader",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1
+}

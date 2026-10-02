@@ -1,0 +1,23 @@
+{
+    "AS_Form_df44997415b346c08910bd90ff1b3778": {
+        "id": "AS_Form_df44997415b346c08910bd90ff1b3778",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTopUpVirtualDollerCardAckScreen",
+            "type": "forms",
+            "platform": "",
+            "KUID": "a5eaddc968d942cab5562b827f18fc69"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_aece2c270d7c43a8be97c9199288e065",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.postShow();",
+            "parentId": null
+        }]
+    }
+}

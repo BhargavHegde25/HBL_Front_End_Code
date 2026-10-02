@@ -1,0 +1,103 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizImage2",
+    "DNDConfig": null,
+    "_base64_": null,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s8ca4cc104584efeb245eafc199d8409",
+    "_src_": "capture1.PNG",
+    "_top_": {
+        "type": "string",
+        "value": "450dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "84dp"
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "number",
+        "value": ""
+    },
+    "containerweight": 100,
+    "id": "imgLeft",
+    "imagescalemode": 0,
+    "info": null,
+    "invokedProperty": "src",
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "f5095d068509449b8c970f1556a219c0",
+    "minheight": {
+        "type": "string",
+        "value": "500dp"
+    },
+    "minwidth": {
+        "type": "number",
+        "value": ""
+    },
+    "name": "kony.ui.Image2",
+    "parent": "flxChooseStrategy",
+    "pf": "frmChangeStrategy",
+    "responsiveData": {
+        "b1": {
+            "isVisible": false,
+            "src": "leftbar.PNG"
+        },
+        "b2": {
+            "centerX": {
+                "type": "string",
+                "value": ""
+            },
+            "height": {
+                "type": "string",
+                "value": "600dp"
+            },
+            "isVisible": false,
+            "minHeight": {
+                "type": "string",
+                "value": ""
+            },
+            "minWidth": {
+                "type": "string",
+                "value": ""
+            },
+            "src": "leftbartablet.PNG",
+            "top": {
+                "type": "string",
+                "value": "450dp"
+            },
+            "width": {
+                "type": "string",
+                "value": "24dp"
+            }
+        },
+        "b4": {
+            "isVisible": false,
+            "src": "leftbar.PNG"
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "srcType": 1,
+    "wType": "Image",
+    "widgetalignment": 5,
+    "zindex": 100
+}

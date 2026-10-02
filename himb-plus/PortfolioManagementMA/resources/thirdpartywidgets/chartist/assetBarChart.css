@@ -1,0 +1,41 @@
+
+#assetLinechart .ct-series .ct-bar {
+  stroke-width: 9px;
+  stroke:#6753EC;
+}
+
+#assetLinechart .ct-chart-bar {
+  overflow: visible;
+  margin : 0 0 30px 0;
+  
+}
+
+#assetLinechart .ct-grid {
+stroke: #E3E3E3;
+stroke-width: 1px;
+}
+
+
+#assetLinechart .ct-label{
+   color: #424242;
+  font: normal normal 15px SourceSansPro-Regular;
+  font-size: 13px;
+  text-align: center;
+}
+
+#assetLinechart .ct-chart-bar.ct-horizontal-bars .ct-label.ct-vertical.ct-start {
+  align-items: center;
+  justify-content: flex-end;
+  text-align: right;
+  text-anchor: start;
+}
+#assetLinechart .ct-grids{
+	left:10px
+}
+
+#assetLinechart .ct-chart-bar.ct-horizontal-bars .ct-label.ct-horizontal.ct-end {
+    align-items: flex-end;
+    justify-content: center;
+    text-align: left;
+    text-anchor: start;
+}

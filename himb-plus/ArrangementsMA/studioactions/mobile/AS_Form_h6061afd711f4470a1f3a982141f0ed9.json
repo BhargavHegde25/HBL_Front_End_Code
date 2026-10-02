@@ -1,0 +1,23 @@
+{
+    "AS_Form_h6061afd711f4470a1f3a982141f0ed9": {
+        "id": "AS_Form_h6061afd711f4470a1f3a982141f0ed9",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmChequeManagement",
+            "type": "forms",
+            "platform": "",
+            "KUID": "hc44a46ab0c74151a588b43313a93f72"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_f268f92ec8514846b88c04cd636bd316",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.initActions();",
+            "parentId": null
+        }]
+    }
+}

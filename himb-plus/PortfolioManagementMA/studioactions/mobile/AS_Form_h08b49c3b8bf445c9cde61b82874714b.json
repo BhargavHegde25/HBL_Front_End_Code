@@ -1,0 +1,23 @@
+{
+    "AS_Form_h08b49c3b8bf445c9cde61b82874714b": {
+        "id": "AS_Form_h08b49c3b8bf445c9cde61b82874714b",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmChangeStrategy",
+            "type": "forms",
+            "platform": "",
+            "KUID": "gfb6b6514019457fb90d7f6225bf0f83"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_abe54c7e820942b6918056881405b8ae",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.onNavigate();",
+            "parentId": null
+        }]
+    }
+}

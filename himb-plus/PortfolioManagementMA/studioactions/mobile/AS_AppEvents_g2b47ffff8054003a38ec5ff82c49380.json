@@ -1,0 +1,17 @@
+{
+    "AS_AppEvents_g2b47ffff8054003a38ec5ff82c49380": {
+        "id": "AS_AppEvents_g2b47ffff8054003a38ec5ff82c49380",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_cd5dc4e45746446693006229fc0883ac",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "//var appManager = ApplicationManager.getApplicationManager();\ntry {\n  applicationManager.postAppInitiate();\n  applicationManager.applicationMode=\"Mobile\";\n  kony.application.setApplicationProperties({\n   // \"statusBarForegroundColor\": \"000000\"\n  });\nvar registrationManager = applicationManager.getRegistrationManager();\nregistrationManager.setEventTracking();\n}\ncatch(err) {\n // throw GlobalExceptionHandler.addMessageAndActionForException(err, \"kony.error.App_Initialisation_Failed\", GlobalExceptionHandler.ActionConstants.BLOCK, arguments.callee.name);\n}\n ",
+            "parentId": null
+        }]
+    }
+}

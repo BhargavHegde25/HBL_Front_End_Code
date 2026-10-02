@@ -1,0 +1,97 @@
+{
+    "classname": "slider",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "daa41068b1324106a053dbdef170cbb9",
+                    "paramList": [],
+                    "propertyKey": "setContext",
+                    "pw": {
+                        "displayName": "setContext",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "i214cc5c25e64a8bb9009308d8ed7286",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "c25bec91545447359de172669586d97e",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "setBtnValues",
+                    "pw": {
+                        "displayName": "setBtnValues",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "i214cc5c25e64a8bb9009308d8ed7286",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "a58cd08899ab430a9551b91262d96cc9",
+                    "paramList": [],
+                    "propertyIndex": 2,
+                    "propertyKey": "sendUpdatedTarget",
+                    "pw": {
+                        "displayName": "sendUpdatedTarget",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "i214cc5c25e64a8bb9009308d8ed7286",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"ObjectName\": \"Strategies\",\n  \"ServiceName\": \"PortfolioServicing\",\n  \"OperationName\": \"getStrategyAllocation\"\n}",
+                    "group": "General",
+                    "kuid": "a0aad0249ac744eaa4df0ab021296f89",
+                    "originalPropertyKey": "serviceParam",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 1,
+                    "propertyKey": "serviceParam",
+                    "pw": {
+                        "displayName": "Service Param",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "i214cc5c25e64a8bb9009308d8ed7286",
+                    "type": "json",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.Infinity.MB.PortfolioManagementMA",
+    "version": "1.0.0"
+}

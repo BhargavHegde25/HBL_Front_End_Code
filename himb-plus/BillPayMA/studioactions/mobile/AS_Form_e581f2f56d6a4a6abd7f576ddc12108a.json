@@ -1,0 +1,22 @@
+{
+    "AS_Form_e581f2f56d6a4a6abd7f576ddc12108a": {
+        "id": "AS_Form_e581f2f56d6a4a6abd7f576ddc12108a",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmBillPayTransferHistory",
+            "type": "forms",
+            "platform": null,
+            "KUID": "e11ffc260d06476695828daa0bb1dbe5"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_init_feb9188006f04ff190b74ba9b3c7f977",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.init();"
+        }]
+    }
+}

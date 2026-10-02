@@ -1,0 +1,66 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizRichText",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "50dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "sd5e7749132948a19d7c9ccc87a212f5",
+    "_text_": "• In order to offer this service, Temenos needs your approval to access through its trusted partners Salt Edge Inc. the following information from the account you hold.\n <br>",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "90%"
+    },
+    "_wrapping_": 2,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "id": "richTextWidget",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "cfdc1475c5304a36b76670f2ddf51a6e",
+    "linkskin": "sad41f48387c41cbbfdb65982f3f232a",
+    "name": "kony.ui.RichText",
+    "parent": "flxBrowswewidget",
+    "pf": "frmBillPayNew",
+    "responsiveData": {
+        "b2": {
+            "width": {
+                "type": "string",
+                "value": "85%"
+            }
+        },
+        "b3": {
+            "height": {
+                "type": "string",
+                "value": "70dp"
+            }
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "texti18n": "i18n.ConsentRule1",
+    "wType": "RichText",
+    "widgetalignment": 5
+}

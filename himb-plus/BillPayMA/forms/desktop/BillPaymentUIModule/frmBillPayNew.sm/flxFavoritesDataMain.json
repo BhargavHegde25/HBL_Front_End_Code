@@ -1,0 +1,79 @@
+{
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "105px"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "4%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "sf08251c27964def903a167ad090d854",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "535px"
+    },
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "children": [
+        "flxFavMerchants1",
+        "flxFavMerchants2",
+        "flxFavMerchants3",
+        "flxFavMerchants4",
+        "flxFavMerchants5"
+    ],
+    "clipbounds": false,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "flxFavoritesDataMain",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "a52451a158f148ac865c585c9b27ad39",
+    "layouttype": 3,
+    "name": "kony.ui.FlexContainer",
+    "parent": "flxAddFavLimitExceed",
+    "pf": "frmBillPayNew",
+    "responsiveData": {
+        "b2": {
+            "left": {
+                "type": "string",
+                "value": "1%"
+            },
+            "width": {
+                "type": "string",
+                "value": "500px"
+            }
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1
+}

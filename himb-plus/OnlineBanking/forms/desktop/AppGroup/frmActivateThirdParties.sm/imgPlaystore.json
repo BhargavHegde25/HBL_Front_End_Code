@@ -1,0 +1,59 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizImage2",
+    "DNDConfig": null,
+    "_base64_": null,
+    "_height_": {
+        "type": "string",
+        "value": "35dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "12%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_right_": {
+        "type": "number",
+        "value": "0"
+    },
+    "_skin_": "s8ee487de5774c1eb668e74bf92f5cdd",
+    "_src_": "google_play_2x.png",
+    "_top_": {
+        "type": "number",
+        "value": "0"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "35dp"
+    },
+    "accessibilityconfig": {
+        "a11yLabel": "View",
+        "a11yValue": ""
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "id": "imgPlaystore",
+    "imagescalemode": 1,
+    "imagewhiledownloading": "img_transparent.png",
+    "info": null,
+    "invokedProperty": "src",
+    "isvisible": true,
+    "kuid": "c19ba1117d694de3837612e157d9fd74",
+    "name": "kony.ui.Image2",
+    "parent": "flxImages",
+    "pf": "frmActivateThirdParties",
+    "srcType": 1,
+    "wType": "Image",
+    "widgetalignment": 5,
+    "zindex": 1
+}

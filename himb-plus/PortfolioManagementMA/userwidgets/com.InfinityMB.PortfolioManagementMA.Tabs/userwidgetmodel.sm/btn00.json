@@ -1,0 +1,81 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s6b97b09be8943b8abf43e1b550329b2",
+    "_text_": "Button",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "android": {
+        "padding": [
+            16,
+            0,
+            16,
+            0
+        ],
+        "paddingInPixel": true
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "desktopweb": {
+        "padding": [
+            16,
+            0,
+            16,
+            0
+        ],
+        "paddingInPixel": true
+    },
+    "disabledSkins": {},
+    "displaytext": true,
+    "focusskin": "s108245681054dde9b1d26d0ba0533ce",
+    "id": "btn00",
+    "info": null,
+    "iphone": {
+        "padding": [
+            16,
+            0,
+            16,
+            0
+        ],
+        "paddingInPixel": true
+    },
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "u475780cbbae4dccaf4346f14b5b370c",
+    "name": "kony.ui.Button",
+    "paddingLocked": false,
+    "paddinginpixel": false,
+    "parent": "flxScrollTabs",
+    "pf": "userwidgetmodel",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "wType": "Button",
+    "zindex": 1
+}

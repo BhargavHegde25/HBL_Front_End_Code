@@ -1,0 +1,57 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_right_": {
+        "type": "string",
+        "value": "5%"
+    },
+    "_skin_": "s4be8bdf85bf477882e287999fecbcd9",
+    "_text_": "Apply",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "150dp"
+    },
+    "accessibilityconfig": {
+        "a11yLabel": "Yes"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "desktopweb": {
+        "psp": {
+            "hoverSkin": "s81054b5e2b74f17a5261991df565427"
+        }
+    },
+    "displaytext": true,
+    "focusskin": "s5a4f67acd3e47b9be6d6910a7a6686f",
+    "id": "btnApply",
+    "info": null,
+    "isvisible": true,
+    "kuid": "e0215d6c05154ce690013307a2666211",
+    "name": "kony.ui.Button",
+    "parent": "flxSubmitBtnWrapper",
+    "pf": "userwidgetmodel",
+    "tooltip": "Yes",
+    "wType": "Button",
+    "zindex": 1
+}

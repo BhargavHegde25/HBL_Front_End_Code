@@ -1,0 +1,23 @@
+{
+    "AS_Form_af0503341eac42339bc5cd1a666f6c75": {
+        "id": "AS_Form_af0503341eac42339bc5cd1a666f6c75",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTopUpDomesticCardVerifyScreen",
+            "type": "forms",
+            "platform": "",
+            "KUID": "e02cd7ba505a4791b6e6f3163e01d3e9"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_c4586d36cacf4ab0b692cb23f69f2881",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.postShow();",
+            "parentId": null
+        }]
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "AS_UWI_i6eda175b82c4931be899e459a7b635f": {
+        "id": "AS_UWI_i6eda175b82c4931be899e459a7b635f",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "name": "filter",
+            "datatype": "collection"
+        }],
+        "contextObj": {
+            "name": "frmInstrumentDetails",
+            "type": "forms",
+            "platform": "",
+            "KUID": "jac52fa731844d239376f9e3b96c0e01"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__a237d838aa0743039e67aba16dc16132",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "onFilterChanged",
+            "display": "onFilterChanged",
+            "inputparams": [{
+                "name": "filter",
+                "value": " filter"
+            }],
+            "parentId": null,
+            "callbackType": null,
+            "disabled": null,
+            "source": "controller"
+        }]
+    }
+}

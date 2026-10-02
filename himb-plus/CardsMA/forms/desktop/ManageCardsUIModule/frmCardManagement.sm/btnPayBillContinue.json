@@ -1,0 +1,70 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "20dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_right_": {
+        "type": "string",
+        "value": "2%"
+    },
+    "_skin_": "s0f5748e0ea447b99601a5b7d636357c",
+    "_text_": "View Dispute Transaction",
+    "_top_": {
+        "type": "string",
+        "value": "0"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "200dp"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "desktopweb": {
+        "psp": {
+            "hoverSkin": "s0f5748e0ea447b99601a5b7d636357c"
+        }
+    },
+    "disabledSkins": {},
+    "displaytext": true,
+    "focusskin": "s0f5748e0ea447b99601a5b7d636357c",
+    "hoverskin": "",
+    "id": "btnPayBillContinue",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "b2f61acb56d5453abec412641b72600d",
+    "name": "kony.ui.Button",
+    "parent": "flxPayBillButtons",
+    "pf": "frmCardManagement",
+    "responsiveData": {
+        "b4": {
+            "desktopweb": {
+                "psp": {}
+            },
+            "disabledSkins": {}
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "texti18n": "kony.mb.sca.Continue",
+    "wType": "Button"
+}

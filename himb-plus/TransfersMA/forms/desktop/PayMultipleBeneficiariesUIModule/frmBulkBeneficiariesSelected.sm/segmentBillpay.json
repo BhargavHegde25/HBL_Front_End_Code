@@ -1,0 +1,247 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "_data_": [
+        {
+            "btnViewEBill": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "lblAccountName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "lblAccountName1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "Current Checking..234"
+            },
+            "lblAttachment": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "lblBankDetails": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "lblBeneficiaryName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "lblBeneficiaryName1": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "John Doe"
+            },
+            "lblCheckbox": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "lblDollar": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "lblDropdown": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "lblError": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "lblIdentifier": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "lblInstantTransfer": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "lblPayFrom": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "lblPaymentReference": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "lblSeparator": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "lblSeparatorBottom": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": ""
+            },
+            "lstPayFrom": {
+                "@class": "com.viz.ide.model.segment.CheckableSegmentData",
+                "masterData": [
+                    [
+                        "lb1",
+                        "Placeholder One"
+                    ],
+                    [
+                        "lb2",
+                        "Placeholder Two"
+                    ],
+                    [
+                        "lb3",
+                        "Placeholder Three"
+                    ]
+                ]
+            },
+            "txtAmount": {
+                "@class": "com.viz.ide.model.segment.ComplexTextSegmentData",
+                "placeholder": "",
+                "text": ""
+            },
+            "txtNotes": {
+                "@class": "com.viz.ide.model.segment.ComplexTextSegmentData",
+                "placeholder": "",
+                "text": ""
+            }
+        }
+    ],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "accessibilityconfig": {
+        "a11yARIA": {
+            "tabindex": -1
+        },
+        "tagName": "table"
+    },
+    "autogrowmode": 1,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "counter": "00",
+    "disabledSkins": {},
+    "focusedindex": null,
+    "focuseditem": null,
+    "groupcells": false,
+    "hasSections": false,
+    "id": "segmentBillpay",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "isvisible": true,
+    "kuid": "f3750fb242ad49248dc815f00d844e7f",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "flxSegmentContainer",
+    "pf": "frmBulkBeneficiariesSelected",
+    "responsiveData": {
+        "b3": {
+            "zIndex": 1001
+        }
+    },
+    "retainselection": false,
+    "rowTemplateId": "a9c8df87bf034291919d0ac503da82b6",
+    "rowcounter": 0,
+    "rowfocusskin": "s9f69e977910472eb44c62ae28c41fe1",
+    "rowskin": "s971af14e3cc4643bed5bb37c330e87a",
+    "rowtemplate": "flxBeneficiariesSelected",
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionheaderskin": "sdc4ff4ed1584272be2ae69045dfb29d",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "separatorrequired": false,
+    "separatorthickness": 0,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "vizProps": {},
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "btnViewEBill": "btnViewEBill",
+        "flxAmount": "flxAmount",
+        "flxAmountDollar": "flxAmountDollar",
+        "flxAttachDocuments": "flxAttachDocuments",
+        "flxAttachmentAndDelete": "flxAttachmentAndDelete",
+        "flxBeneficiariesSelected": "flxBeneficiariesSelected",
+        "flxBill": "flxBill",
+        "flxBillPayAllPayees": "flxBillPayAllPayees",
+        "flxBillPayAllPayeesWrapper": "flxBillPayAllPayeesWrapper",
+        "flxCheckbox": "flxCheckbox",
+        "flxContent": "flxContent",
+        "flxDropdown": "flxDropdown",
+        "flxIdentifier": "flxIdentifier",
+        "flxInstantTransfer": "flxInstantTransfer",
+        "flxMainGroup": "flxMainGroup",
+        "flxNotesValue": "flxNotesValue",
+        "flxPayFrom": "flxPayFrom",
+        "flxPayee": "flxPayee",
+        "flxPayeeWrapper": "flxPayeeWrapper",
+        "flxPaymentReference": "flxPaymentReference",
+        "flxSubGroup": "flxSubGroup",
+        "flxViewEBill": "flxViewEBill",
+        "flxWrapper": "flxWrapper",
+        "flxdetails": "flxdetails",
+        "lblAccountName": "lblAccountName",
+        "lblAccountName1": "lblAccountName1",
+        "lblAttachment": "lblAttachment",
+        "lblBankDetails": "lblBankDetails",
+        "lblBeneficiaryName": "lblBeneficiaryName",
+        "lblBeneficiaryName1": "lblBeneficiaryName1",
+        "lblCheckbox": "lblCheckbox",
+        "lblDollar": "lblDollar",
+        "lblDropdown": "lblDropdown",
+        "lblError": "lblError",
+        "lblIdentifier": "lblIdentifier",
+        "lblInstantTransfer": "lblInstantTransfer",
+        "lblPayFrom": "lblPayFrom",
+        "lblPaymentReference": "lblPaymentReference",
+        "lblSeparator": "lblSeparator",
+        "lblSeparatorBottom": "lblSeparatorBottom",
+        "lstPayFrom": "lstPayFrom",
+        "txtAmount": "txtAmount",
+        "txtNotes": "txtNotes"
+    },
+    "widgetskin": "sb836d91cb364a16b70a7c6479aba93d",
+    "zindex": 1
+}

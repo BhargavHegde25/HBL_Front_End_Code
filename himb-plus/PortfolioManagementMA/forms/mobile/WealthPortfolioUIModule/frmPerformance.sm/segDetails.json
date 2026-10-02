@@ -1,0 +1,194 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "_data_": [
+        {
+            "lblAmount": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "+14.25%"
+            },
+            "lblDate": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "10/31/2020"
+            },
+            "lblPercentage": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "+14.25%"
+            },
+            "lblProfitLoss": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "+15.45 (+14.8%)"
+            }
+        },
+        {
+            "lblAmount": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "+14.25%"
+            },
+            "lblDate": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "10/31/2020"
+            },
+            "lblPercentage": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "+14.25%"
+            },
+            "lblProfitLoss": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "+15.45 (+14.8%)"
+            }
+        },
+        {
+            "lblAmount": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "+14.25%"
+            },
+            "lblDate": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "10/31/2020"
+            },
+            "lblPercentage": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "+14.25%"
+            },
+            "lblProfitLoss": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "+15.45 (+14.8%)"
+            }
+        },
+        {
+            "lblAmount": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "+14.25%"
+            },
+            "lblDate": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "10/31/2020"
+            },
+            "lblPercentage": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "+14.25%"
+            },
+            "lblProfitLoss": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "+15.45 (+14.8%)"
+            }
+        },
+        {
+            "lblAmount": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "+14.25%"
+            },
+            "lblDate": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "10/31/2020"
+            },
+            "lblPercentage": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "+14.25%"
+            },
+            "lblProfitLoss": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "+15.45 (+14.8%)"
+            }
+        }
+    ],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "number",
+        "value": "0"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "autogrowmode": 1,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "counter": "04",
+    "focusedindex": null,
+    "focuseditem": null,
+    "groupcells": false,
+    "hasSections": false,
+    "id": "segDetails",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "indicator": "none"
+        }
+    },
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "cc552557d892405288c5e221a58a6ccf",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "flxMonthlyOverviewDetails",
+    "pf": "frmPerformance",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainselection": false,
+    "rowTemplateId": "gf2b88da58b741f583a6cf6f7033cc69",
+    "rowcounter": 4,
+    "rowfocusskin": "sec47134c53840738acea176209ff716",
+    "rowskin": "s18472307db04580a2a9cb6f4681ebec",
+    "rowtemplate": "flxWealthOverview",
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionheaderskin": "s65e8b0a8be54624ac979cda71a22cac",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "separatorrequired": false,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "vizProps": {},
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "flxContent": "flxContent",
+        "flxPortfolio": "flxPortfolio",
+        "flxShortSeperator": "flxShortSeperator",
+        "flxWealthOverview": "flxWealthOverview",
+        "lblAmount": "lblAmount",
+        "lblDate": "lblDate",
+        "lblPercentage": "lblPercentage",
+        "lblProfitLoss": "lblProfitLoss"
+    },
+    "zindex": 100
+}

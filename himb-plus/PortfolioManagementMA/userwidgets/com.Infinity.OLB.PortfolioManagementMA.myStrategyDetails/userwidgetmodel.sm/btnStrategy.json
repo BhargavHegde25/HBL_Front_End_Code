@@ -1,0 +1,109 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "50dp"
+    },
+    "_i18n_text_": "i18n.Wealth.ReviewStrategy",
+    "_left_": {
+        "type": "string",
+        "value": "0"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s6b97b09be8943b8abf43e1b550329b2",
+    "_text_": "Button",
+    "_top_": {
+        "type": "string",
+        "value": "0"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "300dp"
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "number",
+        "value": ""
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "seac1ba6ca7c414b9c70447cef4ff8f1",
+    "id": "btnStrategy",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "b72e1cf6209b443d8bf46a63a0df9e4e",
+    "name": "kony.ui.Button",
+    "parent": "flxBtnStrategy",
+    "pf": "userwidgetmodel",
+    "responsiveData": {
+        "b1": {
+            "centerX": {
+                "type": "string",
+                "value": "50%"
+            },
+            "focusSkin": "sa611611b2f24e93bcfd09e1606c0d86",
+            "height": {
+                "type": "string",
+                "value": "40px"
+            },
+            "i18n_text": "i18n.wealth.reviewStrategy",
+            "skin": "sa611611b2f24e93bcfd09e1606c0d86",
+            "text": "",
+            "width": {
+                "type": "string",
+                "value": "250px"
+            }
+        },
+        "b2": {
+            "centerX": {
+                "type": "string",
+                "value": "50%"
+            },
+            "focusSkin": "sa611611b2f24e93bcfd09e1606c0d86",
+            "height": {
+                "type": "string",
+                "value": "40dp"
+            },
+            "i18n_text": "i18n.wealth.reviewStrategy",
+            "skin": "sa611611b2f24e93bcfd09e1606c0d86",
+            "text": "",
+            "width": {
+                "type": "string",
+                "value": "250px"
+            }
+        },
+        "b3": {
+            "centerX": {
+                "type": "string",
+                "value": "50%"
+            },
+            "height": {
+                "type": "string",
+                "value": "40dp"
+            },
+            "text": "Review Strategy",
+            "width": {
+                "type": "string",
+                "value": "253px"
+            }
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "texti18n": "i18n.wealth.reviewStrategy",
+    "wType": "Button"
+}

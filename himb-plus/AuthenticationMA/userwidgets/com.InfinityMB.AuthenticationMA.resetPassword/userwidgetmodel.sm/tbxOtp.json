@@ -1,0 +1,92 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizTextBox2",
+    "DNDConfig": null,
+    "_bottom_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "-1%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        3,
+        0,
+        0,
+        0
+    ],
+    "_placeholder_": "",
+    "_right_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_skin_": "s039301545174ce686ecaec59a9e23ad",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "-1%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "102%"
+    },
+    "accessibilityconfig": {
+        "a11yLabel": "Password"
+    },
+    "activeNativeBorderCornerRadiusControl": "centerControl",
+    "autocapitalize": "none",
+    "autocomplete": false,
+    "autocorrect": false,
+    "autofilter": false,
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerheight": "",
+    "containerheightmode": 1,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "disabledSkins": {},
+    "focusskin": "s39b5241be8a4e20bb2d000902e9596a",
+    "id": "tbxOtp",
+    "info": null,
+    "iphone": {
+        "psp": {
+            "closeButtonText": "Cancel",
+            "keyboardActionLabel": 2,
+            "showClearButton": false,
+            "showCloseButton": true
+        }
+    },
+    "isvisible": true,
+    "keyboardstyle": "A",
+    "keyboardtype": "A",
+    "kuid": "ea3e7d385cbe4cbcacdf6aa57e8d3003",
+    "mode": "N",
+    "name": "kony.ui.TextBox2",
+    "parent": "flxOtp",
+    "pf": "userwidgetmodel",
+    "placeholderskin": "s1bcf8b78d1649a9a56fc498f08472f8",
+    "restrictcharactersset": "~%^&*()+=`{}[]|\\:\";'>?/,<",
+    "securetextentry": false,
+    "textinputmode": "N",
+    "tooltip": "",
+    "viewtype": "default",
+    "wType": "TextField",
+    "zindex": 3
+}

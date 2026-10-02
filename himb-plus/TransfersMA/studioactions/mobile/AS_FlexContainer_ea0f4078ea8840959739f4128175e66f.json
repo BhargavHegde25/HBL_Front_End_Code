@@ -1,0 +1,42 @@
+{
+    "AS_FlexContainer_ea0f4078ea8840959739f4128175e66f": {
+        "id": "AS_FlexContainer_ea0f4078ea8840959739f4128175e66f",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "_ide_onClick_f255783346434a80a3e072d63509861e",
+            "type": "MOVE_ACTION",
+            "itemType": "FORM",
+            "itemId": "frmFundTransferMain",
+            "widgetId": "flxPopupfrombottom",
+            "itemKUID": "d8b8aea701de46ed98a79f677f45e8b0",
+            "widgetKUID": "a23a2b88f98a4216ba14c7711218ae05",
+            "wType": "FlexContainer",
+            "animationObject": {
+                "anchorPoint": {},
+                "stepConfig": {
+                    "timingFunction": "kony.anim.EASE"
+                }
+            },
+            "config": {
+                "delay": "0",
+                "iterationCount": 1,
+                "fillMode": "kony.anim.FILL_MODE_FORWARDS",
+                "duration": "250"
+            },
+            "start": "Immediately",
+            "animationId": "MOVE_ACTION_a3a7c1d0a95c4314bed4a4b0c5302b40",
+            "displayAnimationId": "MOVE_ACTION_a3a7c1d0a95c4314bed4a4b0c5302b40",
+            "forkedPlatform": "all",
+            "widgetPath": "this.view.flxPopupfrombottom"
+        }, {
+            "id": "ADD_SNIPPET_ide_onClick_fe8db61a15af4d32aec8f332479d82bd",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.view.flxPopupfrombottom.setVisibility(false);"
+        }]
+    }
+}

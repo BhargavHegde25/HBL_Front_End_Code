@@ -1,0 +1,80 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "3px"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        1,
+        0
+    ],
+    "_right_": {
+        "type": "string",
+        "value": "3px"
+    },
+    "_skin_": "sc4f4d62bde944aa823144bdf1cabdec",
+    "_text_": "Exchange Rates",
+    "_top_": {
+        "type": "string",
+        "value": "0"
+    },
+    "_width_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "accessibilityconfig": {},
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "desktopweb": {
+        "psp": {
+            "hoverSkin": "sc4f4d62bde944aa823144bdf1cabdec"
+        }
+    },
+    "displaytext": true,
+    "focusskin": "sc4f4d62bde944aa823144bdf1cabdec",
+    "id": "btnExchange",
+    "info": null,
+    "isvisible": true,
+    "kuid": "cc452070a59a49d1bdee055140fd8ef3",
+    "name": "kony.ui.Button",
+    "paddinginpixel": false,
+    "parent": "flxFooterContainer",
+    "pf": "frmPreTermsandCondition",
+    "responsiveData": {
+        "b2": {
+            "i18n_text": null,
+            "padding": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "skin": "sc4f4d62bde944aa823144bdf1cabdec"
+        },
+        "b3": {
+            "i18n_text": null,
+            "isVisible": true
+        },
+        "b4": {
+            "i18n_text": null,
+            "skin": "sc4f4d62bde944aa823144bdf1cabdec"
+        }
+    },
+    "tooltip": "FAQ",
+    "wType": "Button",
+    "zindex": 1
+}

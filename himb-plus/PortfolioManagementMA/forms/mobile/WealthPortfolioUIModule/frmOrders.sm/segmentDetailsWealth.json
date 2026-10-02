@@ -1,0 +1,113 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "DNDConfig": null,
+    "_children_": [],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_render_": true,
+    "_skin_": "s7b436962d6a4647b197083ac7d03d39",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "android": {},
+    "canUpdateUI": true,
+    "containerweight": 0,
+    "data": {
+		"actionImgIsVisible": "true",
+        "actionImgSrc": "more_detail.png",
+        "featuresAndPermission": "{\"openOrderPermission\":[\"WEALTH_ORDER_MGMT_OPEN_ORDER_VIEW\"],\"historyOrderPermission\":[\"WEALTH_ORDER_MGMT_ORDER_HISTORY_VIEW\"],\"contextualMenuFeature\":\"WEALTH_ORDER_MANAGEMENT\",\"modify\":[\"WEALTH_ORDER_MGMT_ORDER_EDIT\"], \"cancel\":[\"WEALTH_ORDER_MGMT_ORDER_CANCEL\"], \"view\":[\"WEALTH_ORDER_MGMT_ORDER_LINK_VIEW\"]}",
+        "fieldFiveKey": "{i.i18n.wealth.stopPrice}",
+        "fieldFiveType": "Amount",
+        "fieldFiveValue": "stopPrice",
+        "fieldFourKey": "{i.i18n.wealth.limitPrice}|{i.i18n.wealth.pricemb}",
+        "fieldFourType": "Amount",
+        "fieldFourValue": "limitPrice|orderExecutionPrice",
+        "fieldOneKey": "{i.i18n.savingspot.DateAck}",
+		"fieldOneValue":"tradeDate",
+		"fieldOneType":"Date",
+        "fieldThreeKey": "{i.i18n.wealth.type}",
+        "fieldThreeValue": "orderType",
+		"fieldThreeType":"Text",
+        "fieldTwoKey": "{i.i18n.wealth.qtymb}",
+        "fieldTwoType": "Text",
+        "fieldTwoValue": "quantity",
+		"noRecordsFoundText": "{\"open\": \"{i.i18n.wealth.noOpenOrder}\", \"history\": \"{i.i18n.wealth.noHistoricalOrder}\",\"error\": \"{i.i18n.wealth.noOrders}\" }",
+		"fieldIdOne":"ISIN",
+		"fieldIdTwo":"holdingsType",
+		"fieldName":"description",
+        "serviceName":"PortfolioServicing",
+        "objectName": "PortfolioDetails",
+        "operationName": "getOrdersDetails",
+        "orderStatusIsVisible": "true",
+        "orderToggleIsVisible": "true",
+        "placeholderSearchText": "{i.i18n.wealth.searchKeywords}",
+        "requestParam": "{   \"portfolioId\":\"{$.c.portfolioId}\",\"type\":\"{$.c.type}\", \"searchByInstrumentName\":\"{$.c.searchByInstrumentName}\",   \"sortBy\":\"{$.c.sortBy}\"  }",
+        "serviceResponseKey": "ordersDetails",
+        "statusImgSrc": "{\"Completed\": \"green.png\", \"Rejected\":\"red.png\",\"Cancelled\":\"cancelled.png\"}",
+        "statusText": "status",
+        "topFlex": "Orders",
+		"fieldZeroValueSkin": "sknLbl424242SSPRegular26px",
+		"fieldOneValueSkin":"sknLbl424242SSPRegular26px",
+		"fieldTwoValueSkin":"sknLbl424242SSPRegular26px",
+		"fieldThreeValueSkin":"sknLbl424242SSPRegular26px",
+		"fieldFourValueSkin":"sknLbl424242SSPRegular26px",
+		"fieldFiveValueSkin":"sknLbl424242SSPRegular26px",
+		"rowSeperatorSkin":"sknflxe3e3e3border",
+		"allFieldKeySkin":"sknlbl727272SSP93pr",
+		"dateFormat":"m/d/Y",
+		"amountFormat": "{ \"locale\":\"\", \"positiveFormat\" : \"{CS}{D}\", \"negativeFormat\" : \"-{CS}{D}\", \"fractionDigits\":\"2\"}",
+		"backendDateFormat":"Y-m-d",
+		"currencyCode":"instrumentCurrency",
+		"referenceCurrency":"referenceCurrency",
+		"logoImgSrc":"",
+		"logoIsVisible":"false",
+        "totalValue": "",
+        "totalValueKey": ""
+    },
+    "id": "segmentDetailsWealth",
+    "info": null,
+    "iphone": {
+        "top": {
+            "type": "string",
+            "value": "0dp"
+        }
+    },
+    "iscustomlayout": false,
+    "issegmentchild": false,
+    "isvisible": true,
+    "kuid": "fe66be0f31b946baaac9674cecf63ddb",
+    "masterType": 1,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "flxScroll",
+    "pf": "frmOrders",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "sourceUserWidget": "fdde45de24a04b9aab1ddac29d88537e",
+    "wType": "UserWidgetInstance"
+}

@@ -1,0 +1,78 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizLabel",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_i18n_text_": "i18n.StopCheckPayments.To",
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        1,
+        1,
+        1,
+        1
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s4adb862a1d741eaafba2145d8c99843",
+    "_text_": "To:",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "250dp"
+    },
+    "_wrapping_": 2,
+    "accessibilityconfig": {
+        "a11yARIA": {
+            "tabindex": -1
+        },
+        "a11yLabel": "Selected  Start Date:",
+        "tagName": "span"
+    },
+    "android": {
+        "textStyle": {
+            "letterSpacing": 0,
+            "strikeThrough": false
+        }
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "id": "lblCardBillPayKey2",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "iphone": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "isvisible": true,
+    "kuid": "c08d87ec7bc2423c8656cba9e4ef551f",
+    "name": "kony.ui.Label",
+    "parent": "flxCardBillPayDetailsRow2",
+    "pf": "frmCardManagement",
+    "responsiveData": {
+        "b1": {
+            "i18n_text": "i18n.CardManagement.CardNumber"
+        }
+    },
+    "texti18n": "i18n.StopCheckPayments.To",
+    "tooltip": "",
+    "wType": "Label",
+    "zindex": 1
+}

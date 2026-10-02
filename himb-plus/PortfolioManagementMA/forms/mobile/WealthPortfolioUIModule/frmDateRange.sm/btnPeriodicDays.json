@@ -1,0 +1,54 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "50dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "20dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        2,
+        0,
+        2,
+        0
+    ],
+    "_skin_": "s1e552040f594b0a849b6f48a8db0a5a",
+    "_text_": "Previous 30 days",
+    "_width_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "disabledSkins": {},
+    "displaytext": true,
+    "focusskin": "sd85a0f475ff4b3b9f0a5e4b82f68213",
+    "id": "btnPeriodicDays",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "f535d04c5e78458d9f1bfacef70a155c",
+    "name": "kony.ui.Button",
+    "paddinginpixel": false,
+    "parent": "flxPeriodSelection",
+    "pf": "frmDateRange",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "texti18n": "i18n.wealth.previousDays",
+    "wType": "Button",
+    "zindex": 1
+}

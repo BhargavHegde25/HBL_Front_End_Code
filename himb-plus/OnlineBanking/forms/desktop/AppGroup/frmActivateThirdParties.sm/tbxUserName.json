@@ -1,0 +1,71 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizTextBox2",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0px"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        12,
+        0,
+        0,
+        0
+    ],
+    "_placeholder_": "",
+    "_right_": {
+        "type": "number",
+        "value": "0"
+    },
+    "_skin_": "sb36cebb3a3a4b5fb859ba26e90ecaaa",
+    "_text_": "",
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "accessibilityconfig": {},
+    "autocapitalize": "none",
+    "autocomplete": false,
+    "autocorrect": false,
+    "autofilter": false,
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerheight": "",
+    "containerheightmode": 1,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "desktopweb": {
+        "placeholderSkin": "s36a13d095044a1f9572f6edb48aa50e"
+    },
+    "disabledSkins": {},
+    "focusskin": "s125de0fb2094e22a73b3ac2549fb05c",
+    "id": "tbxUserName",
+    "info": null,
+    "isvisible": true,
+    "keyboardtype": "A",
+    "kuid": "da4e52ad45964062a30edaf8d6e104d3",
+    "mode": "A",
+    "name": "kony.ui.TextBox2",
+    "paddinginpixel": false,
+    "parent": "flxUserName",
+    "pf": "frmActivateThirdParties",
+    "placeholderi18n": "i18n.login.UserName",
+    "placeholderskin": "s36a13d095044a1f9572f6edb48aa50e",
+    "securetextentry": false,
+    "textinputmode": "A",
+    "viewtype": "default",
+    "wType": "TextField",
+    "zindex": 1
+}

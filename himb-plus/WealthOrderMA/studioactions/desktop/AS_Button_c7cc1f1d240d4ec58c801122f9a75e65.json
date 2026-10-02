@@ -1,0 +1,32 @@
+{
+    "AS_Button_c7cc1f1d240d4ec58c801122f9a75e65": {
+        "id": "AS_Button_c7cc1f1d240d4ec58c801122f9a75e65",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "type": "forms",
+            "platform": "",
+            "KUID": "g1329e605edd467e9cae5c0ca145c8d6",
+            "name": "frmCurrencyConverterConfirm"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "NAVIGATE_TO_FORM__f88687584b3043e48ae1ce3d8fd2e6fe",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "frmCurrencyConverter",
+            "friendlyName": "frmCurrencyConverter",
+            "formKUID": "df336a49059240909206ab5f8f5b99ab",
+            "projectName": "konyonlinebankingvanathi",
+            "mappings": {},
+            "mappingsOrder": [],
+            "parentId": null,
+            "callbackType": null,
+            "enableMappingEditor": true,
+            "package": "WealthOrderModule",
+            "isCustomInput": false
+        }]
+    }
+}

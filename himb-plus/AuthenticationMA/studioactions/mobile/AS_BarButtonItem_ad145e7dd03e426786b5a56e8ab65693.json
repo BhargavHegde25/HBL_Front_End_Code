@@ -1,0 +1,17 @@
+{
+    "AS_BarButtonItem_ad145e7dd03e426786b5a56e8ab65693": {
+        "id": "AS_BarButtonItem_ad145e7dd03e426786b5a56e8ab65693",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_f0f71a35c08147fc874b335be334b6f4",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "const navManager = applicationManager.getNavigationManager();\nnavManager.setCustomInfo(\"frmForgot\", undefined);\nnavManager.navigateTo(\"frmLogin\");",
+            "parentId": null
+        }]
+    }
+}

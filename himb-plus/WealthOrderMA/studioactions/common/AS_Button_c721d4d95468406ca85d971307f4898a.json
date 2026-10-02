@@ -1,0 +1,22 @@
+{
+    "AS_Button_c721d4d95468406ca85d971307f4898a": {
+        "id": "AS_Button_c721d4d95468406ca85d971307f4898a",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "type": "userwidgets",
+            "KUID": "u9874809b30246938734e72ff69a5d4e"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__ee7732254b4b41dcaac7117856730271",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.showPrivacyPolicyPage();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

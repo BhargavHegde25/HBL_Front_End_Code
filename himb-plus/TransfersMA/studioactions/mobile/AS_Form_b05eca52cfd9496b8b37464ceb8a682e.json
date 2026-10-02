@@ -1,0 +1,22 @@
+{
+    "AS_Form_b05eca52cfd9496b8b37464ceb8a682e": {
+        "id": "AS_Form_b05eca52cfd9496b8b37464ceb8a682e",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmesewaHistory",
+            "type": "forms",
+            "platform": null,
+            "KUID": "i45d5f967b1a4f36bf46d8c8bcd6c017"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_init_g5ad8674159a4f62b11b1008cd7a0e0b",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.init();"
+        }]
+    }
+}

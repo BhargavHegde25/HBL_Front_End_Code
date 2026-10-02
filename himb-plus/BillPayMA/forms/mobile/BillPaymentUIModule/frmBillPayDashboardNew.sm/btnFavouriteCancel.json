@@ -1,0 +1,58 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "20dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s4b17507e4254527bd4c3ac908e4cbf0",
+    "_text_": "Add Favourite",
+    "_top_": {
+        "type": "string",
+        "value": "10dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "300dp"
+    },
+    "activeNativeBorderCornerRadiusControl": "topLeftControl",
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "disabledSkins": {},
+    "displaytext": true,
+    "focusskin": "s4b17507e4254527bd4c3ac908e4cbf0",
+    "id": "btnFavouriteCancel",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": false,
+    "kuid": "fbfa884bc26143469dc6407b8a405401",
+    "name": "kony.ui.Button",
+    "parent": "flxAddFavourites",
+    "pf": "frmBillPayDashboardNew",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "texti18n": "i18n.transfers.Cancel",
+    "wType": "Button",
+    "zindex": 1
+}

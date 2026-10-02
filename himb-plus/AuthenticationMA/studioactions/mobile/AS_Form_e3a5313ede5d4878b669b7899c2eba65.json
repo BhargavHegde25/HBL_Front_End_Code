@@ -1,0 +1,23 @@
+{
+    "AS_Form_e3a5313ede5d4878b669b7899c2eba65": {
+        "id": "AS_Form_e3a5313ede5d4878b669b7899c2eba65",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "CopyfrmResumeApplication",
+            "type": "forms",
+            "platform": null,
+            "KUID": "f4b2d48799e24600bf50f9c1fb8cc27f"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_init_f3598506b24d4b30989ce1b218566cbb",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.init();",
+            "callbackType": null
+        }]
+    }
+}

@@ -1,0 +1,50 @@
+{
+  "customCode" : {
+    "requestProcessorName" : "com.kony.transaction.preprocessors.OnboardingAccountValidationPreProcessor",
+    "responseProcessorName" : "com.kony.postprocessors.CreateOnboardingTransferObjectServicePostProcessor"
+  },
+  "operationConfig" : {
+    "name" : "OnboardingTransfer3577",
+    "type" : "MappedToBackend",
+    "cachable" : false,
+    "smsEnabled" : false,
+    "security" : "authorized_app_user",
+    "responseEncoding" : "UTF-8",
+    "httpMethod" : "GET",
+    "decodeResponseBody" : false,
+    "iMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\">    <map inputpath=\"request_in\" outputpath=\"request_out\">        <set-param inputpath=\"amount\" outputpath=\"amount\"/>        <set-param inputpath=\"companyId\" outputpath=\"companyId\"/>        <set-param inputpath=\"creditAccountId\" outputpath=\"creditAccountId\"/>        <set-param inputpath=\"customerId\" outputpath=\"customerId\"/>        <set-param inputpath=\"debitAccountId\" outputpath=\"debitAccountId\"/>        <set-param inputpath=\"paymentCurrencyId\" outputpath=\"paymentCurrencyId\"/>        <set-param inputpath=\"userName\" outputpath=\"userName\"/>    </map></mapper>",
+    "iVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"request_in\",\"text\":\"OnboardingTransactions\",\"xy\":\"150 100\"},{\"isGroup\":true,\"key\":\"request_out\",\"text\":\"PaymentOrchestrationServices (1.0).OnboardingTransfer\",\"xy\":\"770 100\"}],\"linkDataArray\":[{\"from\":\"source\",\"to\":\"source:OnboardingTransactions\",\"fromPort\":\"source\",\"toPort\":\"source:OnboardingTransactions\",\"visible\":true,\"common\":false},{\"from\":\"source:OnboardingTransactions\",\"to\":\"source:OnboardingTransactions:t_p_fields\",\"fromPort\":\"source:OnboardingTransactions\",\"toPort\":\"source:OnboardingTransactions:t_p_fields\",\"visible\":true,\"common\":false},{\"from\":\"target\",\"to\":\"target:t_p_parameters\",\"fromPort\":\"target\",\"toPort\":\"target:t_p_parameters\",\"visible\":true,\"common\":false},{\"from\":\"target:t_p_parameters\",\"to\":\"target:amount:\",\"fromPort\":\"target:t_p_parameters\",\"toPort\":\"target:amount:\",\"visible\":true,\"common\":false},{\"from\":\"target:t_p_parameters\",\"to\":\"target:companyId:\",\"fromPort\":\"target:t_p_parameters\",\"toPort\":\"target:companyId:\",\"visible\":true,\"common\":false},{\"from\":\"target:t_p_parameters\",\"to\":\"target:creditAccountId:\",\"fromPort\":\"target:t_p_parameters\",\"toPort\":\"target:creditAccountId:\",\"visible\":true,\"common\":false},{\"from\":\"target:t_p_parameters\",\"to\":\"target:customerId:\",\"fromPort\":\"target:t_p_parameters\",\"toPort\":\"target:customerId:\",\"visible\":true,\"common\":false},{\"from\":\"target:t_p_parameters\",\"to\":\"target:debitAccountId:\",\"fromPort\":\"target:t_p_parameters\",\"toPort\":\"target:debitAccountId:\",\"visible\":true,\"common\":false},{\"from\":\"target:t_p_parameters\",\"to\":\"target:paymentCurrencyId:\",\"fromPort\":\"target:t_p_parameters\",\"toPort\":\"target:paymentCurrencyId:\",\"visible\":true,\"common\":false},{\"from\":\"target:t_p_parameters\",\"to\":\"target:paymentOrderProductId:\",\"fromPort\":\"target:t_p_parameters\",\"toPort\":\"target:paymentOrderProductId:\",\"visible\":true,\"common\":false},{\"from\":\"target:t_p_parameters\",\"to\":\"target:userName:\",\"fromPort\":\"target:t_p_parameters\",\"toPort\":\"target:userName:\",\"visible\":true,\"common\":false}],\"blockCount\":{\"variableCount\":0},\"variableMap\":{},\"xmlMappingOverride\":true}",
+    "oVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"response_out\",\"text\":\"OnboardingTransactions\",\"xy\":\"770 100\"},{\"isGroup\":true,\"key\":\"response_in\",\"text\":\"PaymentOrchestrationServices (1.0).OnboardingTransfer\",\"xy\":\"150 100\"}],\"linkDataArray\":[]}",
+    "applyCommonMapping" : false,
+    "applyRequestCommonMapping" : false,
+    "applyResponseCommonMapping" : true,
+    "backendMeta" : {
+      "serviceName" : "PaymentOrchestrationServices",
+      "serviceVersion" : "1.0",
+      "operationName" : "OnboardingTransfer"
+    },
+    "relationshipHierarchyMapping" : {
+      "name" : "OnboardingTransactions",
+      "children" : [ ],
+      "actions" : { },
+      "selected" : true
+    },
+    "requestXmlMappingOverride" : true,
+    "responseXmlMappingOverride" : false,
+    "mapperData" : [ {
+      "name" : "base mapper1",
+      "order" : 1,
+      "iMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><mapper xmlns=\"http://www.kony.com/ns/mapper\">    <map inputpath=\"request_in\" outputpath=\"request_out\">        <set-param inputpath=\"amount\" outputpath=\"amount\"/>        <set-param inputpath=\"companyId\" outputpath=\"companyId\"/>        <set-param inputpath=\"creditAccountId\" outputpath=\"creditAccountId\"/>        <set-param inputpath=\"customerId\" outputpath=\"customerId\"/>        <set-param inputpath=\"debitAccountId\" outputpath=\"debitAccountId\"/>        <set-param inputpath=\"paymentCurrencyId\" outputpath=\"paymentCurrencyId\"/>        <set-param inputpath=\"userName\" outputpath=\"userName\"/>    </map></mapper>",
+      "iVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"request_in\",\"text\":\"OnboardingTransactions\",\"xy\":\"150 100\"},{\"isGroup\":true,\"key\":\"request_out\",\"text\":\"PaymentOrchestrationServices (1.0).OnboardingTransfer\",\"xy\":\"770 100\"}],\"linkDataArray\":[{\"from\":\"source\",\"to\":\"source:OnboardingTransactions\",\"fromPort\":\"source\",\"toPort\":\"source:OnboardingTransactions\",\"visible\":true,\"common\":false},{\"from\":\"source:OnboardingTransactions\",\"to\":\"source:OnboardingTransactions:t_p_fields\",\"fromPort\":\"source:OnboardingTransactions\",\"toPort\":\"source:OnboardingTransactions:t_p_fields\",\"visible\":true,\"common\":false},{\"from\":\"target\",\"to\":\"target:t_p_parameters\",\"fromPort\":\"target\",\"toPort\":\"target:t_p_parameters\",\"visible\":true,\"common\":false},{\"from\":\"target:t_p_parameters\",\"to\":\"target:amount:\",\"fromPort\":\"target:t_p_parameters\",\"toPort\":\"target:amount:\",\"visible\":true,\"common\":false},{\"from\":\"target:t_p_parameters\",\"to\":\"target:companyId:\",\"fromPort\":\"target:t_p_parameters\",\"toPort\":\"target:companyId:\",\"visible\":true,\"common\":false},{\"from\":\"target:t_p_parameters\",\"to\":\"target:creditAccountId:\",\"fromPort\":\"target:t_p_parameters\",\"toPort\":\"target:creditAccountId:\",\"visible\":true,\"common\":false},{\"from\":\"target:t_p_parameters\",\"to\":\"target:customerId:\",\"fromPort\":\"target:t_p_parameters\",\"toPort\":\"target:customerId:\",\"visible\":true,\"common\":false},{\"from\":\"target:t_p_parameters\",\"to\":\"target:debitAccountId:\",\"fromPort\":\"target:t_p_parameters\",\"toPort\":\"target:debitAccountId:\",\"visible\":true,\"common\":false},{\"from\":\"target:t_p_parameters\",\"to\":\"target:paymentCurrencyId:\",\"fromPort\":\"target:t_p_parameters\",\"toPort\":\"target:paymentCurrencyId:\",\"visible\":true,\"common\":false},{\"from\":\"target:t_p_parameters\",\"to\":\"target:paymentOrderProductId:\",\"fromPort\":\"target:t_p_parameters\",\"toPort\":\"target:paymentOrderProductId:\",\"visible\":true,\"common\":false},{\"from\":\"target:t_p_parameters\",\"to\":\"target:userName:\",\"fromPort\":\"target:t_p_parameters\",\"toPort\":\"target:userName:\",\"visible\":true,\"common\":false}],\"blockCount\":{\"variableCount\":0},\"variableMap\":{},\"xmlMappingOverride\":true}",
+      "oVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"response_out\",\"text\":\"OnboardingTransactions\",\"xy\":\"770 100\"},{\"isGroup\":true,\"key\":\"response_in\",\"text\":\"PaymentOrchestrationServices (1.0).OnboardingTransfer\",\"xy\":\"150 100\"}],\"linkDataArray\":[]}",
+      "requestXmlMappingOverride" : true,
+      "responseXmlMappingOverride" : false,
+      "disabled" : false,
+      "applyCommonMapping" : false,
+      "applyRequestCommonMapping" : false,
+      "applyResponseCommonMapping" : true
+    } ]
+  },
+  "enableFrontendUrl" : false,
+  "customVerb" : false
+}

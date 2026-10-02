@@ -1,0 +1,66 @@
+{
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "90dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "scbd4cac3526468089bf3013adff0549",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "children": [
+        "flxCashBuying1",
+        "lblSepartor1",
+        "flxCashBuying2",
+        "lblSepartor7",
+        "flxCashBuying3"
+    ],
+    "clipbounds": true,
+    "containerId": true,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "flxCash1",
+    "ide_onClick": "AS_FlexContainer_iae2c3d66ec341d5bf34bf3898bf9606",
+    "info": null,
+    "isvisible": true,
+    "kuid": "e028c0cf3484428fbbf41697bb101586",
+    "layouttype": 4,
+    "name": "kony.ui.FlexContainer",
+    "parent": "flxCashCol",
+    "pf": "segExchangeRateRes",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1,
+    "zindex": 1
+}

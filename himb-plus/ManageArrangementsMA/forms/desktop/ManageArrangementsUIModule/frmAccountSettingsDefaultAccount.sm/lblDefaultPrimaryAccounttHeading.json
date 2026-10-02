@@ -1,0 +1,96 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizLabel",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_i18n_text_": "kony.olb.settings.defaultPrimaryAcc",
+    "_left_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_margin_": [
+        1,
+        1,
+        1,
+        1
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s948235facfb46438f08b864be0a55ef",
+    "_text_": "DEFAULT TRANSACTION ACCOUNTS",
+    "_width_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_wrapping_": 2,
+    "accessibilityconfig": {
+        "a11yLabel": "Default Transaction Accounts"
+    },
+    "android": {
+        "textStyle": {
+            "letterSpacing": 0,
+            "strikeThrough": false
+        }
+    },
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 4,
+    "id": "lblDefaultPrimaryAccounttHeading",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "iphone": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "isvisible": true,
+    "kuid": "ic3965aeb4524e959c54d0ce8f356457",
+    "name": "kony.ui.Label",
+    "parent": "flxDefaultPrimaryAccountHeader",
+    "pf": "frmAccountSettingsDefaultAccount",
+    "responsiveData": {
+        "b1": {
+            "centerY": {
+                "type": "string",
+                "value": "50%"
+            },
+            "i18n_text": "kony.olb.settings.defaultPrimaryAcc",
+            "left": {
+                "type": "string",
+                "value": "2.20%"
+            },
+            "text": ""
+        },
+        "b3": {
+            "left": {
+                "type": "string",
+                "value": "2%"
+            }
+        },
+        "b4": {
+            "accessibilityConfig": {},
+            "left": {
+                "type": "string",
+                "value": "2.29%"
+            }
+        }
+    },
+    "texti18n": "kony.olb.settings.defaultPrimaryAcc",
+    "tooltip": "",
+    "wType": "Label",
+    "zindex": 1
+}

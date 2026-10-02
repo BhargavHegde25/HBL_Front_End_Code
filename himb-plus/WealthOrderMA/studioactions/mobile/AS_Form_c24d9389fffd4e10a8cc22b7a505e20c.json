@@ -1,0 +1,23 @@
+{
+    "AS_Form_c24d9389fffd4e10a8cc22b7a505e20c": {
+        "id": "AS_Form_c24d9389fffd4e10a8cc22b7a505e20c",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmConvertCurrencyAck",
+            "type": "forms",
+            "platform": "",
+            "KUID": "ee0a982b38e2437e94119cc576cc8a64"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ad8ed7eabdf948c79a86baa9a43a8ecb",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.init();",
+            "parentId": null
+        }]
+    }
+}

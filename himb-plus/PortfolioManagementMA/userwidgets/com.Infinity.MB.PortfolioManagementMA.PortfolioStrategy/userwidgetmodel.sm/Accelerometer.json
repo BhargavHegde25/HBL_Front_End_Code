@@ -1,0 +1,104 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "DNDConfig": null,
+    "_children_": [],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "number",
+        "value": "0"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s64f9161a9904472992c3b051970f5ed",
+    "_top_": {
+        "type": "number",
+        "value": "0"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "92%"
+    },
+    "areflexpropsreferenced": false,
+    "autogrowmode": 1,
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "clipbounds": false,
+    "containerweight": 0,
+    "dataDiffs": {
+        "Accelerometer": {
+            "__events__": {},
+            "__info__": {
+                "isRoot": true,
+                "kuid": "ea1397e9f98c4270a753a7ea76506896",
+                "srcKUID": "ub351a27473545d5a2c128fc87ef25cd",
+                "wType": "FlexContainer"
+            },
+            "centerX": {
+                "Default": {
+                    "type": "string",
+                    "value": "50%"
+                }
+            },
+            "width": {
+                "Default": {
+                    "type": "string",
+                    "value": "92%"
+                }
+            }
+        },
+        "brwAMChart": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "hbc6ff9a5dd64b1b87a25b33b4a4c944",
+                "srcKUID": "u4819a996d15437fa40d47a4b69b47d3",
+                "wType": "Browser"
+            }
+        },
+        "flxChart": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "c78166072ef54e3bad790cd336685c0a",
+                "srcKUID": "u0d285d7979d48a9a90d276060937853",
+                "wType": "FlexContainer"
+            }
+        }
+    },
+    "enablescrolling": true,
+    "id": "Accelerometer",
+    "info": null,
+    "iscustomlayout": false,
+    "isdatareferenced": false,
+    "isvisible": true,
+    "kuid": "ea1397e9f98c4270a753a7ea76506896",
+    "layouttype": 2,
+    "masterType": 0,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "flxGraph",
+    "pf": "userwidgetmodel",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "sourceUserWidget": "ub351a27473545d5a2c128fc87ef25cd",
+    "wType": "UserWidgetInstance",
+    "zindex": 1
+}

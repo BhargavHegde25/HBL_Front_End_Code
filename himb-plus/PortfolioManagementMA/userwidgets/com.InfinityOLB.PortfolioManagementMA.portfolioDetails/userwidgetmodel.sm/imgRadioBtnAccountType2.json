@@ -1,0 +1,109 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizLabel",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "20dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s25c7b2e30e5468c8ce0209db81d62ce",
+    "_text_": "L",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "20dp"
+    },
+    "_wrapping_": 2,
+    "accessibilityconfig": {
+        "a11yLabel": "Radio Button"
+    },
+    "android": {
+        "textStyle": {
+            "letterSpacing": 0,
+            "strikeThrough": false
+        }
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 1,
+    "id": "imgRadioBtnAccountType2",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "iphone": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "isvisible": false,
+    "kuid": "bcfa183db8474076bca4a14c27a5a4b2",
+    "name": "kony.ui.Label",
+    "parent": "flxAccountTypeRadio2",
+    "pf": "userwidgetmodel",
+    "responsiveData": {
+        "b1": {
+            "height": {
+                "type": "string",
+                "value": "22dp"
+            },
+            "skin": "s25c7b2e30e5468c8ce0209db81d62ce",
+            "top": {
+                "type": "string",
+                "value": "4dp"
+            },
+            "width": {
+                "type": "string",
+                "value": "22dp"
+            }
+        },
+        "b2": {
+            "height": {
+                "type": "string",
+                "value": "22dp"
+            },
+            "skin": "s2900e466e284daab0c64750d00e13b2",
+            "width": {
+                "type": "string",
+                "value": "22dp"
+            }
+        },
+        "b3": {
+            "height": {
+                "type": "string",
+                "value": "22dp"
+            },
+            "left": {
+                "type": "string",
+                "value": "2dp"
+            },
+            "width": {
+                "type": "string",
+                "value": "22dp"
+            }
+        }
+    },
+    "tooltip": "",
+    "wType": "Label",
+    "zindex": 1
+}

@@ -1,0 +1,97 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizLabel",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_i18n_text_": "i18n.wealth.advisoryMessage",
+    "_left_": {
+        "type": "string",
+        "value": "35%"
+    },
+    "_margin_": [
+        1,
+        1,
+        1,
+        1
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_right_": {
+        "type": "string",
+        "value": "35%"
+    },
+    "_skin_": "sef23223921b4920b186cf3407ea0af6",
+    "_text_": "Feel free to contact your Advisory team using one of the methods below",
+    "_top_": {
+        "type": "string",
+        "value": "0"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "408dp"
+    },
+    "_wrapping_": 2,
+    "android": {
+        "textStyle": {
+            "letterSpacing": 0,
+            "strikeThrough": false
+        }
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": ""
+    },
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "id": "lblMessage",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "iphone": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "b280dd1594d94eb4bf890f8486c9734d",
+    "name": "kony.ui.Label",
+    "parent": "flxMessage",
+    "pf": "frmContactAdvisor",
+    "responsiveData": {
+        "b1": {
+            "i18n_text": "i18n.wealth.advisoryMessage",
+            "skin": "sef23223921b4920b186cf3407ea0af6",
+            "text": "",
+            "width": {
+                "type": "string",
+                "value": "408px"
+            }
+        },
+        "b2": {
+            "width": {
+                "type": "string",
+                "value": "408dp"
+            }
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "texti18n": "i18n.wealth.advisoryMessage",
+    "tooltip": "",
+    "wType": "Label"
+}

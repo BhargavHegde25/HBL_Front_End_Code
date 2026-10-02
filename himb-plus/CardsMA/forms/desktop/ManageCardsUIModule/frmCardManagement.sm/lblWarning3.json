@@ -1,0 +1,83 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizLabel",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "15dp"
+    },
+    "_margin_": [
+        1,
+        1,
+        1,
+        1
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s3f0505258d5484b9f67e2aa831c6730",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": ""
+    },
+    "_width_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_wrapping_": 2,
+    "accessibilityconfig": {
+        "a11yLabel": "Label"
+    },
+    "android": {
+        "textStyle": {
+            "letterSpacing": 0,
+            "strikeThrough": false
+        }
+    },
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 4,
+    "id": "lblWarning3",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "iphone": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "isvisible": true,
+    "kuid": "d671515b540143c59c7b5a105bc11d50",
+    "name": "kony.ui.Label",
+    "parent": "flxWarning",
+    "pf": "frmCardManagement",
+    "responsiveData": {
+        "b1": {},
+        "b2": {},
+        "b3": {
+            "width": {
+                "type": "string",
+                "value": "96%"
+            }
+        },
+        "b4": {}
+    },
+    "texti18n": "i18n.HBL.Cards.Warning1",
+    "tooltip": "",
+    "wType": "Label",
+    "zindex": 1
+}

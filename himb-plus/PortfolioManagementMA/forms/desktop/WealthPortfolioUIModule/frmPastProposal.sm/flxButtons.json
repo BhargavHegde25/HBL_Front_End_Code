@@ -1,0 +1,103 @@
+{
+    "DNDConfig": null,
+    "_bottom_": {
+        "type": "string",
+        "value": "0"
+    },
+    "_height_": {
+        "type": "string",
+        "value": "90px"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_right_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_skin_": "s54f791da7e34139b8c16e1dfd938098",
+    "_width_": {
+        "type": "string",
+        "value": "67.20%"
+    },
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "children": [
+        "btnViewReport",
+        "btnContactAdvisor"
+    ],
+    "clipbounds": false,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "flxButtons",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "je2c014c88814f43964158758cfaedbd",
+    "layouttype": 3,
+    "name": "kony.ui.FlexContainer",
+    "parent": "flxPastProposal",
+    "pf": "frmPastProposal",
+    "responsiveData": {
+        "b1": {
+            "desktopweb": {
+                "width": {
+                    "type": "string",
+                    "value": "68.60%"
+                }
+            },
+            "reverseLayoutDirection": true,
+            "width": {
+                "type": "string",
+                "value": "67.20%"
+            }
+        },
+        "b2": {
+            "bottom": {
+                "type": "string",
+                "value": "0dp"
+            },
+            "reverseLayoutDirection": true,
+            "right": {
+                "type": "number",
+                "value": "0"
+            },
+            "width": {
+                "type": "string",
+                "value": "60.50%"
+            }
+        },
+        "b4": {
+            "layoutType": 3,
+            "left": {
+                "type": "string",
+                "value": ""
+            },
+            "reverseLayoutDirection": true,
+            "right": {
+                "type": "string",
+                "value": "0dp"
+            }
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "reverselayoutdirection": "",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1
+}

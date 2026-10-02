@@ -1,0 +1,27 @@
+{
+    "AS_Form_f298799978434f17b3a66c982f34dca4": {
+        "id": "AS_Form_f298799978434f17b3a66c982f34dca4",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmForgotEnterAccNum",
+            "type": "forms",
+            "platform": null,
+            "KUID": "iad34622bad4461eb3b436d453c3ae0c"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "INVOKE_FUNCTION__ide_preShow_a45dae2d0ee24c7fb776f13926adba47",
+            "type": "INVOKE_FUNCTION",
+            "sequenceKUID": "emailIDPreShow",
+            "display": "emailIDPreShow",
+            "inputparams": [],
+            "callbackType": null,
+            "disabled": null,
+            "source": "controller"
+        }]
+    }
+}

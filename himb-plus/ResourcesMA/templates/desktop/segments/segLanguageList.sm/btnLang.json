@@ -1,0 +1,60 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_bottom_": {
+        "type": "string",
+        "value": "5dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "5dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_right_": {
+        "type": "string",
+        "value": "5dp"
+    },
+    "_skin_": "s48fd8c79a0a4aa3a6ac21ccec274d4b",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "5dp"
+    },
+    "accessibilityconfig": {
+        "a11yARIA": {
+            "aria-labelledby": "lblLang"
+        }
+    },
+    "canUpdateUI": true,
+    "containerId": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "disabledSkins": {
+        "focusSkin": "s49251fd110d447c85c8976623756707"
+    },
+    "displaytext": true,
+    "id": "btnLang",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "da991b347e5648d98ed0c6d402f5551a",
+    "masterType": 1,
+    "name": "kony.ui.Button",
+    "parent": "flxLangList1",
+    "pf": "segLanguageList",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "wType": "Button",
+    "zindex": 10
+}

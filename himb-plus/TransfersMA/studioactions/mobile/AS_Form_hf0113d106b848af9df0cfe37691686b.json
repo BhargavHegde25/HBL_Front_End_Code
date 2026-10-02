@@ -1,0 +1,22 @@
+{
+    "AS_Form_hf0113d106b848af9df0cfe37691686b": {
+        "id": "AS_Form_hf0113d106b848af9df0cfe37691686b",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmInternationalFTFromAccount",
+            "type": "forms",
+            "platform": null,
+            "KUID": "g21a1ba506a14427bca58523638ec971"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_preShow_cd926c1ea84449608c0c2a211205db71",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.preShow();"
+        }]
+    }
+}

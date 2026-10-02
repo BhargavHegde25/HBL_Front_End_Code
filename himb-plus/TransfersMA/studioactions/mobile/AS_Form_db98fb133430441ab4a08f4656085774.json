@@ -1,0 +1,22 @@
+{
+    "AS_Form_db98fb133430441ab4a08f4656085774": {
+        "id": "AS_Form_db98fb133430441ab4a08f4656085774",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "CopyfrmConfirmTransfer",
+            "type": "forms",
+            "platform": null,
+            "KUID": "jf84ffd8cdef42f19c88f931e55178f9"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_preShow_a7818ef5b0b849819822d57108466bcf",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.preShow();"
+        }]
+    }
+}

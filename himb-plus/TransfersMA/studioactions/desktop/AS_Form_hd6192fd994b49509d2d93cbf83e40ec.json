@@ -1,0 +1,23 @@
+{
+    "AS_Form_hd6192fd994b49509d2d93cbf83e40ec": {
+        "id": "AS_Form_hd6192fd994b49509d2d93cbf83e40ec",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmLoadeSewaTranfersActivity",
+            "type": "forms",
+            "platform": "",
+            "KUID": "f51035f6e9d140da8a6335164d09ce08"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ia83ef74ed1d40dfac6e64f375849f15",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.preShow();",
+            "parentId": null
+        }]
+    }
+}

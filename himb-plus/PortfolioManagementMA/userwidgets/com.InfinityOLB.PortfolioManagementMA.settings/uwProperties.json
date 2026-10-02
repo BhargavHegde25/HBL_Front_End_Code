@@ -1,0 +1,127 @@
+{
+    "classname": "settings",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "bf563d4f308d488abb24df50c21c3441",
+                    "paramList": [],
+                    "propertyKey": "setColumnArray",
+                    "pw": {
+                        "displayName": "setColumnArray",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "f417bb849703456a8ac44026f832c05f",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "ge860317af924e738089a3da9e633a8b",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "offVisibility",
+                    "pw": {
+                        "displayName": "offVisibility",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "f417bb849703456a8ac44026f832c05f",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "b52bdc22aff442dd9e43267f821b6b07",
+                    "paramList": [
+                        {
+                            "name": "selectedColumn"
+                        }
+                    ],
+                    "propertyIndex": 2,
+                    "propertyKey": "onClickSave",
+                    "pw": {
+                        "displayName": "onClickSave",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "f417bb849703456a8ac44026f832c05f",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "j460d604424548f5bd8a7be424859859",
+                    "paramList": [
+                        {
+                            "name": "selectedColumn"
+                        }
+                    ],
+                    "propertyIndex": 3,
+                    "propertyKey": "onClickDefault",
+                    "pw": {
+                        "displayName": "onClickDefault",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "f417bb849703456a8ac44026f832c05f",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "Quantity,Latest Price,Average Cost,Market Value,Weight%,Unrealised P&L,Asset Class,Sub Asset Class,Region,Sector,Currency,Exchange Rate,Market Value(pos ccy),Cost Value,Cost Exchange Rate,Unrealised P&L %,Daily P&L,Daily P&L %",
+                    "group": "General",
+                    "kuid": "c47e10c8a21a48f2962c558a96f3d9f7",
+                    "originalPropertyKey": "displayNames",
+                    "propertyIndex": 1,
+                    "propertyKey": "displayNames",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Column Picker Display Names",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "f417bb849703456a8ac44026f832c05f",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "0,1,2,3,4,5",
+                    "group": "General",
+                    "kuid": "dd2f62cdd4f54183857037637b52f079",
+                    "originalPropertyKey": "selectedColumns",
+                    "propertyIndex": 2,
+                    "propertyKey": "selectedColumns",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Selected Column Array",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "f417bb849703456a8ac44026f832c05f",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfinityOLB.PortfolioManagementMA",
+    "version": "1.0.0"
+}

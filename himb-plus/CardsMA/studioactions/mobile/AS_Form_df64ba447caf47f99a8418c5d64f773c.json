@@ -1,0 +1,22 @@
+{
+    "AS_Form_df64ba447caf47f99a8418c5d64f773c": {
+        "id": "AS_Form_df64ba447caf47f99a8418c5d64f773c",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmVirtualCardTypes",
+            "type": "forms",
+            "platform": null,
+            "KUID": "d4055e0a65394a3ba127e4cacbd6cb01"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_init_f3ad93f034624904a5d31bbbea008776",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.init();"
+        }]
+    }
+}

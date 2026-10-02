@@ -1,0 +1,23 @@
+{
+    "AS_Form_e7fa1df9b8c6434388c4d45f0a4d08f9": {
+        "id": "AS_Form_e7fa1df9b8c6434388c4d45f0a4d08f9",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmtopUpDomesticCardReviewScreen",
+            "type": "forms",
+            "platform": "",
+            "KUID": "e02cd7ba505a4791b6e6f3163e01d3e9"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_d27fe705623843aba09465bff41a592d",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.preShow();",
+            "parentId": null
+        }]
+    }
+}

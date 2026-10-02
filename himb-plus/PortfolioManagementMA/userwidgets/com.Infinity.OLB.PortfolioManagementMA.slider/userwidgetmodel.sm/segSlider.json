@@ -1,0 +1,741 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "_data_": [
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
+        {}
+    ],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "0"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "autogrowmode": 1,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "counter": "019",
+    "desktop": {
+        "_data_": [
+            {
+                "btnSegmentname": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Liquidity"
+                },
+                "imgMinus": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "minus_btn.png"
+                },
+                "imgPlus": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "plus_btn.png"
+                },
+                "lblSegmentname": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Liquidity"
+                },
+                "lblValue1": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "47.00%"
+                },
+                "lblValue2": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "47.00%"
+                },
+                "sliderincdec": {
+                    "@class": "com.viz.ide.model.segment.SelectedValueSegmentData",
+                    "selectedValue": 50
+                }
+            },
+            {
+                "btnSegmentname": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Liquidity"
+                },
+                "imgMinus": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "minus_btn.png"
+                },
+                "imgPlus": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "plus_btn.png"
+                },
+                "lblSegmentname": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Liquidity"
+                },
+                "lblValue1": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "47.00%"
+                },
+                "lblValue2": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "47.00%"
+                },
+                "sliderincdec": {
+                    "@class": "com.viz.ide.model.segment.SelectedValueSegmentData",
+                    "selectedValue": 50
+                }
+            },
+            {
+                "btnSegmentname": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Liquidity"
+                },
+                "imgMinus": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "minus_btn.png"
+                },
+                "imgPlus": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "plus_btn.png"
+                },
+                "lblSegmentname": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Liquidity"
+                },
+                "lblValue1": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "47.00%"
+                },
+                "lblValue2": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "47.00%"
+                },
+                "sliderincdec": {
+                    "@class": "com.viz.ide.model.segment.SelectedValueSegmentData",
+                    "selectedValue": 50
+                }
+            },
+            {
+                "btnSegmentname": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Liquidity"
+                },
+                "imgMinus": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "minus_btn.png"
+                },
+                "imgPlus": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "plus_btn.png"
+                },
+                "lblSegmentname": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Liquidity"
+                },
+                "lblValue1": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "47.00%"
+                },
+                "lblValue2": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "47.00%"
+                },
+                "sliderincdec": {
+                    "@class": "com.viz.ide.model.segment.SelectedValueSegmentData",
+                    "selectedValue": 50
+                }
+            },
+            {
+                "btnSegmentname": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Liquidity"
+                },
+                "imgMinus": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "minus_btn.png"
+                },
+                "imgPlus": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "plus_btn.png"
+                },
+                "lblSegmentname": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Liquidity"
+                },
+                "lblValue1": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "47.00%"
+                },
+                "lblValue2": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "47.00%"
+                },
+                "sliderincdec": {
+                    "@class": "com.viz.ide.model.segment.SelectedValueSegmentData",
+                    "selectedValue": 50
+                }
+            },
+            {
+                "btnSegmentname": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Liquidity"
+                },
+                "imgMinus": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "minus_btn.png"
+                },
+                "imgPlus": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "plus_btn.png"
+                },
+                "lblSegmentname": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Liquidity"
+                },
+                "lblValue1": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "47.00%"
+                },
+                "lblValue2": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "47.00%"
+                },
+                "sliderincdec": {
+                    "@class": "com.viz.ide.model.segment.SelectedValueSegmentData",
+                    "selectedValue": 50
+                }
+            },
+            {
+                "btnSegmentname": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Liquidity"
+                },
+                "imgMinus": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "minus_btn.png"
+                },
+                "imgPlus": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "plus_btn.png"
+                },
+                "lblSegmentname": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Liquidity"
+                },
+                "lblValue1": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "47.00%"
+                },
+                "lblValue2": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "47.00%"
+                },
+                "sliderincdec": {
+                    "@class": "com.viz.ide.model.segment.SelectedValueSegmentData",
+                    "selectedValue": 50
+                }
+            },
+            {
+                "btnSegmentname": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Liquidity"
+                },
+                "imgMinus": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "minus_btn.png"
+                },
+                "imgPlus": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "plus_btn.png"
+                },
+                "lblSegmentname": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Liquidity"
+                },
+                "lblValue1": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "47.00%"
+                },
+                "lblValue2": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "47.00%"
+                },
+                "sliderincdec": {
+                    "@class": "com.viz.ide.model.segment.SelectedValueSegmentData",
+                    "selectedValue": 50
+                }
+            },
+            {
+                "btnSegmentname": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Liquidity"
+                },
+                "imgMinus": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "minus_btn.png"
+                },
+                "imgPlus": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "plus_btn.png"
+                },
+                "lblSegmentname": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Liquidity"
+                },
+                "lblValue1": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "47.00%"
+                },
+                "lblValue2": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "47.00%"
+                },
+                "sliderincdec": {
+                    "@class": "com.viz.ide.model.segment.SelectedValueSegmentData",
+                    "selectedValue": 50
+                }
+            },
+            {
+                "btnSegmentname": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Liquidity"
+                },
+                "imgMinus": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "minus_btn.png"
+                },
+                "imgPlus": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "plus_btn.png"
+                },
+                "lblSegmentname": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Liquidity"
+                },
+                "lblValue1": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "47.00%"
+                },
+                "lblValue2": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "47.00%"
+                },
+                "sliderincdec": {
+                    "@class": "com.viz.ide.model.segment.SelectedValueSegmentData",
+                    "selectedValue": 50
+                }
+            },
+            {
+                "btnSegmentname": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Liquidity"
+                },
+                "imgMinus": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "minus_btn.png"
+                },
+                "imgPlus": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "plus_btn.png"
+                },
+                "lblSegmentname": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Liquidity"
+                },
+                "lblValue1": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "47.00%"
+                },
+                "lblValue2": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "47.00%"
+                },
+                "sliderincdec": {
+                    "@class": "com.viz.ide.model.segment.SelectedValueSegmentData",
+                    "selectedValue": 50
+                }
+            },
+            {
+                "btnSegmentname": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Liquidity"
+                },
+                "imgMinus": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "minus_btn.png"
+                },
+                "imgPlus": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "plus_btn.png"
+                },
+                "lblSegmentname": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Liquidity"
+                },
+                "lblValue1": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "47.00%"
+                },
+                "lblValue2": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "47.00%"
+                },
+                "sliderincdec": {
+                    "@class": "com.viz.ide.model.segment.SelectedValueSegmentData",
+                    "selectedValue": 50
+                }
+            },
+            {
+                "btnSegmentname": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Liquidity"
+                },
+                "imgMinus": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "minus_btn.png"
+                },
+                "imgPlus": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "plus_btn.png"
+                },
+                "lblSegmentname": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Liquidity"
+                },
+                "lblValue1": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "47.00%"
+                },
+                "lblValue2": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "47.00%"
+                },
+                "sliderincdec": {
+                    "@class": "com.viz.ide.model.segment.SelectedValueSegmentData",
+                    "selectedValue": 50
+                }
+            },
+            {
+                "btnSegmentname": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Liquidity"
+                },
+                "imgMinus": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "minus_btn.png"
+                },
+                "imgPlus": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "plus_btn.png"
+                },
+                "lblSegmentname": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Liquidity"
+                },
+                "lblValue1": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "47.00%"
+                },
+                "lblValue2": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "47.00%"
+                },
+                "sliderincdec": {
+                    "@class": "com.viz.ide.model.segment.SelectedValueSegmentData",
+                    "selectedValue": 50
+                }
+            },
+            {
+                "btnSegmentname": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Liquidity"
+                },
+                "imgMinus": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "minus_btn.png"
+                },
+                "imgPlus": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "plus_btn.png"
+                },
+                "lblSegmentname": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Liquidity"
+                },
+                "lblValue1": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "47.00%"
+                },
+                "lblValue2": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "47.00%"
+                },
+                "sliderincdec": {
+                    "@class": "com.viz.ide.model.segment.SelectedValueSegmentData",
+                    "selectedValue": 50
+                }
+            },
+            {
+                "btnSegmentname": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Liquidity"
+                },
+                "imgMinus": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "minus_btn.png"
+                },
+                "imgPlus": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "plus_btn.png"
+                },
+                "lblSegmentname": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Liquidity"
+                },
+                "lblValue1": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "47.00%"
+                },
+                "lblValue2": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "47.00%"
+                },
+                "sliderincdec": {
+                    "@class": "com.viz.ide.model.segment.SelectedValueSegmentData",
+                    "selectedValue": 50
+                }
+            },
+            {
+                "btnSegmentname": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Liquidity"
+                },
+                "imgMinus": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "minus_btn.png"
+                },
+                "imgPlus": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "plus_btn.png"
+                },
+                "lblSegmentname": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Liquidity"
+                },
+                "lblValue1": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "47.00%"
+                },
+                "lblValue2": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "47.00%"
+                },
+                "sliderincdec": {
+                    "@class": "com.viz.ide.model.segment.SelectedValueSegmentData",
+                    "selectedValue": 50
+                }
+            },
+            {
+                "btnSegmentname": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Liquidity"
+                },
+                "imgMinus": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "minus_btn.png"
+                },
+                "imgPlus": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "plus_btn.png"
+                },
+                "lblSegmentname": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Liquidity"
+                },
+                "lblValue1": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "47.00%"
+                },
+                "lblValue2": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "47.00%"
+                },
+                "sliderincdec": {
+                    "@class": "com.viz.ide.model.segment.SelectedValueSegmentData",
+                    "selectedValue": 50
+                }
+            },
+            {
+                "btnSegmentname": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Liquidity"
+                },
+                "imgMinus": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "minus_btn.png"
+                },
+                "imgPlus": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "plus_btn.png"
+                },
+                "lblSegmentname": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Liquidity"
+                },
+                "lblValue1": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "47.00%"
+                },
+                "lblValue2": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "47.00%"
+                },
+                "sliderincdec": {
+                    "@class": "com.viz.ide.model.segment.SelectedValueSegmentData",
+                    "selectedValue": 50
+                }
+            },
+            {
+                "btnSegmentname": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Liquidity"
+                },
+                "imgMinus": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "minus_btn.png"
+                },
+                "imgPlus": {
+                    "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                    "src": "plus_btn.png"
+                },
+                "lblSegmentname": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "Liquidity"
+                },
+                "lblValue1": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "47.00%"
+                },
+                "lblValue2": {
+                    "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                    "text": "47.00%"
+                },
+                "sliderincdec": {
+                    "@class": "com.viz.ide.model.segment.SelectedValueSegmentData",
+                    "selectedValue": 50
+                }
+            }
+        ],
+        "rowTemplateId": "e59c88bf76b8462ea9b5e9bbf244d92e",
+        "rowtemplate": "flxSampleMain",
+        "sectionHeaderTemplateId": null,
+        "widgetdatamap": {
+            "btnSegmentname": "btnSegmentname",
+            "flxLabel": "flxLabel",
+            "flxMain": "flxMain",
+            "flxMinus": "flxMinus",
+            "flxPin": "flxPin",
+            "flxPlus": "flxPlus",
+            "flxSampleMain": "flxSampleMain",
+            "flxSlider": "flxSlider",
+            "flxSliderContents": "flxSliderContents",
+            "imgMinus": "imgMinus",
+            "imgPin": "imgPin",
+            "imgPlus": "imgPlus",
+            "lblSegmentname": "lblSegmentname",
+            "lblValue1": "lblValue1",
+            "lblValue2": "lblValue2",
+            "sliderincdec": "sliderincdec"
+        }
+    },
+    "focusedindex": null,
+    "focuseditem": null,
+    "groupcells": false,
+    "hasSections": false,
+    "id": "segSlider",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "cd18812cefe147ab961a3b4fdbddb45c",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "slider",
+    "pf": "userwidgetmodel",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainselection": false,
+    "rowcounter": 19,
+    "rowfocusskin": "sdbecfb52f88429dacd0a7a214018f68",
+    "rowskin": "s425ce2d8f8b4743a944075648c38369",
+    "rowtemplate": null,
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionheaderskin": "s77f8d8438584cb38391fb3b9a58a08d",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "default",
+    "separatorcolor": "aaaaaa00",
+    "separatorrequired": false,
+    "separatorthickness": 1,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "vizProps": {},
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "btnSegmentname": "btnSegmentname",
+        "flxMinus": "flxMinus",
+        "flxPlus": "flxPlus",
+        "flxSampleMain": "flxSampleMain",
+        "imgMinus": "imgMinus",
+        "imgPlus": "imgPlus",
+        "lblSegmentname": "lblSegmentname",
+        "lblValue1": "lblValue1",
+        "lblValue2": "lblValue2",
+        "sliderincdec": "sliderincdec"
+    }
+}

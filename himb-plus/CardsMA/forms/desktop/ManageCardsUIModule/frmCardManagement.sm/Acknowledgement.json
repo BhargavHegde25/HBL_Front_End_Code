@@ -1,0 +1,155 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "DNDConfig": null,
+    "_children_": [],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s89a867252bb4ccd9771a2970eccd5ce",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "areflexpropsreferenced": false,
+    "autogrowmode": 1,
+    "canUpdateUI": true,
+    "clipbounds": false,
+    "containerweight": 0,
+    "dataDiffs": {
+        "Acknowledgement": {
+            "__events__": {},
+            "__info__": {
+                "isRoot": true,
+                "kuid": "bde716584fea4cdf8719ef48de94ab1d",
+                "srcKUID": "f36514d2e8f841eeb10a42524476ba01",
+                "wType": "FlexContainer"
+            }
+        },
+        "ImgAcknowledgement": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "aa1111b5c4a6434c92395ac23ef88010",
+                "srcKUID": "db93a8cc4db9421da2caac61289516eb",
+                "wType": "Image"
+            }
+        },
+        "btnLearnAbout": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "i837665b51d64bfc8e6f616a47839393",
+                "srcKUID": "h97af1f0e8ad478f8b57de7fe442eadd",
+                "wType": "Button"
+            }
+        },
+        "flxHeader": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "e725c4be637c4f19b99752bdad6a57db",
+                "srcKUID": "a02d99dc2a874779a7457b5dd2c8fc77",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxSeperator": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "e6839df27150468fbfb144fb3494b34b",
+                "srcKUID": "j33df6b6df7c4cd2afc001b2536d0cb7",
+                "wType": "FlexContainer"
+            }
+        },
+        "lblBlank": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "f049ea7726f745f590986db08da5a407",
+                "srcKUID": "d27cde60f4a849588c847e7233393269",
+                "wType": "Label"
+            }
+        },
+        "lblCardTransactionMessage": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "c1c5ed2d066f43a9b5863ad7de130cde",
+                "srcKUID": "a6af71bfddf644d78018488c199774fd",
+                "wType": "Label"
+            }
+        },
+        "lblHeading": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "e3e525b9f5e142548c3d801855b5a702",
+                "srcKUID": "c0927770fea94935b580a6f248054962",
+                "wType": "Label"
+            }
+        },
+        "lblMessage": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "c0de766e8c8442f2b2041d22e1144c5c",
+                "srcKUID": "a2ae9ab52f7648f8884e7b1ba12872aa",
+                "wType": "Label"
+            }
+        },
+        "lblRefrenceNumber": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "d72d1c069a0c4ddcb9786b2e35aa3fbd",
+                "srcKUID": "ge9c1265df7143119137214b128d7029",
+                "wType": "Label"
+            }
+        },
+        "lblRequestID": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "efbb7a6337a045beb8d3898da7f5704b",
+                "srcKUID": "j631e636d11b479e848c514fab84257a",
+                "wType": "Label"
+            }
+        },
+        "lblUnlockCardMessage": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "j635f02200a944a89627b4aeca27de94",
+                "srcKUID": "i31b3255fd794cad9753dee7a5057770",
+                "wType": "Label"
+            }
+        }
+    },
+    "enablescrolling": true,
+    "id": "Acknowledgement",
+    "info": null,
+    "isdatareferenced": false,
+    "isvisible": true,
+    "kuid": "bde716584fea4cdf8719ef48de94ab1d",
+    "layouttype": 4,
+    "masterType": 0,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "flxAcknowledgementMain",
+    "pf": "frmCardManagement",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "sourceUserWidget": "f36514d2e8f841eeb10a42524476ba01",
+    "wType": "UserWidgetInstance"
+}

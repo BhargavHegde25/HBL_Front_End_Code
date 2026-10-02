@@ -1,0 +1,191 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "DNDConfig": null,
+    "_children_": [],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s24c92fc23b14f5484b693ee9b8a9b35",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "android": {},
+    "androidwearos": {},
+    "areflexpropsreferenced": false,
+    "autogrowmode": 1,
+    "canUpdateUI": true,
+    "clipbounds": true,
+    "containerweight": 0,
+    "dataDiffs": {
+        "flxAccountSettingsCollapse": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "g9acf3eb6e58475dbda6cc8c610cd90e",
+                "srcKUID": "aa3246d0958c491692f5184fc72a24b9",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxIndicatorSecurityQuestions": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "adedfdf7f7f446b7a37c203b97accb71",
+                "srcKUID": "b10db5473631403288a2428edfd2be01",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxMenuItem": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "f2b8a8d199af4ed08e5463c69de5c665",
+                "srcKUID": "b8ff3d1ff36f4cc3afda44f4214ccd9a",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxProfileMenu": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "e386de3debb94ce4b1cc55257c229318",
+                "srcKUID": "b0c07910cf44423f9b8ec22ac7ca1226",
+                "wType": "FlexScrollContainer"
+            }
+        },
+        "flxSeperator": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "j6776af409b24082aa97012fb971da54",
+                "srcKUID": "db051d05b1e6441195258a7b192148bb",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxSubMenu": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "gb18961d878d43c8bc7181da2b6b6924",
+                "srcKUID": "a017d8c9aebe4bbca79c3cea80b21c05",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxSubMenuItem": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "bbab978a1205477bb1efdd93cbcf8073",
+                "srcKUID": "cc376403e76d4a30b6cb935bd6769881",
+                "wType": "FlexContainer"
+            }
+        },
+        "lblAccountSettings": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "c6f6c9b3a3ed4a7ab12ade2a54412155",
+                "srcKUID": "b18eb366bdcf4cb7b9d378ea0ce1f808",
+                "wType": "Label"
+            }
+        },
+        "lblAccountSettingsCollapse": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "a39ac913d0e9474087d4a914a8c25bf4",
+                "srcKUID": "b8337d71b182467394c9907b3fccdbb5",
+                "wType": "Label"
+            }
+        },
+        "lblAccountSettingsFont": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "eabb36c9c36142b3bbffb5b37d0c6a4b",
+                "srcKUID": "dd9c92572d4c4ac6b6b0deda1a292797",
+                "wType": "Label"
+            }
+        },
+        "lblSecurityQuestion": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "b3d69cc6cf49451b898ca12277b4061a",
+                "srcKUID": "dc095ea42b70408c9d53f0333d43983a",
+                "wType": "Label"
+            }
+        },
+        "profileMenu": {
+            "__events__": {},
+            "__info__": {
+                "isRoot": true,
+                "kuid": "a2efd4f7467f430ca9a09372edadb9eb",
+                "srcKUID": "if6adbdadac6414f8da853ce89aed53c",
+                "wType": "FlexContainer"
+            }
+        }
+    },
+    "desktopweb": {},
+    "enablescrolling": true,
+    "id": "profileMenu",
+    "info": null,
+    "ipad": {},
+    "iphone": {},
+    "iscustomlayout": false,
+    "isdatareferenced": false,
+    "isvisible": true,
+    "kuid": "a2efd4f7467f430ca9a09372edadb9eb",
+    "layouttype": 2,
+    "masterType": 0,
+    "maxheight": {
+        "type": "number",
+        "value": ""
+    },
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "flxLeft",
+    "pf": "frmEditTransactionPin",
+    "responsiveData": {
+        "b1": {},
+        "b2": {
+            "minHeight": {
+                "type": "string",
+                "value": "700dp"
+            }
+        },
+        "b3": {
+            "maxHeight": {
+                "type": "string",
+                "value": "525dp"
+            },
+            "skin": "s24c92fc23b14f5484b693ee9b8a9b35",
+            "zIndex": 1
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "sourceUserWidget": "if6adbdadac6414f8da853ce89aed53c",
+    "spabb": {},
+    "tabrcandroid": {},
+    "vizProps": {
+        "hidewidgethierarchy": false
+    },
+    "wType": "UserWidgetInstance",
+    "zindex": 10
+}

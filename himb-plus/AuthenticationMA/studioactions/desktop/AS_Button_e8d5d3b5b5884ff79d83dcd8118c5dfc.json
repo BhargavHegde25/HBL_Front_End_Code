@@ -1,0 +1,23 @@
+{
+    "AS_Button_e8d5d3b5b5884ff79d83dcd8118c5dfc": {
+        "id": "AS_Button_e8d5d3b5b5884ff79d83dcd8118c5dfc",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmEmbedOrigination",
+            "type": "forms",
+            "platform": "",
+            "KUID": "d2656e6941354b8895637882cf1e9fc8"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_h90b3541f2de40798d9c8c30e521a886",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.showConfirmationPopUp();\r\nthis.destinationForm = \"LocateUs\";",
+            "parentId": null
+        }]
+    }
+}

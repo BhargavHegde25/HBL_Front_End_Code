@@ -1,0 +1,10 @@
+{
+    "ModuleName": "PresentationUtility",
+    "ModuleType": "Manager",
+    "BusinessControllerConfig": {
+        "BusinessExtensions": [
+            "PresentationUtility/BusinessControllers/BusinessController_Extension"
+        ],
+        "BusinessControllerClass": "PresentationUtility/BusinessControllers/BusinessController"
+    }
+}

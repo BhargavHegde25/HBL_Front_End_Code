@@ -1,0 +1,71 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizLabel",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "3.38%"
+    },
+    "_margin_": [
+        1,
+        1,
+        1,
+        1
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s63e81af6a184e7e8e891b0dbbe7895c",
+    "_text_": "i18n.HBL.ResetPopUpMessage",
+    "_top_": {
+        "type": "string",
+        "value": "25px"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "85%"
+    },
+    "_wrapping_": 2,
+    "accessibilityconfig": {
+        "a11yLabel": "Are you sure you want to Delete this Phone Number?"
+    },
+    "android": {
+        "textStyle": {
+            "letterSpacing": 0,
+            "strikeThrough": false
+        }
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "id": "lblProfileDeleteContent",
+    "info": null,
+    "ipad": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "iphone": {
+        "psp": {
+            "wrapping": 2
+        }
+    },
+    "isvisible": true,
+    "kuid": "d92a70d0a9554cf7ad85a925cd1569ad",
+    "name": "kony.ui.Label",
+    "parent": "flxProfileDeleteContent",
+    "pf": "frmResetTransactionPin",
+    "responsiveData": {
+        "b2": {}
+    },
+    "texti18n": "i18n.HBL.ResetPopUpMessage",
+    "tooltip": "",
+    "wType": "Label",
+    "zindex": 1
+}

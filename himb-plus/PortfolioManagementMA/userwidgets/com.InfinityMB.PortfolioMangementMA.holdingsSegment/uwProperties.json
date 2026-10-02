@@ -1,0 +1,212 @@
+{
+    "classname": "holdingsSegment",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "bfa69f425d0042c991db6bbd2ef76f02",
+                    "paramList": [],
+                    "propertyKey": "setEuroFlow",
+                    "pw": {
+                        "displayName": "setEuroFlow",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "f076b421f3994d739bfebf2e71fbc9dc",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "f6db724535dd4d3899d5868dc9d1d81d",
+                    "paramList": [],
+                    "propertyKey": "getHoldingsTopDetails",
+                    "pw": {
+                        "displayName": "getHoldingsTopDetails",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "f076b421f3994d739bfebf2e71fbc9dc",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "f854efcb8bca48a88acc62643ceb4f6d",
+                    "paramList": [],
+                    "propertyKey": "setContext",
+                    "pw": {
+                        "displayName": "setContext",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "f076b421f3994d739bfebf2e71fbc9dc",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "f5816d4a619744a38f375798f9486d78",
+                    "paramList": [],
+                    "propertyKey": "getFeaturesAndPermissions",
+                    "pw": {
+                        "displayName": "getFeaturesAndPermissions",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "f076b421f3994d739bfebf2e71fbc9dc",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "eb0263880aa34592a51de87c9a795ca9",
+                    "paramList": [],
+                    "propertyKey": "getCriteriaObjValue",
+                    "pw": {
+                        "displayName": "getCriteriaObjValue",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "f076b421f3994d739bfebf2e71fbc9dc",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "c8aca571539e4d19a08f2ccd6fe7f748",
+                    "paramList": [],
+                    "propertyKey": "setVisibleActionImage",
+                    "pw": {
+                        "displayName": "setVisibleActionImage",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "f076b421f3994d739bfebf2e71fbc9dc",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "ca9932409dca49ba8600d97501dca4c5",
+                    "paramList": [],
+                    "propertyKey": "onActionSelect",
+                    "pw": {
+                        "displayName": "onActionSelect",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "f076b421f3994d739bfebf2e71fbc9dc",
+                    "type": "event"
+                }
+            ],
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "c409c44e87f242899c8824b942658311",
+                    "originalPropertyKey": "removeAll",
+                    "propertyKey": "removeAll",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "action",
+                        "displayName": "removeAll",
+                        "srcWidget": "segList",
+                        "type": "action",
+                        "uiRepresentation": "Label-Label-Button-Button",
+                        "wType": "Segment"
+                    },
+                    "srcWgtKUID": "fac30b6b3a8242b59ed9ad4480285340",
+                    "translateAtInstance": false
+                }
+            ]
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "ca20444bb8eb4532a02d91bdd9c757e3",
+                    "paramList": [],
+                    "propertyIndex": 2,
+                    "propertyKey": "onRequestStart",
+                    "pw": {
+                        "displayName": "onRequestStart",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "f076b421f3994d739bfebf2e71fbc9dc",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "g7596bf5208d418a9bb3cbc5303887d8",
+                    "paramList": [],
+                    "propertyIndex": 3,
+                    "propertyKey": "onRequestEnd",
+                    "pw": {
+                        "displayName": "onRequestEnd",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "f076b421f3994d739bfebf2e71fbc9dc",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "i79b06af3011456482586ff7bc460ae3",
+                    "paramList": [],
+                    "propertyIndex": 4,
+                    "propertyKey": "onActionButtonClicked",
+                    "pw": {
+                        "displayName": "onActionButtonClicked",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "f076b421f3994d739bfebf2e71fbc9dc",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "General",
+                    "kuid": "c582f9b01a2041dfaa03645244cadd39",
+                    "originalPropertyKey": "featuresAndPermissions",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 1,
+                    "propertyKey": "featuresAndPermissions",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Features & Permissions",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "f076b421f3994d739bfebf2e71fbc9dc",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "",
+                    "group": "General",
+                    "kuid": "f2a29a882dee4267adb0f6ab84da585b",
+                    "originalPropertyKey": "amountFormat",
+                    "orignalPropertyType": "custom",
+                    "propertyIndex": 2,
+                    "propertyKey": "amountFormat",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Amount Format",
+                        "uiRepresentation": "Label-Textbox"
+                    },
+                    "srcWgtKUID": "f076b421f3994d739bfebf2e71fbc9dc",
+                    "type": "string",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.InfinityMB.PortfolioMangementMA",
+    "version": "1.0.0"
+}

@@ -1,0 +1,30 @@
+{
+    "AS_Button_he43818d71334e439e476105198b66bb": {
+        "id": "AS_Button_he43818d71334e439e476105198b66bb",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTopUpVirtualDollerCardAckScreen",
+            "type": "forms",
+            "platform": "",
+            "KUID": "a5eaddc968d942cab5562b827f18fc69"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "NAVIGATE_TO_FORM__i5bc82b1018e4c658046e224637517eb",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "frmUnbilledTransConvtEMIConsent",
+            "friendlyName": "frmUnbilledTransConvtEMIConsent",
+            "formKUID": "bd84f11fc6ae44f6bf64e0a6ff2fbb2f",
+            "projectName": "CardsMA",
+            "mappings": {},
+            "mappingsOrder": [],
+            "enableMappingEditor": true,
+            "package": "ManageCardsUIModule",
+            "isCustomInput": false
+        }]
+    }
+}

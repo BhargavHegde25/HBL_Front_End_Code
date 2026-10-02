@@ -1,0 +1,56 @@
+{
+    "classname": "AccountSelectionPopup",
+    "definitions": {
+        "apis": {
+            "custom": [],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "c8403325759541f8b20cec0177f00be8",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "initComponent",
+                    "pw": {
+                        "displayName": "initComponent",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "b00a92b7681c425595b4ce302de28a97",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "f2dde27aa4b54e00a252e6bd24682209",
+                    "paramList": [],
+                    "propertyIndex": 2,
+                    "propertyKey": "onRowSelections",
+                    "pw": {
+                        "displayName": "onRowSelections",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "b00a92b7681c425595b4ce302de28a97",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.infinity.mb.popup",
+    "version": "1.0.0"
+}

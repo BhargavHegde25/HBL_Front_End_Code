@@ -1,0 +1,30 @@
+{
+  "meta" : "{\"locked\":true}",
+  "subType" : "customapp",
+  "description" : "ContentManagement",
+  "version" : "1.0",
+  "intSvcs" : [ {
+    "name" : "contentAdminConsoleServices",
+    "version" : "1.0",
+    "etag" : "ef828c32-6c72-43c0-9214-12eb7c559569"
+  }, {
+    "name" : "contentProductServices",
+    "version" : "1.0",
+    "etag" : "688291d1-1c58-40ea-88b0-ef17d9bb8589"
+  }, {
+    "name" : "customerFeedbackServices",
+    "version" : "1.0",
+    "etag" : "757b222b-3b01-49ed-91d1-bf74ffbfcc62"
+  }, {
+    "name" : "SpotlightContentIntegrationService",
+    "version" : "1.0",
+    "etag" : "b9bff690-db8e-49ec-bec2-f852a5b3fa37"
+  } ],
+  "objectSvcs" : [ {
+    "name" : "ContentManagement",
+    "version" : "1.0",
+    "etag" : "43756fb6-272a-48ec-98a4-b1df2f7670fc"
+  } ],
+  "identity" : [ "DbxAPIIdentityService", "DbxUserLogin" ],
+  "identitySvcConf" : "{\"session_idle_timeout_mins\":20,\"session_max_duration_mins\":360,\"show_security_attributes\":false,\"is_integrity_enabled\":false,\"auto_extend\":true}"
+}

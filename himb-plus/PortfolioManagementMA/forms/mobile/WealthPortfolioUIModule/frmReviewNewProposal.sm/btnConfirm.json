@@ -1,0 +1,55 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "48dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "sd04d4ccc5ff44cfa5e3c02e17c2279e",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "88%"
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "disabledSkins": {
+        "focusSkin": "seac1ba6ca7c414b9c70447cef4ff8f1"
+    },
+    "displaytext": true,
+    "focusskin": null,
+    "id": "btnConfirm",
+    "ide_onClick": "AS_Button_fec477f3cf534dd496e5a99d36d21810",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "g98a19f0b89d4b8cbe38c1623a7368ac",
+    "name": "kony.ui.Button",
+    "parent": "flxConfirmButtons",
+    "pf": "frmReviewNewProposal",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "texti18n": "i18n.wealth.accept",
+    "wType": "Button"
+}

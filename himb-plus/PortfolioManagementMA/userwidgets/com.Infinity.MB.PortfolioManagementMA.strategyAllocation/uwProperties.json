@@ -1,0 +1,106 @@
+{
+    "classname": "strategyAllocation",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "f1370f07ab2345dfa5022d383e06abeb",
+                    "paramList": [],
+                    "propertyKey": "setContext",
+                    "pw": {
+                        "displayName": "setContext",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "u4c1917d82ec46dfaa1da694458db4ff",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "bc6078a6292d41278f19b60f0f17e8a2",
+                    "paramList": [],
+                    "propertyKey": "setPersonalizeStrategyBtn",
+                    "pw": {
+                        "displayName": "setPersonalizeStrategyBtn",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "u4c1917d82ec46dfaa1da694458db4ff",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"ObjectName\": \"Strategies\",\n  \"ServiceName\": \"PortfolioServicing\",\n  \"OperationName\": \"getStrategyAllocation\"\n}",
+                    "group": "General",
+                    "kuid": "eed789274a4f4e1a81db0a04218c5eb4",
+                    "originalPropertyKey": "serviceParam",
+                    "propertyIndex": 1,
+                    "propertyKey": "serviceParam",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Service Params",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "u4c1917d82ec46dfaa1da694458db4ff",
+                    "type": "json",
+                    "value": ""
+                },
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"reviewForm\": \"frmReviewStrategyAlloc\",\n  \"defaultView\": \"graph\"\n}",
+                    "group": "General",
+                    "kuid": "aa71d947ac2b4e739b4bc0773d9b0102",
+                    "originalPropertyKey": "configParam",
+                    "propertyIndex": 2,
+                    "propertyKey": "configParam",
+                    "pw": {
+                        "displayName": "Configure Params",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "u4c1917d82ec46dfaa1da694458db4ff",
+                    "type": "json",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.Infinity.MB.PortfolioManagementMA",
+    "version": "1.0.0"
+}

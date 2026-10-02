@@ -1,0 +1,77 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizTextBox2",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        1,
+        0,
+        0,
+        0
+    ],
+    "_placeholder_": "Search keywords such as Name, Bank, Account type etc...",
+    "_right_": {
+        "type": "string",
+        "value": "30px"
+    },
+    "_skin_": "s0ee5c78c88c4841b39edc94e4cf051f",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "accessibilityconfig": {},
+    "autocapitalize": "none",
+    "autocomplete": false,
+    "autocorrect": false,
+    "autofilter": false,
+    "canUpdateUI": true,
+    "containerheight": "",
+    "containerheightmode": 1,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "desktopweb": {
+        "psp": {}
+    },
+    "disabledSkins": {
+        "focusSkin": "scbea04c236043e7baa7095bdd2c8032",
+        "hoverSkin": "s0dc17f0cd7748588ff8f32c2bdd41e3"
+    },
+    "focusskin": null,
+    "id": "tbxHelpSearch",
+    "info": null,
+    "isvisible": true,
+    "keyboardtype": "A",
+    "kiosk": {
+        "psp": {
+            "toolTip": "Search"
+        }
+    },
+    "kuid": "jd2701d42fe24efd93df55f88ac31859",
+    "mode": "A",
+    "name": "kony.ui.TextBox2",
+    "parent": "flxSearchTextBox",
+    "pf": "userwidgetmodel",
+    "securetextentry": false,
+    "textinputmode": "A",
+    "tooltip": "",
+    "viewtype": "default",
+    "wType": "TextField",
+    "zindex": 1
+}

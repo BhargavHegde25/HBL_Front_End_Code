@@ -1,0 +1,8 @@
+{
+    "ModuleName": "AuthManager",
+	"ModuleType": "Manager",
+    "BusinessControllerConfig": {
+        "BusinessExtensions": ["AuthManager/BusinessControllers/BusinessController_Extension"],
+        "BusinessControllerClass": "AuthManager/BusinessControllers/BusinessController"
+    }
+}

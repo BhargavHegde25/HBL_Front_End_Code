@@ -1,0 +1,71 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "2%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s4fe0674a3c84b76a21524a90bad4282",
+    "_text_": "Convert",
+    "_top_": {
+        "type": "string",
+        "value": "0"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "16.80%"
+    },
+    "blockeduiskin": "",
+    "buiskin": "",
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "desktopweb": {},
+    "disabledSkins": {},
+    "displaytext": true,
+    "focusskin": "sfd0ce0d7f454c9f83c7e815a90a8a55",
+    "id": "btnConvert",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "bb2dd96bb7d94ea8853180dd6c95f70e",
+    "name": "kony.ui.Button",
+    "parent": "flxButtons",
+    "pf": "frmCurrencyConverter",
+    "responsiveData": {
+        "b1": {
+            "blockedUISkin": "",
+            "desktopweb": {
+                "blockedUISkin": "sa8f9fd911da4eafb98ffee4f1479277"
+            },
+            "disabledSkins": {}
+        },
+        "b2": {
+            "blockedUISkin": "",
+            "desktopweb": {
+                "blockedUISkin": "sa8f9fd911da4eafb98ffee4f1479277"
+            },
+            "disabledSkins": {}
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "texti18n": "i18n.wealth.convert",
+    "wType": "Button"
+}

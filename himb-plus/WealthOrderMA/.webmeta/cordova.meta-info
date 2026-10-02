@@ -1,0 +1,26 @@
+{
+    "HEAD": "w63f4aca035141a3ad12f1d0e1f5b864",
+    "w0d77aff1d434db890f80ec4fcb04ece": {
+        "children": [],
+        "kuid": "w0d77aff1d434db890f80ec4fcb04ece",
+        "name": "www",
+        "parent": "w63f4aca035141a3ad12f1d0e1f5b864",
+        "type": "D"
+    },
+    "w63f4aca035141a3ad12f1d0e1f5b864": {
+        "children": [
+            "w89c972f600e471f9dfa2d2ea493d1b6",
+            "w0d77aff1d434db890f80ec4fcb04ece"
+        ],
+        "kuid": "w63f4aca035141a3ad12f1d0e1f5b864",
+        "name": "cordova",
+        "type": "C"
+    },
+    "w89c972f600e471f9dfa2d2ea493d1b6": {
+        "children": [],
+        "kuid": "w89c972f600e471f9dfa2d2ea493d1b6",
+        "name": "hooks",
+        "parent": "w63f4aca035141a3ad12f1d0e1f5b864",
+        "type": "D"
+    }
+}

@@ -1,0 +1,86 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "DNDConfig": null,
+    "_children_": [],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s24c92fc23b14f5484b693ee9b8a9b35",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 0,
+    "data": {
+        "assetTypeField19": "{\"displayName\":\"Yield to Maturity:\", \"fieldName\":\"yield\",\"type\":\"Percent\"}",
+        "getFavObjectService": "WealthOrder",
+        "historyDataObjectService": "WealthOrder",
+        "historyDataOperation": "getCurrencyGraph",
+        "holdingsField10": "{\"displayName\":\"i18n.wealth.nominal\", \"fieldName\":\"quantity\",\"type\":\"String\"}",
+        "holdingsField11": "{\"displayName\":\"i18n.wealth.Weight\", \"fieldName\":\"weightPercentage\",\"type\":\"Percentage\"}",
+        "holdingsField12": "{\"displayName\":\"i18n.wealth.averageCostWithColon\", \"fieldName\":\"costPrice\",\"type\":\"Amount\",\"currency\":\"secCCy\"}",
+        "holdingsField13": "{\"displayName\":\"i18n.wealth.accruedInterest\", \"fieldName\":\"accruedInterest\",\"type\":\"Amount\",\"currency\":\"secCCy\"}",
+        "holdingsField14": "{\"displayName\":\"i18n.wealth.amountBought\", \"fieldName\":\"amountBought\",\"type\":\"Amount\",\"currency\":\"secCCy\"}",
+        "holdingsField15": "{\"displayName\":\"i18n.wealth.amountSold\", \"fieldName\":\"amountSold\",\"type\":\"Amount\",\"currency\":\"secCCy\"}",
+        "holdingsField16": "{\"displayName\":\"i18n.wealth.quote\", \"fieldName\":\"quote\",\"type\":\"Amount\",\"currency\":\"secCCy\"}",
+        "holdingsField17": "{\"displayName\":\"i18n.wealth.costQuote\", \"fieldName\":\"costQuote\",\"type\":\"Amount\",\"currency\":\"secCCy\"}",
+        "holdingsField18": "{\"displayName\":\"i18n.wealth.counterpartAmount\", \"fieldName\":\"counterpartAmount\",\"type\":\"Amount\",\"currency\":\"secCCy\"}",
+        "holdingsField7": "{\"displayName\": \"i18n.wealth.MarketValue\", \"fieldName\":\"marketValPOS\",\"type\":\"Amount\",\"currency\":\"secCCy\"}",
+        "holdingsField8": "{\"displayName\":\"i18n.wealth.balanceWithColon\", \"fieldName\":\"balance\",\"type\":\"Amount\",\"currency\":\"secCCy\"}",
+        "holdingsField9": "{\"displayName\":\"i18n.wealth.unrealizedPLColon\", \"fieldName\":\"unrealizedProfitLossSecCcy\",\"type\":\"ColourAmount\",\"currency\":\"secCCy\"}",
+        "holdingsObjectName": "PortfolioDetails",
+        "holdingsObjectService": "PortfolioServicing",
+        "instrumentCriteria": "{\"ISINCode\":\"{$.c.ISINCode}\",\"RICCode\":\"{$.c.RICCode}\",\"instrumentId\":\"{$.c.instrumentId}\",\"application\":\"{$.c.application}\"}",
+        "instrumentField21": "{ \"displayName\":\"i18n.wealth.Bid\", \"fieldName\":\"bidRate\",\"type\":\"Amount\",\"currency\":\"referenceCurrency\"}",
+        "instrumentField22": "{ \"displayName\":\"i18n.wealth.BidVolume\", \"fieldName\":\"bidVolume\",\"type\":\"String\"}",
+        "instrumentField23": "{ \"displayName\":\"i18n.wealth.Ask\", \"fieldName\":\"askRate\",\"type\":\"Amount\",\"currency\":\"referenceCurrency\"}",
+        "instrumentField24": "{ \"displayName\":\"i18n.wealth.AskVolume\", \"fieldName\":\"askVolume\",\"type\":\"String\"}",
+        "instrumentField25": "{ \"displayName\":\"i18n.wealth.Volume\", \"fieldName\":\"volume\",\"type\":\"String\"}",
+        "instrumentField26": "{ \"displayName\":\"i18n.wealth.Open\", \"fieldName\":\"openRate\",\"type\":\"Amount\",\"currency\":\"referenceCurrency\"}",
+        "instrumentField27": "{ \"displayName\":\"i18n.wealth.Close\", \"fieldName\":\"closeRate\",\"type\":\"Amount\",\"currency\":\"referenceCurrency\"}",
+        "instrumentField28": "{ \"displayName\":\"i18n.wealth.WHigh\", \"fieldName\":\"high52W\",\"type\":\"Amount\",\"currency\":\"referenceCurrency\"}",
+        "instrumentField29": "{ \"displayName\":\"i18n.wealth.WLow\", \"fieldName\":\"low52W\",\"type\":\"Amount\",\"currency\":\"referenceCurrency\"}",
+        "instrumentField30": "{ \"displayName\":\"i18n.wealth.Latest\", \"fieldName\":\"latestRate\",\"type\":\"Amount\",\"currency\":\"referenceCurrency\"}",
+        "instrumentObjectService": "WealthOrder",
+        "updateFavObjectService": "WealthOrder"
+    },
+    "id": "instrumentDetails1",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "c70dda6b79b5459489f3b6ec53d40cfc",
+    "masterType": 1,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "flxInvestment1",
+    "pf": "frmProductDetails",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "sourceUserWidget": "h29733d2cedd40888bfd0d4e871ad828",
+    "wType": "UserWidgetInstance",
+    "zindex": 1
+}

@@ -1,0 +1,93 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizListBox",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "30dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "5dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        3,
+        0,
+        0,
+        0
+    ],
+    "_placeholder_": "Please Select",
+    "_skin_": "s24c92fc23b14f5484b693ee9b8a9b35",
+    "_text_": {
+        "type": "number",
+        "value": ""
+    },
+    "_width_": {
+        "type": "string",
+        "value": "150dp"
+    },
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 4,
+    "dropdownimage": "listboxarw.png",
+    "focusskin": "s2f0bd70d0a14e2fb6ead8c9f9de32d5",
+    "groupcells": false,
+    "id": "lstbxPickListHeader",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "i751948ca03b48a2a3bec7faebd202c0",
+    "masterdata": [
+        [
+            "10",
+            "10 Per Page"
+        ],
+        [
+            "20",
+            "20 Per Page"
+        ],
+        [
+            "50",
+            "50 Per Page"
+        ],
+        [
+            "100",
+            "100 Per Page"
+        ]
+    ],
+    "name": "kony.ui.ListBox",
+    "parent": "flxPickListHeader",
+    "pf": "userwidgetmodel",
+    "responsiveData": {
+        "b1": {
+            "disabledSkins": {}
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "selectedkey": "20",
+    "selectedkeys": null,
+    "selectedkeyvalue": [
+        "20",
+        "20 Per Page"
+    ],
+    "selectedkeyvalues": null,
+    "size": 18,
+    "viewconfig": {
+        "toggleViewConfig": {
+            "viewStyle": 0
+        }
+    },
+    "viewtype": 0,
+    "wType": "ListBox",
+    "zindex": 1
+}

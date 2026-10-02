@@ -1,0 +1,324 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "DNDConfig": null,
+    "_children_": [],
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s9d634c8d71f49d283c6dbd243c743bb",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "areflexpropsreferenced": false,
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "clipbounds": false,
+    "containerweight": 0,
+    "dataDiffs": {
+        "btnCallBranch": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "eb989e99b9de4433baf6d4e30f316707",
+                "srcKUID": "h733ceaecf324c4d82e6868355978124",
+                "wType": "Button"
+            }
+        },
+        "contactUsHBL": {
+            "__events__": {},
+            "__info__": {
+                "isRoot": true,
+                "kuid": "a560a07de6b2485c8e32ddd0d953df03",
+                "srcKUID": "aca20433b0d6407097117e3f5753dfaf",
+                "wType": "FlexContainer"
+            },
+            "isVisible": false
+        },
+        "flxContactCustomerService": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "fa7b94dadf7442deaf79ca8b816636ae",
+                "srcKUID": "d068ef32bc424880aeea868177f026c1",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxContactDetails": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "ee79bec411d448d6a763270d213e4ce0",
+                "srcKUID": "d2101e32b3a14379a410d092ce687ccb",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxContactSeperator": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "c8f55436d516487882cc0f8f993f7d07",
+                "srcKUID": "a01e0cac9dfb4a06b8dc73fed511ab21",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxCorporateOfficeAdd": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "f8734e0b21444a8d8cd2be494d20e7e6",
+                "srcKUID": "h85397a2474c4562afe8ae749a160b23",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxCorporateOfficeAddContainer": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "d720b845dc1a454cac621b87d58b7885",
+                "srcKUID": "d9c43412281946f5a64dc7933bb9dd6c",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxCusSupportEmailCallBranch": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "bb235203c88d44b5a8d460e6c9862d31",
+                "srcKUID": "hc2ad0202f0d4df396fbce7b964a2b09",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxCusSupportEmailCallBranchContainer": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "be65b84d7aba48c59941ee171205a52e",
+                "srcKUID": "e911257768734ffab345626dd60c967b",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxCustomerServiceSegment": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "df8a6d40e698401aa5667090d2d43cf4",
+                "srcKUID": "baec85e64c334c4c8be845237dab3be4",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxCustomerServices": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "b35fad6a99e54ce7ac302b252dad1fd9",
+                "srcKUID": "cb6898e3870649249e93bc2794d9daab",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxCustomerServicesContainer": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "f5a3599576034d5ca9d1103dfffeefb9",
+                "srcKUID": "fcb207b0fa89404f94c7d324600418fa",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxDetailsAndImage": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "ef4d3559a5fb458aa1c47f4b678ff497",
+                "srcKUID": "bbe82847ca55447981477c62ce97f04e",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxHeader": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "cce79c3c3ecd441b8c678f3c9b9adbef",
+                "srcKUID": "b8326bd76b5748fdac034690dca34919",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxImage": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "d85aeee7125f4517a13a0db81af72b48",
+                "srcKUID": "f9382c6dadee43919f3489b1e52da84f",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxScrollDetails": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "a52a7409a61247bda08c57945b748298",
+                "srcKUID": "d281f0d8e3584a1d980be8cd604ae18d",
+                "wType": "FlexScrollContainer"
+            }
+        },
+        "flxSeperator": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "d177e7b65f31463cbee9a92d11608e3d",
+                "srcKUID": "jc5be96ad22f4461be8b30b0030d5df3",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxSeperatorAddress": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "f3f52561967f42248f7fdb53acb9de99",
+                "srcKUID": "b6afb76c9b9d4b3e93ad4ccc9ccd73c3",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxSeperatorWrapper": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "c0183a76661c4aeda78dbe1a47b49778",
+                "srcKUID": "ffd0dbb5d34a405298fb08b29db4d081",
+                "wType": "FlexContainer"
+            }
+        },
+        "imgBank": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "f831aa33a0f24bafb731718af9ae8995",
+                "srcKUID": "a9eb35265b924f2cbcf0c78dd79f663f",
+                "wType": "Image"
+            }
+        },
+        "lblContactCustomerService": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "a8c61d14626b4050be139901988efd93",
+                "srcKUID": "gd3baec7b1d34270ac26b5a13be60991",
+                "wType": "Label"
+            }
+        },
+        "lblCorporateOffice": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "acafa224d0144a748d4f309c091646fe",
+                "srcKUID": "je9dde5f630f471694ca4f659338039f",
+                "wType": "Label"
+            }
+        },
+        "lblCustomerSupport": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "bb2bc1ec6d45429897fbc17d36d80dbd",
+                "srcKUID": "cf0c8aaf6bdb42f9b72d8224c9cb1fc7",
+                "wType": "Label"
+            }
+        },
+        "lblEmail": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "aab8cd6b2f1a47a3aa152fb5e25bafcd",
+                "srcKUID": "d58a8bfd04524d148d8022a4f21de0ef",
+                "wType": "Label"
+            }
+        },
+        "lblHeading": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "f1968ee883a44fa7904417302ffc0e61",
+                "srcKUID": "bd879b70ad4243039ff9265df67bbbec",
+                "wType": "Label"
+            }
+        },
+        "lblPhone1": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "h67562cc1d0c4217b9349eb3721a19ee",
+                "srcKUID": "fc71bd71344243b68d63fd587065f191",
+                "wType": "Label"
+            }
+        },
+        "lblTollFree": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "c4d9092b9a294ff683b58702a4b66a5e",
+                "srcKUID": "c3a004c63ef940b7bbe0376623eb2951",
+                "wType": "Label"
+            }
+        },
+        "rtxContactCustomerServiceMsg": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "e85f4b15e10a4f16a879d9725ae5784a",
+                "srcKUID": "dda0836ca89b456b9f3ed8c92914923c",
+                "wType": "RichText"
+            }
+        },
+        "rtxCorporateOfficeAddress": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "ha7016985e8b47a99ae892118e26fb16",
+                "srcKUID": "dea5aae4c1d74b7382989b604b54dce9",
+                "wType": "RichText"
+            }
+        },
+        "rtxCustomerSupportNumbers": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "h627c7631cfe4a1b8967722c0cdcb300",
+                "srcKUID": "a7c6d0c080df4254abe931367e322810",
+                "wType": "RichText"
+            }
+        },
+        "rtxEmailId": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "a69d1c7a526140448f720cb4b2da40d4",
+                "srcKUID": "bd3a150972f34240b9f464a3bccc4dc7",
+                "wType": "RichText"
+            }
+        },
+        "rtxPhone1": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "d6e812cb359b4376982344d021d8bf92",
+                "srcKUID": "j6c58503323f4b229702140d566899f0",
+                "wType": "RichText"
+            }
+        },
+        "segCustomerService": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "c07f747bc45e45e59eb91b8d798f8ff5",
+                "srcKUID": "e40a3c480bbf4bd484342099e06f8cb6",
+                "wType": "Segment"
+            }
+        }
+    },
+    "enablescrolling": true,
+    "id": "contactUsHBL",
+    "info": null,
+    "isdatareferenced": false,
+    "isvisible": false,
+    "kuid": "a560a07de6b2485c8e32ddd0d953df03",
+    "layouttype": 2,
+    "masterType": 0,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "flxScrollMain",
+    "pf": "frmContactUs",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "sourceUserWidget": "aca20433b0d6407097117e3f5753dfaf",
+    "wType": "UserWidgetInstance"
+}

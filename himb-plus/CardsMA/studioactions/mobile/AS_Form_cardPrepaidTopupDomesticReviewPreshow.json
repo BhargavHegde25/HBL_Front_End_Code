@@ -1,0 +1,24 @@
+{
+    "AS_Form_de6824740045451da8dc62d9d4cc10a4": {
+        "id": "AS_Form_de6824740045451da8dc62d9d4cc10a4",
+        "type": "ACTION_SEQUENCE",
+        "name": "AS_Form_cardPrepaidTopupDomesticReviewPreshow",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "CopyfrmTopUpVirtualDollarCardReviewScreen",
+            "type": "forms",
+            "platform": null,
+            "KUID": "ad6bf45b4ea04ed29c1b26ab009fb643"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_f9ac341af14847b3ad3195623f659f32",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.preShow();",
+            "parentId": null
+        }]
+    }
+}

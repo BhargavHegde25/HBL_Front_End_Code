@@ -1,0 +1,203 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizSegment2",
+    "DNDConfig": null,
+    "_data_": [
+        {
+            "imgCheck": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "radiobtn.png"
+            },
+            "lblTypeName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "PDF"
+            }
+        },
+        {
+            "imgCheck": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "radiobtn.png"
+            },
+            "lblTypeName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "PDF"
+            }
+        },
+        {
+            "imgCheck": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "radiobtn.png"
+            },
+            "lblTypeName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "PDF"
+            }
+        },
+        {
+            "imgCheck": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "radiobtn.png"
+            },
+            "lblTypeName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "PDF"
+            }
+        },
+        {
+            "imgCheck": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "radiobtn.png"
+            },
+            "lblTypeName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "PDF"
+            }
+        },
+        {
+            "imgCheck": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "radiobtn.png"
+            },
+            "lblTypeName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "PDF"
+            }
+        },
+        {
+            "imgCheck": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "radiobtn.png"
+            },
+            "lblTypeName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "PDF"
+            }
+        },
+        {
+            "imgCheck": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "radiobtn.png"
+            },
+            "lblTypeName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "PDF"
+            }
+        },
+        {
+            "imgCheck": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "radiobtn.png"
+            },
+            "lblTypeName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "PDF"
+            }
+        },
+        {
+            "imgCheck": {
+                "@class": "com.viz.ide.model.segment.ImageSegmentData",
+                "src": "radiobtn.png"
+            },
+            "lblTypeName": {
+                "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                "text": "PDF"
+            }
+        }
+    ],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_indicator_": "none",
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 2,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "autogrowmode": 1,
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "counter": "09",
+    "disabledSkins": {},
+    "focusedindex": null,
+    "focuseditem": null,
+    "groupcells": false,
+    "hasSections": false,
+    "id": "segReportType",
+    "info": null,
+    "invokedProperty": "unselectedStateImage",
+    "ipad": {
+        "psp": {
+            "indicator": "rowselect"
+        }
+    },
+    "iphone": {
+        "psp": {
+            "indicator": "none"
+        }
+    },
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "abb0ec39acc14d2fa2876c7e08747eed",
+    "masterdata": {},
+    "name": "kony.ui.SegmentedUI2",
+    "needpageindicator": true,
+    "pageoffdotimage": "pageoffdot.png",
+    "pageondotimage": "pageondot.png",
+    "paginationconfig": {
+        "position": "bottom"
+    },
+    "parent": "flxReportOptions",
+    "pf": "frmReportType",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainselection": false,
+    "rowTemplateId": "baf1ea903c614dff85fad9816fd17e6d",
+    "rowcounter": 9,
+    "rowskin": "s18472307db04580a2a9cb6f4681ebec",
+    "rowtemplate": "flxReportType",
+    "screenlevelwidget": false,
+    "seccounter": 0,
+    "sectionheaderskin": "s65e8b0a8be54624ac979cda71a22cac",
+    "selectedRows": null,
+    "selectedState": false,
+    "selectedindex": null,
+    "selectedindices": null,
+    "selecteditems": null,
+    "selectedsectionindex": 0,
+    "selectionbehavior": "singleselect",
+    "selectionbehaviorconfig": null,
+    "separatorrequired": false,
+    "showscrollbars": false,
+    "viewtype": "tableview",
+    "vizProps": {},
+    "wType": "Segment",
+    "widgetalignment": 5,
+    "widgetdatamap": {
+        "flxRadio": "flxRadio",
+        "flxReportType": "flxReportType",
+        "flxSeparator": "flxSeparator",
+        "imgCheck": "imgCheck",
+        "lblTypeName": "lblTypeName"
+    },
+    "zindex": 1
+}

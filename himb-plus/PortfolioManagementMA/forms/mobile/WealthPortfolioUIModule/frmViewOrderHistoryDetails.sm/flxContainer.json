@@ -1,0 +1,102 @@
+{
+    "DNDConfig": null,
+    "_bottom_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "sdb4072025b54e429c4bab58d3010b86",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "allboxes": [],
+    "allowhorizontalbounce": false,
+    "allowverticalbounce": true,
+    "bounces": true,
+    "canUpdateUI": true,
+    "children": [
+        "flxInstrument",
+        "flxSeparator0",
+        "flxOrderRefId",
+        "flxSeparator1",
+        "flxInstrumentSep",
+        "flxSeparator2",
+        "flxType",
+        "flxSeparator3",
+        "flxQuantity",
+        "flxSeparator4",
+        "flxPrice",
+        "flxSeparator5",
+        "flxLimitPrice",
+        "flxSeparator6",
+        "flxStopPrice",
+        "flxSeparator7",
+        "flxValueDate",
+        "flxSeparator8",
+        "flxAmount",
+        "flxSeparator9",
+        "flxFees",
+        "flxSeparator10",
+        "flxInstrAmount",
+        "flxSeparator11",
+        "flxExchangeRate",
+        "flxSeparator12",
+        "flxTotal",
+        "flxSeparator13",
+        "flxStatus",
+        "flxSeparator14"
+    ],
+    "clipbounds": true,
+    "containerweight": 100,
+    "decelerat": false,
+    "dragg": false,
+    "enablescrolling": true,
+    "horizontalscrollindicator": true,
+    "id": "flxContainer",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "c7775c30941b4d50b83528b507122cbf",
+    "layouttype": 4,
+    "name": "kony.ui.FlexScrollContainer",
+    "pagingenabled": false,
+    "parent": "flxMainContainer",
+    "pf": "frmViewOrderHistoryDetails",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "scrolldirection": 2,
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "track": false,
+    "verticalscrollindicator": true,
+    "wType": "FlexScrollContainer",
+    "widgetalignment": 1,
+    "zindex": 8
+}

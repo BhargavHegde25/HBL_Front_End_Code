@@ -1,0 +1,206 @@
+{
+    "services": [
+        {
+            "serviceId": "534fafd1-fb32-4f34-9133-43d7eeec2461",
+            "serviceName": "GoogleAuthentication",
+            "serviceETag": "cd5b3c95-afa5-4043-80c4-e0d379b51ee6",
+            "objects": [
+                {
+                    "objectId": "12913",
+                    "objectName": "GoogleAuth",
+                    "objectETag": "e88b05b7-4ee6-4b60-ab12-3e7263edcdcd"
+                }
+            ]
+        },
+        {
+            "serviceId": "717b2ece-ee4d-4850-b282-e5cfeea1ddde",
+            "serviceName": "HIDRMSService",
+            "serviceETag": "1c16d3f0-e090-49db-9964-132b78d360e0",
+            "objects": [
+                {
+                    "objectId": "10766",
+                    "objectName": "RMSActionComplete",
+                    "objectETag": "4b1a1f05-254d-4946-8f74-996b9cd44da0"
+                },
+                {
+                    "objectId": "10767",
+                    "objectName": "RMSActionCreate",
+                    "objectETag": "824f6be0-d3b9-4f26-9512-1c9cc2796f62"
+                },
+                {
+                    "objectId": "10768",
+                    "objectName": "RMSActionSign",
+                    "objectETag": "461bf1b6-63a5-48eb-b7cf-0f28e9005f52"
+                },
+                {
+                    "objectId": "10769",
+                    "objectName": "RMSSessionService",
+                    "objectETag": "19b31451-1694-4d35-a584-06e1c6a85b91"
+                }
+            ]
+        },
+        {
+            "serviceId": "ade16807-97d0-43b9-89f4-1b3fe187ab69",
+            "serviceName": "Login",
+            "serviceETag": "fb96a467-7bdb-4aef-b930-6d09fe750019",
+            "objects": [
+                {
+                    "objectId": "8071",
+                    "objectName": "DeviceRegistration",
+                    "objectETag": "28928a5b-9552-48af-b50e-6361bc25b1e7"
+                },
+                {
+                    "objectId": "8072",
+                    "objectName": "Security",
+                    "objectETag": "00f2b5d8-aa7e-4d79-aa13-202618c28cc1"
+                },
+                {
+                    "objectId": "8073",
+                    "objectName": "TrackDeviceRegistration",
+                    "objectETag": "0309fe7f-5a12-47ce-b254-31f376d41371"
+                },
+                {
+                    "objectId": "8074",
+                    "objectName": "Users",
+                    "objectETag": "c6ae7f3a-3eec-4fac-a372-d04c536311f7"
+                },
+                {
+                    "objectId": "8075",
+                    "objectName": "Users_2",
+                    "objectETag": "f51c7d85-6ff5-459b-a982-56dac96b1524"
+                }
+            ]
+        },
+        {
+            "serviceId": "78db04e6-01ad-4d8f-ad15-6a13fb1e4c28",
+            "serviceName": "SCAActivationObjects",
+            "serviceETag": "d14c6e33-b1e5-413a-828f-68d1f09b013d",
+            "objects": [
+                {
+                    "objectId": "9442",
+                    "objectName": "ActivationCodeAuthenticator",
+                    "objectETag": "655c928e-468f-4729-bd43-7137fe33d628"
+                },
+                {
+                    "objectId": "9443",
+                    "objectName": "Device",
+                    "objectETag": "2718088c-0486-4212-a5be-72ee9a93cb34"
+                },
+                {
+                    "objectId": "9444",
+                    "objectName": "PasswordPolicy",
+                    "objectETag": "dac7d3fe-2bfd-482b-abb8-54984259bf76"
+                },
+                {
+                    "objectId": "9445",
+                    "objectName": "SCADevice",
+                    "objectETag": "b89ba21e-e781-4044-8571-566a4a85154d"
+                }
+            ]
+        },
+        {
+            "serviceId": "f5675f24-2960-46aa-bc00-f417bea9b29f",
+            "serviceName": "SCAObjects",
+            "serviceETag": "491fddc6-4f27-4f24-b117-d51038dd914c",
+            "objects": [
+                {
+                    "objectId": "9414",
+                    "objectName": "AuthStatus",
+                    "objectETag": "3d2786ec-56dd-433f-8cbc-0c184be766f9"
+                },
+                {
+                    "objectId": "9415",
+                    "objectName": "SCASearchUser",
+                    "objectETag": "66c6e093-c0f3-481b-9467-c22e26bb6e12"
+                },
+                {
+                    "objectId": "9416",
+                    "objectName": "SCAUser",
+                    "objectETag": "52e42e8e-e686-4c9b-b463-4d3370387ad9"
+                },
+                {
+                    "objectId": "9417",
+                    "objectName": "UserAuthenticator",
+                    "objectETag": "c28437cc-b87b-464c-b02b-efe9b8fb0cd6"
+                }
+            ]
+        },
+        {
+            "serviceId": "5a9ad3ba-d6fc-4014-a791-6bdf5be222c3",
+            "serviceName": "SCATransactionObjects",
+            "serviceETag": "bdec7a67-64c6-42c4-8296-038db84ba800",
+            "objects": [
+                {
+                    "objectId": "10649",
+                    "objectName": "CIBAPushOperation",
+                    "objectETag": "8693cd4d-c320-4457-be83-37bd44f8b9d8"
+                },
+                {
+                    "objectId": "10650",
+                    "objectName": "TransactionSigning",
+                    "objectETag": "de84b1e1-6712-463d-bae4-2a3166af6eb0"
+                }
+            ]
+        },
+        {
+            "serviceId": "1a9e02b5-08c6-468d-b97c-8644950f00e0",
+            "serviceName": "Utility",
+            "serviceETag": "db6a3378-16fb-4e9e-b1f3-642477aff95a",
+            "objects": [
+                {
+                    "objectId": "7932",
+                    "objectName": "Application",
+                    "objectETag": "a3fb9083-ae6d-4790-ac3c-0ce0faf8b275"
+                },
+                {
+                    "objectId": "7933",
+                    "objectName": "Browser",
+                    "objectETag": "eea8add4-cfa8-468a-832b-a9bf5b4bee6b"
+                },
+                {
+                    "objectId": "7934",
+                    "objectName": "Configurations",
+                    "objectETag": "1236a4f5-f7d5-4c5b-b369-993e7a1fd8e8"
+                },
+                {
+                    "objectId": "7935",
+                    "objectName": "Country",
+                    "objectETag": "50b32a41-6e01-4cf6-a652-42a619dc7400"
+                },
+                {
+                    "objectId": "7936",
+                    "objectName": "Currency",
+                    "objectETag": "7981a1b0-a54b-4369-95e0-33e95f320442"
+                },
+                {
+                    "objectId": "7937",
+                    "objectName": "Email",
+                    "objectETag": "8264bc8a-c798-4194-9a8f-6dfc94db8d43"
+                },
+                {
+                    "objectId": "7938",
+                    "objectName": "LegalEntity",
+                    "objectETag": "6ba11a69-62f1-4b51-88ca-b1a27e2cb820"
+                },
+                {
+                    "objectId": "7939",
+                    "objectName": "OutageMessage",
+                    "objectETag": "798b0123-b078-4ece-878b-f587c818671a"
+                },
+                {
+                    "objectId": "7940",
+                    "objectName": "SMS",
+                    "objectETag": "fb7cd00d-4a48-4fde-adef-71c743e6b0ba"
+                },
+                {
+                    "objectId": "7941",
+                    "objectName": "States",
+                    "objectETag": "c8396ded-4acb-4688-9b75-9534f5d0fe44"
+                }
+            ]
+        }
+    ],
+    "appInfo": {
+        "serviceDocEtag": "0000018EE19218C0"
+    }
+}

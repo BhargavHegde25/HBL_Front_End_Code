@@ -1,0 +1,62 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_right_": {
+        "type": "string",
+        "value": "20dp"
+    },
+    "_skin_": "sbb254ec64344072940fb411d755530a",
+    "_text_": "",
+    "_width_": {
+        "type": "string",
+        "value": "150dp"
+    },
+    "accessibilityconfig": {
+        "a11yARIA": {}
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "desktopweb": {
+        "psp": {
+            "hoverSkin": "s81054b5e2b74f17a5261991df565427"
+        }
+    },
+    "displaytext": true,
+    "focusskin": "sf91035b6e01489a9ac12a484e39cb1f",
+    "id": "btnVerifyPin",
+    "info": null,
+    "isvisible": true,
+    "kuid": "e9bc32bbd904429fb0dcb2276add33d2",
+    "name": "kony.ui.Button",
+    "parent": "flxButtons1",
+    "pf": "userwidgetmodel",
+    "responsiveData": {
+        "b1": {},
+        "b3": {}
+    },
+    "texti18n": "kony.mb.CM.continue",
+    "tooltip": "Verify",
+    "wType": "Button",
+    "zindex": 2
+}

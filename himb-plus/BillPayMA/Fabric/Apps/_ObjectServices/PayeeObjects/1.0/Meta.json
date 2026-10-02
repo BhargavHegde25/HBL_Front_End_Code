@@ -1,0 +1,15 @@
+{
+  "jars" : [ {
+    "name" : "dbp-ObjectServices.jar",
+    "type" : "jar"
+  } ],
+  "config" : {
+    "metadataSecurity" : "authorized_app_user",
+    "offline" : false,
+    "delete_strategy" : "soft-delete",
+    "uploadCache" : false,
+    "conflict_policy" : "none"
+  },
+  "empty" : true,
+  "mapType" : "java.util.HashMap"
+}

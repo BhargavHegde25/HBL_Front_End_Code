@@ -1,0 +1,23 @@
+{
+    "AS_Form_db17ed4a1911479c9e26f03c84f53088": {
+        "id": "AS_Form_db17ed4a1911479c9e26f03c84f53088",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmSelectSendOnDate",
+            "type": "forms",
+            "platform": "",
+            "KUID": "e3cdf110d52c4cbda11b0f3defe7dd90"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ac25420af618466a90a6f9cd76853b80",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.preShow();",
+            "parentId": null
+        }]
+    }
+}

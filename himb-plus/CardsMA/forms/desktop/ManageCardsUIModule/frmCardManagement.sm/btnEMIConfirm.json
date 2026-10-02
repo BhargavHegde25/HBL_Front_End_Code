@@ -1,0 +1,90 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "80%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_right_": {
+        "type": "string",
+        "value": ""
+    },
+    "_skin_": "s9042082e5f84feaa3bdfc6ca0a4943a",
+    "_text_": "Button",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "200dp"
+    },
+    "accessibilityconfig": {
+        "a11yARIA": {},
+        "a11yLabel": "Confirm"
+    },
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": ""
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "desktopweb": {
+        "psp": {
+            "hoverSkin": "s81054b5e2b74f17a5261991df565427"
+        }
+    },
+    "disabledSkins": {
+        "focusSkin": "sf44d06ca8224832827ea7fdff757013"
+    },
+    "displaytext": true,
+    "id": "btnEMIConfirm",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "gbc1e3b25916478a9e84cf3ea1ac09d8",
+    "name": "kony.ui.Button",
+    "parent": "flxEMIConfirmButons",
+    "pf": "frmCardManagement",
+    "responsiveData": {
+        "b2": {
+            "left": {
+                "type": "string",
+                "value": "78%"
+            }
+        },
+        "b3": {
+            "left": {
+                "type": "string",
+                "value": "68%"
+            },
+            "width": {
+                "type": "string",
+                "value": "180dp"
+            }
+        },
+        "b4": {}
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "texti18n": "i18n.transfers.Confirm",
+    "wType": "Button",
+    "zindex": 5
+}

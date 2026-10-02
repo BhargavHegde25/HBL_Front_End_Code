@@ -1,0 +1,107 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "3px"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_right_": {
+        "type": "string",
+        "value": "3px"
+    },
+    "_skin_": "sc4f4d62bde944aa823144bdf1cabdec",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "0"
+    },
+    "_width_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "accessibilityconfig": {},
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": ""
+    },
+    "centery": {
+        "type": "string",
+        "value": ""
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "desktopweb": {
+        "psp": {
+            "hoverSkin": "s0d853c8b5284c03a08be1232819c24b"
+        }
+    },
+    "displaytext": true,
+    "focusskin": "s264339940904f6b9d3e47b6fdc9e327",
+    "hoverskin": "",
+    "id": "btnContactUs",
+    "info": null,
+    "isvisible": true,
+    "kuid": "b9811c0e2ece4a9a9b1382ad554c460e",
+    "name": "kony.ui.Button",
+    "paddinginpixel": false,
+    "parent": "flxFooterContainer",
+    "pf": "frmPreTermsandCondition",
+    "responsiveData": {
+        "b1": {
+            "contentAlignment": 2,
+            "desktopweb": {
+                "psp": {
+                    "hoverSkin": "sc4f4d62bde944aa823144bdf1cabdec"
+                }
+            },
+            "focusSkin": "sc4f4d62bde944aa823144bdf1cabdec",
+            "padding": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "skin": "sc4f4d62bde944aa823144bdf1cabdec"
+        },
+        "b2": {
+            "padding": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "skin": "sc4f4d62bde944aa823144bdf1cabdec"
+        },
+        "b3": {
+            "height": {
+                "type": "string",
+                "value": "20dp"
+            },
+            "skin": "sc4f4d62bde944aa823144bdf1cabdec"
+        },
+        "b4": {
+            "skin": "sc4f4d62bde944aa823144bdf1cabdec"
+        }
+    },
+    "texti18n": "i18n.footer.contactUs",
+    "tooltip": "",
+    "wType": "Button",
+    "zindex": 1
+}

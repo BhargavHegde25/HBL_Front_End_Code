@@ -1,0 +1,132 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": ""
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        10,
+        0
+    ],
+    "_right_": {
+        "type": "number",
+        "value": "0"
+    },
+    "_skin_": "sa98f2bef628482fb3e48715d668e3ec",
+    "_text_": "ENROLL",
+    "_top_": {
+        "type": "string",
+        "value": "5dp"
+    },
+    "_width_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "accessibilityconfig": {
+        "a11yARIA": {}
+    },
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": ""
+    },
+    "containerweight": 100,
+    "contentalignment": 6,
+    "desktopweb": {
+        "psp": {}
+    },
+    "disabledSkins": {
+        "focusSkin": "s264339940904f6b9d3e47b6fdc9e327",
+        "hoverSkin": "s0d853c8b5284c03a08be1232819c24b"
+    },
+    "displaytext": true,
+    "focusskin": null,
+    "id": "btnResetThirdParty",
+    "info": null,
+    "isvisible": true,
+    "kuid": "cb38b51967bd4d409fe8406190190dbe",
+    "maxwidth": {
+        "type": "string",
+        "value": "45%"
+    },
+    "minheight": {
+        "type": "number",
+        "value": ""
+    },
+    "minwidth": {
+        "type": "number",
+        "value": ""
+    },
+    "name": "kony.ui.Button",
+    "paddinginpixel": true,
+    "parent": "flxResetThirdParty",
+    "pf": "frmLogin",
+    "responsiveData": {
+        "b1": {
+            "i18n_text": null,
+            "maxWidth": {
+                "type": "string",
+                "value": ""
+            },
+            "right": {
+                "type": "string",
+                "value": ""
+            },
+            "skin": "sdb726a77d3d4ded91a34b9d53200278",
+            "text": "Reset Third Party Auth?",
+            "width": {
+                "type": "ref",
+                "value": "preferred"
+            }
+        },
+        "b2": {
+            "minHeight": {
+                "type": "string",
+                "value": ""
+            },
+            "minWidth": {
+                "type": "string",
+                "value": ""
+            },
+            "right": {
+                "type": "string",
+                "value": ""
+            },
+            "text": "Reset Third Party Auth?",
+            "width": {
+                "type": "string",
+                "value": "100%"
+            }
+        },
+        "b3": {
+            "text": "Reset Third Party Auth?",
+            "width": {
+                "type": "string",
+                "value": "100%"
+            }
+        },
+        "b4": {
+            "text": "Reset Third Party Auth?",
+            "width": {
+                "type": "string",
+                "value": "100%"
+            }
+        }
+    },
+    "tooltip": "",
+    "wType": "Button",
+    "zindex": 7
+}

@@ -1,0 +1,69 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizTextBox2",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "40dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "45dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_placeholder_": "Search Stocks, Bonds, ETF etc...",
+    "_skin_": "s053121b48b6465cba0331cda4ce88d0",
+    "_text_": "",
+    "_width_": {
+        "type": "string",
+        "value": "90%"
+    },
+    "autocapitalize": "none",
+    "autocomplete": false,
+    "autocorrect": false,
+    "autofilter": false,
+    "canUpdateUI": true,
+    "centery": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerheight": "",
+    "containerheightmode": 1,
+    "containerweight": 100,
+    "contentalignment": 4,
+    "desktopweb": {
+        "placeholderSkin": "sb15c159fa224e949e3697a52ad431e5"
+    },
+    "disabledSkins": {},
+    "focusskin": "s4eee533107848e395d481e067e3e97d",
+    "id": "txtSearch",
+    "info": null,
+    "isvisible": true,
+    "keyboardtype": "A",
+    "kuid": "e4d31a8ee9034a43b7b94e46bf07ce8e",
+    "mode": "A",
+    "name": "kony.ui.TextBox2",
+    "paddingLocked": true,
+    "parent": "flxSearch",
+    "pf": "userwidgetmodel",
+    "placeholderskin": "sb15c159fa224e949e3697a52ad431e5",
+    "responsiveData": {
+        "b2": {},
+        "b3": {}
+    },
+    "securetextentry": false,
+    "textinputmode": "A",
+    "viewtype": "default",
+    "wType": "TextField",
+    "zindex": 1
+}

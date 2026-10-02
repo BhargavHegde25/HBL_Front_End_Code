@@ -1,0 +1,375 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizScrollFlexForm",
+    "DNDConfig": null,
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_pxMenuIndex": [
+        2,
+        1,
+        0,
+        8
+    ],
+    "_skin_": "s2f58a140c5647b8a643edf5a6309600",
+    "_title_": null,
+    "addWidgetsdone": false,
+    "allboxes": [],
+    "android": {
+        "needAppMenu": false,
+        "psp": {
+            "windowSoftInputMode": 1
+        }
+    },
+    "androidwearos": {
+        "needAppMenu": false,
+        "psp": {
+            "windowSoftInputMode": 1
+        }
+    },
+    "breakpointInfo": {
+        "b1": {
+            "width": 1366
+        },
+        "b2": {
+            "width": 1024
+        },
+        "b3": {
+            "width": 640
+        },
+        "b4": {
+            "width": 1380
+        }
+    },
+    "btnChngStrategy": {
+        "@class": "com.kony.gen.viz.model.component.KVizButton",
+        "DNDConfig": null,
+        "__parentReadjusting__": false,
+        "_height_": {
+            "type": "string",
+            "value": "50dp"
+        },
+        "_left_": {
+            "type": "number",
+            "value": ""
+        },
+        "_margin_": [
+            6,
+            6,
+            6,
+            6
+        ],
+        "_padding_": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "_right_": {
+            "type": "string",
+            "value": "0"
+        },
+        "_skin_": "sea1525e3fa24829a889b1fd650f3f24",
+        "_text_": "",
+        "_top_": {
+            "type": "string",
+            "value": "30dp"
+        },
+        "_width_": {
+            "type": "string",
+            "value": "300dp"
+        },
+        "canUpdateUI": true,
+        "centerx": {
+            "type": "number",
+            "value": ""
+        },
+        "containerweight": 100,
+        "contentalignment": 5,
+        "disabledSkins": {
+            "focusSkin": "seac1ba6ca7c414b9c70447cef4ff8f1"
+        },
+        "displaytext": true,
+        "genericProperties": {
+            "centerX": {
+                "type": "number",
+                "value": ""
+            },
+            "height": {
+                "type": "string",
+                "value": "50dp"
+            },
+            "left": {
+                "type": "number",
+                "value": ""
+            },
+            "text": "",
+            "width": {
+                "type": "string",
+                "value": "300dp"
+            }
+        },
+        "id": "btnChngStrategy",
+        "info": null,
+        "iscustomlayout": false,
+        "isvisible": true,
+        "kuid": "e77f059edf044228affe9d9fa13c5fff",
+        "name": "kony.ui.Button",
+        "parent": "flxButton",
+        "pf": "frmMyStrategyAcknowledgement",
+        "responsiveData": {
+            "b1": {
+                "height": {
+                    "type": "string",
+                    "value": "40dp"
+                },
+                "i18n_text": null,
+                "text": "Review Startegy",
+                "width": {
+                    "type": "string",
+                    "value": "250dp"
+                }
+            },
+            "b2": {
+                "centerX": {
+                    "type": "string",
+                    "value": ""
+                },
+                "left": {
+                    "type": "string",
+                    "value": "20dp"
+                },
+                "text": "Change Strategy",
+                "width": {
+                    "type": "string",
+                    "value": "26%"
+                }
+            }
+        },
+        "retaincontentalignment": false,
+        "retainflexpositionproperties": false,
+        "snapshot": {
+            "md5": "Z3JfSrShYcb4znSfl78qHPMRSbw="
+        },
+        "wType": "Button"
+    },
+    "btnReviewStrategy": {
+        "@class": "com.kony.gen.viz.model.component.KVizButton",
+        "DNDConfig": null,
+        "__parentReadjusting__": false,
+        "_height_": {
+            "type": "string",
+            "value": "50dp"
+        },
+        "_left_": {
+            "type": "number",
+            "value": ""
+        },
+        "_margin_": [
+            6,
+            6,
+            6,
+            6
+        ],
+        "_padding_": [
+            0,
+            0,
+            0,
+            0
+        ],
+        "_right_": {
+            "type": "string",
+            "value": "0"
+        },
+        "_skin_": "sea1525e3fa24829a889b1fd650f3f24",
+        "_text_": "",
+        "_top_": {
+            "type": "string",
+            "value": "30dp"
+        },
+        "_width_": {
+            "type": "string",
+            "value": "300dp"
+        },
+        "canUpdateUI": true,
+        "centerx": {
+            "type": "number",
+            "value": ""
+        },
+        "containerweight": 100,
+        "contentalignment": 5,
+        "disabledSkins": {
+            "focusSkin": "seac1ba6ca7c414b9c70447cef4ff8f1"
+        },
+        "displaytext": true,
+        "genericProperties": {
+            "centerX": {
+                "type": "number",
+                "value": ""
+            },
+            "height": {
+                "type": "string",
+                "value": "50dp"
+            },
+            "left": {
+                "type": "number",
+                "value": ""
+            },
+            "right": {
+                "type": "string",
+                "value": "0"
+            },
+            "skin": "sea1525e3fa24829a889b1fd650f3f24",
+            "text": "",
+            "top": {
+                "type": "string",
+                "value": "30dp"
+            },
+            "width": {
+                "type": "string",
+                "value": "300dp"
+            }
+        },
+        "id": "btnReviewStrategy",
+        "info": null,
+        "iscustomlayout": false,
+        "isvisible": true,
+        "kuid": "j1bba0f1c7d7445784861fb51d81e57b",
+        "name": "kony.ui.Button",
+        "parent": "flxButton",
+        "pf": "frmMyStrategyAcknowledgement",
+        "responsiveData": {
+            "b1": {
+                "height": {
+                    "type": "string",
+                    "value": "40dp"
+                },
+                "i18n_text": null,
+                "right": {
+                    "type": "string",
+                    "value": "270dp"
+                },
+                "skin": "s8719a49b9f64605a04322c84ca43cab",
+                "text": "Change Strategy",
+                "top": {
+                    "type": "string",
+                    "value": "30dp"
+                },
+                "width": {
+                    "type": "string",
+                    "value": "250dp"
+                }
+            },
+            "b2": {
+                "centerX": {
+                    "type": "string",
+                    "value": ""
+                },
+                "height": {
+                    "type": "string",
+                    "value": "50dp"
+                },
+                "left": {
+                    "type": "string",
+                    "value": "45%"
+                },
+                "right": {
+                    "type": "string",
+                    "value": ""
+                },
+                "text": "Review Strategy",
+                "top": {
+                    "type": "string",
+                    "value": "30dp"
+                },
+                "width": {
+                    "type": "string",
+                    "value": "26%"
+                }
+            }
+        },
+        "retaincontentalignment": false,
+        "retainflexpositionproperties": false,
+        "snapshot": {
+            "md5": "Z/0iB9ZVUBYaS0FU/aQOEi1TGd8="
+        },
+        "wType": "Button"
+    },
+    "canUpdateUI": true,
+    "canvasWidth": 1200,
+    "children": [
+        "flxHeader",
+        "flxFormContent",
+        "flxDialogs"
+    ],
+    "containerweight": 100,
+    "controllerInfo": {
+        "default": {
+            "channel": "desktop",
+            "name": "frmRecStrategyAckController"
+        }
+    },
+    "currentBreakpoint": {
+        "kuid": "b1",
+        "width": 1366
+    },
+    "currentLocale": "default",
+    "desktopweb": {
+        "needAppMenu": false
+    },
+    "device": "desktopweb",
+    "displayorientation": 1,
+    "enabledforidletimeout": true,
+    "friendlyName": "frmRecStrategyAck",
+    "id": "frmRecStrategyAck",
+    "ide_init": "AS_Form_aa849280c4714f4697469bbc75a5748f",
+    "info": null,
+    "initdone": false,
+    "inputaccessoryviewtype": 4,
+    "ipad": {
+        "needAppMenu": false,
+        "psp": {
+            "inputAccessoryViewType": 4
+        },
+        "titleBar": false
+    },
+    "iphone": {
+        "needAppMenu": false,
+        "psp": {
+            "inputAccessoryViewType": 4
+        },
+        "titleBar": false
+    },
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "j58afa223b024e00a78c7e0908bda6e0",
+    "layouttype": 2,
+    "name": "kony.ui.Form2",
+    "needappmenu": false,
+    "paddinginpixel": false,
+    "platform": "desktopweb",
+    "prevDevice": "desktopweb",
+    "prevPlatform": "desktopweb",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainscrollposition": false,
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "titleBarSkin": "s60ce2469f314979ace9eb94f74cd3b3",
+    "titlebar": true,
+    "type": 3,
+    "vizProps": {
+        "globalRespDesignEnabled": false
+    },
+    "wType": "Form"
+}

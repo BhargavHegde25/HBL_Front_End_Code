@@ -1,0 +1,89 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "30dp"
+    },
+    "_left_": {
+        "type": "number",
+        "value": ""
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_right_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_skin_": "s0f5748e0ea447b99601a5b7d636357c",
+    "_text_": "Accept",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100dp"
+    },
+    "canUpdateUI": true,
+    "centery": {
+        "type": "number",
+        "value": ""
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "desktopweb": {
+        "psp": {
+            "hoverSkin": "s265aed299c04b41b2c8e400c87cc478"
+        }
+    },
+    "disabledSkins": {},
+    "displaytext": true,
+    "focusskin": "sfd0ce0d7f454c9f83c7e815a90a81zu",
+    "hoverskin": "",
+    "id": "btnAccept",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "d24d26b79b824f75997921391fac8793",
+    "name": "kony.ui.Button",
+    "parent": "flxTCActionButtons",
+    "pf": "frmRequestFixedDeposit",
+    "responsiveData": {
+        "b1": {
+            "desktopweb": {
+                "psp": {}
+            },
+            "disabledSkins": {}
+        },
+        "b3": {
+            "centerY": {
+                "type": "string",
+                "value": ""
+            },
+            "left": {
+                "type": "string",
+                "value": "0dp"
+            },
+            "top": {
+                "type": "string",
+                "value": ""
+            }
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "texti18n": "i18n.TradeFinance.Accept",
+    "wType": "Button",
+    "zindex": 1
+}

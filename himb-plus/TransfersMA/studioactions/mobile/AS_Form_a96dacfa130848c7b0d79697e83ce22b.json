@@ -1,0 +1,22 @@
+{
+    "AS_Form_a96dacfa130848c7b0d79697e83ce22b": {
+        "id": "AS_Form_a96dacfa130848c7b0d79697e83ce22b",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "CopyfrmFundTransfer",
+            "type": "forms",
+            "platform": null,
+            "KUID": "ff24b8f160774aaebe8b945e9f9e9d93"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_init_if47332a61744044b95853e62dd13e21",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.init();"
+        }]
+    }
+}

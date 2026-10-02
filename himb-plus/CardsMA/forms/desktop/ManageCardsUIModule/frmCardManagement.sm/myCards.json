@@ -1,0 +1,1095 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "DNDConfig": null,
+    "_children_": [],
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "1dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s24c92fc23b14f5484b693ee9b8a9b35",
+    "_top_": {
+        "type": "string",
+        "value": "5dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "areflexpropsreferenced": false,
+    "autogrowmode": 1,
+    "canUpdateUI": true,
+    "clipbounds": false,
+    "containerweight": 0,
+    "dataDiffs": {
+        "CopyimgCross0f2891aeff07e40": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "h7d92525369e446c9eae29952bc42ab8",
+                "srcKUID": "b5be59909185489fb9b37bb87b88a6e2",
+                "wType": "Image"
+            },
+            "src": "bbcloseicon_1.png"
+        },
+        "btnApplyForCard": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "d68ed868a51d46e9b941fe6f1d439fb2",
+                "srcKUID": "h8d5b4387eec476799bbfe1f48ed7772",
+                "wType": "Button"
+            }
+        },
+        "btnApplyForPrepaidCard": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "i1ee0802676b40939101b2ef8bf5a9f0",
+                "srcKUID": "ccd7e1ef2dd94f7aa85596ec6d0ed03e",
+                "wType": "Button"
+            }
+        },
+        "btnByPass": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "j521b636038642108cabf47a68bdd293",
+                "srcKUID": "j45a3e5e866b4eff8ed02e5b1341eb0e",
+                "wType": "Button"
+            }
+        },
+        "btnConfirm": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "h951d868953640ae86213aad7a9ce195",
+                "srcKUID": "i5aec97a3b6548e4be6dcfb72f8e906f",
+                "wType": "FlexContainer"
+            },
+            "centerX": {
+                "Default": {
+                    "type": "number",
+                    "value": ""
+                }
+            },
+            "left": {
+                "Default": {
+                    "type": "string",
+                    "value": "0.50%"
+                }
+            },
+            "responsiveData": {
+                "b1": {
+                    "left": {
+                        "type": "string",
+                        "value": "10dp"
+                    }
+                },
+                "b4": {
+                    "centerX": {
+                        "type": "string",
+                        "value": ""
+                    },
+                    "left": {
+                        "type": "string",
+                        "value": "10dp"
+                    }
+                }
+            }
+        },
+        "flxAccountName": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "h7d0f43c6edb4f1d9549a04b5694ff29",
+                "srcKUID": "eb387b8c21eb4d78ad03e42a0cad78f7",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxApplyForCards": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "j3939a1c31c84470bb9c8a50af2addd9",
+                "srcKUID": "d855f1cdad654e90820f58ef4d73df03",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxApplyForPrepaidCards": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "b0e1b56535a44ef4bd5f690c8aa95d89",
+                "srcKUID": "ja0206408fa74b6eb0322efb63af3f1e",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxCards": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "be065a5e9890499e9fc6c15c0f698450",
+                "srcKUID": "fb289bc93ada4dacb9c6176d54b2a755",
+                "wType": "FlexContainer"
+            },
+            "autogrowMode": {
+                "Default": 0
+            },
+            "height": {
+                "Default": {
+                    "type": "string",
+                    "value": "148dp"
+                }
+            },
+            "isVisible": false,
+            "left": {
+                "Default": {
+                    "type": "string",
+                    "value": "0dp"
+                }
+            },
+            "responsiveData": {
+                "b1": {
+                    "height": {
+                        "type": "string",
+                        "value": "151dp"
+                    }
+                },
+                "b4": {
+                    "isVisible": false
+                }
+            },
+            "width": {
+                "Default": {
+                    "type": "string",
+                    "value": "100%"
+                }
+            }
+        },
+        "flxClearBtn": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "i36615d977324904906ae5b90d2304a0",
+                "srcKUID": "ed1aac6a76dc44bca547d4a4de646ca1",
+                "wType": "FlexContainer"
+            },
+            "isVisible": false,
+            "responsiveData": {
+                "b3": {}
+            }
+        },
+        "flxCreditCardTitle": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "h00ac7289eba4652887303c87b1e3e7d",
+                "srcKUID": "ae4c90c39c59480e9ff580fc6bf78e3c",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxCreditCards": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "ia78a991f01f4c26a62066cc02dd33fe",
+                "srcKUID": "dc4a23224d4f4ef18e66cca977189ad7",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxCreditCardsError": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "h02189617a0f4104ade50e8d56d8af4d",
+                "srcKUID": "b55ef056acc64cde93c236474c1f9d89",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxCross": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "fe325847b6144e598704caa059603ea1",
+                "srcKUID": "ff1b873e20e643fda98e5a96d7277aaa",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxDebitCardTitle": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "ef9cd4ff5cae408f81d6e4c8c6bc872f",
+                "srcKUID": "afa14a89435d4cc1b803ad32eb5e9d5f",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxDebitCards": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "c3d8fd19a69242629fe310e423f31be3",
+                "srcKUID": "b91fd10843a94949a410f714872bd2ba",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxDropdown": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "i1688177f487422a90d2c0e8b98ac0e6",
+                "srcKUID": "ca95349d25534f0395585b5a4e1fecdc",
+                "wType": "FlexContainer"
+            },
+            "left": {
+                "Default": {
+                    "type": "string",
+                    "value": ""
+                }
+            },
+            "responsiveData": {},
+            "right": {
+                "Default": {
+                    "type": "string",
+                    "value": "0dp"
+                }
+            },
+            "width": {
+                "Default": {
+                    "type": "string",
+                    "value": "20%"
+                }
+            }
+        },
+        "flxFiltersList": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "g77b9f0fce33466f978a4dd9a0dee388",
+                "srcKUID": "be5c0edefb454df5a59529e4c5f2bc12",
+                "wType": "FlexContainer"
+            },
+            "centerY": {
+                "Default": {
+                    "type": "string",
+                    "value": "50dp"
+                }
+            },
+            "responsiveData": {
+                "b1": {
+                    "centerY": {
+                        "type": "string",
+                        "value": "40dp"
+                    }
+                },
+                "b4": {
+                    "centerY": {
+                        "type": "string",
+                        "value": "40dp"
+                    }
+                }
+            },
+            "width": {
+                "Default": {
+                    "type": "string",
+                    "value": "35%"
+                }
+            }
+        },
+        "flxFiltersWrapper": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "jef809c5ddf24cb2847a30b170d415b3",
+                "srcKUID": "e8a1af2a1c424c2b955411a6c46bd91a",
+                "wType": "FlexContainer"
+            },
+            "centerY": {
+                "Default": {
+                    "type": "string",
+                    "value": "50dp"
+                }
+            },
+            "layoutType": 2,
+            "responsiveData": {
+                "b1": {
+                    "centerY": {
+                        "type": "string",
+                        "value": "40dp"
+                    }
+                },
+                "b4": {
+                    "centerY": {
+                        "type": "string",
+                        "value": "40dp"
+                    }
+                }
+            },
+            "width": {
+                "Default": {
+                    "type": "string",
+                    "value": "100%"
+                }
+            }
+        },
+        "flxLblType": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "b45966c8fa8747c2a157addbdf32b90b",
+                "srcKUID": "c0c7e9f7cf0c4e6c8be64b0e93d4c127",
+                "wType": "FlexContainer"
+            },
+            "left": {
+                "Default": {
+                    "type": "string",
+                    "value": "0dp"
+                }
+            },
+            "responsiveData": {},
+            "width": {
+                "Default": {
+                    "type": "string",
+                    "value": "80%"
+                }
+            }
+        },
+        "flxNoCardsError": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "a18ce20899e2487ebaf1dd8f2e48f9e2",
+                "srcKUID": "gbb183b8edda40938c61ad78dd108ece",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxNoCreditCards": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "f8b69c6883d64fa1aff1bae09d656dc2",
+                "srcKUID": "b56e90eecd4642ce9d3d0fbd2cff6bf3",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxNoError": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "a6d98aead87b4316a21dc37cc6f80710",
+                "srcKUID": "i0a2ec7edaf245e19c9c0b8f932aecc2",
+                "wType": "FlexContainer"
+            },
+            "isVisible": false,
+            "responsiveData": {
+                "b4": {
+                    "isVisible": false
+                }
+            }
+        },
+        "flxNoPrepaidCardError": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "ga7e4860282b4766be2a65598c853f4f",
+                "srcKUID": "eb2c159bb0444ce4a49424998cfa16a1",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxNoPrepaidCardsError": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "d7171a94e7494d568e0c5873f2bb89fa",
+                "srcKUID": "gdc7c46d31684ec68f255d659805fd09",
+                "wType": "FlexContainer"
+            },
+            "bottom": {
+                "Default": {
+                    "type": "string",
+                    "value": "10dp"
+                }
+            },
+            "responsiveData": {
+                "b1": {
+                    "bottom": {
+                        "type": "string",
+                        "value": "0dp"
+                    }
+                },
+                "b4": {
+                    "bottom": {
+                        "type": "string",
+                        "value": "0dp"
+                    }
+                }
+            }
+        },
+        "flxNoResultsSearch": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "e503da59d48440c492f73baf0dbee11e",
+                "srcKUID": "g664c4cfd25c43b9bd2c18b72dce7542",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxPrepaidCardTitle": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "j54e929a6f684d43935390632baa2beb",
+                "srcKUID": "c0fc3e80473b4782a8e8d421c6701d32",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxPrepaidCards": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "cb1654099061459182b87b4572bd6b05",
+                "srcKUID": "ie966013fc494326919d6f79da52658a",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxRequestANewCard": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "j71604e3b1d143189b4294d572cf049a",
+                "srcKUID": "cd0ab3f58d5d4e02bf5f5370b41bb4e4",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxSearch": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "b796c00dde1d4764b363b5a5ddcf48b0",
+                "srcKUID": "d76fd0ee0a1a4629aba5e4eca5df4123",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxSearchContiner": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "e52c5b1aeff043b6a335bab3ea3aea2f",
+                "srcKUID": "f74970a4a2934ff79efedd93b142b896",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxSearchSegment": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "facb097c675f4e389c2876d7d9556d8f",
+                "srcKUID": "ab4d320b7a9e49c987021cee5af309a6",
+                "wType": "FlexScrollContainer"
+            }
+        },
+        "flxSearchWrapper": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "e23f043cfc234ead9a442512b9688119",
+                "srcKUID": "faa33166d12048249dfa59ed28750668",
+                "wType": "FlexContainer"
+            },
+            "autogrowMode": {
+                "Default": 0
+            },
+            "centerY": {
+                "Default": {
+                    "type": "string",
+                    "value": "50dp"
+                }
+            },
+            "height": {
+                "Default": {
+                    "type": "number",
+                    "value": ""
+                }
+            },
+            "responsiveData": {
+                "b1": {
+                    "centerY": {
+                        "type": "string",
+                        "value": "40dp"
+                    }
+                },
+                "b3": {},
+                "b4": {
+                    "centerY": {
+                        "type": "string",
+                        "value": "40dp"
+                    },
+                    "height": {
+                        "type": "string",
+                        "value": ""
+                    },
+                    "top": {
+                        "type": "string",
+                        "value": "0dp"
+                    }
+                }
+            },
+            "top": {
+                "Default": {
+                    "type": "string",
+                    "value": "0dp"
+                }
+            }
+        },
+        "flxSeperator": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "ea8aa54d4d504743a74509fbb5157c15",
+                "srcKUID": "f7ea63d1c70c4be2acc089c98a61c2a1",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxSeperator1": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "e5746609820042069f3364aa8bc59949",
+                "srcKUID": "gc6ae81ace33470290005a55a598a1d9",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxSeperator2": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "f2f50f1470414a7793ee8d48d4801c6b",
+                "srcKUID": "bbd8dbd61c084cb0832ea5d732af523b",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxSeperator3": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "a767c5cbd42e43b497c2e8e43ed54611",
+                "srcKUID": "be86959841ee4a31af1544866287464b",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxSeperator4": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "febc8a9fda324218b5fca840bda7ec7e",
+                "srcKUID": "g8401818bce8473492b89b2e049ad9e9",
+                "wType": "FlexContainer"
+            }
+        },
+        "flxtxtSearchandClearbtn": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "a0da502302b843ee8c290cc84532a4c0",
+                "srcKUID": "c97d348ca25e4588bda152b170ac74cc",
+                "wType": "FlexContainer"
+            },
+            "centerY": {
+                "Default": {
+                    "type": "string",
+                    "value": "50dp"
+                }
+            },
+            "clipBounds": true,
+            "responsiveData": {
+                "b1": {
+                    "centerY": {
+                        "type": "string",
+                        "value": "40dp"
+                    }
+                },
+                "b3": {},
+                "b4": {
+                    "centerY": {
+                        "type": "string",
+                        "value": "50%"
+                    }
+                }
+            }
+        },
+        "imgCross": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "c1613e46d1eb4187add5099f4e9d8832",
+                "srcKUID": "f320f6bb9b2442538c8be39e4ccc5d09",
+                "wType": "Image"
+            }
+        },
+        "imgNoCardsError": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "hb0d0b24ca83498c98637258fd9b44ea",
+                "srcKUID": "c43517d29f9b4ec7a09d57c56de88828",
+                "wType": "Image"
+            },
+            "responsiveData": {
+                "b1": {
+                    "width": {
+                        "type": "string",
+                        "value": "30dp"
+                    }
+                },
+                "b4": {
+                    "width": {
+                        "type": "string",
+                        "value": "30dp"
+                    }
+                }
+            },
+            "src": "error_yellow.png",
+            "width": {
+                "Default": {
+                    "type": "string",
+                    "value": "8.54%"
+                }
+            }
+        },
+        "imgNoCreditCardsError": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "f4de398a18c643a7b48dde44a3944d83",
+                "srcKUID": "c7c335622a204b10a94fdcadbb0d83d4",
+                "wType": "Image"
+            },
+            "responsiveData": {
+                "b1": {
+                    "width": {
+                        "type": "string",
+                        "value": "30dp"
+                    }
+                },
+                "b4": {
+                    "width": {
+                        "type": "string",
+                        "value": "30dp"
+                    }
+                }
+            },
+            "width": {
+                "Default": {
+                    "type": "string",
+                    "value": "8.54%"
+                }
+            }
+        },
+        "imgNoPrepaidCardsError": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "h9ea71e419e74391991902cf190b6de8",
+                "srcKUID": "gddb29562d70408d8ecd52a658a07b78",
+                "wType": "Image"
+            },
+            "responsiveData": {
+                "b1": {
+                    "width": {
+                        "type": "string",
+                        "value": "30dp"
+                    }
+                },
+                "b4": {
+                    "width": {
+                        "type": "string",
+                        "value": "30dp"
+                    }
+                }
+            },
+            "width": {
+                "Default": {
+                    "type": "string",
+                    "value": "8.54%"
+                }
+            }
+        },
+        "imgSearch": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "h03684013d9c4d8b83f35acc55afbc2e",
+                "srcKUID": "d919d98ac82a4fc7ac46b0e5af8a32e9",
+                "wType": "Image"
+            },
+            "imageScaleMode": 0,
+            "left": {
+                "Default": {
+                    "type": "number",
+                    "value": ""
+                }
+            },
+            "responsiveData": {
+                "b4": {
+                    "left": {
+                        "type": "string",
+                        "value": "0dp"
+                    }
+                }
+            },
+            "src": "search_blue.png"
+        },
+        "lblAccountName": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "g3d35f17915643dab34ceee0df7f85ab",
+                "srcKUID": "fa659b541a63423bb73fce65f80e0df1",
+                "wType": "Label"
+            }
+        },
+        "lblCreditCards": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "f4925c0ad2f845af938621da62977c7f",
+                "srcKUID": "a1ac39d2c2ac41dc83c29d93b8d43c9a",
+                "wType": "Label"
+            }
+        },
+        "lblDebitCards": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "ed3b9368616643d89f8ad31712bbd25f",
+                "srcKUID": "adb0dd89eab94c0c8f44036ea8f9745b",
+                "wType": "Label"
+            }
+        },
+        "lblDropdown": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "j469a70dfd8843c5baa6c0725a15e8d2",
+                "srcKUID": "i1a009c1d8ca498aaf2de361cf3c4676",
+                "wType": "Label"
+            },
+            "responsiveData": {},
+            "text": "O"
+        },
+        "lblFilterType": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "a995c07fb75e4c2ab4e42ec8437da7e7",
+                "srcKUID": "g3e086180d2846dd88b445e3e78b4007",
+                "wType": "Label"
+            },
+            "centerY": {
+                "Default": {
+                    "type": "string",
+                    "value": "50dp"
+                }
+            },
+            "left": {
+                "Default": {
+                    "type": "string",
+                    "value": "53%"
+                }
+            },
+            "responsiveData": {
+                "b1": {
+                    "centerY": {
+                        "type": "string",
+                        "value": "40dp"
+                    }
+                },
+                "b4": {
+                    "centerY": {
+                        "type": "string",
+                        "value": "40dp"
+                    }
+                }
+            }
+        },
+        "lblMyCardsHeader": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "had9819989d8409abac0761773f45406",
+                "srcKUID": "cd6e0def333d4294a4cf8d57470e1207",
+                "wType": "Label"
+            },
+            "left": {
+                "Default": {
+                    "type": "string",
+                    "value": "30dp"
+                }
+            },
+            "responsiveData": {
+                "b1": {
+                    "left": {
+                        "type": "string",
+                        "value": "0dp"
+                    }
+                },
+                "b4": {
+                    "left": {
+                        "type": "string",
+                        "value": "0dp"
+                    }
+                }
+            }
+        },
+        "lblNoCardsError": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "c6d7c37a5ced4f41a978609d3d2ade43",
+                "srcKUID": "bf0acfb1863b4189873975609ced2be2",
+                "wType": "Label"
+            },
+            "left": {
+                "Default": {
+                    "type": "string",
+                    "value": "70dp"
+                }
+            },
+            "responsiveData": {
+                "b1": {
+                    "left": {
+                        "type": "string",
+                        "value": "50dp"
+                    }
+                },
+                "b4": {
+                    "left": {
+                        "type": "string",
+                        "value": "50dp"
+                    }
+                }
+            }
+        },
+        "lblNoCreditCardsError": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "d19e8617c1ba4ce4b522a1683c5825a2",
+                "srcKUID": "ibacf64a77ec473196ed56066e17ac5a",
+                "wType": "Label"
+            },
+            "left": {
+                "Default": {
+                    "type": "string",
+                    "value": "70dp"
+                }
+            },
+            "responsiveData": {
+                "b1": {
+                    "left": {
+                        "type": "string",
+                        "value": "50dp"
+                    }
+                },
+                "b4": {
+                    "left": {
+                        "type": "string",
+                        "value": "50dp"
+                    }
+                }
+            }
+        },
+        "lblNoPrepaidCardsError": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "d7cf7ec79a9842b18f574ee577a8ac33",
+                "srcKUID": "i14de07e44394c56a3cdaacee9f89683",
+                "wType": "Label"
+            },
+            "left": {
+                "Default": {
+                    "type": "string",
+                    "value": "70dp"
+                }
+            },
+            "responsiveData": {
+                "b1": {
+                    "left": {
+                        "type": "string",
+                        "value": "50dp"
+                    }
+                },
+                "b4": {
+                    "left": {
+                        "type": "string",
+                        "value": "50dp"
+                    }
+                }
+            }
+        },
+        "lblNoResultsSearch": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "g090135a096d4e30b2b700ec19d13e7c",
+                "srcKUID": "a8caa598cfa5436b8366d211a3d94acb",
+                "wType": "Label"
+            }
+        },
+        "lblPrepaidCards": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "j30b823fab074ae9b4aa2a52215252ff",
+                "srcKUID": "i3175f9a2f014c528c99de2686f5cc06",
+                "wType": "Label"
+            }
+        },
+        "lblRequestANewCard": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "da06ff528d1c445595d8440241bfb060",
+                "srcKUID": "bf924f82e3d64dbcba3dc84bf6798d7c",
+                "wType": "Label"
+            }
+        },
+        "lblSearch": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "a46e27836c944aeeb4cea516706ed630",
+                "srcKUID": "e78c8dd7c282453cb930d0fff34b5fbd",
+                "wType": "Label"
+            }
+        },
+        "lblType": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "db8f45a71bff48fdb9da4ccb58acde6c",
+                "srcKUID": "ccc05e894c4a40eaa911045dc51392e1",
+                "wType": "Label"
+            },
+            "left": {
+                "Default": {
+                    "type": "string",
+                    "value": "0dp"
+                }
+            },
+            "responsiveData": {
+                "b4": {
+                    "left": {
+                        "type": "string",
+                        "value": "0dp"
+                    }
+                }
+            }
+        },
+        "myCards": {
+            "__events__": {},
+            "__info__": {
+                "isRoot": true,
+                "kuid": "i993e0d7184944fb9597541be55e9f6e",
+                "srcKUID": "b058869ff5e24840931ccbb9d58c2b1c",
+                "wType": "FlexContainer"
+            }
+        },
+        "segCardsSegment": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "c3a65fe61f564af592da0c9f7fb0dd89",
+                "srcKUID": "b9658a25a23b4d4ca08989ec07751e62",
+                "wType": "Segment"
+            },
+            "autogrowMode": {
+                "Default": 0
+            },
+            "data": {
+                "desktop": [
+                    {
+                        "lblAccountName": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": "All Cards"
+                        }
+                    },
+                    {
+                        "lblAccountName": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": "Debit Cards"
+                        }
+                    },
+                    {
+                        "lblAccountName": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": "Credit Cards"
+                        }
+                    },
+                    {
+                        "lblAccountName": {
+                            "@class": "com.viz.ide.model.segment.SimpleTextSegmentData",
+                            "text": "Prepaid Cards"
+                        }
+                    }
+                ]
+            },
+            "height": {
+                "Default": {
+                    "type": "string",
+                    "value": "150dp"
+                }
+            },
+            "responsiveData": {
+                "b4": {
+                    "height": {
+                        "type": "string",
+                        "value": "148dp"
+                    }
+                }
+            }
+        },
+        "segCreditCards": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "a5a06d18927f406098f602bccf62df7b",
+                "srcKUID": "f00607a2cc34446a82e1171b5d23dc95",
+                "wType": "Segment"
+            }
+        },
+        "segDebitCards": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "c8229ab59a3543218989fafda0736aa8",
+                "srcKUID": "ad12c2dbe08e4e41904e8979b55aac7f",
+                "wType": "Segment"
+            }
+        },
+        "segPrepaidCards": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "jf90d5eb91d445feb1213e4fd2a0f656",
+                "srcKUID": "i7833d89a6b84e8c9a5724fca39eabaf",
+                "wType": "Segment"
+            }
+        },
+        "segSearch": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "d35607d8c345432bbabe32c3cbd073b2",
+                "srcKUID": "e268fb74c4c348aea8e78ac61f11edef",
+                "wType": "Segment"
+            }
+        },
+        "txtSearch": {
+            "__events__": {},
+            "__info__": {
+                "kuid": "bc9fba9fd9584cb8ade8cb8db8018918",
+                "srcKUID": "c63db0c7e0694e8eb5017e3edcf7467d",
+                "wType": "TextField"
+            },
+            "i18n_placeholder": "i18n.HBL.Cards.SearchByCardName",
+            "i18n_text": null,
+            "isVisible": true,
+            "responsiveData": {
+                "b1": {
+                    "width": {
+                        "type": "string",
+                        "value": "100%"
+                    }
+                },
+                "b3": {
+                    "width": null
+                },
+                "b4": {
+                    "width": {
+                        "type": "string",
+                        "value": "100%"
+                    }
+                }
+            },
+            "text": "",
+            "width": {
+                "Default": {
+                    "type": "string",
+                    "value": "86%"
+                }
+            }
+        }
+    },
+    "enablescrolling": true,
+    "id": "myCards",
+    "info": null,
+    "isdatareferenced": false,
+    "isvisible": true,
+    "kuid": "i993e0d7184944fb9597541be55e9f6e",
+    "layouttype": 4,
+    "masterType": 0,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "flxMyCards",
+    "pf": "frmCardManagement",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "sourceUserWidget": "b058869ff5e24840931ccbb9d58c2b1c",
+    "wType": "UserWidgetInstance"
+}

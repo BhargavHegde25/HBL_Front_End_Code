@@ -1,0 +1,97 @@
+{
+    "classname": "PortfolioStrategy",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "f9b7fc4f2a824bd98750ef8d29ffcfbb",
+                    "paramList": [],
+                    "propertyKey": "setStrategyParm",
+                    "pw": {
+                        "displayName": "setStrategyParm",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "c4bc764e165e4870a2a408afcbcdce1c",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "d176e04912f94072a4af244f6efdd7b7",
+                    "paramList": [],
+                    "propertyIndex": 1,
+                    "propertyKey": "firstUserClick",
+                    "pw": {
+                        "displayName": "firstUserClick",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "c4bc764e165e4870a2a408afcbcdce1c",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "g33f402d5ac74d598638dd823d0c7cd7",
+                    "paramList": [],
+                    "propertyIndex": 2,
+                    "propertyKey": "nonFirstUserClick",
+                    "pw": {
+                        "displayName": "nonFirstUserClick",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "c4bc764e165e4870a2a408afcbcdce1c",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [
+                {
+                    "access": "Write",
+                    "defaultValue": "{\n  \"objectServiceName\": \"PortfolioServicing\",\n \"operationName\": \"getMyStrategy\",\n \"objectName\": \"Strategies\"\n}",
+                    "group": "General",
+                    "kuid": "c911c62315dd435f8976e4121da5c4d7",
+                    "originalPropertyKey": "serviceParm",
+                    "propertyIndex": 1,
+                    "propertyKey": "serviceParm",
+                    "pw": {
+                        "dependencyConditions": {},
+                        "displayName": "Service Params",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "jsonEditor-Retriever",
+                                "dataUpdaterId": "jsonEditor-Updater",
+                                "popupId": "jsonEditor-Popup",
+                                "type": "jsonEditor"
+                            }
+                        },
+                        "uiRepresentation": "Label-Button"
+                    },
+                    "srcWgtKUID": "c4bc764e165e4870a2a408afcbcdce1c",
+                    "type": "json",
+                    "value": ""
+                }
+            ],
+            "passthrough": []
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.Infinity.MB.PortfolioManagementMA",
+    "version": "1.0.0"
+}

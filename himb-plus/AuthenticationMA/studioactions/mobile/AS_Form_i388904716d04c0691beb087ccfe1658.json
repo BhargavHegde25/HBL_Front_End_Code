@@ -1,0 +1,23 @@
+{
+    "AS_Form_i388904716d04c0691beb087ccfe1658": {
+        "id": "AS_Form_i388904716d04c0691beb087ccfe1658",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "CopyfrmExploreProducts",
+            "type": "forms",
+            "platform": null,
+            "KUID": "c355229fa2c848268e921461f810b0ab"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_init_fe5108ec55ba44b0a1db9b95eafefd03",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.init();",
+            "callbackType": null
+        }]
+    }
+}

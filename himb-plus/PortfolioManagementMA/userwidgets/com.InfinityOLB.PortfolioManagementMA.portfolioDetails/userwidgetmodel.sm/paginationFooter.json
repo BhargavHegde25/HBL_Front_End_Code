@@ -1,0 +1,83 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizUserWidget",
+    "DNDConfig": null,
+    "_children_": [],
+    "_height_": {
+        "type": "string",
+        "value": "150dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_render_": true,
+    "_skin_": "s24c92fc23b14f5484b693ee9b8a9b35",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "canUpdateUI": true,
+    "containerweight": 0,
+    "data": {
+        "iconPaginationLastEnabled": "{\"img\": \"pagination_last_active.png\"}",
+        "paginationText": "{\"default\":\"{$.t.currentPage} of {$.t.totalPages} Pages\",\"$.BREAKPTS.BP1\":\"{$.t.currentPage} of {$.t.totalPages} Pages\"}",
+        "recordsPerPage": "10",
+        "recordsPerPageList": "[{\"10\":\"10 Per Page\"},{\"20\":\"20 Per Page\"},{\"50\":\"50 Per Page\"},{\"100\":\"100 Per Page\"}]"
+    },
+    "id": "paginationFooter",
+    "info": null,
+    "iscustomlayout": false,
+    "issegmentchild": false,
+    "isvisible": true,
+    "kuid": "j899ca3a12ba4318868b9fab12dfc6e0",
+    "layouttype": 2,
+    "masterType": 1,
+    "name": "kony.ui.UserWidgetInstance",
+    "parent": "flxPag",
+    "pf": "userwidgetmodel",
+    "responsiveData": {
+        "b1": {
+            "left": {
+                "type": "string",
+                "value": "0dp"
+            }
+        },
+        "b2": {},
+        "b3": {
+            "isVisible": true,
+            "layoutType": 2,
+            "left": {
+                "type": "number",
+                "value": "0"
+            },
+            "width": {
+                "type": "string",
+                "value": "100%"
+            }
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "sourceUserWidget": "u303524e2ad94a3588f080b6ea8501e8",
+    "wType": "UserWidgetInstance",
+    "zindex": 500000
+}

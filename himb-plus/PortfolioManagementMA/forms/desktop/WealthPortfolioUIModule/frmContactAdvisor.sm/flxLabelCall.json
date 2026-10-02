@@ -1,0 +1,79 @@
+{
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "100%"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "sa5106fc4fda4cb9a938afcbd3148afb",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "250dp"
+    },
+    "allboxes": [],
+    "autogrowmode": 0,
+    "canUpdateUI": true,
+    "children": [
+        "lblCall",
+        "lblPhoneNumber"
+    ],
+    "clipbounds": false,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "flxLabelCall",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "daa33baa9b4045c9ac0bc16cec436c92",
+    "layouttype": 2,
+    "name": "kony.ui.FlexContainer",
+    "parent": "flxCall",
+    "pf": "frmContactAdvisor",
+    "responsiveData": {
+        "b1": {
+            "layoutType": 3,
+            "width": {
+                "type": "string",
+                "value": "82%"
+            }
+        },
+        "b2": {
+            "layoutType": 3,
+            "width": {
+                "type": "string",
+                "value": "237dp"
+            }
+        },
+        "b3": {
+            "layoutType": 3
+        }
+    },
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "retainflowhorizontalalignment": false,
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1
+}

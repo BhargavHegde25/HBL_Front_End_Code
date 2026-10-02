@@ -1,0 +1,151 @@
+{
+    "@class": "com.kony.gen.viz.model.container.KVizScrollFlexForm",
+    "DNDConfig": null,
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 1,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_pxMenuIndex": [
+        0,
+        1,
+        1,
+        5
+    ],
+    "_skin_": "sfd374011f8943daa0815da0aecd0408",
+    "_title_": "Date Of Birth",
+    "addWidgetsdone": false,
+    "allboxes": [],
+    "android": {
+        "needAppMenu": false,
+        "psp": {
+            "windowSoftInputMode": 2
+        }
+    },
+    "canUpdateUI": true,
+    "children": [
+        "flxHeaderPersonalInfo",
+        "flxMainContainer",
+        "flxPopup",
+        "flxKeypad",
+        "btnVerifyDOB"
+    ],
+    "containerweight": 100,
+    "controllerInfo": {
+        "default": {
+            "channel": "mobile",
+            "name": "frmEnrollEmailController"
+        }
+    },
+    "currentLocale": "default",
+    "desktopweb": {
+        "needAppMenu": false
+    },
+    "device": "Pixel2",
+    "displayorientation": 1,
+    "enabledforidletimeout": false,
+    "friendlyName": "frmEnrollEmail",
+    "id": "frmEnrollEmail",
+    "ide_init": "AS_Form_e004d78820f04711bbb9528f6b6deb8c",
+    "ide_preShow": "AS_Form_ib55c66ff69a48988d49e1f9f92b6026",
+    "info": null,
+    "initdone": false,
+    "inputaccessoryviewtype": 4,
+    "ipad": {
+        "psp": {
+            "inputAccessoryViewType": 4
+        }
+    },
+    "iphone": {
+        "needAppMenu": false,
+        "psp": {
+            "inputAccessoryViewType": 4,
+            "titleBarAttributes": {
+                "backBarButtonItem": {
+                    "enabled": true,
+                    "info": {
+                        "title": ""
+                    },
+                    "kuid": "ha02831b405f4b3082b797aa757c0486",
+                    "style": 0,
+                    "tintColor": "ffffff00",
+                    "type": 1
+                },
+                "barStyle": 0,
+                "hidesBackButton": false,
+                "kuid": "a7f19ffd3e4e4943ba977b6ff83d7cc4",
+                "leftBarButtonItems": [
+                    {
+                        "enabled": true,
+                        "ide_onClick": "AS_BarButtonItem_h76d6990b3294684863d29957109f904",
+                        "info": {
+                            "image": "backbutton.png"
+                        },
+                        "kuid": "j328b58f86af4650ad0244e555f690f8",
+                        "style": 0,
+                        "tintColor": "ffffff00",
+                        "type": 0
+                    }
+                ],
+                "leftItemsSupplementBackButton": false,
+                "prompt": "",
+                "renderTitleText": true,
+                "rightBarButtonItems": [
+                    {
+                        "enabled": true,
+                        "ide_onClick": "AS_BarButtonItem_f58c23cb9b2149a28207e4f5cbed8789",
+                        "info": {
+                            "displayText": true,
+                            "focusSkin": "s69ddcfe42a6484281a0421fcbc24d3b",
+                            "height": {
+                                "type": "ref",
+                                "value": "preferred"
+                            },
+                            "i18n_text": "kony.tab.common.Cancel",
+                            "refType": "Button",
+                            "skin": "s69ddcfe42a6484281a0421fcbc24d3b",
+                            "text": "Button",
+                            "width": {
+                                "type": "ref",
+                                "value": "preferred"
+                            }
+                        },
+                        "kuid": "c4f4e5bb3baa4270822a2164d97ba1f1",
+                        "style": 0,
+                        "tintColor": "ffffff00",
+                        "type": 3
+                    }
+                ],
+                "tintColor": "ffffff00",
+                "translucent": false
+            }
+        },
+        "titleBar": true
+    },
+    "isvisible": true,
+    "kuid": "f6e2dff5f9354925a705aae63b16b91a",
+    "layouttype": 2,
+    "name": "kony.ui.Form2",
+    "needappmenu": true,
+    "paddinginpixel": false,
+    "platform": "android",
+    "prevDevice": "iPhone13",
+    "prevPlatform": "iphone",
+    "retainscrollposition": false,
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "texti18n": "i18n.login.CantSignIn.EmailAddress",
+    "titleBarSkin": "s1ddf8a7053445d0a0571e0c2726ac89",
+    "titlebar": false,
+    "type": 3,
+    "wType": "Form"
+}

@@ -1,0 +1,17 @@
+{
+  "type" : "svcdriven",
+  "description" : "TermsAndConditions",
+  "custom" : false,
+  "junction" : false,
+  "customizable" : false,
+  "verbs" : {
+    "getPostLogin" : "getPostLoginMapping",
+    "createCustomerTNCForLogin" : "createCustomerTNCForLoginMapping",
+    "getPreLogin" : "getPreLoginMapping"
+  },
+  "entityProperties" : {
+    "BatchMode" : "buffer",
+    "backendMeta" : { },
+    "designTimeBackendMeta" : { }
+  }
+}

@@ -1,0 +1,22 @@
+{
+    "AS_Form_c10ad330a71f4d2ab4fb552a2e34aeb0": {
+        "id": "AS_Form_c10ad330a71f4d2ab4fb552a2e34aeb0",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmAddNewPayee",
+            "type": "forms",
+            "platform": null,
+            "KUID": "a45df13b1dc7450096177b2c03ae87da"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_ide_preShow_j43dc66ea49c4dfda0872d380dba10b6",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.preShow();"
+        }]
+    }
+}

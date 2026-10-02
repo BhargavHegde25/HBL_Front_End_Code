@@ -1,0 +1,65 @@
+{
+    "DNDConfig": null,
+    "_height_": {
+        "type": "ref",
+        "value": "preferred"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "1%"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_skin_": "s4d3d6c1121f4a048b52521ebdd0f2fe",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "99%"
+    },
+    "activeNativeBorderCornerRadiusControl": "centerControl",
+    "allboxes": [],
+    "android": {},
+    "autogrowmode": 1,
+    "canUpdateUI": true,
+    "children": [
+        "lblCashWithdrawalCode",
+        "flxQRCode",
+        "flxCashWithDrawalCodeParent",
+        "flxExpireTimerParent",
+        "flxShareWithdrawCode"
+    ],
+    "clipbounds": true,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "flxCashWithdrawCode",
+    "info": null,
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "i6c60c8097e347099d93d4f5c9b66a51",
+    "layouttype": 4,
+    "name": "kony.ui.FlexContainer",
+    "parent": "flxCodeCurContainer",
+    "pf": "frmCardLessTransactionDetails",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "wType": "FlexContainer",
+    "widgetalignment": 1,
+    "zindex": 1
+}

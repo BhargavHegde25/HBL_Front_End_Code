@@ -1,0 +1,30 @@
+{
+    "AS_Button_a859310e1e89414f9843edc59fbbbf8d": {
+        "id": "AS_Button_a859310e1e89414f9843edc59fbbbf8d",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "frmTopUpDomesticPrepaidCardAckScreen",
+            "type": "forms",
+            "platform": "",
+            "KUID": "e04240c130784b95b071e10f49938cb5"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "NAVIGATE_TO_FORM__c91cda54681c4f89b25531f328aaec6d",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "frmTopUpVirtualCardConsentScreen",
+            "friendlyName": "frmTopUpVirtualCardConsentScreen",
+            "formKUID": "e01dc67fb0674f1ab6d1c79d9f465c60",
+            "projectName": "CardsMA",
+            "mappings": {},
+            "mappingsOrder": [],
+            "enableMappingEditor": true,
+            "package": "ManageCardsUIModule",
+            "isCustomInput": false
+        }]
+    }
+}
