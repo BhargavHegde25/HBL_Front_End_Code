@@ -2,6 +2,7 @@ define(["CommonUtilities","OLBConstants"],function(CommonUtilities,OLBConstants)
     return {
 		count : 0,
         userAttributesSuccessCallback: function (res) {
+            kony.print("PERF|UA_OK|" + Date.now()); // PERF-TEMP
             if (res !== (undefined || null)) {
                 var authParams = res.UserName;
                 var navManager = applicationManager.getNavigationManager();
@@ -45,7 +46,34 @@ define(["CommonUtilities","OLBConstants"],function(CommonUtilities,OLBConstants)
                     asyncManager.asyncItem(applicationManager.getMultiEntityManager(), 'getUserLegalEntities')
                 ], scope_AuthPresenter.onCompletionOfGetUserLegalEntities.bind(this));
             } else {
+                scope_AuthPresenter.prefetchDashboardAccounts();
                 scope_AuthPresenter.postLoginServices();
+            }
+        },
+        // PERF: start the Dashboard account list (getList) in parallel with the post-login services.
+        // The response is only used by HomepageMA showDashboard, at the same point in the flow as before.
+        prefetchDashboardAccounts: function () {
+            try {
+                if (applicationManager.getConfigurationManager().isMicroAppPresent('HomepageMA')) {
+                    var accountsModule = kony.mvc.MDAApplication.getSharedInstance().getModuleManager().getModule({ "moduleName": "AccountsUIModule", "appName": "HomepageMA" });
+                    if (typeof accountsModule.presentationController.prefetchAccountList === "function") {
+                        accountsModule.presentationController.prefetchAccountList();
+                    }
+                }
+            } catch (err) {
+                kony.print("prefetchDashboardAccounts" + err);
+            }
+        },
+        clearDashboardAccountsPrefetch: function () {
+            try {
+                if (applicationManager.getConfigurationManager().isMicroAppPresent('HomepageMA')) {
+                    var accountsModule = kony.mvc.MDAApplication.getSharedInstance().getModuleManager().getModule({ "moduleName": "AccountsUIModule", "appName": "HomepageMA" });
+                    if (typeof accountsModule.presentationController.clearAccountListPrefetch === "function") {
+                        accountsModule.presentationController.clearAccountListPrefetch();
+                    }
+                }
+            } catch (err) {
+                kony.print("clearDashboardAccountsPrefetch" + err);
             }
         },
         /*navigationAfterLogin: function(){
@@ -438,6 +466,7 @@ define(["CommonUtilities","OLBConstants"],function(CommonUtilities,OLBConstants)
 		// sm.removeStoredItem("userFirstName");
 		// sm.removeStoredItem("userLastName"); 
 		sm.setStoredItem('updateInternalAccounts', false);
+		scope_AuthPresenter.clearDashboardAccountsPrefetch();
 			 }catch(e){
 				kony.print("**********Error while remove username*********"+e); 
 			 }
@@ -451,6 +480,7 @@ define(["CommonUtilities","OLBConstants"],function(CommonUtilities,OLBConstants)
 	  this.performLogout(context);
   },
   postLoginServicesSuccess :function(){
+	  kony.print("PERF|PLS_DONE|" + Date.now()); // PERF-TEMP
 	  var scope=this;
 	  var configManager = applicationManager.getConfigurationManager();
 	  var userPreferencesManager = applicationManager.getUserPreferencesManager();

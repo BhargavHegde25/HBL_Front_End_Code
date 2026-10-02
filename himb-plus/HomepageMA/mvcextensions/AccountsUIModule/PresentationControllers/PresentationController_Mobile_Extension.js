@@ -43,6 +43,7 @@ define(["CommonsMA/AsyncManager/BusinessControllers/BusinessController", "dataFo
           "defaultAccount": response
         }*/
         var navManager = applicationManager.getNavigationManager();
+        kony.print("PERF|NAV_DASH|" + Date.now()); // PERF-TEMP
         navManager.navigateTo({
           "appName": "HomepageMA",
           "friendlyName": "frmHBLUnifiedDashboard",
@@ -291,6 +292,7 @@ define(["CommonsMA/AsyncManager/BusinessControllers/BusinessController", "dataFo
     return accProcessedData;
   },
   presentationAccountsSucc :function(res) {
+    kony.print("PERF|GETLIST_CB|" + Date.now()); // PERF-TEMP
     try{
       var scope=this;
     var navManager = applicationManager.getNavigationManager();
@@ -378,6 +380,131 @@ define(["CommonsMA/AsyncManager/BusinessControllers/BusinessController", "dataFo
                    "friendlyName": "frmHBLUnifiedDashboard",
                         },true,"Navigation");*/
               }
+  },
+  /**
+   * PERF (mobile login): starts the DigitalArrangements getList request as soon as the user session exists,
+   * in parallel with the post-login services, instead of after them. Only the raw response is held here;
+   * it is processed (accounts stored, permissions set, callbacks fired) at the usual point in showDashboard.
+   */
+  prefetchAccountList : function() {
+    try {
+      var prefetch = {
+        "userName": applicationManager.getUserPreferencesManager().getUserName(),
+        "startTime": new Date().getTime(),
+        "done": false,
+        "status": null,
+        "data": null,
+        "error": null,
+        "onDone": null
+      };
+      scope_Acc_Pres.accountListPrefetch = prefetch;
+      var accountsRepo = kony.mvc.MDAApplication.getSharedInstance().getRepoManager().getRepository("DigitalArrangements");
+      accountsRepo.customVerb('getList', {}, function(status, data, error) {
+        prefetch.done = true;
+        prefetch.status = status;
+        prefetch.data = data;
+        prefetch.error = error;
+        if (prefetch.onDone) {
+          var onDone = prefetch.onDone;
+          prefetch.onDone = null;
+          onDone();
+        }
+      });
+    } catch (err) {
+      scope_Acc_Pres.accountListPrefetch = null;
+      kony.print("prefetchAccountList" + err);
+    }
+  },
+  clearAccountListPrefetch : function() {
+    scope_Acc_Pres.accountListPrefetch = null;
+  },
+  /**
+   * Same as getInternalAccountsWithParams({}, ...) but uses the login prefetch when it belongs to the current
+   * user, is recent and has not been used yet. In every other case (no prefetch, other user, too old,
+   * prefetch failed) it makes the normal call, so behaviour is unchanged.
+   */
+  getInternalAccountsForDashboard : function(presentationSuccessCallback, presentationErrorCallback) {
+    var accountManager = applicationManager.getAccountManager();
+    var prefetch = scope_Acc_Pres.accountListPrefetch;
+    scope_Acc_Pres.accountListPrefetch = null;
+    var fetchNormally = function() {
+      accountManager.getInternalAccountsWithParams({}, presentationSuccessCallback, presentationErrorCallback);
+    };
+    try {
+      var maxAgeMs = 60000;
+      var usable = !kony.sdk.isNullOrUndefined(prefetch) &&
+          prefetch.userName === applicationManager.getUserPreferencesManager().getUserName() &&
+          (new Date().getTime() - prefetch.startTime) <= maxAgeMs &&
+          typeof accountManager.processInternalAccountsList === "function";
+      if (!usable) {
+        fetchNormally();
+        return;
+      }
+      var delivered = false;
+      var useResponse = function() {
+        if (delivered) {
+          return;
+        }
+        delivered = true;
+        try {
+          var data = prefetch.data;
+          var isCleanSuccess = prefetch.status == kony.mvc.constants.STATUS_SUCCESS &&
+              !kony.sdk.isNullOrUndefined(data) &&
+              (kony.sdk.isNullOrUndefined(data.opstatus) || data.opstatus == 0) &&
+              kony.sdk.isNullOrUndefined(data.errcode) &&
+              kony.sdk.isNullOrUndefined(data.dbpErrCode) &&
+              Array.isArray(data.Accounts) && data.Accounts.length > 0;
+          if (!isCleanSuccess) {
+            // Any error or unusual response: make the normal call now, exactly as before.
+            fetchNormally();
+            return;
+          }
+          try {
+            kony.timer.schedule("logoutFlag", accountManager.showLogout, 5, false);
+          } catch (timerErr) {
+            kony.print("getInternalAccountsForDashboard timer" + timerErr);
+          }
+          accountManager.processInternalAccountsList({}, prefetch.status, prefetch.data, prefetch.error, presentationSuccessCallback, presentationErrorCallback);
+        } catch (err) {
+          kony.print("getInternalAccountsForDashboard" + err);
+        }
+      };
+      if (prefetch.done) {
+        // Deliver asynchronously, like a network callback, so the rest of showDashboard runs first as before.
+        try {
+          kony.timer.schedule("dashboardAccountsPrefetch", function() {
+            try {
+              kony.timer.cancel("dashboardAccountsPrefetch");
+            } catch (cancelErr) {}
+            useResponse();
+          }, 0.1, false);
+        } catch (timerErr) {
+          useResponse();
+        }
+      } else {
+        prefetch.onDone = useResponse;
+      }
+    } catch (err) {
+      kony.print("getInternalAccountsForDashboard" + err);
+      fetchNormally();
+    }
+  },
+  showDashboard : function() {
+    var navManager = applicationManager.getNavigationManager();
+    var custominfoCD = navManager.getCustomInfo("frmCustomerDashboard");
+    if(!(!kony.sdk.isNullOrUndefined(custominfoCD) && (custominfoCD.reDesignFlow === "true")))
+    applicationManager.getPresentationUtility().showLoadingScreen();
+    var accountManager = applicationManager.getAccountManager();
+	if(!kony.sdk.isNullOrUndefined(custominfoCD) && (custominfoCD.reDesignFlow === "true")){
+      scope_Acc_Pres.accountListPrefetch = null;
+      accountManager.fetchInternalAccountsWithOutActions(scope_Acc_Pres.presentationAccountsSucc, scope_Acc_Pres.presentationAccountsErr);
+	}else{
+      // PERF: was accountManager.getInternalAccountsWithParams({}, ...); now reuses the login prefetch when valid.
+      scope_Acc_Pres.getInternalAccountsForDashboard(scope_Acc_Pres.presentationAccountsSucc, scope_Acc_Pres.presentationAccountsErr);
+    }
+    if(custominfoCD.isMultiCustomer === "false"){
+    this.getWealthPortfolio();
+    }
   },
   oldDashboard : function() {
     var navManager = applicationManager.getNavigationManager();

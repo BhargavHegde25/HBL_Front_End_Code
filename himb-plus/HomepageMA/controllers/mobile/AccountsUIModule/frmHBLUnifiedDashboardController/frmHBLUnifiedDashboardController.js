@@ -8,6 +8,7 @@ define(['CampaignUtility', 'CommonUtilities','FooterMenuUtility'], function(Camp
   var loggerManager = applicationManager.getLoggerManager();
   return {
     init: function(){
+     kony.print("PERF|D_INIT_S|" + Date.now()); // PERF-TEMP
      try{
 	var currentForm = kony.application.getCurrentForm().id;
      //applicationManager.getPresentationFormUtility().initCommonActions(this, "YES", currentForm);
@@ -20,6 +21,7 @@ define(['CampaignUtility', 'CommonUtilities','FooterMenuUtility'], function(Camp
      }catch(e){
 kony.print("***************Error in HBL Dashboard init function**********"+e);
      }
+     kony.print("PERF|D_INIT_E|" + Date.now()); // PERF-TEMP
     },
     onNavigate: function(response){
 	try{
@@ -57,6 +59,7 @@ kony.print("***************Error in HBL Dashboard init function**********"+e);
 		this.view.imgCards.src=res;
 	},
     preShow: function(){
+      kony.print("PERF|D_PRESHOW_S|" + Date.now()); // PERF-TEMP
       var scope = this;
 	  var navManager = applicationManager.getNavigationManager();
 	  var presentationUtility=applicationManager.getPresentationUtility();
@@ -104,9 +107,11 @@ kony.print("***************Error in HBL Dashboard init function**********"+e);
       var flag=navManager.getCustomInfo("getAccountList");
       (flag===true)?this.view.flxSwitchAcc.setVisibility(true):this.view.flxSwitchAcc.setVisibility(false)
      scope.accountNavigation();
+      kony.print("PERF|D_FLOWACTION_S|" + Date.now()); // PERF-TEMP
       scope.setFlowAction();
 	  
       scope.setQuicklinksAndServices();
+      kony.print("PERF|D_QUICKLINKS_E|" + Date.now()); // PERF-TEMP
       /*let accounts = kony.mvc.MDAApplication.getSharedInstance().moduleManager.getModule({
         appName: "ArrangementsMA",
         moduleName: "AccountUIModule"
@@ -147,8 +152,10 @@ kony.print("***************Error in HBL Dashboard init function**********"+e);
 		  defaultDashboardAcc.FDDefaultAcc="";
 	  }
       this.mapCardData(data);
+      kony.print("PERF|D_MAPCARD_E|" + Date.now()); // PERF-TEMP
      
       this.validateDefaultAccounts(defaultDashboardAcc);
+      kony.print("PERF|D_VALIDATEDEF_E|" + Date.now()); // PERF-TEMP
       //applicationManager.getPresentationFormUtility().logFormName(currentForm);
      /* scope.view.HeaderHbl.flxBack.onClick = function(){
          let MenuHandler = applicationManager.getMenuHandler();
@@ -168,6 +175,7 @@ kony.print("***************Error in HBL Dashboard init function**********"+e);
         authMode.presentationController.firstTimeLoginDone();
       }
        applicationManager.getPresentationUtility().dismissLoadingScreen();
+       kony.print("PERF|D_PRESHOW_E|" + Date.now()); // PERF-TEMP
      },
      accountNavigation: function(){
       this.view.flxViewHeader.onClick = function(){
@@ -192,17 +200,31 @@ kony.print("***************Error in HBL Dashboard init function**********"+e);
        }.bind(this);
      },
      postShow: function () {
+		 kony.print("PERF|D_POSTSHOW|" + Date.now()); // PERF-TEMP
 		 try{
 		 var scope=this;
       scope.view.flxRequestDeposit.onClick = scope.setFixedDepositVisibility.bind(this);
       var manageCardsModule = kony.mvc.MDAApplication.getSharedInstance().getModuleManager().getModule({ "moduleName": "ManageCardsUIModule", "appName": "CardsMA" });
       manageCardsModule.presentationController.getBankDateMB();
-	  applicationManager.getTransfersManager().getList("", scope.getListSuccess.bind(scope),scope.getListError.bind(scope));
+      // PERF: removed the extra getList call here; its response was never used (accounts are already loaded at login).
       applicationManager.getPresentationUtility().dismissLoadingScreen();
 		 }catch(e){
 			 kony.print("error"+e);
 		 }
+      this.sendPendingDefaultAccountsUpdate();
     }, 	
+	sendPendingDefaultAccountsUpdate: function(){
+	  try{
+		var dataJSON = this.pendingDefaultAccountsUpdate;
+		this.pendingDefaultAccountsUpdate = null;
+		if(dataJSON){
+		  var infoCall = kony.mvc.MDAApplication.getSharedInstance().getModuleManager().getModule({ "moduleName": "ManageArrangementsUIModule", "appName": "ManageArrangementsMA" });
+		  infoCall.presentationController.verifyDefaultAccounts(dataJSON);
+		}
+	  }catch(err){
+		kony.print("sendPendingDefaultAccountsUpdate"+err);
+	  }
+	},
 	getListSuccess:function(res){applicationManager.getPresentationUtility().dismissLoadingScreen();},
 	getListError:function(err){applicationManager.getPresentationUtility().dismissLoadingScreen();},
     onHide: function(){
@@ -405,6 +427,7 @@ kony.print("***************Error in HBL Dashboard init function**********"+e);
     validateDefaultAccounts: function (defaultDashboardAcc){
       try {
          var serviceCallReq = false;
+         this.pendingDefaultAccountsUpdate = null;
          var userObj = applicationManager.getUserPreferencesManager().getUserObj();
          if (userObj['default_account_loanpayment'] === null) {
              userObj['default_account_loanpayment'] = defaultDashboardAcc.DashboardDefaultAcc;
@@ -528,8 +551,8 @@ kony.print("***************Error in HBL Dashboard init function**********"+e);
                "default_account_cardless": userObj['default_account_cardless'],
 			   "default_account_esewa":userObj['default_account_esewa']
            }
-           var infoCall = kony.mvc.MDAApplication.getSharedInstance().getModuleManager().getModule({ "moduleName": "ManageArrangementsUIModule", "appName": "ManageArrangementsMA" });
-           infoCall.presentationController.verifyDefaultAccounts(dataJSON);
+           // PERF: same payload as before, but sent from postShow (after the Dashboard is visible) instead of during preShow.
+           this.pendingDefaultAccountsUpdate = dataJSON;
          }
        } catch (err) {
          loggerManager.log("#### in catch " + JSON.stringify(err) + " ####");
