@@ -206,12 +206,25 @@ kony.print("***************Error in HBL Dashboard init function**********"+e);
       scope.view.flxRequestDeposit.onClick = scope.setFixedDepositVisibility.bind(this);
       var manageCardsModule = kony.mvc.MDAApplication.getSharedInstance().getModuleManager().getModule({ "moduleName": "ManageCardsUIModule", "appName": "CardsMA" });
       manageCardsModule.presentationController.getBankDateMB();
-	  applicationManager.getTransfersManager().getList("", scope.getListSuccess.bind(scope),scope.getListError.bind(scope));
+      // PERF: removed the extra getList call here; its response was never used (accounts are already loaded at login).
       applicationManager.getPresentationUtility().dismissLoadingScreen();
 		 }catch(e){
 			 kony.print("error"+e);
 		 }
+      this.sendPendingDefaultAccountsUpdate();
     }, 	
+	sendPendingDefaultAccountsUpdate: function(){
+	  try{
+		var dataJSON = this.pendingDefaultAccountsUpdate;
+		this.pendingDefaultAccountsUpdate = null;
+		if(dataJSON){
+		  var infoCall = kony.mvc.MDAApplication.getSharedInstance().getModuleManager().getModule({ "moduleName": "ManageArrangementsUIModule", "appName": "ManageArrangementsMA" });
+		  infoCall.presentationController.verifyDefaultAccounts(dataJSON);
+		}
+	  }catch(err){
+		kony.print("sendPendingDefaultAccountsUpdate"+err);
+	  }
+	},
 	getListSuccess:function(res){applicationManager.getPresentationUtility().dismissLoadingScreen();},
 	getListError:function(err){applicationManager.getPresentationUtility().dismissLoadingScreen();},
     onHide: function(){
@@ -414,6 +427,7 @@ kony.print("***************Error in HBL Dashboard init function**********"+e);
     validateDefaultAccounts: function (defaultDashboardAcc){
       try {
          var serviceCallReq = false;
+         this.pendingDefaultAccountsUpdate = null;
          var userObj = applicationManager.getUserPreferencesManager().getUserObj();
          if (userObj['default_account_loanpayment'] === null) {
              userObj['default_account_loanpayment'] = defaultDashboardAcc.DashboardDefaultAcc;
@@ -537,8 +551,8 @@ kony.print("***************Error in HBL Dashboard init function**********"+e);
                "default_account_cardless": userObj['default_account_cardless'],
 			   "default_account_esewa":userObj['default_account_esewa']
            }
-           var infoCall = kony.mvc.MDAApplication.getSharedInstance().getModuleManager().getModule({ "moduleName": "ManageArrangementsUIModule", "appName": "ManageArrangementsMA" });
-           infoCall.presentationController.verifyDefaultAccounts(dataJSON);
+           // PERF: same payload as before, but sent from postShow (after the Dashboard is visible) instead of during preShow.
+           this.pendingDefaultAccountsUpdate = dataJSON;
          }
        } catch (err) {
          loggerManager.log("#### in catch " + JSON.stringify(err) + " ####");
