@@ -440,9 +440,22 @@ define(["CommonsMA/AsyncManager/BusinessControllers/BusinessController", "dataFo
         fetchNormally();
         return;
       }
+      var delivered = false;
       var useResponse = function() {
+        if (delivered) {
+          return;
+        }
+        delivered = true;
         try {
-          if (prefetch.status != kony.mvc.constants.STATUS_SUCCESS) {
+          var data = prefetch.data;
+          var isCleanSuccess = prefetch.status == kony.mvc.constants.STATUS_SUCCESS &&
+              !kony.sdk.isNullOrUndefined(data) &&
+              (kony.sdk.isNullOrUndefined(data.opstatus) || data.opstatus == 0) &&
+              kony.sdk.isNullOrUndefined(data.errcode) &&
+              kony.sdk.isNullOrUndefined(data.dbpErrCode) &&
+              Array.isArray(data.Accounts) && data.Accounts.length > 0;
+          if (!isCleanSuccess) {
+            // Any error or unusual response: make the normal call now, exactly as before.
             fetchNormally();
             return;
           }
@@ -457,7 +470,17 @@ define(["CommonsMA/AsyncManager/BusinessControllers/BusinessController", "dataFo
         }
       };
       if (prefetch.done) {
-        useResponse();
+        // Deliver asynchronously, like a network callback, so the rest of showDashboard runs first as before.
+        try {
+          kony.timer.schedule("dashboardAccountsPrefetch", function() {
+            try {
+              kony.timer.cancel("dashboardAccountsPrefetch");
+            } catch (cancelErr) {}
+            useResponse();
+          }, 0.1, false);
+        } catch (timerErr) {
+          useResponse();
+        }
       } else {
         prefetch.onDone = useResponse;
       }
