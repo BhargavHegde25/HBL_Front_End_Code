@@ -2,6 +2,7 @@ define(["CommonUtilities","OLBConstants"],function(CommonUtilities,OLBConstants)
     return {
 		count : 0,
         userAttributesSuccessCallback: function (res) {
+            kony.print("PERF|UA_OK|" + Date.now()); // PERF-TEMP
             if (res !== (undefined || null)) {
                 var authParams = res.UserName;
                 var navManager = applicationManager.getNavigationManager();
@@ -451,6 +452,7 @@ define(["CommonUtilities","OLBConstants"],function(CommonUtilities,OLBConstants)
 	  this.performLogout(context);
   },
   postLoginServicesSuccess :function(){
+	  kony.print("PERF|PLS_DONE|" + Date.now()); // PERF-TEMP
 	  var scope=this;
 	  var configManager = applicationManager.getConfigurationManager();
 	  var userPreferencesManager = applicationManager.getUserPreferencesManager();

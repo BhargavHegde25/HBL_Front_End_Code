@@ -216,6 +216,7 @@ define(["CommonUtilities"], function(CommonUtilities) {
     }
   };
   Auth_PresentationController.prototype.onLogin = function(UsernamePasswordJSON, formContext) {
+    kony.print("PERF|LOGIN_START|" + Date.now()); // PERF-TEMP
     scope_AuthPresenter.rememberdeviceregflag = false;
     applicationManager.getPresentationUtility().showLoadingScreen();
     Auth_PresentationController.UsernamePasswordJSON = UsernamePasswordJSON;
@@ -395,6 +396,7 @@ define(["CommonUtilities"], function(CommonUtilities) {
     
   };
   Auth_PresentationController.prototype.presentationLoginSuccess = function(resSuccess) {
+    kony.print("PERF|AUTH_OK|" + Date.now()); // PERF-TEMP
     const configManager = applicationManager.getConfigurationManager();
     const navManager =  applicationManager.getNavigationManager();
     const loggerManager = applicationManager.getLoggerManager();

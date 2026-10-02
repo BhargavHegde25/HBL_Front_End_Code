@@ -43,6 +43,7 @@ define(["CommonsMA/AsyncManager/BusinessControllers/BusinessController", "dataFo
           "defaultAccount": response
         }*/
         var navManager = applicationManager.getNavigationManager();
+        kony.print("PERF|NAV_DASH|" + Date.now()); // PERF-TEMP
         navManager.navigateTo({
           "appName": "HomepageMA",
           "friendlyName": "frmHBLUnifiedDashboard",
@@ -291,6 +292,7 @@ define(["CommonsMA/AsyncManager/BusinessControllers/BusinessController", "dataFo
     return accProcessedData;
   },
   presentationAccountsSucc :function(res) {
+    kony.print("PERF|GETLIST_CB|" + Date.now()); // PERF-TEMP
     try{
       var scope=this;
     var navManager = applicationManager.getNavigationManager();
