@@ -293,6 +293,15 @@ define(['OLBConstants'], function(OLBConstants) {
 		 kony.print("err"+err)
 	   }
      function getAllCompletionCallback(status, data, error) {
+      self.processInternalAccountsList(params, status, data, error, presentationSuccessCallback, presentationErrorCallback);
+    }
+  },
+  /**
+   * Processes a raw DigitalArrangements getList response exactly as getInternalAccountsWithParams does.
+   * Shared by getInternalAccountsWithParams and the mobile login prefetch (HomepageMA AccountsUIModule).
+   */
+  processInternalAccountsList : function(params, status, data, error, presentationSuccessCallback, presentationErrorCallback){
+    var self = this;
     var loggerManager = applicationManager.getLoggerManager();
     try{
       var srh = applicationManager.getServiceResponseHandler();
@@ -376,7 +385,6 @@ define(['OLBConstants'], function(OLBConstants) {
       }
     } catch (err) {
       loggerManager.log("#### in catch " + JSON.stringify(err) + " ####");
-    }
     }
   },
     fetchCompletedandScheduledTransaction : function (presentationSuccessCallback, presentationErrorCallback) {
