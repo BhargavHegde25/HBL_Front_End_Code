@@ -55,6 +55,11 @@ define(["CommonUtilities","OLBConstants"],function(CommonUtilities,OLBConstants)
         // The response is only used by HomepageMA showDashboard, at the same point in the flow as before.
         prefetchDashboardAccounts: function () {
             try {
+                // When the AccountManager login prefetch (LOGIN_PREFETCH_ACCOUNTS) is switched on it already
+                // sends getList early; do not send a second one.
+                if (CommonUtilities.getBooleanConfig("LOGIN_PREFETCH_ACCOUNTS", false) === true) {
+                    return;
+                }
                 if (applicationManager.getConfigurationManager().isMicroAppPresent('HomepageMA')) {
                     var accountsModule = kony.mvc.MDAApplication.getSharedInstance().getModuleManager().getModule({ "moduleName": "AccountsUIModule", "appName": "HomepageMA" });
                     if (typeof accountsModule.presentationController.prefetchAccountList === "function") {
