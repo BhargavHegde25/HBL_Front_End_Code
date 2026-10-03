@@ -466,6 +466,10 @@ define( function() {
       manageCards.fetchTransactionsForCard(params,this.getTransactionsForCardSuccess,this.getTransactionsForCardError);
   };
   ManageCards_PresentationController.prototype.getTransactionsForCardSuccess = function(success){
+    //TEMP DIAGNOSTIC - remove
+    //var perfMarksOnResponse = applicationManager.getNavigationManager().getCustomInfo("perfMarks") || {};
+    //perfMarksOnResponse.t1 = new Date().getTime();
+    //applicationManager.getNavigationManager().setCustomInfo("perfMarks", perfMarksOnResponse);
     var navManager = applicationManager.getNavigationManager();
     navManager.setCustomInfo("frmCardManageHomeTransactions",success);
     applicationManager.getPresentationUtility().dismissLoadingScreen();
@@ -473,6 +477,11 @@ define( function() {
     controller.setSegmentData();
   };
   ManageCards_PresentationController.prototype.getTransactionsForCardError = function(error){
+    //TEMP DIAGNOSTIC - remove. A failing call that is retried would explain the wall clock time.
+    //try {
+      //var navDiag = applicationManager.getNavigationManager();
+      //navDiag.setCustomInfo("diagBuffer", (navDiag.getCustomInfo("diagBuffer") || "") + "\n!! service ERROR " + new Date().getTime() + " : " + JSON.stringify(error).substring(0, 200));
+    //} catch (diagError) { kony.print("[DIAG] error capture failed: " + diagError); }
     applicationManager.getPresentationUtility().dismissLoadingScreen();
 		if(error["isServerUnreachable"])
       applicationManager.getPresentationInterruptHandler().showErrorMessage("postLogin", error);

@@ -128,36 +128,20 @@ define({
                 return;
             }
     try {
-                var context = KonyMain.getActivityContext();
-                var contentResolver = context.getContentResolver();
-                var uri = Uri.parse(rawbytes.getResourcePath());
-                var inputStream = contentResolver.openInputStream(uri);
-                var bitmap = BitmapFactory.decodeStream(inputStream);
-                var inputImage = InputImage.fromBitmap(bitmap, 0);
-                var scanner = BarcodeScanner.getClient();
-                var OnSuccessListener = java.newClass("OnSuccessListener", "java.lang.Object", ["com.google.android.gms.tasks.OnSuccessListener"], {
-                    onSuccess: function(barcodes) {
-                    if (barcodes.size() > 0) {
-                        var barcode = barcodes.get(0);
-                        var qrData = barcode.getRawValue();
-                               var controller = applicationManager.getPresentationUtility().getController('frmQRScan', true);
-                               controller.onQRScan(qrData);
-                        kony.print("Decoded QR Code: " + qrData);
-                        } else {
-                            self.onQRCustomError();
-    }
-    }
-                });
-                var OnFailureListener = java.newClass("OnFailureListener", "java.lang.Object", ["com.google.android.gms.tasks.OnFailureListener"], {
-                    onFailure: function(e) {
-                        kony.print("QR code decoding failed: " + e.getMessage());
-    }
-                });
-                scanner.process(inputImage)
-                .addOnSuccessListener(new OnSuccessListener())
-                .addOnFailureListener(new OnFailureListener());
+                // One decoder for both gallery buttons - see frmQRScanController.decodeGalleryQrAndroid,
+                // which retries a large camera photo at EXIF-corrected, scaled and centre-cropped sizes.
+                var controller = applicationManager.getPresentationUtility().getController('frmQRScan', true);
+                controller.decodeGalleryQrAndroid(rawbytes,
+                    function (qrData) {
+                        controller.onQRScan(qrData);
+                    },
+                    function (trail) {
+                        self.__fpd = "G android(landing) " + trail;
+                        self.onQRCustomError();
+                    });
             } catch (error) {
-                kony.print("Error Qr decode" + error.message);
+                self.__fpd = "G android(landing) ERR " + error;
+                self.onQRCustomError();
     }
     }
    let status =  kony.phone.openMediaGallery(callBack,{mimeType:"image/*"});
@@ -167,8 +151,9 @@ define({
     var basicConfig = {
       "alertType": constants.ALERT_TYPE_CONFIRMATION,
       "alertTitle": kony.i18n.getLocalizedString("i18n.qrpayments.VerificationFailed"),
-      "message": kony.i18n.getLocalizedString("i18n.qrpayments.qrNotSupported"),
-     
+      "message": kony.i18n.getLocalizedString("i18n.qrpayments.qrNotSupported")
+        + "   [DIAG] " + (scope.__fpd || "no checkpoint reached"),
+
       "yesLabel": kony.i18n.getLocalizedString("i18n.qrpayments.Retry"),
       "noLabel": kony.i18n.getLocalizedString("i18n.transfers.Cancel")
     };
@@ -202,6 +187,7 @@ try{
          kony.print("-------base64String----------"+base64String);
          networkInstance.processBase64QRImageCompletion(base64String,function(qrCodeData,error) {
             if (error) {
+                    self.__fpd = "G ios(landing) decodeError=" + error;
                     self.onQRCustomError();
             }    else {
                 var controller = applicationManager.getPresentationUtility().getController('frmQRScan', true);

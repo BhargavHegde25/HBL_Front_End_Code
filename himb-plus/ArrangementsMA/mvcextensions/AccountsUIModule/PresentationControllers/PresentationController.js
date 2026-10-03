@@ -514,7 +514,13 @@ define(["CommonUtilities", "OLBConstants"], function (CommonUtilities, OLBConsta
      */
     PresentationController.prototype.loadAccountsLandingComponents = function () {
         this.getUnreadMessages();
-        this.fetchScheduledTransactions();
+        // Dashboard "upcoming scheduled payments" pre-fetch is gated per channel via Fabric
+        // (MB_ENABLE_UPCOMING_PAYMENTS / OLB_ENABLE_UPCOMING_PAYMENTS). When gated off, the API
+        // call is skipped entirely (not just hidden). Does not affect the Scheduled Transactions
+        // screen or scheduling/cancel flows (separate service calls).
+        if (this.isUpcomingPaymentsEnabled()) {
+            this.fetchScheduledTransactions();
+        }
 
         var configurationManager = applicationManager.getConfigurationManager();
         if (configurationManager.isSMEUser === "false")
@@ -569,6 +575,26 @@ define(["CommonUtilities", "OLBConstants"], function (CommonUtilities, OLBConsta
                 count: response.totalUnreadCount
             }
         }, frmName);
+    };
+    /**
+     * Perf gate: whether the dashboard "upcoming scheduled payments" pre-fetch should run on this
+     * channel. OLB (thinclient) reads OLB_ENABLE_UPCOMING_PAYMENTS; MB (native) reads
+     * MB_ENABLE_UPCOMING_PAYMENTS, from CommonUtilities.CLIENT_PROPERTIES (OLBConstants fallback).
+     * Enabled unless the flag is explicitly "false" (backward-compatible), and fails open on error.
+     */
+    PresentationController.prototype.isUpcomingPaymentsEnabled = function () {
+        try {
+            var props = (CommonUtilities.CLIENT_PROPERTIES && Object.keys(CommonUtilities.CLIENT_PROPERTIES).length > 0)
+                ? CommonUtilities.CLIENT_PROPERTIES
+                : ((OLBConstants && OLBConstants.CLIENT_PROPERTIES) ? OLBConstants.CLIENT_PROPERTIES : {});
+            var isOLB = (kony.os.deviceInfo().name === "thinclient");
+            var key = isOLB ? "OLB_ENABLE_UPCOMING_PAYMENTS" : "MB_ENABLE_UPCOMING_PAYMENTS";
+            var val = ("" + ((props && props[key] !== undefined && props[key] !== null) ? props[key] : "")).trim().toLowerCase();
+            return val !== "false";   // enabled unless explicitly "false"
+        } catch (e) {
+            kony.print("isUpcomingPaymentsEnabled " + e);
+            return true;   // fail open -> preserve current behaviour
+        }
     };
     /**
      * Method to fetch upcomming scheduled transactions for accounts landing page

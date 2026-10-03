@@ -76,6 +76,7 @@ define(["CommonUtilities","OLBConstants"],function(CommonUtilities,OLBConstants)
                 configurationManager.setVirtualPrepaidCardFee(response["VIRTUAL_PREPAID_CARD_FEE"]);   
 				configurationManager.setCardTopUpPayableAccName(response["S2M_CARD_TOPUP_PAYABLE_ACCNOUNT_NAME"]);
                 configurationManager.setLockCardStatus(response["ENABLE_LANGUAGE_SWITCH"]);
+				configurationManager.HIMAL_FD_ACCOUNT_CODES = response["HIMAL_FD_ACCOUNT_CODES"] || ""
                 if (response.OLB_ENABLE_INAPP_CAMPAIGNS && response.OLB_ENABLE_INAPP_CAMPAIGNS.toUpperCase() === "TRUE") {
                     var directMktManager = applicationManager.getDirectMarketingManager();
                     directMktManager.getAds("preLoginDesktopAds", self.getCampaignsSuccess.bind(self), self.getCampaignsFailure.bind(self));

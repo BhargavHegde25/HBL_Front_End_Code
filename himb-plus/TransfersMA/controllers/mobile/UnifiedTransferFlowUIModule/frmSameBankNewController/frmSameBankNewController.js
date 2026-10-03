@@ -21,6 +21,13 @@ define({
       params.repeatData = transactionObject;
     }
     params.transferType = "Within Same Bank";
+    try{
+      var pmMgr = applicationManager.getModulesPresentationController({"appName":"TransfersMA","moduleName":"ManageActivitiesUIModule"});
+      if(pmMgr && pmMgr.pmReliefFund === true){
+        params.pmReliefFund = true;
+        pmMgr.pmReliefFund = false;
+      }
+    }catch(pmErr){ kony.print("pmRelief flag read error: " + pmErr); }
     if(kony.os.deviceInfo().name === "iPhone") {
       var titleBarAttributes = this.view.titleBarAttributes;
       titleBarAttributes["shadowImage"] = "transparentbox.png";

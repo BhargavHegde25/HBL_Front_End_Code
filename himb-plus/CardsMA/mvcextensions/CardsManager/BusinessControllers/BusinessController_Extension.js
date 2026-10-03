@@ -1,4 +1,17 @@
 define(['CommonUtilities'], function(CommonUtilities) {
+	/**
+	 * dd/mm/yyyy, the format the card services expect, built explicitly.
+	 * getFormatedDateString is not used here: "d/m/y" yields a 2 digit year, and with UTC date
+	 * formatting disabled it returns the Date object untouched - either way the service cannot
+	 * read the range and silently answers with the card's whole history.
+	 * @param {Date} dateObj
+	 * @returns {String}
+	 */
+	function formatDateForCardService(dateObj) {
+		var day = dateObj.getDate();
+		var month = dateObj.getMonth() + 1;
+		return (day < 10 ? "0" : "") + day + "/" + (month < 10 ? "0" : "") + month + "/" + dateObj.getFullYear();
+	}
 	return {
 		fetchCardsList: function(presentationSuccessCallback, presentationErrorCallback) {
 			var scope = this;
@@ -465,6 +478,95 @@ define(['CommonUtilities'], function(CommonUtilities) {
 					presentationErrorCallback(obj["errmsg"]);
 				}
 			}
+		},
+		/**
+		 * Required PIN length for a card, shared by mobile and desktop.
+		 * CARD_PIN_LENGTH_6_BINS lists only the BINs that take a 6 digit PIN, comma separated;
+		 * every card whose number does not start with a listed BIN uses 4. A missing, empty or
+		 * malformed property leaves every card on 4. Matching is on prefix, so 6 and 8 digit
+		 * BINs can both be listed.
+		 * @param {Object} card - card object carrying maskedCardNumber, cardId or cardNumber
+		 * @returns {Number} required PIN length
+		 */
+		getCardPinLength: function(card) {
+			var DEFAULT_PIN_LENGTH = 4;
+			var EXTENDED_PIN_LENGTH = 6;
+			//BINs that take a 6 digit PIN, held in code so the feature works with no Fabric dependency -
+			//client app properties were not reaching the device without clearing the app's data.
+			//CARD_PIN_LENGTH_6_BINS REPLACES this list whenever it is readable and non empty, so Fabric
+			//can add, correct or remove a BIN without a build. A missing, empty, malformed or unreadable
+			//property falls back to the list below, which therefore must stay correct in its own right.
+			var SIX_DIGIT_PIN_BINS = ["62347715", "62245460", "62911505"];
+			try {
+				if (card === undefined || card === null) {
+					return DEFAULT_PIN_LENGTH;
+				}
+				var bins = SIX_DIGIT_PIN_BINS.slice(0);
+				try {
+					var configuredBins = applicationManager.getConfigurationManager().getConfigurationValue("CARD_PIN_LENGTH_6_BINS");
+					if (configuredBins !== undefined && configuredBins !== null && String(configuredBins).trim() !== "") {
+						bins = String(configuredBins).split(",");
+					}
+				} catch (configError) {
+					applicationManager.getLoggerManager().log("#### CardsManager : getCardPinLength falling back to the built in BIN list - " + configError + " ####");
+				}
+				//only the LEADING run of digits is usable, a masked number such as 623477XXXXXX1234 would otherwise
+				//collapse to 6234771234 and stop an 8 digit BIN from matching. The longest run wins so a full
+				//PAN is preferred over a value that only exposes the first six digits.
+				var candidates = [card.maskedCardNumber, card.cardId, card.cardNumber];
+				var cardDigits = "";
+				for (var c = 0; c < candidates.length; c++) {
+					//strip grouping separators first so "6291 1505 0001 2594" is usable, then take the LEADING run only
+					var candidateValue = (candidates[c] === undefined || candidates[c] === null) ? "" : String(candidates[c]).replace(/[\s-]/g, "");
+					var leadingDigits = candidateValue.match(/^[0-9]+/);
+					if (leadingDigits !== null && leadingDigits[0].length > cardDigits.length) {
+						cardDigits = leadingDigits[0];
+					}
+				}
+				if (cardDigits === "") {
+					return DEFAULT_PIN_LENGTH;
+				}
+				for (var i = 0; i < bins.length; i++) {
+					var bin = bins[i].replace(/[^0-9]/g, "");
+					if (bin !== "" && cardDigits.indexOf(bin) === 0) {
+						return EXTENDED_PIN_LENGTH;
+					}
+				}
+			} catch (err) {
+				applicationManager.getLoggerManager().log("#### CardsManager : getCardPinLength falling back to " + DEFAULT_PIN_LENGTH + " - " + err + " ####");
+			}
+			return DEFAULT_PIN_LENGTH;
+		},
+		/**
+		 * Transaction date range for credit and prepaid cards, shared by mobile and desktop.
+		 * The window is CARD_TRANSACTION_DAYS days including the working date, widened when
+		 * needed so it always reaches the 1st of the previous calendar month - the lower
+		 * bound the mobile billed section depends on.
+		 * @param {Date} workingDate - bank current working date
+		 * @returns {Object} fromDate and toDate as Date objects, plus the days value used
+		 */
+		getCardTransactionDateRange: function(workingDate) {
+			var DEFAULT_TRANSACTION_DAYS = 30;
+			var days = DEFAULT_TRANSACTION_DAYS;
+			try {
+				var configuredDays = parseInt(applicationManager.getConfigurationManager().getConfigurationValue("CARD_TRANSACTION_DAYS"), 10);
+				if (!isNaN(configuredDays) && configuredDays > 0) {
+					days = configuredDays;
+				}
+			} catch (err) {
+				applicationManager.getLoggerManager().log("#### CardsManager : getCardTransactionDateRange falling back to " + DEFAULT_TRANSACTION_DAYS + " days - " + err + " ####");
+			}
+			var toDate = new Date(workingDate.getFullYear(), workingDate.getMonth(), workingDate.getDate());
+			var windowStart = new Date(toDate.getFullYear(), toDate.getMonth(), toDate.getDate() - (days - 1));
+			var previousMonthStart = new Date(toDate.getFullYear(), toDate.getMonth() - 1, 1);
+			var fromDate = windowStart < previousMonthStart ? windowStart : previousMonthStart;
+			return {
+				"fromDate": fromDate,
+				"toDate": toDate,
+				"fromDateText": formatDateForCardService(fromDate),
+				"toDateText": formatDateForCardService(toDate),
+				"days": days
+			};
 		},
 	};
 });

@@ -5233,6 +5233,16 @@ define(['CampaignUtility', 'CommonUtilities'], function(CampaignUtility, CommonU
       //         }
       //       }
 
+      // Loan accounts do not open the account details screen.
+      // getDefaultKey normalises the row value: the segment builders overwrite each
+      // row's accountType with its LOCALIZED display string (getCustomLocalKey, :2625
+      // :2629 :2814 :2818), so a direct == "Loan" test would only hold in English.
+      // This must stay above showLoadingScreen - returning below it leaves the
+      // spinner up with no navigation to dismiss it, which reads as a frozen app.
+      if (this.getDefaultKey(rowid["accountType"]) === "Loan") {
+        return;
+      }
+
       applicationManager.getPresentationUtility().showLoadingScreen();
       var selectedAccountId = rowid["accountID"];
       var contextData = {

@@ -125,6 +125,22 @@ RegistrationManager.prototype.deleteRegisteredDevice = function(record,presentat
   */
 RegistrationManager.prototype.trackRegisteredDevice = function(presentationSuccessCallback,presentationErrorCallback)
 {
+	  /* LOGIN_DEFER_DEVICE_TRACKING experiment. Gated here rather than at the call sites so every
+	     caller is covered by one switch. Required lazily; this module has no CommonUtilities dependency. */
+	  var scopeObj = this;
+	  try {
+	    var commonUtils = require('CommonUtilities');
+	    if (commonUtils.getBooleanConfig("LOGIN_DEFER_DEVICE_TRACKING", false) && scopeObj.deviceTrackingDeferred !== true) {
+	      scopeObj.deviceTrackingDeferred = true;
+	      commonUtils.deferAfterLogin("deferDeviceTracking", function() {
+	        scopeObj.trackRegisteredDevice(presentationSuccessCallback, presentationErrorCallback);
+	      });
+	      return;
+	    }
+	  } catch (deferError) {
+	    kony.print("[DEFER] device tracking gate skipped: " + deferError);
+	  }
+	  scopeObj.deviceTrackingDeferred = false;
 	  var TrackDeviceRegistration = kony.mvc.MDAApplication.getSharedInstance().getRepoManager().getRepository("TrackDeviceRegistration");
       TrackDeviceRegistration.customVerb('trackDeviceRegistration', {}, completionCallBack);
 	  function completionCallBack(status, data, error) {

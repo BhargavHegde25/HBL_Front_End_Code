@@ -206,6 +206,24 @@ define([], function () {
 * @param {function} presentationMsgError will be called when call is not successfull
 */
     AlertsManager.prototype.fetchAlertsCategory = function (presentationMsgSuccess, presentationMsgError) {
+        // TEMP DIAGNOSTIC — remove after pinning the login trigger. Logs the caller that fires the
+        // Alerts getCategories 4x at login (search console for "ALERTCAT-TRACE").
+        try { kony.print("ALERTCAT-TRACE caller: " + (new Error().stack || "")); } catch (eTrace) {}
+        // GATE — skip the Alerts getCategories fetch when alerts are disabled. Controlled by:
+        //   (a) Fabric client property ENABLE_ALERT_CATEGORIES = "false"  (toggle without a rebuild), or
+        //   (b) absence of the ALERT_MANAGEMENT feature (aligns with hiding the Alert menu later).
+        // Fails open (fetches) on any error so nothing breaks if the checks are unavailable.
+        try {
+            var _skipAlertCat = false;
+            try { if (!applicationManager.getConfigurationManager().checkUserFeature("ALERT_MANAGEMENT")) { _skipAlertCat = true; } } catch (eF) {}
+            try {
+                var _CU = require('CommonUtilities'), _OC = require('OLBConstants');
+                var _p = (_CU && _CU.CLIENT_PROPERTIES && Object.keys(_CU.CLIENT_PROPERTIES).length) ? _CU.CLIENT_PROPERTIES
+                        : ((_OC && _OC.CLIENT_PROPERTIES) ? _OC.CLIENT_PROPERTIES : {});
+                if (("" + (_p.ENABLE_ALERT_CATEGORIES || "true")).trim().toLowerCase() === "false") { _skipAlertCat = true; }
+            } catch (eP) {}
+            if (_skipAlertCat) { if (presentationMsgError) { presentationMsgError({ skipped: true }); } return; }
+        } catch (eGate) { /* fail open -> fetch as before */ }
         var scopeObj = this;
         var profileAlerts = kony.mvc.MDAApplication.getSharedInstance().modelStore.getModelDefinition("Alerts");
         kony.mvc.MDAApplication.getSharedInstance().getRepoManager().getRepository('Alerts').setHeaderParams({"Accept-Language":kony.i18n.getCurrentLocale()});// required to set language parameter as header parameter for admin service for multilingual support

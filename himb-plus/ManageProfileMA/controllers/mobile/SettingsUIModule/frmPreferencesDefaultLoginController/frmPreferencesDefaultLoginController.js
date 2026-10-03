@@ -6,6 +6,7 @@ return{
 		applicationManager.getPresentationFormUtility().initCommonActions(this,"YES",currentForm);
 	},
     preShow: function () {
+		/*
         if(applicationManager.getPresentationFormUtility().getDeviceName()==="iPhone"){
             this.view.flxHeader.isVisible = false;
         }else{
@@ -16,7 +17,23 @@ return{
         var navManager = applicationManager.getNavigationManager();
 	  	var currentForm = navManager.getCurrentForm();
 	    applicationManager.getPresentationFormUtility().logFormName(currentForm);
-	  	applicationManager.getPresentationUtility().dismissLoadingScreen();
+	  	applicationManager.getPresentationUtility().dismissLoadingScreen();*/
+		  try {
+        if(applicationManager.getPresentationFormUtility().getDeviceName()==="iPhone"){
+            this.view.flxHeader.isVisible = false;
+        }else{
+            this.view.flxHeader.isVisible = true;
+        }
+        this.initActions();
+        this.setAuthModeOptions();
+        var navManager = applicationManager.getNavigationManager();
+        var currentForm = navManager.getCurrentForm();
+        applicationManager.getPresentationFormUtility().logFormName(currentForm);
+      } catch (e) {
+        kony.print("preShow failed on Default Sign in: " + e);
+      } finally {
+        applicationManager.getPresentationUtility().dismissLoadingScreen();
+      }
     },
     initActions: function () {
         var scope = this;
@@ -39,7 +56,8 @@ return{
     }
     else
       this.view.flxOption2.isVisible = false;
-      var loginData = applicationManager.getNavigationManager().getCustomInfo("frmSettings");
+    //  var loginData = applicationManager.getNavigationManager().getCustomInfo("frmSettings");
+	var loginData = applicationManager.getNavigationManager().getCustomInfo("frmSettings") || {};
       var tempLoginMode = loginData.defLoginMode;
       if(tempLoginMode == "touchid")
         this.view.lblStatus2.text = kony.i18n.getLocalizedString("kony.mb.common.enabled");
@@ -48,7 +66,8 @@ return{
   },
   setFaceId:function(flags)
   {
-    var loginData = applicationManager.getNavigationManager().getCustomInfo("frmSettings");
+  //  var loginData = applicationManager.getNavigationManager().getCustomInfo("frmSettings");
+	var loginData = applicationManager.getNavigationManager().getCustomInfo("frmSettings") || {};
     var tempLoginMode = loginData.defLoginMode;
     if (applicationManager.getPresentationFormUtility().getDeviceName() === "iPhone") {
       if (flags.isFaceIdSupported) {
@@ -258,7 +277,8 @@ return{
       this.view.flxSeperator1.setVisibility(false);
       this.view.flxOption1.setVisibility(false);
       var isDeviceBiometricAvailable= this.view.sdk.isDeviceBiometricAvailable();
-      var loginData = applicationManager.getNavigationManager().getCustomInfo("frmSettings");
+    //  var loginData = applicationManager.getNavigationManager().getCustomInfo("frmSettings");
+	var loginData = applicationManager.getNavigationManager().getCustomInfo("frmSettings") || {};
       var tempLoginMode = loginData.defLoginMode;
       const userManager = applicationManager.getUserPreferencesManager();
       const userName = userManager.getUserObj().userName;

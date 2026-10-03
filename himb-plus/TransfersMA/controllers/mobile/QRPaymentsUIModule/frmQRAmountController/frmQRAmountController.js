@@ -335,6 +335,9 @@ define({
       } else if (type === 3){
         scopeObj.view.flxAggRightArrow.setVisibility(false);
         typeVal = "Smart QR";
+      } else if (type === 4){
+        scopeObj.view.flxAggRightArrow.setVisibility(false);
+        typeVal = "Fonepay";
       }
       if(type!=1){
       this.view.lblAggregatorValue.text = typeVal;  

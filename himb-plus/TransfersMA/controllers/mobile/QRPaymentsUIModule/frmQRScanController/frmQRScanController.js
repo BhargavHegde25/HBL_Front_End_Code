@@ -17,8 +17,7 @@ define({
     }
 	this.view.lblNoRecords.text=kony.i18n.getLocalizedString("i18n.accounts.noTransactionFound");
 	this.view.lblScanMsg.skin="sknFontFFFFFSemioild";
-	this.view.imgesewa.src="smartqr.png"
-	this.view.imgnepalpay.src="esewa.png";
+	this.applySupportedMerchants();
     this.initActions();
 	 applicationManager.getPresentationUtility().dismissLoadingScreen();
 	  }catch(e){
@@ -118,6 +117,7 @@ uploadQR:function(){
     var scope = this;
     var isQRStringJSON = false;
     var resObj = {};
+    scope.__fpd = ""; scope.fpDiag("1 typeof=" + (typeof result) + " len=" + (result && result.length) + " head=" + String(result).substring(0,32));
 	//storing to get from amount screen
 	var navMan=applicationManager.getNavigationManager();
 	applicationManager.getNavigationManager().setCustomInfo("QrDatafromQR",result);
@@ -132,6 +132,7 @@ uploadQR:function(){
           isQRStringJSON = false;
         }
       } else {
+        scope.fpDiag("2 REJECTED not-a-string typeof=" + (typeof result));
         scope.onQRError();
         return;
       }
@@ -216,6 +217,7 @@ if(result.eSewa_id){
         }
       } else {
         var paramsResult = Object.assign({}, this.getFieldsForQRPay(result));  
+        scope.fpDiag("3 keys=" + JSON.stringify(Object.keys(paramsResult)));
         if(Object.keys(paramsResult).length > 0){
 			if(paramsResult.hasAddDataInfo){
 			resObj.toAccountName = paramsResult.addDataInfo.merchantName;
@@ -251,11 +253,36 @@ var isHBLEmvTransfer = paramsResult.hasAddDataInfo && paramsResult.addDataInfo.i
             resObj.qrAggregatorType = 2;
           } else if(isSmartQRAggregator){
             resObj.qrAggregatorType = 3;
+          } else if(isOtherAggregator){
+            scope.fpDiag("4 ladder=FONEPAY enabled=" + scope.isFonepayEnabled());
+            // Fonepay. Reached only when neither tag 29 nor tag 27 is present, so no QR that
+            // works today changes rail.
+            if(!scope.isFonepayEnabled()){
+              // Do NOT resumeScan() here. The QR is still in frame, so the scanner
+              // re-fires afterScan synchronously, re-enters onQRScan, and recurses
+              // until "RangeError: Maximum call stack size exceeded" - which the outer
+              // catch then reported as an unreadable QR. Show the alert and let the
+              // Retry button resume the scan, the same way onQRCustomError does.
+              var fpCfg = {
+                "alertType": constants.ALERT_TYPE_CONFIRMATION,
+                "alertTitle": kony.i18n.getLocalizedString("i18n.qrpayments.VerificationFailed"),
+                "message": kony.i18n.getLocalizedString("i18n.qrpayments.fonepayUnavailable")
+                  || "Fonepay QR is temporarily unavailable. Please try another payment method.",
+                "alertHandler": scope.alertCallback.bind(scope),
+                "yesLabel": kony.i18n.getLocalizedString("i18n.qrpayments.Retry"),
+                "noLabel": kony.i18n.getLocalizedString("i18n.transfers.Cancel")
+              };
+              applicationManager.getPresentationUtility().CustomAlert(
+                fpCfg, {}, { hideCloseButton: true, disableTouchDismiss: true });
+              return;
+            }
+            resObj.qrAggregatorType = 4;
           } else {
+            scope.fpDiag("4 ladder=NONE (no tag 26/27/29 key)");
             resObj = {};
             scope.onQRCustomError();
             return;
-          } 
+          }
 
           this.onQRSuccess(resObj);
         } else {
@@ -264,6 +291,7 @@ var isHBLEmvTransfer = paramsResult.hasAddDataInfo && paramsResult.addDataInfo.i
       }
     }
     catch(err){
+      scope.fpDiag("5 EXCEPTION: " + err);
       scope.onQRError();
     }
 	  }catch(e){
@@ -310,6 +338,8 @@ var isHBLEmvTransfer = paramsResult.hasAddDataInfo && paramsResult.addDataInfo.i
         typeVal = "Nepal Pay";
       } else if (result.qrAggregatorType === 3){
         typeVal = "Smart QR";
+      } else if (result.qrAggregatorType === 4){
+        typeVal = "Fonepay";
       }
       transactionManager.setTransactionAttribute("qrAggregatorType", result.qrAggregatorType);
 	   transactionManager.setTransactionAttribute("SelectedAggType", typeVal)
@@ -342,12 +372,19 @@ var isHBLEmvTransfer = paramsResult.hasAddDataInfo && paramsResult.addDataInfo.i
   },
 
   //invoked when QR data is incorrect
+  fpDiag: function (m) {
+    try {
+      this.__fpd = (this.__fpd ? this.__fpd + " | " : "") + m;
+      kony.print("FONEPAY-DIAG " + m);
+    } catch (e) {}
+  },
   onQRError: function () {
     var scope = this;
     var basicConfig = {
       "alertType": constants.ALERT_TYPE_CONFIRMATION,
       "alertTitle": kony.i18n.getLocalizedString("i18n.qrpayments.VerificationFailed"),
-      "message": kony.i18n.getLocalizedString("i18n.qrpayments.UnableToVerifyTheQRCode"),
+      "message": kony.i18n.getLocalizedString("i18n.qrpayments.UnableToVerifyTheQRCode")
+        + "   [DIAG] " + (scope.__fpd || "no checkpoint reached - onQRScan never ran"),
       "alertHandler": scope.alertCallback.bind(scope),
       "yesLabel": kony.i18n.getLocalizedString("i18n.qrpayments.Retry"),
       "noLabel": kony.i18n.getLocalizedString("i18n.transfers.Cancel")
@@ -443,12 +480,88 @@ var isHBLEmvTransfer = paramsResult.hasAddDataInfo && paramsResult.addDataInfo.i
     }
     return res;
   },
+  // Single place that reads FONEPAY_QR_ENABLED. Returns the trimmed upper-case value, or ""
+  // when the property is absent, empty or unreadable. Callers decide what "" means for them -
+  // the rail and the merchant badge deliberately answer that differently, see below.
+  readFonepayFlag: function(){
+    // Read the Fabric CLIENT APP property the way the rest of this project does -
+    // through the ConfigurationManager, the same route EMVQR_PARAMS and
+    // PERSONAL_QR_FORMAT use. The original CLIENT_PROPERTIES lookup returned nothing
+    // here, so the rail was permanently gated off even with the property set.
+    var raw = null;
+    try{
+      var cm = applicationManager.getConfigurationManager();
+      if(cm){
+        if(typeof cm.getConfigurationValue === "function"){
+          raw = cm.getConfigurationValue("FONEPAY_QR_ENABLED");
+        }
+        if(raw === null || raw === undefined || raw === ""){ raw = cm.FONEPAY_QR_ENABLED; }
+      }
+    } catch(e){ raw = null; }
+    try{
+      if((raw === null || raw === undefined || raw === "")
+         && typeof CommonUtilities !== "undefined" && CommonUtilities.CLIENT_PROPERTIES){
+        raw = CommonUtilities.CLIENT_PROPERTIES.FONEPAY_QR_ENABLED;
+      }
+    } catch(e){}
+    if(raw === null || raw === undefined){ return ""; }
+    return String(raw).trim().toUpperCase();
+  },
+  isFonepayEnabled: function(){
+    // Unset or unreadable -> defer to the SERVER gate, which is authoritative and
+    // answers with error 1034 and a proper message. Only an explicit FALSE stops the
+    // rail on the client. Failing closed here turned a missing property into a dead
+    // feature reporting a misleading "cannot verify QR" error.
+    return this.readFonepayFlag() !== "FALSE";
+  },
+  // The merchant badge on the scanner advertises the rail, so it fails CLOSED where the rail
+  // fails open: only an explicit "true" shows it. Absent, empty, misspelt or read before the
+  // client properties have landed all leave it hidden, so the strip never advertises FonePay
+  // on a build where the property was never set.
+  isFonepayIconVisible: function(){
+    return this.readFonepayFlag() === "TRUE";
+  },
+  // flxSupportedmerchants is a free-form container and each logo pins on centerx alone, so the
+  // row can be laid out for however many are actually showing. n logos split the strip into n
+  // equal slots and each sits in the middle of its own: slot i at (i + 0.5) * 100 / n %. Four
+  // gives 12.50/37.50/62.50/87.50%, three gives 16.67/50.00/83.33%. Hidden widgets do not
+  // collapse in a free-form container, which is why the survivors have to be re-pinned rather
+  // than just hiding FonePay and leaving a gap where it was.
+  applySupportedMerchants: function () {
+    try {
+      var strip = [
+        { widget: this.view.imgNepalPay, visible: true },
+        { widget: this.view.imgFonePay,  visible: this.isFonepayIconVisible() },
+        { widget: this.view.imgSmartQR,  visible: true },
+        { widget: this.view.imgEsewa,    visible: true }
+      ];
+      var shown = [];
+      var i;
+      for (i = 0; i < strip.length; i++) {
+        if (!strip[i].widget) { continue; }
+        strip[i].widget.setVisibility(strip[i].visible);
+        if (strip[i].visible) { shown.push(strip[i].widget); }
+      }
+      if (this.view.flxSupportedmerchants) {
+        this.view.flxSupportedmerchants.setVisibility(shown.length > 0);
+      }
+      for (i = 0; i < shown.length; i++) {
+        // centerX, not centerx. The lower-case spelling is the design-time key in the .sm and is
+        // inert at runtime - assigning it just hangs a dead property off the widget and leaves the
+        // logo wherever the .sm put it.
+        shown[i].centerX = ((((i + 0.5) * 100) / shown.length).toFixed(2)) + "%";
+      }
+    } catch (e) {
+      kony.print("**********************error in applySupportedMerchants*********************************" + e);
+    }
+  },
   onQRCustomError: function () {
     var scope = this;
     var basicConfig = {
       "alertType": constants.ALERT_TYPE_CONFIRMATION,
       "alertTitle": kony.i18n.getLocalizedString("i18n.qrpayments.VerificationFailed"),
-      "message": kony.i18n.getLocalizedString("i18n.qrpayments.qrNotSupported"),
+      "message": kony.i18n.getLocalizedString("i18n.qrpayments.qrNotSupported")
+        + "   [DIAG] " + (scope.__fpd || "no checkpoint reached"),
       "alertHandler": scope.alertCallback.bind(scope),
       "yesLabel": kony.i18n.getLocalizedString("i18n.qrpayments.Retry"),
       "noLabel": kony.i18n.getLocalizedString("i18n.transfers.Cancel")
@@ -491,39 +604,155 @@ var isHBLEmvTransfer = paramsResult.hasAddDataInfo && paramsResult.addDataInfo.i
         applicationManager.getPresentationUtility().CustomAlert(basicConfig,{}, custConfig);
                 return;
             }
-    try {
-                var context = KonyMain.getActivityContext();
-                var contentResolver = context.getContentResolver();
-                var uri = Uri.parse(rawbytes.getResourcePath());
-                var inputStream = contentResolver.openInputStream(uri);
-                var bitmap = BitmapFactory.decodeStream(inputStream);
-                var inputImage = InputImage.fromBitmap(bitmap, 0);
-                var scanner = BarcodeScanner.getClient();
-                var OnSuccessListener = java.newClass("OnSuccessListener", "java.lang.Object", ["com.google.android.gms.tasks.OnSuccessListener"], {
-                    onSuccess: function(barcodes) {
-                    if (barcodes.size() > 0) {
-                        var barcode = barcodes.get(0);
-                        var qrData = barcode.getRawValue();
-                               scope.onQRScan(qrData);
-                        kony.print("Decoded QR Code: " + qrData);
-                        } else {
-                            self.onQRCustomError();
-    }
-    }
+            self.decodeGalleryQrAndroid(rawbytes,
+                function (qrData) {
+                    scope.onQRScan(qrData);
+                },
+                function (trail) {
+                    self.__fpd = ""; self.fpDiag("G android " + trail);
+                    self.onQRCustomError();
                 });
-                var OnFailureListener = java.newClass("OnFailureListener", "java.lang.Object", ["com.google.android.gms.tasks.OnFailureListener"], {
-                    onFailure: function(e) {
-                        kony.print("QR code decoding failed: " + e.getMessage());
-    }
-                });
-                scanner.process(inputImage)
-                .addOnSuccessListener(new OnSuccessListener())
-                .addOnFailureListener(new OnFailureListener());
-            } catch (error) {
-                kony.print("Error Qr decode" + error.message);
-    }
     }
    let status =  kony.phone.openMediaGallery(callBack,{mimeType:"image/*"});
+  },
+
+  /**
+   * Decode a QR from a gallery-picked image on Android. Shared by frmQRScan and
+   * frmQRPaymentsLanding.
+   *
+   * The original path handed ML Kit ONE full-size bitmap with rotation hard-coded to 0. A picked
+   * camera photo is typically 3072x4096 with the QR filling a small part of the frame and an EXIF
+   * orientation the raw decode ignores - on device that returned barcodes=0 for a QR the live
+   * camera reads instantly (the camera feeds ML Kit small frames at the right orientation).
+   *
+   * So try a short sequence, stopping at the first hit:
+   *   file      InputImage.fromFilePath - ML Kit decodes the file itself and applies EXIF rotation
+   *   max1600   whole image scaled so the longest side is 1600 px
+   *   center60  the central 60% of the image, scaled to <= 1600 px (QR photographed mid-frame)
+   *   max1024   whole image at <= 1024 px
+   * Each pass is independent: a pass that throws is recorded and skipped, never fatal.
+   *
+   * onDecoded(rawValue, passName) on the first non-empty QR; onNotFound(trail) otherwise, where
+   * trail names every pass and its result, e.g. "file=0 max1600=0 center60=0 max1024=0 bitmap=3072x4096".
+   */
+  decodeGalleryQrAndroid: function (rawbytes, onDecoded, onNotFound) {
+    var trail = [];
+    var original = null;
+    var finished = false;
+    var MAX_LARGE = 1600;
+    var MAX_SMALL = 1024;
+    try {
+      var Uri = java.import("android.net.Uri");
+      var Bitmap = java.import("android.graphics.Bitmap");
+      var BitmapFactory = java.import("android.graphics.BitmapFactory");
+      var KonyMain = java.import("com.konylabs.android.KonyMain");
+      var BarcodeScanning = java.import("com.google.mlkit.vision.barcode.BarcodeScanning");
+      var InputImage = java.import("com.google.mlkit.vision.common.InputImage");
+      var context = KonyMain.getActivityContext();
+      var uri = Uri.parse(rawbytes.getResourcePath());
+      var scanner = BarcodeScanning.getClient();
+    } catch (setupError) {
+      onNotFound("setup:ERR " + setupError);
+      return;
+    }
+
+    function loadOriginal() {
+      if (original === null) {
+        var stream = context.getContentResolver().openInputStream(uri);
+        try {
+          original = BitmapFactory.decodeStream(stream);
+        } finally {
+          try { stream.close(); } catch (ignore) {}
+        }
+      }
+      return original;
+    }
+
+    function scaled(src, maxSide) {
+      var w = src.getWidth(), h = src.getHeight();
+      var ratio = Math.min(1, maxSide / Math.max(w, h));
+      if (ratio >= 1) { return src; }
+      return Bitmap.createScaledBitmap(src, Math.max(1, Math.round(w * ratio)), Math.max(1, Math.round(h * ratio)), true);
+    }
+
+    var passes = [
+      { name: "file", build: function () { return InputImage.fromFilePath(context, uri); } },
+      { name: "max1600", build: function () { return InputImage.fromBitmap(scaled(loadOriginal(), MAX_LARGE), 0); } },
+      { name: "center60", build: function () {
+          var src = loadOriginal();
+          var w = src.getWidth(), h = src.getHeight();
+          var cw = Math.round(w * 0.6), ch = Math.round(h * 0.6);
+          var crop = Bitmap.createBitmap(src, Math.round((w - cw) / 2), Math.round((h - ch) / 2), cw, ch);
+          return InputImage.fromBitmap(scaled(crop, MAX_LARGE), 0);
+        } },
+      { name: "max1024", build: function () { return InputImage.fromBitmap(scaled(loadOriginal(), MAX_SMALL), 0); } }
+    ];
+
+    function sizeNote() {
+      return original ? " bitmap=" + original.getWidth() + "x" + original.getHeight() : "";
+    }
+
+    function finish(found, value, passName) {
+      if (finished) { return; }
+      finished = true;
+      var note = sizeNote();
+      try { if (original !== null && !original.isRecycled()) { original.recycle(); } } catch (ignore) {}
+      if (found) {
+        kony.print("FONEPAY-DIAG gallery QR decoded by pass " + passName + " (" + trail.join(" ") + ")" + note);
+        onDecoded(value, passName);
+      } else {
+        onNotFound(trail.join(" ") + note);
+      }
+    }
+
+    function run(i) {
+      if (i >= passes.length) { finish(false); return; }
+      var pass = passes[i];
+      var image = null;
+      try {
+        image = pass.build();
+      } catch (buildError) {
+        trail.push(pass.name + ":ERR " + buildError);
+        run(i + 1);
+        return;
+      }
+      try {
+        var Success = java.newClass("QrGalleryPassSuccess" + i, "java.lang.Object",
+          ["com.google.android.gms.tasks.OnSuccessListener"], {
+            onSuccess: function (barcodes) {
+              var value = null;
+              try {
+                for (var b = 0; barcodes && b < barcodes.size() && !value; b++) {
+                  var raw = barcodes.get(b).getRawValue();
+                  if (raw !== null && raw !== undefined && String(raw).length > 0) { value = String(raw); }
+                }
+              } catch (readError) {
+                trail.push(pass.name + ":READERR " + readError);
+              }
+              if (value) {
+                trail.push(pass.name + "=hit");
+                finish(true, value, pass.name);
+              } else {
+                trail.push(pass.name + "=0");
+                run(i + 1);
+              }
+            }
+          });
+        var Failure = java.newClass("QrGalleryPassFailure" + i, "java.lang.Object",
+          ["com.google.android.gms.tasks.OnFailureListener"], {
+            onFailure: function (e) {
+              trail.push(pass.name + ":FAIL " + (e && e.getMessage ? e.getMessage() : e));
+              run(i + 1);
+            }
+          });
+        scanner.process(image).addOnSuccessListener(new Success()).addOnFailureListener(new Failure());
+      } catch (processError) {
+        trail.push(pass.name + ":ERR " + processError);
+        run(i + 1);
+      }
+    }
+
+    run(0);
   },
    invokeUploadQrForIos:function(){
 	   try{
@@ -558,6 +787,7 @@ try{
          kony.print("-------base64String----------"+base64String);
          networkInstance.processBase64QRImageCompletion(base64String,function(qrCodeData,error) {
             if (error) {
+                    self.__fpd = ""; self.fpDiag("G ios decodeError=" + error);
                     self.onQRCustomError();
             }    else {
                                self.onQRScan(qrCodeData);
@@ -638,6 +868,11 @@ onSuccess: function () {
     const config =scope.getConfig();
     const message = scope.validateAccount(categoryId, currencyCode, config);
     if (message) return message;
+    const format = scope.getPersonalQRFormat();
+    kony.print("PersonalQR: PERSONAL_QR_FORMAT resolved to [" + format + "]");
+    if (format !== 'EMVCO') {
+      return scope.generateQRJson(accountName, accountNumber);
+    }
     const request = scope.buildQRRequest(accountName, accountNumber, config);
     const payload = scope.buildEMVCoPayload(request);
     return payload;
@@ -726,6 +961,19 @@ calculateCRC16:function (input) {
 getConfig:function () {
   var configManager=applicationManager.getConfigurationManager();
   return JSON.parse(configManager.EMVQR_PARAMS);
+},
+getPersonalQRFormat:function () {
+  try {
+    var configManager = applicationManager.getConfigurationManager();
+    var format = configManager.PERSONAL_QR_FORMAT;
+    if (kony.sdk.isNullOrUndefined(format) || !String(format).trim()) {
+      return 'JSON';
+    }
+    return String(format).trim().toUpperCase();
+  } catch (e) {
+    kony.print("PersonalQR: unable to read PERSONAL_QR_FORMAT, defaulting to JSON - " + e);
+    return 'JSON';
+  }
 },
     populateCardData: function (accData) {
 		try{

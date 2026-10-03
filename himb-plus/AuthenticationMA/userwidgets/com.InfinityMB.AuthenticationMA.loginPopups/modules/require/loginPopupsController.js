@@ -528,6 +528,8 @@ define(['./LoginPopupsUtility','./LoginPopupsDAO'],function(LoginPopupsUtility, 
       };
       let identityServiceName = this._identityServiceName;
       //this.LoginPopupsDAO.login(authParams, scopeObj.onLoginSuccessCallback, scopeObj.onLoginFailureCallback, identityServiceName);
+      //start of the login journey for the popup flow; required lazily, this module has no CommonUtilities dependency
+      try { require('CommonUtilities').perfReset("login submitted"); } catch (perfError) { }
       this.LoginDAO.login(authParams, scopeObj.onLoginSuccessCallback.bind(scopeObj), scopeObj.onLoginFailureCallback.bind(scopeObj), identityServiceName);
     },
 
@@ -581,6 +583,7 @@ define(['./LoginPopupsUtility','./LoginPopupsDAO'],function(LoginPopupsUtility, 
       let identityServiceName = this._identityServiceName;
       if(userMan.verifyAppLoginPin(pin)){
         //scopeObj.LoginPopupsDAO.login(authParams, scopeObj.onLoginSuccessCallback, scopeObj.onLoginFailureCallback, identityServiceName);
+        try { require('CommonUtilities').perfReset("login submitted"); } catch (perfError) { }
         scopeObj.LoginDAO.login(authParams, scopeObj.onLoginSuccessCallback.bind(scopeObj), scopeObj.onLoginFailureCallback.bind(scopeObj), identityServiceName);
       } else {        
         this.onPinFailure({"errmsg":"InvalidPin"});

@@ -1095,6 +1095,9 @@ define(['./UnifiedTransferStore', './UnifiedTransferBusinessController', 'DataVa
 				this.view.flxClearFromText.onClick = this.clearAccountTextboxTexts.bind(this, "From");
 				this.view.flxClearToText.onClick = this.clearAccountTextboxTexts.bind(this, "To");
 				if (scope.context.transferFlow !== "Modify" && scope.context.transferFlow !== "EditModify" && scope.context.transferFlow !== "Repeat" && scope.context.transferFlow !== "Edit" && scope.context.transferFlow !== "PayBeneficiary") this.setPayeeField("New Payee");
+				if (scope.context && scope.context.pmReliefFund === true && scope.context.transferType === "Same Bank") {
+					this.setupPMReliefFund();
+				}
 				else if(scope.context.transferFlow === "Repeat" || scope.context.transferFlow === "Edit" ||scope.context.transferFlow === "PayBeneficiary" ){
 					this.setPayeeField("Existing Payee");
 					this.businessController.storeInCollection({
@@ -2469,17 +2472,33 @@ define(['./UnifiedTransferStore', './UnifiedTransferBusinessController', 'DataVa
 								scope.collectionObj.Collection.Transaction["creditorName"] = maskAccNum;
 								scope.collectionObj.Collection.Transaction["formattedToAccount"] = maskAccNum;
 								scope.collectionObj.Collection.Transaction["creditorAccount"] = this.view.tbxAccountNumber.text;
+								// PM Relief: CreateOneTimeTransfer maps the credit account from Collection.Recipients.accountNumber
+								// (-> ExternalAccountNumber) and Transaction.toAccountNumber. A read-only prefilled payee never
+								// triggers to-account selection, so these stay empty and T24 rejects with E-119266. Set them here.
+								if (scope.context && scope.context.pmReliefFund === true) {
+									scope.collectionObj.Collection.Recipients.accountNumber = this.view.tbxAccountNumber.text;
+									scope.collectionObj.Collection.Transaction["toAccountNumber"] = this.view.tbxAccountNumber.text;
+									scope.collectionObj.Collection.Transaction["toAccountCurrency"] = "NPR";
+								}
 								this.view.flxErrorMessage.setVisibility(false);
 								var payeeNameMatch =false;
 								var navManager = applicationManager.getNavigationManager(); 
 								payeeNameMatch = scope.flexibleNameMatch(scope.view.tbxPayeeName.text,response.beneficiaryName);
-								if(payeeNameMatch !== true){
+								// PM Relief: payee name is authoritative from the client property (fixed institutional
+								// payable), so skip the beneficiary name-match gate for this account only.
+								if(payeeNameMatch !== true && !(scope.context && scope.context.pmReliefFund === true)){
                           		  scope.view.flxErrorMessage.setVisibility(true);
                             	  scope.view.rtxErrorMessage.text = "Entered payee name is incorrect. Please enter the valid payee name.";
 								}else{
-									if (response.currency == "NPR" && response.supportTransferTo == "1") {
+									// PM Relief Fund is a fixed institutional payable (like eSewa's payable account),
+									// which legitimately returns supportTransferTo=0 from core. Treat it as eligible
+									// for this account ONLY (scoped to pmReliefFund mode); normal transfers are unaffected.
+									if (response.currency == "NPR" && (response.supportTransferTo == "1" || (scope.context && scope.context.pmReliefFund === true))) {
 										navManager.setCustomInfo("NewPayeeTransfersCurrency", "true");
 										scope.view.flxErrorMessage.setVisibility(false);
+										// validateAccountNumber's success does not re-evaluate the Continue button; refresh it
+										// here so the eligibility flag we just set is reflected without waiting for another event.
+										if (typeof scope.enableOrDisableContinueButton === "function") { scope.enableOrDisableContinueButton(); }
 									} else {
 										scope.view.flxErrorMessage.setVisibility(true);
 										navManager.setCustomInfo("NewPayeeTransfersCurrency", "false");
@@ -2805,6 +2824,85 @@ define(['./UnifiedTransferStore', './UnifiedTransferBusinessController', 'DataVa
 		 * used to show the payee type fields
 		 * @return : NA
 		 */
+		/**
+		 * PM Disaster Relief Fund: prefill the fixed destination account number + holder name
+		 * (from Fabric client properties / spotlight) and make the To / payee fields read-only.
+		 */
+		setupPMReliefFund: function() {
+			var scope = this;
+			try {
+				var CommonUtilities = require('CommonUtilities');
+				var OLBConstants = require('OLBConstants');
+				var cp = (CommonUtilities.CLIENT_PROPERTIES && Object.keys(CommonUtilities.CLIENT_PROPERTIES).length > 0) ? CommonUtilities.CLIENT_PROPERTIES : OLBConstants.CLIENT_PROPERTIES;
+				var pmAccount = (cp && cp.PM_RELIEF_FUND_ACCOUNT) ? cp.PM_RELIEF_FUND_ACCOUNT : "";
+				var pmName = (cp && cp.PM_RELIEF_FUND_NAME) ? cp.PM_RELIEF_FUND_NAME : "";
+
+				// Prefill account number + payee name from client properties
+				this.view.tbxAccountNumber.text = pmAccount;
+				if (this.view.tbxReEnterAccountNumber) { this.view.tbxReEnterAccountNumber.text = pmAccount; }
+				this.view.tbxPayeeName.text = pmName;
+
+				// Populate the collection up-front so the CreateOneTimeTransfer payload carries the credit account
+				// (ExternalAccountNumber <- Recipients.accountNumber, toAccountNumber <- Transaction.toAccountNumber)
+				// WITHOUT depending on validateAccountNumber firing. A read-only prefilled payee never selects a
+				// to-account, and validation timing was unreliable (Continue only enabled after a normal-flow
+				// round-trip set the eligibility flag). Setting everything here makes PM Relief self-sufficient.
+				scope.collectionObj = UnifiedTransferStore.getState();
+				if (!scope.collectionObj.Collection.Recipients) { scope.collectionObj.Collection.Recipients = {}; }
+				if (!scope.collectionObj.Collection.Transaction) { scope.collectionObj.Collection.Transaction = {}; }
+				scope.collectionObj.Collection.Recipients.accountNumber = pmAccount;
+				scope.collectionObj.Collection.Recipients.payeeName = pmName;
+				scope.collectionObj.Collection.Transaction["creditorAccount"] = pmAccount;
+				scope.collectionObj.Collection.Transaction["creditorName"] = pmName;
+				scope.collectionObj.Collection.Transaction["toAccountNumber"] = pmAccount;
+				scope.collectionObj.Collection.Transaction["toAccountCurrency"] = "NPR";
+				scope.collectionObj.Collection.Transaction["beneficiaryName"] = pmName;
+				scope.collectionObj.Collection.Transaction["toAccountName"] = pmName;
+				// formattedToAccount is what the confirmation screen renders as "To account". Normally set during
+				// validation / to-account selection (both skipped for PM), so build it the same way here.
+				var pmFormattedTo = CommonUtilities.getAccountDisplayName({ name: pmName, accountID: pmAccount, Account_id: pmAccount });
+				scope.collectionObj.Collection.Transaction["formattedToAccount"] = pmFormattedTo;
+				scope.collectionObj.Collection.Recipients.payeeName = pmFormattedTo;
+				// transactionType routes the CREATE at the backend. A normal New-Payee transfer sends
+				// "ExternalTransfer"; PM never runs the account-selection path that re-affirms it, so it arrived
+				// empty -> backend integration failed (15001). Set it explicitly to match the working payload.
+				scope.collectionObj.Collection.Transaction["transactionType"] = "ExternalTransfer";
+				// Fixed institutional payable — mark eligible so the Continue gate passes on first entry.
+				applicationManager.getNavigationManager().setCustomInfo("NewPayeeTransfersCurrency", "true");
+
+				// Make Account Number truly read-only: disable the TextBox itself, not just the container
+				this.view.tbxAccountNumber.setEnabled(false);
+				this.view.flxAccountNumberField.setEnabled(false);
+				this.view.tbxAccountNumber.skin = "ICSknTbxDisabledSSPreg42424215px";
+				if (this.view.tbxReEnterAccountNumber) {
+					this.view.tbxReEnterAccountNumber.setEnabled(false);
+					this.view.tbxReEnterAccountNumber.skin = "ICSknTbxDisabledSSPreg42424215px";
+				}
+
+				// Keep Payee Name visible but read-only
+				this.view.flxPayeeNameTextBox.setVisibility(true);
+				this.view.tbxPayeeName.setEnabled(false);
+				this.view.tbxPayeeName.skin = "ICSknTbxDisabledSSPreg42424215px";
+
+				// Hide the "To section" chrome: To heading + New/Existing payee radios, and existing-payee/OR dropdown
+				if (this.view.flxToKeyAndPayeeType) { this.view.flxToKeyAndPayeeType.setVisibility(false); }
+				if (this.view.flxToList) { this.view.flxToList.setVisibility(false); }
+
+				// Hide Frequency and Send-on (Date) fields — same as a normal Same-Bank transfer
+				this.view.flxFrequencyField.setVisibility(false);
+				this.view.flxDateField.setVisibility(false);
+
+				// Do not validate on load; clear any stale error banner so the screen loads clean.
+				this.view.flxErrorMessage.setVisibility(false);
+
+				if (typeof this.enableOrDisableContinueButton === "function") { this.enableOrDisableContinueButton(); }
+				this.view.forceLayout();
+				// Dismiss the loading screen shown on frmUTFLanding to hide the transient-hop flash.
+				try { applicationManager.getPresentationUtility().dismissLoadingScreen(); } catch (e) {}
+			} catch (err) {
+				kony.print("setupPMReliefFund error: " + err);
+			}
+		},
 		setPayeeField: function(payeeType) {
 			var scope = this;
 			scope.payeeType = payeeType;
@@ -2944,6 +3042,21 @@ define(['./UnifiedTransferStore', './UnifiedTransferBusinessController', 'DataVa
 					this.view.flxAccountNumber.setVisibility(true);
 					this.view.flxPayeeNameTextBox.setVisibility(true);
 					this.view.flxAccountNumberField.setVisibility(true);
+					// Restore any read-only/hidden state left over from PM Relief mode on this shared widget
+					// instance, so a normal same-bank transfer is never stuck read-only after visiting PM Relief.
+					// Use resetTextBoxSkin (the app's own helper) to restore the correct bordered, breakpoint-aware
+					// enabled skin — hardcoding the .sm design skin renders the fields borderless.
+					this.view.flxAccountNumberField.setEnabled(true);
+					this.view.tbxAccountNumber.setEnabled(true);
+					this.resetTextBoxSkin(this.view.tbxAccountNumber);
+					this.view.tbxReEnterAccountNumber.setEnabled(true);
+					this.resetTextBoxSkin(this.view.tbxReEnterAccountNumber);
+					this.view.tbxPayeeName.setEnabled(true);
+					this.resetTextBoxSkin(this.view.tbxPayeeName);
+					this.view.flxToKeyAndPayeeType.setVisibility(true);
+					// Clear any eligibility flag left over from PM Relief mode so a normal New Payee transfer must
+					// pass its own account validation before Continue can enable.
+					applicationManager.getNavigationManager().setCustomInfo("NewPayeeTransfersCurrency", "false");
 					this.view.flxPayeeField.skin = "slFboxBGf8f7f8B0";
 					this.view.flxPayeeDetailWarning.setVisibility(true);
 					this.view.lblLookUp.setVisibility(scope.context.transferType === "Domestic Transfer" || scope.context.transferType === "International Transfer");
@@ -4496,6 +4609,16 @@ define(['./UnifiedTransferStore', './UnifiedTransferBusinessController', 'DataVa
 					scope.resetFlexFocusSkin(scope.view.flxAmountTextBox);
 					scope.view.tbxAmount.text = scope.businessController.getFormattedAmount(scope.view.tbxAmount.text);
 					scope.processDataValidation(scope.view.tbxAmount, "tbxAmount");
+					// PM Relief: account/payee are read-only, so validateAccountNumber never fires via their
+					// onEndEditing. Run it here — user-initiated (after entering amount), not on load — so the
+					// real eligibility check + transaction setup run once. No bypass: supportTransferTo still governs.
+					if (scope.context && scope.context.pmReliefFund === true && scope.context.transferType === "Same Bank") {
+						var navMan = applicationManager.getNavigationManager();
+						if (navMan.getCustomInfo("NewPayeeTransfersCurrency") !== "true" &&
+							scope.view.tbxAccountNumber.text !== "" && scope.view.tbxPayeeName.text !== "") {
+							scope.validateAccountNumber(scope.view.tbxAccountNumber, "tbxAccountNumber");
+						}
+					}
 				};
 				this.view.tbxPaymentAmount4.onBeginEditing = function() {
 					scope.resetTextBoxSkin(scope.view.tbxPaymentAmount4);
@@ -5585,6 +5708,26 @@ define(['./UnifiedTransferStore', './UnifiedTransferBusinessController', 'DataVa
 				if (scope.context.transferType === "Same Bank") {
 					scope.setTransferCurrencyFieldFromAccounts(true);
 					scope.setTransferFrequencyFieldFromAccounts();
+				}
+				// PM Relief: the schedule date is normally seeded during to-account SELECTION, which PM skips
+				// (read-only prefilled payee). Without it the hidden calendar keeps its stale default and the
+				// payload carries an old date. Seed it here to the bank working date (today) for an immediate
+				// one-time donation.
+				if (scope.context && scope.context.pmReliefFund === true && scope.context.transferType === "Same Bank") {
+					try {
+						var pmBankDate = (scope.bankDateObj && !scope.isEmptyNullOrUndefined(scope.bankDateObj.currentWorkingDate)) ? scope.bankDateObj.currentWorkingDate : new Date();
+						scope.disableOldDaySelection(scope.view.calStartDate, pmBankDate);
+						scope.disableOldDaySelection(scope.view.calEndDate, pmBankDate);
+						var pmSd = scope.businessController.getDateObjectFromCalendarString(scope.view.calStartDate.formattedDate, scope.view.calStartDate.dateFormat);
+						scope.businessController.storeInCollection({
+							"frequencyType": "Once",
+							"scheduledDate": pmSd.toISOString(),
+							"frequencyStartDate": pmSd.toISOString(),
+							"frequencyEndDate": pmSd.toISOString(),
+							"formattedSendOnDate": scope.view.calStartDate.formattedDate,
+							"isScheduled": "0"
+						});
+					} catch (pmDateErr) { kony.print("PM date seed error: " + pmDateErr); }
 				}
 				if (scope.context.transferType === "Pay a Person") {
 					scope.view.lblSelectedCurrencySymbol.text = scope.businessController.getCurrencySymbol(selectedRecord.currencyCode);

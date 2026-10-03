@@ -917,6 +917,11 @@ define(["CommonUtilities", "OLBConstants"], function(CommonUtilities, OLBConstan
      * Method to get Unread messages count from messages module
      */
     PresentationController.prototype.getUnreadMessages = function() {
+     /* LOGIN_DEFER_NOTIFICATIONS is gated on AccountManager.fetchMessagesNotifications instead of
+        here: there are two getUnreadMessages definitions, ArrangementsMA and HomepageMA, and only
+        the ArrangementsMA one runs during login. Both funnel into fetchMessagesNotifications.
+        Note that call also carries outage messages via setOutageMessages, not only the unread
+        badge - deferring it delays those too. */
      if(applicationManager.getConfigurationManager().isMicroAppPresent(applicationManager.getConfigurationManager().microappConstants.SECUREMESSAGE)){
       this.getUnreadMessagesOrNotificationsCount(this.getUnreadMessagesCountCompletionCallback.bind(this));
      }
@@ -978,7 +983,28 @@ define(["CommonUtilities", "OLBConstants"], function(CommonUtilities, OLBConstan
     /**
      * Method to fetch upcomming scheduled transactions for accounts landing page
      */
+    /**
+     * Perf gate (per channel): OLB (thinclient) reads OLB_ENABLE_UPCOMING_PAYMENTS, MB reads
+     * MB_ENABLE_UPCOMING_PAYMENTS, from CommonUtilities.CLIENT_PROPERTIES (OLBConstants fallback).
+     * Enabled unless explicitly "false"; fails open. Gates only the dashboard "upcoming" pre-fetch.
+     */
+    PresentationController.prototype.isUpcomingPaymentsEnabled = function() {
+        try {
+            var props = (CommonUtilities.CLIENT_PROPERTIES && Object.keys(CommonUtilities.CLIENT_PROPERTIES).length > 0)
+                ? CommonUtilities.CLIENT_PROPERTIES
+                : ((OLBConstants && OLBConstants.CLIENT_PROPERTIES) ? OLBConstants.CLIENT_PROPERTIES : {});
+            var isOLB = (kony.os.deviceInfo().name === "thinclient");
+            var key = isOLB ? "OLB_ENABLE_UPCOMING_PAYMENTS" : "MB_ENABLE_UPCOMING_PAYMENTS";
+            var val = ("" + ((props && props[key] !== undefined && props[key] !== null) ? props[key] : "")).trim().toLowerCase();
+            return val !== "false";
+        } catch (e) {
+            kony.print("isUpcomingPaymentsEnabled " + e);
+            return true;
+        }
+    };
     PresentationController.prototype.fetchScheduledTransactions = function() {
+       // Skip the dashboard upcoming-payments pre-fetch entirely when gated off for this channel.
+       if (!this.isUpcomingPaymentsEnabled()) { return; }
        applicationManager.getAccountManager().fetchScheduledTransaction(this.fetchScheduledTransactionSuccess.bind(this), this.fetchScheduledTransactionFailure.bind(this));
     };
     /**
@@ -2241,6 +2267,16 @@ define(["CommonUtilities", "OLBConstants"], function(CommonUtilities, OLBConstan
      */
     PresentationController.prototype.fetchPasswordExpirationWarning = function(navObject) {
         var scopeObj = this;
+        /* LOGIN_DEFER_LOCKOUT_SETTINGS experiment. Deferring delays the "password expires in N days"
+           warning, so a user who navigates away quickly may not see it. */
+        if (CommonUtilities.getBooleanConfig("LOGIN_DEFER_LOCKOUT_SETTINGS", false) && scopeObj.lockoutSettingsDeferred !== true) {
+            scopeObj.lockoutSettingsDeferred = true;
+            CommonUtilities.deferAfterLogin("deferLockoutSettings", function() {
+                scopeObj.fetchPasswordExpirationWarning(navObject);
+            });
+            return;
+        }
+        scopeObj.lockoutSettingsDeferred = false;
         applicationManager.getNavigationManager().updateForm({
             "key": BBConstants.LOADING_INDICATOR,
             "responseData": null

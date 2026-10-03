@@ -1070,6 +1070,12 @@ kony.print("**********************error in load esewa sample********************
 				if(transactionObj.CurrentBankDate){
 					currentBankDate=transactionObj.CurrentBankDate;
 				}
+				// ===== eSewa v2 booking success gate - DISABLED 2026-09-09 =====
+				// if(res.code === "UPIB-000")
+				// {
+				//	applicationManager.getTransactionsListManager().setTransactionAttribute("esewaBookingId",res.bookingId);
+				//	applicationManager.getTransactionsListManager().setTransactionAttribute("esewaExpiryTime",res.expiryTime);
+				// ===== end eSewa v2 =====
 				if(res.success=="true"||res.success==true)
 				{
 					applicationManager.getTransactionsListManager().setTransactionAttribute("esewaToAccName",res.accountName);
@@ -1270,6 +1276,25 @@ kony.print("**********************error in load esewa validateEsewafailure******
 				var scope=this;
 				var transactionObj = applicationManager.getTransactionsListManager().getTransactionObject();			
 				var tncManager=applicationManager.getTermsAndConditionsManager();				
+				// ===== eSewa v2 load payload - DISABLED 2026-09-09 =====
+				// var userObj = applicationManager.getUserPreferencesManager().getUserObj() || {};
+				// var initiatorFullName = ((userObj.userfirstname || "") + " " + (userObj.userlastname || "")).trim();
+				// var params=
+				// {
+				// "frmAccNumber": transactionObj.esewaFromAccount,
+				// "frmAccName": initiatorFullName || transactionObj.esewaFrmAccName,
+				// "paymentDesc":transactionObj.esewaTP,
+				// "field1": userObj.phone || "",
+				// "field2": "",
+				// "Fee": String(transactionObj.esewaCharges || "").trim(),
+				// "eSewaId": transactionObj.esewaId,
+				// "amount": String(transactionObj.esewaEnteredAmount || "").trim(),
+				// "referenceId": transactionObj.esewaRefId,
+				// "transactionId": transactionObj.esewaTransId,
+				// "bookingId": transactionObj.esewaBookingId,
+				// "originatingUniqueId": transactionObj.esewaOriginatingUniqueId
+				// };
+				// ===== end eSewa v2 =====
 				var params=
 				{
 				"frmAccNumber": transactionObj.esewaFromAccount,

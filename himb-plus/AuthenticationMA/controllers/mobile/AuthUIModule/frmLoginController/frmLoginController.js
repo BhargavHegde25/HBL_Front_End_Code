@@ -741,6 +741,9 @@ define(["CommonUtilities","OLBConstants"], function (CommonUtilities,OLBConstant
       }
       var authMod = kony.mvc.MDAApplication.getSharedInstance().getModuleManager().getModule("AuthUIModule");
       var navData=applicationManager.getNavigationManager().getCustomInfo("frmLogin");
+      /* Name removed from the welcome message: getUserFirstName/getUserLastName are session state and
+         carried over from a previous session, so the login screen greeted the wrong person.
+         Same treatment as frmLoginUnikenController.
       if (navData && !(navData.isFirstTimeLoginUname) && (navData.isRememberMeOn) && (navData.userName)){
         var userPreferencesManager = applicationManager.getUserPreferencesManager();
         var firstname = userPreferencesManager.getUserFirstName();
@@ -749,7 +752,10 @@ define(["CommonUtilities","OLBConstants"], function (CommonUtilities,OLBConstant
         this.view.lblWelcomeMessage.text = this.view.lblWelcomeMessage.text.trim()+".";
       } else {
          this.view.lblWelcomeMessage.text = kony.i18n.getLocalizedString("i18n.mb.prelogin.WelcometoHBL");
-      }      
+      }
+      */
+      this.view.lblWelcomeMessage.text = kony.i18n.getLocalizedString("i18n.mb.prelogin.WelcometoHBL");
+
       this.showWelcomeBackUser(navData);
       if(navData && navData.isAccountPreviewEnabled){
         this.view.flxDashboard.setVisibility(true);

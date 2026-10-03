@@ -56,9 +56,33 @@ define({
     var formatUtilManager = applicationManager.getFormatUtilManager();
     var qrPresentationController = applicationManager.getModulesPresentationController({ "moduleName": "QRPaymentsUIModule", "appName": "TransfersMA" });
     var transObj = transactionManager.getTransactionObject();
-    if (!qrPresentationController.isEmptyOrNullOrUndefined(transObj.errmsg)) {
+    if (transObj.dbpErrCode === "1036") {
+      // Fonepay outcome UNKNOWN: the customer has already been debited and the payment
+      // may have completed at Fonepay. Show the pending state (not the failure state),
+      // with the referenceId, which is the only handle support/reconciliation has for it.
       this.view.flxSuccess.isVisible = false;
       this.view.flxFail.isVisible = true;
+      this.view.imgFail.isVisible = false;
+      // getLocalizedString returns null for a key missing from the bundle, which rendered as
+      // "null Reference Id : ..." on device (the keys once existed only in the web bundles).
+      // Fall back to the English text so this screen can never show "null".
+      this.view.lblFailTitle.text = kony.i18n.getLocalizedString("i18n.qrpayments.pendingTitle")
+        || "Payment being confirmed";
+      var pendingMsg = kony.i18n.getLocalizedString("i18n.qrpayments.pendingMessage")
+        || "We are confirming this payment with Fonepay. Please check your transaction history shortly.";
+      if (transObj.referenceId) {
+        pendingMsg = pendingMsg + " " + (kony.i18n.getLocalizedString("i18n.konybb.common.ReferenceId") || "Reference Id")
+          + ": " + transObj.referenceId;
+      }
+      this.view.lblError.text = pendingMsg;
+      this.view.btnContinue.text = kony.i18n.getLocalizedString("kony.mb.common.close");
+      this.view.btnBacktoDashboard.setVisibility(false);
+    }
+    else if (!qrPresentationController.isEmptyOrNullOrUndefined(transObj.errmsg)) {
+      this.view.flxSuccess.isVisible = false;
+      this.view.flxFail.isVisible = true;
+      this.view.imgFail.isVisible = true;
+      this.view.lblFailTitle.text = kony.i18n.getLocalizedString("i18n.qrpayments.TransactionFailed");
       var errDetails = transObj.errmsg;
       this.view.lblError.text = errDetails[0].errorMessage;
       this.view.btnContinue.text = kony.i18n.getLocalizedString("kony.mb.common.close");

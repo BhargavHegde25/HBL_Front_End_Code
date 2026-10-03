@@ -58,6 +58,23 @@ define(['FormControllerUtility','OLBConstants', 'CommonUtilities'], function (Fo
             }
         },
         createLoadEsewaPayload: function(input) {
+            // ===== eSewa v2 (load API) - DISABLED 2026-09-09 =====
+            // v2 initiator_details: frmAccName = initiator full name, field1 = initiator mobile.
+            // v1 keeps the legacy meaning: frmAccName = from-account holder, field1 = receiver name.
+            // var userObj = applicationManager.getUserPreferencesManager().getUserObj() || {};
+            // var initiatorFullName = ((userObj.userfirstname || "") + " " + (userObj.userlastname || "")).trim();
+            // param = {
+            //     "frmAccNumber": input.response.fromAccount,
+            //     "frmAccName": initiatorFullName || input.response.fromAccountHolderName,
+            //     "paymentDesc": input.response.purpose,
+            //     "field1": userObj.phone || "",
+            //     "field2": "",
+            //     "eSewaId": input.response.receiverID,
+            //     "amount": String(input.response.amount || "").trim(),
+            //     "Fee": String(input.response.charges || "").trim()
+            // }
+            // return param;
+            // ===== end eSewa v2 =====
             param = {
                 "frmAccNumber": input.response.fromAccount,
                 "frmAccName": input.response.fromAccountHolderName,
@@ -75,6 +92,13 @@ define(['FormControllerUtility','OLBConstants', 'CommonUtilities'], function (Fo
             var params = {
                 "ExternalAccountNumber": OLBConstants.CLIENT_PROPERTIES.ESEWA_TOPUP_PAYABLE_ACCOUNT,
                 "amount": input.data.totalAmount,
+                // ===== eSewa v2 variant of the T24 beneficiary block - DISABLED 2026-09-09 =====
+                // "beneficiaryAddressLine1": input.response.receiverID,
+                // "beneficiaryAddressLine2": input.response.receiverID,
+                // "beneficiaryCity": "eSewa wallet topup",
+                // "beneficiarycountry": input.response.purpose,
+                // "beneficiaryPhone": input.response.receiverName,
+                // ===== end eSewa v2 =====
                 "beneficiaryAddressLine1": "",
                 "beneficiaryAddressLine2": "",
                 "beneficiaryCity": "",
@@ -118,9 +142,28 @@ define(['FormControllerUtility','OLBConstants', 'CommonUtilities'], function (Fo
             var navManager = applicationManager.getNavigationManager();
             var payload = navManager.getCustomInfo("eSewa_LoadPayload");
             var res = navManager.getCustomInfo("eSewaValidSuccess");
+            // ===== eSewa v2 booking expiry gate - DISABLED 2026-09-09 =====
+            // v1 has no booking step, so there is no expiryTime / bookingId to honour.
+            // var expiryRaw = navManager.getCustomInfo("eSewaExpiryTime");
+            // if (expiryRaw) {
+            //     var expiry = new Date(expiryRaw);
+            //     if (expiry && expiry < new Date()) {
+            //         kony.application.dismissLoadingScreen();
+            //         applicationManager.getNavigationManager().navigateTo({
+            //             "appName": "TransfersMA",
+            //             "friendlyName": "frmLoadEsewa"
+            //         });
+            //         return;
+            //     }
+            // }
+            // ===== end eSewa v2 =====
             payload.paymentReferenceId = input.backendReferenceId;
             payload.referenceId = input.referenceId;
             payload.transactionId = input.transactionId;
+            // ===== eSewa v2 load fields - DISABLED 2026-09-09 (v1 load takes neither) =====
+            // payload.bookingId = navManager.getCustomInfo("eSewaBookingId");
+            // payload.originatingUniqueId = navManager.getCustomInfo("eSewaOriginatingUniqueId");
+            // ===== end eSewa v2 =====
             var ManageActivitiesPresenter = applicationManager.getModulesPresentationController({
                 "appName": "TransfersMA",
                 "moduleName": "ManageActivitiesUIModule"

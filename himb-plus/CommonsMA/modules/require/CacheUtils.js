@@ -380,5 +380,82 @@ define([], function() {
     this._updateListData("sort");
   };
 
+  /**
+   * ConfigCache — client-side stale-while-revalidate cache for slow-changing login config, with
+   * Fabric-controlled TTL / version / kill-switch and on-device (kony.store) storage.
+   *
+   * Packaged as a STATIC on CacheUtils (an already-bundled require module) instead of a standalone
+   * require module, so it ships reliably in every build. Access via: require('CacheUtils').configCache
+   *
+   * Control plane (persisted as a small subset on device, read synchronously at launch):
+   *   CONFIG_CACHE_ENABLED    - "false" disables caching (kill switch)
+   *   CONFIG_CACHE_TTL_HOURS  - default TTL in hours (default 24)
+   *   SYSCONFIG_VERSION       - bump to invalidate cached system config
+   *   FEATURES_VERSION        - bump to invalidate cached features/permissions
+   *   CATEGORIES_VERSION      - (reserved)
+   *
+   * WIRED: profileImage + sysConfig + features (see UserPreferencesManager / ConfigurationManager);
+   * saveControls at getAllClientAppProperties success; clearAll on logout (AuthManager).
+   */
+  CacheUtils.configCache = (function () {
+    var NS = "cfgc::";
+    var CTRL_KEY = NS + "controls";
+    var CONTROL_KEYS = ["CONFIG_CACHE_ENABLED", "CONFIG_CACHE_TTL_HOURS", "SYSCONFIG_VERSION", "FEATURES_VERSION", "CATEGORIES_VERSION"];
+
+    function store()  { return applicationManager.getStorageManager(); }
+    function uid()    { try { return (applicationManager.getUserPreferencesManager().getUserObj() || {}).userId || "anon"; } catch (e) { return "anon"; } }
+    function appVer() { try { return applicationManager.getConfigurationManager().appVersion || ""; } catch (e) { return ""; } }
+    function key(n)   { return NS + n + "::" + uid() + "::" + appVer(); }   // per-user + per-app-version
+
+    return {
+      getRaw: function (name) {
+        try {
+          var r = store().getStoredItem(key(name));
+          if (!r) { return null; }
+          return (typeof r === "string") ? JSON.parse(r) : r;
+        } catch (e) { return null; }
+      },
+      set: function (name, data, version) {
+        try { store().setStoredItem(key(name), JSON.stringify({ t: Date.now(), v: version || "", d: data })); } catch (e) {}
+      },
+      invalidate: function (name) { try { store().setStoredItem(key(name), ""); } catch (e) {} },
+      // Clear security-sensitive caches on logout; profileImage is user-scoped and intentionally kept.
+      clearAll: function () { ["sysConfig", "features"].forEach(function (n) { this.invalidate(n); }, this); },
+
+      // Persist ONLY the control keys on each client-properties success; read them synchronously at launch.
+      saveControls: function (p) {
+        var s = {};
+        CONTROL_KEYS.forEach(function (k) { if (p && p[k] !== undefined) { s[k] = p[k]; } });
+        try { store().setStoredItem(CTRL_KEY, JSON.stringify(s)); } catch (e) {}
+      },
+      props: function () {
+        try { var r = store().getStoredItem(CTRL_KEY); if (r) { return JSON.parse(r); } } catch (e) {}
+        try { var CU = require('CommonUtilities'); return CU.CLIENT_PROPERTIES || {}; } catch (e) { return {}; }
+      },
+      enabled: function () { return ("" + (this.props().CONFIG_CACHE_ENABLED || "true")).trim().toLowerCase() !== "false"; },
+      ttlMs:   function () { var h = Number(this.props().CONFIG_CACHE_TTL_HOURS); return (h > 0 ? h : 24) * 3600000; },
+      srvVer:  function (k) { return "" + (this.props()[k] || ""); },
+
+      // Stale-while-revalidate + TTL + version + kill-switch.
+      // versionPropKey may be null (TTL-only, e.g. profileImage). onData(data, fromCache) may fire twice
+      // (cache then fresh) so it MUST be idempotent. onError (optional) fires ONLY on a cold failure
+      // (no cached value was served) so callers that must react to failure keep that behaviour; when a
+      // cache exists, refresh errors are swallowed (fail-soft) and the cached value stands.
+      fetch: function (name, versionPropKey, doFetch, onData, ttlMsOverride, onError) {
+        var self = this;
+        if (!self.enabled()) { doFetch(function (d) { onData(d, false); }, function (e) { if (onError) { onError(e); } }); return; }
+        var o = self.getRaw(name);
+        var ttl = ttlMsOverride || self.ttlMs();
+        var ver = versionPropKey ? self.srvVer(versionPropKey) : "";
+        var fresh = o && o.t && (Date.now() - o.t) <= ttl && o.v === ver;
+        if (o && o.d !== undefined) { onData(o.d, true); }                    // 1) serve cached immediately
+        if (!fresh) {
+          doFetch(function (data) { self.set(name, data, ver); onData(data, false); },   // 2) refresh in background
+                  function (err) { if (!o && onError) { onError(err); } });              //    cold error -> propagate
+        }
+      }
+    };
+  })();
+
   return CacheUtils;
 });

@@ -483,6 +483,14 @@ define(["CommonUtilities","OLBConstants"],function(CommonUtilities,OLBConstants)
   },
   postLoginServicesSuccess :function(){
 	  kony.print("PERF|PLS_DONE|" + Date.now()); // PERF-TEMP
+	  /* Splits the login window into post login services vs the accounts call.
+	     One shot - this method is reachable more than once per login. */
+	  try {
+	    if (scope_AuthPresenter.perfBarrierMarked !== true) {
+	      scope_AuthPresenter.perfBarrierMarked = true;
+	      CommonUtilities.perfMark("post login services done");
+	    }
+	  } catch (perfError) { }
 	  var scope=this;
 	  var configManager = applicationManager.getConfigurationManager();
 	  var userPreferencesManager = applicationManager.getUserPreferencesManager();

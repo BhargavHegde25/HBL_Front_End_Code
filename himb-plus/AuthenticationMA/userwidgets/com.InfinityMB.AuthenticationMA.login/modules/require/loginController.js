@@ -482,6 +482,9 @@ define(['./LoginUtility','./LoginDAO','CommonUtilities'],function(LoginUtility, 
         "CLIENT_IP" : UsernamePasswordJSON.clientIp
       };
       let identityServiceName = this._identityServiceName;
+      //Real start of the login journey. The widget calls the service itself, so
+      //Auth_PresentationController.onLogin never runs and the measurement has to begin here.
+      CommonUtilities.perfReset("login submitted");
       this.LoginDAO.login(authParams, scopeObj.onLoginSuccessCallback, scopeObj.onLoginFailureCallback, identityServiceName);
     },
     /**

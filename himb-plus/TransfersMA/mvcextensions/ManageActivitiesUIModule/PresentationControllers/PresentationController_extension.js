@@ -655,6 +655,18 @@ getFixedDepositTenureIntrestdetailsErrorCallback : function(err){
         termsAndConditions.getValidationEsewaIds(param,this.getValidationEsewaIdSuccessCallBack,this.getValidationEsewaIdErrorCallback);
    },
    getValidationEsewaIdSuccessCallBack : function(response){
+    // ===== eSewa v2 booking success gate - DISABLED 2026-09-09 =====
+    // v2 booking returns code "UPIB-000" plus bookingId / expiryTime.
+    // v1 validate returns code "0" with success "true" and neither of those fields.
+    // if(response.code === "UPIB-000"){
+    //     var navMan = applicationManager.getNavigationManager();
+    //     navMan.setCustomInfo("eSewaBookingId",  response.bookingId);
+    //     navMan.setCustomInfo("eSewaExpiryTime", response.expiryTime);
+    //     navMan.updateForm({
+    //             "validationEsewaIdSuccess": response
+    //         },"frmLoadEsewa");
+    //     }else{ ... }
+    // ===== end eSewa v2 =====
     if(response.code =="0"&& response.success =="true"){
         applicationManager.getNavigationManager().updateForm({
                 "validationEsewaIdSuccess": response

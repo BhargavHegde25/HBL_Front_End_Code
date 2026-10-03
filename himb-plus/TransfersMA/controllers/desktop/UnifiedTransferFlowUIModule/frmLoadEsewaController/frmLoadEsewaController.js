@@ -47,6 +47,24 @@ define(['FormControllerUtility','OLBConstants', 'CommonUtilities'], function (Fo
                 var navManager = applicationManager.getNavigationManager();
                 var accNum = navManager.getCustomInfo("AccountIdconsent");
                 if ((amt[1]).replace(/,/g, '') >= parseInt(amount)) {
+                    // ===== eSewa v2 (booking API) - DISABLED 2026-09-09 =====
+                    // Live Fabric maps eSewaServices to com.bct.eSewa (v1). Re-enable the block
+                    // below - and comment the v1 param block that follows - only after Fabric
+                    // is repointed to com.bct.eSewav2.*.
+                    // var userObj = applicationManager.getUserPreferencesManager().getUserObj();
+                    // var accountHolderName = ((userObj.userfirstname || "") + " " + (userObj.userlastname || "")).trim();
+                    // var originatingUniqueId = "HBL" + new Date().getTime() + Math.floor(Math.random() * 1e6);
+                    // navManager.setCustomInfo("eSewaOriginatingUniqueId", originatingUniqueId);
+                    // param = {
+                    //     "eSewaId": scope.view.tbxEsewaId.text,
+                    //     "amount": amount,
+                    //     "frmAccNumber": accNum,
+                    //     "originatingUniqueId": originatingUniqueId,
+                    //     "accountHolderName": accountHolderName,
+                    //     "initiatorMobile": userObj.phone || ""
+                    // }
+                    // ===== end eSewa v2 =====
+                    // v1 (active): validate_esewa_id/v1 takes targetedMobile / targetedAmount
                     param = {
                         "targetedMobile": scope.view.tbxEsewaId.text,
                         "targetedAmount": amount,

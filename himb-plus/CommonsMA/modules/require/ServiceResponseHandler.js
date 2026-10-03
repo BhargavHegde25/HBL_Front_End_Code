@@ -294,6 +294,11 @@ define([], function() {
    * @return {object} res, returns entire reponse of manageResponse based on the success or error
    */
   ServiceResponseHandler.prototype.manageResponse = function(status,  response,  error){
+    //every manager's completion callback passes through here, so one mark times each backend call.
+    //Required lazily to avoid a circular dependency, the same pattern CacheUtils uses.
+    try {
+      require('CommonUtilities').perfMarkService(response);
+    } catch (perfError) { }
     /**@member {object} res Contains formatted backend response*/
     var res;
     if(status == kony.mvc.constants.STATUS_SUCCESS){
