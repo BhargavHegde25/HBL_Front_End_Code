@@ -471,20 +471,39 @@ define(["CommonsMA/AsyncManager/BusinessControllers/BusinessController", "dataFo
           kony.print("getInternalAccountsForDashboard" + err);
         }
       };
-      if (prefetch.done) {
-        // Deliver asynchronously, like a network callback, so the rest of showDashboard runs first as before.
+      // The Dashboard preShow reads the user profile (Users call, post-login slot 0). The prefetched accounts can
+      // arrive before it, so wait (up to 5 s) for that call to complete before opening the Dashboard.
+      var isUserProfileLoaded = function() {
+        try {
+          var info = scope_AuthPresenter.asyncManager.responseInfo[0];
+          return kony.sdk.isNullOrUndefined(info) || info.completionStatus === true;
+        } catch (profileErr) {
+          return true;
+        }
+      };
+      var waitTicks = 0;
+      var deliverWhenReady = function() {
+        // Always deliver asynchronously, like a network callback, so the rest of showDashboard runs first as before.
         try {
           kony.timer.schedule("dashboardAccountsPrefetch", function() {
             try {
               kony.timer.cancel("dashboardAccountsPrefetch");
             } catch (cancelErr) {}
+            waitTicks++;
+            if (!isUserProfileLoaded() && waitTicks < 50) {
+              deliverWhenReady();
+              return;
+            }
             useResponse();
           }, 0.1, false);
         } catch (timerErr) {
           useResponse();
         }
+      };
+      if (prefetch.done) {
+        deliverWhenReady();
       } else {
-        prefetch.onDone = useResponse;
+        prefetch.onDone = deliverWhenReady;
       }
     } catch (err) {
       kony.print("getInternalAccountsForDashboard" + err);
