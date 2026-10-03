@@ -437,6 +437,9 @@ define(["CommonsMA/AsyncManager/BusinessControllers/BusinessController", "dataFo
           (new Date().getTime() - prefetch.startTime) <= maxAgeMs &&
           typeof accountManager.processInternalAccountsList === "function";
       if (!usable) {
+        if (!kony.sdk.isNullOrUndefined(prefetch)) {
+          kony.print("PERF|PREFETCH_NOT_USABLE|" + new Date().getTime()); // PERF-TEMP
+        }
         fetchNormally();
         return;
       }
@@ -451,9 +454,8 @@ define(["CommonsMA/AsyncManager/BusinessControllers/BusinessController", "dataFo
           var isCleanSuccess = prefetch.status == kony.mvc.constants.STATUS_SUCCESS &&
               !kony.sdk.isNullOrUndefined(data) &&
               (kony.sdk.isNullOrUndefined(data.opstatus) || data.opstatus == 0) &&
-              kony.sdk.isNullOrUndefined(data.errcode) &&
-              kony.sdk.isNullOrUndefined(data.dbpErrCode) &&
-              Array.isArray(data.Accounts) && data.Accounts.length > 0;
+              !kony.sdk.isNullOrUndefined(data.Accounts) && data.Accounts.length > 0;
+          kony.print("PERF|PREFETCH_USED|" + isCleanSuccess + "|" + new Date().getTime()); // PERF-TEMP
           if (!isCleanSuccess) {
             // Any error or unusual response: make the normal call now, exactly as before.
             fetchNormally();
