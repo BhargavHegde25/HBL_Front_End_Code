@@ -3,6 +3,7 @@ define(["CommonUtilities","OLBConstants"],function(CommonUtilities,OLBConstants)
 		count : 0,
         userAttributesSuccessCallback: function (res) {
             kony.print("PERF|UA_OK|" + Date.now()); // PERF-TEMP
+            scope_AuthPresenter.lastDashboardNavigationTime = null;
             if (res !== (undefined || null)) {
                 var authParams = res.UserName;
                 var navManager = applicationManager.getNavigationManager();
@@ -467,6 +468,7 @@ define(["CommonUtilities","OLBConstants"],function(CommonUtilities,OLBConstants)
 		// sm.removeStoredItem("userLastName"); 
 		sm.setStoredItem('updateInternalAccounts', false);
 		scope_AuthPresenter.clearDashboardAccountsPrefetch();
+		scope_AuthPresenter.lastDashboardNavigationTime = null;
 			 }catch(e){
 				kony.print("**********Error while remove username*********"+e); 
 			 }

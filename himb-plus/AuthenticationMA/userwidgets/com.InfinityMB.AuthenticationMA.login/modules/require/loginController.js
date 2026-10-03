@@ -194,6 +194,7 @@ define(['./LoginUtility','./LoginDAO','CommonUtilities'],function(LoginUtility, 
     this.view.flxContent.skin="sknFlxBgF8F3F3";//bbSknFlxf9fafb
     this.view.switchRememberMe.selectedIndex = 0; 
     this.setRememberMeFlag(true);
+    this.prefetchClientIp();
     },
     
     setTextFromi18n: function(){
@@ -483,9 +484,54 @@ define(['./LoginUtility','./LoginDAO','CommonUtilities'],function(LoginUtility, 
       let identityServiceName = this._identityServiceName;
       this.LoginDAO.login(authParams, scopeObj.onLoginSuccessCallback, scopeObj.onLoginFailureCallback, identityServiceName);
     },
+    /**
+     * PERF: looks up the client IP in the background (asynchronous request) while the login screen is shown,
+     * so tapping Login does not wait for it. fetchAndSetClientIpToHeaders uses this value when it is ready
+     * and recent; otherwise it does the original blocking lookup.
+     */
+    prefetchClientIp: function () {
+      let self = this;
+      try {
+        let res = CommonUtilities.CLIENT_PROPERTIES;
+        let ipUrl = res['CLIENT_IP_URL'];
+        if (!ipUrl) ipUrl = 'https://api.ipify.org/?format=json';
+        let ipKey = res['CLIENT_IP_KEY'];
+        if (!ipKey) ipKey = '255.0.255.0';
+        let prefetch = { "startTime": new Date().getTime(), "done": false, "clientIp": "" };
+        self.clientIpPrefetch = prefetch;
+        let xhr = new kony.net.HttpRequest();
+        xhr.onReadyStateChange = function () {
+          try {
+            if (xhr.readyState !== 4 || prefetch.done) {
+              return;
+            }
+            prefetch.done = true;
+            if (xhr.status === 200) {
+              let ipAddress = JSON.parse(xhr.responseText).ip;
+              if (ipAddress) {
+                prefetch.clientIp = self.encryptAddress(ipAddress.trim(), ipKey);
+              }
+            }
+          } catch (e) {
+            prefetch.done = true;
+            prefetch.clientIp = "";
+          }
+        };
+        xhr.open("GET", ipUrl, true);
+        xhr.timeout = 3500;
+        xhr.send();
+      } catch (e) {
+        self.clientIpPrefetch = null;
+      }
+    },
     fetchAndSetClientIpToHeaders: async function () {
       let instance = kony.sdk.getCurrentInstance();
       let self = this;
+      let prefetch = self.clientIpPrefetch;
+      if (prefetch && prefetch.done && prefetch.clientIp && (new Date().getTime() - prefetch.startTime) <= 120000) {
+        applicationManager.getNavigationManager().setCustomInfo('CLIENT_IP', prefetch.clientIp);
+        return;
+      }
       let res = CommonUtilities.CLIENT_PROPERTIES;
       let ipUrl = res['CLIENT_IP_URL'];
       if (!ipUrl) ipUrl = 'https://api.ipify.org/?format=json';

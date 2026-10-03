@@ -217,6 +217,7 @@ define(["CommonUtilities"], function(CommonUtilities) {
   };
   Auth_PresentationController.prototype.onLogin = function(UsernamePasswordJSON, formContext) {
     kony.print("PERF|LOGIN_START|" + Date.now()); // PERF-TEMP
+    scope_AuthPresenter.lastDashboardNavigationTime = null;
     scope_AuthPresenter.rememberdeviceregflag = false;
     applicationManager.getPresentationUtility().showLoadingScreen();
     Auth_PresentationController.UsernamePasswordJSON = UsernamePasswordJSON;
@@ -998,6 +999,15 @@ const devManager = applicationManager.getDeviceUtilManager();
   };
   
  Auth_PresentationController.prototype.navigationtoDashboard = function() {
+    // PERF: postLoginServicesSuccess can fire more than once during one login (features callback and the
+    // "all services done" callbacks), which loaded the accounts and opened the Dashboard twice.
+    // Ignore a repeat call within a few seconds of the first one; reset on every new login and on logout.
+    var dashboardNavTime = new Date().getTime();
+    if (scope_AuthPresenter.lastDashboardNavigationTime && (dashboardNavTime - scope_AuthPresenter.lastDashboardNavigationTime) < 10000) {
+      kony.print("PERF|DUP_DASH_NAV_SKIPPED|" + dashboardNavTime); // PERF-TEMP
+      return;
+    }
+    scope_AuthPresenter.lastDashboardNavigationTime = dashboardNavTime;
     const configManager = applicationManager.getConfigurationManager();
     const isHomepageMAPresent = configManager.isMicroAppPresent('HomepageMA');
     var custominfoCD = applicationManager.getNavigationManager().getCustomInfo("frmCustomerDashboard");
