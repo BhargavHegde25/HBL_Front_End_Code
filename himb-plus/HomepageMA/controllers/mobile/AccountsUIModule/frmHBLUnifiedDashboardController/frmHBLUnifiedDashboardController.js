@@ -1,5 +1,6 @@
 define(['CampaignUtility', 'CommonUtilities','FooterMenuUtility'], function(CampaignUtility, CommonUtilities,FooterMenuUtility) {
   var count = "";
+  var lastBankDateFetchTime = 0;
   this.masked="";
   this.maskedAmount="";
   this.unmaskedAmount="";
@@ -204,8 +205,13 @@ kony.print("***************Error in HBL Dashboard init function**********"+e);
 		 try{
 		 var scope=this;
       scope.view.flxRequestDeposit.onClick = scope.setFixedDepositVisibility.bind(this);
-      var manageCardsModule = kony.mvc.MDAApplication.getSharedInstance().getModuleManager().getModule({ "moduleName": "ManageCardsUIModule", "appName": "CardsMA" });
-      manageCardsModule.presentationController.getBankDateMB();
+      // PERF: skip getBankDate when the Dashboard fetched it successfully in the last 5 minutes (same value).
+      var bankDateAgeMs = new Date().getTime() - lastBankDateFetchTime;
+      if (kony.sdk.isNullOrUndefined(applicationManager.getBankDate()) || applicationManager.getBankDate() === "" || bankDateAgeMs > 300000) {
+        lastBankDateFetchTime = new Date().getTime();
+        var manageCardsModule = kony.mvc.MDAApplication.getSharedInstance().getModuleManager().getModule({ "moduleName": "ManageCardsUIModule", "appName": "CardsMA" });
+        manageCardsModule.presentationController.getBankDateMB();
+      }
       // PERF: removed the extra getList call here; its response was never used (accounts are already loaded at login).
       applicationManager.getPresentationUtility().dismissLoadingScreen();
 		 }catch(e){
