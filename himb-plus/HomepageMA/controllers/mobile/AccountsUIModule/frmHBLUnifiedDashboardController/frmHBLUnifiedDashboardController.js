@@ -1,6 +1,7 @@
 define(['CampaignUtility', 'CommonUtilities','FooterMenuUtility'], function(CampaignUtility, CommonUtilities,FooterMenuUtility) {
   var count = "";
   var lastBankDateFetchTime = 0;
+  var lastClientPropertiesFetchTime = 0;
   this.masked="";
   this.maskedAmount="";
   this.unmaskedAmount="";
@@ -801,9 +802,17 @@ var configManager = applicationManager.getConfigurationManager();
     fetchAndApplyPMReliefBannerConfig: function() {
       var scope = this;
       try {
+        // PERF (phase 5): the client properties are already loaded and were fetched by the Dashboard in the
+        // last 10 minutes - the banner/campaign state was applied synchronously above, so skip the network
+        // call. The first Dashboard visit (properties not loaded yet) always fetches, as before.
+        if (CommonUtilities.CLIENT_PROPERTIES && Object.keys(CommonUtilities.CLIENT_PROPERTIES).length > 0 &&
+            lastClientPropertiesFetchTime > 0 && (new Date().getTime() - lastClientPropertiesFetchTime) < 600000) {
+          return;
+        }
         var cfg = kony.sdk.getCurrentInstance().getConfigurationService();
         cfg.getAllClientAppProperties(function(res) {
           if (res && Object.keys(res).length > 0) {
+            lastClientPropertiesFetchTime = new Date().getTime();
             // Cache for every consumer, then re-apply the banner + campaign-section config.
             CommonUtilities.CLIENT_PROPERTIES = res;
             scope.applyPMReliefBannerConfig();
