@@ -22,6 +22,13 @@ define(['CommonUtilities'],function(CommonUtilities){
 	   the dashboard variant, instead of queueing it behind the post login services.
 	   Absent or anything else keeps today's ordering. */
 	LOGIN_PREFETCH_ACCOUNTS:"",
+	/* Login performance phase 1 (mobile login component).
+	   LOGIN_PREWARM: anonymous app login + connection warm-up when the login screen opens, and loading
+	   of the Dashboard modules while the password is typed. Default ON - "false" switches it off.
+	   LOGIN_PREVALIDATE_USER: runs ValidateUserDeviceLogin when the user moves to the password field and
+	   reuses a successful result on tap for the same username within 60 s. Default OFF - "true" enables it. */
+	LOGIN_PREWARM:"",
+	LOGIN_PREVALIDATE_USER:"",
 	/* FonePay QR. Read by frmQRScanController.readFonepayFlag. The two consumers take opposite
 	   defaults on purpose: the scan rail runs unless this is an explicit "false" (the server gate
 	   is authoritative), while the FonePay badge on the scanner strip shows only on an explicit
@@ -753,6 +760,12 @@ define(['CommonUtilities'],function(CommonUtilities){
       }
 	  if (res && res["LOGIN_PREFETCH_ACCOUNTS"]) {
         scope_configManager.LOGIN_PREFETCH_ACCOUNTS=(res["LOGIN_PREFETCH_ACCOUNTS"]);
+      }
+	  if (res && res["LOGIN_PREWARM"]) {
+        scope_configManager.LOGIN_PREWARM=(res["LOGIN_PREWARM"]);
+      }
+	  if (res && res["LOGIN_PREVALIDATE_USER"]) {
+        scope_configManager.LOGIN_PREVALIDATE_USER=(res["LOGIN_PREVALIDATE_USER"]);
       }
 	  if (res && res["FONEPAY_QR_ENABLED"]) {
         scope_configManager.FONEPAY_QR_ENABLED=(res["FONEPAY_QR_ENABLED"]);
