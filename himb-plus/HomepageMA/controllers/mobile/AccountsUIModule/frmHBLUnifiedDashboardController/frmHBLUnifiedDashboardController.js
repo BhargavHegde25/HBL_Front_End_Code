@@ -16,6 +16,12 @@ define(['CampaignUtility', 'CommonUtilities','FooterMenuUtility'], function(Camp
      var configManager = applicationManager.getConfigurationManager();
       var MenuHandler = applicationManager.getMenuHandler();
        MenuHandler.setUpHamburgerForForm(this, configManager.constants.MENUACCOUNTS);
+       this.menuSetUpForUser = applicationManager.getUserPreferencesManager().getUserName();
+       // PERF (DASHBOARD_REUSE): a kept-alive Dashboard must still be destroyed on logout / language change,
+       // which destroy the forms registered in NavigationManager.formStack.
+       if (CommonUtilities.getBooleanConfig("DASHBOARD_REUSE", false) === true) {
+         applicationManager.getPresentationFormUtility().pushCurrentFormIntoStack({"appName": "HomepageMA", "friendlyName": "frmHBLUnifiedDashboard"});
+       }
        this.view.onDeviceBack = this.deviceBack;
 	  this.view.onNavigate = this.onNavigate;
     this.view.postShow= this.postShow;
@@ -62,6 +68,25 @@ kony.print("***************Error in HBL Dashboard init function**********"+e);
     preShow: function(){
       kony.print("PERF|D_PRESHOW_S|" + Date.now()); // PERF-TEMP
       var scope = this;
+      // PERF (DASHBOARD_REUSE): a kept-alive form returns exactly as a new one would look: popup closed,
+      // scrolled to the top. Everything else is refreshed by the rest of preShow as on every visit.
+      if (this.keptAlive === true) {
+        try {
+          this.view.flxAccInfoPopupContainer.setVisibility(false);
+          this.view.flxBody.setContentOffset({"x": "0dp", "y": "0dp"}, false);
+        } catch (resetErr) {
+          kony.print("preShow kept-alive reset " + resetErr);
+        }
+        // Safety net: if another user is now logged in, rebuild the hamburger menu that init built.
+        try {
+          if (this.menuSetUpForUser !== applicationManager.getUserPreferencesManager().getUserName()) {
+            applicationManager.getMenuHandler().setUpHamburgerForForm(this, applicationManager.getConfigurationManager().constants.MENUACCOUNTS);
+            this.menuSetUpForUser = applicationManager.getUserPreferencesManager().getUserName();
+          }
+        } catch (menuErr) {
+          kony.print("preShow kept-alive menu " + menuErr);
+        }
+      }
 	  /* Login performance report, raised as the very first thing preShow does. This function has no
 	     try/catch of its own and the lines below include a cross module getModule call, so anything
 	     placed after them is skipped without trace whenever one of them throws. */
@@ -284,10 +309,43 @@ kony.print("***************Error in HBL Dashboard init function**********"+e);
 	  }
 	},
     onHide: function(){
+      // PERF (DASHBOARD_REUSE): leaving the Dashboard ends the one-time reuse of its account list.
+      try {
+        var accountsModule = kony.mvc.MDAApplication.getSharedInstance().getModuleManager().getModule({"appName": "HomepageMA", "moduleName": "AccountsUIModule"});
+        if (typeof accountsModule.presentationController.clearFreshAccounts === "function") {
+          accountsModule.presentationController.clearFreshAccounts();
+        }
+      } catch (clearErr) {
+        kony.print("onHide clearFreshAccounts " + clearErr);
+      }
+      // PERF (DASHBOARD_REUSE): keep the form so returning to the Dashboard does not rebuild it; preShow
+      // refreshes its content. Logout and language change still destroy every form (NavigationManager).
+      if (CommonUtilities.getBooleanConfig("DASHBOARD_REUSE", false) === true) {
+        this.keptAlive = true;
+        return;
+      }
       kony.application.destroyForm({
                 "appName": "HomepageMA",
                 "friendlyName": "frmHBLUnifiedDashboard",
             });
+    },
+    /**
+     * Starts the same-bank transfer flow. With DASHBOARD_REUSE on and the Dashboard's account list just
+     * loaded, it is reused once (no second getList); otherwise getList is called exactly as before.
+     */
+    startTransferFlow: function(transfersPresenter){
+      try {
+        var accountsModule = kony.mvc.MDAApplication.getSharedInstance().getModuleManager().getModule({"appName": "HomepageMA", "moduleName": "AccountsUIModule"});
+        var freshAccounts = (typeof accountsModule.presentationController.takeFreshAccounts === "function") ?
+            accountsModule.presentationController.takeFreshAccounts(60000) : null;
+        if (freshAccounts && typeof transfersPresenter.getListUsingAccounts === "function") {
+          transfersPresenter.getListUsingAccounts(freshAccounts);
+          return;
+        }
+      } catch (reuseErr) {
+        kony.print("startTransferFlow " + reuseErr);
+      }
+      transfersPresenter.getList();
     },
     setFlowAction: function(){
 		try{
@@ -315,7 +373,7 @@ kony.print("***************Error in HBL Dashboard init function**********"+e);
             accModePM.presentationController.transferFlow = "sameBank";
             accModePM.presentationController.addpayeeFlow = "";
             accModePM.presentationController.pmReliefFund = true;
-            accModePM.presentationController.getList();
+            scope.startTransferFlow(accModePM.presentationController);
           };
         }
         this.view.flxTransfers.onClick = function(){
@@ -327,7 +385,7 @@ kony.print("***************Error in HBL Dashboard init function**********"+e);
         accMode.presentationController.transferFlow = "sameBank";
         accMode.presentationController.addpayeeFlow = "";
         accMode.presentationController.pmReliefFund = false;
-        accMode.presentationController.getList();
+        scope.startTransferFlow(accMode.presentationController);
       /*  var navMan = applicationManager.getNavigationManager();
            var transferTypeDetails = {
                     "transferType": "Within Same Bank",

@@ -314,6 +314,7 @@ define(["CommonsMA/AsyncManager/BusinessControllers/BusinessController", "dataFo
            return;
 	 }
      navManager.setCustomInfo("getAccountList",flag);
+     scope_Acc_Pres.markAccountsFresh();
      var custominfoCD = navManager.getCustomInfo("frmCustomerDashboard");
     if(!custominfo){
       custominfo = {};
@@ -417,6 +418,57 @@ define(["CommonsMA/AsyncManager/BusinessControllers/BusinessController", "dataFo
   },
   clearAccountListPrefetch : function() {
     scope_Acc_Pres.accountListPrefetch = null;
+    scope_Acc_Pres.freshAccountsToken = null;
+  },
+  /**
+   * PERF (DASHBOARD_REUSE, default off): the account list the Dashboard just loaded may be reused once, by
+   * the first action taken from the Dashboard ("View all" or Transfers), instead of calling getList again.
+   * The token is cleared as soon as the Dashboard is left for anything else (onHide), on logout and when
+   * used, so a balance can never be reused after a payment flow has been entered.
+   */
+  markAccountsFresh : function() {
+    try {
+      scope_Acc_Pres.freshAccountsToken = {
+        "time": new Date().getTime(),
+        "userName": applicationManager.getUserPreferencesManager().getUserName()
+      };
+    } catch (err) {
+      scope_Acc_Pres.freshAccountsToken = null;
+    }
+  },
+  clearFreshAccounts : function() {
+    scope_Acc_Pres.freshAccountsToken = null;
+  },
+  /**
+   * Returns the stored account list when the token is valid (flag on, same user, under maxAgeMs old), else
+   * null. Always clears the token, so it is used at most once.
+   */
+  takeFreshAccounts : function(maxAgeMs) {
+    var token = scope_Acc_Pres.freshAccountsToken;
+    scope_Acc_Pres.freshAccountsToken = null;
+    try {
+      if (!token || CommonUtilities.getBooleanConfig("DASHBOARD_REUSE", false) !== true) {
+        return null;
+      }
+      if (token.userName !== applicationManager.getUserPreferencesManager().getUserName() ||
+          (new Date().getTime() - token.time) > maxAgeMs) {
+        return null;
+      }
+      // Only for an action taken from the classic Dashboard itself (never after another flow).
+      var currentForm = kony.application.getCurrentForm();
+      if (!currentForm || currentForm.id !== "frmHBLUnifiedDashboard") {
+        return null;
+      }
+      var accounts = applicationManager.getAccountManager().getInternalAccounts();
+      if (kony.sdk.isNullOrUndefined(accounts) || accounts === "" || !accounts.length) {
+        return null;
+      }
+      kony.print("PERF|FRESH_ACCOUNTS_REUSED|" + new Date().getTime()); // PERF-TEMP
+      return accounts;
+    } catch (err) {
+      kony.print("takeFreshAccounts " + err);
+      return null;
+    }
   },
   /**
    * Same as getInternalAccountsWithParams({}, ...) but uses the login prefetch when it belongs to the current
@@ -537,7 +589,21 @@ define(["CommonsMA/AsyncManager/BusinessControllers/BusinessController", "dataFo
 	if(!kony.sdk.isNullOrUndefined(custominfoCD) && (custominfoCD.reDesignFlow === "true")){
       accountManager.fetchInternalAccountsWithOutActions(scope_Acc_Pres.showOldDashboardSucc, scope_Acc_Pres.presentationAccountsErr);
 	}else{
-      accountManager.getInternalAccountsWithParams({},scope_Acc_Pres.showOldDashboardSucc, scope_Acc_Pres.presentationAccountsErr);
+      // PERF (DASHBOARD_REUSE): "View all" right after the Dashboard loaded reuses that account list once
+      // (delivered asynchronously, like the network callback); otherwise getList is called as before.
+      var freshAccounts = scope_Acc_Pres.takeFreshAccounts(60000);
+      if (freshAccounts) {
+        try {
+          kony.timer.schedule("oldDashboardFreshAccounts", function() {
+            try { kony.timer.cancel("oldDashboardFreshAccounts"); } catch (cancelErr) {}
+            scope_Acc_Pres.showOldDashboardSucc(freshAccounts);
+          }, 0.1, false);
+        } catch (timerErr) {
+          scope_Acc_Pres.showOldDashboardSucc(freshAccounts);
+        }
+      } else {
+        accountManager.getInternalAccountsWithParams({},scope_Acc_Pres.showOldDashboardSucc, scope_Acc_Pres.presentationAccountsErr);
+      }
     }
     if(custominfoCD.isMultiCustomer === "false"){
     this.getWealthPortfolio();

@@ -32,6 +32,9 @@ define(['CommonUtilities'],function(CommonUtilities){
 	/* Login performance phase 2. "true" starts the post-login calls right after DbxUserLogin, in parallel
 	   with getUserAttributes. Default OFF - enable only after the backend confirms no dependency. */
 	LOGIN_PARALLEL_WAVE:"",
+	/* "true": the Dashboard is kept between visits (not rebuilt each time) and its freshly loaded account
+	   list is reused once by the first "View all" / Transfers action. Default OFF. */
+	DASHBOARD_REUSE:"",
 	/* FonePay QR. Read by frmQRScanController.readFonepayFlag. The two consumers take opposite
 	   defaults on purpose: the scan rail runs unless this is an explicit "false" (the server gate
 	   is authoritative), while the FonePay badge on the scanner strip shows only on an explicit
@@ -772,6 +775,9 @@ define(['CommonUtilities'],function(CommonUtilities){
       }
 	  if (res && res["LOGIN_PARALLEL_WAVE"]) {
         scope_configManager.LOGIN_PARALLEL_WAVE=(res["LOGIN_PARALLEL_WAVE"]);
+      }
+	  if (res && res["DASHBOARD_REUSE"]) {
+        scope_configManager.DASHBOARD_REUSE=(res["DASHBOARD_REUSE"]);
       }
 	  if (res && res["FONEPAY_QR_ENABLED"]) {
         scope_configManager.FONEPAY_QR_ENABLED=(res["FONEPAY_QR_ENABLED"]);
