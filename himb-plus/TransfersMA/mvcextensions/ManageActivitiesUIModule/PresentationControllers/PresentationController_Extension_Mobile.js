@@ -1,5 +1,33 @@
 define([], function () {
     return {
+      /**
+       * PERF (DASHBOARD_REUSE): same as getList, but starts the transfer flow from an account list the
+       * Dashboard has just loaded instead of calling getList again. Accounts are copied so the flow's
+       * changes (transferFlow) never touch AccountManager's own records. Without a bank date yet, or on
+       * any problem, it falls back to getList exactly as before.
+       */
+      getListUsingAccounts: function (accounts) {
+        try {
+          var bankDate = applicationManager.getBankDate();
+          if (kony.sdk.isNullOrUndefined(accounts) || !accounts.length || kony.sdk.isNullOrUndefined(bankDate) || bankDate === "") {
+            this.getList();
+            return;
+          }
+          var accountCopies = [];
+          for (var i = 0; i < accounts.length; i++) {
+            accountCopies.push(Object.assign({}, accounts[i]));
+          }
+          this.getListPayee = [];
+          this.getBankDatees = [];
+          this.getBankDetailsResponse = [];
+          this.bankListDetails = [];
+          this.contracts = [];
+          this.getListSuccess({ "Accounts": accountCopies });
+        } catch (err) {
+          kony.print("getListUsingAccounts " + err);
+          this.getList();
+        }
+      },
       isCardPaymentParkingAccFirstHit:false,
       isCardPrepaidDollorTopupFirstHit:false,
       isCardPaymentSecondHit:false,
