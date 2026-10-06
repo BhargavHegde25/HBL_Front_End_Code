@@ -227,19 +227,40 @@ define(['OLBConstants','SCAConfiguration','CommonUtilities','DataPrivacy'], func
      * @param {function} presentationErrorCallback - invoke the call back with error response.
      */
     userPreferencesManager.prototype.fetchUserImage = function(presentationSuccess, presentationError) {
-        var  userProfile  =  kony.mvc.MDAApplication.getSharedInstance().getRepoManager().getRepository("Users");
         var scope = this;
-        userProfile.customVerb('getUserProfileImage',{},getAllCompletionCallback);
-        function  getAllCompletionCallback(status,  data,  error) {
-            var srh = applicationManager.getServiceResponseHandler();
-            var obj = srh.manageResponse(status,  data,  error, presentationSuccess, presentationError);
-            if (obj["status"] === true) {
-                scope.setUserImage(obj["data"]["userImage"]);
-                presentationSuccess(obj["data"]);
-            } else {
-                presentationError(obj["errmsg"]);
+        // GATE: skip the (up to ~1.4MB, ~1s) fetch when the user has no profile image.
+        try {
+            if (!applicationManager.getConfigurationManager().isProfileImageAvailable()) {
+                scope.userImage = "";
+                if (presentationSuccess) { presentationSuccess({ userImage: "" }); }
+                return;
             }
+        } catch (eGate) { /* fail open -> fetch */ }
+        function doServiceFetch(ok, err) {
+            var userProfile = kony.mvc.MDAApplication.getSharedInstance().getRepoManager().getRepository("Users");
+            userProfile.customVerb('getUserProfileImage', {}, function (status, data, error) {
+                var srh = applicationManager.getServiceResponseHandler();
+                var obj = srh.manageResponse(status, data, error, presentationSuccess, presentationError);
+                if (obj["status"] === true) { ok((obj["data"] && obj["data"]["userImage"]) || ""); }
+                else { err(obj["errmsg"]); }
+            });
         }
+        // CACHE: serve cached avatar instantly, fetch fresh only when stale (7-day TTL).
+        // onData may fire twice (cache then fresh): always update scope.userImage, but resolve the
+        // presentation callback ONCE. renderDashBoardScreen calls this inside AsyncManager.callAsync,
+        // whose completion re-fires every time the response table fills -> a 2nd success callback would
+        // re-run onCompletionOfRenderDashBoardScreen (re-navigate/re-render). settled prevents that.
+        var settled = false;
+        try {
+            var ConfigCache = require('CacheUtils').configCache;
+            ConfigCache.fetch("profileImage", null, doServiceFetch,
+                function (img, fromCache) { scope.userImage = img; if (!settled) { settled = true; if (presentationSuccess) { presentationSuccess({ userImage: img }); } } },
+                7 * 24 * 3600000);
+            return;
+        } catch (eCache) { /* fall through to original path */ }
+        doServiceFetch(
+            function (img) { scope.setUserImage(img); if (!settled) { settled = true; if (presentationSuccess) { presentationSuccess({ userImage: img }); } } },
+            function (e)   { if (!settled) { settled = true; if (presentationError) { presentationError(e); } } });
     };
     /**
      * Gets user image to data store
@@ -292,6 +313,9 @@ define(['OLBConstants','SCAConfiguration','CommonUtilities','DataPrivacy'], func
      */
     userPreferencesManager.prototype.setUserImage = function(imageURL) {
         this.userImage = imageURL;
+        // Persist per-user so the avatar renders instantly next launch, and auto-invalidate on update:
+        // the profile-image update flows call setUserImage() with the new image, refreshing the cache.
+        try { require('CacheUtils').configCache.set("profileImage", imageURL, ""); } catch (e) {}
     };
     userPreferencesManager.prototype.showPasswordResetWarning = function (params, presentationSuccess, presentationError) {
         var scope = this;
@@ -2374,25 +2398,46 @@ define(['OLBConstants','SCAConfiguration','CommonUtilities','DataPrivacy'], func
    * @param {function} presentationFailure - service failure callback method
    */
     userPreferencesManager.prototype.getUserFeaturesAndPermissions = function (presentationSuccessCallback, presentationErrorCallback) {
-        var userObj = kony.mvc.MDAApplication.getSharedInstance().getRepoManager().getRepository("Users");
-        userObj.customVerb('getFeaturesAndPermissions', {}, completionCallBack);
-        function completionCallBack(status, data, error) {
-            var srh = applicationManager.getServiceResponseHandler();
-            var obj = srh.manageResponse(status, data, error);
-            if (obj.status === true) {
-                applicationManager.getConfigurationManager().features = JSON.parse(obj.data["features"]);
-                applicationManager.getConfigurationManager().userPermissions = JSON.parse(obj.data["permissions"]);
-                applicationManager.getConfigurationManager().setUserPermissions(JSON.parse(obj.data["permissions"]));
-                applicationManager.getConfigurationManager().setFeatures(JSON.parse(obj.data["features"]));
-                kony.sdk.getCurrentInstance().tokens[OLBConstants.IDENTITYSERVICENAME].provider_token.params['security_attributes'] ={};
-                kony.sdk.getCurrentInstance().tokens[OLBConstants.IDENTITYSERVICENAME].provider_token.params['security_attributes'].features = obj.data["features"];
-                kony.sdk.getCurrentInstance().tokens[OLBConstants.IDENTITYSERVICENAME].provider_token.params['security_attributes'].permissions = obj.data["permissions"];
-                presentationSuccessCallback(obj.data);
-            }
-            else {
-                presentationErrorCallback(obj.errmsg);
-            }
+        // Apply ALL original side-effects (ConfigurationManager features/permissions + SDK-token security_attributes)
+        // so the cached path is identical to the live path.
+        function applyFeatures(data) {
+            var cm = applicationManager.getConfigurationManager();
+            cm.features = JSON.parse(data["features"]);
+            cm.userPermissions = JSON.parse(data["permissions"]);
+            cm.setUserPermissions(JSON.parse(data["permissions"]));
+            cm.setFeatures(JSON.parse(data["features"]));
+            try {
+                var tok = kony.sdk.getCurrentInstance().tokens[OLBConstants.IDENTITYSERVICENAME].provider_token.params;
+                tok["security_attributes"] = {};
+                tok["security_attributes"].features = data["features"];
+                tok["security_attributes"].permissions = data["permissions"];
+            } catch (eTok) { /* token not ready yet -> refresh path will set it */ }
         }
+        function doFetch(ok, err) {
+            var userObj = kony.mvc.MDAApplication.getSharedInstance().getRepoManager().getRepository("Users");
+            userObj.customVerb("getFeaturesAndPermissions", {}, function (status, data, error) {
+                var srh = applicationManager.getServiceResponseHandler();
+                var obj = srh.manageResponse(status, data, error);
+                if (obj.status === true) { ok(obj.data); } else { err(obj.errmsg); }
+            });
+        }
+        // CACHE: user-scoped, short TTL (authorization data), invalidated by FEATURES_VERSION / logout / (403 fail-safe TBD).
+        // Serve cached instantly, refresh in background; cold failure propagates to the error callback.
+        // onData may fire twice (cache then fresh): always applyFeatures (keep cm state current), but resolve the
+        // presentation callback ONCE. renderDashBoardScreen calls this inside AsyncManager.callAsync, whose completion
+        // re-fires every time the response table fills -> a 2nd success callback would re-run the dashboard render.
+        var settled = false;
+        try {
+            var ConfigCache = require('CacheUtils').configCache;
+            ConfigCache.fetch("features", "FEATURES_VERSION", doFetch,
+                function (data, fromCache) { applyFeatures(data); if (!settled) { settled = true; if (presentationSuccessCallback) { presentationSuccessCallback(data); } } },
+                60 * 60000,
+                function (err) { if (!settled) { settled = true; if (presentationErrorCallback) { presentationErrorCallback(err); } } });
+            return;
+        } catch (eCache) { /* fall through to original live path */ }
+        doFetch(
+            function (data) { applyFeatures(data); if (!settled) { settled = true; if (presentationSuccessCallback) { presentationSuccessCallback(data); } } },
+            function (err)  { if (!settled) { settled = true; if (presentationErrorCallback) { presentationErrorCallback(err); } } });
     };
 
         /**

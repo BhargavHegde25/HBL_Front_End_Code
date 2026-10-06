@@ -1579,18 +1579,12 @@ define(['CommonUtilities', 'CommonUtilities', 'OLBConstants', 'ViewConstants', '
 			var toDayDate = `${toDate}/${toMonth}/${toYear}`;
 			var resultDate;
 
-			if (card.cardType == 'Credit') {
-				if (today.getDate() > 2) {
-					// If the date is after the 2nd of the current month, consider the previous month
-					today.setMonth(today.getMonth() - 1); // Move to the previous month
-					resultDate = `${String(2).padStart(2, '0')}/${String(today.getMonth() + 1).padStart(2, '0')}/${today.getFullYear()}`;
-				} else if (today.getDate() === 1) {
-					// If the date is the 1st of the current month, consider two months back
-					today.setMonth(today.getMonth() - 2); // Move to two months back
-					resultDate = `${String(2).padStart(2, '0')}/${String(today.getMonth() + 1).padStart(2, '0')}/${today.getFullYear()}`;
-				}
+			if (card.cardType == 'Credit' || card.cardType == 'Prepaid') {
+				// window driven by the CARD_TRANSACTION_DAYS client app property, shared with mobile
+				var transactionDateRange = applicationManager.getCardsManager().getCardTransactionDateRange(new Date(bankDate.currentWorkingDate));
+				resultDate = transactionDateRange.fromDateText;
 			} else {
-				today.setDate(today.getDate() - 31); // Subtract 30 days exclude today
+				today.setDate(today.getDate() - 31); // Subtract 31 days exclude today, debit cards keep the rolling window
 				var thirtyday = String(today.getDate()).padStart(2, '0');
 				var fromMonth = String(today.getMonth() + 1).padStart(2, '0'); // Months are 0-indexed
 				var fromYear = today.getFullYear();
@@ -7233,6 +7227,11 @@ changeRowTemplate: function(dataItem, action) {
 		changePin: function(card) {
 			this.showChangePinView();
 			this.setCardDetails(card);
+			//6 for the BINs listed in CARD_PIN_LENGTH_6_BINS, 4 otherwise; the widget caps these fields at 4 by design so override at runtime
+			this.cardPinLength = applicationManager.getCardsManager().getCardPinLength(card);
+			this.view.CardLockVerificationStep.tbxCurrentPIN.maxTextLength = this.cardPinLength;
+			this.view.CardLockVerificationStep.tbxNewPIN.maxTextLength = this.cardPinLength;
+			this.view.CardLockVerificationStep.tbxConfirmPIN.maxTextLength = this.cardPinLength;
 			// if (card.cardType === 'Credit') {
 			//  this.startOfflineChangePinFlow(card);
 			//} else if (card.cardType === 'Debit') {
@@ -7398,7 +7397,8 @@ changeRowTemplate: function(dataItem, action) {
 		 * @param {String} pin - contains the entered pin.
 		 */
 		isValidPin: function(pin) {
-			var regex = new RegExp('^[0-9]{4,4}$');
+			var pinLength = this.cardPinLength ? this.cardPinLength : 4;
+			var regex = new RegExp('^[0-9]{' + pinLength + ',' + pinLength + '}$');
 			if (regex.test(pin)) {
 				for (var i = 1; i < pin.length; i++) {
 					if (Number(pin[i]) - 1 !== Number(pin[i - 1])) {
@@ -7954,15 +7954,9 @@ changeRowTemplate: function(dataItem, action) {
                     var toMonth = String(today.getMonth() + 1).padStart(2, '0'); // Months are 0-indexed
                     var toYear = today.getFullYear();
                     var toDayDate = `${toDate}/${toMonth}/${toYear}`;
-                    var resultDate;
-                    if (today.getDate() >= 2) {
-                        // If the date is after the 2nd of the current month, consider the previous month
-                        resultDate = `${String(2).padStart(2, '0')}/${String(today.getMonth() + 1).padStart(2, '0')}/${today.getFullYear()}`;
-                    } else if (today.getDate() === 1) {
-                        // If the date is the 1st of the current month, consider two months back
-                        date.setMonth(today.getMonth() - 2); // Move to two months back
-                        resultDate = `${String(2).padStart(2, '0')}/${String(today.getMonth() + 1).padStart(2, '0')}/${today.getFullYear()}`;
-                    }
+                    // split on calendar month boundaries, same rule as mobile: unbilled is the 1st of the
+                    // current month to today, billed is everything before it. No day-of-month special case.
+                    var resultDate = `01/${String(today.getMonth() + 1).padStart(2, '0')}/${today.getFullYear()}`;
                     var dateToCompare = this.parseDate(resultDate); // The date to compare against
                     var formattedDateObj = this.parseDate(formattedDate);
                     if (formattedDateObj >= dateToCompare) {
@@ -8252,15 +8246,9 @@ changeRowTemplate: function(dataItem, action) {
                     var toMonth = String(today.getMonth() + 1).padStart(2, '0'); // Months are 0-indexed
                     var toYear = today.getFullYear();
                     var toDayDate = `${toDate}/${toMonth}/${toYear}`;
-                    var resultDate;
-                    if (today.getDate() >= 2) {
-                        // If the date is after the 2nd of the current month, consider the previous month
-                        resultDate = `${String(2).padStart(2, '0')}/${String(today.getMonth() + 1).padStart(2, '0')}/${today.getFullYear()}`;
-                    } else if (today.getDate() === 1) {
-                        // If the date is the 1st of the current month, consider two months back
-                        date.setMonth(today.getMonth() - 2); // Move to two months back
-                        resultDate = `${String(2).padStart(2, '0')}/${String(today.getMonth() + 1).padStart(2, '0')}/${today.getFullYear()}`;
-                    }
+                    // split on calendar month boundaries, same rule as mobile: unbilled is the 1st of the
+                    // current month to today, billed is everything before it. No day-of-month special case.
+                    var resultDate = `01/${String(today.getMonth() + 1).padStart(2, '0')}/${today.getFullYear()}`;
                     var dateToCompare = this.parseDate(resultDate); // The date to compare against
                     var formattedDateObj = this.parseDate(formattedDate);
                     if (formattedDateObj >= dateToCompare) {

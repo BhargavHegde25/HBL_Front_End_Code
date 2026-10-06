@@ -293,11 +293,35 @@ define([], function() {
    * @param {object} error , if status is error the error consists of error response of that service call 
    * @return {object} res, returns entire reponse of manageResponse based on the success or error
    */
+  /**
+   * True only in a mobile (native) release build, where kony.print output is not needed.
+   * Any doubt (no appConfig, web/thinclient, an exception) answers false, which keeps today's logging.
+   */
+  ServiceResponseHandler.prototype.isMobileReleaseBuild = function(){
+    try {
+      if (this.mobileReleaseBuild === undefined) {
+        this.mobileReleaseBuild = (typeof appConfig !== "undefined" && appConfig.isDebug === false &&
+          kony.os.deviceInfo().name !== "thinclient");
+      }
+      return this.mobileReleaseBuild;
+    } catch (buildFlagError) {
+      return false;
+    }
+  };
   ServiceResponseHandler.prototype.manageResponse = function(status,  response,  error){
+    //every manager's completion callback passes through here, so one mark times each backend call.
+    //Required lazily to avoid a circular dependency, the same pattern CacheUtils uses.
+    try {
+      require('CommonUtilities').perfMarkService(response);
+    } catch (perfError) { }
     /**@member {object} res Contains formatted backend response*/
     var res;
     if(status == kony.mvc.constants.STATUS_SUCCESS){
-      kony.print("response:"+JSON.stringify(response));
+      // PERF (phase 0): stringifying every full response only feeds a log line. Skip it in mobile release
+      // builds (appConfig.isDebug === false); debug builds and the web channel log exactly as before.
+      if (!this.isMobileReleaseBuild()) {
+        kony.print("response:"+JSON.stringify(response));
+      }
       try {
         serverDate = kony.sdk.isNullOrUndefined(response.httpresponse.headers.date) ? serverDate : response.httpresponse.headers.date ;
       }

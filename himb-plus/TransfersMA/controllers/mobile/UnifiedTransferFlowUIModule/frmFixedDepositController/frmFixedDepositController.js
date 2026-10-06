@@ -728,7 +728,7 @@ define(['CampaignUtility', 'CommonUtilities'], function (CampaignUtility, Common
                          navManager.setCustomInfo("Req_accountType", scope_configManager.userAccounts[i].productId);
                      }
                  }*/
-            var strucktureMinAmt = applicationManager.getConfigurationManager().MIN_AMT_STRUCTURE_FD;
+          /*  var strucktureMinAmt = applicationManager.getConfigurationManager().MIN_AMT_STRUCTURE_FD;
             var frmAccAmount = navManager.getCustomInfo("FDfromAccData");
             var minAmt = navManager.getCustomInfo("Tenureresponsedata");
             var amttext = this.view.txtAmount.text;
@@ -764,6 +764,46 @@ define(['CampaignUtility', 'CommonUtilities'], function (CampaignUtility, Common
                     this.disableContinueButton();
                     return;
                 }
+            }*/
+			            var cm = applicationManager.getConfigurationManager();
+            var frmAccAmount = navManager.getCustomInfo("FDfromAccData");
+            var amttext = this.view.txtAmount.text;
+            if (amttext.indexOf(',') != -1) {
+                amttext = amttext.replace(/,/g, "");
+            }
+            var amount = Number(amttext);
+
+            // Same source as OLB (frmRequestFixedDepositController:165-187): Fabric client properties,
+            // keyed on the deposit type the customer actually selected.
+            var depositType = this.view.lblSelectDepositTypeValue.text;
+            var minByType = {
+                "Normal FD":      cm.normalFDMinAmt,
+                "Himal Remit FD": cm.himalRemitMinAmt,
+                "Structured FD":  cm.structureFDMinAmt || cm.MIN_AMT_STRUCTURE_FD
+            };
+            var minElgAmount = Number(minByType[depositType]);
+
+            // Fallback only if the property is missing: the tenure row the customer selected.
+            if (!(minElgAmount > 0)) {
+                var tenureData = navManager.getCustomInfo("Tenureresponsedata") || [];
+                var selectedTerm = (this.view.lblSelectTenureValue.text || "").split(' ')[0];
+                var row = tenureData.filter(function (t) { return t.term == selectedTerm; })[0] || tenureData[0];
+                minElgAmount = row ? Number(row.minEligibilityAmt) : 0;
+            }
+
+            if (amount < minElgAmount) {
+                var errmsg = kony.i18n.getLocalizedString("i18n.mb.FD.minAmterrormsg") + " NPR "
+                           + CommonUtilities.formatCurrencyWithCommas(minElgAmount, true);
+                applicationManager.getDataProcessorUtility().showToastMessageError(this, errmsg);
+                this.disableContinueButton();
+                return;
+            }
+            if (frmAccAmount && Number(frmAccAmount.fromAccountBalance) < amount) {
+                var errmsg = kony.i18n.getLocalizedString("i18n.mb.FD.lessAvlBalErrMsg") + " NPR "
+                           + CommonUtilities.formatCurrencyWithCommas(frmAccAmount.fromAccountBalance, true);
+                applicationManager.getDataProcessorUtility().showToastMessageError(this, errmsg);
+                this.disableContinueButton();
+                return;
             }
 
             if (frmAccAmount && Number(frmAccAmount.fromAccountBalance) < amount) {

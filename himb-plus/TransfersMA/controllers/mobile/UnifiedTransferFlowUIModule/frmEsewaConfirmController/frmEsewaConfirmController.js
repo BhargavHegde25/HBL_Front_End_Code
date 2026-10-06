@@ -33,6 +33,21 @@ define(['CampaignUtility', 'CommonUtilities'], function (CampaignUtility, Common
 		invokeConfimEsewa:function(){
 		try{
 		var scope=this;
+		// ===== eSewa v2 booking expiry gate - DISABLED 2026-09-09 =====
+		// Live Fabric maps eSewaServices to com.bct.eSewa (v1), which has no booking step,
+		// so esewaExpiryTime is never set. Re-enable together with the v2 blocks in
+		// frmEsewaLoadController and PresentationController_Extension_Mobile.
+		// var transactionObj = applicationManager.getTransactionsListManager().getTransactionObject();
+		// if(transactionObj.esewaExpiryTime){
+		//	var expiry=new Date(transactionObj.esewaExpiryTime);
+		//	if(expiry && expiry<new Date()){
+		//		var transferMod = kony.mvc.MDAApplication.getSharedInstance().getModuleManager().getModule("ManageActivitiesUIModule");
+		//		applicationManager.getNavigationManager().getCustomInfo("resetEsewa",false);
+		//		transferMod.presentationController.navigateToEsewaLoad();
+		//		return;
+		//	}
+		// }
+		// ===== end eSewa v2 =====
 		applicationManager.getPresentationUtility().showLoadingScreen();
 		 var transferMod = kony.mvc.MDAApplication.getSharedInstance().getModuleManager().getModule({"moduleName": "ManageActivitiesUIModule","appName": "TransfersMA"}).presentationController;
 		transferMod.eSewaIntraBankTransfer();

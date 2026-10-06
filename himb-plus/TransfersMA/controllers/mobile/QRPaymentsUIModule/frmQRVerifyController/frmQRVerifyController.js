@@ -197,8 +197,10 @@ define({
         typeVal = "Nepal Pay";
       } else if (type === 3){
         typeVal = "Smart QR";
+      } else if (type === 4){
+        typeVal = "Fonepay";
       }
-      this.view.lblAggregatorValue.text = typeVal;  
+      this.view.lblAggregatorValue.text = typeVal;
       this.view.flxAggregator.setVisibility(true);
       this.view.flxSeperator6.setVisibility(true);
     } else {

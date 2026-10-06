@@ -6181,6 +6181,7 @@
     var KNYMobileFabric = kony.sdk.getCurrentInstance();
     var config = KNYMobileFabric.getConfigurationService();
     config.getAllClientAppProperties(function(res) {
+      try { require('CacheUtils').configCache.saveControls(res); } catch (eCC) {}   // persist cache-control subset for ConfigCache bootstrap
       kony.print("client key value pairs retrieved : " + JSON.stringify(res));
       // extract a key from client key value pairs
       if(res && res["DBP_ONBOARDING_URL"]){
@@ -6338,7 +6339,20 @@
       var param = {
         "bundle_name": "DBP"
       };
-      scope_configManager.fetchDisputeConfigurations(param, scope_configManager.fetchDisputeConfigurationSuccessCallback.bind(this), scope_configManager.logOut.bind(this));
+      var applyCfg = scope_configManager.fetchDisputeConfigurationSuccessCallback.bind(this);
+      var onLogout = scope_configManager.logOut.bind(this);
+      // CACHE: serve cached system config instantly + refresh; invalidate via SYSCONFIG_VERSION.
+      // Cold failure keeps the original logOut behaviour; when a cache exists, refresh errors are fail-soft.
+      try {
+        var ConfigCache = require('CacheUtils').configCache;
+        ConfigCache.fetch("sysConfig", "SYSCONFIG_VERSION",
+          function (ok, err) { scope_configManager.fetchDisputeConfigurations(param, ok, err); },
+          function (res, fromCache) { applyCfg(res); },
+          undefined,
+          onLogout);
+        return;
+      } catch (eCache) { /* fall through to original live path */ }
+      scope_configManager.fetchDisputeConfigurations(param, applyCfg, onLogout);
     }
   };
 

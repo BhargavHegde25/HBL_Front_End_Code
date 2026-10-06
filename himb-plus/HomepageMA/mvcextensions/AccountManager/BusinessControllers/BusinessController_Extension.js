@@ -227,6 +227,8 @@ define(['OLBConstants'], function(OLBConstants) {
   },
     fetchInternalAccounts :function(presentationSuccessCallback, presentationErrorCallback) {
       var self = this;
+      //serve the login prefetch if one is parked for this variant
+      if (self.consumeAccountsPrefetch(false, getAllCompletionCallback) === true) { return; }
       var accountsRepo = kony.mvc.MDAApplication.getSharedInstance().getRepoManager().getRepository("DigitalArrangements");
       accountsRepo.customVerb('getList', {}, getAllCompletionCallback);
 
@@ -268,6 +270,9 @@ define(['OLBConstants'], function(OLBConstants) {
   //  } else {
 
 	 kony.timer.schedule("logoutFlag", this.showLogout, 5, false) ;
+   //serve the login prefetch if one is parked for this variant. This is the branch
+   //showDashboard takes when reDesignFlow is not "true", so it needs the guard too.
+   if (self.consumeAccountsPrefetch(false, getAllCompletionCallback) === true) { return; }
    accountsRepo.customVerb('getList', {}, getAllCompletionCallback);
 
   //  }
@@ -498,5 +503,113 @@ define(['OLBConstants'], function(OLBConstants) {
                 }
             }
           },
+    /* --- Login accounts prefetch (LOGIN_PREFETCH_ACCOUNTS) ---------------------
+       The accounts call is the last thing before the dashboard paints and it only
+       starts once every post login service has finished. Nothing in its request
+       depends on those services, so it can be sent early and its answer held until
+       the dashboard asks for it. Only the request moves - the response is processed
+       at the same point as before, by the same completion callback. */
+    _accountsPrefetch : null,
+    /* A parked response must not outlive the screen it was fetched for. Terms and
+       conditions hold the dashboard back for as long as the customer reads them,
+       and a stale balance is worse than a slow login. */
+    _ACCOUNTS_PREFETCH_MAX_AGE_MS : 60000,
+
+    prefetchAccountsForLogin : function(useActionsVariant) {
+      var self = this;
+      try {
+        var CommonUtils = require('CommonUtilities');
+        if (CommonUtils.getBooleanConfig("LOGIN_PREFETCH_ACCOUNTS", false) !== true) {
+          return;
+        }
+        if (self._accountsPrefetch !== null) {
+          return;   //already in flight or already parked
+        }
+        var park = {
+          "user"    : applicationManager.getUserPreferencesManager().getUserName(),
+          "variant" : useActionsVariant === true,
+          "at"      : new Date().getTime(),
+          "done"    : false,
+          "status"  : null,
+          "data"    : null,
+          "error"   : null,
+          "waiting" : null
+        };
+        self._accountsPrefetch = park;
+        var accountsRepo = kony.mvc.MDAApplication.getSharedInstance()
+                             .getRepoManager().getRepository("DigitalArrangements");
+        accountsRepo.customVerb('getList', park.variant ? {"actions":"true"} : {},
+          function(status, data, error) {
+            park.done   = true;
+            park.status = status;
+            park.data   = data;
+            park.error  = error;
+            //the response is unpacked later, when the dashboard consumes it, so the
+            //service timing mark would land then. Record the real arrival here.
+            try { CommonUtils.perfMark("accounts response arrived (prefetched)"); }
+            catch (perfError) { }
+            //the dashboard got here first and is waiting on us
+            if (park.waiting) {
+              var waiting = park.waiting;
+              park.waiting = null;
+              self._accountsPrefetch = null;
+              waiting(status, data, error);
+            }
+          });
+      } catch (prefetchError) {
+        self._accountsPrefetch = null;
+        kony.print("[PREFETCH] accounts prefetch not started: " + prefetchError);
+      }
+    },
+
+    /* completionCallback is the caller's own getAllCompletionCallback, so the
+       response is processed exactly as it would have been. Returns true when this
+       caller has been served and must not make its own call. */
+    consumeAccountsPrefetch : function(useActionsVariant, completionCallback) {
+      var self = this;
+      //diagnostic only - puts the outcome in the login performance report so a run
+      //shows whether the park was used, instead of it having to be inferred.
+      function prefetchMark(outcome) {
+        try { require('CommonUtilities').perfMark("prefetch " + outcome); }
+        catch (markError) { }
+      }
+      try {
+        var park = self._accountsPrefetch;
+        if (!park) { return false; }
+        if (park.variant !== (useActionsVariant === true)) {
+          prefetchMark("declined (variant)");
+          return false;
+        }
+        //a park from a previous session must never be served to this one
+        if (park.user !== applicationManager.getUserPreferencesManager().getUserName()) {
+          self._accountsPrefetch = null;
+          prefetchMark("declined (user)");
+          return false;
+        }
+        if ((new Date().getTime() - park.at) > self._ACCOUNTS_PREFETCH_MAX_AGE_MS) {
+          self._accountsPrefetch = null;
+          prefetchMark("declined (age)");
+          kony.print("[PREFETCH] parked response too old, making a live call");
+          return false;
+        }
+        if (park.done === true) {
+          self._accountsPrefetch = null;
+          prefetchMark("served (already arrived)");
+          completionCallback(park.status, park.data, park.error);
+          return true;
+        }
+        park.waiting = completionCallback;   //still in flight, hand over on arrival
+        prefetchMark("served (waiting on response)");
+        return true;
+      } catch (consumeError) {
+        self._accountsPrefetch = null;
+        kony.print("[PREFETCH] consume failed, making a live call: " + consumeError);
+        return false;
+      }
+    },
+
+    clearAccountsPrefetch : function() {
+      try { this._accountsPrefetch = null; } catch (clearError) { }
+    },
   };
 });

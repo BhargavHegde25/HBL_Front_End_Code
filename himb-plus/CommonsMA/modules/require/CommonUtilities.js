@@ -2157,7 +2157,168 @@ define(['ErrHandler', 'OLBConstants'], function(ErrHandler, OLBConstants) {
 				}
 			}
 		};
+
+        /**
+         * Login performance tracker.
+         * Inert unless the SHOW_PERF_POPUP client app property reads "true", so a normal build pays
+         * nothing for it. Lives here rather than in a new module so it needs no Visualizer registration.
+         * Every mark records a timestamp; the report shows the gap before each event, then the total.
+         */
+        /* The marks live in navigation custom info, not in a module variable. Each micro app can hold
+           its own copy of a CommonsMA module, so state written here by AuthenticationMA would not be
+           visible to HomepageMA when the report runs. Custom info is the store that is proven to cross
+           micro apps in this project. */
+        var _perfLoad = function() {
+            try {
+                var marks = applicationManager.getNavigationManager().getCustomInfo("perfMarks");
+                return (marks && marks.length) ? marks : [];
+            } catch (perfError) {
+                return [];
+            }
+        };
+
+        var _perfSave = function(marks) {
+            try {
+                applicationManager.getNavigationManager().setCustomInfo("perfMarks", marks);
+            } catch (perfError) { }
+        };
+
+        /* Flip to true to force the popup on without Fabric. The SHOW_PERF_POPUP client app property
+           overrides this whenever it is readable and non empty; client properties have needed an app
+           data clear to reach the device, so this constant is the dependable switch for a demo. */
+        var _PERF_POPUP_DEFAULT = false;  //flip to true to force the popup on without Fabric
+
+        /* Hard kill switch. Set to true and the tracker is dead no matter what Fabric says - it is
+           checked before the client app property, so it also overrides SHOW_PERF_POPUP = true.
+           This is the switch to use when the popup must not appear and you cannot reach Fabric. */
+        var _PERF_POPUP_FORCE_OFF = true;
+
+        var _perfEnabled = function() {
+            if (_PERF_POPUP_FORCE_OFF === true) { return false; }
+            try {
+                var flag = applicationManager.getConfigurationManager().getConfigurationValue("SHOW_PERF_POPUP");
+                if (flag !== undefined && flag !== null && String(flag).trim() !== "") {
+                    return String(flag).trim().toLowerCase() === "true";
+                }
+            } catch (perfError) { }
+            return _PERF_POPUP_DEFAULT;
+        };
+
+        var _perfReset = function(label) {
+            //nothing is written when tracking is off - the later marks all return early on the same
+            //check, so no stale marks can accumulate and there is nothing to clear
+            if (!_perfEnabled()) { return; }
+            _perfSave([{ "label": label, "at": new Date().getTime() }]);
+        };
+
+        var _perfMark = function(label) {
+            if (!_perfEnabled()) { return; }
+            var marks = _perfLoad();
+            if (marks.length === 0) { return; }
+            marks.push({ "label": label, "at": new Date().getTime() });
+            _perfSave(marks);
+        };
+
+        /**
+         * Called from the single point every manager's response passes through, so each backend call
+         * is timed without touching 92 call sites. Named from the request URL where one is exposed.
+         */
+        var _perfMarkService = function(response) {
+            if (!_perfEnabled()) { return; }
+            var marks = _perfLoad();
+            if (marks.length === 0) { return; }
+            var name = "service #" + marks.length;
+            try {
+                var url = response && response.httpresponse && response.httpresponse.url ? String(response.httpresponse.url) : "";
+                if (url !== "") {
+                    //object/verb rather than the verb alone: generic verbs such as getList are used by
+                    //many repositories, so the verb on its own does not identify the call.
+                    var path = url.split("?")[0].split("/");
+                    var verb = path[path.length - 1] || "";
+                    var object = path.length > 1 ? path[path.length - 2] : "";
+                    if (verb !== "") {
+                        name = (object !== "" && object !== "operations") ? (object + "/" + verb) : verb;
+                    }
+                }
+            } catch (perfError) { }
+            marks.push({ "label": name, "at": new Date().getTime() });
+            _perfSave(marks);
+        };
+
+        var _perfReport = function(title) {
+            //gate first, so a build with tracking off neither reads nor writes navigation custom info
+            if (!_perfEnabled()) { return null; }
+            var marks = _perfLoad();
+            if (marks.length < 2) { _perfSave([]); return null; }
+            var lines = [];
+            for (var i = 1; i < marks.length; i++) {
+                lines.push(marks[i].label + " : " + (marks[i].at - marks[i - 1].at) + " ms");
+            }
+            var total = marks[marks.length - 1].at - marks[0].at;
+            var message = lines.join("\n") + "\n\nTOTAL : " + total + " ms";
+            _perfSave([]);
+            kony.print("[PERF] " + title + "\n" + message);
+            //Returns the text rather than showing it. CommonUtilities has never referenced the
+            //constants global or called Alert, and an unresolved reference here would be swallowed by
+            //a catch and fail silently. The caller owns the popup, where both are known to work.
+            return message;
+        };
+
+        /**
+         * Reads a true/false client app property. Fabric wins whenever the value is readable and non
+         * empty; otherwise the supplied default applies. Used by the login deferral flags below.
+         * @param {String} key - client app property name
+         * @param {Boolean} defaultValue - used when the property is absent, empty or unreadable
+         */
+        var _getBooleanConfig = function(key, defaultValue) {
+            try {
+                var flag = applicationManager.getConfigurationManager().getConfigurationValue(key);
+                if (flag !== undefined && flag !== null && String(flag).trim() !== "") {
+                    return String(flag).trim().toLowerCase() === "true";
+                }
+            } catch (configError) { }
+            return defaultValue === true;
+        };
+
+        /**
+         * Runs work a couple of seconds later so it lands after the dashboard has painted, instead of
+         * inside the login critical path. Falls back to running immediately if no timer is available,
+         * so a deferred call can never be silently dropped.
+         * @param {String} timerId - unique per call site
+         * @param {Function} work
+         */
+        var _deferAfterLogin = function(timerId, work) {
+            var run = function() {
+                try { work(); }
+                catch (workError) { kony.print("[DEFER] " + timerId + " failed: " + workError); }
+            };
+            try {
+                kony.timer.schedule(timerId, run, 2, false);
+            } catch (timerError) {
+                kony.print("[DEFER] " + timerId + " no timer, running now: " + timerError);
+                run();
+            }
+        };
+
+        var _perfShare = function(title, message) {
+            try {
+                var body = title + "\n" + new Date().toString() + "\n\n" + message;
+                var mailto = "mailto:?subject=" + encodeURIComponent(title) + "&body=" + encodeURIComponent(body);
+                kony.application.openURL(mailto);
+            } catch (perfError) {
+                kony.print("[PERF] share failed: " + perfError);
+            }
+        };
+
         return {
+            perfEnabled: _perfEnabled,
+            perfReset: _perfReset,
+            perfMark: _perfMark,
+            perfMarkService: _perfMarkService,
+            perfReport: _perfReport,
+            perfShare: _perfShare,
+            getBooleanConfig: _getBooleanConfig,
+            deferAfterLogin: _deferAfterLogin,
             getModifiedstatusForPending: _getModifiedstatusForPending,
             getMaskedAccName: _getMaskedAccName,
             getMaskedAccount: _getMaskedAccount,

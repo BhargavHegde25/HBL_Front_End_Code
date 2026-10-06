@@ -590,6 +590,14 @@ ApplicationManager.prototype.preappInitCalls = function()
   }
   config.setStartupLocaleAndDateFormat();
   config.fetchClientSideConfigurations();
+  /* Modern-design extension point - remove with DesignResolver.js.
+     Installed once here, immediately after the property fetch is kicked off.
+     It does not need to wait for that async response: the design is resolved
+     per navigation, not captured at install time. Inert on desktop, where the
+     dashboard is a different form. */
+  require(["DesignRouting"], function (designRouting) {
+    designRouting.install();
+  });
   if (config.getLocale()) {
     kony.i18n.setCurrentLocaleAsync(config.getLocale(),this.LocaleUpdateSucCallback, this.LocaleUpdateFailCallback);
     //config.reloadConstants();

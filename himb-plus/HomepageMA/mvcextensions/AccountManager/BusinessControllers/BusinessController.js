@@ -459,6 +459,9 @@ define(['OLBConstants'], function(OLBConstants) {
   AccountManager.prototype.fetchInternalAccountsWithOutActions = function(presentationSuccessCallback, presentationErrorCallback) {
     var self = this;
     var params = {"actions":"true"};
+    //serve the login prefetch if one is parked for this variant
+    if (self.consumeAccountsPrefetch &&
+        self.consumeAccountsPrefetch(true, getAllCompletionCallback) === true) { return; }
     var accountsRepo = kony.mvc.MDAApplication.getSharedInstance().getRepoManager().getRepository("DigitalArrangements");
     accountsRepo.customVerb('getList', params, getAllCompletionCallback);
     function getAllCompletionCallback(status, data, error) {
@@ -1992,8 +1995,25 @@ AccountManager.prototype.updateLatestBalances = function(accounts,presentationSu
    * @param {function} presentationError - will be called when call is not successfull
    */
     AccountManager.prototype.fetchMessagesNotifications = function(presentationSuccess,presentationError) {
-      kony.print("GetMessagesNotifications service call start" +  new Date() +" " + parseInt(new Date().getTime()) + "----$$&&&$$----");
       var scopeObj = this;
+      /* LOGIN_DEFER_NOTIFICATIONS gate. Placed on this method rather than on getUnreadMessages
+         because there are two getUnreadMessages definitions - ArrangementsMA and HomepageMA - and
+         both funnel into this one, so gating here covers every caller and any added later.
+         Required lazily; this module has no CommonUtilities dependency. */
+      try {
+        var commonUtils = require('CommonUtilities');
+        if (commonUtils.getBooleanConfig("LOGIN_DEFER_NOTIFICATIONS", false) && scopeObj.notificationsDeferred !== true) {
+          scopeObj.notificationsDeferred = true;
+          commonUtils.deferAfterLogin("deferUnreadMessages", function() {
+            scopeObj.fetchMessagesNotifications(presentationSuccess, presentationError);
+          });
+          return;
+        }
+      } catch (deferError) {
+        kony.print("[DEFER] notifications gate skipped: " + deferError);
+      }
+      scopeObj.notificationsDeferred = false;
+      kony.print("GetMessagesNotifications service call start" +  new Date() +" " + parseInt(new Date().getTime()) + "----$$&&&$$----");
       function completionCallback(status, data, error) {
         kony.print("GetMessagesNotifications service call end" +  new Date() +" " + parseInt(new Date().getTime()) + "----$$&&&$$----");
         var srh = applicationManager.getServiceResponseHandler();

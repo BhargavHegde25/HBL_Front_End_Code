@@ -1947,18 +1947,98 @@ define(['./MakeATransferStore','./MakeATransferBusinessController'], function(Ma
       this.invokeRender =false;
       scope.businessController.setDataInCollection("TransactionObject",transactionObject);
       scope.setSelectedFromAccountsData(selectedData);
-      if(scope.amountSelectedFlowType === "From" && scope.fromAccountEdit === "false"){
-        scope.navigateTo("flxAmount", "flxAmountTop", "Amount");  
-        scope.setTransferAmount(); 
+      if(scope.context && scope.context.pmReliefFund === true){
+        scope.setupPMReliefToScreen();
+        scope.navigateTo("flxToAccount", "flxToTop", "Transfer To");
+        return;
+      }
+      else if(scope.amountSelectedFlowType === "From" && scope.fromAccountEdit === "false"){
+        scope.navigateTo("flxAmount", "flxAmountTop", "Amount");
+        scope.setTransferAmount();
       }
       else if(scope.fromAccountEdit === "true"){
         scope.setVerifyDetails();
-        scope.navigateTo("flxVerifyDetails", "flxVerifyHeaderTop", kony.i18n.getLocalizedString("kony.mb.p2p.verifyDetails")); 
+        scope.navigateTo("flxVerifyDetails", "flxVerifyHeaderTop", kony.i18n.getLocalizedString("kony.mb.p2p.verifyDetails"));
       }
-      else
+      else{
+        try{
+          scope.view.flxToAccountMain.setVisibility(true);
+          scope.view.flxTransferToNewPayee.setVisibility(true);
+          scope.view.flxPMReliefTo.setVisibility(false);
+        }catch(resetErr){ kony.print("resetToAccountScreen: " + resetErr); }
         scope.navigateTo("flxToAccount", "flxToTop", "Transfer To");
+      }
       scope.groupToAccounts(selectedData);
-    
+
+    },
+    /**
+     * PM Relief Fund: render the read-only destination screen (fixed to-account
+     * and holder name sourced from Fabric client properties / spotlight),
+     * hiding the normal to-account picker and the "transfer to existing payee / OR" section.
+     */
+    setupPMReliefToScreen : function(){
+      var scope = this;
+      try{
+        var CommonUtilities = require('CommonUtilities');
+        var OLBConstants = require('OLBConstants');
+        var clientProps = (CommonUtilities.CLIENT_PROPERTIES && Object.keys(CommonUtilities.CLIENT_PROPERTIES).length > 0) ? CommonUtilities.CLIENT_PROPERTIES : OLBConstants.CLIENT_PROPERTIES;
+        var pmAccount = (clientProps && clientProps.PM_RELIEF_FUND_ACCOUNT) ? clientProps.PM_RELIEF_FUND_ACCOUNT : "";
+        var pmName = (clientProps && clientProps.PM_RELIEF_FUND_NAME) ? clientProps.PM_RELIEF_FUND_NAME : "";
+        scope.view.flxToAccountMain.setVisibility(false);
+        scope.view.flxTransferToNewPayee.setVisibility(false);
+        scope.view.flxPMReliefTo.setVisibility(true);
+        scope.view.lblPMToAccountValue.text = pmAccount;
+        scope.view.lblPMHolderValue.text = pmName;
+        scope.view.btnPMContinue.onClick = function(){ scope.onPMReliefContinue(); };
+      }catch(err){
+        kony.print("setupPMReliefToScreen error: " + err);
+      }
+    },
+    /**
+     * PM Relief Fund: commit the fixed destination into the transaction object and
+     * continue into the standard amount -> review -> confirm pages.
+     */
+    onPMReliefContinue : function(){
+      var scope = this;
+      try{
+        var CommonUtilities = require('CommonUtilities');
+        var OLBConstants = require('OLBConstants');
+        var clientProps = (CommonUtilities.CLIENT_PROPERTIES && Object.keys(CommonUtilities.CLIENT_PROPERTIES).length > 0) ? CommonUtilities.CLIENT_PROPERTIES : OLBConstants.CLIENT_PROPERTIES;
+        var pmAccount = (clientProps && clientProps.PM_RELIEF_FUND_ACCOUNT) ? clientProps.PM_RELIEF_FUND_ACCOUNT : "";
+        var pmName = (clientProps && clientProps.PM_RELIEF_FUND_NAME) ? clientProps.PM_RELIEF_FUND_NAME : "";
+        var object = MakeATransferStore.getState();
+        var transactionObject = object["Collection"]["TransactionObject"];
+        var formattedObject = object["Collection"]["FormattedData"];
+        transactionObject["toAccountNumber"] = pmAccount;
+        transactionObject["externalAccountNumber"] = pmAccount;
+        transactionObject["toAccountName"] = pmName;
+        transactionObject["toTransactionCurrency"] = "NPR";
+        transactionObject["transactionType"] = "ExternalTransfer";
+        transactionObject["toAccountType"] = "";
+        transactionObject["toAvailableBalance"] = "";
+        // One-time donation: force a single immediate transfer (same reset the verify-screen
+        // "remove repeating" action uses) so no frequency/schedule step is needed and the
+        // review shows "Once" with no stale scheduled date.
+        transactionObject["frequency"] = "Once";
+        transactionObject["isScheduled"] = "0";
+        transactionObject["startDate"] = "";
+        transactionObject["endDate"] = "";
+        transactionObject["sendOn"] = "";
+        transactionObject["ISOStartDate"] = "";
+        transactionObject["ISOEndDate"] = "";
+        transactionObject["startDateUI"] = "";
+        transactionObject["endDateUI"] = "";
+        formattedObject["formattedtoAccountName"] = pmName;
+        formattedObject["formattedtoAvailableBalance"] = "";
+        formattedObject["frequencyType"] = "Once";
+        scope.invokeRender = false;
+        scope.businessController.setDataInCollection("TransactionObject", transactionObject);
+        scope.businessController.setDataInCollection("FormattedData", formattedObject);
+        scope.navigateTo("flxAmount", "flxAmountTop", "Amount");
+        scope.setTransferAmount();
+      }catch(err){
+        kony.print("onPMReliefContinue error: " + err);
+      }
     },
     /**
      * Component bindDurationData
@@ -3999,7 +4079,16 @@ define(['./MakeATransferStore','./MakeATransferBusinessController'], function(Ma
         this.view.flxToAccountValue.right = "20dp";
         this.view.lblToBalanceValue.right = "20dp";
       }
-      scope.view.imgAmountBack.src = "backbutton.png";  
+      if (scope.context && scope.context.pmReliefFund === true) {
+        // PM Relief: the destination is fixed to the relief-fund account, so lock the
+        // To-account selector on the amount screen (read-only, no edit affordance).
+        scope.view.flxAmountToAccount.setEnabled(false);
+        scope.view.flxAmountToAccount.onClick = function(){ return; };
+        scope.view.flxToImage.setVisibility(false);
+        scope.view.flxToAccountValue.right = "20dp";
+        scope.view.lblToBalanceValue.right = "20dp";
+      }
+      scope.view.imgAmountBack.src = "backbutton.png";
       scope.view.lblFromAccountValue.text = formatteddata["formattedfromAccountName"];
       if(!scope.isEmptyNullUndefined(formatteddata["formattedfromAvailableBalance"])){ 
         scope.view.lblFromBalanceValue.text = formatteddata["formattedfromAvailableBalance"];

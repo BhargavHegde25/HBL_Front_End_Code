@@ -1,4 +1,4 @@
-define(['./marketIndexCardDAO','./FormatUtils'],function(marketIndexCardDAO, FormatUtils) {
+define(['./marketIndexCardDAO','./FormatUtils','CommonUtilities'],function(marketIndexCardDAO, FormatUtils, CommonUtilities) {
   //var checkUserPermission = function(permission) {
    // return applicationManager.getConfigurationManager().checkUserPermission(permission);
    //}
@@ -12,14 +12,19 @@ define(['./marketIndexCardDAO','./FormatUtils'],function(marketIndexCardDAO, For
                 this.view.flxImgPayments.height ="110px";
                 this.view.flxImgChequeManagement.height ="110px";
                 this.view.flxImgSettings.height ="110px";
-                this.view.flxImgTransfers.width ="20%";
-                this.view.flxImgPayments.width ="20%";
-                this.view.flxImgChequeManagement.width ="20%";
-                this.view.flxImgSettings.width ="20%";
-                this.view.flxImgTransfers.left ="4%";
-                this.view.flxImgPayments.left ="4%";
-                this.view.flxImgChequeManagement.left ="4%";
-                this.view.flxImgSettings.left ="4%";
+                this.view.flxImgTransfers.width ="16%";
+                this.view.flxImgPayments.width ="16%";
+                this.view.flxImgChequeManagement.width ="16%";
+                this.view.flxImgSettings.width ="16%";
+                this.view.flxImgTransfers.left ="3%";
+                this.view.flxImgPayments.left ="3%";
+                this.view.flxImgChequeManagement.left ="3%";
+                this.view.flxImgSettings.left ="3%";
+                if (this.view.flxImgPMRelief) {
+                    this.view.flxImgPMRelief.height ="110px";
+                    this.view.flxImgPMRelief.width ="16%";
+                    this.view.flxImgPMRelief.left ="3%";
+                }
                 this.view.flxImg.height ="150px";
                 if (kony.os.deviceInfo().screenWidth <= 640) {
                     this.view.flxImg.width = "80%";
@@ -32,6 +37,7 @@ define(['./marketIndexCardDAO','./FormatUtils'],function(marketIndexCardDAO, For
                 this.checkHoverFlx(this.view.flxImgPayments);
                 this.checkHoverFlx(this.view.flxImgChequeManagement);
                 this.checkHoverFlx(this.view.flxImgSettings);
+                if (this.view.flxImgPMRelief) { this.checkHoverFlx(this.view.flxImgPMRelief); }
                 this.flowNavigate();
                 //this.getFlowDetails = this.flowNavigate;
             } catch (err) {
@@ -120,12 +126,22 @@ define(['./marketIndexCardDAO','./FormatUtils'],function(marketIndexCardDAO, For
                 this.view.flxImgPayments.isVisible = this.checkBillPayEntitlements();
                 this.view.flxImgChequeManagement.isVisible = this.checkChequeManagementEntitlements();
                 this.view.flxImgSettings.isVisible = this.checkSettingsEntitlements();
-               if(this.view.flxImgTransfers.isVisible==true||this.view.flxImgPayments.isVisible==true||this.view.flxImgChequeManagement.isVisible==true||this.view.flxImgSettings.isVisible==true){
+                if (this.view.flxImgPMRelief) {
+                    // Apply from cached client properties first (fast path)…
+                    this.applyPMReliefTileConfig();
+                    // …then fetch fresh: on OLB the cached CLIENT_PROPERTIES is usually empty at dashboard
+                    // render time (it is populated later by other flows), so the tile would otherwise ignore
+                    // PM_RELIEF_FUND_MENU_VISIBILITY / _MENU_NAME on the first render. Fetching here makes it reflect.
+                    this.fetchAndApplyPMReliefConfig();
+                }
+               var pmVisible = (this.view.flxImgPMRelief && this.view.flxImgPMRelief.isVisible === true);
+               if(this.view.flxImgTransfers.isVisible==true||this.view.flxImgPayments.isVisible==true||this.view.flxImgChequeManagement.isVisible==true||this.view.flxImgSettings.isVisible==true||pmVisible===true){
                  applicationManager.getNavigationManager().setCustomInfo("quicklinksvisibility","true");
                }
                  else{
                     applicationManager.getNavigationManager().setCustomInfo("quicklinksvisibility","false");
                  }
+               this.adjustQuickLinksWidth();
                 this.view.flxImgTransfers.onClick = function() {
                     var navMan = applicationManager.getNavigationManager();
                     var configManager = applicationManager.getConfigurationManager();
@@ -167,6 +183,17 @@ define(['./marketIndexCardDAO','./FormatUtils'],function(marketIndexCardDAO, For
                     });
                     profileModule.presentationController.enterProfileSettings("profileSettings");
                 }.bind(this);
+                if (this.view.flxImgPMRelief) {
+                    this.view.flxImgPMRelief.onClick = function() {
+                        var navMan = applicationManager.getNavigationManager();
+                        var userObj = applicationManager.getUserPreferencesManager().getUserObj() || {};
+                        var data = Object.assign({}, userObj, { "pmReliefFund": true });
+                        navMan.navigateTo({
+                            "appName": "TransfersMA",
+                            "friendlyName": "frmUTFLanding"
+                        }, false, data);
+                    }.bind(this);
+                }
                 // this.view.flxImgTransfers.onClick = function() {
                 //     applicationManager.getModulesPresentationController({
                 //         "appName": "TransfersMA",
@@ -187,7 +214,73 @@ define(['./marketIndexCardDAO','./FormatUtils'],function(marketIndexCardDAO, For
                 kony.print("Quicklinks_flowNavigate" + err);
             }
         },
-    
+        applyPMReliefTileConfig: function() {
+            if (!this.view.flxImgPMRelief) { return; }
+            var pmMenuName = this.getClientProperty("PM_RELIEF_FUND_MENU_NAME");
+            if (pmMenuName && this.view.lblPMReliefQL) {
+                // Accept a line-break token written as either "\n" (backslash-n) or "/n" (slash-n) in the
+                // client property, and convert it to a real newline so the label renders on two lines.
+                this.view.lblPMReliefQL.text = ("" + pmMenuName).replace(/\\n|\/n/g, "\n");
+            }
+            var pmVisibility = ("" + this.getClientProperty("PM_RELIEF_FUND_MENU_VISIBILITY")).trim().toLowerCase();
+            // Default to shown; hide only on an explicit "false" (unset/empty => visible).
+            this.view.flxImgPMRelief.isVisible = (pmVisibility !== "false");
+        },
+        fetchAndApplyPMReliefConfig: function() {
+            var scope = this;
+            try {
+                var cfg = kony.sdk.getCurrentInstance().getConfigurationService();
+                cfg.getAllClientAppProperties(function(res) {
+                    if (res && Object.keys(res).length > 0) {
+                        // Cache for every consumer (getClientProperty reads CommonUtilities.CLIENT_PROPERTIES),
+                        // then re-apply the tile config with the fresh values.
+                        CommonUtilities.CLIENT_PROPERTIES = res;
+                        scope.applyPMReliefTileConfig();
+                        if (scope.view && scope.view.forceLayout) { scope.view.forceLayout(); }
+                    }
+                }, function(err) {
+                    kony.print("Quicklinks_fetchPMReliefConfig error: " + JSON.stringify(err));
+                });
+            } catch (e) {
+                kony.print("Quicklinks_fetchPMReliefConfig exception: " + e);
+            }
+        },
+        getClientProperty: function(key) {
+            try {
+                var cp = (CommonUtilities.CLIENT_PROPERTIES && Object.keys(CommonUtilities.CLIENT_PROPERTIES).length > 0)
+                    ? CommonUtilities.CLIENT_PROPERTIES
+                    : ((typeof OLBConstants !== "undefined" && OLBConstants.CLIENT_PROPERTIES) ? OLBConstants.CLIENT_PROPERTIES : {});
+                return (cp && cp[key] !== undefined && cp[key] !== null) ? cp[key] : "";
+            } catch (e) {
+                kony.print("Quicklinks_getClientProperty" + e);
+                return "";
+            }
+        },
+        adjustQuickLinksWidth: function() {
+            try {
+                var tiles = [this.view.flxImgTransfers, this.view.flxImgPayments, this.view.flxImgChequeManagement, this.view.flxImgSettings];
+                if (this.view.flxImgPMRelief) { tiles.push(this.view.flxImgPMRelief); }
+                var visibleTiles = [];
+                for (var i = 0; i < tiles.length; i++) {
+                    if (tiles[i] && tiles[i].isVisible === true) { visibleTiles.push(tiles[i]); }
+                }
+                var n = visibleTiles.length;
+                if (n === 0) { return; }
+                // Keep the 3% left gap per tile and scale the width so N tiles ~fill the row.
+                // width = 95/N - 3  => 16% at N=5, matching the original tuned 5-tile layout.
+                var widthPct = (95 / n) - 3;
+                if (widthPct > 92) { widthPct = 92; }
+                if (widthPct < 10) { widthPct = 10; }
+                var widthStr = widthPct.toFixed(2) + "%";
+                for (var j = 0; j < visibleTiles.length; j++) {
+                    visibleTiles[j].width = widthStr;
+                    visibleTiles[j].left = "3%";
+                }
+            } catch (e) {
+                kony.print("Quicklinks_adjustQuickLinksWidth" + e);
+            }
+        },
+
 //     constructor: function(baseConfig, layoutConfig, pspConfig) {
 //       this._objService="";
 //       this._objName="";

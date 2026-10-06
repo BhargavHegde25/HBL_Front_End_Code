@@ -62,6 +62,56 @@ kony.print("***************Error in HBL Dashboard init function**********"+e);
     preShow: function(){
       kony.print("PERF|D_PRESHOW_S|" + Date.now()); // PERF-TEMP
       var scope = this;
+	  /* Login performance report, raised as the very first thing preShow does. This function has no
+	     try/catch of its own and the lines below include a cross module getModule call, so anything
+	     placed after them is skipped without trace whenever one of them throws. */
+	  try {
+		  var perfNavManager = applicationManager.getNavigationManager();
+		  var perfUtility = applicationManager.getPresentationUtility();
+		  CommonUtilities.perfMark("dashboard ready");
+		  var perfMessage = CommonUtilities.perfReport("Login performance");
+		  /* The alert is deferred by a second. preShow runs before the form is on screen and an alert
+		     raised at that point can be swallowed; by the time the timer fires the dashboard is up. */
+		  var perfShowAlert = function (basicConfig) {
+			  try {
+				  kony.timer.schedule("perfPopupTimer", function () {
+					  try { perfUtility.Alert(basicConfig, {}, {}); }
+					  catch (perfInner) { kony.print("[PERF] deferred alert failed: " + perfInner); }
+				  }, 1, false);
+			  } catch (perfTimerError) {
+				  //no timer available, fall back to showing it immediately
+				  try { perfUtility.Alert(basicConfig, {}, {}); }
+				  catch (perfInner2) { kony.print("[PERF] immediate alert failed: " + perfInner2); }
+			  }
+		  };
+		  if (perfMessage) {
+			  perfShowAlert({
+				  "alertType": constants.ALERT_TYPE_CONFIRMATION,
+				  "alertTitle": "Login performance",
+				  "message": perfMessage,
+				  "alertHandler": function (response) {
+					  if (response === true) { CommonUtilities.perfShare("Login performance", perfMessage); }
+					  return true;
+				  },
+				  "yesLabel": "Share",
+				  "noLabel": "OK"
+			  });
+		  } else if (CommonUtilities.perfEnabled()) {
+			  //only when tracking is switched on. With SHOW_PERF_POPUP false there must be no popup at all.
+			  var perfStored = perfNavManager.getCustomInfo("perfMarks");
+			  perfShowAlert({
+				  "alertType": constants.ALERT_TYPE_INFO,
+				  "alertTitle": "PERF diagnostic",
+				  "message": "no report produced\n\nperfEnabled : " + CommonUtilities.perfEnabled() +
+					  "\nmarks found : " + ((perfStored && perfStored.length) ? perfStored.length : 0) +
+					  "\nSHOW_PERF_POPUP : " + applicationManager.getConfigurationManager().getConfigurationValue("SHOW_PERF_POPUP"),
+				  "alertHandler": function () { return true; },
+				  "yesLabel": "OK"
+			  });
+		  }
+	  } catch (perfError) {
+		  kony.print("[PERF] dashboard report failed: " + perfError);
+	  }
 	  var navManager = applicationManager.getNavigationManager();
 	  var presentationUtility=applicationManager.getPresentationUtility();
 	  var showPop = navManager.getCustomInfo("showPopup");
@@ -78,7 +128,7 @@ kony.print("***************Error in HBL Dashboard init function**********"+e);
     };
     var pspConfig = {};
     var custConfig = { hideCloseButton : true, disableTouchDismiss : true};
-	presentationUtility.Alert(basicConfig, pspConfig, {});   
+	presentationUtility.Alert(basicConfig, pspConfig, {});
 	  }
 	  this.view.imgCards.imageWhileDownloading= "loadfull.gif";
 	  this.view.imgCards.imagewhenfailed= "card_red.jpg";
@@ -99,12 +149,10 @@ kony.print("***************Error in HBL Dashboard init function**********"+e);
           scope.view.flxHamburger.height ="100%";
         }
       const configManager = applicationManager.getConfigurationManager();
-      const isCampaignMAPresent = configManager.isMicroAppPresent('CampaignMA');      
-      if(isCampaignMAPresent){
-        this.view.campaignCarousel.setVisibility(true);
-      } else {
-        this.view.campaignCarousel.setVisibility(true);
-      }
+      const isCampaignMAPresent = configManager.isMicroAppPresent('CampaignMA');
+      // Campaign section (flxBanner) is shown only when in-app campaigns are enabled in Fabric
+      // (MB_ENABLE_INAPP_CAMPAIGNS === "TRUE"); otherwise it is collapsed so no empty section remains.
+      this.applyCampaignSectionConfig();
       var flag=navManager.getCustomInfo("getAccountList");
       (flag===true)?this.view.flxSwitchAcc.setVisibility(true):this.view.flxSwitchAcc.setVisibility(false)
      scope.accountNavigation();
@@ -113,6 +161,8 @@ kony.print("***************Error in HBL Dashboard init function**********"+e);
 	  
       scope.setQuicklinksAndServices();
       kony.print("PERF|D_QUICKLINKS_E|" + Date.now()); // PERF-TEMP
+      scope.applyPMReliefBannerConfig();
+      scope.fetchAndApplyPMReliefBannerConfig();
       /*let accounts = kony.mvc.MDAApplication.getSharedInstance().moduleManager.getModule({
         appName: "ArrangementsMA",
         moduleName: "AccountUIModule"
@@ -212,7 +262,9 @@ kony.print("***************Error in HBL Dashboard init function**********"+e);
         var manageCardsModule = kony.mvc.MDAApplication.getSharedInstance().getModuleManager().getModule({ "moduleName": "ManageCardsUIModule", "appName": "CardsMA" });
         manageCardsModule.presentationController.getBankDateMB();
       }
-      // PERF: removed the extra getList call here; its response was never used (accounts are already loaded at login).
+	  // Removed: redundant discarded getList prefetch (duplicate of the AccountManager balance getList;
+	  // MB-only, response was thrown away). Cards/balances come from getInternalAccountsWithParams, and the
+	  // transfer flow re-fetches getList on entry. See perf report Dashboard_Gating_And_Regression §4.1.
       applicationManager.getPresentationUtility().dismissLoadingScreen();
 		 }catch(e){
 			 kony.print("error"+e);
@@ -231,8 +283,6 @@ kony.print("***************Error in HBL Dashboard init function**********"+e);
 		kony.print("sendPendingDefaultAccountsUpdate"+err);
 	  }
 	},
-	getListSuccess:function(res){applicationManager.getPresentationUtility().dismissLoadingScreen();},
-	getListError:function(err){applicationManager.getPresentationUtility().dismissLoadingScreen();},
     onHide: function(){
       kony.application.destroyForm({
                 "appName": "HomepageMA",
@@ -255,6 +305,19 @@ kony.print("***************Error in HBL Dashboard init function**********"+e);
 			var data={"accountID":scope.accNumber};
 			 applicationManager.getAccountManager().fetchAccountDetails(data, scope.successAccInfo.bind(scope), scope.failureAccInfo.bind(scope));
 		};
+        if(this.view.flxPMReliefBannerMob){
+          this.view.flxPMReliefBannerMob.onClick = function(){
+            applicationManager.getPresentationUtility().showLoadingScreen();
+            var accModePM = kony.mvc.MDAApplication.getSharedInstance().moduleManager.getModule({
+                        appName: "TransfersMA",
+                        moduleName: "ManageActivitiesUIModule"
+                    });
+            accModePM.presentationController.transferFlow = "sameBank";
+            accModePM.presentationController.addpayeeFlow = "";
+            accModePM.presentationController.pmReliefFund = true;
+            accModePM.presentationController.getList();
+          };
+        }
         this.view.flxTransfers.onClick = function(){
         applicationManager.getPresentationUtility().showLoadingScreen();
         var accMode = kony.mvc.MDAApplication.getSharedInstance().moduleManager.getModule({
@@ -263,6 +326,7 @@ kony.print("***************Error in HBL Dashboard init function**********"+e);
                 });
         accMode.presentationController.transferFlow = "sameBank";
         accMode.presentationController.addpayeeFlow = "";
+        accMode.presentationController.pmReliefFund = false;
         accMode.presentationController.getList();
       /*  var navMan = applicationManager.getNavigationManager();
            var transferTypeDetails = {
@@ -635,6 +699,65 @@ var configManager = applicationManager.getConfigurationManager();
 	 }
      
   },
+    // --- PM Disaster Relief Fund banner: client-property driven label + visibility (mirrors OLB Quicklinks) ---
+    getClientProperty: function(key) {
+      try {
+        var OLBConstants = require('OLBConstants');
+        var cp = (CommonUtilities.CLIENT_PROPERTIES && Object.keys(CommonUtilities.CLIENT_PROPERTIES).length > 0)
+          ? CommonUtilities.CLIENT_PROPERTIES
+          : ((OLBConstants && OLBConstants.CLIENT_PROPERTIES) ? OLBConstants.CLIENT_PROPERTIES : {});
+        return (cp && cp[key] !== undefined && cp[key] !== null) ? cp[key] : "";
+      } catch (e) {
+        kony.print("Dashboard_getClientProperty " + e);
+        return "";
+      }
+    },
+    applyPMReliefBannerConfig: function() {
+      if (!this.view.flxPMReliefBannerMob) { return; }
+      // Only decide once client properties are actually loaded; otherwise leave the banner
+      // hidden (its .sm default) so it never flashes, and let the async fetch apply the state.
+      if (!(CommonUtilities.CLIENT_PROPERTIES && Object.keys(CommonUtilities.CLIENT_PROPERTIES).length > 0)) { return; }
+      // Banner title/CTA are baked into the banner image (imgPMReliefBanner -> pm_relief_banner.png),
+      // so no label text is set here; PM_RELIEF_FUND_MENU_VISIBILITY still controls show/hide.
+      var pmVisibility = ("" + this.getClientProperty("PM_RELIEF_FUND_MENU_VISIBILITY")).trim().toLowerCase();
+      // Shown unless explicitly "false".
+      this.view.flxPMReliefBannerMob.setVisibility(pmVisibility !== "false");
+    },
+    // Show the in-app campaign section (flxBanner) only when MB_ENABLE_INAPP_CAMPAIGNS is TRUE in
+    // Fabric; hide (collapse) it otherwise so no empty banner section is left on the dashboard.
+    applyCampaignSectionConfig: function() {
+      if (!this.view.flxBanner) { return; }
+      var present = false;
+      try { present = applicationManager.getConfigurationManager().isMicroAppPresent('CampaignMA'); } catch (e) {}
+      if (!present) { this.view.flxBanner.setVisibility(false); return; }
+      // Default hidden until client properties are known, so the empty 100dp box never flashes.
+      if (!(CommonUtilities.CLIENT_PROPERTIES && Object.keys(CommonUtilities.CLIENT_PROPERTIES).length > 0)) {
+        this.view.flxBanner.setVisibility(false);
+        return;
+      }
+      var inApp = ("" + this.getClientProperty("MB_ENABLE_INAPP_CAMPAIGNS")).trim().toUpperCase();
+      var show = (inApp === "TRUE");
+      this.view.flxBanner.setVisibility(show);   // flxSummary is flow layout -> hidden collapses, no gap
+      if (show && this.view.campaignCarousel) { this.view.campaignCarousel.setVisibility(true); }
+    },
+    fetchAndApplyPMReliefBannerConfig: function() {
+      var scope = this;
+      try {
+        var cfg = kony.sdk.getCurrentInstance().getConfigurationService();
+        cfg.getAllClientAppProperties(function(res) {
+          if (res && Object.keys(res).length > 0) {
+            // Cache for every consumer, then re-apply the banner + campaign-section config.
+            CommonUtilities.CLIENT_PROPERTIES = res;
+            scope.applyPMReliefBannerConfig();
+            scope.applyCampaignSectionConfig();
+          }
+        }, function(err) {
+          kony.print("Dashboard_fetchPMReliefBanner error: " + JSON.stringify(err));
+        });
+      } catch (e) {
+        kony.print("Dashboard_fetchPMReliefBanner exception: " + e);
+      }
+    },
     showErrorPopup: function () {
      // kony.ui.Alert({
        // "alertType": constants.ALERT_TYPE_INFO,

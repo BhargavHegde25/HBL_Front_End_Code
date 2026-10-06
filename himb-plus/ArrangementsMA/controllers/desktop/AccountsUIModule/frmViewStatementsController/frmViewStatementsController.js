@@ -8157,7 +8157,7 @@ define("ArrangementsMA/AccountsUIModule/userfrmViewStatementsController", ['Comm
          */
         updateListBox: function(uiData) {
             //var isCombinedUser = applicationManager.getConfigurationManager().getConfigurationValue('isCombinedUser') === "true";
-            var isSingleCustomerProfile = applicationManager.getUserPreferencesManager().isSingleCustomerProfile;
+         /*  var isSingleCustomerProfile = applicationManager.getUserPreferencesManager().isSingleCustomerProfile;
             var isBusinessUser = applicationManager.getConfigurationManager().getConfigurationValue('isSMEUser') === "true";
             var allAccounts = uiData.allAccounts;
             //var currentAccount = uiData.account;
@@ -8169,13 +8169,40 @@ define("ArrangementsMA/AccountsUIModule/userfrmViewStatementsController", ['Comm
             //this.view.viewStatementsnew.lblAccountName.text = CommonUtilities.getAccountDisplayName(currentAccount);
             this.view.viewStatementsnew.lblAccountsDropdown.text = "O";
             this.view.viewStatementsnew.lblYearDropdown.text = "O";
+            this.view.viewStatementsnew.flxAccountInfo.onClick = this.onAccountClick.bind(this);*/
+			
+			
+			 var isSingleCustomerProfile = applicationManager.getUserPreferencesManager().isSingleCustomerProfile;
+			var allAccounts = uiData.allAccounts;
+            var navManager = applicationManager.getNavigationManager();
+
+            // HBL (B21): `currentAccount` was removed when this method switched to defaultAcc, but
+            // :8178 still referenced it — ReferenceError for every multi-CIF profile, which is what
+            // a granted joint account creates. Resolve the account once and use it throughout.
+            var defaultAccInfo = navManager.getCustomInfo("defaultAcc");
+            var defaultAccount = (defaultAccInfo && defaultAccInfo.Accounts && defaultAccInfo.Accounts.length > 0)
+                ? defaultAccInfo.Accounts[0]
+                : null;
+            if (defaultAccount === null) {
+                kony.print("HBL::updateListBox: defaultAcc unavailable — cannot render account header");
+            }
+
+            var defaultPrimaryAccount = defaultAccount ? defaultAccount.accountID : "";
+            this.currentAccountId = defaultPrimaryAccount;
+            this.view.viewStatementsnew.lblAccountName.text = defaultAccount
+                ? CommonUtilities.getAccountDisplayName(defaultAccount)
+                : "";
+				 this.view.viewStatementsnew.lblAccountsDropdown.text = "O";
+            this.view.viewStatementsnew.lblYearDropdown.text = "O";
             this.view.viewStatementsnew.flxAccountInfo.onClick = this.onAccountClick.bind(this);
             if (!isSingleCustomerProfile) {
                 this.view.viewStatementsnew.flxAccountSelectedValue.setVisibility(true);
                 this.view.viewStatementsnew.lstSelectAccount.setVisibility(false);
                 this.view.viewStatementsnew.lblAccountIcon.isVisible = true;
                 this.view.viewStatementsnew.lblAccountName.left = "10dp";
-                this.view.viewStatementsnew.lblAccountIcon.text = currentAccount.isBusinessAccount === "true" ? "r" : "s";
+              //  this.view.viewStatementsnew.lblAccountIcon.text = currentAccount.isBusinessAccount === "true" ? "r" : "s";
+			  this.view.viewStatementsnew.lblAccountIcon.text =
+                    (defaultAccount && defaultAccount.isBusinessAccount === "true") ? "r" : "s";
                 this.setAccountsData(allAccounts);
             } else {
                 this.view.viewStatementsnew.flxAccountSelectedValue.setVisibility(true);

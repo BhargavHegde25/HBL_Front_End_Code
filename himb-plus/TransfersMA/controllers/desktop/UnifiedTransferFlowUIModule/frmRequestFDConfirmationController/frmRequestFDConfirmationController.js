@@ -57,7 +57,7 @@ define(['FormControllerUtility', 'CommonUtilities'], function (FormControllerUti
                 "amount": amt.replace("NPR ", ""),
                 "tenure": tenure.replace(" Months", "")
             }
-            if (depositeType == "Himal Remit FD" && accType != "HIMAL.REMIT") {
+         /*   if (depositeType == "Himal Remit FD" && accType != "HIMAL.REMIT") {
                 var ManageActivitiesPresenter = applicationManager.getModulesPresentationController({
                     "appName": "TransfersMA",
                     "moduleName": "ManageActivitiesUIModule"
@@ -68,6 +68,26 @@ define(['FormControllerUtility', 'CommonUtilities'], function (FormControllerUti
                     "appName": "TransfersMA",
                     "moduleName": "ManageActivitiesUIModule"
                 });
+                ManageActivitiesPresenter.createFixedDepositWithSTP(param);
+            }*/
+			            // Himal Remit FD goes STP only when the debit account's product is one of the codes
+            // configured in the Fabric client property HIMAL_FD_ACCOUNT_CODES
+            // (e.g. "HIMAL.REMIT,HIMAL.REMIT.WOCHQ"). Other deposit types are always STP.
+            var himalCodesProp = applicationManager.getConfigurationManager().HIMAL_FD_ACCOUNT_CODES;
+            var himalCodes = (himalCodesProp ? String(himalCodesProp) : "HIMAL.REMIT")
+                .split(",")
+                .map(function (code) { return code.trim().toUpperCase(); })
+                .filter(function (code) { return code !== ""; });
+            var isHimalAccount = !kony.sdk.isNullOrUndefined(accType)
+                && himalCodes.indexOf(String(accType).trim().toUpperCase()) !== -1;
+
+            var ManageActivitiesPresenter = applicationManager.getModulesPresentationController({
+                "appName": "TransfersMA",
+                "moduleName": "ManageActivitiesUIModule"
+            });
+            if (depositeType == "Himal Remit FD" && !isHimalAccount) {
+                ManageActivitiesPresenter.createFixedDepositWithNonSTP(param);
+            } else {
                 ManageActivitiesPresenter.createFixedDepositWithSTP(param);
             }
         }

@@ -229,7 +229,9 @@ define(['CommonUtilities', 'CampaignUtility'], function (CommonUtilities, Campai
         var offsetY = this.view.flxMainContainer.contentOffsetMeasured.y;
         var contentHeight = this.view.flxMainContainer.contentSizeMeasured.height;
         var viewPortHeight = this.view.flxMainContainer.frame.height;
-        if (Number(contentHeight) === Number(offsetY) + Number(viewPortHeight)) {
+        //measured values are floats, so a threshold rather than exact equality, and a small lead so the
+        //next page is appended just before the user hits the very bottom
+        if (Number(offsetY) + Number(viewPortHeight) >= Number(contentHeight) - 2) {
           this.onReachingEnd();
         }
       }
@@ -261,7 +263,7 @@ define(['CommonUtilities', 'CampaignUtility'], function (CommonUtilities, Campai
                 animated: false
               });
               var rightBarButtonItem = new kony.ui.BarButtonItem({
-                    type: constants.BAR_BUTTON_TITLE,
+                    type: constants.BAR_BUTTON_IMAGE,
                     style: constants.BAR_ITEM_STYLE_PLAIN,
                     enabled: true,
                     action: this.navigateToFilterOrApplyCard.bind(this),
@@ -491,6 +493,10 @@ define(['CommonUtilities', 'CampaignUtility'], function (CommonUtilities, Campai
     postShow: function () {
       var scope = this;
       try{
+      //TEMP DIAGNOSTIC - remove. Anchors wall clock time from the moment the card screen opens,
+      //so delay spent before getTransactions (card list, bank dates) is still visible.
+      //try { applicationManager.getNavigationManager().setCustomInfo("diagFormOpen", new Date().getTime()); }
+      //catch (diagError) { kony.print("[DIAG] form open mark failed: " + diagError); }
       var deviceManager = applicationManager.getDeviceUtilManager();
       this.previousForm = kony.sdk.isNullOrUndefined(kony.application.getPreviousForm()) ? "" :kony.application.getPreviousForm().id;
       deviceManager.detectDynamicInstrumentation();
@@ -1389,24 +1395,55 @@ define(['CommonUtilities', 'CampaignUtility'], function (CommonUtilities, Campai
 
     },
     onReachingEnd: function () {
-      try{
-      if (this.isManageTabShown == false) {
-        var length = 0;
-        for (var i = 0; i < this.view.segTransactionsScreen.data.length; i++) {
-          length += this.view.segTransactionsScreen.data[i][1].length;
-        }
-        var manageCardModule = kony.mvc.MDAApplication.getSharedInstance().getModuleManager().getModule("ManageCardsUIModule");
-        this.isAppendData = true;
-        manageCardModule.presentationController.getTransactionsForCard(this.cardId, length);
-      }
-      }
-      catch (e) {
-        kony.print("onReachingEnd: " + e)
-      }
+      //Intentionally empty. getCardPendingTransactions has no paging fields - cardNumber, cardRefNbr,
+      //dateFrom and dateTo only - so the first call already returns the whole window and the segment
+      //renders it in one pass (measured at 5ms for 34 rows). The refetch that used to live here called
+      //the _Extension overload, which takes (params) rather than (cardId, offset), so it posted a bare
+      //card id as the request body on every scroll that reached the bottom.
     },
+    ///**
+     //* TEMP DIAGNOSTIC - remove. Everything collected into one buffer so a single run
+     //* captures the whole picture, shown as one alert instead of many.
+     //*/
+    //diagAppend: function (line) {
+      //try {
+        //var navManager = applicationManager.getNavigationManager();
+        //var buffer = navManager.getCustomInfo("diagBuffer");
+        //buffer = (buffer ? buffer + "\n" : "") + line;
+        //navManager.setCustomInfo("diagBuffer", buffer);
+        //kony.print("[DIAG] " + line);
+      //}
+      //catch (diagError) {
+        //kony.print("[DIAG] append failed: " + diagError);
+      //}
+    //},
+    //diagReset: function () {//TEMP DIAGNOSTIC - remove
+      //try { applicationManager.getNavigationManager().setCustomInfo("diagBuffer", ""); }
+      //catch (diagError) { kony.print("[DIAG] reset failed: " + diagError); }
+    //},
+    //showDiagnosticAlert: function (title, message) {//TEMP DIAGNOSTIC - remove
+      //try {
+        //if (message) { this.diagAppend(message); }
+        //var buffer = applicationManager.getNavigationManager().getCustomInfo("diagBuffer") || "(empty)";
+        //var clientProps = applicationManager.getNavigationManager().getCustomInfo("diagClientProps");
+        //applicationManager.getPresentationUtility().Alert({
+          //"alertType": constants.ALERT_TYPE_INFO,
+          //"alertTitle": title,
+          //"message": buffer + "\n--- client props ---\n" + (clientProps ? clientProps : "loader never ran"),
+          //"alertHandler": function () { return true; },
+          //"yesLabel": "OK"
+        //}, {});
+      //}
+      //catch (diagError) {
+        //kony.print("[DIAG] alert failed: " + diagError);
+      //}
+    //},
     setSegmentData: function () {
       var scope = this;
       try{
+      //TEMP DIAGNOSTIC - remove
+      //var perfMarks = applicationManager.getNavigationManager().getCustomInfo("perfMarks") || {};
+      //perfMarks.t2 = new Date().getTime();
       var formatUtil = applicationManager.getFormatUtilManager();
       var navManager = applicationManager.getNavigationManager();
       var cardTransactionDetails = navManager.getCustomInfo("frmCardManageHomeTransactions");
@@ -1451,17 +1488,26 @@ define(['CommonUtilities', 'CampaignUtility'], function (CommonUtilities, Campai
         const currentDate = new Date(currentBankDate);
         const y = currentDate.getFullYear();
         const m = currentDate.getMonth();
-        const d = currentDate.getDate();
         const firstDayOfCurrentMonth = new Date(y, m, 1);
         const secondDayOfLastMonth = new Date(y, m - 1, 2);
-        // if today is 1st of current month -> Cycle is not closed yet -> so billing cycle is month before last 2nd to last month 1st
-        // if today is not 1st -> Cycle is closed -> billing cycle, last month 2nd to current month 1st
-        const billedStart = new Date(y, m - (d === 1 ? 2 : 1), 2);
-        const billedEnd = new Date(y, m - (d === 1 ? 1 : 0), 1, 23, 59, 59);
+        // split is on calendar month boundaries -> unbilled is the 1st of the current month to today, billed is the whole of the previous month
+        const currentMonthStart = new Date(y, m, 1);
+        const billedStart = new Date(y, m - 1, 1);
+        //the service returns postingDate as "2026-09-15 20:13:54"; iOS will not parse that form, hence the T - same fix as FormatUtilManager.getDateObjectfromString
+        var parseServiceDate = function (value) {
+          return new Date(String(value).replace(" ", "T"));
+        };
+        //the service has been seen to ignore dateFrom and answer with the card's whole history, so hold the window here as well.
+        //resolved in getTransactions and passed as a timestamp, this runs inside a service callback where cross module lookups are best avoided
+        var transactionWindowStart = navManager.getCustomInfo("cardTransactionWindowStart");
         let formattedPostingDateObj;
         transactionsList.forEach(function (transaction) {
+          formattedPostingDateObj = parseServiceDate(transaction.postingDate);
+          if (transactionWindowStart && !isNaN(formattedPostingDateObj.getTime()) && formattedPostingDateObj.getTime() < transactionWindowStart) {
+            return;
+          }
           //date formatting
-          transaction.formattedPostingDate = applicationManager.getFormatUtilManager().getFormatedDateString(new Date(transaction.postingDate), "d/m/Y");
+          transaction.formattedPostingDate = applicationManager.getFormatUtilManager().getFormatedDateString(formattedPostingDateObj, "d/m/Y");
           /*
           transaction.transactionDate = transaction.transactionDate.replace(' ', 'T');
           var currentDate = new Date(transaction.transactionDate);
@@ -1471,7 +1517,6 @@ define(['CommonUtilities', 'CampaignUtility'], function (CommonUtilities, Campai
           */
           //amount formatting
           transaction.formattedAmount = transaction.transactionCurrency + " " + CommonUtilities.formatCurrencyWithCommas(transaction.transactionAmount, transaction.transactionCurrency);
-          formattedPostingDateObj = new Date(transaction.postingDate);//yy-mm-dd
           transaction.isEligibleTransactionEmi =  ((!kony.sdk.isNullOrUndefined(transaction.transactionAmount) && Number(transaction.transactionAmount) > Number(scope_configManager.getMaxAmountForEmiEligible()))) 
                                                   && transaction.reserved5 === "00"   
                                                   && transaction.reserved4 === "Matched"
@@ -1484,7 +1529,7 @@ define(['CommonUtilities', 'CampaignUtility'], function (CommonUtilities, Campai
   enable after dispute tested*/
       /* formattedPostingDateObj <= firstDayOfCurrentMonth && formattedPostingDateObj >= secondDayOfLastMonth ?
        unbilled.push(transaction) : billed.push(transaction); */
-            formattedPostingDateObj > billedEnd ? unbilled.push(transaction) : billed.push(transaction);//from 2nd of current month to today transactions are unbilled, before 2nd of current month transactions are billed.
+            formattedPostingDateObj >= currentMonthStart ? unbilled.push(transaction) : billed.push(transaction);//from 1st of current month to today transactions are unbilled, the previous calendar month is billed.
 
 
 
@@ -1507,6 +1552,10 @@ define(['CommonUtilities', 'CampaignUtility'], function (CommonUtilities, Campai
           // }
           //previous end
         });
+        //TEMP DIAGNOSTIC - remove
+        //perfMarks.t3 = new Date().getTime();
+        //perfMarks.rowsReturned = transactionsList.length;
+        //perfMarks.rowsKept = unbilled.length + billed.length;
         var data = [];
         if (this.cardTypeFlag === applicationManager.getConfigurationManager().OLBConstants.CARD_TYPE.Credit) {
           if (unbilled.length > 0) {
@@ -1540,24 +1589,22 @@ define(['CommonUtilities', 'CampaignUtility'], function (CommonUtilities, Campai
             data.push([{ "lblHeader": "Billed Transactions" }, billed]);
           }
         }
-        if (!this.isAppendData) {
-          this.view.segTransactionsScreen.removeAll();
-          
-          this.view.segTransactionsScreen.setData(data);
-          if (transactionsList.length !== 0)
-            this.isAppendData = true;
-        }
-        else {
-          for (var i = 0; i < this.view.segTransactionsScreen.data.length; i++) {
-            for (var j = 0; j < data.length; j++) {
-              if (this.view.segTransactionsScreen.data[i][0].lblHeader === data[j][0].lblHeader) {
-                for (var k = 0; k < data[j][1].length; k++) {
-                  this.view.segTransactionsScreen.addDataAt(data[j][1][k], 1, i);
-                }
-              }
-            }
-          }
-        }
+        this.view.segTransactionsScreen.removeAll();
+        this.view.segTransactionsScreen.setData(data);
+        //TEMP DIAGNOSTIC - remove
+        //perfMarks.t4 = new Date().getTime();
+        //this.showDiagnosticAlert("DIAG timings (ms)",
+          //"network  t1-t0 : " + (perfMarks.t1 - perfMarks.t0) +
+          //"\ncallback t2-t1 : " + (perfMarks.t2 - perfMarks.t1) +
+          //"\nbucket   t3-t2 : " + (perfMarks.t3 - perfMarks.t2) +
+          //"\nrender   t4-t3 : " + (perfMarks.t4 - perfMarks.t3) +
+          //"\nTOTAL    t4-t0 : " + (perfMarks.t4 - perfMarks.t0) +
+          //"\nsince form open: " + (perfMarks.t4 - (applicationManager.getNavigationManager().getCustomInfo("diagFormOpen") || perfMarks.t0)) +
+          //"\n\nrows returned by service : " + perfMarks.rowsReturned +
+          //"\nrows kept after window   : " + perfMarks.rowsKept +
+          //"\ndateFrom sent : " + applicationManager.getNavigationManager().getCustomInfo("perfDateFrom"));
+        if (transactionsList.length !== 0)
+          this.isAppendData = true;
         var emiData = [];
         if (this.isViewTransactionFlow) {
           this.isViewTransactionFlow = false;
@@ -1683,28 +1730,61 @@ define(['CommonUtilities', 'CampaignUtility'], function (CommonUtilities, Campai
     getTransactions: function () {
       var scope = this;
       try{
+      //TEMP DIAGNOSTIC - remove. Fresh buffer per tap so one run captures one full journey.
+      //this.diagReset();
+      //this.diagAppend("getTransactions entry " + new Date().getTime());
       var cardStatus = this.cardList[this.cardListIndex]['cardStatus'];
       var cardId = this.cardList[this.cardListIndex]['cardId'];
-      var manageCardModule = kony.mvc.MDAApplication.getSharedInstance().getModuleManager().getModule("ManageCardsUIModule");
+      //TEMP DIAGNOSTIC - remove. First 8 digits only, enough for BIN work without printing a full PAN.
+      //var diagCard = this.cardList[this.cardListIndex];
+      //this.diagAppend("cardId len=" + String(diagCard.cardId).length + " head=" + String(diagCard.cardId).substring(0, 8));
+      //this.diagAppend("maskedCardNumber len=" + String(diagCard.maskedCardNumber).length + " head=" + String(diagCard.maskedCardNumber).substring(0, 8));
+      //this.diagAppend("cardType=" + diagCard.cardType + " status=" + diagCard.cardStatus + " cards=" + this.cardList.length);
+      var manageCardModule = null;
+      try {
+        manageCardModule = kony.mvc.MDAApplication.getSharedInstance().getModuleManager().getModule("ManageCardsUIModule");
+      }
+      catch (moduleError) {
+        //this.diagAppend("!! getModule('ManageCardsUIModule') FAILED: " + moduleError);//TEMP DIAGNOSTIC - remove
+        throw moduleError;
+      }
       var currentBankDate =applicationManager.getNavigationManager().getCustomInfo("bankDates").currentWorkingDate;//yy-mm-dd
-      var currentDate = applicationManager.getFormatUtilManager().getFormatedDateString(new Date(currentBankDate), "d/m/y");
-      var fromDate = new Date(currentBankDate);
-      fromDate.setMonth(fromDate.getMonth() - 2);//to get last 3 month transactions to filter it out billed and unbilled
-      fromDate.setDate(2);
-      fromDate.toISOString().split("T")[0];
-      let transactionStartDate = applicationManager.getFormatUtilManager().getFormatedDateString(fromDate, "d/m/y");
-      
+      //window is driven by the CARD_TRANSACTION_DAYS client app property, widened when needed to reach the 1st of last month so the billed section stays whole.
+      //the CardsManager lookup goes through getModule, so a module resolution failure degrades to the default window instead of throwing
+      var transactionDateRange = null;
+      try {
+        transactionDateRange = applicationManager.getCardsManager().getCardTransactionDateRange(new Date(currentBankDate));
+      }
+      catch (cardsManagerError) {
+        //this.diagAppend("!! getCardsManager() FAILED (window): " + cardsManagerError);//TEMP DIAGNOSTIC - remove
+      }
+      if (kony.sdk.isNullOrUndefined(transactionDateRange)) {
+        var fallbackToday = new Date(currentBankDate);
+        var fallbackFrom = new Date(fallbackToday.getFullYear(), fallbackToday.getMonth() - 1, 1);
+        var padNumber = function (value) { return (value < 10 ? "0" : "") + value; };
+        transactionDateRange = {
+          "fromDate": fallbackFrom,
+          "fromDateText": padNumber(fallbackFrom.getDate()) + "/" + padNumber(fallbackFrom.getMonth() + 1) + "/" + fallbackFrom.getFullYear(),
+          "toDateText": padNumber(fallbackToday.getDate()) + "/" + padNumber(fallbackToday.getMonth() + 1) + "/" + fallbackToday.getFullYear()
+        };
+      }
+      //setSegmentData re-applies this window when the service answers with more than was asked for
+      applicationManager.getNavigationManager().setCustomInfo("cardTransactionWindowStart", transactionDateRange.fromDate.getTime());
+      //applicationManager.getNavigationManager().setCustomInfo("perfMarks", { "t0": new Date().getTime() });//TEMP DIAGNOSTIC - remove
+      //applicationManager.getNavigationManager().setCustomInfo("perfDateFrom", transactionDateRange.fromDateText + " -> " + transactionDateRange.toDateText);//TEMP DIAGNOSTIC - remove
+
       var transactionParams = {
         "cardNumber": cardId,
         "cardRefNbr": "N",
-        "dateFrom": transactionStartDate,
-        "dateTo": currentDate,
+        "dateFrom": transactionDateRange.fromDateText,
+        "dateTo": transactionDateRange.toDateText,
       };
       this.view.flxActivateCardMsg.setVisibility(false);
       if (cardStatus !== "Cancelled" && (cardStatus !== "Issued" || cardStatus !== "Inactive"|| cardStatus !== "Expired")) {
         applicationManager.getPresentationUtility().showLoadingScreen();
         this.view.segTransactionsScreen.removeAll();
         this.isAppendData = false;
+        //this.diagAppend("service call START " + new Date().getTime() + " range " + transactionDateRange.fromDateText + " -> " + transactionDateRange.toDateText);//TEMP DIAGNOSTIC - remove
         manageCardModule.presentationController.getTransactionsForCard(transactionParams);
       }
       else {
@@ -1897,6 +1977,21 @@ define(['CommonUtilities', 'CampaignUtility'], function (CommonUtilities, Campai
             "Reason": "lb"
           };
         }
+        //resolved while the whole card object is in scope, the change pin payload itself only carries cardId
+        var resolvedPinLength = 4;
+        try {
+          resolvedPinLength = applicationManager.getCardsManager().getCardPinLength(this.getCurrentCardDetails());
+        }
+        catch (pinLengthError) {
+          //this.diagAppend("!! getCardsManager() FAILED (PIN): " + pinLengthError);//TEMP DIAGNOSTIC - remove
+        }
+        navManager.setCustomInfo("cardPinLength", resolvedPinLength);
+        //TEMP DIAGNOSTIC - remove
+        //navManager.setCustomInfo("diagPinContext",
+          //"resolved pinLength = " + resolvedPinLength +
+          //"\nCARD_PIN_LENGTH_6_BINS = " + applicationManager.getConfigurationManager().getConfigurationValue("CARD_PIN_LENGTH_6_BINS") +
+          //"\ncardId head = " + String(this.getCurrentCardDetails().cardId).substring(0, 8) +
+          //"\nmasked head = " + String(this.getCurrentCardDetails().maskedCardNumber).substring(0, 8));
         navManager.setCustomInfo("frmCardMgtSecurityCode", cardDetails);
         this.navigateToCardsEachflow();
         //         var manageCardsModule = kony.mvc.MDAApplication.getSharedInstance().getModuleManager().getModule("ManageCardsUIModule");

@@ -218,6 +218,8 @@ define(["CommonUtilities"], function(CommonUtilities) {
   Auth_PresentationController.prototype.onLogin = function(UsernamePasswordJSON, formContext) {
     kony.print("PERF|LOGIN_START|" + Date.now()); // PERF-TEMP
     scope_AuthPresenter.lastDashboardNavigationTime = null;
+    //start of the login performance measurement, see the perf tracker in CommonUtilities
+    CommonUtilities.perfReset("login submitted");
     scope_AuthPresenter.rememberdeviceregflag = false;
     applicationManager.getPresentationUtility().showLoadingScreen();
     Auth_PresentationController.UsernamePasswordJSON = UsernamePasswordJSON;
@@ -398,6 +400,12 @@ define(["CommonUtilities"], function(CommonUtilities) {
   };
   Auth_PresentationController.prototype.presentationLoginSuccess = function(resSuccess) {
     kony.print("PERF|AUTH_OK|" + Date.now()); // PERF-TEMP
+    CommonUtilities.perfMark("auth accepted, post login work starts");
+    /* Drop any accounts prefetch left over from an earlier session before this
+       login starts one of its own, and re-arm the barrier mark. */
+    scope_AuthPresenter.perfBarrierMarked = false;
+    try { applicationManager.getAccountManager().clearAccountsPrefetch(); }
+    catch (prefetchClearError) { }
     const configManager = applicationManager.getConfigurationManager();
     const navManager =  applicationManager.getNavigationManager();
     const loggerManager = applicationManager.getLoggerManager();
@@ -938,6 +946,14 @@ const devManager = applicationManager.getDeviceUtilManager();
          scope_AuthPresenter.navigationAfterLogin();
       }*/
     navManager.setCustomInfo("frmCustomerDashboard", custominfo);
+    /* Earliest point at which reDesignFlow is known, and it decides which of the
+       two accounts calls the dashboard will make. */
+    try {
+      applicationManager.getAccountManager()
+        .prefetchAccountsForLogin(custominfo.reDesignFlow === "true");
+    } catch (prefetchStartError) {
+      kony.print("[PREFETCH] not started: " + prefetchStartError);
+    }
     };
   
    Auth_PresentationController.prototype.fetchCustomersFailure = function(response) {
@@ -1901,6 +1917,8 @@ const devManager = applicationManager.getDeviceUtilManager();
             "deviceId": deviceID
         };
         var authManger = applicationManager.getAuthManager();
+        //PIN and biometric log in through here rather than onLogin, so the measurement starts here too
+        CommonUtilities.perfReset("login submitted");
         authManger.pinLogin(data, this.presentationLoginSuccess, this.presentationPinLoginError);
     };
     Auth_PresentationController.prototype.presentationPinLoginError = function(err) {

@@ -99,6 +99,7 @@ define([], function() {
     */
   AuthManager.prototype.logout = function(presentationSuccess,presentationError){
      var self = this;
+          try { require('CacheUtils').configCache.clearAll(); } catch (eCC) {}   // drop security-sensitive caches (sysConfig/features) on logout
           var authParams = {
               "loginOptions": {
                   "isOfflineEnabled": false

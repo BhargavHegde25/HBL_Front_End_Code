@@ -405,6 +405,22 @@
 		applicationManager.getPresentationUtility().Alert("Something went wrong amount formation");
 		}
 		else if(parseFloat(amount)<parseFloat(accBal[0].availableBalance)){
+		// ===== eSewa v2 booking request - DISABLED 2026-09-09 =====
+		// v2 /api/auth/load/v2/book takes eSewaId / amount / originatingUniqueId /
+		// accountHolderName / initiatorMobile. v1 validate_esewa_id/v1 takes
+		// targetedMobile / targetedAmount only.
+		// var userObj=applicationManager.getUserPreferencesManager().getUserObj();
+		// var accountHolderName=((userObj.userfirstname||"")+" "+(userObj.userlastname||"")).trim();
+		// var originatingUniqueId="HBL"+new Date().getTime()+Math.floor(Math.random()*1e6);
+		// var param={
+		// "eSewaId":esewaId,
+		// "amount":amount,
+		// "frmAccNumber":accNum,
+		// "originatingUniqueId":originatingUniqueId,
+		// "accountHolderName":accountHolderName,
+		// "initiatorMobile":userObj.phone||""
+		// };
+		// ===== end eSewa v2 =====
 		var param={
 		"targetedMobile":esewaId,
 		"targetedAmount":amount,
@@ -417,6 +433,9 @@
 		transactionObj.setTransactionAttribute("esewafromAccCurrency",accBal[0].currencyCode);
 		transactionObj.setTransactionAttribute("esewaFrmAccName",accName);
 		transactionObj.setTransactionAttribute("esewaTP",tp);
+		// ===== eSewa v2 - DISABLED 2026-09-09 (v1 load sends no originatingUniqueId) =====
+		// transactionObj.setTransactionAttribute("esewaOriginatingUniqueId",originatingUniqueId);
+		// ===== end eSewa v2 =====
 		transferMod.presentationController.validateEsewa(param);
 		}
 		else{

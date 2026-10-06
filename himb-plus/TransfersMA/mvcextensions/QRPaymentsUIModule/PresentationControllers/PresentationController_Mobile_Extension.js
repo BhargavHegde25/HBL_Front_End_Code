@@ -426,6 +426,18 @@ define([], function () {
 	  try{
     if (response["isServerUnreachable"]) {
       applicationManager.getPresentationInterruptHandler().showErrorMessage("postLogin", response);
+    } else if (response.serverErrorRes && response.serverErrorRes.dbpErrCode === "1036") {
+      // Fonepay outcome UNKNOWN: the customer has already been debited and the payment
+      // may have completed at Fonepay. This is a pending state, not a failure - render the
+      // acknowledgement screen's pending view (not the generic-error bounce to frmQRVerify)
+      // and surface the referenceId, which is the only handle for support/reconciliation.
+      var transactionManager = applicationManager.getTransactionManager();
+      var navMan = applicationManager.getNavigationManager();
+      transactionManager.setTransactionAttribute("dbpErrCode", response.serverErrorRes.dbpErrCode);
+      if (response.serverErrorRes.referenceId) {
+        transactionManager.setTransactionAttribute("referenceId", response.serverErrorRes.referenceId);
+      }
+      navMan.navigateTo({ "appName": "TransfersMA", "friendlyName": "frmQRAcknowledgement" });
     } else {
       var transactionManager = applicationManager.getTransactionManager();
       var navMan = applicationManager.getNavigationManager();

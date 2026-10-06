@@ -1,6 +1,7 @@
 define(["CommonUtilities"],function(CommonUtilities){
   return{
     scinstance:null,
+    pinLength:4,
 	init : function() {
       try{
         var navManager = applicationManager.getNavigationManager();
@@ -63,8 +64,25 @@ this.cardData = frmData;
 this.renderTitleBar();
 this.view.txtNewPin.text="";
 this.clearConfirmPin();
-this.view.txtNewPin.maxTextLength=configManager.pinChangeLength;
-this.view.txtConfirmPin.maxTextLength=configManager.pinChangeLength;
+//6 for the BINs listed in CARD_PIN_LENGTH_6_BINS, resolved on the cards home while the full card object was in scope
+var resolvedPinLength = navManager.getCustomInfo("cardPinLength");
+this.pinLength = resolvedPinLength ? resolvedPinLength : configManager.pinChangeLength;
+//TEMP DIAGNOSTIC - remove. Uncomment to see which PIN length was resolved and which BIN list was in force.
+//try {
+//  applicationManager.getPresentationUtility().Alert({
+//    "alertType": constants.ALERT_TYPE_INFO,
+//    "alertTitle": "DIAG PIN length",
+//    "message": "pinLength used = " + this.pinLength +
+//      "\nfrom cardPinLength = " + resolvedPinLength +
+//      "\nconfig pinChangeLength = " + configManager.pinChangeLength +
+//      "\n\n" + (navManager.getCustomInfo("diagPinContext") || "no pin context") +
+//      "\n--- client props ---\n" + (navManager.getCustomInfo("diagClientProps") || "loader never ran"),
+//    "alertHandler": function () { return true; },
+//    "yesLabel": "OK"
+//  }, {});
+//} catch (diagError) { kony.print("[DIAG] pin alert failed: " + diagError); }
+this.view.txtNewPin.maxTextLength=this.pinLength;
+this.view.txtConfirmPin.maxTextLength=this.pinLength;
  //this.view.txtCurrentPinValue.maxTextLength=configManager.pinChangeLength;
 //this.view.txtCurrentPinValue.onTextChange = this.validatePins;
 this.view.imgMaskUnmask.onTouchEnd = this.imgMaskUnmaskToggle;
@@ -114,11 +132,10 @@ applicationManager.getPresentationFormUtility().logFormName(currentForm);
      // try {
         loggerManager.log("#### start frmCardMngNewPinController : updateCurrentCard ####");
         applicationManager.getPresentationUtility().showLoadingScreen();
-         var confiMan=applicationManager.getConfigurationManager();
          var frmData = {
                         "isMainScreen": undefined
                     };
-        if(!this.isConsecutive(this.view.txtConfirmPin.text, confiMan.pinChangeLength)){
+        if(!this.isConsecutive(this.view.txtConfirmPin.text, this.pinLength)){
           var manageCardsModule = kony.mvc.MDAApplication.getSharedInstance().getModuleManager().getModule("ManageCardsUIModule");
           this.cardData.cardPin=this.view.txtConfirmPin.text;
          // this.cardData.pinNumber=this.view.txtCurrentPinValue.text;
@@ -203,11 +220,10 @@ applicationManager.getPresentationFormUtility().logFormName(currentForm);
       var loggerManager = applicationManager.getLoggerManager();
       try {
         loggerManager.log("#### start frmCardMngNewPinController : validatePins ####");
-         var confiMan=applicationManager.getConfigurationManager();
           		var newPin = this.view.txtNewPin.text;
         var confirmNewPin = this.view.txtConfirmPin.text;
        // var oldPin = this.view.txtCurrentPinValue.text;
-        if(newPin === confirmNewPin && newPin.length === confiMan.pinChangeLength)
+        if(newPin === confirmNewPin && newPin.length === this.pinLength)
         {
           this.view.imgPinMatch.src="greentick.png";
           this.view.btnContinue.setEnabled(true);

@@ -944,6 +944,11 @@ TransactionSigning  : {
 			config : "QRPayments/qrValidation/MF_Config",
 			repository : "QRPayments/qrValidation/Repository",
 		},
+qrPayment  : {
+			model : "QRPayments/qrPayment/Model",
+			config : "QRPayments/qrPayment/MF_Config",
+			repository : "QRPayments/qrPayment/Repository",
+		},
 QRPay  : {
 			model : "QRPayments/QRPay/Model",
 			config : "QRPayments/QRPay/MF_Config",
@@ -1612,7 +1617,12 @@ Biller  : {
 
 	},
 	HBLMerchantObjects : {
-			NEA_Payments  : {
+			TopUpNepal  : {
+			model : "HBLMerchantObjects/TopUpNepal/Model",
+			config : "HBLMerchantObjects/TopUpNepal/MF_Config",
+			repository : "HBLMerchantObjects/TopUpNepal/Repository",
+		},
+NEA_Payments  : {
 			model : "HBLMerchantObjects/NEA_Payments/Model",
 			config : "HBLMerchantObjects/NEA_Payments/MF_Config",
 			repository : "HBLMerchantObjects/NEA_Payments/Repository",

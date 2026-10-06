@@ -326,6 +326,8 @@ formatAmount:function(amount){
         typeVal = "Nepal Pay";
       } else if (type === 3){
         typeVal = "Smart QR";
+      } else if (type === 4){
+        typeVal = "Fonepay";
 		}
       if(typeVal){
       this.view.lblAggregatorValue.text = typeVal;  

@@ -286,7 +286,14 @@ define(['CampaignUtility', 'OLBConstants', 'CommonUtilities'], function(Campaign
         this.view.segManageAccountAcces.isVisible = false;
       }
       var alertManagement = applicationManager.getConfigurationManager().checkUserPermission("ALERT_MANAGEMENT") ? true : false;
-      if(alertManagement){
+      /* SHOW_ALERTS_IN_SETTINGS gates the Alerts section. Default FALSE: only an explicit "true"
+         shows it, so an absent, empty, misspelt or unreadable property leaves the section hidden.
+         The property is therefore required to keep Alerts visible - it is not optional.
+         The section heading lives in the segment data, so hiding the segment removes the heading with
+         it, and setUserAlerts sits inside this branch, so the alerts category service is not called
+         when the section is hidden. */
+      var alertsSectionEnabled = CommonUtilities.getBooleanConfig("SHOW_ALERTS_IN_SETTINGS", false);
+      if(alertManagement && alertsSectionEnabled){
         this.view.segSettingsAlerts.isVisible = true;
         this.setUserAlerts();
       }else{
@@ -842,6 +849,7 @@ define(['CampaignUtility', 'OLBConstants', 'CommonUtilities'], function(Campaign
                 settingsMod.presentationController.commonFunctionForNavigation({"appName": "ManageProfileMA","friendlyName": "SettingsUIModule/frmPreferencesDefaultLogin"});
      }
    }catch(er){
+	   applicationManager.getPresentationUtility().dismissLoadingScreen();
        kony.print(er);
      }
   },

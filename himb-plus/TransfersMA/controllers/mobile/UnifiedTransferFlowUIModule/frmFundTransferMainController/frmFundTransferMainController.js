@@ -72,6 +72,7 @@ define(['CampaignUtility', 'CommonUtilities'], function (CampaignUtility, Common
            //this.view.txtAmount.onDone = this.roundAmountField;
             this.view.txtAmount.onEndEditing = this.roundAmountField;
            this.view.txtRemarks.onTextChange = this.restrictRegex; //this.roundAmountField;
+            this.setupPMReliefIfNeeded();
             applicationManager.getPresentationUtility().dismissLoadingScreen();
         },
         flxFromClick: function(){
@@ -931,6 +932,145 @@ applicationManager.getDataProcessorUtility().showToastMessageError(this, msg);
 var custConfig = { hideCloseButton : true, disableTouchDismiss : true};
     applicationManager.getPresentationUtility().CustomAlert(basicProperties, {},custConfig);
 },
+    /**
+     * PM Relief Fund: read a Fabric client app property (CommonUtilities.CLIENT_PROPERTIES
+     * with OLBConstants fallback), returning "" when absent.
+     */
+    getClientProperty: function(key){
+        try{
+            var CommonUtilities = require('CommonUtilities');
+            var OLBConstants = require('OLBConstants');
+            var props = (CommonUtilities.CLIENT_PROPERTIES && Object.keys(CommonUtilities.CLIENT_PROPERTIES).length > 0) ? CommonUtilities.CLIENT_PROPERTIES : OLBConstants.CLIENT_PROPERTIES;
+            return (props && props[key] !== undefined && props[key] !== null) ? props[key] : "";
+        }catch(err){ kony.print("getClientProperty:"+err); return ""; }
+    },
+    /**
+     * PM Relief Fund: when the dashboard banner set pmReliefFund=true on the ManageActivities
+     * presentation controller, this same-bank form must lock the destination to the fixed
+     * relief-fund account (read-only, from client properties) and hide the existing-payee / OR
+     * picker. The flag is consumed one-shot so it never leaks into a later normal transfer.
+     */
+    setupPMReliefIfNeeded: function(){
+        try{
+            var transfMod = applicationManager.getModulesPresentationController({'appName':'TransfersMA','moduleName':'ManageActivitiesUIModule'});
+            this.pmReliefFund = (transfMod && transfMod.pmReliefFund === true);
+            if(transfMod){ transfMod.pmReliefFund = false; }
+            if(this.pmReliefFund !== true){
+                // Normal transfer: if this form was reused after a PM visit, un-hide the
+                // existing-payee card / OR divider (resetUI only manages .enable, not visibility).
+                try{
+                    this.view.transferToExistingPayee.setVisibility(true);
+                    this.view.flxOr.setVisibility(true);
+                }catch(e){ kony.print("resetPMReliefUI:"+e); }
+                return;
+            }
+            this.applyPMReliefUI();
+            var pmAccount = this.getClientProperty("PM_RELIEF_FUND_ACCOUNT");
+            if(kony.sdk.isNullOrUndefined(pmAccount) || pmAccount === ""){
+                this.fetchAndApplyPMReliefConfig(); // render-timing safeguard: props not populated yet
+            }
+            this.view.btnContinue.onClick = this.onPMReliefContinue;
+        }catch(err){ kony.print("setupPMReliefIfNeeded:"+err); }
+    },
+    applyPMReliefUI: function(){
+        try{
+            var pmAccount = this.getClientProperty("PM_RELIEF_FUND_ACCOUNT");
+            var pmName = this.getClientProperty("PM_RELIEF_FUND_NAME");
+            this.view.lblTxtAccNo.text = pmAccount;
+            this.view.txtAccountholder.text = pmName;
+            this.view.flxToAccount.enable = false;   // lock To Account Number (read-only)
+            this.view.flxToAccName.enable = false;   // lock Account Holder Name (read-only)
+            this.view.transferToExistingPayee.setVisibility(false); // hide existing-payee card
+            this.view.flxOr.setVisibility(false);                   // hide the OR divider
+            this.view.forceLayout();
+            this.validateContinueButton();
+        }catch(err){ kony.print("applyPMReliefUI:"+err); }
+    },
+    fetchAndApplyPMReliefConfig: function(){
+        var scope = this;
+        try{
+            var CommonUtilities = require('CommonUtilities');
+            kony.sdk.getCurrentInstance().getConfigurationService().getAllClientAppProperties(function(res){
+                try{ if(res){ CommonUtilities.CLIENT_PROPERTIES = res; } scope.applyPMReliefUI(); }catch(e){ kony.print("fetchAndApplyPMReliefConfig cb:"+e); }
+            }, function(err){ kony.print("fetchAndApplyPMReliefConfig err:"+JSON.stringify(err)); });
+        }catch(err){ kony.print("fetchAndApplyPMReliefConfig:"+err); }
+    },
+    /**
+     * PM Relief Fund: build the fixed same-bank external-transfer payload for the relief-fund
+     * account and route to the confirm screen, skipping the getPayeeName eligibility gate
+     * (the PM account is institutional, supportTransferTo=0, which that gate would otherwise
+     * reject). Mirrors the payload built in payeeConfirm's intra branch.
+     */
+    onPMReliefContinue: function(){
+        try{
+            var scope = this;
+            var transferMod = kony.mvc.MDAApplication.getSharedInstance().getModuleManager().getModule("ManageActivitiesUIModule");
+            var pmAccount = scope.getClientProperty("PM_RELIEF_FUND_ACCOUNT") || scope.view.lblTxtAccNo.text;
+            var pmName = scope.getClientProperty("PM_RELIEF_FUND_NAME") || scope.view.txtAccountholder.text;
+            var availableBalance = Number(this.currentBalance);
+            var amount = Number(this.view.txtAmount.text);
+            if(!(amount < availableBalance)){
+                applicationManager.getDataProcessorUtility().showToastMessageError(this, kony.i18n.getLocalizedString("i18n.mb.FD.lessAvlBalErrMsg"));
+                return;
+            }
+            applicationManager.getPresentationUtility().showLoadingScreen();
+            var dates = transferMod.presentationController.getBankDatees[0].currentWorkingDate;
+            var currentDate = new Date(dates).toISOString();
+            var ttAmount = amount.toFixed(2);
+            var wholeAmount = ttAmount.split(".")[0];
+            var decimalAmount = ttAmount.split(".")[1];
+            applicationManager.getNavigationManager().setCustomInfo("errorScenario","frmFundTransferMain");
+            var payloadData2 = {
+                "toAccCurrency":"NPR",
+                "fromAccCurrency":(scope.view.lblBalance.text).slice("",3),
+                "fromAccName": scope.view.lblAccountName.text,
+                "fromAccNumber": scope.view.lblAccountNumber.text,
+                "bankName": kony.i18n.getLocalizedString("kony.mb.Accounts.BankValue"),
+                "toAccNumber": pmAccount,
+                "toAccName": pmName,
+                "totalamount": ttAmount,
+                "amount": wholeAmount,
+                "decimal": decimalAmount,
+                "currencyCode": scope.view.lblCurrencyValue.text,
+                "remark": this.view.txtRemarks.text,
+                "toBankName": kony.i18n.getLocalizedString("kony.mb.Accounts.BankValue")
+            };
+            applicationManager.getNavigationManager().setCustomInfo("payloadData2",payloadData2);
+            var payloadData = {
+                "Transfer Amount": applicationManager.getFormatUtilManager().formatAmountandAppendCurrencySymbol(this.view.txtAmount.text, this.view.lblCurrencyValue.text),
+                "Remarks": this.view.txtRemarks.text,
+                "currencyCode": scope.view.lblCurrencyValue.text
+            };
+            applicationManager.getNavigationManager().setCustomInfo("payloadData",payloadData);
+            var payloads = {
+                "ExternalAccountNumber": pmAccount,
+                "amount": ttAmount,
+                "beneficiaryAddressLine1": "","beneficiaryAddressLine2": "","beneficiaryCity": "","beneficiarycountry": "","beneficiaryEmail": "",
+                "beneficiaryName": pmName,
+                "beneficiaryNickname": "","beneficiaryPhone": "","beneficiaryState": "","beneficiaryZipcode": "",
+                "createWithPaymentId": "true","deletedDocuments": "",
+                "frequencyEndDate": currentDate,"frequencyStartDate": currentDate,"frequencyType": "Once",
+                "fromAccountCurrency": (scope.view.lblBalance.text).slice("",3),
+                "fromAccountNumber": scope.view.lblAccountNumber.text,
+                "iban": "","isScheduled": "0","numberOfRecurrences": "","paidBy": "","paymentType": "",
+                "scheduledDate": currentDate,
+                "serviceName": "INTRA_BANK_FUND_TRANSFER_CREATE",
+                "swiftCode": "",
+                "toAccountCurrency": "NPR",
+                "toAccountNumber": pmAccount,
+                "transactionCurrency": scope.view.lblCurrencyValue.text,
+                "transactionId": "",
+                "transactionType": "ExternalTransfer",
+                "transactionsNotes": this.view.txtRemarks.text,
+                "uploadedattachments": "","userId": "","validate": "true",
+                "clearingCode": "","e2eReference": "","intermediaryBicCode": ""
+            };
+            transferMod.presentationController.intraBankTransfer(payloads);
+        }catch(err){
+            kony.print("onPMReliefContinue:"+err);
+            applicationManager.getPresentationUtility().dismissLoadingScreen();
+        }
+    },
     };
-    
+
 });

@@ -113,8 +113,13 @@ define(['FormControllerUtility', 'CommonUtilities'], function (FormControllerUti
                 this.view.UnifiedTransferSelection4.left = "30px";
             }
     },
-    onNavigate: function(data){ 
+    onNavigate: function(data){
       var scope = this;
+      // PM Relief: this form is only a transient hop to frmUTFSameBankTransfer (the deferred navigate below).
+      // Show a loading screen up-front so the landing tiles don't flash before the auto-forward.
+      if (data && data.pmReliefFund === true) {
+        try { applicationManager.getPresentationUtility().showLoadingScreen(); } catch (e) {}
+      }
       isP2PTransferTileVisible = true;
       userObj = this.isEmptyNullOrUndefined(data) ? applicationManager.getUserPreferencesManager().getUserObj() : data;    
       if (!this.isEmptyNullOrUndefined(userObj)) {
@@ -166,6 +171,20 @@ define(['FormControllerUtility', 'CommonUtilities'], function (FormControllerUti
         scope.payaPersonFlow(trannsferTypeDetails, userObj);
       };
       this.view.UnifiedTransferSelectionP2P.hideTile = function () { };
+      try {
+        if (data && data.pmReliefFund === true) {
+          data.pmReliefFund = false;
+          var pmScope = this;
+          kony.timer.schedule("pmReliefNav", function () {
+            try { kony.timer.cancel("pmReliefNav"); } catch (e) {}
+            kony.mvc.getNavigationManager().navigate({
+              context: pmScope,
+              params: { "transferType": "Same Bank", "pmReliefFund": true },
+              callbackModelConfig: { "frm": "frmUTFSameBankTransfer", "appName": "TransfersMA" }
+            });
+          }, 0.1, false);
+        }
+      } catch (pmErr) { kony.print("pmRelief landing: " + pmErr); }
     },
 
     onKeyPressCallBack: function (eventObject, eventPayload) {

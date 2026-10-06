@@ -195,6 +195,7 @@ define(['./LoginUtility','./LoginDAO','CommonUtilities'],function(LoginUtility, 
     this.view.switchRememberMe.selectedIndex = 0; 
     this.setRememberMeFlag(true);
     this.prefetchClientIp();
+    this.prewarmLoginSession();
     },
     
     setTextFromi18n: function(){
@@ -233,11 +234,14 @@ define(['./LoginUtility','./LoginDAO','CommonUtilities'],function(LoginUtility, 
       this.view.tbxUsername.onDone = function(){
         //scopeObj.isTbxUsernameInFocus = false;
         scopeObj.raiseComponentEvent('onFocusEnd', null);
+        scopeObj.prevalidateUser();
       };
       this.view.tbxPassword.onTextChange = function(){
         scopeObj.enableLoginButton();
       };
       this.view.tbxPassword.onTouchStart = function(){
+        scopeObj.preloadDashboardModules();
+        scopeObj.prevalidateUser();
         scopeObj.isTbxPasswordInFocus = true;
         scopeObj.raiseComponentEvent('onFocusStart', null);
       };
@@ -440,7 +444,7 @@ define(['./LoginUtility','./LoginDAO','CommonUtilities'],function(LoginUtility, 
           var params = {
             "UserName" : UsernamePasswordJSON.username
           };
-          this.LoginDAO.validateLogin(params, this.validateLoginSuccessCallback, this.validateLoginFailureCallback);
+          this.validateLoginUsingPrevalidation(params);
         } else {
           // Allow normal login for OLB
 		  navManager.setCustomInfo("legacyUserDetails",UsernamePasswordJSON);
@@ -482,7 +486,184 @@ define(['./LoginUtility','./LoginDAO','CommonUtilities'],function(LoginUtility, 
         "CLIENT_IP" : UsernamePasswordJSON.clientIp
       };
       let identityServiceName = this._identityServiceName;
+      //Real start of the login journey. The widget calls the service itself, so
+      //Auth_PresentationController.onLogin never runs and the measurement has to begin here.
+      CommonUtilities.perfReset("login submitted");
       this.LoginDAO.login(authParams, scopeObj.onLoginSuccessCallback, scopeObj.onLoginFailureCallback, identityServiceName);
+    },
+    /**
+     * PERF (phase 1, LOGIN_PREWARM, default on): when the login screen opens, make sure the anonymous app
+     * session exists. kony.sdk.claimsRefresh does the anonymous login only when the app token is missing or
+     * expired, so the first call after the Login tap no longer pays for it (and the connection to Fabric is
+     * already open). A failure here is ignored: the SDK does the same anonymous login on tap, as before.
+     */
+    prewarmLoginSession: function () {
+      try {
+        if (CommonUtilities.getBooleanConfig("LOGIN_PREWARM", true) !== true) {
+          return;
+        }
+        if (kony.os.deviceInfo().name === "thinclient" || !kony.sdk || typeof kony.sdk.claimsRefresh !== "function" ||
+            !kony.sdk.getCurrentInstance()) {
+          return;
+        }
+        kony.sdk.claimsRefresh(function () {
+          kony.print("PERF|PREWARM_OK|" + new Date().getTime()); // PERF-TEMP
+        }, function (prewarmError) {
+          kony.print("PERF|PREWARM_FAILED|" + new Date().getTime()); // PERF-TEMP
+        });
+      } catch (e) {
+        kony.print("prewarmLoginSession " + e);
+      }
+    },
+    /**
+     * PERF (phase 1, LOGIN_PREWARM, default on): load the presentation modules the Dashboard needs right
+     * after login while the user is typing the password. Their constructors only set up variables, so
+     * loading them early changes nothing except that the cost is not paid during the Dashboard load.
+     */
+    preloadDashboardModules: function () {
+      try {
+        if (this.dashboardModulesPreloaded === true || CommonUtilities.getBooleanConfig("LOGIN_PREWARM", true) !== true ||
+            kony.os.deviceInfo().name === "thinclient") {
+          return;
+        }
+        this.dashboardModulesPreloaded = true;
+        var loadModules = function () {
+          try {
+            var configManager = applicationManager.getConfigurationManager();
+            var moduleManager = kony.mvc.MDAApplication.getSharedInstance().getModuleManager();
+            var modules = [
+              { "appName": "HomepageMA", "moduleName": "AccountsUIModule" },
+              { "appName": "CardsMA", "moduleName": "ManageCardsUIModule" },
+              { "appName": "ManageArrangementsMA", "moduleName": "ManageArrangementsUIModule" }
+            ];
+            for (var i = 0; i < modules.length; i++) {
+              try {
+                if (configManager.isMicroAppPresent(modules[i].appName)) {
+                  moduleManager.getModule(modules[i]);
+                }
+              } catch (moduleError) {
+                kony.print("preloadDashboardModules " + modules[i].moduleName + " " + moduleError);
+              }
+            }
+            try { require(["FooterMenuUtility", "CampaignUtility"], function () {}); } catch (requireError) {}
+          } catch (loadError) {
+            kony.print("preloadDashboardModules " + loadError);
+          }
+        };
+        // Half a second after the password field is touched, so the keyboard opens without delay.
+        try {
+          kony.timer.schedule("preloadDashboardModules", function () {
+            try { kony.timer.cancel("preloadDashboardModules"); } catch (cancelError) {}
+            loadModules();
+          }, 0.5, false);
+        } catch (timerError) {
+          loadModules();
+        }
+      } catch (e) {
+        kony.print("preloadDashboardModules " + e);
+      }
+    },
+    /**
+     * Username exactly as btnLoginOnClick sends it to ValidateUserDeviceLogin (upper case, masked username
+     * mapped to the backend username), without its side effects. Returns "" when it cannot be worked out.
+     */
+    getUserNameForValidation: function () {
+      try {
+        var enteredUserName = (this.view.tbxUsername.text || "").trim().toUpperCase();
+        if (enteredUserName === "") {
+          return "";
+        }
+        var userNameDetails = applicationManager.getStorageManager().getStoredItem("maskUserName");
+        if (this.LoginUtility.isUserNameMasked(enteredUserName)) {
+          if (userNameDetails && userNameDetails["maskedUserName"] === enteredUserName) {
+            enteredUserName = userNameDetails["backendUserName"];
+          }
+        }
+        return enteredUserName || "";
+      } catch (e) {
+        return "";
+      }
+    },
+    /**
+     * PERF (phase 1, LOGIN_PREVALIDATE_USER, default off): run ValidateUserDeviceLogin as soon as the user
+     * leaves the username field, instead of after the Login tap. Only the request moves; the result is
+     * applied on tap by validateLoginUsingPrevalidation, through the same callbacks as before.
+     */
+    prevalidateUser: function () {
+      var self = this;
+      try {
+        if (CommonUtilities.getBooleanConfig("LOGIN_PREVALIDATE_USER", false) !== true ||
+            kony.os.deviceInfo().name === "thinclient") {
+          return;
+        }
+        var userName = self.getUserNameForValidation();
+        if (userName === "") {
+          return;
+        }
+        var existing = self.userPrevalidation;
+        if (existing && existing.userName === userName && (new Date().getTime() - existing.startTime) <= 60000) {
+          return;   // already validated or in flight for this username
+        }
+        var prevalidation = { "userName": userName, "startTime": new Date().getTime(), "done": false,
+                              "ok": false, "response": null, "onDone": null };
+        self.userPrevalidation = prevalidation;
+        var finish = function () {
+          prevalidation.done = true;
+          if (prevalidation.onDone) {
+            var onDone = prevalidation.onDone;
+            prevalidation.onDone = null;
+            onDone();
+          }
+        };
+        self.LoginDAO.validateLogin({ "UserName": userName }, function (response) {
+          prevalidation.ok = true;
+          prevalidation.response = response;
+          finish();
+        }, function (error) {
+          prevalidation.ok = false;
+          finish();
+        });
+      } catch (e) {
+        self.userPrevalidation = null;
+        kony.print("prevalidateUser " + e);
+      }
+    },
+    /**
+     * Called on Login tap instead of LoginDAO.validateLogin. Uses the early result only when it is for the
+     * same username, under 60 s old and a valid device login (statusCd "0"); in every other case it calls
+     * ValidateUserDeviceLogin now, exactly as before. The early result is used once.
+     */
+    validateLoginUsingPrevalidation: function (params) {
+      var self = this;
+      var prevalidation = self.userPrevalidation;
+      self.userPrevalidation = null;
+      var validateNow = function () {
+        self.LoginDAO.validateLogin(params, self.validateLoginSuccessCallback, self.validateLoginFailureCallback);
+      };
+      try {
+        var usable = prevalidation && prevalidation.userName === params.UserName &&
+            (new Date().getTime() - prevalidation.startTime) <= 60000;
+        if (!usable) {
+          validateNow();
+          return;
+        }
+        var useResult = function () {
+          if (prevalidation.ok === true && prevalidation.response && prevalidation.response.statusCd === "0") {
+            kony.print("PERF|PREVALIDATION_USED|" + new Date().getTime()); // PERF-TEMP
+            self.validateLoginSuccessCallback(prevalidation.response);
+          } else {
+            validateNow();
+          }
+        };
+        if (prevalidation.done) {
+          useResult();
+        } else {
+          prevalidation.onDone = useResult;
+        }
+      } catch (e) {
+        kony.print("validateLoginUsingPrevalidation " + e);
+        validateNow();
+      }
     },
     /**
      * PERF: looks up the client IP in the background (asynchronous request) while the login screen is shown,

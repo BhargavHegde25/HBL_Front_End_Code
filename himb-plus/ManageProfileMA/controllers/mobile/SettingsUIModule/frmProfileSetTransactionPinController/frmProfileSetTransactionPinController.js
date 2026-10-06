@@ -22,7 +22,14 @@ define({
   
   navToSettingsAfterPin : function(){
    kony.timer.cancel("starttime");
-	 var navManager = applicationManager.getNavigationManager(); 
+	 var navManager = applicationManager.getNavigationManager();
+    // frmSettings customInfo is read-modify-write in every consumer and is never
+    // created from scratch. A first-time customer arriving straight from PIN
+    // creation has never had it seeded, so Settings > Default Sign in dereferences
+    // null and strands the loading screen. Seed it here.
+    var keys = navManager.getCustomInfo("frmSettings") || {};
+    keys.popUpMsg = "";
+    navManager.setCustomInfo("frmSettings", keys);	 
 	 navManager.navigateTo({ 
       "appName": "ManageProfileMA",
       "friendlyName": "SettingsUIModule/frmSettings"});
@@ -32,6 +39,9 @@ define({
     //navManager.navigateTo("frmSettings");
 	var prevForm=kony.application.getPreviousForm();
 	if(prevForm&&prevForm.id=="frmSettings"){
+		var keys = navManager.getCustomInfo("frmSettings") || {};
+    keys.popUpMsg = "";
+    navManager.setCustomInfo("frmSettings", keys);
     navManager.navigateTo({ 
       "appName": "ManageProfileMA",
       "friendlyName": "SettingsUIModule/frmSettings"});

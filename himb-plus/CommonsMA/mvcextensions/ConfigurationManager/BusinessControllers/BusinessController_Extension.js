@@ -2,6 +2,41 @@ define(['CommonUtilities'],function(CommonUtilities){
     return{
 	LANGUAGEFLAG:"",
 	EMVQR_PARAMS:"",
+	/* Card management. Unset leaves every card on a 4 digit PIN and the transaction
+	   window on its 30 day fallback - see CardsManager getCardPinLength / getCardTransactionDateRange. */
+	CARD_PIN_LENGTH_6_BINS:"",
+	CARD_TRANSACTION_DAYS:"",
+	/* "true" shows the login performance popup. Anything else, or unset, keeps it hidden. */
+	SHOW_PERF_POPUP:"",
+	/* Login deferral experiment. "true" moves that call off the login critical path to a couple of
+	   seconds after the dashboard paints. Anything else, or unset, keeps today's behaviour.
+	   These are measurement scaffolding - once the winning behaviour is known, make it
+	   unconditional and delete the flags rather than leaving three switches over login sequencing. */
+	LOGIN_DEFER_NOTIFICATIONS:"",
+	LOGIN_DEFER_DEVICE_TRACKING:"",
+	LOGIN_DEFER_LOCKOUT_SETTINGS:"",
+	/* "false" hides the Alerts section in Settings and stops its category service being called.
+	   Default is true - absent or unreadable leaves the section as it is today. */
+	SHOW_ALERTS_IN_SETTINGS:"",
+	/* "true" sends the dashboard accounts call as soon as the login response names
+	   the dashboard variant, instead of queueing it behind the post login services.
+	   Absent or anything else keeps today's ordering. */
+	LOGIN_PREFETCH_ACCOUNTS:"",
+	/* Login performance phase 1 (mobile login component).
+	   LOGIN_PREWARM: anonymous app login + connection warm-up when the login screen opens, and loading
+	   of the Dashboard modules while the password is typed. Default ON - "false" switches it off.
+	   LOGIN_PREVALIDATE_USER: runs ValidateUserDeviceLogin when the user moves to the password field and
+	   reuses a successful result on tap for the same username within 60 s. Default OFF - "true" enables it. */
+	LOGIN_PREWARM:"",
+	LOGIN_PREVALIDATE_USER:"",
+	/* FonePay QR. Read by frmQRScanController.readFonepayFlag. The two consumers take opposite
+	   defaults on purpose: the scan rail runs unless this is an explicit "false" (the server gate
+	   is authoritative), while the FonePay badge on the scanner strip shows only on an explicit
+	   "true", so an unset property never advertises the rail. Declared here so
+	   getConfigurationValue("FONEPAY_QR_ENABLED") resolves instead of returning undefined. */
+	FONEPAY_QR_ENABLED:"",
+	/* Modern-design extension point - remove with DesignResolver.js */
+	UI_DESIGN:"",
 	HAM_APPROVAL_REQUEST:"",
 	HAM_SEND_MONEY:"",
 	HAM_TRANSFERS:"",
@@ -13,6 +48,7 @@ define(['CommonUtilities'],function(CommonUtilities){
 	MB_CARDLESS_MAX_LIMIT:"",
 	ESEWA_TOPUP_PAYABLE_ACCOUNT:"",
 	ESEWA_PURPOSE:"",
+	HIMAL_FD_ACCOUNT_CODES:"",
     locale : {
       'US-English': 'en_US',
       'UK-English': 'en_GB',
@@ -663,13 +699,13 @@ define(['CommonUtilities'],function(CommonUtilities){
         scope_configManager.setEmiInterestDate(res["CARD_EMI_INTREST_RATE"]);
       }
       if(res && res["MIN_ELIGIBLE_AMT_NORMAL_FD"]){
-        scope_configManager.setEmiTenureMonth(res["MIN_ELIGIBLE_AMT_NORMAL_FD"]);
+        scope_configManager.setNormalFDMinAmt(res["MIN_ELIGIBLE_AMT_NORMAL_FD"]);
       }
       if(res && res["MIN_ELIGIBLE_AMT_HIMAL_FD"]){
-        scope_configManager.setEmiTenureMonth(res["MIN_ELIGIBLE_AMT_HIMAL_FD"]);
+        scope_configManager.setHimalRemitMinAmt(res["MIN_ELIGIBLE_AMT_HIMAL_FD"]);
       }
       if(res && res["MIN_ELIGIBLE_AMT_STRUCTURE_FD"]){
-        scope_configManager.setEmiTenureMonth(res["MIN_ELIGIBLE_AMT_STRUCTURE_FD"]);
+        scope_configManager.setStructureFDMinAmt(res["MIN_ELIGIBLE_AMT_STRUCTURE_FD"]);
       }
       if(res && res["RESET_PIN_ESTIMATED_TIME"]){
         scope_configManager.setResetPinEstimatedTime(res["RESET_PIN_ESTIMATED_TIME"]);
@@ -701,6 +737,59 @@ define(['CommonUtilities'],function(CommonUtilities){
 	  if (res && res["EMVQR_PARAMS"]) {
         scope_configManager.EMVQR_PARAMS=(res["EMVQR_PARAMS"]);
       }
+	  if (res && res["CARD_PIN_LENGTH_6_BINS"]) {
+        scope_configManager.CARD_PIN_LENGTH_6_BINS=(res["CARD_PIN_LENGTH_6_BINS"]);
+      }
+	  if (res && res["CARD_TRANSACTION_DAYS"]) {
+        scope_configManager.CARD_TRANSACTION_DAYS=(res["CARD_TRANSACTION_DAYS"]);
+      }
+	  if (res && res["SHOW_PERF_POPUP"]) {
+        scope_configManager.SHOW_PERF_POPUP=(res["SHOW_PERF_POPUP"]);
+      }
+	  if (res && res["LOGIN_DEFER_NOTIFICATIONS"]) {
+        scope_configManager.LOGIN_DEFER_NOTIFICATIONS=(res["LOGIN_DEFER_NOTIFICATIONS"]);
+      }
+	  if (res && res["LOGIN_DEFER_DEVICE_TRACKING"]) {
+        scope_configManager.LOGIN_DEFER_DEVICE_TRACKING=(res["LOGIN_DEFER_DEVICE_TRACKING"]);
+      }
+	  if (res && res["LOGIN_DEFER_LOCKOUT_SETTINGS"]) {
+        scope_configManager.LOGIN_DEFER_LOCKOUT_SETTINGS=(res["LOGIN_DEFER_LOCKOUT_SETTINGS"]);
+      }
+	  if (res && res["SHOW_ALERTS_IN_SETTINGS"]) {
+        scope_configManager.SHOW_ALERTS_IN_SETTINGS=(res["SHOW_ALERTS_IN_SETTINGS"]);
+      }
+	  if (res && res["LOGIN_PREFETCH_ACCOUNTS"]) {
+        scope_configManager.LOGIN_PREFETCH_ACCOUNTS=(res["LOGIN_PREFETCH_ACCOUNTS"]);
+      }
+	  if (res && res["LOGIN_PREWARM"]) {
+        scope_configManager.LOGIN_PREWARM=(res["LOGIN_PREWARM"]);
+      }
+	  if (res && res["LOGIN_PREVALIDATE_USER"]) {
+        scope_configManager.LOGIN_PREVALIDATE_USER=(res["LOGIN_PREVALIDATE_USER"]);
+      }
+	  if (res && res["FONEPAY_QR_ENABLED"]) {
+        scope_configManager.FONEPAY_QR_ENABLED=(res["FONEPAY_QR_ENABLED"]);
+      }
+	  //TEMP DIAGNOSTIC - remove. Records what Fabric actually returned so the card screen can show it.
+	  //try {
+        //var diagKeyCount = res ? Object.keys(res).length : -1;
+        //applicationManager.getNavigationManager().setCustomInfo("diagClientProps",
+          //"props returned: " + diagKeyCount +
+          //"\nCARD_PIN_LENGTH_6_BINS: " + ((res && res["CARD_PIN_LENGTH_6_BINS"]) ? res["CARD_PIN_LENGTH_6_BINS"] : "ABSENT") +
+          //"\nCARD_TRANSACTION_DAYS: " + ((res && res["CARD_TRANSACTION_DAYS"]) ? res["CARD_TRANSACTION_DAYS"] : "ABSENT"));
+      //}
+      //catch (diagError) {
+        //kony.print("[DIAG] client props capture failed: " + diagError);
+      //}
+	  if (res && res["PERSONAL_QR_FORMAT"]) {
+        scope_configManager.PERSONAL_QR_FORMAT=(res["PERSONAL_QR_FORMAT"]);
+      }
+	  /* Modern-design extension point - remove with DesignResolver.js.
+	     Unset, empty, or any value other than MODERN leaves the app on the
+	     Classic dashboard, exactly as PERSONAL_QR_FORMAT defaults to JSON. */
+	  if (res && res["UI_DESIGN"]) {
+        scope_configManager.UI_DESIGN=(res["UI_DESIGN"]);
+      }
 	  if (res && res["ESEWA_PURPOSE"]) {
         scope_configManager.ESEWA_PURPOSE=(res["ESEWA_PURPOSE"]);
       }
@@ -724,6 +813,9 @@ define(['CommonUtilities'],function(CommonUtilities){
       }
 	  if (res && res["MIN_ELIGIBLE_AMT_STRUCTURE_FD"]) {
         scope_configManager.MIN_AMT_STRUCTURE_FD=(res["MIN_ELIGIBLE_AMT_STRUCTURE_FD"]);
+      }
+	  	  if (res && res["HIMAL_FD_ACCOUNT_CODES"]) {
+        scope_configManager.HIMAL_FD_ACCOUNT_CODES = (res["HIMAL_FD_ACCOUNT_CODES"]);
       }
 	  if (res && res["MB_UI_MOCK_SUCCESS"]) {
         scope_configManager.MB_UI_MOCK_SUCCESS=(res["MB_UI_MOCK_SUCCESS"]);
