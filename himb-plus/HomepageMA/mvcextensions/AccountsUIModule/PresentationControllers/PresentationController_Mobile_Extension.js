@@ -43,7 +43,6 @@ define(["CommonsMA/AsyncManager/BusinessControllers/BusinessController", "dataFo
           "defaultAccount": response
         }*/
         var navManager = applicationManager.getNavigationManager();
-        kony.print("PERF|NAV_DASH|" + Date.now()); // PERF-TEMP
         navManager.navigateTo({
           "appName": "HomepageMA",
           "friendlyName": "frmHBLUnifiedDashboard",
@@ -292,7 +291,6 @@ define(["CommonsMA/AsyncManager/BusinessControllers/BusinessController", "dataFo
     return accProcessedData;
   },
   presentationAccountsSucc :function(res) {
-    kony.print("PERF|GETLIST_CB|" + Date.now()); // PERF-TEMP
     try{
       var scope=this;
     var navManager = applicationManager.getNavigationManager();
@@ -463,7 +461,6 @@ define(["CommonsMA/AsyncManager/BusinessControllers/BusinessController", "dataFo
       if (kony.sdk.isNullOrUndefined(accounts) || accounts === "" || !accounts.length) {
         return null;
       }
-      kony.print("PERF|FRESH_ACCOUNTS_REUSED|" + new Date().getTime()); // PERF-TEMP
       return accounts;
     } catch (err) {
       kony.print("takeFreshAccounts " + err);
@@ -490,7 +487,6 @@ define(["CommonsMA/AsyncManager/BusinessControllers/BusinessController", "dataFo
           typeof accountManager.processInternalAccountsList === "function";
       if (!usable) {
         if (!kony.sdk.isNullOrUndefined(prefetch)) {
-          kony.print("PERF|PREFETCH_NOT_USABLE|" + new Date().getTime()); // PERF-TEMP
         }
         fetchNormally();
         return;
@@ -507,7 +503,6 @@ define(["CommonsMA/AsyncManager/BusinessControllers/BusinessController", "dataFo
               !kony.sdk.isNullOrUndefined(data) &&
               (kony.sdk.isNullOrUndefined(data.opstatus) || data.opstatus == 0) &&
               !kony.sdk.isNullOrUndefined(data.Accounts) && data.Accounts.length > 0;
-          kony.print("PERF|PREFETCH_USED|" + isCleanSuccess + "|" + new Date().getTime()); // PERF-TEMP
           if (!isCleanSuccess) {
             // Any error or unusual response: make the normal call now, exactly as before.
             fetchNormally();
