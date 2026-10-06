@@ -404,6 +404,7 @@ define(["CommonUtilities"], function(CommonUtilities) {
     /* Drop any accounts prefetch left over from an earlier session before this
        login starts one of its own, and re-arm the barrier mark. */
     scope_AuthPresenter.perfBarrierMarked = false;
+    scope_AuthPresenter.parallelWave = null;
     try { applicationManager.getAccountManager().clearAccountsPrefetch(); }
     catch (prefetchClearError) { }
     const configManager = applicationManager.getConfigurationManager();
@@ -609,6 +610,12 @@ const devManager = applicationManager.getDeviceUtilManager();
       const controller = applicationManager.getPresentationUtility().getController('frmLogin', true);
       controller.initMFAFlow(mfaJSON);
     } else {
+      // PERF (phase 2, LOGIN_PARALLEL_WAVE): when enabled, the post-login calls start now in parallel with
+      // getUserAttributes instead of after it. Returns false (and nothing has been started) when not applicable.
+      if (typeof scope_AuthPresenter.startParallelPostLoginWave === "function" &&
+          scope_AuthPresenter.startParallelPostLoginWave() === true) {
+        return;
+      }
       let userattributes = authManger.getUserAttributes(scope_AuthPresenter.userAttributesSuccessCallback,scope_AuthPresenter.userAttributesErrorCallback);
     }
   };

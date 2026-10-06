@@ -20,11 +20,15 @@ define(["CommonUtilities","OLBConstants"],function(CommonUtilities,OLBConstants)
 				}
             }
             scope_AuthPresenter.isMFARequired = false;
+            // PERF (phase 2): in the parallel wave a device-registration callback may already have set the flag;
+            // today that callback always runs after this one and wins, so do not overwrite its value.
+            var parallelWave = scope_AuthPresenter.parallelWave;
+            var keepDeviceFlag = !!parallelWave && (scope_AuthPresenter.deviceFlagSetCount || 0) !== parallelWave.deviceFlagSetCount;
             if (res.isDeviceRegistered == "true") {
-                scope_AuthPresenter.setDeviceRegisterflag(true);
+                if (!keepDeviceFlag) { scope_AuthPresenter.setDeviceRegisterflag(true); }
                 scope_AuthPresenter.rememberdeviceregflag = true;
             } else {
-                scope_AuthPresenter.setDeviceRegisterflag(false);
+                if (!keepDeviceFlag) { scope_AuthPresenter.setDeviceRegisterflag(false); }
                 scope_AuthPresenter.rememberdeviceregflag = false;
             }
             if (res.backendIdentifiers) {
@@ -46,10 +50,92 @@ define(["CommonUtilities","OLBConstants"],function(CommonUtilities,OLBConstants)
                 asyncManager.callAsync([
                     asyncManager.asyncItem(applicationManager.getMultiEntityManager(), 'getUserLegalEntities')
                 ], scope_AuthPresenter.onCompletionOfGetUserLegalEntities.bind(this));
+            } else if (parallelWave) {
+                // Post-login calls were already started by startParallelPostLoginWave; open the gate.
+                parallelWave.attributesReady = true;
+                kony.print("PERF|WAVE_ATTRIBUTES_READY|" + Date.now()); // PERF-TEMP
+                if (parallelWave.pendingSuccess === true) {
+                    parallelWave.pendingSuccess = false;
+                    scope_AuthPresenter.postLoginServicesSuccess();
+                }
             } else {
                 scope_AuthPresenter.prefetchDashboardAccounts();
                 scope_AuthPresenter.postLoginServices();
             }
+        },
+        /**
+         * PERF (phase 2, LOGIN_PARALLEL_WAVE, default off): starts the post-login calls (and the Dashboard
+         * accounts prefetch) straight after DbxUserLogin, in parallel with getUserAttributes, instead of after it.
+         * Only for single-entity users whose login response carries backendIdentifiers. The backend identifier
+         * and legal entities are taken from the login response (the same values getUserAttributes returns); the
+         * device-registration flag, PIN status and UserAttributesData still come from getUserAttributes, and the
+         * Dashboard / T&C navigation waits for it (gate in postLoginServicesSuccess).
+         * Returns true when it has started the login; false when it has started nothing.
+         */
+        startParallelPostLoginWave: function () {
+            var userAttributes;
+            try {
+                scope_AuthPresenter.parallelWave = null;
+                if (CommonUtilities.getBooleanConfig("LOGIN_PARALLEL_WAVE", false) !== true) {
+                    return false;
+                }
+                var configManager = applicationManager.getConfigurationManager();
+                var singleEntityValue = "true";
+                if (configManager.configurations.getItem("isSingleEntity") !== undefined) {
+                    singleEntityValue = configManager.configurations.getItem("isSingleEntity");
+                }
+                if (singleEntityValue === "false") {
+                    return false;
+                }
+                userAttributes = kony.sdk.getCurrentInstance().tokens[configManager.constants.IDENTITYSERVICENAME].provider_token.params.user_attributes;
+                if (!userAttributes || !userAttributes.backendIdentifiers) {
+                    return false;
+                }
+                JSON.parse(userAttributes.backendIdentifiers);   // must be readable, otherwise keep today's sequence
+            } catch (checkError) {
+                kony.print("startParallelPostLoginWave not used: " + checkError);
+                return false;
+            }
+            // Committed from here on: always return true so isLoginSuccess does not start a second login sequence.
+            var wave = {
+                "attributesReady": false,
+                "failed": false,
+                "pendingSuccess": false,
+                "deviceFlagSetCount": scope_AuthPresenter.deviceFlagSetCount || 0
+            };
+            scope_AuthPresenter.parallelWave = wave;
+            kony.print("PERF|WAVE_START|" + Date.now()); // PERF-TEMP
+            try {
+                scope_AuthPresenter.lastDashboardNavigationTime = null;
+                scope_AuthPresenter.isMFARequired = false;
+                var jsonRes = JSON.parse(userAttributes.backendIdentifiers);
+                if (jsonRes.T24 && jsonRes.T24[0]) {
+                    applicationManager.getUserPreferencesManager().setBackendIdentifier(jsonRes.T24[0].BackendId);
+                } else if (jsonRes.CORE && jsonRes.CORE[0]) {
+                    applicationManager.getUserPreferencesManager().setBackendIdentifier(jsonRes.CORE[0].BackendId);
+                }
+                applicationManager.getUserPreferencesManager().saveDefaultLegalEntity(userAttributes.defaultLegalEntity ? userAttributes.defaultLegalEntity : "");
+                applicationManager.getUserPreferencesManager().saveCurrentLegalEntity(userAttributes.defaultLegalEntity ? userAttributes.defaultLegalEntity : (userAttributes.homeLegalEntity ? userAttributes.homeLegalEntity : ""));
+            } catch (applyError) {
+                kony.print("startParallelPostLoginWave apply: " + applyError);
+            }
+            applicationManager.getAuthManager().getUserAttributes(scope_AuthPresenter.userAttributesSuccessCallback, scope_AuthPresenter.parallelWaveAttributesError);
+            scope_AuthPresenter.prefetchDashboardAccounts();
+            scope_AuthPresenter.postLoginServices();
+            return true;
+        },
+        parallelWaveAttributesError: function (error) {
+            // Same handling as today (userAttributesErrorCallback); the gate stays closed so no Dashboard opens.
+            if (scope_AuthPresenter.parallelWave) {
+                scope_AuthPresenter.parallelWave.failed = true;
+            }
+            scope_AuthPresenter.userAttributesErrorCallback(error);
+        },
+        // Same as the base setDeviceRegisterflag, plus a counter the parallel wave uses to keep today's final value.
+        setDeviceRegisterflag: function (value) {
+            var userManager = applicationManager.getUserPreferencesManager();
+            userManager.updateDeviceRegisterFlag(value);
+            scope_AuthPresenter.deviceFlagSetCount = (scope_AuthPresenter.deviceFlagSetCount || 0) + 1;
         },
         // PERF: start the Dashboard account list (getList) in parallel with the post-login services.
         // The response is only used by HomepageMA showDashboard, at the same point in the flow as before.
@@ -474,6 +560,7 @@ define(["CommonUtilities","OLBConstants"],function(CommonUtilities,OLBConstants)
 		sm.setStoredItem('updateInternalAccounts', false);
 		scope_AuthPresenter.clearDashboardAccountsPrefetch();
 		scope_AuthPresenter.lastDashboardNavigationTime = null;
+		scope_AuthPresenter.parallelWave = null;
 			 }catch(e){
 				kony.print("**********Error while remove username*********"+e); 
 			 }
@@ -488,6 +575,13 @@ define(["CommonUtilities","OLBConstants"],function(CommonUtilities,OLBConstants)
   },
   postLoginServicesSuccess :function(){
 	  kony.print("PERF|PLS_DONE|" + Date.now()); // PERF-TEMP
+	  // PERF (phase 2): in the parallel wave, T&C / Dashboard navigation waits until getUserAttributes has been
+	  // applied (PIN popup, device flag, UserAttributesData). It is re-run from userAttributesSuccessCallback.
+	  var parallelWave = scope_AuthPresenter.parallelWave;
+	  if (parallelWave && (parallelWave.failed === true || parallelWave.attributesReady !== true)) {
+		  parallelWave.pendingSuccess = true;
+		  return;
+	  }
 	  /* Splits the login window into post login services vs the accounts call.
 	     One shot - this method is reachable more than once per login. */
 	  try {
