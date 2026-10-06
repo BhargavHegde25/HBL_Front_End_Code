@@ -216,7 +216,6 @@ define(["CommonUtilities"], function(CommonUtilities) {
     }
   };
   Auth_PresentationController.prototype.onLogin = function(UsernamePasswordJSON, formContext) {
-    kony.print("PERF|LOGIN_START|" + Date.now()); // PERF-TEMP
     scope_AuthPresenter.lastDashboardNavigationTime = null;
     //start of the login performance measurement, see the perf tracker in CommonUtilities
     CommonUtilities.perfReset("login submitted");
@@ -399,7 +398,6 @@ define(["CommonUtilities"], function(CommonUtilities) {
     
   };
   Auth_PresentationController.prototype.presentationLoginSuccess = function(resSuccess) {
-    kony.print("PERF|AUTH_OK|" + Date.now()); // PERF-TEMP
     CommonUtilities.perfMark("auth accepted, post login work starts");
     /* Drop any accounts prefetch left over from an earlier session before this
        login starts one of its own, and re-arm the barrier mark. */
@@ -1027,7 +1025,6 @@ const devManager = applicationManager.getDeviceUtilManager();
     // Ignore a repeat call within a few seconds of the first one; reset on every new login and on logout.
     var dashboardNavTime = new Date().getTime();
     if (scope_AuthPresenter.lastDashboardNavigationTime && (dashboardNavTime - scope_AuthPresenter.lastDashboardNavigationTime) < 10000) {
-      kony.print("PERF|DUP_DASH_NAV_SKIPPED|" + dashboardNavTime); // PERF-TEMP
       return;
     }
     scope_AuthPresenter.lastDashboardNavigationTime = dashboardNavTime;

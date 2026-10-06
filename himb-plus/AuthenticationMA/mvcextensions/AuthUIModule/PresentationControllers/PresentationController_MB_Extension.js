@@ -2,7 +2,6 @@ define(["CommonUtilities","OLBConstants"],function(CommonUtilities,OLBConstants)
     return {
 		count : 0,
         userAttributesSuccessCallback: function (res) {
-            kony.print("PERF|UA_OK|" + Date.now()); // PERF-TEMP
             scope_AuthPresenter.lastDashboardNavigationTime = null;
             if (res !== (undefined || null)) {
                 var authParams = res.UserName;
@@ -53,7 +52,6 @@ define(["CommonUtilities","OLBConstants"],function(CommonUtilities,OLBConstants)
             } else if (parallelWave) {
                 // Post-login calls were already started by startParallelPostLoginWave; open the gate.
                 parallelWave.attributesReady = true;
-                kony.print("PERF|WAVE_ATTRIBUTES_READY|" + Date.now()); // PERF-TEMP
                 if (parallelWave.pendingSuccess === true) {
                     parallelWave.pendingSuccess = false;
                     scope_AuthPresenter.postLoginServicesSuccess();
@@ -104,7 +102,6 @@ define(["CommonUtilities","OLBConstants"],function(CommonUtilities,OLBConstants)
                 "deviceFlagSetCount": scope_AuthPresenter.deviceFlagSetCount || 0
             };
             scope_AuthPresenter.parallelWave = wave;
-            kony.print("PERF|WAVE_START|" + Date.now()); // PERF-TEMP
             try {
                 scope_AuthPresenter.lastDashboardNavigationTime = null;
                 scope_AuthPresenter.isMFARequired = false;
@@ -574,7 +571,6 @@ define(["CommonUtilities","OLBConstants"],function(CommonUtilities,OLBConstants)
 	  this.performLogout(context);
   },
   postLoginServicesSuccess :function(){
-	  kony.print("PERF|PLS_DONE|" + Date.now()); // PERF-TEMP
 	  // PERF (phase 2): in the parallel wave, T&C / Dashboard navigation waits until getUserAttributes has been
 	  // applied (PIN popup, device flag, UserAttributesData). It is re-run from userAttributesSuccessCallback.
 	  var parallelWave = scope_AuthPresenter.parallelWave;

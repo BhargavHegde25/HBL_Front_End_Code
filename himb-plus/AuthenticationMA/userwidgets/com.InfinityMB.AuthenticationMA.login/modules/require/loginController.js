@@ -507,9 +507,7 @@ define(['./LoginUtility','./LoginDAO','CommonUtilities'],function(LoginUtility, 
           return;
         }
         kony.sdk.claimsRefresh(function () {
-          kony.print("PERF|PREWARM_OK|" + new Date().getTime()); // PERF-TEMP
         }, function (prewarmError) {
-          kony.print("PERF|PREWARM_FAILED|" + new Date().getTime()); // PERF-TEMP
         });
       } catch (e) {
         kony.print("prewarmLoginSession " + e);
@@ -649,7 +647,6 @@ define(['./LoginUtility','./LoginDAO','CommonUtilities'],function(LoginUtility, 
         }
         var useResult = function () {
           if (prevalidation.ok === true && prevalidation.response && prevalidation.response.statusCd === "0") {
-            kony.print("PERF|PREVALIDATION_USED|" + new Date().getTime()); // PERF-TEMP
             self.validateLoginSuccessCallback(prevalidation.response);
           } else {
             validateNow();
