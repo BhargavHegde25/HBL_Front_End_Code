@@ -153,6 +153,23 @@ kony.print("***************Error in HBL Dashboard init function**********"+e);
     var custConfig = { hideCloseButton : true, disableTouchDismiss : true};
 	presentationUtility.Alert(basicConfig, pspConfig, {});
 	  }
+	  this.instantAccountsPending = false;
+	  this.instantSummary = null;
+	  this.queuedAccountAction = null;
+	  try {
+		  var instantAccountsModule = kony.mvc.MDAApplication.getSharedInstance().getModuleManager().getModule({"appName": "HomepageMA", "moduleName": "AccountsUIModule"});
+		  if (typeof instantAccountsModule.presentationController.isInstantDashboardPending === "function" &&
+			  instantAccountsModule.presentationController.isInstantDashboardPending() === true) {
+			  this.instantSummary = instantAccountsModule.presentationController.getInstantDashboardSummary();
+			  this.instantAccountsPending = !!this.instantSummary;
+			  if (this.instantAccountsPending) {
+				  navManager.setCustomInfo("DashboardCardImg", this.instantSummary.img);
+			  }
+		  }
+	  } catch (instantErr) {
+		  this.instantAccountsPending = false;
+		  kony.print("preShow instant state " + instantErr);
+	  }
 	  this.view.imgCards.imageWhileDownloading= "loadfull.gif";
 	  this.view.imgCards.imagewhenfailed= "card_red.jpg";
       //this.view.imgSettings.src ="https://www.connectips.com/cdn/CONNECTIPS/connectipsweb/images/dashboard/nea.png";
@@ -177,6 +194,7 @@ kony.print("***************Error in HBL Dashboard init function**********"+e);
       // (MB_ENABLE_INAPP_CAMPAIGNS === "TRUE"); otherwise it is collapsed so no empty section remains.
       this.applyCampaignSectionConfig();
       var flag=navManager.getCustomInfo("getAccountList");
+      if (this.instantAccountsPending === true) { flag = true; }
       (flag===true)?this.view.flxSwitchAcc.setVisibility(true):this.view.flxSwitchAcc.setVisibility(false)
      scope.accountNavigation();
       scope.setFlowAction();
@@ -190,6 +208,35 @@ kony.print("***************Error in HBL Dashboard init function**********"+e);
       });
       accounts.presentationController.accountActivity();*/
        scope.view.flxHamburger.isVisible = false;
+      // PERF (LOGIN_INSTANT_DASHBOARD): while the accounts are still loading, the card shows the saved summary;
+      // applyAccountData runs when they arrive (refreshAfterAccountsLoaded). Otherwise unchanged.
+      if (this.instantAccountsPending === true) {
+        this.applyAccountSummary(this.instantSummary);
+      } else {
+        this.applyAccountData();
+      }
+      //applicationManager.getPresentationFormUtility().logFormName(currentForm);
+     /* scope.view.HeaderHbl.flxBack.onClick = function(){
+         let MenuHandler = applicationManager.getMenuHandler();
+        MenuHandler.setProfilePic(scope);
+        MenuHandler.setLastLoginTime(scope);
+        MenuHandler.setUserName(scope);
+        MenuHandler.setEntityName(scope);
+        let selectedForm = kony.application.getCurrentForm().id;
+        MenuHandler.setMenuData(scope, selectedForm);
+        MenuHandler.showOrHideHamburgerUI(false, scope)
+      };*/
+      navManager.setCustomInfo("frmCardManageHome",{"isMainScreen": false});
+      navManager.setCustomInfo("filterFlag",null);
+      var isAppPresent = configManager.isMicroAppPresent("AuthenticationMA");
+      if (isAppPresent === true) {
+        var authMode = kony.mvc.MDAApplication.getSharedInstance().getModuleManager().getModule({ "moduleName": "AuthUIModule", "appName": "AuthenticationMA" });
+        authMode.presentationController.firstTimeLoginDone();
+      }
+       applicationManager.getPresentationUtility().dismissLoadingScreen();
+     },
+     /** The account-dependent part of preShow (card and default accounts), unchanged. */
+     applyAccountData: function(){
 		 var scope=this;
        var defaultAccForDashboard = applicationManager.getDefaultDashboardObj();
      // var data = defaultAccForDashboard.Accounts;
@@ -226,25 +273,6 @@ kony.print("***************Error in HBL Dashboard init function**********"+e);
       this.mapCardData(data);
      
       this.validateDefaultAccounts(defaultDashboardAcc);
-      //applicationManager.getPresentationFormUtility().logFormName(currentForm);
-     /* scope.view.HeaderHbl.flxBack.onClick = function(){
-         let MenuHandler = applicationManager.getMenuHandler();
-        MenuHandler.setProfilePic(scope);
-        MenuHandler.setLastLoginTime(scope);
-        MenuHandler.setUserName(scope);
-        MenuHandler.setEntityName(scope);
-        let selectedForm = kony.application.getCurrentForm().id;
-        MenuHandler.setMenuData(scope, selectedForm);
-        MenuHandler.showOrHideHamburgerUI(false, scope)
-      };*/
-      navManager.setCustomInfo("frmCardManageHome",{"isMainScreen": false});
-      navManager.setCustomInfo("filterFlag",null);
-      var isAppPresent = configManager.isMicroAppPresent("AuthenticationMA");
-      if (isAppPresent === true) {
-        var authMode = kony.mvc.MDAApplication.getSharedInstance().getModuleManager().getModule({ "moduleName": "AuthUIModule", "appName": "AuthenticationMA" });
-        authMode.presentationController.firstTimeLoginDone();
-      }
-       applicationManager.getPresentationUtility().dismissLoadingScreen();
      },
      accountNavigation: function(){
       this.view.flxViewHeader.onClick = function(){
@@ -272,6 +300,9 @@ kony.print("***************Error in HBL Dashboard init function**********"+e);
 		 try{
 		 var scope=this;
       scope.view.flxRequestDeposit.onClick = scope.setFixedDepositVisibility.bind(this);
+      if (scope.instantAccountsPending === true) {
+        scope.gateAccountActions(["flxRequestDeposit"]);
+      }
       // PERF: skip getBankDate when the Dashboard fetched it successfully in the last 5 minutes (same value).
       var bankDateAgeMs = new Date().getTime() - lastBankDateFetchTime;
       if (kony.sdk.isNullOrUndefined(applicationManager.getBankDate()) || applicationManager.getBankDate() === "" || bankDateAgeMs > 300000) {
@@ -300,6 +331,78 @@ kony.print("***************Error in HBL Dashboard init function**********"+e);
 		kony.print("sendPendingDefaultAccountsUpdate"+err);
 	  }
 	},
+    /**
+     * PERF (LOGIN_INSTANT_DASHBOARD): card drawn from the saved summary - same masked look as mapCardData.
+     * The eye icon waits for the real accounts.
+     */
+    applyAccountSummary: function(summary){
+      var scope = this;
+      try {
+        this.view.lblCustomerName.text = summary.name;
+        this.view.lblAccountNumber.text = summary.masked;
+        this.view.lblAccountType.text = summary.type;
+        this.view.lblAvailableBalanceValue.text = summary.currency + " XXX.XX";
+        this.view.imgIcon.src = "eyeopen.png";
+        this.view.imgIcon.onTouchStart = function(){
+          scope.runWhenAccountsReady(function(){ scope.peekiconVisible(); });
+        };
+      } catch (err) {
+        kony.print("applyAccountSummary " + err);
+      }
+    },
+    /** Called by the presenter when the account list has loaded while the summary was shown. */
+    refreshAfterAccountsLoaded: function(){
+      var scope = this;
+      try {
+        this.instantAccountsPending = false;
+        this.instantSummary = null;
+        var navManager = applicationManager.getNavigationManager();
+        this.setCardIMage();
+        var flag = navManager.getCustomInfo("getAccountList");
+        (flag===true)?this.view.flxSwitchAcc.setVisibility(true):this.view.flxSwitchAcc.setVisibility(false);
+        this.applyAccountData();
+        // postShow has already run, so send the default-accounts update now if one is needed.
+        this.sendPendingDefaultAccountsUpdate();
+      } catch (err) {
+        kony.print("refreshAfterAccountsLoaded " + err);
+      }
+      var queued = this.queuedAccountAction;
+      this.queuedAccountAction = null;
+      if (queued) {
+        applicationManager.getPresentationUtility().dismissLoadingScreen();
+        try { queued(); } catch (actionErr) { kony.print("queued account action " + actionErr); }
+      }
+    },
+    /** Runs fn now, or - while the accounts are still loading - shows the loader and runs it when they arrive. */
+    runWhenAccountsReady: function(fn){
+      if (this.instantAccountsPending !== true) {
+        fn();
+        return;
+      }
+      this.queuedAccountAction = fn;
+      applicationManager.getPresentationUtility().showLoadingScreen();
+    },
+    /** Wraps the given widgets' onClick so a tap made before the accounts arrive waits for them. */
+    gateAccountActions: function(widgetNames){
+      var scope = this;
+      for (var i = 0; i < widgetNames.length; i++) {
+        (function(widgetName){
+          try {
+            var widget = scope.view[widgetName];
+            if (!widget || typeof widget.onClick !== "function") {
+              return;
+            }
+            var originalOnClick = widget.onClick;
+            widget.onClick = function(){
+              var args = arguments;
+              scope.runWhenAccountsReady(function(){ originalOnClick.apply(scope, args); });
+            };
+          } catch (err) {
+            kony.print("gateAccountActions " + widgetName + " " + err);
+          }
+        })(widgetNames[i]);
+      }
+    },
     onHide: function(){
       // PERF (DASHBOARD_REUSE): leaving the Dashboard ends the one-time reuse of its account list.
       try {
@@ -477,6 +580,10 @@ kony.print("***************Error in HBL Dashboard init function**********"+e);
 
         };
 		this.view.flxAccdetailsContainer.onClick=this.NavigateToaccDetails;
+		if (this.instantAccountsPending === true) {
+			this.gateAccountActions(["flxTransfers", "flxBillPayment", "flxCheque", "flxCardManage", "flxManage",
+				"flxSwitchAcc", "flxCrossBorder", "flxAccdetailsContainer", "flxAccinfo", "flxSettings", "flxPMReliefBannerMob"]);
+		}
 		}catch(err){
 		kony.print("err"+err);	
 		}

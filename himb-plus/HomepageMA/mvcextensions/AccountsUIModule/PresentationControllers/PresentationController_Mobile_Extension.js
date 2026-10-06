@@ -16,6 +16,22 @@ define(["CommonsMA/AsyncManager/BusinessControllers/BusinessController", "dataFo
     },
 
     defaultAccountSC: function () {
+      // PERF (LOGIN_INSTANT_DASHBOARD): the Dashboard is already on screen with the saved summary; give it the
+      // freshly loaded accounts instead of navigating to it again.
+      var instantState = scope_Acc_Pres.instantDashboardState;
+      if (instantState) {
+        scope_Acc_Pres.instantDashboardState = null;
+        try {
+          var currentForm = kony.application.getCurrentForm();
+          if (currentForm && currentForm.id === "frmHBLUnifiedDashboard") {
+            var dashboardController = applicationManager.getPresentationUtility().getController("AccountsUIModule/frmHBLUnifiedDashboard", true, {"appName": "HomepageMA"});
+            dashboardController.refreshAfterAccountsLoaded();
+          }
+        } catch (instantErr) {
+          kony.print("defaultAccountSC instant refresh " + instantErr);
+        }
+        return;
+      }
      // var resData = response;
 	 /* var navMan=applicationManager.getNavigationManager();
       if (response.Accounts.length === 0) {
@@ -73,6 +89,7 @@ define(["CommonsMA/AsyncManager/BusinessControllers/BusinessController", "dataFo
    },
 
 		presentationAccountsErr : function(err) {
+    scope_Acc_Pres.instantDashboardState = null;
     kony.print(err);
     applicationManager.getPresentationUtility().dismissLoadingScreen();
     if(err["isServerUnreachable"])
@@ -306,6 +323,7 @@ define(["CommonsMA/AsyncManager/BusinessControllers/BusinessController", "dataFo
 		 navManager.setCustomInfo("defaultAcc", defaultAcc);
 		 navManager.setCustomInfo("DashboardCardImg", defaultAcc.Accounts[0].IBAN);
          applicationManager.setDefaultDashboardObj(defaultAcc);
+         scope_Acc_Pres.saveInstantDashboardSummary(defaultAcc.Accounts[0]);
 	 }else{
 		  applicationManager.getPresentationUtility().Alert("No account present for the particular user");
            applicationManager.getPresentationFormUtility().logoutUser(true);
@@ -417,6 +435,89 @@ define(["CommonsMA/AsyncManager/BusinessControllers/BusinessController", "dataFo
   clearAccountListPrefetch : function() {
     scope_Acc_Pres.accountListPrefetch = null;
     scope_Acc_Pres.freshAccountsToken = null;
+    scope_Acc_Pres.instantDashboardState = null;
+  },
+  /**
+   * PERF (LOGIN_INSTANT_DASHBOARD, default off). After every successful Dashboard account load, keep a small
+   * summary of the default account for the next login: display name, masked number (last 4 digits only),
+   * account type label, currency and the card image key. No balance and no full account number. Stored with
+   * the app's encrypted store (device-only key) and tied to the user name.
+   */
+  saveInstantDashboardSummary : function(defaultAccount) {
+    try {
+      if (CommonUtilities.getBooleanConfig("LOGIN_INSTANT_DASHBOARD", false) !== true || !defaultAccount) {
+        return;
+      }
+      var accountId = String(defaultAccount.Account_id || "");
+      var masked = accountId.length > 4 ? ("X".repeat(accountId.length - 4) + accountId.slice(-4)) : accountId;
+      var summary = {
+        "user": applicationManager.getUserPreferencesManager().getUserName(),
+        "name": kony.sdk.util.isNullOrUndefinedOrEmptyObject(defaultAccount.nickName) ? (defaultAccount.accountName || "") : defaultAccount.nickName,
+        "masked": masked,
+        "type": defaultAccount.description || "",
+        "currency": defaultAccount.currencyCode || "",
+        "img": defaultAccount.IBAN || ""
+      };
+      applicationManager.getStorageManager().setStoredEncryptedItem("instantDashboardSummary", JSON.stringify(summary));
+    } catch (err) {
+      kony.print("saveInstantDashboardSummary " + err);
+    }
+  },
+  /** The saved summary for the logged-in user, or null. */
+  getInstantDashboardSummary : function() {
+    try {
+      var stored = applicationManager.getStorageManager().getStoredEncryptedItem("instantDashboardSummary");
+      if (!stored) {
+        return null;
+      }
+      var summary = JSON.parse(stored);
+      if (!summary || summary.user !== applicationManager.getUserPreferencesManager().getUserName() || !summary.masked) {
+        return null;
+      }
+      return summary;
+    } catch (err) {
+      return null;
+    }
+  },
+  /** True while the Dashboard is showing the saved summary and the account list is still loading. */
+  isInstantDashboardPending : function() {
+    return !!(scope_Acc_Pres.instantDashboardState && scope_Acc_Pres.instantDashboardState.pending === true);
+  },
+  /**
+   * Opens the Dashboard straight away with the saved summary when LOGIN_INSTANT_DASHBOARD is on and a summary
+   * exists for this user. Not used for the classic re-design flow, the reset-PIN deep link, the Modern design,
+   * or when no summary exists (first login on this device) - those keep today's behaviour.
+   * Returns true when the Dashboard was opened.
+   */
+  startInstantDashboard : function() {
+    try {
+      if (CommonUtilities.getBooleanConfig("LOGIN_INSTANT_DASHBOARD", false) !== true) {
+        return false;
+      }
+      var navManager = applicationManager.getNavigationManager();
+      if (navManager.getCustomInfo("resetPinDeepLinkFlow") == true) {
+        return false;
+      }
+      try {
+        if (require("DesignResolver").isModern() === true) {
+          return false;
+        }
+      } catch (designErr) { }
+      var summary = scope_Acc_Pres.getInstantDashboardSummary();
+      if (!summary) {
+        return false;
+      }
+      scope_Acc_Pres.instantDashboardState = { "pending": true, "summary": summary };
+      navManager.navigateTo({
+        "appName": "HomepageMA",
+        "friendlyName": "frmHBLUnifiedDashboard",
+      }, false);
+      return true;
+    } catch (err) {
+      kony.print("startInstantDashboard " + err);
+      scope_Acc_Pres.instantDashboardState = null;
+      return false;
+    }
   },
   /**
    * PERF (DASHBOARD_REUSE, default off): the account list the Dashboard just loaded may be reused once, by
@@ -567,6 +668,10 @@ define(["CommonsMA/AsyncManager/BusinessControllers/BusinessController", "dataFo
       scope_Acc_Pres.accountListPrefetch = null;
       accountManager.fetchInternalAccountsWithOutActions(scope_Acc_Pres.presentationAccountsSucc, scope_Acc_Pres.presentationAccountsErr);
 	}else{
+      // PERF (LOGIN_INSTANT_DASHBOARD): open the Dashboard now with the saved summary; the accounts below
+      // then refresh it (defaultAccountSC). Off or not applicable: unchanged.
+      scope_Acc_Pres.instantDashboardState = null;
+      scope_Acc_Pres.startInstantDashboard();
       // PERF: was accountManager.getInternalAccountsWithParams({}, ...); now reuses the login prefetch when valid.
       scope_Acc_Pres.getInternalAccountsForDashboard(scope_Acc_Pres.presentationAccountsSucc, scope_Acc_Pres.presentationAccountsErr);
     }

@@ -35,6 +35,10 @@ define(['CommonUtilities'],function(CommonUtilities){
 	/* "true": the Dashboard is kept between visits (not rebuilt each time) and its freshly loaded account
 	   list is reused once by the first "View all" / Transfers action. Default OFF. */
 	DASHBOARD_REUSE:"",
+	/* "true": after login the Dashboard opens straight away with a saved, encrypted summary of the default
+	   account (name, masked number, type - no balance) and refreshes when the accounts load. Default OFF;
+	   enable only after product and security sign-off. */
+	LOGIN_INSTANT_DASHBOARD:"",
 	/* FonePay QR. Read by frmQRScanController.readFonepayFlag. The two consumers take opposite
 	   defaults on purpose: the scan rail runs unless this is an explicit "false" (the server gate
 	   is authoritative), while the FonePay badge on the scanner strip shows only on an explicit
@@ -778,6 +782,9 @@ define(['CommonUtilities'],function(CommonUtilities){
       }
 	  if (res && res["DASHBOARD_REUSE"]) {
         scope_configManager.DASHBOARD_REUSE=(res["DASHBOARD_REUSE"]);
+      }
+	  if (res && res["LOGIN_INSTANT_DASHBOARD"]) {
+        scope_configManager.LOGIN_INSTANT_DASHBOARD=(res["LOGIN_INSTANT_DASHBOARD"]);
       }
 	  if (res && res["FONEPAY_QR_ENABLED"]) {
         scope_configManager.FONEPAY_QR_ENABLED=(res["FONEPAY_QR_ENABLED"]);
