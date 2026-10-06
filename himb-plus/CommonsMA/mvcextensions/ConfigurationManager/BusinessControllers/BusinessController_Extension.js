@@ -29,6 +29,9 @@ define(['CommonUtilities'],function(CommonUtilities){
 	   reuses a successful result on tap for the same username within 60 s. Default OFF - "true" enables it. */
 	LOGIN_PREWARM:"",
 	LOGIN_PREVALIDATE_USER:"",
+	/* Login performance phase 2. "true" starts the post-login calls right after DbxUserLogin, in parallel
+	   with getUserAttributes. Default OFF - enable only after the backend confirms no dependency. */
+	LOGIN_PARALLEL_WAVE:"",
 	/* FonePay QR. Read by frmQRScanController.readFonepayFlag. The two consumers take opposite
 	   defaults on purpose: the scan rail runs unless this is an explicit "false" (the server gate
 	   is authoritative), while the FonePay badge on the scanner strip shows only on an explicit
@@ -766,6 +769,9 @@ define(['CommonUtilities'],function(CommonUtilities){
       }
 	  if (res && res["LOGIN_PREVALIDATE_USER"]) {
         scope_configManager.LOGIN_PREVALIDATE_USER=(res["LOGIN_PREVALIDATE_USER"]);
+      }
+	  if (res && res["LOGIN_PARALLEL_WAVE"]) {
+        scope_configManager.LOGIN_PARALLEL_WAVE=(res["LOGIN_PARALLEL_WAVE"]);
       }
 	  if (res && res["FONEPAY_QR_ENABLED"]) {
         scope_configManager.FONEPAY_QR_ENABLED=(res["FONEPAY_QR_ENABLED"]);
