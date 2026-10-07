@@ -973,7 +973,13 @@ const devManager = applicationManager.getDeviceUtilManager();
     const configManager = applicationManager.getConfigurationManager();
 	let wealthInvestmentDetail = configManager.checkUserFeature("WEALTH_INVESTMENT_DETAILS");
     let wealthPortfolioDetail = configManager.checkUserFeature("WEALTH_PORTFOLIO_DETAILS");
+    // getCoreCustomerIdsAndAccounts (showCustomers) creates this; post-login can finish first or it can fail,
+    // so start from an empty object instead of throwing. fetchCustomersSuccess fills the same object later.
     var custominfoCD = navManager.getCustomInfo("frmCustomerDashboard");
+    if (kony.sdk.isNullOrUndefined(custominfoCD)) {
+      custominfoCD = {};
+      navManager.setCustomInfo("frmCustomerDashboard", custominfoCD);
+    }
     if(!kony.sdk.isNullOrUndefined(custominfoCD) && custominfoCD.reDesignFlow === "true" && !wealthInvestmentDetail){
       	this.navigateToOverviewSuccess();
   } else if(wealthInvestmentDetail || wealthPortfolioDetail){
