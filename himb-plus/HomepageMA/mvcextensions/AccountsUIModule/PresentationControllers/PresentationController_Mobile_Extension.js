@@ -95,6 +95,7 @@ define(["CommonsMA/AsyncManager/BusinessControllers/BusinessController", "dataFo
    },
 
 		presentationAccountsErr : function(err) {
+    accountsPresenter().accountsLoadSeq = (accountsPresenter().accountsLoadSeq || 0) + 1;
     accountsPresenter().instantDashboardState = null;
     kony.print(err);
     applicationManager.getPresentationUtility().dismissLoadingScreen();
@@ -314,6 +315,7 @@ define(["CommonsMA/AsyncManager/BusinessControllers/BusinessController", "dataFo
     return accProcessedData;
   },
   presentationAccountsSucc :function(res) {
+    accountsPresenter().accountsLoadSeq = (accountsPresenter().accountsLoadSeq || 0) + 1;
     try{
       var scope=this;
     var navManager = applicationManager.getNavigationManager();
@@ -679,7 +681,26 @@ define(["CommonsMA/AsyncManager/BusinessControllers/BusinessController", "dataFo
       var accountsRequested = false;
       try {
         accountsPresenter().instantDashboardState = null;
-        accountsPresenter().startInstantDashboard();
+        // Opened one microtask later (no timer, no frame - it runs as soon as the current call chain returns).
+        // With features served from the config cache this point is reached synchronously deep inside the
+        // login callbacks; building the whole Dashboard on top of that chain overflowed the iOS JS stack
+        // ("RangeError: Maximum call stack size exceeded"). The rest of postLoginServices now also goes out
+        // before the Dashboard is built. Skipped if the accounts were already delivered in the meantime.
+        var accountsLoadSeqAtStart = accountsPresenter().accountsLoadSeq || 0;
+        var openInstantDashboard = function () {
+          try {
+            if ((accountsPresenter().accountsLoadSeq || 0) === accountsLoadSeqAtStart) {
+              accountsPresenter().startInstantDashboard();
+            }
+          } catch (instantErr) {
+            kony.print("startInstantDashboard " + instantErr);
+          }
+        };
+        if (typeof Promise === "function") {
+          Promise.resolve().then(openInstantDashboard);
+        } else {
+          openInstantDashboard();
+        }
         // PERF: was accountManager.getInternalAccountsWithParams({}, ...); now reuses the login prefetch when valid.
         accountsRequested = true;
         accountsPresenter().getInternalAccountsForDashboard(accountsPresenter().presentationAccountsSucc, accountsPresenter().presentationAccountsErr);
