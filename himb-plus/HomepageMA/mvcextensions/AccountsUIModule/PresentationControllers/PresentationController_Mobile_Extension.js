@@ -1,4 +1,10 @@
 define(["CommonsMA/AsyncManager/BusinessControllers/BusinessController", "dataFormatUtility", "CommonUtilities", "OLBConstants"], function(AsyncManager, dataFormater, CommonUtilities, OLBConstants){
+	/* The global scope_Acc_Pres is also assigned by the ArrangementsMA AccountUIModule presenter (Account Details,
+	   Transaction Details, Statements...), so once that module loads it no longer points at this presenter and
+	   Home / "View all" broke. Always resolve this module's own presenter instead of the shared global. */
+	var accountsPresenter = function() {
+		return kony.mvc.MDAApplication.getSharedInstance().getModuleManager().getModule({"appName": "HomepageMA", "moduleName": "AccountsUIModule"}).presentationController;
+	};
 	return{
 		getTotalDebtBalance : function(data) {
         var forUtility = applicationManager.getFormatUtilManager();
@@ -18,9 +24,9 @@ define(["CommonsMA/AsyncManager/BusinessControllers/BusinessController", "dataFo
     defaultAccountSC: function () {
       // PERF (LOGIN_INSTANT_DASHBOARD): the Dashboard is already on screen with the saved summary; give it the
       // freshly loaded accounts instead of navigating to it again.
-      var instantState = scope_Acc_Pres.instantDashboardState;
+      var instantState = accountsPresenter().instantDashboardState;
       if (instantState) {
-        scope_Acc_Pres.instantDashboardState = null;
+        accountsPresenter().instantDashboardState = null;
         try {
           var currentForm = kony.application.getCurrentForm();
           if (currentForm && currentForm.id === "frmHBLUnifiedDashboard") {
@@ -89,7 +95,7 @@ define(["CommonsMA/AsyncManager/BusinessControllers/BusinessController", "dataFo
    },
 
 		presentationAccountsErr : function(err) {
-    scope_Acc_Pres.instantDashboardState = null;
+    accountsPresenter().instantDashboardState = null;
     kony.print(err);
     applicationManager.getPresentationUtility().dismissLoadingScreen();
     if(err["isServerUnreachable"])
@@ -323,14 +329,14 @@ define(["CommonsMA/AsyncManager/BusinessControllers/BusinessController", "dataFo
 		 navManager.setCustomInfo("defaultAcc", defaultAcc);
 		 navManager.setCustomInfo("DashboardCardImg", defaultAcc.Accounts[0].IBAN);
          applicationManager.setDefaultDashboardObj(defaultAcc);
-         scope_Acc_Pres.saveInstantDashboardSummary(defaultAcc.Accounts[0]);
+         accountsPresenter().saveInstantDashboardSummary(defaultAcc.Accounts[0]);
 	 }else{
 		  applicationManager.getPresentationUtility().Alert("No account present for the particular user");
            applicationManager.getPresentationFormUtility().logoutUser(true);
            return;
 	 }
      navManager.setCustomInfo("getAccountList",flag);
-     scope_Acc_Pres.markAccountsFresh();
+     accountsPresenter().markAccountsFresh();
      var custominfoCD = navManager.getCustomInfo("frmCustomerDashboard");
     if(!custominfo){
       custominfo = {};
@@ -414,7 +420,7 @@ define(["CommonsMA/AsyncManager/BusinessControllers/BusinessController", "dataFo
         "error": null,
         "onDone": null
       };
-      scope_Acc_Pres.accountListPrefetch = prefetch;
+      accountsPresenter().accountListPrefetch = prefetch;
       var accountsRepo = kony.mvc.MDAApplication.getSharedInstance().getRepoManager().getRepository("DigitalArrangements");
       accountsRepo.customVerb('getList', {}, function(status, data, error) {
         prefetch.done = true;
@@ -428,14 +434,14 @@ define(["CommonsMA/AsyncManager/BusinessControllers/BusinessController", "dataFo
         }
       });
     } catch (err) {
-      scope_Acc_Pres.accountListPrefetch = null;
+      accountsPresenter().accountListPrefetch = null;
       kony.print("prefetchAccountList" + err);
     }
   },
   clearAccountListPrefetch : function() {
-    scope_Acc_Pres.accountListPrefetch = null;
-    scope_Acc_Pres.freshAccountsToken = null;
-    scope_Acc_Pres.instantDashboardState = null;
+    accountsPresenter().accountListPrefetch = null;
+    accountsPresenter().freshAccountsToken = null;
+    accountsPresenter().instantDashboardState = null;
   },
   /**
    * PERF (LOGIN_INSTANT_DASHBOARD, default off). After every successful Dashboard account load, keep a small
@@ -481,7 +487,7 @@ define(["CommonsMA/AsyncManager/BusinessControllers/BusinessController", "dataFo
   },
   /** True while the Dashboard is showing the saved summary and the account list is still loading. */
   isInstantDashboardPending : function() {
-    return !!(scope_Acc_Pres.instantDashboardState && scope_Acc_Pres.instantDashboardState.pending === true);
+    return !!(accountsPresenter().instantDashboardState && accountsPresenter().instantDashboardState.pending === true);
   },
   /**
    * Opens the Dashboard straight away with the saved summary when LOGIN_INSTANT_DASHBOARD is on and a summary
@@ -503,11 +509,11 @@ define(["CommonsMA/AsyncManager/BusinessControllers/BusinessController", "dataFo
           return false;
         }
       } catch (designErr) { }
-      var summary = scope_Acc_Pres.getInstantDashboardSummary();
+      var summary = accountsPresenter().getInstantDashboardSummary();
       if (!summary) {
         return false;
       }
-      scope_Acc_Pres.instantDashboardState = { "pending": true, "summary": summary };
+      accountsPresenter().instantDashboardState = { "pending": true, "summary": summary };
       navManager.navigateTo({
         "appName": "HomepageMA",
         "friendlyName": "frmHBLUnifiedDashboard",
@@ -515,7 +521,7 @@ define(["CommonsMA/AsyncManager/BusinessControllers/BusinessController", "dataFo
       return true;
     } catch (err) {
       kony.print("startInstantDashboard " + err);
-      scope_Acc_Pres.instantDashboardState = null;
+      accountsPresenter().instantDashboardState = null;
       return false;
     }
   },
@@ -527,24 +533,24 @@ define(["CommonsMA/AsyncManager/BusinessControllers/BusinessController", "dataFo
    */
   markAccountsFresh : function() {
     try {
-      scope_Acc_Pres.freshAccountsToken = {
+      accountsPresenter().freshAccountsToken = {
         "time": new Date().getTime(),
         "userName": applicationManager.getUserPreferencesManager().getUserName()
       };
     } catch (err) {
-      scope_Acc_Pres.freshAccountsToken = null;
+      accountsPresenter().freshAccountsToken = null;
     }
   },
   clearFreshAccounts : function() {
-    scope_Acc_Pres.freshAccountsToken = null;
+    accountsPresenter().freshAccountsToken = null;
   },
   /**
    * Returns the stored account list when the token is valid (flag on, same user, under maxAgeMs old), else
    * null. Always clears the token, so it is used at most once.
    */
   takeFreshAccounts : function(maxAgeMs) {
-    var token = scope_Acc_Pres.freshAccountsToken;
-    scope_Acc_Pres.freshAccountsToken = null;
+    var token = accountsPresenter().freshAccountsToken;
+    accountsPresenter().freshAccountsToken = null;
     try {
       if (!token || CommonUtilities.getBooleanConfig("DASHBOARD_REUSE", false) !== true) {
         return null;
@@ -575,8 +581,8 @@ define(["CommonsMA/AsyncManager/BusinessControllers/BusinessController", "dataFo
    */
   getInternalAccountsForDashboard : function(presentationSuccessCallback, presentationErrorCallback) {
     var accountManager = applicationManager.getAccountManager();
-    var prefetch = scope_Acc_Pres.accountListPrefetch;
-    scope_Acc_Pres.accountListPrefetch = null;
+    var prefetch = accountsPresenter().accountListPrefetch;
+    accountsPresenter().accountListPrefetch = null;
     var fetchNormally = function() {
       accountManager.getInternalAccountsWithParams({}, presentationSuccessCallback, presentationErrorCallback);
     };
@@ -665,15 +671,25 @@ define(["CommonsMA/AsyncManager/BusinessControllers/BusinessController", "dataFo
     applicationManager.getPresentationUtility().showLoadingScreen();
     var accountManager = applicationManager.getAccountManager();
 	if(!kony.sdk.isNullOrUndefined(custominfoCD) && (custominfoCD.reDesignFlow === "true")){
-      scope_Acc_Pres.accountListPrefetch = null;
-      accountManager.fetchInternalAccountsWithOutActions(scope_Acc_Pres.presentationAccountsSucc, scope_Acc_Pres.presentationAccountsErr);
+      accountsPresenter().accountListPrefetch = null;
+      accountManager.fetchInternalAccountsWithOutActions(accountsPresenter().presentationAccountsSucc, accountsPresenter().presentationAccountsErr);
 	}else{
       // PERF (LOGIN_INSTANT_DASHBOARD): open the Dashboard now with the saved summary; the accounts below
       // then refresh it (defaultAccountSC). Off or not applicable: unchanged.
-      scope_Acc_Pres.instantDashboardState = null;
-      scope_Acc_Pres.startInstantDashboard();
-      // PERF: was accountManager.getInternalAccountsWithParams({}, ...); now reuses the login prefetch when valid.
-      scope_Acc_Pres.getInternalAccountsForDashboard(scope_Acc_Pres.presentationAccountsSucc, scope_Acc_Pres.presentationAccountsErr);
+      var accountsRequested = false;
+      try {
+        accountsPresenter().instantDashboardState = null;
+        accountsPresenter().startInstantDashboard();
+        // PERF: was accountManager.getInternalAccountsWithParams({}, ...); now reuses the login prefetch when valid.
+        accountsRequested = true;
+        accountsPresenter().getInternalAccountsForDashboard(accountsPresenter().presentationAccountsSucc, accountsPresenter().presentationAccountsErr);
+      } catch (err) {
+        kony.print("showDashboard " + err);
+        // Safety net: never leave Home on the loader - make the original account list call.
+        if (!accountsRequested) {
+          accountManager.getInternalAccountsWithParams({}, accountsPresenter().presentationAccountsSucc, accountsPresenter().presentationAccountsErr);
+        }
+      }
     }
     if(custominfoCD.isMultiCustomer === "false"){
     this.getWealthPortfolio();
@@ -687,22 +703,22 @@ define(["CommonsMA/AsyncManager/BusinessControllers/BusinessController", "dataFo
     var accountManager = applicationManager.getAccountManager();
     var configManager = applicationManager.getConfigurationManager();
 	if(!kony.sdk.isNullOrUndefined(custominfoCD) && (custominfoCD.reDesignFlow === "true")){
-      accountManager.fetchInternalAccountsWithOutActions(scope_Acc_Pres.showOldDashboardSucc, scope_Acc_Pres.presentationAccountsErr);
+      accountManager.fetchInternalAccountsWithOutActions(accountsPresenter().showOldDashboardSucc, accountsPresenter().presentationAccountsErr);
 	}else{
       // PERF (DASHBOARD_REUSE): "View all" right after the Dashboard loaded reuses that account list once
       // (delivered asynchronously, like the network callback); otherwise getList is called as before.
-      var freshAccounts = scope_Acc_Pres.takeFreshAccounts(60000);
+      var freshAccounts = accountsPresenter().takeFreshAccounts(60000);
       if (freshAccounts) {
         try {
           kony.timer.schedule("oldDashboardFreshAccounts", function() {
             try { kony.timer.cancel("oldDashboardFreshAccounts"); } catch (cancelErr) {}
-            scope_Acc_Pres.showOldDashboardSucc(freshAccounts);
+            accountsPresenter().showOldDashboardSucc(freshAccounts);
           }, 0.1, false);
         } catch (timerErr) {
-          scope_Acc_Pres.showOldDashboardSucc(freshAccounts);
+          accountsPresenter().showOldDashboardSucc(freshAccounts);
         }
       } else {
-        accountManager.getInternalAccountsWithParams({},scope_Acc_Pres.showOldDashboardSucc, scope_Acc_Pres.presentationAccountsErr);
+        accountManager.getInternalAccountsWithParams({},accountsPresenter().showOldDashboardSucc, accountsPresenter().presentationAccountsErr);
       }
     }
     if(custominfoCD.isMultiCustomer === "false"){
